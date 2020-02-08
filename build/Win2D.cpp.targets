@@ -14,6 +14,8 @@
     <BuildDependsOn>CheckWarningLevel;$(BuildDependsOn)</BuildDependsOn>
   </PropertyGroup>
 
+  <Import Project="Win2D.common.targets" />
+
   <!-- Internal Microsoft builds can optionally consume the Windows SDK via NuGet -->
   <!--
   <ImportGroup Label="ExtensionTargets" Condition="'$(UseNuGetSDK)' != ''">

@@ -5,7 +5,6 @@
 using Microsoft.Graphics.Canvas;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Numerics;
 using System.Threading.Tasks;
 using Windows.Foundation;
@@ -18,8 +17,6 @@ namespace ExampleGallery
     // simply call AddParticles, and pass in where the particles should be created.
     public abstract class ParticleSystem
     {
-        public static string RootDirectory = string.Empty;
-
         // The texture this particle system will use.
         protected CanvasBitmap bitmap;
 
@@ -107,7 +104,7 @@ namespace ExampleGallery
         // Loads the bitmap that will be used to draw this particle system.
         public virtual async Task CreateResourcesAsync(ICanvasResourceCreator resourceCreator)
         {
-            bitmap = await CanvasBitmap.LoadAsync(resourceCreator, Path.Combine(RootDirectory, bitmapFilename));
+            bitmap = await CanvasBitmap.LoadAsync(resourceCreator, bitmapFilename);
 
             bitmapCenter = bitmap.Size.ToVector2() / 2;
             bitmapBounds = bitmap.Bounds;

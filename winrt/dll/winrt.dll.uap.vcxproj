@@ -15,6 +15,7 @@
     <TargetName>$(ItemsRootNamespace)</TargetName>
   </PropertyGroup>
 
+  <Import Project="..\..\build\Win2D.cpp.props" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
 
   <PropertyGroup Label="Configuration">
@@ -87,5 +88,6 @@
   </ItemGroup>
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="..\..\build\Win2D.cpp.targets" />
 
 </Project>

@@ -59,12 +59,6 @@ SET NUGET_ARGS=^
 
 nuget pack Win2D.uwp.nuspec %NUGET_ARGS%
 
-REM Delete old package from the default local cache
-SET PKG_CACHE="%USERPROFILE%\.nuget\packages\win2d.uwp\%VERSION%"
-IF EXIST %PKG_CACHE% (
-	RD /S/Q %PKG_CACHE%
-)
-
 :END
 
 POPD

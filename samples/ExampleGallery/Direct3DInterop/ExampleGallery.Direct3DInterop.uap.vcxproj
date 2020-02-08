@@ -34,6 +34,7 @@
     <GenerateManifest>false</GenerateManifest>
     <NuGetPackageImportStamp>c59169d0</NuGetPackageImportStamp>
   </PropertyGroup>
+  <Import Project="..\..\..\build\Win2D.cpp.props" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ItemDefinitionGroup>
@@ -43,6 +44,7 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="..\..\..\build\Win2D.cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="..\..\..\packages\directxtk_uwp.2019.4.26.1\build\native\directxtk_uwp.targets" Condition="Exists('..\..\..\packages\directxtk_uwp.2019.4.26.1\build\native\directxtk_uwp.targets')" />
   </ImportGroup>
