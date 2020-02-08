@@ -162,7 +162,7 @@ namespace CodeGen
                     valueExpression = valueExpression.Remove(0, 2);
                     numberStyle = NumberStyles.HexNumber;
                 }
-                return int.Parse(valueExpression, numberStyle, CultureInfo.InvariantCulture);
+                return int.Parse(valueExpression, numberStyle);
             }
 
             public int Compare(EnumValue x, EnumValue y)
