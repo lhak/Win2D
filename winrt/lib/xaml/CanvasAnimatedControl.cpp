@@ -421,6 +421,8 @@ IFACEMETHODIMP CanvasAnimatedControl::ResetElapsedTime()
         });
 }
 
+#pragma warning( disable : 4100 )
+
 IFACEMETHODIMP CanvasAnimatedControl::CreateCoreIndependentInputSource(
     CoreInputDeviceTypes deviceTypes,
     ICoreInputSourceBase** returnValue)
@@ -435,9 +437,13 @@ IFACEMETHODIMP CanvasAnimatedControl::CreateCoreIndependentInputSource(
                 // we don't support CreateCoreIndependentInputSource.
                 ThrowHR(E_NOTIMPL);
             }
-            
+#if WINUI_TODO
             auto swapChainPanel = As<ISwapChainPanel>(m_canvasSwapChainPanel);
             ThrowIfFailed(swapChainPanel->CreateCoreIndependentInputSource(deviceTypes, returnValue));
+#endif
+
+            *returnValue = NULL;
+
         });
 }
 

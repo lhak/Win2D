@@ -13,9 +13,9 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
     using namespace ABI::Windows::ApplicationModel;
     using namespace ABI::Windows::Graphics::Display;
     using namespace ABI::Windows::UI::Core;
-    using namespace ABI::Windows::UI::Xaml::Controls;
-    using namespace ABI::Windows::UI::Xaml;
-    using namespace ABI::Windows::UI;
+    using namespace ABI::Microsoft::UI::Xaml::Controls;
+    using namespace ABI::Microsoft::UI::Xaml;
+    using namespace ABI::Microsoft::UI;
     using namespace WinRTDirectX;
 
     //
@@ -24,6 +24,8 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
 
     typedef ITypedEventHandler<DisplayInformation*, IInspectable*> DpiChangedEventHandler;
     typedef ITypedEventHandler<XamlRoot*, XamlRootChangedEventArgs*> XamlRootChangedEventHandler;
+    typedef ITypedEventHandler<Window*, WindowVisibilityChangedEventArgs*> WindowVisibilityChangedEventHandler;
+
 
     template<typename TRAITS>
     class IBaseControlAdapter
@@ -41,7 +43,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
 
         virtual RegisteredEvent AddDpiChangedCallback(DpiChangedEventHandler* handler) = 0;
 
-        virtual RegisteredEvent AddVisibilityChangedCallback(IWindowVisibilityChangedEventHandler* handler, IWindow* window) = 0;
+        virtual RegisteredEvent AddVisibilityChangedCallback(WindowVisibilityChangedEventHandler* handler, IWindow* window) = 0;
 
         virtual RegisteredEvent AddXamlRootChangedCallback(XamlRootChangedEventHandler* handler, IXamlRoot* xamlRoot) = 0;
 

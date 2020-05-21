@@ -9,9 +9,9 @@
 namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { namespace UI { namespace Xaml
 {
     using namespace ABI::Windows::ApplicationModel::Core;
-    using namespace ABI::Windows::UI::Xaml::Controls;
-    using namespace ABI::Windows::UI::Xaml::Media;
-    using namespace ABI::Windows::UI::Xaml;
+    using namespace ABI::Microsoft::UI::Xaml::Controls;
+    using namespace ABI::Microsoft::UI::Xaml::Media;
+    using namespace ABI::Microsoft::UI::Xaml;
 
     template<typename TRAITS>
     class BaseControlAdapter : public TRAITS::adapter_t,
@@ -126,7 +126,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
                 handler);
         }
         
-        virtual RegisteredEvent AddVisibilityChangedCallback(IWindowVisibilityChangedEventHandler* handler, IWindow* window)
+        virtual RegisteredEvent AddVisibilityChangedCallback(WindowVisibilityChangedEventHandler* handler, IWindow* window)
         {
             // Don't register for the visiblity changed event if we're in design
             // mode.  Although we have been given a valid IWindow, we'll crash

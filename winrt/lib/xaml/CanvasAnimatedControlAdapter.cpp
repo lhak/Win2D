@@ -79,7 +79,7 @@ public:
         ComPtr<IActivationFactory> rectangleFactory;
 
         ThrowIfFailed(GetActivationFactory(
-            HStringReference(RuntimeClass_Windows_UI_Xaml_Shapes_Rectangle).Get(),
+            HStringReference(RuntimeClass_Microsoft_UI_Xaml_Shapes_Rectangle).Get(),
             &rectangleFactory));
         
         ComPtr<IInspectable> rectangleInspectable;

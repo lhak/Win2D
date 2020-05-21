@@ -7,7 +7,7 @@
 using namespace ABI::Windows::Foundation;
 using namespace ABI::Windows::System::Threading;
 using namespace ABI::Windows::UI::Core;
-using namespace ABI::Windows::UI::Xaml::Controls;
+using namespace ABI::Microsoft::UI::Xaml::Controls;
 using namespace Microsoft::WRL;
 
 class IGameLoopThread

@@ -9,7 +9,7 @@
 
 using namespace ABI::Microsoft::Graphics::Canvas::UI::Xaml;
 using namespace ABI::Microsoft::Graphics::Canvas;
-using namespace ABI::Windows::UI::Xaml::Controls;
+using namespace ABI::Microsoft::UI::Xaml::Controls;
 
 CanvasSwapChainPanelAdapter::CanvasSwapChainPanelAdapter()
 {

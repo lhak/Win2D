@@ -6,7 +6,7 @@
 
 namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { namespace UI { namespace Xaml
 {
-    using namespace ABI::Windows::UI::Xaml::Media;
+    using namespace ABI::Microsoft::UI::Xaml::Media;
 
     class IImageControlMixInAdapter
     {
@@ -18,7 +18,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
 
     
     class ImageControlMixIn
-        : public Implements<ABI::Windows::UI::Xaml::IFrameworkElementOverrides>
+        : public Implements<ABI::Microsoft::UI::Xaml::IFrameworkElementOverrides>
     {
         RegisteredEvent m_surfaceContentsLostEventRegistration;
 
@@ -60,7 +60,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
     template<typename CONTROL>
     inline void ImageControlMixIn::RegisterEventHandlers(IImageControlMixInAdapter* adapter)
     {
-        using namespace ABI::Windows::UI::Xaml::Controls;
+        using namespace ABI::Microsoft::UI::Xaml::Controls;
         using namespace Windows::Foundation;
 
         auto callback = Callback<IEventHandler<IInspectable*>>(this, &ImageControlMixIn::OnSurfaceContentsLost<CONTROL>);
@@ -122,9 +122,8 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
 
         virtual void DisableAccessibilityView(IImage* imageControl) override
         {
-            using namespace ::ABI::Windows::UI::Xaml::Automation;
-
-            ComPtr<IAutomationPropertiesStatics2> automationProperties;
+            using namespace ::ABI::Microsoft::UI::Xaml::Automation;
+            ComPtr<IAutomationPropertiesStatics> automationProperties;
             ThrowIfFailed(GetActivationFactory(HStringReference(RuntimeClass_Windows_UI_Xaml_Automation_AutomationProperties).Get(), &automationProperties));
 
             automationProperties->SetAccessibilityView(As<IDependencyObject>(imageControl).Get(), Peers::AccessibilityView::AccessibilityView_Raw);

@@ -18,17 +18,22 @@ using namespace ABI::Microsoft::Graphics::Canvas;
 static ComPtr<ICoreDispatcher> CreateCoreDispatcher(ISwapChainPanel* swapChainPanel)
 {
     ComPtr<ICoreInputSourceBase> inputSource;
+#if WINUI_TODO
+
     ThrowIfFailed(swapChainPanel->CreateCoreIndependentInputSource(
         CoreInputDeviceTypes_Touch | CoreInputDeviceTypes_Pen | CoreInputDeviceTypes_Mouse, 
         &inputSource));
-
+#endif
     ComPtr<ICoreDispatcher> dispatcher;
+#if WINUI_TODO
+
     ThrowIfFailed(inputSource->get_Dispatcher(&dispatcher));
 
     ThrowIfFailed(swapChainPanel->CreateCoreIndependentInputSource(
         CoreInputDeviceTypes_None,
         &inputSource));
-
+#endif
+    swapChainPanel = NULL;
     return dispatcher;
 }
 

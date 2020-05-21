@@ -70,18 +70,18 @@
 #include <windows.security.cryptography.h>
 #include <windows.security.cryptography.core.h>
 #include <windows.storage.h>
-#include <windows.ui.h>
-#include <windows.ui.xaml.controls.h>
-#include <windows.ui.xaml.media.h>
-#include <windows.ui.xaml.media.dxinterop.h>
-#include <windows.ui.xaml.shapes.h>
+#include <microsoft.ui.h>
+#include <microsoft.ui.xaml.controls.h>
+#include <microsoft.ui.xaml.media.h>
+#include <microsoft.ui.xaml.media.dxinterop.h>
+#include <microsoft.ui.xaml.shapes.h>
 #include <windows.graphics.display.h>
 #include <windows.graphics.interop.h>
 
 #if WINVER > _WIN32_WINNT_WINBLUE
 #include <windows.foundation.metadata.h>
-#include <windows.ui.composition.h>
-#include <windows.ui.composition.interop.h>
+#include <microsoft.ui.composition.h>
+//#include <windows.ui.composition.interop.h>
 #endif
 
 #pragma warning(default: 4265)  // "class has virtual functions, but destructor is not virtual"
