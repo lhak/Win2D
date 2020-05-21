@@ -38,7 +38,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
             auto& module = Module<InProc>::GetModule();
 
             ThrowIfFailed(GetActivationFactory(
-                HStringReference(RuntimeClass_Windows_UI_Xaml_Controls_UserControl).Get(),
+                HStringReference(RuntimeClass_Microsoft_UI_Xaml_Controls_UserControl).Get(),
                 &m_userControlFactory));
 
             ThrowIfFailed(module.GetActivationFactory(
@@ -50,7 +50,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
                 &m_displayInformationStatics));
 
             ThrowIfFailed(GetActivationFactory(
-                HStringReference(RuntimeClass_Windows_UI_Xaml_Window).Get(),
+                HStringReference(RuntimeClass_Microsoft_UI_Xaml_Window).Get(),
                 &m_windowStatics));
 
             ThrowIfFailed(GetActivationFactory(
@@ -125,7 +125,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
                 &IDisplayInformation::remove_DpiChanged,
                 handler);
         }
-        
+#if 0
         virtual RegisteredEvent AddVisibilityChangedCallback(WindowVisibilityChangedEventHandler* handler, IWindow* window)
         {
             // Don't register for the visiblity changed event if we're in design
@@ -140,7 +140,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
                 &IWindow::remove_VisibilityChanged,
                 handler);
         }
-
+#endif
         virtual RegisteredEvent AddXamlRootChangedCallback(XamlRootChangedEventHandler* handler, IXamlRoot* xamlRoot) override
         {
             // Don't register for the XamlRoot changed event if we're in design

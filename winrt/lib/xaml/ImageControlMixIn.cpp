@@ -110,4 +110,16 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
             });
     }
 
+    IFACEMETHODIMP UI::Xaml::ImageControlMixIn::GoToElementStateCore(HSTRING stateName, ::boolean useTransitions, ::boolean* result)
+    {
+        return ExceptionBoundary(
+            [&]
+            {
+                //
+                // Allow base class to handle this
+                //
+                As<IFrameworkElementOverrides>(m_composableBase)->GoToElementStateCore(stateName, useTransitions, result);
+            });
+    }
+
 }}}}}}

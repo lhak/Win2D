@@ -87,7 +87,7 @@ public:
 
         ComPtr<IActivationFactory> brushFactory;
         ThrowIfFailed(GetActivationFactory(
-            HStringReference(RuntimeClass_Windows_UI_Xaml_Media_SolidColorBrush).Get(),
+            HStringReference(RuntimeClass_Microsoft_UI_Xaml_Media_SolidColorBrush).Get(),
             &brushFactory));
 
         ComPtr<IInspectable> brushInspectable;

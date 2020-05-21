@@ -21,7 +21,7 @@ static ComPtr<IVirtualSurfaceImageSourceFactory> GetVirtualSurfaceImageSourceFac
 {
     ComPtr<IVirtualSurfaceImageSourceFactory> f;
     ThrowIfFailed(GetActivationFactory(
-        HStringReference(RuntimeClass_Windows_UI_Xaml_Media_Imaging_VirtualSurfaceImageSource).Get(),
+        HStringReference(RuntimeClass_Microsoft_UI_Xaml_Media_Imaging_VirtualSurfaceImageSource).Get(),
         &f));
 
     return f;

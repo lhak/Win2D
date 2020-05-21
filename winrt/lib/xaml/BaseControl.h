@@ -24,7 +24,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
 
     typedef ITypedEventHandler<DisplayInformation*, IInspectable*> DpiChangedEventHandler;
     typedef ITypedEventHandler<XamlRoot*, XamlRootChangedEventArgs*> XamlRootChangedEventHandler;
-    typedef ITypedEventHandler<Window*, WindowVisibilityChangedEventArgs*> WindowVisibilityChangedEventHandler;
+    //typedef ITypedEventHandler<Window*, WindowVisibilityChangedEventArgs*> WindowVisibilityChangedEventHandler;
 
 
     template<typename TRAITS>
@@ -43,7 +43,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
 
         virtual RegisteredEvent AddDpiChangedCallback(DpiChangedEventHandler* handler) = 0;
 
-        virtual RegisteredEvent AddVisibilityChangedCallback(WindowVisibilityChangedEventHandler* handler, IWindow* window) = 0;
+        //virtual RegisteredEvent AddVisibilityChangedCallback(WindowVisibilityChangedEventHandler* handler, IWindow* window) = 0;
 
         virtual RegisteredEvent AddXamlRootChangedCallback(XamlRootChangedEventHandler* handler, IXamlRoot* xamlRoot) = 0;
 
@@ -63,7 +63,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
         CB_HELPER(AddApplicationSuspendingCallback, IEventHandler<SuspendingEventArgs*>);
         CB_HELPER(AddApplicationResumingCallback, IEventHandler<IInspectable*>);
         CB_HELPER(AddDpiChangedCallback, DpiChangedEventHandler);
-        CB_HELPER(AddVisibilityChangedCallback, IWindowVisibilityChangedEventHandler);
+        //CB_HELPER(AddVisibilityChangedCallback, WindowVisibilityChangedEventHandler);
         CB_HELPER(AddXamlRootChangedCallback, XamlRootChangedEventHandler);
 
 #undef CB_HELPER
@@ -124,7 +124,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
         RegisteredEvent m_applicationSuspendingEventRegistration;
         RegisteredEvent m_applicationResumingEventRegistration;
         RegisteredEvent m_dpiChangedEventRegistration;
-        RegisteredEvent m_windowVisibilityChangedEventRegistration;
+       // RegisteredEvent m_windowVisibilityChangedEventRegistration;
         RegisteredEvent m_xamlRootChangedEventRegistration;
         RegisteredEvent m_deviceLostEventRegistration;
 
@@ -769,7 +769,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
                 &BaseControl::OnApplicationResuming);
 
             auto frameworkElement = As<IFrameworkElement>(GetControl());
-            if (auto elementAsUIE10 = MaybeAs<IUIElement10>(frameworkElement))
+            if (auto elementAsUIE10 = MaybeAs<IUIElement>(frameworkElement))
             {
                 ThrowIfFailed(elementAsUIE10->get_XamlRoot(&m_xamlRoot));
             }
@@ -788,10 +788,10 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
             {
                 m_dpiChangedEventRegistration = m_adapter->AddDpiChangedCallback(this, &BaseControl::OnDpiChanged);
 
-                m_windowVisibilityChangedEventRegistration = m_adapter->AddVisibilityChangedCallback(
+               /* m_windowVisibilityChangedEventRegistration = m_adapter->AddVisibilityChangedCallback(
                     this,
                     &BaseControl::OnWindowVisibilityChanged,
-                    GetWindow());
+                    GetWindow());*/
             }
 
             // Check if the DPI changed while we weren't listening for events.
@@ -803,7 +803,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
             m_applicationSuspendingEventRegistration.Release();
             m_applicationResumingEventRegistration.Release();
             m_dpiChangedEventRegistration.Release();
-            m_windowVisibilityChangedEventRegistration.Release();
+           // m_windowVisibilityChangedEventRegistration.Release();
             m_xamlRootChangedEventRegistration.Release();
             m_deviceLostEventRegistration.Release();
         }
@@ -988,7 +988,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
                 });
         }
 
-        HRESULT OnWindowVisibilityChanged(IInspectable*, IVisibilityChangedEventArgs* args)
+       /* HRESULT OnWindowVisibilityChanged(IInspectable*, IVisibilityChangedEventArgs* args)
         {
             return ExceptionBoundary(
                 [&]
@@ -1002,7 +1002,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
                     
                     WindowVisibilityChanged();
                 });
-        }
+        }*/
 
         HRESULT OnXamlRootChanged(IXamlRoot*, IXamlRootChangedEventArgs*)
         {

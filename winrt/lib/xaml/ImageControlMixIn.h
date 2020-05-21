@@ -44,6 +44,8 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
 
         IFACEMETHODIMP OnApplyTemplate() override;
 
+        IFACEMETHODIMP GoToElementStateCore(HSTRING stateName, ::boolean useTransitions, ::boolean* result) override;
+
     protected:
         template<typename CONTROL>
         void RegisterEventHandlers(IImageControlMixInAdapter* adapter);
@@ -90,11 +92,11 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
         ImageControlMixInAdapter()
         {
             ThrowIfFailed(GetActivationFactory(
-                HStringReference(RuntimeClass_Windows_UI_Xaml_Controls_Image).Get(),
+                HStringReference(RuntimeClass_Microsoft_UI_Xaml_Controls_Image).Get(),
                 &m_imageControlFactory));
 
             ThrowIfFailed(GetActivationFactory(
-                HStringReference(RuntimeClass_Windows_UI_Xaml_Media_CompositionTarget).Get(),
+                HStringReference(RuntimeClass_Microsoft_UI_Xaml_Media_CompositionTarget).Get(),
                &m_compositionTargetStatics));            
         }
 
@@ -124,7 +126,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
         {
             using namespace ::ABI::Microsoft::UI::Xaml::Automation;
             ComPtr<IAutomationPropertiesStatics> automationProperties;
-            ThrowIfFailed(GetActivationFactory(HStringReference(RuntimeClass_Windows_UI_Xaml_Automation_AutomationProperties).Get(), &automationProperties));
+            ThrowIfFailed(GetActivationFactory(HStringReference(RuntimeClass_Microsoft_UI_Xaml_Automation_AutomationProperties).Get(), &automationProperties));
 
             automationProperties->SetAccessibilityView(As<IDependencyObject>(imageControl).Get(), Peers::AccessibilityView::AccessibilityView_Raw);
         }

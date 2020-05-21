@@ -51,6 +51,7 @@
     <ItemGroup Condition="'$(UseNuGetSDK)' == ''">
       <MetaDataDir Include="$(WindowsSDK_MetadataPath)\$(TargetPlatformVersion)\Windows.Foundation.FoundationContract\3.0.0.0" />
       <MetaDataDir Include="$(WindowsSDK_MetadataPath)\$(TargetPlatformVersion)\Windows.Foundation.UniversalApiContract\8.0.0.0" />
+      <MetaDataDir Include="..\lib" />
     </ItemGroup>
     <ItemGroup Condition="'$(UseNuGetSDK)' != ''">
       <MetaDataDir Include="$(WindowsSDK_MetadataPath)\$(TargetPlatformVersion)\Windows.Foundation.FoundationContract\3.0.0.0" />
