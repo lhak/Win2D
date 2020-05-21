@@ -29,7 +29,7 @@ IF %ERRORLEVEL% NEQ 0 (
 
 ECHO.
 
-CALL "%~dp0build\nuget\build-nupkg.cmd" local
+CALL "%~dp0build\nuget\build-nupkg.cmd" winui
 GOTO END
 
 
