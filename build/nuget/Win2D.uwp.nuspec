@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata minClientVersion="2.8.6">
-        <id>Win2D.uwp</id>
+        <id>Win2D.winui</id>
         <version>0.0.0-SpecifyVersionOnCommandline</version>
-        <title>Win2D.uwp</title>
+        <title>Win2D.winui</title>
         <authors>Microsoft</authors>
         <owners>win2d,microsoft</owners>
         <description>An easy-to-use Windows Runtime API for immediate mode 2D graphics rendering.&#10;For the Universal Windows Platform (Windows 10).</description>
