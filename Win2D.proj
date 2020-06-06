@@ -42,6 +42,7 @@
   <ItemGroup>
     <UAPProject Include="winrt\lib\winrt.lib.uap.vcxproj" />
     <UAPProject Include="winrt\dll\winrt.dll.uap.vcxproj" />
+    <AnyCPUProject Include="winrt\interop\winrt.dll.interop.csproj" />
   </ItemGroup>
 
   <!-- Test projects -->

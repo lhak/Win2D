@@ -32,6 +32,8 @@
       <file target="lib\uap10.0\Microsoft.Graphics.Canvas.xml"               src="bin\intellisense\Microsoft.Graphics.Canvas.xml" />
       <file target="lib\netcoreapp3.0\Microsoft.Graphics.Canvas.winmd"       src="$bin$\UAPx86\release\winrt.dll.UAP\Microsoft.Graphics.Canvas.winmd" />
       <file target="lib\netcoreapp3.0\Microsoft.Graphics.Canvas.xml"         src="bin\intellisense\Microsoft.Graphics.Canvas.xml" />
+      <file target="lib\net5.0\Microsoft.Graphics.Canvas.interop.dll"       src="$bin$\anycpu\release\winrt.dll.interop\Microsoft.Graphics.Canvas.interop.dll" />
+      <file target="lib\net5.0\Microsoft.Graphics.Canvas.xml"         src="bin\intellisense\Microsoft.Graphics.Canvas.xml" />
       <file target="lib\net45\Microsoft.Graphics.Canvas.winmd"       src="$bin$\UAPx86\release\winrt.dll.UAP\Microsoft.Graphics.Canvas.winmd" />
       <file target="lib\net45\Microsoft.Graphics.Canvas.xml"         src="bin\intellisense\Microsoft.Graphics.Canvas.xml" />
 
