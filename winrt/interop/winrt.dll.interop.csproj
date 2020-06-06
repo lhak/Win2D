@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<EnableDefaultItems>false</EnableDefaultItems>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<CsWinrtExe Condition="'$(CsWinrtPath)'!=''">$(CsWinrtPath)cswinrt.exe</CsWinrtExe>
+		<NoWarn>1701;1702;0108</NoWarn>
+	</PropertyGroup>
+	<Import Project="..\..\build\Win2D.cs.props" />
+	<PropertyGroup>
+		<MergedWinmdDirectory>$(MSBuildThisFileDirectory)..\..\bin\uapx86\$(Configuration)\MergedWinMD</MergedWinmdDirectory>
+		<AssemblyName>Microsoft.Graphics.Canvas.interop</AssemblyName>
+		<RootNamespace>Microsoft.Graphics.Canvas</RootNamespace>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.WinUI" Version="3.0.0-preview1.200515.3" />
+	</ItemGroup>
+	<Target Name="GenerateProjection" BeforeTargets="Build">
+		<PropertyGroup>
+			<CsWinRTVerbosity>high</CsWinRTVerbosity>
+			<CsWinRTResponseFile>$(IntermediateOutputPath)cswinrt_platform.rsp</CsWinRTResponseFile>
+			<CsWinRTCommand>$(CsWinrtExe) %40"$(CsWinRTResponseFile)"</CsWinRTCommand>
+		</PropertyGroup>
+		<PropertyGroup>
+			<CsWinRTParams>
+				-verbose
+				-in $(TargetPlatformVersion)
+				-in ..\..\winui\Microsoft.UI.winmd
+				-exclude Windows
+				-in $(MergedWinmdDirectory)\$(RootNamespace).winmd
+				-include $(RootNamespace)
+				-out "$(IntermediateOutputPath)Generated Files"
+			</CsWinRTParams>
+		</PropertyGroup>
+		<WriteLinesToFile File="$(CsWinRTResponseFile)" Lines="$(CsWinRTParams)" Overwrite="true" WriteOnlyWhenDifferent="true" />
+		<Message Text="$(CsWinRTCommand)" Importance="$(CsWinRTVerbosity)" />
+		<Exec Command="$(CsWinRTCommand)" />
+	</Target>
+	<Target Name="IncludeProjection" BeforeTargets="CoreCompile" AfterTargets="GenerateProjection">
+		<ItemGroup>
+			<Compile Include="$(IntermediateOutputPath)Generated Files/*.cs" Exclude="@(Compile)" />
+		</ItemGroup>
+	</Target>
+</Project>
