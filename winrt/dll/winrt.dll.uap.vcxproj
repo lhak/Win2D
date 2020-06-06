@@ -15,8 +15,10 @@
     <ItemsRootNamespace>Microsoft.Graphics.Canvas</ItemsRootNamespace>
     <TargetName>$(ItemsRootNamespace)</TargetName>
   </PropertyGroup>
+
   <Import Project="..\..\build\Win2D.cpp.props" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  
   <PropertyGroup Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
   </PropertyGroup>
@@ -87,5 +89,4 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <Import Project="..\..\build\Win2D.cpp.targets" />
-  <Import Project="..\..\packages\Microsoft.Windows.CsWinRT.0.1.0-prerelease.200512.7\build\Microsoft.Windows.CsWinRT.targets" Condition="Exists('..\..\packages\Microsoft.Windows.CsWinRT.0.1.0-prerelease.200512.7\build\Microsoft.Windows.CsWinRT.targets')" />
 </Project>
