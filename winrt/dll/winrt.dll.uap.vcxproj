@@ -11,6 +11,7 @@
     <ApplicationType>Windows Store</ApplicationType>
     <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <DeviceType>WinUI</DeviceType>
     <ItemsRootNamespace>Microsoft.Graphics.Canvas</ItemsRootNamespace>
     <TargetName>$(ItemsRootNamespace)</TargetName>
   </PropertyGroup>

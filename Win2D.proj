@@ -173,7 +173,7 @@
            platform independent name that will be the same for Windows, Phone and UAP project variants -->
       <ProjectsToBuild Include="@(ProjectsPerConfig)">
         <AdditionalProperties>Platform=%(ProjectsPerConfig.Platform);Configuration=%(ProjectsPerConfig.Configuration)</AdditionalProperties>
-        <PlatformIndependentName>$([System.String]::new('%(ProjectsPerConfig.Filename)').Replace('Windows', '').Replace('Phone', '').Replace('uap', '').TrimEnd('.'))</PlatformIndependentName>
+        <PlatformIndependentName>$([System.String]::new('%(ProjectsPerConfig.Filename)').Replace('Windows', '').Replace('Phone', '').Replace('uap', '').Replace('winui', '').TrimEnd('.'))</PlatformIndependentName>
         <BuildInParallel Condition="'%(ProjectsPerConfig.BuildInParallel)' == ''">true</BuildInParallel>
       </ProjectsToBuild>
     </ItemGroup>

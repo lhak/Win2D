@@ -4,12 +4,13 @@
 		<TargetFramework>net5.0</TargetFramework>
 		<EnableDefaultItems>false</EnableDefaultItems>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<DeviceType>WinUI</DeviceType>
 		<CsWinrtExe Condition="'$(CsWinrtPath)'!=''">$(CsWinrtPath)cswinrt.exe</CsWinrtExe>
 		<NoWarn>1701;1702;0108</NoWarn>
 	</PropertyGroup>
 	<Import Project="..\..\build\Win2D.cs.props" />
 	<PropertyGroup>
-		<MergedWinmdDirectory>$(MSBuildThisFileDirectory)..\..\bin\uapx86\$(Configuration)\MergedWinMD</MergedWinmdDirectory>
+		<MergedWinmdDirectory>$(MSBuildThisFileDirectory)..\..\bin\winuix86\$(Configuration)\MergedWinMD</MergedWinmdDirectory>
 		<AssemblyName>Microsoft.Graphics.Canvas.interop</AssemblyName>
 		<RootNamespace>Microsoft.Graphics.Canvas</RootNamespace>
 	</PropertyGroup>
