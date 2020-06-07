@@ -152,7 +152,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
             ThrowIfFailed(GetActivationFactory(HStringReference(RuntimeClass_Microsoft_UI_Xaml_Automation_AutomationProperties).Get(), &automationProperties));
 #else
             using namespace ::ABI::Windows::UI::Xaml::Automation;
-            ComPtr<IAutomationPropertiesStatics> automationProperties;
+            ComPtr<IAutomationPropertiesStatics2> automationProperties;
             ThrowIfFailed(GetActivationFactory(HStringReference(RuntimeClass_Windows_UI_Xaml_Automation_AutomationProperties).Get(), &automationProperties));
 #endif
 
