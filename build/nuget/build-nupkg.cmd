@@ -57,7 +57,7 @@ SET NUGET_ARGS=^
     -version %VERSION% ^
     -properties bin=%BIN%;LicenseUrl=%LICENSE_URL%;RequireLicenseAcceptance=%REQUIRE_LICENSE_ACCEPTANCE%
 
-nuget pack Win2D.uwp.nuspec %NUGET_ARGS%
+nuget pack Win2D.winui.nuspec %NUGET_ARGS%
 
 :END
 
