@@ -7,7 +7,11 @@
 using namespace ABI::Windows::Foundation;
 using namespace ABI::Windows::System::Threading;
 using namespace ABI::Windows::UI::Core;
+#ifdef WINUI
 using namespace ABI::Microsoft::UI::Xaml::Controls;
+#else
+using namespace ABI::Windows::UI::Xaml::Controls;
+#endif
 using namespace Microsoft::WRL;
 
 class IGameLoopThread

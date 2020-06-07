@@ -25,6 +25,7 @@
   <ItemDefinitionGroup>
     <Midl>
       <AdditionalIncludeDirectories>..\..\Numerics\WinRT;directx;..\..\winui</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(DeviceType)' == 'WinUI'">WINUI</PreprocessorDefinitions>
     </Midl>
     <ClCompile>
       <CompileAsWinRT>false</CompileAsWinRT>

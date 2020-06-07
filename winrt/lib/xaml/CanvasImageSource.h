@@ -6,9 +6,14 @@
 
 namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { namespace UI { namespace Xaml
 {
-    using namespace ABI::Microsoft::UI;
     using namespace ABI::Windows::Foundation;
+#ifdef WINUI
+    using namespace ABI::Microsoft::UI;
     using namespace ABI::Microsoft::UI::Xaml::Media::Imaging;
+#else
+    using namespace ABI::Windows::UI;
+    using namespace ABI::Windows::UI::Xaml::Media::Imaging;
+#endif
     using namespace ::Microsoft::WRL;
 
     class ICanvasImageSourceDrawingSessionFactory

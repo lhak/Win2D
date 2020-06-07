@@ -10,7 +10,11 @@
 using namespace ABI::Microsoft::Graphics::Canvas::Brushes;
 using namespace ABI::Microsoft::Graphics::Canvas::Numerics;
 using namespace ABI::Microsoft::Graphics::Canvas;
+#ifdef WINUI
 using namespace ABI::Microsoft::UI;
+#else
+using namespace ABI::Windows::UI;
+#endif
 
 ComPtr<CanvasRadialGradientBrush> CanvasRadialGradientBrush::CreateNew(
     ICanvasResourceCreator* resourceCreator,

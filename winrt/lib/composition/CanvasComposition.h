@@ -4,7 +4,7 @@
 
 #pragma once
 
-#if WINUI_TODO
+#ifndef WINUI
 #if WINVER > _WIN32_WINNT_WINBLUE
 
 namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { namespace UI { namespace Composition

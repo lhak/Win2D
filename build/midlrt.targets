@@ -32,7 +32,7 @@
         <ProxyFileName>$(IntDir)%(Filename)_p.c</ProxyFileName>
         <InterfaceIdentifierFileName>$(IntDir)%(Filename)_i.c</InterfaceIdentifierFileName>
         <MinimumTargetSystem>NT62</MinimumTargetSystem>
-      </Midl>
+	  </Midl>
     </ItemGroup>
   </Target>
 </Project>

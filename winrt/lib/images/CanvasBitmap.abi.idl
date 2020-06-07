@@ -385,7 +385,11 @@ namespace Microsoft.Graphics.Canvas
     };
 
     [STANDARD_ATTRIBUTES, composable(ICanvasBitmapFactory, public, VERSION), static(ICanvasBitmapStatics, VERSION)]
+#ifdef WINUI
     runtimeclass CanvasBitmap
+#else
+    runtimeclass CanvasBitmap : Windows.UI.Xaml.DependencyObject
+#endif
     {
         [default] interface ICanvasBitmap;
     }

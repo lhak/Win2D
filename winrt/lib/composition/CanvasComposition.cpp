@@ -4,7 +4,7 @@
 
 #include "pch.h"
 
-#if WINUI_TODO
+#ifndef WINUI
 #if WINVER > _WIN32_WINNT_WINBLUE
 
 #include "CanvasComposition.h"

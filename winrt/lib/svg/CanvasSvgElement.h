@@ -10,7 +10,11 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
 {
     using namespace ABI::Microsoft::Graphics::Canvas;
     using namespace ABI::Microsoft::Graphics::Canvas::Geometry;
+#ifdef WINUI
     using namespace ABI::Microsoft::UI;
+#else
+    using namespace ABI::Windows::UI;
+#endif
     using namespace ABI::Windows::Foundation::Numerics;
     using namespace ABI::Windows::Foundation;
     

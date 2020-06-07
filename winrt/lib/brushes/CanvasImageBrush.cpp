@@ -8,7 +8,11 @@
 
 using namespace ABI::Microsoft::Graphics::Canvas;
 using namespace ABI::Microsoft::Graphics::Canvas::Brushes;
+#ifdef WINUI
 using namespace ABI::Microsoft::UI;
+#else
+using namespace ABI::Windows::UI;
+#endif
 using namespace ABI::Windows::Foundation;
 using namespace Microsoft::WRL::Wrappers;
 

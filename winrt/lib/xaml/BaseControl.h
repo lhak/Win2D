@@ -13,9 +13,15 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
     using namespace ABI::Windows::ApplicationModel;
     using namespace ABI::Windows::Graphics::Display;
     using namespace ABI::Windows::UI::Core;
+#ifdef WINUI
     using namespace ABI::Microsoft::UI::Xaml::Controls;
     using namespace ABI::Microsoft::UI::Xaml;
     using namespace ABI::Microsoft::UI;
+#else
+    using namespace ABI::Windows::UI::Xaml::Controls;
+    using namespace ABI::Windows::UI::Xaml;
+    using namespace ABI::Windows::UI;
+#endif
     using namespace WinRTDirectX;
 
     //
@@ -24,8 +30,9 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
 
     typedef ITypedEventHandler<DisplayInformation*, IInspectable*> DpiChangedEventHandler;
     typedef ITypedEventHandler<XamlRoot*, XamlRootChangedEventArgs*> XamlRootChangedEventHandler;
-    //typedef ITypedEventHandler<Window*, WindowVisibilityChangedEventArgs*> WindowVisibilityChangedEventHandler;
-
+#ifndef WINUI
+    typedef ITypedEventHandler<Window*, WindowVisibilityChangedEventArgs*> WindowVisibilityChangedEventHandler;
+#endif
 
     template<typename TRAITS>
     class IBaseControlAdapter
@@ -42,8 +49,9 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
         virtual float GetLogicalDpi() = 0;
 
         virtual RegisteredEvent AddDpiChangedCallback(DpiChangedEventHandler* handler) = 0;
-
-        //virtual RegisteredEvent AddVisibilityChangedCallback(WindowVisibilityChangedEventHandler* handler, IWindow* window) = 0;
+#ifndef WINUI
+        virtual RegisteredEvent AddVisibilityChangedCallback(IWindowVisibilityChangedEventHandler * handler, IWindow * window) = 0;
+#endif
 
         virtual RegisteredEvent AddXamlRootChangedCallback(XamlRootChangedEventHandler* handler, IXamlRoot* xamlRoot) = 0;
 
@@ -63,7 +71,9 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
         CB_HELPER(AddApplicationSuspendingCallback, IEventHandler<SuspendingEventArgs*>);
         CB_HELPER(AddApplicationResumingCallback, IEventHandler<IInspectable*>);
         CB_HELPER(AddDpiChangedCallback, DpiChangedEventHandler);
-        //CB_HELPER(AddVisibilityChangedCallback, WindowVisibilityChangedEventHandler);
+#ifndef WINUI
+        CB_HELPER(AddVisibilityChangedCallback, IWindowVisibilityChangedEventHandler);
+#endif
         CB_HELPER(AddXamlRootChangedCallback, XamlRootChangedEventHandler);
 
 #undef CB_HELPER
@@ -124,7 +134,9 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
         RegisteredEvent m_applicationSuspendingEventRegistration;
         RegisteredEvent m_applicationResumingEventRegistration;
         RegisteredEvent m_dpiChangedEventRegistration;
-       // RegisteredEvent m_windowVisibilityChangedEventRegistration;
+#ifndef WINUI
+        RegisteredEvent m_windowVisibilityChangedEventRegistration;
+#endif
         RegisteredEvent m_xamlRootChangedEventRegistration;
         RegisteredEvent m_deviceLostEventRegistration;
 
@@ -769,7 +781,11 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
                 &BaseControl::OnApplicationResuming);
 
             auto frameworkElement = As<IFrameworkElement>(GetControl());
+#ifdef WINUI
             if (auto elementAsUIE10 = MaybeAs<IUIElement>(frameworkElement))
+#else
+            if (auto elementAsUIE10 = MaybeAs<IUIElement10>(frameworkElement))
+#endif
             {
                 ThrowIfFailed(elementAsUIE10->get_XamlRoot(&m_xamlRoot));
             }
@@ -787,11 +803,12 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
             else
             {
                 m_dpiChangedEventRegistration = m_adapter->AddDpiChangedCallback(this, &BaseControl::OnDpiChanged);
-
-               /* m_windowVisibilityChangedEventRegistration = m_adapter->AddVisibilityChangedCallback(
+#ifndef WINUI
+                m_windowVisibilityChangedEventRegistration = m_adapter->AddVisibilityChangedCallback(
                     this,
                     &BaseControl::OnWindowVisibilityChanged,
-                    GetWindow());*/
+                    GetWindow());
+#endif
             }
 
             // Check if the DPI changed while we weren't listening for events.
@@ -803,7 +820,9 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
             m_applicationSuspendingEventRegistration.Release();
             m_applicationResumingEventRegistration.Release();
             m_dpiChangedEventRegistration.Release();
-           // m_windowVisibilityChangedEventRegistration.Release();
+#ifndef WINUI
+            m_windowVisibilityChangedEventRegistration.Release();
+#endif
             m_xamlRootChangedEventRegistration.Release();
             m_deviceLostEventRegistration.Release();
         }

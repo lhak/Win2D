@@ -207,7 +207,11 @@ namespace Microsoft.Graphics.Canvas.UI.Xaml
     }
 
     [version(VERSION), activatable(VERSION), marshaling_behavior(agile), threading(both)]
+#ifdef WINUI
     runtimeclass CanvasControl : Microsoft.UI.Xaml.Controls.UserControl
+#else
+    runtimeclass CanvasControl : Windows.UI.Xaml.Controls.UserControl
+#endif
     {
         [default] interface ICanvasControl;
     }

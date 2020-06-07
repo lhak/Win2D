@@ -79,7 +79,11 @@ public:
         ComPtr<IActivationFactory> rectangleFactory;
 
         ThrowIfFailed(GetActivationFactory(
+#ifdef WINUI
             HStringReference(RuntimeClass_Microsoft_UI_Xaml_Shapes_Rectangle).Get(),
+#else
+            HStringReference(RuntimeClass_Windows_UI_Xaml_Shapes_Rectangle).Get(),
+#endif
             &rectangleFactory));
         
         ComPtr<IInspectable> rectangleInspectable;
@@ -87,7 +91,11 @@ public:
 
         ComPtr<IActivationFactory> brushFactory;
         ThrowIfFailed(GetActivationFactory(
+#ifdef WINUI
             HStringReference(RuntimeClass_Microsoft_UI_Xaml_Media_SolidColorBrush).Get(),
+#else
+            HStringReference(RuntimeClass_Windows_UI_Xaml_Media_SolidColorBrush).Get(),
+#endif
             &brushFactory));
 
         ComPtr<IInspectable> brushInspectable;

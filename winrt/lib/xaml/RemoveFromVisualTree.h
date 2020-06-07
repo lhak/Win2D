@@ -6,8 +6,13 @@
 
 namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { namespace UI { namespace Xaml
 {
+#ifdef WINUI
     using namespace ABI::Microsoft::UI::Xaml;
     using namespace ABI::Microsoft::UI::Xaml::Controls;
+#else
+    using namespace ABI::Windows::UI::Xaml;
+    using namespace ABI::Windows::UI::Xaml::Controls;
+#endif
 
     //
     // Removes the given element from a parent.  This needs to inspect the

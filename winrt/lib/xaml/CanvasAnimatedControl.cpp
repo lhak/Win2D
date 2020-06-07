@@ -437,13 +437,12 @@ IFACEMETHODIMP CanvasAnimatedControl::CreateCoreIndependentInputSource(
                 // we don't support CreateCoreIndependentInputSource.
                 ThrowHR(E_NOTIMPL);
             }
-#if WINUI_TODO
+#ifdef WINUI
+            *returnValue = NULL;
+#else
             auto swapChainPanel = As<ISwapChainPanel>(m_canvasSwapChainPanel);
             ThrowIfFailed(swapChainPanel->CreateCoreIndependentInputSource(deviceTypes, returnValue));
 #endif
-
-            *returnValue = NULL;
-
         });
 }
 

@@ -13,8 +13,13 @@ using namespace ABI::Microsoft::Graphics::Canvas;
 using namespace ABI::Windows::ApplicationModel::Core;
 using namespace ABI::Windows::ApplicationModel;
 using namespace ABI::Windows::Graphics::Display;
+#ifdef WINUI
 using namespace ABI::Microsoft::UI::Xaml::Media;
 using namespace ABI::Microsoft::UI::Xaml;
+#else
+using namespace ABI::Windows::UI::Xaml::Media;
+using namespace ABI::Windows::UI::Xaml;
+#endif
 
 IFACEMETHODIMP CanvasDrawEventArgsFactory::Create(
     ICanvasDrawingSession* drawingSession,

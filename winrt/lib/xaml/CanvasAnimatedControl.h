@@ -14,9 +14,15 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
 {
     using namespace ABI::Windows::ApplicationModel;
     using namespace ABI::Windows::UI::Core;
+#ifdef WINUI
     using namespace ABI::Microsoft::UI::Xaml::Controls;
     using namespace ABI::Microsoft::UI::Xaml::Shapes;
     using namespace ABI::Microsoft::UI::Xaml;
+#else
+    using namespace ABI::Windows::UI::Xaml::Controls;
+    using namespace ABI::Windows::UI::Xaml::Shapes;
+    using namespace ABI::Windows::UI::Xaml;
+#endif
     using namespace ABI::Windows::Foundation;
     using namespace ABI::Windows::System::Threading;
 

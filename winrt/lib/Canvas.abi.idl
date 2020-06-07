@@ -4,11 +4,17 @@
 
 import "inspectable.idl";
 import "Windows.Foundation.idl";
+#ifdef WINUI
 import "Microsoft.UI.idl";
 import "Microsoft.UI.Xaml.Media.Imaging.idl";
+import "Microsoft.UI.Composition.idl";
+#else
+import "Windows.UI.idl";
+import "Windows.UI.Xaml.Media.Imaging.idl";
+import "Windows.UI.Composition.idl";
+#endif
 import "Windows.Graphics.Printing.idl";
 import "Windows.UI.Input.Inking.idl";
-import "Microsoft.UI.Composition.idl";
 
 #include <sdkddkver.h>
 

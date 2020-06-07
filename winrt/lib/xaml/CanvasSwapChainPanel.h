@@ -8,7 +8,11 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
 {
     using namespace ABI::Windows::Foundation;
     using namespace ::Microsoft::WRL;
+#ifdef WINUI
     using namespace ABI::Microsoft::UI::Xaml::Controls;
+#else
+    using namespace ABI::Windows::UI::Xaml::Controls;
+#endif
 
     class ICanvasSwapChainPanelAdapter
     {

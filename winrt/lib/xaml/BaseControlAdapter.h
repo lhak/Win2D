@@ -9,9 +9,15 @@
 namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { namespace UI { namespace Xaml
 {
     using namespace ABI::Windows::ApplicationModel::Core;
+#ifdef WINUI
     using namespace ABI::Microsoft::UI::Xaml::Controls;
     using namespace ABI::Microsoft::UI::Xaml::Media;
     using namespace ABI::Microsoft::UI::Xaml;
+#else
+    using namespace ABI::Windows::UI::Xaml::Controls;
+    using namespace ABI::Windows::UI::Xaml::Media;
+    using namespace ABI::Windows::UI::Xaml;
+#endif
 
     template<typename TRAITS>
     class BaseControlAdapter : public TRAITS::adapter_t,
@@ -38,7 +44,11 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
             auto& module = Module<InProc>::GetModule();
 
             ThrowIfFailed(GetActivationFactory(
+#ifdef WINUI
                 HStringReference(RuntimeClass_Microsoft_UI_Xaml_Controls_UserControl).Get(),
+#else
+                HStringReference(RuntimeClass_Windows_UI_Xaml_Controls_UserControl).Get(),
+#endif
                 &m_userControlFactory));
 
             ThrowIfFailed(module.GetActivationFactory(
@@ -50,7 +60,11 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
                 &m_displayInformationStatics));
 
             ThrowIfFailed(GetActivationFactory(
+#ifdef WINUI
                 HStringReference(RuntimeClass_Microsoft_UI_Xaml_Window).Get(),
+#else
+                HStringReference(RuntimeClass_Windows_UI_Xaml_Window).Get(),
+#endif
                 &m_windowStatics));
 
             ThrowIfFailed(GetActivationFactory(
@@ -125,7 +139,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
                 &IDisplayInformation::remove_DpiChanged,
                 handler);
         }
-#if 0
+#ifndef WINUI
         virtual RegisteredEvent AddVisibilityChangedCallback(WindowVisibilityChangedEventHandler* handler, IWindow* window)
         {
             // Don't register for the visiblity changed event if we're in design

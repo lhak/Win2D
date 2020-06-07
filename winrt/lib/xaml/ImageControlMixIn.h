@@ -6,7 +6,11 @@
 
 namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { namespace UI { namespace Xaml
 {
+#ifdef WINUI
     using namespace ABI::Microsoft::UI::Xaml::Media;
+#else
+    using namespace ABI::Windows::UI::Xaml::Media;
+#endif
 
     class IImageControlMixInAdapter
     {
@@ -18,7 +22,11 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
 
     
     class ImageControlMixIn
+#ifdef WINUI
         : public Implements<ABI::Microsoft::UI::Xaml::IFrameworkElementOverrides>
+#else
+        : public Implements<ABI::Windows::UI::Xaml::IFrameworkElementOverrides>
+#endif
     {
         RegisteredEvent m_surfaceContentsLostEventRegistration;
 
@@ -44,7 +52,9 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
 
         IFACEMETHODIMP OnApplyTemplate() override;
 
+#ifdef WINUI
         IFACEMETHODIMP GoToElementStateCore(HSTRING stateName, ::boolean useTransitions, ::boolean* result) override;
+#endif
 
     protected:
         template<typename CONTROL>
@@ -62,7 +72,11 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
     template<typename CONTROL>
     inline void ImageControlMixIn::RegisterEventHandlers(IImageControlMixInAdapter* adapter)
     {
+#ifdef WINUI
         using namespace ABI::Microsoft::UI::Xaml::Controls;
+#else
+        using namespace ABI::Windows::UI::Xaml::Controls;
+#endif
         using namespace Windows::Foundation;
 
         auto callback = Callback<IEventHandler<IInspectable*>>(this, &ImageControlMixIn::OnSurfaceContentsLost<CONTROL>);
@@ -92,11 +106,19 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
         ImageControlMixInAdapter()
         {
             ThrowIfFailed(GetActivationFactory(
+#ifdef WINUI
                 HStringReference(RuntimeClass_Microsoft_UI_Xaml_Controls_Image).Get(),
+#else
+                HStringReference(RuntimeClass_Windows_UI_Xaml_Controls_Image).Get(),
+#endif
                 &m_imageControlFactory));
 
             ThrowIfFailed(GetActivationFactory(
+#ifdef WINUI
                 HStringReference(RuntimeClass_Microsoft_UI_Xaml_Media_CompositionTarget).Get(),
+#else
+                HStringReference(RuntimeClass_Windows_UI_Xaml_Media_CompositionTarget).Get(),
+#endif
                &m_compositionTargetStatics));            
         }
 
@@ -124,9 +146,15 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
 
         virtual void DisableAccessibilityView(IImage* imageControl) override
         {
+#ifdef WINUI
             using namespace ::ABI::Microsoft::UI::Xaml::Automation;
             ComPtr<IAutomationPropertiesStatics> automationProperties;
             ThrowIfFailed(GetActivationFactory(HStringReference(RuntimeClass_Microsoft_UI_Xaml_Automation_AutomationProperties).Get(), &automationProperties));
+#else
+            using namespace ::ABI::Windows::UI::Xaml::Automation;
+            ComPtr<IAutomationPropertiesStatics> automationProperties;
+            ThrowIfFailed(GetActivationFactory(HStringReference(RuntimeClass_Windows_UI_Xaml_Automation_AutomationProperties).Get(), &automationProperties));
+#endif
 
             automationProperties->SetAccessibilityView(As<IDependencyObject>(imageControl).Get(), Peers::AccessibilityView::AccessibilityView_Raw);
         }

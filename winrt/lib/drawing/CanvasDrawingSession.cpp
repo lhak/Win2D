@@ -18,7 +18,11 @@
 namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas
 {
     using namespace ABI::Windows::Foundation;
+#ifdef WINUI
     using namespace ABI::Microsoft::UI;
+#else
+    using namespace ABI::Windows::UI;
+#endif
 
     ComPtr<ID2D1StrokeStyle1> ToD2DStrokeStyle(ICanvasStrokeStyle* strokeStyle, ID2D1DeviceContext* deviceContext)
     {

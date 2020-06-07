@@ -10,7 +10,11 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas
     using namespace ABI::Microsoft::Graphics::Canvas::Numerics;
     using namespace ABI::Windows::Foundation;
     using namespace ABI::Windows::UI::Core;
+#ifdef WINUI
     using namespace ABI::Microsoft::UI;
+#else
+    using namespace ABI::Windows::UI;
+#endif
     using namespace WinRTDirectX;
 
     class CanvasSwapChainFactory

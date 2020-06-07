@@ -6,7 +6,11 @@
 
 namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { namespace UI { namespace Xaml
 {
+#ifdef WINUI
     using namespace ABI::Microsoft::UI::Xaml::Media::Imaging;
+#else
+    using namespace ABI::Windows::UI::Xaml::Media::Imaging;
+#endif
 
     class CanvasImageSourceDrawingSessionAdapter : public ICanvasDrawingSessionAdapter,
                                                    private LifespanTracker<CanvasImageSourceDrawingSessionAdapter>
