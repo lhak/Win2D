@@ -30,9 +30,6 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
 
     typedef ITypedEventHandler<DisplayInformation*, IInspectable*> DpiChangedEventHandler;
     typedef ITypedEventHandler<XamlRoot*, XamlRootChangedEventArgs*> XamlRootChangedEventHandler;
-#ifndef WINUI
-    typedef ITypedEventHandler<Window*, WindowVisibilityChangedEventArgs*> WindowVisibilityChangedEventHandler;
-#endif
 
     template<typename TRAITS>
     class IBaseControlAdapter
@@ -50,7 +47,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
 
         virtual RegisteredEvent AddDpiChangedCallback(DpiChangedEventHandler* handler) = 0;
 #ifndef WINUI
-        virtual RegisteredEvent AddVisibilityChangedCallback(IWindowVisibilityChangedEventHandler * handler, IWindow * window) = 0;
+        virtual RegisteredEvent AddVisibilityChangedCallback(IWindowVisibilityChangedEventHandler* handler, IWindow * window) = 0;
 #endif
 
         virtual RegisteredEvent AddXamlRootChangedCallback(XamlRootChangedEventHandler* handler, IXamlRoot* xamlRoot) = 0;
@@ -1007,7 +1004,8 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
                 });
         }
 
-       /* HRESULT OnWindowVisibilityChanged(IInspectable*, IVisibilityChangedEventArgs* args)
+#ifndef WINUI
+        HRESULT OnWindowVisibilityChanged(IInspectable*, IVisibilityChangedEventArgs* args)
         {
             return ExceptionBoundary(
                 [&]
@@ -1021,7 +1019,8 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
                     
                     WindowVisibilityChanged();
                 });
-        }*/
+        }
+#endif
 
         HRESULT OnXamlRootChanged(IXamlRoot*, IXamlRootChangedEventArgs*)
         {

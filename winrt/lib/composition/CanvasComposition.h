@@ -9,7 +9,7 @@
 
 namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { namespace UI { namespace Composition
 {
-    using namespace ABI::Microsoft::UI::Composition;
+    using namespace ABI::Windows::UI::Composition;
 
     class CanvasCompositionStatics : public AgileActivationFactory<ICanvasCompositionStatics>
     {

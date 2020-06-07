@@ -140,7 +140,7 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
                 handler);
         }
 #ifndef WINUI
-        virtual RegisteredEvent AddVisibilityChangedCallback(WindowVisibilityChangedEventHandler* handler, IWindow* window)
+        virtual RegisteredEvent AddVisibilityChangedCallback(IWindowVisibilityChangedEventHandler* handler, IWindow* window)
         {
             // Don't register for the visiblity changed event if we're in design
             // mode.  Although we have been given a valid IWindow, we'll crash

@@ -12,7 +12,7 @@
 #include "../utils/ApiInformationAdapter.h"
 
 using namespace ABI::Microsoft::Graphics::Canvas::UI::Composition;
-using namespace ABI::Microsoft::UI::Composition;
+using namespace ABI::Windows::UI::Composition;
 
 
 ActivatableStaticOnlyFactory(CanvasCompositionStatics);
