@@ -9,6 +9,7 @@ import "windowscontracts.idl";
 import "Windows.Foundation.idl";
 import "Microsoft.UI.Composition.idl";
 import "Microsoft.UI.Private.Controls.idl";
+import "Microsoft.UI.Text.idl";
 import "Microsoft.UI.Xaml.idl";
 import "Microsoft.UI.Xaml.Controls.Primitives.idl";
 import "Microsoft.UI.Xaml.Data.idl";
@@ -65,6 +66,16 @@ namespace Microsoft
             {
                 interface IRefreshInfoProvider;
             }
+        }
+    }
+}
+namespace Microsoft
+{
+    namespace UI
+    {
+        namespace Text
+        {
+            runtimeclass RichEditTextDocument;
         }
     }
 }
@@ -619,8 +630,6 @@ namespace Windows
             typedef enum FontStyle FontStyle;
 
             typedef struct FontWeight FontWeight;
-
-            runtimeclass RichEditTextDocument;
 
             typedef enum TextDecorations TextDecorations;
         }
@@ -1518,11 +1527,7 @@ namespace Microsoft
 
                 interface INavigationViewBackRequestedEventArgs;
 
-                interface INavigationViewCollapsedEventArgs;
-
                 interface INavigationViewDisplayModeChangedEventArgs;
-
-                interface INavigationViewExpandingEventArgs;
 
                 interface INavigationViewFactory;
 
@@ -1533,6 +1538,10 @@ namespace Microsoft
                 interface INavigationViewItemBaseFactory;
 
                 interface INavigationViewItemBaseStatics;
+
+                interface INavigationViewItemCollapsedEventArgs;
+
+                interface INavigationViewItemExpandingEventArgs;
 
                 interface INavigationViewItemFactory;
 
@@ -2026,6 +2035,8 @@ namespace Microsoft
 
                 interface IToggleSplitButtonIsCheckedChangedEventArgs;
 
+                interface IToggleSplitButtonStatics;
+
                 interface IToggleSwitch;
 
                 interface IToggleSwitchOverrides;
@@ -2077,6 +2088,8 @@ namespace Microsoft
                 interface ITreeViewNodeFactory;
 
                 interface ITreeViewNodeStatics;
+
+                interface ITreeViewSelectionChangedEventArgs;
 
                 interface ITreeViewStatics;
 
@@ -2458,15 +2471,15 @@ namespace Microsoft
 
                 runtimeclass NavigationViewBackRequestedEventArgs;
 
-                runtimeclass NavigationViewCollapsedEventArgs;
-
                 runtimeclass NavigationViewDisplayModeChangedEventArgs;
-
-                runtimeclass NavigationViewExpandingEventArgs;
 
                 runtimeclass NavigationViewItem;
 
                 runtimeclass NavigationViewItemBase;
+
+                runtimeclass NavigationViewItemCollapsedEventArgs;
+
+                runtimeclass NavigationViewItemExpandingEventArgs;
 
                 runtimeclass NavigationViewItemHeader;
 
@@ -2732,6 +2745,8 @@ namespace Microsoft
 
                 runtimeclass TreeViewNode;
 
+                runtimeclass TreeViewSelectionChangedEventArgs;
+
                 runtimeclass TwoPaneView;
 
                 runtimeclass UIElementCollection;
@@ -2955,11 +2970,11 @@ namespace Microsoft
 
                     interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.NavigationView*, Microsoft.UI.Xaml.Controls.NavigationViewBackRequestedEventArgs*>;
 
-                    interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.NavigationView*, Microsoft.UI.Xaml.Controls.NavigationViewCollapsedEventArgs*>;
-
                     interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.NavigationView*, Microsoft.UI.Xaml.Controls.NavigationViewDisplayModeChangedEventArgs*>;
 
-                    interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.NavigationView*, Microsoft.UI.Xaml.Controls.NavigationViewExpandingEventArgs*>;
+                    interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.NavigationView*, Microsoft.UI.Xaml.Controls.NavigationViewItemCollapsedEventArgs*>;
+
+                    interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.NavigationView*, Microsoft.UI.Xaml.Controls.NavigationViewItemExpandingEventArgs*>;
 
                     interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.NavigationView*, Microsoft.UI.Xaml.Controls.NavigationViewItemInvokedEventArgs*>;
 
@@ -3092,6 +3107,8 @@ namespace Microsoft
                     interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.TreeView*, Microsoft.UI.Xaml.Controls.TreeViewExpandingEventArgs*>;
 
                     interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.TreeView*, Microsoft.UI.Xaml.Controls.TreeViewItemInvokedEventArgs*>;
+
+                    interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.TreeView*, Microsoft.UI.Xaml.Controls.TreeViewSelectionChangedEventArgs*>;
 
                     interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.TwoPaneView*, IInspectable*>;
 
@@ -3914,9 +3931,9 @@ namespace Microsoft
                 [version(0x00000001)]
                 enum TabViewCloseButtonOverlayMode
                 {
-                    Auto    = 0,
-                    OnHover = 1,
-                    Always  = 2
+                    Auto          = 0,
+                    OnPointerOver = 1,
+                    Always        = 2
                 };
 
                 [version(0x00000001)]
@@ -7381,7 +7398,7 @@ namespace Microsoft
                 }
 
                 [exclusiveto(Microsoft.UI.Xaml.Controls.ItemsSourceView)]
-                [uuid(2A93EE62-06EE-5E27-9A50-367909C13561)]
+                [uuid(F7F802DE-E79C-5C5F-ABF8-CCBD486B89D6)]
                 [version(0x00000001)]
                 interface IItemsSourceView : IInspectable
                 {
@@ -7390,6 +7407,7 @@ namespace Microsoft
                     [propget] HRESULT HasKeyIndexMapping([out] [retval] boolean* value);
                     HRESULT KeyFromIndex([in] INT32 index, [out] [retval] HSTRING* result);
                     HRESULT IndexFromKey([in] HSTRING key, [out] [retval] INT32* result);
+                    HRESULT IndexOf([in] IInspectable* item, [out] [retval] INT32* result);
                 }
 
                 [exclusiveto(Microsoft.UI.Xaml.Controls.ItemsSourceView)]
@@ -8483,7 +8501,7 @@ namespace Microsoft
                 }
 
                 [exclusiveto(Microsoft.UI.Xaml.Controls.NavigationView)]
-                [uuid(37B64CE8-B23D-5DB7-A3E8-DDE6E5D5564D)]
+                [uuid(BB7B0624-B57D-59D8-95E4-147243C3BDC5)]
                 [version(0x00000001)]
                 interface INavigationView : IInspectable
                 {
@@ -8571,9 +8589,9 @@ namespace Microsoft
                     [propput] HRESULT OverflowLabelMode([in] Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode value);
                     [propget] HRESULT IsTitleBarAutoPaddingEnabled([out] [retval] boolean* value);
                     [propput] HRESULT IsTitleBarAutoPaddingEnabled([in] boolean value);
-                    [eventadd] HRESULT Expanding([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.NavigationView*, Microsoft.UI.Xaml.Controls.NavigationViewExpandingEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
+                    [eventadd] HRESULT Expanding([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.NavigationView*, Microsoft.UI.Xaml.Controls.NavigationViewItemExpandingEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
                     [eventremove] HRESULT Expanding([in] EventRegistrationToken token);
-                    [eventadd] HRESULT Collapsed([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.NavigationView*, Microsoft.UI.Xaml.Controls.NavigationViewCollapsedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
+                    [eventadd] HRESULT Collapsed([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.NavigationView*, Microsoft.UI.Xaml.Controls.NavigationViewItemCollapsedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
                     [eventremove] HRESULT Collapsed([in] EventRegistrationToken token);
                     HRESULT Expand([in] Microsoft.UI.Xaml.Controls.NavigationViewItem* item);
                     HRESULT Collapse([in] Microsoft.UI.Xaml.Controls.NavigationViewItem* item);
@@ -8586,28 +8604,12 @@ namespace Microsoft
                 {
                 }
 
-                [exclusiveto(Microsoft.UI.Xaml.Controls.NavigationViewCollapsedEventArgs)]
-                [uuid(4D1C7BD0-6DF4-56C6-B27F-487AC3735412)]
-                [version(0x00000001)]
-                interface INavigationViewCollapsedEventArgs : IInspectable
-                {
-                    [propget] HRESULT CollapsedItemContainer([out] [retval] Microsoft.UI.Xaml.Controls.NavigationViewItemBase** value);
-                }
-
                 [exclusiveto(Microsoft.UI.Xaml.Controls.NavigationViewDisplayModeChangedEventArgs)]
                 [uuid(58DCF1EA-9E56-522C-B3F8-34BD55ECACA4)]
                 [version(0x00000001)]
                 interface INavigationViewDisplayModeChangedEventArgs : IInspectable
                 {
                     [propget] HRESULT DisplayMode([out] [retval] Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode* value);
-                }
-
-                [exclusiveto(Microsoft.UI.Xaml.Controls.NavigationViewExpandingEventArgs)]
-                [uuid(ACCC85C1-284A-547D-B89F-1C383AA979EC)]
-                [version(0x00000001)]
-                interface INavigationViewExpandingEventArgs : IInspectable
-                {
-                    [propget] HRESULT ExpandingItemContainer([out] [retval] Microsoft.UI.Xaml.Controls.NavigationViewItemBase** value);
                 }
 
                 [exclusiveto(Microsoft.UI.Xaml.Controls.NavigationView)]
@@ -8661,6 +8663,24 @@ namespace Microsoft
                 interface INavigationViewItemBaseStatics : IInspectable
                 {
                     [propget] HRESULT IsSelectedProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                }
+
+                [exclusiveto(Microsoft.UI.Xaml.Controls.NavigationViewItemCollapsedEventArgs)]
+                [uuid(B546F6A1-C66F-5DED-B5D7-BED0A26197E3)]
+                [version(0x00000001)]
+                interface INavigationViewItemCollapsedEventArgs : IInspectable
+                {
+                    [propget] HRESULT CollapsedItemContainer([out] [retval] Microsoft.UI.Xaml.Controls.NavigationViewItemBase** value);
+                    [propget] HRESULT CollapsedItem([out] [retval] IInspectable** value);
+                }
+
+                [exclusiveto(Microsoft.UI.Xaml.Controls.NavigationViewItemExpandingEventArgs)]
+                [uuid(6F0941BE-E991-52F8-8315-F08389497976)]
+                [version(0x00000001)]
+                interface INavigationViewItemExpandingEventArgs : IInspectable
+                {
+                    [propget] HRESULT ExpandingItemContainer([out] [retval] Microsoft.UI.Xaml.Controls.NavigationViewItemBase** value);
+                    [propget] HRESULT ExpandingItem([out] [retval] IInspectable** value);
                 }
 
                 [exclusiveto(Microsoft.UI.Xaml.Controls.NavigationViewItem)]
@@ -9994,7 +10014,7 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.RichEditBox)]
-                [uuid(2036366A-A1B3-5954-8BD6-89F86DAA9E09)]
+                [uuid(699163DB-723D-5514-A8C9-2C64D99E1EA6)]
                 interface IRichEditBox : IInspectable
                 {
                     [propget] HRESULT IsReadOnly([out] [retval] boolean* value);
@@ -10009,7 +10029,7 @@ namespace Microsoft
                     [propput] HRESULT IsSpellCheckEnabled([in] boolean value);
                     [propget] HRESULT IsTextPredictionEnabled([out] [retval] boolean* value);
                     [propput] HRESULT IsTextPredictionEnabled([in] boolean value);
-                    [propget] HRESULT Document([out] [retval] Windows.UI.Text.RichEditTextDocument** value);
+                    [propget] HRESULT Document([out] [retval] Microsoft.UI.Text.RichEditTextDocument** value);
                     [propget] HRESULT InputScope([out] [retval] Microsoft.UI.Xaml.Input.InputScope** value);
                     [propput] HRESULT InputScope([in] Microsoft.UI.Xaml.Input.InputScope* value);
                     [propget] HRESULT Header([out] [retval] IInspectable** value);
@@ -10034,7 +10054,7 @@ namespace Microsoft
                     [propput] HRESULT CharacterCasing([in] Microsoft.UI.Xaml.Controls.CharacterCasing value);
                     [propget] HRESULT DisabledFormattingAccelerators([out] [retval] Microsoft.UI.Xaml.Controls.DisabledFormattingAccelerators* value);
                     [propput] HRESULT DisabledFormattingAccelerators([in] Microsoft.UI.Xaml.Controls.DisabledFormattingAccelerators value);
-                    [propget] HRESULT TextDocument([out] [retval] Windows.UI.Text.RichEditTextDocument** value);
+                    [propget] HRESULT TextDocument([out] [retval] Microsoft.UI.Text.RichEditTextDocument** value);
                     [propget] HRESULT SelectionFlyout([out] [retval] Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase** value);
                     [propput] HRESULT SelectionFlyout([in] Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase* value);
                     [propget] HRESULT ProofingMenuFlyout([out] [retval] Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase** value);
@@ -12252,6 +12272,14 @@ namespace Microsoft
                 {
                 }
 
+                [exclusiveto(Microsoft.UI.Xaml.Controls.ToggleSplitButton)]
+                [uuid(801C9CA9-5B24-5B9E-A8D1-CFF4B6E6857F)]
+                [version(0x00000001)]
+                interface IToggleSplitButtonStatics : IInspectable
+                {
+                    [propget] HRESULT IsCheckedProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                }
+
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.ToggleSwitch)]
                 [uuid(1B17EEB1-74BF-5A83-8161-A86F0FDCDF24)]
@@ -12370,7 +12398,7 @@ namespace Microsoft
                 }
 
                 [exclusiveto(Microsoft.UI.Xaml.Controls.TreeView)]
-                [uuid(B9452AFF-BBF0-5396-A3AA-E351610896A8)]
+                [uuid(1E616DD2-1CB6-5318-BA91-4002D5F36E83)]
                 [version(0x00000001)]
                 interface ITreeView : IInspectable
                 {
@@ -12387,6 +12415,8 @@ namespace Microsoft
                     [eventremove] HRESULT Expanding([in] EventRegistrationToken token);
                     [eventadd] HRESULT Collapsed([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.TreeView*, Microsoft.UI.Xaml.Controls.TreeViewCollapsedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
                     [eventremove] HRESULT Collapsed([in] EventRegistrationToken token);
+                    [eventadd] HRESULT SelectionChanged([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.TreeView*, Microsoft.UI.Xaml.Controls.TreeViewSelectionChangedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
+                    [eventremove] HRESULT SelectionChanged([in] EventRegistrationToken token);
                     HRESULT NodeFromContainer([in] Microsoft.UI.Xaml.DependencyObject* container, [out] [retval] Microsoft.UI.Xaml.Controls.TreeViewNode** result);
                     HRESULT ContainerFromNode([in] Microsoft.UI.Xaml.Controls.TreeViewNode* node, [out] [retval] Microsoft.UI.Xaml.DependencyObject** result);
                     HRESULT ItemFromContainer([in] Microsoft.UI.Xaml.DependencyObject* container, [out] [retval] IInspectable** result);
@@ -12602,6 +12632,15 @@ namespace Microsoft
                     [propget] HRESULT DepthProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT IsExpandedProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT HasChildrenProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                }
+
+                [exclusiveto(Microsoft.UI.Xaml.Controls.TreeViewSelectionChangedEventArgs)]
+                [uuid(664190F3-7133-5599-B41C-1D54CD2CB930)]
+                [version(0x00000001)]
+                interface ITreeViewSelectionChangedEventArgs : IInspectable
+                {
+                    [propget] HRESULT AddedItems([out] [retval] Windows.Foundation.Collections.IVector<IInspectable*>** value);
+                    [propget] HRESULT RemovedItems([out] [retval] Windows.Foundation.Collections.IVector<IInspectable*>** value);
                 }
 
                 [exclusiveto(Microsoft.UI.Xaml.Controls.TreeView)]
@@ -14484,23 +14523,9 @@ namespace Microsoft
 
                 [marshaling_behavior(agile)]
                 [version(0x00000001)]
-                runtimeclass NavigationViewCollapsedEventArgs
-                {
-                    [default] interface Microsoft.UI.Xaml.Controls.INavigationViewCollapsedEventArgs;
-                }
-
-                [marshaling_behavior(agile)]
-                [version(0x00000001)]
                 runtimeclass NavigationViewDisplayModeChangedEventArgs
                 {
                     [default] interface Microsoft.UI.Xaml.Controls.INavigationViewDisplayModeChangedEventArgs;
-                }
-
-                [marshaling_behavior(agile)]
-                [version(0x00000001)]
-                runtimeclass NavigationViewExpandingEventArgs
-                {
-                    [default] interface Microsoft.UI.Xaml.Controls.INavigationViewExpandingEventArgs;
                 }
 
                 [composable(Microsoft.UI.Xaml.Controls.INavigationViewItemFactory, public, 0x00000001)]
@@ -14521,6 +14546,20 @@ namespace Microsoft
                 runtimeclass NavigationViewItemBase : Microsoft.UI.Xaml.Controls.ContentControl
                 {
                     [default] interface Microsoft.UI.Xaml.Controls.INavigationViewItemBase;
+                }
+
+                [marshaling_behavior(agile)]
+                [version(0x00000001)]
+                runtimeclass NavigationViewItemCollapsedEventArgs
+                {
+                    [default] interface Microsoft.UI.Xaml.Controls.INavigationViewItemCollapsedEventArgs;
+                }
+
+                [marshaling_behavior(agile)]
+                [version(0x00000001)]
+                runtimeclass NavigationViewItemExpandingEventArgs
+                {
+                    [default] interface Microsoft.UI.Xaml.Controls.INavigationViewItemExpandingEventArgs;
                 }
 
                 [composable(Microsoft.UI.Xaml.Controls.INavigationViewItemHeaderFactory, public, 0x00000001)]
@@ -15566,6 +15605,7 @@ namespace Microsoft
 
                 [composable(Microsoft.UI.Xaml.Controls.IToggleSplitButtonFactory, public, 0x00000001)]
                 [marshaling_behavior(agile)]
+                [static(Microsoft.UI.Xaml.Controls.IToggleSplitButtonStatics, 0x00000001)]
                 [threading(both)]
                 [version(0x00000001)]
                 runtimeclass ToggleSplitButton : Microsoft.UI.Xaml.Controls.SplitButton
@@ -15692,6 +15732,13 @@ namespace Microsoft
                 runtimeclass TreeViewNode : Microsoft.UI.Xaml.DependencyObject
                 {
                     [default] interface Microsoft.UI.Xaml.Controls.ITreeViewNode;
+                }
+
+                [marshaling_behavior(agile)]
+                [version(0x00000001)]
+                runtimeclass TreeViewSelectionChangedEventArgs
+                {
+                    [default] interface Microsoft.UI.Xaml.Controls.ITreeViewSelectionChangedEventArgs;
                 }
 
                 [composable(Microsoft.UI.Xaml.Controls.ITwoPaneViewFactory, public, 0x00000001)]

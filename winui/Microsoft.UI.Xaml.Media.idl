@@ -1735,16 +1735,18 @@ namespace Microsoft
                 }
 
                 [exclusiveto(Microsoft.UI.Xaml.Media.RadialGradientBrush)]
-                [uuid(4759DB86-DD5E-59B9-AC9B-4DFC685F7AD9)]
+                [uuid(5D493CE1-B844-546A-B772-B3BCBA7E98EE)]
                 [version(0x00000001)]
                 interface IRadialGradientBrush : IInspectable
                 {
-                    [propget] HRESULT EllipseCenter([out] [retval] Windows.Foundation.Point* value);
-                    [propput] HRESULT EllipseCenter([in] Windows.Foundation.Point value);
-                    [propget] HRESULT EllipseRadius([out] [retval] Windows.Foundation.Point* value);
-                    [propput] HRESULT EllipseRadius([in] Windows.Foundation.Point value);
-                    [propget] HRESULT GradientOriginOffset([out] [retval] Windows.Foundation.Point* value);
-                    [propput] HRESULT GradientOriginOffset([in] Windows.Foundation.Point value);
+                    [propget] HRESULT Center([out] [retval] Windows.Foundation.Point* value);
+                    [propput] HRESULT Center([in] Windows.Foundation.Point value);
+                    [propget] HRESULT RadiusX([out] [retval] DOUBLE* value);
+                    [propput] HRESULT RadiusX([in] DOUBLE value);
+                    [propget] HRESULT RadiusY([out] [retval] DOUBLE* value);
+                    [propput] HRESULT RadiusY([in] DOUBLE value);
+                    [propget] HRESULT GradientOrigin([out] [retval] Windows.Foundation.Point* value);
+                    [propput] HRESULT GradientOrigin([in] Windows.Foundation.Point value);
                     [propget] HRESULT MappingMode([out] [retval] Microsoft.UI.Xaml.Media.BrushMappingMode* value);
                     [propput] HRESULT MappingMode([in] Microsoft.UI.Xaml.Media.BrushMappingMode value);
                     [propget] HRESULT InterpolationSpace([out] [retval] Microsoft.UI.Composition.CompositionColorSpace* value);
@@ -1763,13 +1765,14 @@ namespace Microsoft
                 }
 
                 [exclusiveto(Microsoft.UI.Xaml.Media.RadialGradientBrush)]
-                [uuid(006F67B4-812F-5E49-8E9A-3EA80B8DDB59)]
+                [uuid(F275A0B8-66F9-5B7D-A415-7EDA65FE6DD3)]
                 [version(0x00000001)]
                 interface IRadialGradientBrushStatics : IInspectable
                 {
-                    [propget] HRESULT EllipseCenterProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT EllipseRadiusProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT GradientOriginOffsetProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                    [propget] HRESULT CenterProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                    [propget] HRESULT RadiusXProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                    [propget] HRESULT RadiusYProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                    [propget] HRESULT GradientOriginProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT InterpolationSpaceProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT MappingModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT SpreadMethodProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);

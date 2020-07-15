@@ -4,7 +4,7 @@
 
 import "inspectable.idl";
 import "Windows.Foundation.idl";
-import "Windows.UI.Text.idl";
+import "Microsoft.UI.Text.idl";
 
 namespace Microsoft.Graphics.Canvas.Text
 {

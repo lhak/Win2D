@@ -10968,27 +10968,33 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Media {
-                    /* [object, version, uuid("4759DB86-DD5E-59B9-AC9B-4DFC685F7AD9"), exclusiveto] */
-                    MIDL_INTERFACE("4759DB86-DD5E-59B9-AC9B-4DFC685F7AD9")
+                    /* [object, version, uuid("5D493CE1-B844-546A-B772-B3BCBA7E98EE"), exclusiveto] */
+                    MIDL_INTERFACE("5D493CE1-B844-546A-B772-B3BCBA7E98EE")
                     IRadialGradientBrush : public IInspectable
                     {
                     public:
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_EllipseCenter(
+                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Center(
                             /* [retval, out] */ABI::Windows::Foundation::Point * value
                             ) = 0;
-                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_EllipseCenter(
+                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Center(
                             /* [in] */ABI::Windows::Foundation::Point value
                             ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_EllipseRadius(
+                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_RadiusX(
+                            /* [retval, out] */DOUBLE * value
+                            ) = 0;
+                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_RadiusX(
+                            /* [in] */DOUBLE value
+                            ) = 0;
+                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_RadiusY(
+                            /* [retval, out] */DOUBLE * value
+                            ) = 0;
+                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_RadiusY(
+                            /* [in] */DOUBLE value
+                            ) = 0;
+                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_GradientOrigin(
                             /* [retval, out] */ABI::Windows::Foundation::Point * value
                             ) = 0;
-                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_EllipseRadius(
-                            /* [in] */ABI::Windows::Foundation::Point value
-                            ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_GradientOriginOffset(
-                            /* [retval, out] */ABI::Windows::Foundation::Point * value
-                            ) = 0;
-                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_GradientOriginOffset(
+                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_GradientOrigin(
                             /* [in] */ABI::Windows::Foundation::Point value
                             ) = 0;
                         /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_MappingMode(
@@ -11084,18 +11090,21 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Media {
-                    /* [object, version, uuid("006F67B4-812F-5E49-8E9A-3EA80B8DDB59"), exclusiveto] */
-                    MIDL_INTERFACE("006F67B4-812F-5E49-8E9A-3EA80B8DDB59")
+                    /* [object, version, uuid("F275A0B8-66F9-5B7D-A415-7EDA65FE6DD3"), exclusiveto] */
+                    MIDL_INTERFACE("F275A0B8-66F9-5B7D-A415-7EDA65FE6DD3")
                     IRadialGradientBrushStatics : public IInspectable
                     {
                     public:
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_EllipseCenterProperty(
+                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_CenterProperty(
                             /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
                             ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_EllipseRadiusProperty(
+                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_RadiusXProperty(
                             /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
                             ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_GradientOriginOffsetProperty(
+                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_RadiusYProperty(
+                            /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                            ) = 0;
+                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_GradientOriginProperty(
                             /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
                             ) = 0;
                         /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_InterpolationSpaceProperty(
@@ -30991,7 +31000,7 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIQuadraticBezierSegm
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRadialGradientBrush[] = L"Microsoft.UI.Xaml.Media.IRadialGradientBrush";
-/* [object, version, uuid("4759DB86-DD5E-59B9-AC9B-4DFC685F7AD9"), exclusiveto] */
+/* [object, version, uuid("5D493CE1-B844-546A-B772-B3BCBA7E98EE"), exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushVtbl
 {
     BEGIN_INTERFACE
@@ -31025,27 +31034,35 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
     __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_EllipseCenter )(
+/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Center )(
         __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush * This,
         /* [retval, out] */__x_ABI_CWindows_CFoundation_CPoint * value
         );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_EllipseCenter )(
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_Center )(
         __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush * This,
         /* [in] */__x_ABI_CWindows_CFoundation_CPoint value
         );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_EllipseRadius )(
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_RadiusX )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush * This,
+        /* [retval, out] */DOUBLE * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_RadiusX )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush * This,
+        /* [in] */DOUBLE value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_RadiusY )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush * This,
+        /* [retval, out] */DOUBLE * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_RadiusY )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush * This,
+        /* [in] */DOUBLE value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_GradientOrigin )(
         __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush * This,
         /* [retval, out] */__x_ABI_CWindows_CFoundation_CPoint * value
         );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_EllipseRadius )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush * This,
-        /* [in] */__x_ABI_CWindows_CFoundation_CPoint value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_GradientOriginOffset )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush * This,
-        /* [retval, out] */__x_ABI_CWindows_CFoundation_CPoint * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_GradientOriginOffset )(
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_GradientOrigin )(
         __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush * This,
         /* [in] */__x_ABI_CWindows_CFoundation_CPoint value
         );
@@ -31105,23 +31122,29 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush
 #define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_get_EllipseCenter(This,value) \
-    ( (This)->lpVtbl->get_EllipseCenter(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_get_Center(This,value) \
+    ( (This)->lpVtbl->get_Center(This,value) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_put_EllipseCenter(This,value) \
-    ( (This)->lpVtbl->put_EllipseCenter(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_put_Center(This,value) \
+    ( (This)->lpVtbl->put_Center(This,value) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_get_EllipseRadius(This,value) \
-    ( (This)->lpVtbl->get_EllipseRadius(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_get_RadiusX(This,value) \
+    ( (This)->lpVtbl->get_RadiusX(This,value) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_put_EllipseRadius(This,value) \
-    ( (This)->lpVtbl->put_EllipseRadius(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_put_RadiusX(This,value) \
+    ( (This)->lpVtbl->put_RadiusX(This,value) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_get_GradientOriginOffset(This,value) \
-    ( (This)->lpVtbl->get_GradientOriginOffset(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_get_RadiusY(This,value) \
+    ( (This)->lpVtbl->get_RadiusY(This,value) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_put_GradientOriginOffset(This,value) \
-    ( (This)->lpVtbl->put_GradientOriginOffset(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_put_RadiusY(This,value) \
+    ( (This)->lpVtbl->put_RadiusY(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_get_GradientOrigin(This,value) \
+    ( (This)->lpVtbl->get_GradientOrigin(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_put_GradientOrigin(This,value) \
+    ( (This)->lpVtbl->put_GradientOrigin(This,value) )
 
 #define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush_get_MappingMode(This,value) \
     ( (This)->lpVtbl->get_MappingMode(This,value) )
@@ -31253,7 +31276,7 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRadialGradientBrushStatics[] = L"Microsoft.UI.Xaml.Media.IRadialGradientBrushStatics";
-/* [object, version, uuid("006F67B4-812F-5E49-8E9A-3EA80B8DDB59"), exclusiveto] */
+/* [object, version, uuid("F275A0B8-66F9-5B7D-A415-7EDA65FE6DD3"), exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStaticsVtbl
 {
     BEGIN_INTERFACE
@@ -31287,15 +31310,19 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
     __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_EllipseCenterProperty )(
+/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_CenterProperty )(
         __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics * This,
         /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
         );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_EllipseRadiusProperty )(
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_RadiusXProperty )(
         __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics * This,
         /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
         );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_GradientOriginOffsetProperty )(
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_RadiusYProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_GradientOriginProperty )(
         __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics * This,
         /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
         );
@@ -31339,14 +31366,17 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics
 #define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics_get_EllipseCenterProperty(This,value) \
-    ( (This)->lpVtbl->get_EllipseCenterProperty(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics_get_CenterProperty(This,value) \
+    ( (This)->lpVtbl->get_CenterProperty(This,value) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics_get_EllipseRadiusProperty(This,value) \
-    ( (This)->lpVtbl->get_EllipseRadiusProperty(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics_get_RadiusXProperty(This,value) \
+    ( (This)->lpVtbl->get_RadiusXProperty(This,value) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics_get_GradientOriginOffsetProperty(This,value) \
-    ( (This)->lpVtbl->get_GradientOriginOffsetProperty(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics_get_RadiusYProperty(This,value) \
+    ( (This)->lpVtbl->get_RadiusYProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics_get_GradientOriginProperty(This,value) \
+    ( (This)->lpVtbl->get_GradientOriginProperty(This,value) )
 
 #define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics_get_InterpolationSpaceProperty(This,value) \
     ( (This)->lpVtbl->get_InterpolationSpaceProperty(This,value) )

@@ -6484,6 +6484,30 @@ typedef IIterable<__FIIterable_1_Windows__CFoundation__CPoint*> __FIIterable_1__
 
 namespace ABI {
     namespace Microsoft {
+        namespace System {
+            class DispatcherQueue;
+        } /* System */
+    } /* Microsoft */
+} /* ABI */
+
+#ifndef ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace System {
+            interface IDispatcherQueue;
+        } /* System */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CSystem_CIDispatcherQueue ABI::Microsoft::System::IDispatcherQueue
+
+#endif // ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue_FWD_DEFINED__
+
+
+
+
+namespace ABI {
+    namespace Microsoft {
         namespace UI {
             namespace Composition {
                 class AnimationPropertyInfo;
@@ -31212,6 +31236,15 @@ interface __FIIterable_1___FIIterable_1_Windows__CFoundation__CPoint
 
 
 #endif // ____FIIterable_1___FIIterable_1_Windows__CFoundation__CPoint_INTERFACE_DEFINED__
+
+
+
+#ifndef ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CSystem_CIDispatcherQueue __x_ABI_CMicrosoft_CSystem_CIDispatcherQueue;
+
+#endif // ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue_FWD_DEFINED__
+
 
 
 
