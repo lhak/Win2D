@@ -49,21 +49,13 @@
 
 //  API Contract Inclusion Definitions
 #if !defined(SPECIFIC_API_CONTRACT_DEFINITIONS)
-#if !defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
@@ -74,7 +66,7 @@
 #endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x80000
+#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 
 #if !defined(WINDOWS_APPLICATIONMODEL_ACTIVATION_ACTIVATEDEVENTSCONTRACT_VERSION)
@@ -4354,7 +4346,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("bfb0697d-5e83-5397-becf-d15b3f89552d"))
+struct __declspec(uuid("0afc3294-e5d4-5295-a645-31c1204581bf"))
 IIterator<ABI::Microsoft::UI::Xaml::UIElement*> : IIterator_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -4386,7 +4378,7 @@ typedef IIterator<ABI::Microsoft::UI::Xaml::UIElement*> __FIIterator_1_Microsoft
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("2a1b0809-f688-5aff-94a6-677eb0bc8884"))
+struct __declspec(uuid("d22e5385-5418-5006-be1e-20c40605e540"))
 IIterable<ABI::Microsoft::UI::Xaml::UIElement*> : IIterable_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 

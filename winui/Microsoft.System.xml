@@ -31,7 +31,7 @@
       <param name="callback">The task to execute.</param>
       <returns>**True** indicates that the task was added to the queue; **false**, otherwise.</returns>
     </member>
-    <member name="M:Microsoft.System.DispatcherQueue.TryEnqueue(Microsoft.System.DispatcherQueuePriority,Windows.System.DispatcherQueueHandler)">
+    <member name="M:Microsoft.System.DispatcherQueue.TryEnqueue(Microsoft.System.DispatcherQueuePriority,Microsoft.System.DispatcherQueueHandler)">
       <summary>Adds a task to the **DispatcherQueue** which will be executed on the thread associated with the **DispatcherQueue**.</summary>
       <param name="priority">The priority of the task such as Low, Normal, or High.</param>
       <param name="callback">A delegate to the task to execute.</param>

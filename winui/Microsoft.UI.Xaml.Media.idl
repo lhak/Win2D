@@ -31,6 +31,8 @@ namespace Microsoft
 
             runtimeclass CompositionLight;
 
+            runtimeclass Compositor;
+
             interface IAnimationObject;
 
             interface ICompositionSurface;
@@ -1147,7 +1149,7 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Media.CompositionTarget)]
-                [uuid(7ECF58D7-256E-5DF4-B866-3C90F6BF6824)]
+                [uuid(12A4BE6F-6DB1-5165-B622-D57AB782745B)]
                 interface ICompositionTargetStatics : IInspectable
                 {
                     [eventadd] HRESULT Rendering([in] Windows.Foundation.EventHandler<IInspectable*>* handler, [out] [retval] EventRegistrationToken* token);
@@ -1156,6 +1158,7 @@ namespace Microsoft
                     [eventremove] HRESULT Rendered([in] EventRegistrationToken token);
                     [eventadd] HRESULT SurfaceContentsLost([in] Windows.Foundation.EventHandler<IInspectable*>* handler, [out] [retval] EventRegistrationToken* token);
                     [eventremove] HRESULT SurfaceContentsLost([in] EventRegistrationToken token);
+                    HRESULT GetCompositorForCurrentThread([out] [retval] Microsoft.UI.Composition.Compositor** result);
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -2311,7 +2314,7 @@ namespace Microsoft
                 {
                     [default] interface Microsoft.UI.Xaml.Media.IBrush;
                     [overridable] interface Microsoft.UI.Xaml.Media.IBrushOverrides;
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] [experimental] interface Microsoft.UI.Composition.IAnimationObject;
+                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] interface Microsoft.UI.Composition.IAnimationObject;
                 }
 
                 [activatable(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -2517,7 +2520,7 @@ namespace Microsoft
                 {
                     [default] interface Microsoft.UI.Xaml.Media.ILoadedImageSurface;
                     [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] interface Windows.Foundation.IClosable;
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] [experimental] interface Microsoft.UI.Composition.ICompositionSurface;
+                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] interface Microsoft.UI.Composition.ICompositionSurface;
                 }
 
                 [activatable(Microsoft.UI.Xaml.WinUIContract, 1.0)]

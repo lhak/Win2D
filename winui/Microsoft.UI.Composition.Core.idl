@@ -7,9 +7,17 @@ import "AsyncInfo.idl";
 import "EventToken.idl";
 import "windowscontracts.idl";
 import "Windows.Foundation.idl";
+import "Microsoft.Foundation.idl";
 import "Microsoft.UI.Composition.idl";
 
 // Forward Declare
+namespace Microsoft
+{
+    namespace Foundation
+    {
+        apicontract LiftedContract;
+    }
+}
 namespace Microsoft
 {
     namespace UI
@@ -37,8 +45,6 @@ namespace Microsoft
         {
             namespace Core
             {
-                apicontract LiftedContract;
-
                 interface ICompositorController;
 
                 runtimeclass CompositorController;
@@ -74,14 +80,8 @@ namespace Microsoft
         {
             namespace Core
             {
-                [contractversion(1.0)]
-                apicontract LiftedContract
-                {
-                }
-
-                [contract(Microsoft.UI.Composition.Core.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Core.CompositorController)]
-                [experimental]
                 [uuid(CC107CDC-558F-5D1A-96A5-A735AC04386B)]
                 interface ICompositorController : IInspectable
                 {
@@ -92,14 +92,13 @@ namespace Microsoft
                     [eventremove] HRESULT CommitNeeded([in] EventRegistrationToken token);
                 }
 
-                [activatable(Microsoft.UI.Composition.Core.LiftedContract, 1.0)]
-                [contract(Microsoft.UI.Composition.Core.LiftedContract, 1.0)]
-                [experimental]
+                [activatable(Microsoft.Foundation.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [threading(both)]
                 runtimeclass CompositorController
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Core.ICompositorController;
+                    [default] interface Microsoft.UI.Composition.Core.ICompositorController;
                     interface Windows.Foundation.IClosable;
                 }
             }

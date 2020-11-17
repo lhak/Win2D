@@ -49,21 +49,13 @@
 
 //  API Contract Inclusion Definitions
 #if !defined(SPECIFIC_API_CONTRACT_DEFINITIONS)
-#if !defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
@@ -74,7 +66,7 @@
 #endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x80000
+#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 
 #if !defined(WINDOWS_APPLICATIONMODEL_ACTIVATION_ACTIVATEDEVENTSCONTRACT_VERSION)
@@ -248,7 +240,7 @@
 #include "Windows.Foundation.h"
 #include "Microsoft.System.h"
 #include "Microsoft.UI.Composition.h"
-#include "Microsoft.UI.Xaml.Automation.h"
+#include "Microsoft.UI.Input.Experimental.h"
 #include "Microsoft.UI.Xaml.Automation.Peers.h"
 #include "Microsoft.UI.Xaml.Controls.h"
 #include "Microsoft.UI.Xaml.Controls.Primitives.h"
@@ -269,7 +261,6 @@
 #include "Windows.Graphics.Imaging.h"
 #include "Windows.UI.h"
 #include "Windows.UI.Core.h"
-#include "Windows.UI.Input.h"
 #include "Windows.UI.Xaml.Interop.h"
 // Importing Collections header
 #include <windows.foundation.collections.h>
@@ -2241,21 +2232,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementFactory_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                interface IUIElementHostingPreviewStaticsPrivate;
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate ABI::Microsoft::UI::Xaml::IUIElementHostingPreviewStaticsPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementOverrides_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementOverrides_FWD_DEFINED__
 namespace ABI {
@@ -2270,6 +2246,21 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementOverrides ABI::Microsoft::UI::Xaml::IUIElementOverrides
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementOverrides_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                interface IUIElementProtected;
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected ABI::Microsoft::UI::Xaml::IUIElementProtected
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStatics_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStatics_FWD_DEFINED__
@@ -2676,20 +2667,20 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootChangedEventArgs_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_FWD_DEFINED__
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_FWD_DEFINED__
 namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Xaml {
-                interface IXamlRootStatics;
+                interface IXamlServiceProvider;
             } /* Xaml */
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics ABI::Microsoft::UI::Xaml::IXamlRootStatics
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider ABI::Microsoft::UI::Xaml::IXamlServiceProvider
 
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_FWD_DEFINED__
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_FWD_DEFINED__
 
 // Parameterized interface forward declarations (C++)
 
@@ -3309,7 +3300,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("bfb0697d-5e83-5397-becf-d15b3f89552d"))
+struct __declspec(uuid("0afc3294-e5d4-5295-a645-31c1204581bf"))
 IIterator<ABI::Microsoft::UI::Xaml::UIElement*> : IIterator_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -3341,7 +3332,7 @@ typedef IIterator<ABI::Microsoft::UI::Xaml::UIElement*> __FIIterator_1_Microsoft
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("2a1b0809-f688-5aff-94a6-677eb0bc8884"))
+struct __declspec(uuid("d22e5385-5418-5006-be1e-20c40605e540"))
 IIterable<ABI::Microsoft::UI::Xaml::UIElement*> : IIterable_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -4053,7 +4044,7 @@ typedef IVectorView<ABI::Microsoft::UI::Xaml::TriggerBase*> __FIVectorView_1_Mic
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("af80b81b-9c6e-5ac6-b425-801e81036ff9"))
+struct __declspec(uuid("d207b78e-be35-51e3-91a9-b71706738c06"))
 IVectorView<ABI::Microsoft::UI::Xaml::UIElement*> : IVectorView_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -4341,7 +4332,7 @@ typedef IVector<ABI::Microsoft::UI::Xaml::TriggerBase*> __FIVector_1_Microsoft__
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("26919880-d3be-52c5-a150-76a6810a1346"))
+struct __declspec(uuid("52b38864-20cf-5cb2-bad1-3dfd286941bc"))
 IVector<ABI::Microsoft::UI::Xaml::UIElement*> : IVector_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -4786,7 +4777,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("2fda8b21-e764-5519-8ed4-a72b7abff3b8"))
+struct __declspec(uuid("9f8c0c64-b2fd-5680-a5c7-ae6017a41c01"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::BringIntoViewRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::BringIntoViewRequestedEventArgs*, ABI::Microsoft::UI::Xaml::IBringIntoViewRequestedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -4831,7 +4822,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("243c3e97-5e68-5372-b2f8-6cdcaa2b1e80"))
+struct __declspec(uuid("a9313cda-90f5-5349-9b12-ebb8cf17f9b0"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::DragStartingEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::DragStartingEventArgs*, ABI::Microsoft::UI::Xaml::IDragStartingEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -4876,7 +4867,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("1b8a0482-0561-5d62-b2ec-1d558720afbc"))
+struct __declspec(uuid("807acca2-9072-5f52-9ca8-8ef9a38be8f7"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::DropCompletedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::DropCompletedEventArgs*, ABI::Microsoft::UI::Xaml::IDropCompletedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -4921,7 +4912,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("3776416f-a251-5594-b60d-31995552cb5c"))
+struct __declspec(uuid("0d4d22f1-5fda-5c5c-a578-be8e7fbc233b"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::RoutedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::RoutedEventArgs*, ABI::Microsoft::UI::Xaml::IRoutedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -4976,7 +4967,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("9aeadceb-2169-57c9-b750-6d3ee438a415"))
+struct __declspec(uuid("ce4605e8-4d3e-58a2-8aa0-2faca17873e8"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::XamlRoot*,ABI::Microsoft::UI::Xaml::XamlRootChangedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::XamlRoot*, ABI::Microsoft::UI::Xaml::IXamlRoot*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::XamlRootChangedEventArgs*, ABI::Microsoft::UI::Xaml::IXamlRootChangedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -5746,7 +5737,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("12e844dc-4c82-5057-adff-1207226704fe"))
+struct __declspec(uuid("79015521-03a8-533b-a411-791b22794e88"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::CharacterReceivedRoutedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::CharacterReceivedRoutedEventArgs*, ABI::Microsoft::UI::Xaml::Input::ICharacterReceivedRoutedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -5810,7 +5801,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("6df80487-4427-5fc3-af11-664075dfce23"))
+struct __declspec(uuid("2599c76f-c116-5d7b-94d8-b656b66d7fad"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::ContextRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::ContextRequestedEventArgs*, ABI::Microsoft::UI::Xaml::Input::IContextRequestedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -5874,7 +5865,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("9cbc96f0-7059-5064-b432-b6d98ef21fa0"))
+struct __declspec(uuid("66e42c2f-5194-5f8a-a1e8-a697f22ec2d0"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::AccessKeyDisplayRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::AccessKeyDisplayRequestedEventArgs*, ABI::Microsoft::UI::Xaml::Input::IAccessKeyDisplayRequestedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -5938,7 +5929,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("8bd06d13-a6d4-53a2-917e-4a2bfd654000"))
+struct __declspec(uuid("908d9617-2255-51d7-8503-54894b26c3f7"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::AccessKeyDisplayDismissedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::AccessKeyDisplayDismissedEventArgs*, ABI::Microsoft::UI::Xaml::Input::IAccessKeyDisplayDismissedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -6002,7 +5993,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("bc91cb83-e956-5ee2-85dd-9105063fd381"))
+struct __declspec(uuid("6c6d3f12-4a96-5a4f-8036-dc2be0c710cb"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::AccessKeyInvokedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::AccessKeyInvokedEventArgs*, ABI::Microsoft::UI::Xaml::Input::IAccessKeyInvokedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -6066,7 +6057,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("3b9746a4-d7b6-5bcd-becd-4ac55738c3a1"))
+struct __declspec(uuid("b0b8278e-bb3a-5ef4-87e3-15ce9d639e39"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::ProcessKeyboardAcceleratorEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::ProcessKeyboardAcceleratorEventArgs*, ABI::Microsoft::UI::Xaml::Input::IProcessKeyboardAcceleratorEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -6130,7 +6121,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("0b1ffd20-921d-5463-adcb-d066f18b4e4e"))
+struct __declspec(uuid("8ed085b9-a846-5699-86f4-bb1f11e2506d"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::GettingFocusEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::GettingFocusEventArgs*, ABI::Microsoft::UI::Xaml::Input::IGettingFocusEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -6194,7 +6185,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("84f2708f-62e3-5fea-a123-5828133fb274"))
+struct __declspec(uuid("9aa03259-128a-580b-9e4c-045fa63dd436"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::LosingFocusEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::LosingFocusEventArgs*, ABI::Microsoft::UI::Xaml::Input::ILosingFocusEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -6258,7 +6249,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("d1e7b8e5-4e62-529f-a368-c48eedbcd938"))
+struct __declspec(uuid("81f7f184-2258-556c-b27a-bd8d7955b617"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::NoFocusCandidateFoundEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::NoFocusCandidateFoundEventArgs*, ABI::Microsoft::UI::Xaml::Input::INoFocusCandidateFoundEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -6606,67 +6597,53 @@ namespace ABI {
 #endif // ____x_ABI_CMicrosoft_CUI_CComposition_CIVisualElement_FWD_DEFINED__
 
 
+#ifndef ____x_ABI_CMicrosoft_CUI_CComposition_CIVisualElement2_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CComposition_CIVisualElement2_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Composition {
+                interface IVisualElement2;
+            } /* Composition */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CComposition_CIVisualElement2 ABI::Microsoft::UI::Composition::IVisualElement2
+
+#endif // ____x_ABI_CMicrosoft_CUI_CComposition_CIVisualElement2_FWD_DEFINED__
+
+
 
 
 
 namespace ABI {
     namespace Microsoft {
         namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    class AutomationProperty;
-                } /* Automation */
-            } /* Xaml */
+            namespace Input {
+                namespace Experimental {
+                    class ExpPointerPoint;
+                } /* Experimental */
+            } /* Input */
         } /* UI */
     } /* Microsoft */
 } /* ABI */
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty_FWD_DEFINED__
+#ifndef ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
 namespace ABI {
     namespace Microsoft {
         namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    interface IAutomationProperty;
-                } /* Automation */
-            } /* Xaml */
+            namespace Input {
+                namespace Experimental {
+                    interface IExpPointerPoint;
+                } /* Experimental */
+            } /* Input */
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty ABI::Microsoft::UI::Xaml::Automation::IAutomationProperty
+#define __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint
 
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty_FWD_DEFINED__
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    class ComponentPropertyValue;
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    interface IComponentPropertyValue;
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue ABI::Microsoft::UI::Xaml::Automation::IComponentPropertyValue
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_FWD_DEFINED__
+#endif // ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
 
 
 
@@ -8233,6 +8210,32 @@ namespace ABI {
     namespace Windows {
         namespace UI {
             namespace Core {
+                class CoreCursor;
+            } /* Core */
+        } /* UI */
+    } /* Windows */
+} /* ABI */
+
+#ifndef ____x_ABI_CWindows_CUI_CCore_CICoreCursor_FWD_DEFINED__
+#define ____x_ABI_CWindows_CUI_CCore_CICoreCursor_FWD_DEFINED__
+namespace ABI {
+    namespace Windows {
+        namespace UI {
+            namespace Core {
+                interface ICoreCursor;
+            } /* Core */
+        } /* UI */
+    } /* Windows */
+} /* ABI */
+#define __x_ABI_CWindows_CUI_CCore_CICoreCursor ABI::Windows::UI::Core::ICoreCursor
+
+#endif // ____x_ABI_CWindows_CUI_CCore_CICoreCursor_FWD_DEFINED__
+
+
+namespace ABI {
+    namespace Windows {
+        namespace UI {
+            namespace Core {
                 class CoreDispatcher;
             } /* Core */
         } /* UI */
@@ -8279,35 +8282,6 @@ namespace ABI {
 #define __x_ABI_CWindows_CUI_CCore_CICoreWindow ABI::Windows::UI::Core::ICoreWindow
 
 #endif // ____x_ABI_CWindows_CUI_CCore_CICoreWindow_FWD_DEFINED__
-
-
-
-
-
-namespace ABI {
-    namespace Windows {
-        namespace UI {
-            namespace Input {
-                class PointerPoint;
-            } /* Input */
-        } /* UI */
-    } /* Windows */
-} /* ABI */
-
-#ifndef ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-#define ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-namespace ABI {
-    namespace Windows {
-        namespace UI {
-            namespace Input {
-                interface IPointerPoint;
-            } /* Input */
-        } /* UI */
-    } /* Windows */
-} /* ABI */
-#define __x_ABI_CWindows_CUI_CInput_CIPointerPoint ABI::Windows::UI::Input::IPointerPoint
-
-#endif // ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
 
 
 
@@ -10600,12 +10574,12 @@ namespace ABI {
  *
  * Struct Microsoft.UI.Xaml.Vector3TransitionComponents
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  */
 
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -10624,7 +10598,7 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -12111,14 +12085,14 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIBringIntoViewRequestedEven
  *
  * Interface Microsoft.UI.Xaml.IBrushTransition
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.BrushTransition
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransition_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransition_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IBrushTransition[] = L"Microsoft.UI.Xaml.IBrushTransition";
@@ -12149,21 +12123,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransition;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransition_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.IBrushTransitionFactory
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.BrushTransition
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransitionFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransitionFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IBrushTransitionFactory[] = L"Microsoft.UI.Xaml.IBrushTransitionFactory";
@@ -12193,7 +12167,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransitionFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransitionFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -16220,14 +16194,14 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIRoutedEventArgsFactory;
  *
  * Interface Microsoft.UI.Xaml.IScalarTransition
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.ScalarTransition
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransition_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransition_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IScalarTransition[] = L"Microsoft.UI.Xaml.IScalarTransition";
@@ -16258,21 +16232,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransition;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransition_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.IScalarTransitionFactory
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.ScalarTransition
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransitionFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransitionFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IScalarTransitionFactory[] = L"Microsoft.UI.Xaml.IScalarTransitionFactory";
@@ -16302,7 +16276,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransitionFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransitionFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -17400,8 +17374,8 @@ namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Xaml {
-                /* [object, uuid("BA741F05-21DC-5B24-9D8B-B430CA730C5D"), exclusiveto, contract] */
-                MIDL_INTERFACE("BA741F05-21DC-5B24-9D8B-B430CA730C5D")
+                /* [object, uuid("C6A6B834-85F2-5A6A-87E3-125475FFEE44"), exclusiveto, contract] */
+                MIDL_INTERFACE("C6A6B834-85F2-5A6A-87E3-125475FFEE44")
                 IUIElement : public IInspectable
                 {
                 public:
@@ -18091,7 +18065,7 @@ namespace ABI {
                         /* [retval, out] */::boolean * result
                         ) = 0;
                     virtual HRESULT STDMETHODCALLTYPE StartDragAsync(
-                        /* [in] */ABI::Windows::UI::Input::IPointerPoint * pointerPoint,
+                        /* [in] */ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint * pointerPoint,
                         /* [retval, out] */__FIAsyncOperation_1_Windows__CApplicationModel__CDataTransfer__CDataPackageOperation * * operation
                         ) = 0;
                     /* [overload] */virtual HRESULT STDMETHODCALLTYPE StartBringIntoView(void) = 0;
@@ -18100,6 +18074,10 @@ namespace ABI {
                         ) = 0;
                     virtual HRESULT STDMETHODCALLTYPE TryInvokeKeyboardAccelerator(
                         /* [in] */ABI::Microsoft::UI::Xaml::Input::IProcessKeyboardAcceleratorEventArgs * args
+                        ) = 0;
+                    virtual HRESULT STDMETHODCALLTYPE Focus(
+                        /* [in] */ABI::Microsoft::UI::Xaml::FocusState value,
+                        /* [retval, out] */::boolean * result
                         ) = 0;
                     virtual HRESULT STDMETHODCALLTYPE StartAnimation(
                         /* [in] */ABI::Microsoft::UI::Composition::ICompositionAnimationBase * animation
@@ -18163,51 +18141,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIUIElementFactory;
 
 /*
  *
- * Interface Microsoft.UI.Xaml.IUIElementHostingPreviewStaticsPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IUIElementHostingPreviewStaticsPrivate[] = L"Microsoft.UI.Xaml.IUIElementHostingPreviewStaticsPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                /* [object, uuid("FA6A542F-03AB-5F1B-8AC0-E52AE01B9F79"), contract] */
-                MIDL_INTERFACE("FA6A542F-03AB-5F1B-8AC0-E52AE01B9F79")
-                IUIElementHostingPreviewStaticsPrivate : public IInspectable
-                {
-                public:
-                    virtual HRESULT STDMETHODCALLTYPE SetComponentSite(
-                        /* [in] */ABI::Microsoft::UI::Xaml::IUIElement * element,
-                        /* [in] */IInspectable * componentSite
-                        ) = 0;
-                    virtual HRESULT STDMETHODCALLTYPE SetAutomationProperty(
-                        /* [in] */ABI::Microsoft::UI::Xaml::IUIElement * element,
-                        /* [in] */ABI::Microsoft::UI::Xaml::Automation::IAutomationProperty * property,
-                        /* [in] */ABI::Microsoft::UI::Xaml::Automation::IComponentPropertyValue * value
-                        ) = 0;
-                    
-                };
-
-                extern MIDL_CONST_ID IID & IID_IUIElementHostingPreviewStaticsPrivate=_uuidof(IUIElementHostingPreviewStaticsPrivate);
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.IUIElementOverrides
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -18267,6 +18200,51 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIUIElementOverrides;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementOverrides_INTERFACE_DEFINED__) */
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.IUIElementProtected
+ *
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
+ *
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.UIElement
+ *
+ *
+ */
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IUIElementProtected[] = L"Microsoft.UI.Xaml.IUIElementProtected";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                /* [object, uuid("DAF64AC6-6A6D-5F58-B326-296BF114CBBA"), exclusiveto, contract] */
+                MIDL_INTERFACE("DAF64AC6-6A6D-5F58-B326-296BF114CBBA")
+                IUIElementProtected : public IInspectable
+                {
+                public:
+                    /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ProtectedCursor(
+                        /* [retval, out] */ABI::Windows::UI::Core::ICoreCursor * * value
+                        ) = 0;
+                    /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_ProtectedCursor(
+                        /* [in] */ABI::Windows::UI::Core::ICoreCursor * value
+                        ) = 0;
+                    
+                };
+
+                extern MIDL_CONST_ID IID & IID_IUIElementProtected=_uuidof(IUIElementProtected);
+                
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
@@ -18699,14 +18677,14 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIUnhandledExceptionEventArg
  *
  * Interface Microsoft.UI.Xaml.IVector3Transition
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Vector3Transition
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIVector3Transition_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIVector3Transition_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IVector3Transition[] = L"Microsoft.UI.Xaml.IVector3Transition";
@@ -18743,21 +18721,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIVector3Transition;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIVector3Transition_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.IVector3TransitionFactory
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Vector3Transition
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIVector3TransitionFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIVector3TransitionFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IVector3TransitionFactory[] = L"Microsoft.UI.Xaml.IVector3TransitionFactory";
@@ -18787,7 +18765,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIVector3TransitionFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIVector3TransitionFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -19820,8 +19798,8 @@ namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Xaml {
-                /* [object, uuid("41125F0A-70B7-5696-AF98-5730882E360B"), exclusiveto, contract] */
-                MIDL_INTERFACE("41125F0A-70B7-5696-AF98-5730882E360B")
+                /* [object, uuid("60CB215A-AD15-520A-8B01-4416824F0441"), exclusiveto, contract] */
+                MIDL_INTERFACE("60CB215A-AD15-520A-8B01-4416824F0441")
                 IXamlRoot : public IInspectable
                 {
                 public:
@@ -19836,9 +19814,6 @@ namespace ABI {
                         ) = 0;
                     /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_IsHostVisible(
                         /* [retval, out] */::boolean * value
-                        ) = 0;
-                    /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Compositor(
-                        /* [retval, out] */ABI::Microsoft::UI::Composition::ICompositor * * value
                         ) = 0;
                     /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_Changed(
                         /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CXamlRoot_Microsoft__CUI__CXaml__CXamlRootChangedEventArgs * handler,
@@ -19903,43 +19878,41 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootChangedEventArgs;
 
 /*
  *
- * Interface Microsoft.UI.Xaml.IXamlRootStatics
+ * Interface Microsoft.UI.Xaml.IXamlServiceProvider
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.XamlRoot
- *
- *
  */
 #if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IXamlRootStatics[] = L"Microsoft.UI.Xaml.IXamlRootStatics";
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IXamlServiceProvider[] = L"Microsoft.UI.Xaml.IXamlServiceProvider";
 namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Xaml {
-                /* [object, uuid("2BD69A78-5675-5D62-960A-BF44C2DD5F61"), exclusiveto, contract] */
-                MIDL_INTERFACE("2BD69A78-5675-5D62-960A-BF44C2DD5F61")
-                IXamlRootStatics : public IInspectable
+                /* [object, uuid("68B3A2DF-8173-539F-B524-C8A2348F5AFB"), contract] */
+                MIDL_INTERFACE("68B3A2DF-8173-539F-B524-C8A2348F5AFB")
+                IXamlServiceProvider : public IInspectable
                 {
                 public:
-                    /* [propget] */virtual HRESULT STDMETHODCALLTYPE get__Internal_Use_Only_Compositor(
-                        /* [retval, out] */ABI::Microsoft::UI::Composition::ICompositor * * value
+                    virtual HRESULT STDMETHODCALLTYPE GetService(
+                        /* [in] */ABI::Windows::UI::Xaml::Interop::TypeName type,
+                        /* [retval, out] */IInspectable * * result
                         ) = 0;
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IXamlRootStatics=_uuidof(IXamlRootStatics);
+                extern MIDL_CONST_ID IID & IID_IXamlServiceProvider=_uuidof(IXamlServiceProvider);
                 
             } /* Xaml */
         } /* UI */
     } /* Microsoft */
 } /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
@@ -20097,7 +20070,7 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Xaml.BrushTransition
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Class implements the following interfaces:
@@ -20108,13 +20081,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_BrushTransition_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_BrushTransition_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_BrushTransition[] = L"Microsoft.UI.Xaml.BrushTransition";
 #endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -21096,7 +21069,7 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Xaml.ScalarTransition
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Class implements the following interfaces:
@@ -21107,13 +21080,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_ScalarTransition_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_ScalarTransition_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_ScalarTransition[] = L"Microsoft.UI.Xaml.ScalarTransition";
 #endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -21497,9 +21470,11 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.IUIElement ** Default Interface **
+ *    Microsoft.UI.Xaml.IUIElementProtected
  *    Microsoft.UI.Xaml.IUIElementOverrides
  *    Microsoft.UI.Composition.IAnimationObject
  *    Microsoft.UI.Composition.IVisualElement
+ *    Microsoft.UI.Composition.IVisualElement2
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
  *
@@ -21566,7 +21541,7 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Xaml.Vector3Transition
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Class implements the following interfaces:
@@ -21577,13 +21552,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Vector3Transition_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Vector3Transition_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Vector3Transition[] = L"Microsoft.UI.Xaml.Vector3Transition";
 #endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -21864,13 +21839,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
- * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Xaml.IXamlRootStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.WinUIContract API contract
- *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.IXamlRoot ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
  *
  * Class Marshaling Behavior:  Agile - Class is agile
  *
@@ -22696,17 +22666,17 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementFactory __x_ABI_CMicro
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementFactory_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementOverrides_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementOverrides_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementOverrides __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementOverrides;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementOverrides_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStatics_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStatics_FWD_DEFINED__
@@ -22870,11 +22840,11 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootChangedEventArgs __x_AB
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootChangedEventArgs_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics;
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider;
 
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_FWD_DEFINED__
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_FWD_DEFINED__
 
 // Parameterized interface forward declarations (C)
 
@@ -31283,21 +31253,21 @@ typedef interface __x_ABI_CMicrosoft_CUI_CComposition_CIVisualElement __x_ABI_CM
 #endif // ____x_ABI_CMicrosoft_CUI_CComposition_CIVisualElement_FWD_DEFINED__
 
 
+#ifndef ____x_ABI_CMicrosoft_CUI_CComposition_CIVisualElement2_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CComposition_CIVisualElement2_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CComposition_CIVisualElement2 __x_ABI_CMicrosoft_CUI_CComposition_CIVisualElement2;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CComposition_CIVisualElement2_FWD_DEFINED__
 
 
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty_FWD_DEFINED__
 
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue;
+#ifndef ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint;
 
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_FWD_DEFINED__
+#endif // ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
 
 
 
@@ -31787,6 +31757,13 @@ typedef struct __x_ABI_CWindows_CUI_CColor __x_ABI_CWindows_CUI_CColor;
 
 
 
+#ifndef ____x_ABI_CWindows_CUI_CCore_CICoreCursor_FWD_DEFINED__
+#define ____x_ABI_CWindows_CUI_CCore_CICoreCursor_FWD_DEFINED__
+typedef interface __x_ABI_CWindows_CUI_CCore_CICoreCursor __x_ABI_CWindows_CUI_CCore_CICoreCursor;
+
+#endif // ____x_ABI_CWindows_CUI_CCore_CICoreCursor_FWD_DEFINED__
+
+
 #ifndef ____x_ABI_CWindows_CUI_CCore_CICoreDispatcher_FWD_DEFINED__
 #define ____x_ABI_CWindows_CUI_CCore_CICoreDispatcher_FWD_DEFINED__
 typedef interface __x_ABI_CWindows_CUI_CCore_CICoreDispatcher __x_ABI_CWindows_CUI_CCore_CICoreDispatcher;
@@ -31799,16 +31776,6 @@ typedef interface __x_ABI_CWindows_CUI_CCore_CICoreDispatcher __x_ABI_CWindows_C
 typedef interface __x_ABI_CWindows_CUI_CCore_CICoreWindow __x_ABI_CWindows_CUI_CCore_CICoreWindow;
 
 #endif // ____x_ABI_CWindows_CUI_CCore_CICoreWindow_FWD_DEFINED__
-
-
-
-
-
-#ifndef ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-#define ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-typedef interface __x_ABI_CWindows_CUI_CInput_CIPointerPoint __x_ABI_CWindows_CUI_CInput_CIPointerPoint;
-
-#endif // ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
 
 
 
@@ -32898,12 +32865,12 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CTransitionTrigger
  *
  * Struct Microsoft.UI.Xaml.Vector3TransitionComponents
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  */
 
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 /* [v1_enum, flags, contract] */
 enum __x_ABI_CMicrosoft_CUI_CXaml_CVector3TransitionComponents
 {
@@ -32911,7 +32878,7 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CVector3TransitionComponents
     Vector3TransitionComponents_Y = 0x2,
     Vector3TransitionComponents_Z = 0x4,
 };
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -35533,14 +35500,14 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIBringIntoViewRequestedEven
  *
  * Interface Microsoft.UI.Xaml.IBrushTransition
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.BrushTransition
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransition_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransition_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IBrushTransition[] = L"Microsoft.UI.Xaml.IBrushTransition";
@@ -35626,21 +35593,21 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransition
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransition;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransition_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.IBrushTransitionFactory
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.BrushTransition
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransitionFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransitionFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IBrushTransitionFactory[] = L"Microsoft.UI.Xaml.IBrushTransitionFactory";
@@ -35721,7 +35688,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransitionFactory
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransitionFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransitionFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -44619,14 +44586,14 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIRoutedEventArgsFactory;
  *
  * Interface Microsoft.UI.Xaml.IScalarTransition
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.ScalarTransition
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransition_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransition_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IScalarTransition[] = L"Microsoft.UI.Xaml.IScalarTransition";
@@ -44712,21 +44679,21 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransition
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransition;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransition_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.IScalarTransitionFactory
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.ScalarTransition
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransitionFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransitionFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IScalarTransitionFactory[] = L"Microsoft.UI.Xaml.IScalarTransitionFactory";
@@ -44807,7 +44774,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransitionFactory
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransitionFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIScalarTransitionFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -47202,7 +47169,7 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CITriggerBaseFactory;
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIUIElement_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElement_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IUIElement[] = L"Microsoft.UI.Xaml.IUIElement";
-/* [object, uuid("BA741F05-21DC-5B24-9D8B-B430CA730C5D"), exclusiveto, contract] */
+/* [object, uuid("C6A6B834-85F2-5A6A-87E3-125475FFEE44"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementVtbl
 {
     BEGIN_INTERFACE
@@ -48143,7 +48110,7 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
         );
     HRESULT ( STDMETHODCALLTYPE *StartDragAsync )(
         __x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * This,
-        /* [in] */__x_ABI_CWindows_CUI_CInput_CIPointerPoint * pointerPoint,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * pointerPoint,
         /* [retval, out] */__FIAsyncOperation_1_Windows__CApplicationModel__CDataTransfer__CDataPackageOperation * * operation
         );
     /* [overload] */HRESULT ( STDMETHODCALLTYPE *StartBringIntoView )(
@@ -48156,6 +48123,11 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
     HRESULT ( STDMETHODCALLTYPE *TryInvokeKeyboardAccelerator )(
         __x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * This,
         /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CInput_CIProcessKeyboardAcceleratorEventArgs * args
+        );
+    HRESULT ( STDMETHODCALLTYPE *Focus )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CFocusState value,
+        /* [retval, out] */boolean * result
         );
     HRESULT ( STDMETHODCALLTYPE *StartAnimation )(
         __x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * This,
@@ -48853,6 +48825,9 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CIUIElement
 #define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElement_TryInvokeKeyboardAccelerator(This,args) \
     ( (This)->lpVtbl->TryInvokeKeyboardAccelerator(This,args) )
 
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElement_Focus(This,value,result) \
+    ( (This)->lpVtbl->Focus(This,value,result) )
+
 #define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElement_StartAnimation(This,animation) \
     ( (This)->lpVtbl->StartAnimation(This,animation) )
 
@@ -48952,106 +48927,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementFactory
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIUIElementFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementFactory_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.IUIElementHostingPreviewStaticsPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IUIElementHostingPreviewStaticsPrivate[] = L"Microsoft.UI.Xaml.IUIElementHostingPreviewStaticsPrivate";
-/* [object, uuid("FA6A542F-03AB-5F1B-8AC0-E52AE01B9F79"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *SetComponentSite )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * element,
-        /* [in] */IInspectable * componentSite
-        );
-    HRESULT ( STDMETHODCALLTYPE *SetAutomationProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * element,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty * property,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_SetComponentSite(This,element,componentSite) \
-    ( (This)->lpVtbl->SetComponentSite(This,element,componentSite) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_SetAutomationProperty(This,element,property,value) \
-    ( (This)->lpVtbl->SetAutomationProperty(This,element,property,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementHostingPreviewStaticsPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -49195,6 +49070,106 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementOverrides
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIUIElementOverrides;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementOverrides_INTERFACE_DEFINED__) */
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.IUIElementProtected
+ *
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
+ *
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.UIElement
+ *
+ *
+ */
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IUIElementProtected[] = L"Microsoft.UI.Xaml.IUIElementProtected";
+/* [object, uuid("DAF64AC6-6A6D-5F58-B326-296BF114CBBA"), exclusiveto, contract] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtectedVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ProtectedCursor )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected * This,
+        /* [retval, out] */__x_ABI_CWindows_CUI_CCore_CICoreCursor * * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_ProtectedCursor )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected * This,
+        /* [in] */__x_ABI_CWindows_CUI_CCore_CICoreCursor * value
+        );
+    END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtectedVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtectedVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_get_ProtectedCursor(This,value) \
+    ( (This)->lpVtbl->get_ProtectedCursor(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_put_ProtectedCursor(This,value) \
+    ( (This)->lpVtbl->put_ProtectedCursor(This,value) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementProtected_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
@@ -50171,14 +50146,14 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIUnhandledExceptionEventArg
  *
  * Interface Microsoft.UI.Xaml.IVector3Transition
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Vector3Transition
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIVector3Transition_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIVector3Transition_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IVector3Transition[] = L"Microsoft.UI.Xaml.IVector3Transition";
@@ -50278,21 +50253,21 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CIVector3Transition
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIVector3Transition;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIVector3Transition_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.IVector3TransitionFactory
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Vector3Transition
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIVector3TransitionFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIVector3TransitionFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IVector3TransitionFactory[] = L"Microsoft.UI.Xaml.IVector3TransitionFactory";
@@ -50373,7 +50348,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CIVector3TransitionFactory
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIVector3TransitionFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIVector3TransitionFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -52627,7 +52602,7 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIWindowVisibilityChangedEve
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRoot_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRoot_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IXamlRoot[] = L"Microsoft.UI.Xaml.IXamlRoot";
-/* [object, uuid("41125F0A-70B7-5696-AF98-5730882E360B"), exclusiveto, contract] */
+/* [object, uuid("60CB215A-AD15-520A-8B01-4416824F0441"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootVtbl
 {
     BEGIN_INTERFACE
@@ -52677,10 +52652,6 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
         __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRoot * This,
         /* [retval, out] */boolean * value
         );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Compositor )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRoot * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CComposition_CICompositor * * value
-        );
     /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_Changed )(
         __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRoot * This,
         /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CXamlRoot_Microsoft__CUI__CXaml__CXamlRootChangedEventArgs * handler,
@@ -52729,9 +52700,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRoot
 
 #define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRoot_get_IsHostVisible(This,value) \
     ( (This)->lpVtbl->get_IsHostVisible(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRoot_get_Compositor(This,value) \
-    ( (This)->lpVtbl->get_Compositor(This,value) )
 
 #define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRoot_add_Changed(This,handler,token) \
     ( (This)->lpVtbl->add_Changed(This,handler,token) )
@@ -52836,94 +52804,92 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootChangedEventArgs;
 
 /*
  *
- * Interface Microsoft.UI.Xaml.IXamlRootStatics
+ * Interface Microsoft.UI.Xaml.IXamlServiceProvider
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.XamlRoot
- *
- *
  */
 #if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IXamlRootStatics[] = L"Microsoft.UI.Xaml.IXamlRootStatics";
-/* [object, uuid("2BD69A78-5675-5D62-960A-BF44C2DD5F61"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStaticsVtbl
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IXamlServiceProvider[] = L"Microsoft.UI.Xaml.IXamlServiceProvider";
+/* [object, uuid("68B3A2DF-8173-539F-B524-C8A2348F5AFB"), contract] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProviderVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics * This,
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics * This
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics * This
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics * This,
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics * This,
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics * This,
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get__Internal_Use_Only_Compositor )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CComposition_CICompositor * * value
+HRESULT ( STDMETHODCALLTYPE *GetService )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider * This,
+        /* [in] */__x_ABI_CWindows_CUI_CXaml_CInterop_CTypeName type,
+        /* [retval, out] */IInspectable * * result
         );
     END_INTERFACE
     
-} __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStaticsVtbl;
+} __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProviderVtbl;
 
-interface __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics
+interface __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider
 {
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStaticsVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProviderVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_AddRef(This) \
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_Release(This) \
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_GetIids(This,iidCount,iids) \
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_GetRuntimeClassName(This,className) \
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_get__Internal_Use_Only_Compositor(This,value) \
-    ( (This)->lpVtbl->get__Internal_Use_Only_Compositor(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_GetService(This,type,result) \
+    ( (This)->lpVtbl->GetService(This,type,result) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootStatics_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
@@ -53081,7 +53047,7 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Xaml.BrushTransition
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Class implements the following interfaces:
@@ -53092,13 +53058,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_BrushTransition_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_BrushTransition_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_BrushTransition[] = L"Microsoft.UI.Xaml.BrushTransition";
 #endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -54080,7 +54046,7 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Xaml.ScalarTransition
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Class implements the following interfaces:
@@ -54091,13 +54057,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_ScalarTransition_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_ScalarTransition_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_ScalarTransition[] = L"Microsoft.UI.Xaml.ScalarTransition";
 #endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -54481,9 +54447,11 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.IUIElement ** Default Interface **
+ *    Microsoft.UI.Xaml.IUIElementProtected
  *    Microsoft.UI.Xaml.IUIElementOverrides
  *    Microsoft.UI.Composition.IAnimationObject
  *    Microsoft.UI.Composition.IVisualElement
+ *    Microsoft.UI.Composition.IVisualElement2
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
  *
@@ -54550,7 +54518,7 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Xaml.Vector3Transition
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  * Class implements the following interfaces:
@@ -54561,13 +54529,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Vector3Transition_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Vector3Transition_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Vector3Transition[] = L"Microsoft.UI.Xaml.Vector3Transition";
 #endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -54848,13 +54816,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
- * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Xaml.IXamlRootStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.WinUIContract API contract
- *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.IXamlRoot ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
  *
  * Class Marshaling Behavior:  Agile - Class is agile
  *

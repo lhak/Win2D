@@ -43,8 +43,6 @@ namespace Microsoft
 
             runtimeclass DependencyProperty;
 
-            apicontract PrivateApiContract;
-
             runtimeclass UIElement;
 
             apicontract WinUIContract;
@@ -120,12 +118,6 @@ namespace Microsoft
                 interface IAutomationPropertiesStatics;
 
                 interface IAutomationProperty;
-
-                interface IComponentPropertyValue;
-
-                interface IComponentPropertyValueFactory;
-
-                interface IComponentPropertyValueStatics;
 
                 interface IDockPatternIdentifiers;
 
@@ -216,8 +208,6 @@ namespace Microsoft
                 runtimeclass AutomationProperties;
 
                 runtimeclass AutomationProperty;
-
-                runtimeclass ComponentPropertyValue;
 
                 runtimeclass DockPatternIdentifiers;
 
@@ -738,32 +728,6 @@ namespace Microsoft
                 {
                 }
 
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Automation.ComponentPropertyValue)]
-                [uuid(982C5FDC-F1BE-55E9-861E-B41906B3EA81)]
-                interface IComponentPropertyValue : IInspectable
-                {
-                    [propget] HRESULT ElementId([out] [retval] HSTRING* value);
-                    [propget] HRESULT Site([out] [retval] Microsoft.UI.Xaml.UIElement** value);
-                }
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Automation.ComponentPropertyValue)]
-                [uuid(9AAB8357-5E64-58E7-BB8A-08EC774117A4)]
-                interface IComponentPropertyValueFactory : IInspectable
-                {
-                    HRESULT CreateInstance([in] Microsoft.UI.Xaml.UIElement* site, [in] HSTRING elementId, [out] [retval] Microsoft.UI.Xaml.Automation.ComponentPropertyValue** value);
-                }
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Automation.ComponentPropertyValue)]
-                [uuid(541BDD93-620C-58A4-A297-00411C146CA2)]
-                interface IComponentPropertyValueStatics : IInspectable
-                {
-                    [propget] HRESULT ElementIdProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT SiteProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                }
-
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Automation.DockPatternIdentifiers)]
                 [uuid(75574F99-D145-547E-972B-7D879F93C03E)]
@@ -1151,16 +1115,6 @@ namespace Microsoft
                 runtimeclass AutomationProperty
                 {
                     [default] interface Microsoft.UI.Xaml.Automation.IAutomationProperty;
-                }
-
-                [activatable(Microsoft.UI.Xaml.Automation.IComponentPropertyValueFactory, Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [marshaling_behavior(agile)]
-                [static(Microsoft.UI.Xaml.Automation.IComponentPropertyValueStatics, Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [threading(both)]
-                runtimeclass ComponentPropertyValue : Microsoft.UI.Xaml.DependencyObject
-                {
-                    [default] interface Microsoft.UI.Xaml.Automation.IComponentPropertyValue;
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]

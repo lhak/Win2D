@@ -2399,10 +2399,6 @@
       <param name="geometry">The geometry that defines the shape of the clip.</param>
       <returns>The created CompositionGeometricClip object.</returns>
     </member>
-    <member name="M:Microsoft.UI.Composition.Compositor.CreateHostBackdropBrush">
-      <summary>Creates an instance of  CompositionBackdropBrush that samples from the area behind the visual, before the window is drawn.</summary>
-      <returns>Returns the created CompositionBackdropBrush.</returns>
-    </member>
     <member name="M:Microsoft.UI.Composition.Compositor.CreateImplicitAnimationCollection">
       <summary>Creates an instance of ImplicitAnimationCollection.</summary>
       <returns>Returns the created ImplicitAnimationCollection object.</returns>

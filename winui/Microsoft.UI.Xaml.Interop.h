@@ -49,21 +49,13 @@
 
 //  API Contract Inclusion Definitions
 #if !defined(SPECIFIC_API_CONTRACT_DEFINITIONS)
-#if !defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
@@ -74,7 +66,7 @@
 #endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x80000
+#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 
 #if !defined(WINDOWS_APPLICATIONMODEL_ACTIVATION_ACTIVATEDEVENTSCONTRACT_VERSION)
@@ -247,7 +239,6 @@
 #include "windowscontracts.h"
 #include "Windows.Foundation.h"
 #include "Microsoft.UI.Xaml.h"
-#include "Windows.UI.Xaml.Interop.h"
 
 #if defined(__cplusplus) && !defined(CINTERFACE)
 /* Forward Declarations */
@@ -427,7 +418,7 @@ namespace ABI {
 
 
 namespace ABI {
-    namespace Windows {
+    namespace Microsoft {
         namespace UI {
             namespace Xaml {
                 namespace Interop {
@@ -437,12 +428,8 @@ namespace ABI {
                 } /* Interop */
             } /* Xaml */
         } /* UI */
-    } /* Windows */
+    } /* Microsoft */
 } /* ABI */
-
-
-
-
 
 
 
@@ -470,6 +457,39 @@ namespace ABI {
 
 
 
+
+
+/*
+ *
+ * Struct Microsoft.UI.Xaml.Interop.NotifyCollectionChangedAction
+ *
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
+ *
+ *
+ */
+
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Interop {
+                    /* [v1_enum, contract] */
+                    enum NotifyCollectionChangedAction : int
+                    {
+                        NotifyCollectionChangedAction_Add = 0,
+                        NotifyCollectionChangedAction_Remove = 1,
+                        NotifyCollectionChangedAction_Replace = 2,
+                        NotifyCollectionChangedAction_Move = 3,
+                        NotifyCollectionChangedAction_Reset = 4,
+                    };
+                    
+                } /* Interop */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -890,7 +910,7 @@ namespace ABI {
                     {
                     public:
                         /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Action(
-                            /* [retval, out] */ABI::Windows::UI::Xaml::Interop::NotifyCollectionChangedAction * value
+                            /* [retval, out] */ABI::Microsoft::UI::Xaml::Interop::NotifyCollectionChangedAction * value
                             ) = 0;
                         /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_NewItems(
                             /* [retval, out] */ABI::Microsoft::UI::Xaml::Interop::IBindableVector * * value
@@ -946,7 +966,7 @@ namespace ABI {
                     {
                     public:
                         virtual HRESULT STDMETHODCALLTYPE CreateInstanceWithAllParameters(
-                            /* [in] */ABI::Windows::UI::Xaml::Interop::NotifyCollectionChangedAction action,
+                            /* [in] */ABI::Microsoft::UI::Xaml::Interop::NotifyCollectionChangedAction action,
                             /* [in] */ABI::Microsoft::UI::Xaml::Interop::IBindableVector * newItems,
                             /* [in] */ABI::Microsoft::UI::Xaml::Interop::IBindableVector * oldItems,
                             /* [in] */INT32 newIndex,
@@ -1065,7 +1085,7 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CInterop_CINotifyCollectionChange
 
 
 
-typedef enum __x_ABI_CWindows_CUI_CXaml_CInterop_CNotifyCollectionChangedAction __x_ABI_CWindows_CUI_CXaml_CInterop_CNotifyCollectionChangedAction;
+typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CInterop_CNotifyCollectionChangedAction __x_ABI_CMicrosoft_CUI_CXaml_CInterop_CNotifyCollectionChangedAction;
 
 
 
@@ -1083,8 +1103,26 @@ typedef enum __x_ABI_CWindows_CUI_CXaml_CInterop_CNotifyCollectionChangedAction 
 
 
 
+/*
+ *
+ * Struct Microsoft.UI.Xaml.Interop.NotifyCollectionChangedAction
+ *
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
+ *
+ *
+ */
 
-
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+/* [v1_enum, contract] */
+enum __x_ABI_CMicrosoft_CUI_CXaml_CInterop_CNotifyCollectionChangedAction
+{
+    NotifyCollectionChangedAction_Add = 0,
+    NotifyCollectionChangedAction_Remove = 1,
+    NotifyCollectionChangedAction_Replace = 2,
+    NotifyCollectionChangedAction_Move = 3,
+    NotifyCollectionChangedAction_Reset = 4,
+};
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -1928,7 +1966,7 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
     );
 /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Action )(
         __x_ABI_CMicrosoft_CUI_CXaml_CInterop_CINotifyCollectionChangedEventArgs * This,
-        /* [retval, out] */__x_ABI_CWindows_CUI_CXaml_CInterop_CNotifyCollectionChangedAction * value
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CInterop_CNotifyCollectionChangedAction * value
         );
     /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_NewItems )(
         __x_ABI_CMicrosoft_CUI_CXaml_CInterop_CINotifyCollectionChangedEventArgs * This,
@@ -2049,7 +2087,7 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
     );
 HRESULT ( STDMETHODCALLTYPE *CreateInstanceWithAllParameters )(
         __x_ABI_CMicrosoft_CUI_CXaml_CInterop_CINotifyCollectionChangedEventArgsFactory * This,
-        /* [in] */__x_ABI_CWindows_CUI_CXaml_CInterop_CNotifyCollectionChangedAction action,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CInterop_CNotifyCollectionChangedAction action,
         /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CInterop_CIBindableVector * newItems,
         /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CInterop_CIBindableVector * oldItems,
         /* [in] */INT32 newIndex,

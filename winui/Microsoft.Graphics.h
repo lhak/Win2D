@@ -49,9 +49,13 @@
 
 //  API Contract Inclusion Definitions
 #if !defined(SPECIFIC_API_CONTRACT_DEFINITIONS)
-#if !defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
+
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
 #if !defined(WINDOWS_APPLICATIONMODEL_CALLS_CALLSPHONECONTRACT_VERSION)
 #define WINDOWS_APPLICATIONMODEL_CALLS_CALLSPHONECONTRACT_VERSION 0x50000
@@ -90,6 +94,7 @@
 #include "EventToken.h"
 #include "windowscontracts.h"
 #include "Windows.Foundation.h"
+#include "Microsoft.Foundation.h"
 
 #if defined(__cplusplus) && !defined(CINTERFACE)
 /* Forward Declarations */
@@ -111,27 +116,22 @@ namespace ABI {
 
 
 
-
-
 /*
  *
  * Interface Microsoft.Graphics.IGeometrySource2D
  *
- * Introduced to Microsoft.Graphics.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
-#if MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CGraphics_CIGeometrySource2D_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CGraphics_CIGeometrySource2D_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_Graphics_IGeometrySource2D[] = L"Microsoft.Graphics.IGeometrySource2D";
 namespace ABI {
     namespace Microsoft {
         namespace Graphics {
-            /* [object, uuid("EB4728DE-0C12-4428-A840-4DCAC71490E8"), experimental, contract] */
+            /* [object, uuid("EB4728DE-0C12-4428-A840-4DCAC71490E8"), contract] */
             MIDL_INTERFACE("EB4728DE-0C12-4428-A840-4DCAC71490E8")
             IGeometrySource2D : public IInspectable
             {
@@ -147,8 +147,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CGraphics_CIGeometrySource2D;
 #endif /* !defined(____x_ABI_CMicrosoft_CGraphics_CIGeometrySource2D_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 
@@ -164,24 +163,19 @@ typedef interface __x_ABI_CMicrosoft_CGraphics_CIGeometrySource2D __x_ABI_CMicro
 
 
 
-
-
 /*
  *
  * Interface Microsoft.Graphics.IGeometrySource2D
  *
- * Introduced to Microsoft.Graphics.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
-#if MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CGraphics_CIGeometrySource2D_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CGraphics_CIGeometrySource2D_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_Graphics_IGeometrySource2D[] = L"Microsoft.Graphics.IGeometrySource2D";
-/* [object, uuid("EB4728DE-0C12-4428-A840-4DCAC71490E8"), experimental, contract] */
+/* [object, uuid("EB4728DE-0C12-4428-A840-4DCAC71490E8"), contract] */
 typedef struct __x_ABI_CMicrosoft_CGraphics_CIGeometrySource2DVtbl
 {
     BEGIN_INTERFACE
@@ -249,8 +243,7 @@ interface __x_ABI_CMicrosoft_CGraphics_CIGeometrySource2D
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CGraphics_CIGeometrySource2D;
 #endif /* !defined(____x_ABI_CMicrosoft_CGraphics_CIGeometrySource2D_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 

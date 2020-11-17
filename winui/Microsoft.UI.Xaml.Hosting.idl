@@ -251,10 +251,9 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Hosting.XamlIsland)]
-                [uuid(CB0F3D9B-6BA2-55DE-932C-6FE76BE86CC3)]
+                [uuid(73C343E9-379E-5420-ADFE-C7F327445F12)]
                 interface IXamlIsland : IInspectable
                 {
-                    [propget] HRESULT AppContent([out] [retval] IInspectable** value);
                     [propget] HRESULT Content([out] [retval] Microsoft.UI.Xaml.UIElement** value);
                     [propput] HRESULT Content([in] Microsoft.UI.Xaml.UIElement* value);
                     [propget] HRESULT FocusController([out] [retval] IInspectable** value);

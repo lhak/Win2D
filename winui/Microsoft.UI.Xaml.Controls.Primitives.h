@@ -49,21 +49,13 @@
 
 //  API Contract Inclusion Definitions
 #if !defined(SPECIFIC_API_CONTRACT_DEFINITIONS)
-#if !defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
@@ -74,7 +66,7 @@
 #endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x80000
+#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 
 #if !defined(WINDOWS_APPLICATIONMODEL_ACTIVATION_ACTIVATEDEVENTSCONTRACT_VERSION)
@@ -247,6 +239,7 @@
 #include "windowscontracts.h"
 #include "Windows.Foundation.h"
 #include "Microsoft.UI.Composition.h"
+#include "Microsoft.UI.Input.Experimental.h"
 #include "Microsoft.UI.Xaml.h"
 #include "Microsoft.UI.Xaml.Controls.h"
 #include "Microsoft.UI.Xaml.Data.h"
@@ -255,7 +248,6 @@
 #include "Microsoft.UI.Xaml.Media.Animation.h"
 #include "Windows.Foundation.Numerics.h"
 #include "Windows.UI.h"
-#include "Windows.UI.Input.h"
 // Importing Collections header
 #include <windows.foundation.collections.h>
 
@@ -3570,7 +3562,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("0427201b-68a4-5186-9e79-f2b6360f29a9"))
+struct __declspec(uuid("ef5d8633-b47b-534a-9e1d-b822b7ac7784"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollControllerInteractionRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollControllerInteractionRequestedEventArgs*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerInteractionRequestedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -4865,6 +4857,40 @@ namespace ABI {
 namespace ABI {
     namespace Microsoft {
         namespace UI {
+            namespace Input {
+                namespace Experimental {
+                    class ExpPointerPoint;
+                } /* Experimental */
+            } /* Input */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Input {
+                namespace Experimental {
+                    interface IExpPointerPoint;
+                } /* Experimental */
+            } /* Input */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint
+
+#endif // ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+
+
+
+
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
             namespace Xaml {
                 namespace Controls {
                     class AutoSuggestBox;
@@ -5747,35 +5773,6 @@ namespace ABI {
         } /* UI */
     } /* Windows */
 } /* ABI */
-
-
-
-namespace ABI {
-    namespace Windows {
-        namespace UI {
-            namespace Input {
-                class PointerPoint;
-            } /* Input */
-        } /* UI */
-    } /* Windows */
-} /* ABI */
-
-#ifndef ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-#define ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-namespace ABI {
-    namespace Windows {
-        namespace UI {
-            namespace Input {
-                interface IPointerPoint;
-            } /* Input */
-        } /* UI */
-    } /* Windows */
-} /* ABI */
-#define __x_ABI_CWindows_CUI_CInput_CIPointerPoint ABI::Windows::UI::Input::IPointerPoint
-
-#endif // ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-
-
 
 
 
@@ -7377,12 +7374,12 @@ namespace ABI {
  *
  * Struct Microsoft.UI.Xaml.Controls.Primitives.FlyoutShowMode
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  */
 
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -7404,7 +7401,7 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -14087,13 +14084,13 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("9CA050FA-6A7B-5BED-9E26-8F2DA0EE73A1"), exclusiveto] */
-                        MIDL_INTERFACE("9CA050FA-6A7B-5BED-9E26-8F2DA0EE73A1")
+                        /* [object, version, uuid("9D39B918-9C63-5154-92FB-59CB928E8FAE"), exclusiveto] */
+                        MIDL_INTERFACE("9D39B918-9C63-5154-92FB-59CB928E8FAE")
                         IScrollControllerInteractionRequestedEventArgs : public IInspectable
                         {
                         public:
                             /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_PointerPoint(
-                                /* [retval, out] */ABI::Windows::UI::Input::IPointerPoint * * value
+                                /* [retval, out] */ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint * * value
                                 ) = 0;
                             /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Handled(
                                 /* [retval, out] */::boolean * value
@@ -14134,13 +14131,13 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("1CCE9A33-698D-54DC-B144-D68B9E7B76C2"), exclusiveto] */
-                        MIDL_INTERFACE("1CCE9A33-698D-54DC-B144-D68B9E7B76C2")
+                        /* [object, version, uuid("C74FE9BA-8660-59C9-889A-12E292032B89"), exclusiveto] */
+                        MIDL_INTERFACE("C74FE9BA-8660-59C9-889A-12E292032B89")
                         IScrollControllerInteractionRequestedEventArgsFactory : public IInspectable
                         {
                         public:
                             virtual HRESULT STDMETHODCALLTYPE CreateInstance(
-                                /* [in] */ABI::Windows::UI::Input::IPointerPoint * pointerPoint,
+                                /* [in] */ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint * pointerPoint,
                                 /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerInteractionRequestedEventArgs * * value
                                 ) = 0;
                             
@@ -22340,6 +22337,17 @@ typedef interface __x_ABI_CMicrosoft_CUI_CComposition_CIVisual __x_ABI_CMicrosof
 
 
 
+#ifndef ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+
+
+
+
+
+
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIAutoSuggestBox_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIAutoSuggestBox_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIAutoSuggestBox __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIAutoSuggestBox;
@@ -22595,16 +22603,6 @@ typedef struct __x_ABI_CWindows_CFoundation_CSize __x_ABI_CWindows_CFoundation_C
 
 
 typedef struct __x_ABI_CWindows_CUI_CColor __x_ABI_CWindows_CUI_CColor;
-
-
-
-#ifndef ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-#define ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-typedef interface __x_ABI_CWindows_CUI_CInput_CIPointerPoint __x_ABI_CWindows_CUI_CInput_CIPointerPoint;
-
-#endif // ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-
-
 
 
 
@@ -23026,12 +23024,12 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CFlyoutPlacementMode
  *
  * Struct Microsoft.UI.Xaml.Controls.Primitives.FlyoutShowMode
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 7.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  */
 
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 /* [v1_enum, contract] */
 enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CFlyoutShowMode
 {
@@ -23040,7 +23038,7 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CFlyoutShowMode
     FlyoutShowMode_Transient = 2,
     FlyoutShowMode_TransientWithDismissOnPointerMoveAway = 3,
 };
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x70000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -36466,7 +36464,7 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScro
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerInteractionRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerInteractionRequestedEventArgs";
-/* [object, version, uuid("9CA050FA-6A7B-5BED-9E26-8F2DA0EE73A1"), exclusiveto] */
+/* [object, version, uuid("9D39B918-9C63-5154-92FB-59CB928E8FAE"), exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgsVtbl
 {
     BEGIN_INTERFACE
@@ -36502,7 +36500,7 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
     );
 /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_PointerPoint )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs * This,
-        /* [retval, out] */__x_ABI_CWindows_CUI_CInput_CIPointerPoint * * value
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * * value
         );
     /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Handled )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs * This,
@@ -36568,7 +36566,7 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScro
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgsFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgsFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerInteractionRequestedEventArgsFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerInteractionRequestedEventArgsFactory";
-/* [object, version, uuid("1CCE9A33-698D-54DC-B144-D68B9E7B76C2"), exclusiveto] */
+/* [object, version, uuid("C74FE9BA-8660-59C9-889A-12E292032B89"), exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgsFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -36604,7 +36602,7 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
     );
 HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgsFactory * This,
-        /* [in] */__x_ABI_CWindows_CUI_CInput_CIPointerPoint * pointerPoint,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * pointerPoint,
         /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs * * value
         );
     END_INTERFACE

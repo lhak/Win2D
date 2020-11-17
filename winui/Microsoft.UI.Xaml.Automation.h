@@ -49,21 +49,13 @@
 
 //  API Contract Inclusion Definitions
 #if !defined(SPECIFIC_API_CONTRACT_DEFINITIONS)
-#if !defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
@@ -74,7 +66,7 @@
 #endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x80000
+#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 
 #if !defined(WINDOWS_APPLICATIONMODEL_ACTIVATION_ACTIVATEDEVENTSCONTRACT_VERSION)
@@ -422,57 +414,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty ABI::Microsoft::UI::Xaml::Automation::IAutomationProperty
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    interface IComponentPropertyValue;
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue ABI::Microsoft::UI::Xaml::Automation::IComponentPropertyValue
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    interface IComponentPropertyValueFactory;
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory ABI::Microsoft::UI::Xaml::Automation::IComponentPropertyValueFactory
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    interface IComponentPropertyValueStatics;
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics ABI::Microsoft::UI::Xaml::Automation::IComponentPropertyValueStatics
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDockPatternIdentifiers_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDockPatternIdentifiers_FWD_DEFINED__
@@ -1330,7 +1271,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("bfb0697d-5e83-5397-becf-d15b3f89552d"))
+struct __declspec(uuid("0afc3294-e5d4-5295-a645-31c1204581bf"))
 IIterator<ABI::Microsoft::UI::Xaml::UIElement*> : IIterator_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -1362,7 +1303,7 @@ typedef IIterator<ABI::Microsoft::UI::Xaml::UIElement*> __FIIterator_1_Microsoft
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("2a1b0809-f688-5aff-94a6-677eb0bc8884"))
+struct __declspec(uuid("d22e5385-5418-5006-be1e-20c40605e540"))
 IIterable<ABI::Microsoft::UI::Xaml::UIElement*> : IIterable_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -1394,7 +1335,7 @@ typedef IIterable<ABI::Microsoft::UI::Xaml::UIElement*> __FIIterable_1_Microsoft
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("af80b81b-9c6e-5ac6-b425-801e81036ff9"))
+struct __declspec(uuid("d207b78e-be35-51e3-91a9-b71706738c06"))
 IVectorView<ABI::Microsoft::UI::Xaml::UIElement*> : IVectorView_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -1426,7 +1367,7 @@ typedef IVectorView<ABI::Microsoft::UI::Xaml::UIElement*> __FIVectorView_1_Micro
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("26919880-d3be-52c5-a150-76a6810a1346"))
+struct __declspec(uuid("52b38864-20cf-5cb2-bad1-3dfd286941bc"))
 IVector<ABI::Microsoft::UI::Xaml::UIElement*> : IVector_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -1699,7 +1640,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty ABI::Microsoft::UI::Xaml::IDependencyProperty
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty_FWD_DEFINED__
-
 
 
 
@@ -2051,9 +1991,6 @@ namespace ABI {
 
 
 
-
-
-
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -2100,19 +2037,6 @@ namespace ABI {
             namespace Xaml {
                 namespace Automation {
                     class AutomationProperty;
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    class ComponentPropertyValue;
                 } /* Automation */
             } /* Xaml */
         } /* UI */
@@ -3969,146 +3893,6 @@ namespace ABI {
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.IComponentPropertyValue
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.ComponentPropertyValue
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_IComponentPropertyValue[] = L"Microsoft.UI.Xaml.Automation.IComponentPropertyValue";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    /* [object, uuid("982C5FDC-F1BE-55E9-861E-B41906B3EA81"), exclusiveto, contract] */
-                    MIDL_INTERFACE("982C5FDC-F1BE-55E9-861E-B41906B3EA81")
-                    IComponentPropertyValue : public IInspectable
-                    {
-                    public:
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ElementId(
-                            /* [retval, out] */HSTRING * value
-                            ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Site(
-                            /* [retval, out] */ABI::Microsoft::UI::Xaml::IUIElement * * value
-                            ) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_IComponentPropertyValue=_uuidof(IComponentPropertyValue);
-                    
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.IComponentPropertyValueFactory
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.ComponentPropertyValue
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_IComponentPropertyValueFactory[] = L"Microsoft.UI.Xaml.Automation.IComponentPropertyValueFactory";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    /* [object, uuid("9AAB8357-5E64-58E7-BB8A-08EC774117A4"), exclusiveto, contract] */
-                    MIDL_INTERFACE("9AAB8357-5E64-58E7-BB8A-08EC774117A4")
-                    IComponentPropertyValueFactory : public IInspectable
-                    {
-                    public:
-                        virtual HRESULT STDMETHODCALLTYPE CreateInstance(
-                            /* [in] */ABI::Microsoft::UI::Xaml::IUIElement * site,
-                            /* [in] */HSTRING elementId,
-                            /* [retval, out] */ABI::Microsoft::UI::Xaml::Automation::IComponentPropertyValue * * value
-                            ) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_IComponentPropertyValueFactory=_uuidof(IComponentPropertyValueFactory);
-                    
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.IComponentPropertyValueStatics
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.ComponentPropertyValue
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_IComponentPropertyValueStatics[] = L"Microsoft.UI.Xaml.Automation.IComponentPropertyValueStatics";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    /* [object, uuid("541BDD93-620C-58A4-A297-00411C146CA2"), exclusiveto, contract] */
-                    MIDL_INTERFACE("541BDD93-620C-58A4-A297-00411C146CA2")
-                    IComponentPropertyValueStatics : public IInspectable
-                    {
-                    public:
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ElementIdProperty(
-                            /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                            ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_SiteProperty(
-                            /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                            ) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_IComponentPropertyValueStatics=_uuidof(IComponentPropertyValueStatics);
-                    
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -6079,36 +5863,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
- * Class Microsoft.UI.Xaml.Automation.ComponentPropertyValue
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via the Microsoft.UI.Xaml.Automation.IComponentPropertyValueFactory interface starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Xaml.Automation.IComponentPropertyValueStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.IComponentPropertyValue ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_ComponentPropertyValue_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_ComponentPropertyValue_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_ComponentPropertyValue[] = L"Microsoft.UI.Xaml.Automation.ComponentPropertyValue";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Class Microsoft.UI.Xaml.Automation.DockPatternIdentifiers
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -6711,24 +6465,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationPropertie
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDockPatternIdentifiers_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDockPatternIdentifiers_FWD_DEFINED__
@@ -8265,7 +8001,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty __x_ABI_CMic
 
 
 
-
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAnnotationType __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAnnotationType;
 
 
@@ -8327,10 +8062,6 @@ typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CWindowVisualState __x_ABI
 
 
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CZoomUnit __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CZoomUnit;
-
-
-
-
 
 
 
@@ -10739,301 +10470,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.IComponentPropertyValue
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.ComponentPropertyValue
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_IComponentPropertyValue[] = L"Microsoft.UI.Xaml.Automation.IComponentPropertyValue";
-/* [object, uuid("982C5FDC-F1BE-55E9-861E-B41906B3EA81"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ElementId )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue * This,
-        /* [retval, out] */HSTRING * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Site )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_get_ElementId(This,value) \
-    ( (This)->lpVtbl->get_ElementId(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_get_Site(This,value) \
-    ( (This)->lpVtbl->get_Site(This,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.IComponentPropertyValueFactory
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.ComponentPropertyValue
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_IComponentPropertyValueFactory[] = L"Microsoft.UI.Xaml.Automation.IComponentPropertyValueFactory";
-/* [object, uuid("9AAB8357-5E64-58E7-BB8A-08EC774117A4"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactoryVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * site,
-        /* [in] */HSTRING elementId,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValue * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactoryVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactoryVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_CreateInstance(This,site,elementId,value) \
-    ( (This)->lpVtbl->CreateInstance(This,site,elementId,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.IComponentPropertyValueStatics
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.ComponentPropertyValue
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_IComponentPropertyValueStatics[] = L"Microsoft.UI.Xaml.Automation.IComponentPropertyValueStatics";
-/* [object, uuid("541BDD93-620C-58A4-A297-00411C146CA2"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStaticsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ElementIdProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_SiteProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStaticsVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStaticsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_get_ElementIdProperty(This,value) \
-    ( (This)->lpVtbl->get_ElementIdProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_get_SiteProperty(This,value) \
-    ( (This)->lpVtbl->get_SiteProperty(This,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIComponentPropertyValueStatics_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -15056,36 +14492,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_AutomationProperty[] = L"Microsoft.UI.Xaml.Automation.AutomationProperty";
 #endif
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Automation.ComponentPropertyValue
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via the Microsoft.UI.Xaml.Automation.IComponentPropertyValueFactory interface starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Xaml.Automation.IComponentPropertyValueStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.IComponentPropertyValue ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_ComponentPropertyValue_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_ComponentPropertyValue_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_ComponentPropertyValue[] = L"Microsoft.UI.Xaml.Automation.ComponentPropertyValue";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*

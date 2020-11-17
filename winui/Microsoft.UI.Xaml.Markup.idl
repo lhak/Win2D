@@ -22,6 +22,8 @@ namespace Microsoft
 
             runtimeclass DependencyProperty;
 
+            interface IXamlServiceProvider;
+
             runtimeclass UIElement;
 
             apicontract WinUIContract;
@@ -90,6 +92,14 @@ namespace Microsoft
 
                 interface IMarkupExtensionOverrides;
 
+                interface IProvideValueTarget;
+
+                interface IProvideValueTargetProperty;
+
+                interface IRootObjectProvider;
+
+                interface IUriContext;
+
                 interface IXamlBinaryWriter;
 
                 interface IXamlBinaryWriterStatics;
@@ -114,7 +124,11 @@ namespace Microsoft
 
                 interface IXamlType;
 
+                interface IXamlTypeResolver;
+
                 runtimeclass MarkupExtension;
+
+                runtimeclass ProvideValueTargetProperty;
 
                 runtimeclass XamlBinaryWriter;
 
@@ -187,10 +201,43 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Markup.MarkupExtension)]
-                [uuid(C142EF98-4B07-51A5-AA0D-97CCB9A8D760)]
+                [uuid(A12AA575-5D31-5B68-A30F-8495412A351D)]
                 interface IMarkupExtensionOverrides : IInspectable
                 {
-                    HRESULT ProvideValue([out] [retval] IInspectable** result);
+                    [overload("ProvideValue")] HRESULT ProvideValue([out] [retval] IInspectable** result);
+                    [overload("ProvideValue")] HRESULT ProvideValueWithIXamlServiceProvider([in] Microsoft.UI.Xaml.IXamlServiceProvider* serviceProvider, [out] [retval] IInspectable** result);
+                }
+
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [uuid(3F01FF68-3EFD-591D-A506-DE13FCAABD83)]
+                interface IProvideValueTarget : IInspectable
+                {
+                    [propget] HRESULT TargetObject([out] [retval] IInspectable** value);
+                    [propget] HRESULT TargetProperty([out] [retval] IInspectable** value);
+                }
+
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [exclusiveto(Microsoft.UI.Xaml.Markup.ProvideValueTargetProperty)]
+                [uuid(CE777B1F-B42E-59D1-870D-12FDF0629133)]
+                interface IProvideValueTargetProperty : IInspectable
+                {
+                    [propget] HRESULT Name([out] [retval] HSTRING* value);
+                    [propget] HRESULT Type([out] [retval] Windows.UI.Xaml.Interop.TypeName* value);
+                    [propget] HRESULT DeclaringType([out] [retval] Windows.UI.Xaml.Interop.TypeName* value);
+                }
+
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [uuid(13D63599-352F-5EB8-81C1-BC62FB12D6DA)]
+                interface IRootObjectProvider : IInspectable
+                {
+                    [propget] HRESULT RootObject([out] [retval] IInspectable** value);
+                }
+
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [uuid(FB8605F6-8F05-52EE-A01C-3A9E118A6EA2)]
+                interface IUriContext : IInspectable
+                {
+                    [propget] HRESULT BaseUri([out] [retval] Windows.Foundation.Uri** value);
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -331,6 +378,13 @@ namespace Microsoft
                     HRESULT RunInitializer();
                 }
 
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [uuid(3FA15615-CACF-547F-B1ED-89DAE8C67452)]
+                interface IXamlTypeResolver : IInspectable
+                {
+                    HRESULT Resolve([in] HSTRING qualifiedTypeName, [out] [retval] Windows.UI.Xaml.Interop.TypeName* result);
+                }
+
                 [composable(Microsoft.UI.Xaml.Markup.IMarkupExtensionFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [marshaling_behavior(agile)]
@@ -339,6 +393,15 @@ namespace Microsoft
                 {
                     [default] interface Microsoft.UI.Xaml.Markup.IMarkupExtension;
                     [overridable] interface Microsoft.UI.Xaml.Markup.IMarkupExtensionOverrides;
+                }
+
+                [activatable(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [marshaling_behavior(agile)]
+                [threading(both)]
+                runtimeclass ProvideValueTargetProperty
+                {
+                    [default] interface Microsoft.UI.Xaml.Markup.IProvideValueTargetProperty;
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]

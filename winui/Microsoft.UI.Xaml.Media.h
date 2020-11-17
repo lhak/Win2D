@@ -49,21 +49,13 @@
 
 //  API Contract Inclusion Definitions
 #if !defined(SPECIFIC_API_CONTRACT_DEFINITIONS)
-#if !defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
@@ -74,7 +66,7 @@
 #endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x80000
+#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 
 #if !defined(WINDOWS_APPLICATIONMODEL_ACTIVATION_ACTIVATEDEVENTSCONTRACT_VERSION)
@@ -4182,7 +4174,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("bfb0697d-5e83-5397-becf-d15b3f89552d"))
+struct __declspec(uuid("0afc3294-e5d4-5295-a645-31c1204581bf"))
 IIterator<ABI::Microsoft::UI::Xaml::UIElement*> : IIterator_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -4214,7 +4206,7 @@ typedef IIterator<ABI::Microsoft::UI::Xaml::UIElement*> __FIIterator_1_Microsoft
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("2a1b0809-f688-5aff-94a6-677eb0bc8884"))
+struct __declspec(uuid("d22e5385-5418-5006-be1e-20c40605e540"))
 IIterable<ABI::Microsoft::UI::Xaml::UIElement*> : IIterable_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -4246,7 +4238,7 @@ typedef IIterable<ABI::Microsoft::UI::Xaml::UIElement*> __FIIterable_1_Microsoft
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("af80b81b-9c6e-5ac6-b425-801e81036ff9"))
+struct __declspec(uuid("d207b78e-be35-51e3-91a9-b71706738c06"))
 IVectorView<ABI::Microsoft::UI::Xaml::UIElement*> : IVectorView_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -4278,7 +4270,7 @@ typedef IVectorView<ABI::Microsoft::UI::Xaml::UIElement*> __FIVectorView_1_Micro
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("26919880-d3be-52c5-a150-76a6810a1346"))
+struct __declspec(uuid("52b38864-20cf-5cb2-bad1-3dfd286941bc"))
 IVector<ABI::Microsoft::UI::Xaml::UIElement*> : IVector_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -4637,6 +4629,32 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CComposition_CICompositionLight ABI::Microsoft::UI::Composition::ICompositionLight
 
 #endif // ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionLight_FWD_DEFINED__
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Composition {
+                class Compositor;
+            } /* Composition */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CComposition_CICompositor_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CComposition_CICompositor_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Composition {
+                interface ICompositor;
+            } /* Composition */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CComposition_CICompositor ABI::Microsoft::UI::Composition::ICompositor
+
+#endif // ____x_ABI_CMicrosoft_CUI_CComposition_CICompositor_FWD_DEFINED__
 
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CComposition_CIAnimationObject_FWD_DEFINED__
@@ -7986,8 +8004,8 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Media {
-                    /* [object, uuid("7ECF58D7-256E-5DF4-B866-3C90F6BF6824"), exclusiveto, contract] */
-                    MIDL_INTERFACE("7ECF58D7-256E-5DF4-B866-3C90F6BF6824")
+                    /* [object, uuid("12A4BE6F-6DB1-5165-B622-D57AB782745B"), exclusiveto, contract] */
+                    MIDL_INTERFACE("12A4BE6F-6DB1-5165-B622-D57AB782745B")
                     ICompositionTargetStatics : public IInspectable
                     {
                     public:
@@ -8011,6 +8029,9 @@ namespace ABI {
                             ) = 0;
                         /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_SurfaceContentsLost(
                             /* [in] */EventRegistrationToken token
+                            ) = 0;
+                        virtual HRESULT STDMETHODCALLTYPE GetCompositorForCurrentThread(
+                            /* [retval, out] */ABI::Microsoft::UI::Composition::ICompositor * * result
                             ) = 0;
                         
                     };
@@ -21591,6 +21612,13 @@ typedef interface __x_ABI_CMicrosoft_CUI_CComposition_CICompositionLight __x_ABI
 #endif // ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionLight_FWD_DEFINED__
 
 
+#ifndef ____x_ABI_CMicrosoft_CUI_CComposition_CICompositor_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CComposition_CICompositor_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CComposition_CICompositor __x_ABI_CMicrosoft_CUI_CComposition_CICompositor;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CComposition_CICompositor_FWD_DEFINED__
+
+
 #ifndef ____x_ABI_CMicrosoft_CUI_CComposition_CIAnimationObject_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CIAnimationObject_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CComposition_CIAnimationObject __x_ABI_CMicrosoft_CUI_CComposition_CIAnimationObject;
@@ -24659,7 +24687,7 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CICompositionTarget;
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CICompositionTargetStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CICompositionTargetStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_ICompositionTargetStatics[] = L"Microsoft.UI.Xaml.Media.ICompositionTargetStatics";
-/* [object, uuid("7ECF58D7-256E-5DF4-B866-3C90F6BF6824"), exclusiveto, contract] */
+/* [object, uuid("12A4BE6F-6DB1-5165-B622-D57AB782745B"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CICompositionTargetStaticsVtbl
 {
     BEGIN_INTERFACE
@@ -24720,6 +24748,10 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
         __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CICompositionTargetStatics * This,
         /* [in] */EventRegistrationToken token
         );
+    HRESULT ( STDMETHODCALLTYPE *GetCompositorForCurrentThread )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CICompositionTargetStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CComposition_CICompositor * * result
+        );
     END_INTERFACE
     
 } __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CICompositionTargetStaticsVtbl;
@@ -24765,6 +24797,9 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CICompositionTargetStatics
 
 #define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CICompositionTargetStatics_remove_SurfaceContentsLost(This,token) \
     ( (This)->lpVtbl->remove_SurfaceContentsLost(This,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CICompositionTargetStatics_GetCompositorForCurrentThread(This,result) \
+    ( (This)->lpVtbl->GetCompositorForCurrentThread(This,result) )
 
 
 #endif /* COBJMACROS */

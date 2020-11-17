@@ -49,21 +49,25 @@
 
 //  API Contract Inclusion Definitions
 #if !defined(SPECIFIC_API_CONTRACT_DEFINITIONS)
-#if !defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
+#define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
+#define MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
+
+#if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
+#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 
 #if !defined(WINDOWS_APPLICATIONMODEL_ACTIVATION_ACTIVATEDEVENTSCONTRACT_VERSION)
 #define WINDOWS_APPLICATIONMODEL_ACTIVATION_ACTIVATEDEVENTSCONTRACT_VERSION 0x10000
@@ -234,9 +238,10 @@
 #include "EventToken.h"
 #include "windowscontracts.h"
 #include "Windows.Foundation.h"
+#include "Microsoft.Foundation.h"
 #include "Microsoft.UI.Composition.h"
+#include "Microsoft.UI.Input.Experimental.h"
 #include "Windows.Foundation.Numerics.h"
-#include "Windows.UI.Input.h"
 // Importing Collections header
 #include <windows.foundation.collections.h>
 
@@ -972,8 +977,7 @@ namespace ABI {
 } /* ABI */
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef DEF___FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CCompositionConditionalValue_USE
 #define DEF___FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CCompositionConditionalValue_USE
@@ -1002,12 +1006,10 @@ typedef IIterator<ABI::Microsoft::UI::Composition::Interactions::CompositionCond
 #endif /* DEF___FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CCompositionConditionalValue_USE */
 
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef DEF___FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CCompositionConditionalValue_USE
 #define DEF___FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CCompositionConditionalValue_USE
@@ -1036,12 +1038,10 @@ typedef IIterable<ABI::Microsoft::UI::Composition::Interactions::CompositionCond
 #endif /* DEF___FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CCompositionConditionalValue_USE */
 
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef DEF___FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_USE
 #define DEF___FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_USE
@@ -1070,12 +1070,10 @@ typedef IIterator<ABI::Microsoft::UI::Composition::Interactions::ICompositionInt
 #endif /* DEF___FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_USE */
 
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef DEF___FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_USE
 #define DEF___FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_USE
@@ -1104,8 +1102,7 @@ typedef IIterable<ABI::Microsoft::UI::Composition::Interactions::ICompositionInt
 #endif /* DEF___FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_USE */
 
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 namespace ABI {
     namespace Microsoft {
@@ -1120,8 +1117,7 @@ namespace ABI {
 } /* ABI */
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef DEF___FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerInertiaModifier_USE
 #define DEF___FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerInertiaModifier_USE
@@ -1150,12 +1146,10 @@ typedef IIterator<ABI::Microsoft::UI::Composition::Interactions::InteractionTrac
 #endif /* DEF___FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerInertiaModifier_USE */
 
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef DEF___FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerInertiaModifier_USE
 #define DEF___FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerInertiaModifier_USE
@@ -1184,8 +1178,7 @@ typedef IIterable<ABI::Microsoft::UI::Composition::Interactions::InteractionTrac
 #endif /* DEF___FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerInertiaModifier_USE */
 
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 namespace ABI {
     namespace Microsoft {
@@ -1200,8 +1193,7 @@ namespace ABI {
 } /* ABI */
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef DEF___FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerVector2InertiaModifier_USE
 #define DEF___FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerVector2InertiaModifier_USE
@@ -1230,12 +1222,10 @@ typedef IIterator<ABI::Microsoft::UI::Composition::Interactions::InteractionTrac
 #endif /* DEF___FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerVector2InertiaModifier_USE */
 
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef DEF___FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerVector2InertiaModifier_USE
 #define DEF___FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerVector2InertiaModifier_USE
@@ -1264,8 +1254,7 @@ typedef IIterable<ABI::Microsoft::UI::Composition::Interactions::InteractionTrac
 #endif /* DEF___FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerVector2InertiaModifier_USE */
 
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 namespace ABI {
     namespace Windows {
@@ -1333,6 +1322,9 @@ typedef IReference<float> __FIReference_1_float_t;
 //#define __FIReference_1_float_t ABI::Windows::Foundation::IReference<FLOAT>
 #endif // !defined(RO_NO_TEMPLATE_NAME)
 #endif /* DEF___FIReference_1_float_USE */
+
+
+
 
 
 
@@ -1514,6 +1506,40 @@ namespace ABI {
 
 
 namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Input {
+                namespace Experimental {
+                    class ExpPointerPoint;
+                } /* Experimental */
+            } /* Input */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Input {
+                namespace Experimental {
+                    interface IExpPointerPoint;
+                } /* Experimental */
+            } /* Input */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint
+
+#endif // ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+
+
+
+
+
+
+namespace ABI {
     namespace Windows {
         namespace Foundation {
             namespace Numerics {
@@ -1524,36 +1550,6 @@ namespace ABI {
         } /* Foundation */
     } /* Windows */
 } /* ABI */
-
-
-
-
-namespace ABI {
-    namespace Windows {
-        namespace UI {
-            namespace Input {
-                class PointerPoint;
-            } /* Input */
-        } /* UI */
-    } /* Windows */
-} /* ABI */
-
-#ifndef ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-#define ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-namespace ABI {
-    namespace Windows {
-        namespace UI {
-            namespace Input {
-                interface IPointerPoint;
-            } /* Input */
-        } /* UI */
-    } /* Windows */
-} /* ABI */
-#define __x_ABI_CWindows_CUI_CInput_CIPointerPoint ABI::Windows::UI::Input::IPointerPoint
-
-#endif // ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-
-
 
 
 
@@ -1893,26 +1889,22 @@ namespace ABI {
 
 
 
-
 /*
  *
  * Struct Microsoft.UI.Composition.Interactions.InteractionBindingAxisModes
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [v1_enum, flags, experimental, contract] */
+                    /* [v1_enum, flags, contract] */
                     enum InteractionBindingAxisModes : unsigned int
                     {
                         InteractionBindingAxisModes_None = 0,
@@ -1928,29 +1920,25 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Struct Microsoft.UI.Composition.Interactions.InteractionChainingMode
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [v1_enum, experimental, contract] */
+                    /* [v1_enum, contract] */
                     enum InteractionChainingMode : int
                     {
                         InteractionChainingMode_Auto = 0,
@@ -1963,29 +1951,25 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Struct Microsoft.UI.Composition.Interactions.InteractionSourceMode
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [v1_enum, experimental, contract] */
+                    /* [v1_enum, contract] */
                     enum InteractionSourceMode : int
                     {
                         InteractionSourceMode_Disabled = 0,
@@ -1998,29 +1982,25 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Struct Microsoft.UI.Composition.Interactions.InteractionSourceRedirectionMode
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [v1_enum, experimental, contract] */
+                    /* [v1_enum, contract] */
                     enum InteractionSourceRedirectionMode : int
                     {
                         InteractionSourceRedirectionMode_Disabled = 0,
@@ -2032,29 +2012,25 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Struct Microsoft.UI.Composition.Interactions.InteractionTrackerClampingOption
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [v1_enum, experimental, contract] */
+                    /* [v1_enum, contract] */
                     enum InteractionTrackerClampingOption : int
                     {
                         InteractionTrackerClampingOption_Auto = 0,
@@ -2066,29 +2042,25 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Struct Microsoft.UI.Composition.Interactions.InteractionTrackerPositionUpdateOption
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [v1_enum, experimental, contract] */
+                    /* [v1_enum, contract] */
                     enum InteractionTrackerPositionUpdateOption : int
                     {
                         InteractionTrackerPositionUpdateOption_Default = 0,
@@ -2100,42 +2072,38 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Struct Microsoft.UI.Composition.Interactions.VisualInteractionSourceRedirectionMode
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [v1_enum, experimental, contract] */
+                    /* [v1_enum, contract] */
                     enum VisualInteractionSourceRedirectionMode : int
                     {
                         VisualInteractionSourceRedirectionMode_Off = 0,
                         VisualInteractionSourceRedirectionMode_CapableTouchpadOnly = 1,
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
                         
                         VisualInteractionSourceRedirectionMode_PointerWheelOnly = 2,
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
                         
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
                         
                         VisualInteractionSourceRedirectionMode_CapableTouchpadAndPointerWheel = 3,
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
                         
                     };
                     
@@ -2144,25 +2112,21 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.ICompositionConditionalValue
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.CompositionConditionalValue
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValue_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValue_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_ICompositionConditionalValue[] = L"Microsoft.UI.Composition.Interactions.ICompositionConditionalValue";
@@ -2171,7 +2135,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("3743DDA0-FBE2-5ECF-9E80-4638A011F707"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("3743DDA0-FBE2-5ECF-9E80-4638A011F707"), exclusiveto, contract] */
                     MIDL_INTERFACE("3743DDA0-FBE2-5ECF-9E80-4638A011F707")
                     ICompositionConditionalValue : public IInspectable
                     {
@@ -2201,25 +2165,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValue;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValue_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.ICompositionConditionalValueStatics
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.CompositionConditionalValue
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValueStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValueStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_ICompositionConditionalValueStatics[] = L"Microsoft.UI.Composition.Interactions.ICompositionConditionalValueStatics";
@@ -2228,7 +2188,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("DF133C1F-A185-536C-B54B-8F369212A581"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("DF133C1F-A185-536C-B54B-8F369212A581"), exclusiveto, contract] */
                     MIDL_INTERFACE("DF133C1F-A185-536C-B54B-8F369212A581")
                     ICompositionConditionalValueStatics : public IInspectable
                     {
@@ -2250,22 +2210,18 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValueStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValueStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.ICompositionInteractionSource
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSource_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSource_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_ICompositionInteractionSource[] = L"Microsoft.UI.Composition.Interactions.ICompositionInteractionSource";
@@ -2274,7 +2230,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("711C72C0-C406-4A12-859B-B44F651AF046"), experimental, contract] */
+                    /* [object, uuid("711C72C0-C406-4A12-859B-B44F651AF046"), contract] */
                     MIDL_INTERFACE("711C72C0-C406-4A12-859B-B44F651AF046")
                     ICompositionInteractionSource : public IInspectable
                     {
@@ -2292,25 +2248,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSource;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSource_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.ICompositionInteractionSourceCollection
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.CompositionInteractionSourceCollection
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSourceCollection_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSourceCollection_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_ICompositionInteractionSourceCollection[] = L"Microsoft.UI.Composition.Interactions.ICompositionInteractionSourceCollection";
@@ -2319,7 +2271,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("9AA1B86B-B002-5E2E-BB2B-0E2C547445E1"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("9AA1B86B-B002-5E2E-BB2B-0E2C547445E1"), exclusiveto, contract] */
                     MIDL_INTERFACE("9AA1B86B-B002-5E2E-BB2B-0E2C547445E1")
                     ICompositionInteractionSourceCollection : public IInspectable
                     {
@@ -2347,25 +2299,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSourceCollection;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSourceCollection_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionSourceConfiguration
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionSourceConfiguration
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionSourceConfiguration_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionSourceConfiguration_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionSourceConfiguration[] = L"Microsoft.UI.Composition.Interactions.IInteractionSourceConfiguration";
@@ -2374,7 +2322,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("099E0124-DADF-5BC6-A895-90387657550F"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("099E0124-DADF-5BC6-A895-90387657550F"), exclusiveto, contract] */
                     MIDL_INTERFACE("099E0124-DADF-5BC6-A895-90387657550F")
                     IInteractionSourceConfiguration : public IInspectable
                     {
@@ -2410,25 +2358,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionSourceConfiguration;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionSourceConfiguration_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTracker
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTracker
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTracker[] = L"Microsoft.UI.Composition.Interactions.IInteractionTracker";
@@ -2437,7 +2381,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("02D8EC1F-8F04-505E-BD1E-47B2A204DE51"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("02D8EC1F-8F04-505E-BD1E-47B2A204DE51"), exclusiveto, contract] */
                     MIDL_INTERFACE("02D8EC1F-8F04-505E-BD1E-47B2A204DE51")
                     IInteractionTracker : public IInspectable
                     {
@@ -2566,25 +2510,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTracker2
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTracker
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTracker2[] = L"Microsoft.UI.Composition.Interactions.IInteractionTracker2";
@@ -2593,7 +2533,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("396D7FB1-2FAD-5508-8591-4FF0DC5A7484"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("396D7FB1-2FAD-5508-8591-4FF0DC5A7484"), exclusiveto, contract] */
                     MIDL_INTERFACE("396D7FB1-2FAD-5508-8591-4FF0DC5A7484")
                     IInteractionTracker2 : public IInspectable
                     {
@@ -2617,25 +2557,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker2;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTracker3
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTracker
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker3_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker3_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTracker3[] = L"Microsoft.UI.Composition.Interactions.IInteractionTracker3";
@@ -2644,7 +2580,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("239752CF-266C-5ACB-ACC3-B3E3ECAF4D3F"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("239752CF-266C-5ACB-ACC3-B3E3ECAF4D3F"), exclusiveto, contract] */
                     MIDL_INTERFACE("239752CF-266C-5ACB-ACC3-B3E3ECAF4D3F")
                     IInteractionTracker3 : public IInspectable
                     {
@@ -2665,25 +2601,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker3;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker3_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTracker4
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTracker
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker4_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker4_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTracker4[] = L"Microsoft.UI.Composition.Interactions.IInteractionTracker4";
@@ -2692,7 +2624,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("A9A9CE02-53C9-5690-A575-F340B7C2FDF2"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("A9A9CE02-53C9-5690-A575-F340B7C2FDF2"), exclusiveto, contract] */
                     MIDL_INTERFACE("A9A9CE02-53C9-5690-A575-F340B7C2FDF2")
                     IInteractionTracker4 : public IInspectable
                     {
@@ -2723,25 +2655,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker4;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker4_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTracker5
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTracker
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker5_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker5_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTracker5[] = L"Microsoft.UI.Composition.Interactions.IInteractionTracker5";
@@ -2750,7 +2678,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("DBFCD333-C3BF-5057-A45E-25EDF06EBD8F"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("DBFCD333-C3BF-5057-A45E-25EDF06EBD8F"), exclusiveto, contract] */
                     MIDL_INTERFACE("DBFCD333-C3BF-5057-A45E-25EDF06EBD8F")
                     IInteractionTracker5 : public IInspectable
                     {
@@ -2774,25 +2702,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker5;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker5_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerCustomAnimationStateEnteredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerCustomAnimationStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerCustomAnimationStateEnteredArgs[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerCustomAnimationStateEnteredArgs";
@@ -2801,7 +2725,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("7464035C-CFCE-56DA-9472-420F276BD0A5"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("7464035C-CFCE-56DA-9472-420F276BD0A5"), exclusiveto, contract] */
                     MIDL_INTERFACE("7464035C-CFCE-56DA-9472-420F276BD0A5")
                     IInteractionTrackerCustomAnimationStateEnteredArgs : public IInspectable
                     {
@@ -2822,25 +2746,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgs_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerCustomAnimationStateEnteredArgs2
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerCustomAnimationStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgs2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgs2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerCustomAnimationStateEnteredArgs2[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerCustomAnimationStateEnteredArgs2";
@@ -2849,7 +2769,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("06B99FBC-D6A8-5AE3-88B8-E91621BECBD6"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("06B99FBC-D6A8-5AE3-88B8-E91621BECBD6"), exclusiveto, contract] */
                     MIDL_INTERFACE("06B99FBC-D6A8-5AE3-88B8-E91621BECBD6")
                     IInteractionTrackerCustomAnimationStateEnteredArgs2 : public IInspectable
                     {
@@ -2870,25 +2790,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgs2;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgs2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerIdleStateEnteredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerIdleStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerIdleStateEnteredArgs[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerIdleStateEnteredArgs";
@@ -2897,7 +2813,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("199094AB-15FD-539C-97B8-964A8196F777"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("199094AB-15FD-539C-97B8-964A8196F777"), exclusiveto, contract] */
                     MIDL_INTERFACE("199094AB-15FD-539C-97B8-964A8196F777")
                     IInteractionTrackerIdleStateEnteredArgs : public IInspectable
                     {
@@ -2918,25 +2834,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgs_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerIdleStateEnteredArgs2
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerIdleStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgs2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgs2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerIdleStateEnteredArgs2[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerIdleStateEnteredArgs2";
@@ -2945,7 +2857,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("4EB213C0-931C-5164-8965-11C0186D3390"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("4EB213C0-931C-5164-8965-11C0186D3390"), exclusiveto, contract] */
                     MIDL_INTERFACE("4EB213C0-931C-5164-8965-11C0186D3390")
                     IInteractionTrackerIdleStateEnteredArgs2 : public IInspectable
                     {
@@ -2966,25 +2878,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgs2;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgs2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaModifier
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaModifier
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifier_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifier_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaModifier[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaModifier";
@@ -2993,7 +2901,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("4D3A0C6B-C508-5029-A47A-CBF64636F010"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("4D3A0C6B-C508-5029-A47A-CBF64636F010"), exclusiveto, contract] */
                     MIDL_INTERFACE("4D3A0C6B-C508-5029-A47A-CBF64636F010")
                     IInteractionTrackerInertiaModifier : public IInspectable
                     {
@@ -3011,25 +2919,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifier;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifier_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaModifierFactory
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaModifier
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifierFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifierFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaModifierFactory[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaModifierFactory";
@@ -3038,7 +2942,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("6DEE5B33-0B5A-57B1-8537-93D4FD038F9F"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("6DEE5B33-0B5A-57B1-8537-93D4FD038F9F"), exclusiveto, contract] */
                     MIDL_INTERFACE("6DEE5B33-0B5A-57B1-8537-93D4FD038F9F")
                     IInteractionTrackerInertiaModifierFactory : public IInspectable
                     {
@@ -3056,25 +2960,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifierFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifierFactory_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaMotion
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaMotion
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotion_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotion_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaMotion[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaMotion";
@@ -3083,7 +2983,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("91F662C0-3141-5B5E-862F-CFC60BEE8CD6"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("91F662C0-3141-5B5E-862F-CFC60BEE8CD6"), exclusiveto, contract] */
                     MIDL_INTERFACE("91F662C0-3141-5B5E-862F-CFC60BEE8CD6")
                     IInteractionTrackerInertiaMotion : public IInspectable
                     {
@@ -3113,25 +3013,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotion;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotion_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaMotionStatics
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaMotion
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotionStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotionStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaMotionStatics[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaMotionStatics";
@@ -3140,7 +3036,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("B0185A4F-0059-52C6-A660-9AED0C44FF7D"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("B0185A4F-0059-52C6-A660-9AED0C44FF7D"), exclusiveto, contract] */
                     MIDL_INTERFACE("B0185A4F-0059-52C6-A660-9AED0C44FF7D")
                     IInteractionTrackerInertiaMotionStatics : public IInspectable
                     {
@@ -3162,25 +3058,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotionStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotionStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaNaturalMotion
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaNaturalMotion
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotion_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotion_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaNaturalMotion[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaNaturalMotion";
@@ -3189,7 +3081,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("8C7482E0-185D-56B1-B67F-FCA4FCD13CD2"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("8C7482E0-185D-56B1-B67F-FCA4FCD13CD2"), exclusiveto, contract] */
                     MIDL_INTERFACE("8C7482E0-185D-56B1-B67F-FCA4FCD13CD2")
                     IInteractionTrackerInertiaNaturalMotion : public IInspectable
                     {
@@ -3219,25 +3111,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotion;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotion_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaNaturalMotionStatics
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaNaturalMotion
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotionStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotionStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaNaturalMotionStatics[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaNaturalMotionStatics";
@@ -3246,7 +3134,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("860EC143-F165-5298-ABF2-47369DD07F10"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("860EC143-F165-5298-ABF2-47369DD07F10"), exclusiveto, contract] */
                     MIDL_INTERFACE("860EC143-F165-5298-ABF2-47369DD07F10")
                     IInteractionTrackerInertiaNaturalMotionStatics : public IInspectable
                     {
@@ -3268,25 +3156,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotionStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotionStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaRestingValue
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaRestingValue
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValue_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValue_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaRestingValue[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaRestingValue";
@@ -3295,7 +3179,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("1A2B20CD-3371-53FF-A560-F4847B467D73"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("1A2B20CD-3371-53FF-A560-F4847B467D73"), exclusiveto, contract] */
                     MIDL_INTERFACE("1A2B20CD-3371-53FF-A560-F4847B467D73")
                     IInteractionTrackerInertiaRestingValue : public IInspectable
                     {
@@ -3325,25 +3209,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValue;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValue_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaRestingValueStatics
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaRestingValue
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValueStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValueStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaRestingValueStatics[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaRestingValueStatics";
@@ -3352,7 +3232,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("CF0F0414-7FDF-5284-AEEF-28B71B62AA4F"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("CF0F0414-7FDF-5284-AEEF-28B71B62AA4F"), exclusiveto, contract] */
                     MIDL_INTERFACE("CF0F0414-7FDF-5284-AEEF-28B71B62AA4F")
                     IInteractionTrackerInertiaRestingValueStatics : public IInspectable
                     {
@@ -3374,25 +3254,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValueStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValueStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaStateEnteredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaStateEnteredArgs[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaStateEnteredArgs";
@@ -3401,7 +3277,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("5B76C949-A4D0-5C9D-9292-7013AE9656C7"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("5B76C949-A4D0-5C9D-9292-7013AE9656C7"), exclusiveto, contract] */
                     MIDL_INTERFACE("5B76C949-A4D0-5C9D-9292-7013AE9656C7")
                     IInteractionTrackerInertiaStateEnteredArgs : public IInspectable
                     {
@@ -3440,25 +3316,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaStateEnteredArgs2
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaStateEnteredArgs2[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaStateEnteredArgs2";
@@ -3467,7 +3339,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("C42D7E8F-7199-57A9-8AEC-8727552B13E6"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("C42D7E8F-7199-57A9-8AEC-8727552B13E6"), exclusiveto, contract] */
                     MIDL_INTERFACE("C42D7E8F-7199-57A9-8AEC-8727552B13E6")
                     IInteractionTrackerInertiaStateEnteredArgs2 : public IInspectable
                     {
@@ -3488,25 +3360,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs2;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaStateEnteredArgs3
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs3_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs3_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaStateEnteredArgs3[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaStateEnteredArgs3";
@@ -3515,7 +3383,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("CE726CA0-1C04-531B-9951-4AEC996952E4"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("CE726CA0-1C04-531B-9951-4AEC996952E4"), exclusiveto, contract] */
                     MIDL_INTERFACE("CE726CA0-1C04-531B-9951-4AEC996952E4")
                     IInteractionTrackerInertiaStateEnteredArgs3 : public IInspectable
                     {
@@ -3536,25 +3404,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs3;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs3_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInteractingStateEnteredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInteractingStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInteractingStateEnteredArgs[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInteractingStateEnteredArgs";
@@ -3563,7 +3427,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("70D29B84-0931-5F17-A8A1-82F8F8782532"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("70D29B84-0931-5F17-A8A1-82F8F8782532"), exclusiveto, contract] */
                     MIDL_INTERFACE("70D29B84-0931-5F17-A8A1-82F8F8782532")
                     IInteractionTrackerInteractingStateEnteredArgs : public IInspectable
                     {
@@ -3584,25 +3448,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgs_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInteractingStateEnteredArgs2
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInteractingStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgs2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgs2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInteractingStateEnteredArgs2[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInteractingStateEnteredArgs2";
@@ -3611,7 +3471,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("2F1FF38D-2F51-5CEB-8D09-BDA1519F9342"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("2F1FF38D-2F51-5CEB-8D09-BDA1519F9342"), exclusiveto, contract] */
                     MIDL_INTERFACE("2F1FF38D-2F51-5CEB-8D09-BDA1519F9342")
                     IInteractionTrackerInteractingStateEnteredArgs2 : public IInspectable
                     {
@@ -3632,22 +3492,18 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgs2;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgs2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerOwner
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerOwner_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerOwner_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerOwner[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerOwner";
@@ -3656,7 +3512,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("8869779D-1D2A-5816-836A-68A910507D87"), experimental, contract] */
+                    /* [object, uuid("8869779D-1D2A-5816-836A-68A910507D87"), contract] */
                     MIDL_INTERFACE("8869779D-1D2A-5816-836A-68A910507D87")
                     IInteractionTrackerOwner : public IInspectable
                     {
@@ -3698,25 +3554,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerOwner;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerOwner_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerRequestIgnoredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerRequestIgnoredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerRequestIgnoredArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerRequestIgnoredArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerRequestIgnoredArgs[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerRequestIgnoredArgs";
@@ -3725,7 +3577,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("C276205E-F7A5-5BA2-AD45-D12C3C339149"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("C276205E-F7A5-5BA2-AD45-D12C3C339149"), exclusiveto, contract] */
                     MIDL_INTERFACE("C276205E-F7A5-5BA2-AD45-D12C3C339149")
                     IInteractionTrackerRequestIgnoredArgs : public IInspectable
                     {
@@ -3746,25 +3598,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerRequestIgnoredArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerRequestIgnoredArgs_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerStatics
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTracker
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerStatics[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerStatics";
@@ -3773,7 +3621,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("7AC9867A-E16E-56EF-9809-F6E404240F50"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("7AC9867A-E16E-56EF-9809-F6E404240F50"), exclusiveto, contract] */
                     MIDL_INTERFACE("7AC9867A-E16E-56EF-9809-F6E404240F50")
                     IInteractionTrackerStatics : public IInspectable
                     {
@@ -3800,25 +3648,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerStatics2
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTracker
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStatics2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStatics2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerStatics2[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerStatics2";
@@ -3827,7 +3671,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("25658E4C-B99F-5108-AAB7-1CC44F11508B"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("25658E4C-B99F-5108-AAB7-1CC44F11508B"), exclusiveto, contract] */
                     MIDL_INTERFACE("25658E4C-B99F-5108-AAB7-1CC44F11508B")
                     IInteractionTrackerStatics2 : public IInspectable
                     {
@@ -3855,25 +3699,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStatics2;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStatics2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerValuesChangedArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerValuesChangedArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerValuesChangedArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerValuesChangedArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerValuesChangedArgs[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerValuesChangedArgs";
@@ -3882,7 +3722,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("9B495BED-1CF7-55C1-82B9-8022CBF3C766"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("9B495BED-1CF7-55C1-82B9-8022CBF3C766"), exclusiveto, contract] */
                     MIDL_INTERFACE("9B495BED-1CF7-55C1-82B9-8022CBF3C766")
                     IInteractionTrackerValuesChangedArgs : public IInspectable
                     {
@@ -3909,25 +3749,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerValuesChangedArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerValuesChangedArgs_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaModifier
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaModifier
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifier_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifier_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerVector2InertiaModifier[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaModifier";
@@ -3936,7 +3772,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("4B8ED310-CB61-5F0A-B99A-940CDD2C42B1"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("4B8ED310-CB61-5F0A-B99A-940CDD2C42B1"), exclusiveto, contract] */
                     MIDL_INTERFACE("4B8ED310-CB61-5F0A-B99A-940CDD2C42B1")
                     IInteractionTrackerVector2InertiaModifier : public IInspectable
                     {
@@ -3954,25 +3790,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifier;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifier_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaModifierFactory
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaModifier
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifierFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifierFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerVector2InertiaModifierFactory[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaModifierFactory";
@@ -3981,7 +3813,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("1B3FD240-BA66-5296-B801-62A2A3606613"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("1B3FD240-BA66-5296-B801-62A2A3606613"), exclusiveto, contract] */
                     MIDL_INTERFACE("1B3FD240-BA66-5296-B801-62A2A3606613")
                     IInteractionTrackerVector2InertiaModifierFactory : public IInspectable
                     {
@@ -3999,25 +3831,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifierFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifierFactory_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaNaturalMotion
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaNaturalMotion
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotion_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotion_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerVector2InertiaNaturalMotion[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaNaturalMotion";
@@ -4026,7 +3854,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("097BA1A6-E077-52D1-86D3-38E3F6619DDF"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("097BA1A6-E077-52D1-86D3-38E3F6619DDF"), exclusiveto, contract] */
                     MIDL_INTERFACE("097BA1A6-E077-52D1-86D3-38E3F6619DDF")
                     IInteractionTrackerVector2InertiaNaturalMotion : public IInspectable
                     {
@@ -4056,25 +3884,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotion;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotion_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaNaturalMotionStatics
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaNaturalMotion
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotionStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotionStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerVector2InertiaNaturalMotionStatics[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaNaturalMotionStatics";
@@ -4083,7 +3907,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("CC24AB87-9131-5286-B3CE-1EF97E0974E6"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("CC24AB87-9131-5286-B3CE-1EF97E0974E6"), exclusiveto, contract] */
                     MIDL_INTERFACE("CC24AB87-9131-5286-B3CE-1EF97E0974E6")
                     IInteractionTrackerVector2InertiaNaturalMotionStatics : public IInspectable
                     {
@@ -4105,25 +3929,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotionStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotionStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IVisualInteractionSource
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.VisualInteractionSource
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IVisualInteractionSource[] = L"Microsoft.UI.Composition.Interactions.IVisualInteractionSource";
@@ -4132,8 +3952,8 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("A4BD7C59-5A0A-522F-B1B0-DE2FE0EFE9AA"), experimental, exclusiveto, contract] */
-                    MIDL_INTERFACE("A4BD7C59-5A0A-522F-B1B0-DE2FE0EFE9AA")
+                    /* [object, uuid("CFB7245C-35A6-577D-9572-D38B3A7BCDA4"), exclusiveto, contract] */
+                    MIDL_INTERFACE("CFB7245C-35A6-577D-9572-D38B3A7BCDA4")
                     IVisualInteractionSource : public IInspectable
                     {
                     public:
@@ -4195,7 +4015,7 @@ namespace ABI {
                             /* [retval, out] */ABI::Microsoft::UI::Composition::IVisual * * value
                             ) = 0;
                         virtual HRESULT STDMETHODCALLTYPE TryRedirectForManipulation(
-                            /* [in] */ABI::Windows::UI::Input::IPointerPoint * pointerPoint
+                            /* [in] */ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint * pointerPoint
                             ) = 0;
                         
                     };
@@ -4210,25 +4030,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IVisualInteractionSource2
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.VisualInteractionSource
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IVisualInteractionSource2[] = L"Microsoft.UI.Composition.Interactions.IVisualInteractionSource2";
@@ -4237,7 +4053,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("FF1132BA-DC0D-519E-BE49-BE301E52306A"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("FF1132BA-DC0D-519E-BE49-BE301E52306A"), exclusiveto, contract] */
                     MIDL_INTERFACE("FF1132BA-DC0D-519E-BE49-BE301E52306A")
                     IVisualInteractionSource2 : public IInspectable
                     {
@@ -4288,25 +4104,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource2;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IVisualInteractionSource3
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.VisualInteractionSource
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource3_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource3_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IVisualInteractionSource3[] = L"Microsoft.UI.Composition.Interactions.IVisualInteractionSource3";
@@ -4315,7 +4127,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("D523BD66-A05D-5417-8E07-84AE3CAF9752"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("D523BD66-A05D-5417-8E07-84AE3CAF9752"), exclusiveto, contract] */
                     MIDL_INTERFACE("D523BD66-A05D-5417-8E07-84AE3CAF9752")
                     IVisualInteractionSource3 : public IInspectable
                     {
@@ -4336,25 +4148,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource3;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource3_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IVisualInteractionSourceObjectFactory
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.VisualInteractionSource
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceObjectFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceObjectFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IVisualInteractionSourceObjectFactory[] = L"Microsoft.UI.Composition.Interactions.IVisualInteractionSourceObjectFactory";
@@ -4363,7 +4171,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("FEB73102-238C-52AA-8E03-B68D5ECC44B3"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("FEB73102-238C-52AA-8E03-B68D5ECC44B3"), exclusiveto, contract] */
                     MIDL_INTERFACE("FEB73102-238C-52AA-8E03-B68D5ECC44B3")
                     IVisualInteractionSourceObjectFactory : public IInspectable
                     {
@@ -4381,25 +4189,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceObjectFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceObjectFactory_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IVisualInteractionSourceStatics
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.VisualInteractionSource
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IVisualInteractionSourceStatics[] = L"Microsoft.UI.Composition.Interactions.IVisualInteractionSourceStatics";
@@ -4408,7 +4212,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("5FC9C763-E2E5-530E-87CD-B93118ADE8A3"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("5FC9C763-E2E5-530E-87CD-B93118ADE8A3"), exclusiveto, contract] */
                     MIDL_INTERFACE("5FC9C763-E2E5-530E-87CD-B93118ADE8A3")
                     IVisualInteractionSourceStatics : public IInspectable
                     {
@@ -4430,25 +4234,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IVisualInteractionSourceStatics2
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.VisualInteractionSource
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStatics2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStatics2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IVisualInteractionSourceStatics2[] = L"Microsoft.UI.Composition.Interactions.IVisualInteractionSourceStatics2";
@@ -4457,7 +4257,7 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Interactions {
-                    /* [object, uuid("A6B494FE-12A1-5A73-B87E-4C4EF58EAC6C"), experimental, exclusiveto, contract] */
+                    /* [object, uuid("A6B494FE-12A1-5A73-B87E-4C4EF58EAC6C"), exclusiveto, contract] */
                     MIDL_INTERFACE("A6B494FE-12A1-5A73-B87E-4C4EF58EAC6C")
                     IVisualInteractionSourceStatics2 : public IInspectable
                     {
@@ -4479,21 +4279,18 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStatics2;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStatics2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.CompositionConditionalValue
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.ICompositionConditionalValueStatics interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.ICompositionConditionalValueStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.ICompositionConditionalValue ** Default Interface **
@@ -4503,25 +4300,21 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisua
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_CompositionConditionalValue_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_CompositionConditionalValue_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_CompositionConditionalValue[] = L"Microsoft.UI.Composition.Interactions.CompositionConditionalValue";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.CompositionInteractionSourceCollection
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.ICompositionInteractionSourceCollection ** Default Interface **
@@ -4532,25 +4325,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_CompositionInteractionSourceCollection_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_CompositionInteractionSourceCollection_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_CompositionInteractionSourceCollection[] = L"Microsoft.UI.Composition.Interactions.CompositionInteractionSourceCollection";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionSourceConfiguration
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionSourceConfiguration ** Default Interface **
@@ -4560,29 +4349,25 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionSourceConfiguration_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionSourceConfiguration_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionSourceConfiguration[] = L"Microsoft.UI.Composition.Interactions.InteractionSourceConfiguration";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTracker
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerStatics2 interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerStatics interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerStatics2 interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTracker ** Default Interface **
@@ -4596,25 +4381,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTracker_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTracker_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTracker[] = L"Microsoft.UI.Composition.Interactions.InteractionTracker";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerCustomAnimationStateEnteredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerCustomAnimationStateEnteredArgs ** Default Interface **
@@ -4623,25 +4404,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerCustomAnimationStateEnteredArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerCustomAnimationStateEnteredArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerCustomAnimationStateEnteredArgs[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerCustomAnimationStateEnteredArgs";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerIdleStateEnteredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerIdleStateEnteredArgs ** Default Interface **
@@ -4650,25 +4427,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerIdleStateEnteredArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerIdleStateEnteredArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerIdleStateEnteredArgs[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerIdleStateEnteredArgs";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaModifier
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaModifier ** Default Interface **
@@ -4678,28 +4451,24 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaModifier_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaModifier_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaModifier[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaModifier";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaMotion
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaMotionStatics interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaMotionStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaMotion ** Default Interface **
@@ -4709,28 +4478,24 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaMotion_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaMotion_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaMotion[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaMotion";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaNaturalMotion
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaNaturalMotionStatics interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaNaturalMotionStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaNaturalMotion ** Default Interface **
@@ -4740,28 +4505,24 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaNaturalMotion_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaNaturalMotion_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaNaturalMotion[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaNaturalMotion";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaRestingValue
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaRestingValueStatics interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaRestingValueStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaRestingValue ** Default Interface **
@@ -4771,25 +4532,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaRestingValue_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaRestingValue_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaRestingValue[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaRestingValue";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaStateEnteredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaStateEnteredArgs ** Default Interface **
@@ -4799,25 +4556,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaStateEnteredArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaStateEnteredArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaStateEnteredArgs[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaStateEnteredArgs";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerInteractingStateEnteredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerInteractingStateEnteredArgs ** Default Interface **
@@ -4826,25 +4579,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInteractingStateEnteredArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInteractingStateEnteredArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerInteractingStateEnteredArgs[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerInteractingStateEnteredArgs";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerRequestIgnoredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerRequestIgnoredArgs ** Default Interface **
@@ -4852,25 +4601,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerRequestIgnoredArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerRequestIgnoredArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerRequestIgnoredArgs[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerRequestIgnoredArgs";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerValuesChangedArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerValuesChangedArgs ** Default Interface **
@@ -4878,25 +4623,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerValuesChangedArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerValuesChangedArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerValuesChangedArgs[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerValuesChangedArgs";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaModifier
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaModifier ** Default Interface **
@@ -4906,28 +4647,24 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerVector2InertiaModifier_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerVector2InertiaModifier_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerVector2InertiaModifier[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaModifier";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaNaturalMotion
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaNaturalMotionStatics interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaNaturalMotionStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaNaturalMotion ** Default Interface **
@@ -4937,29 +4674,25 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerVector2InertiaNaturalMotion_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerVector2InertiaNaturalMotion_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerVector2InertiaNaturalMotion[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaNaturalMotion";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.VisualInteractionSource
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IVisualInteractionSourceStatics2 interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IVisualInteractionSourceStatics interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IVisualInteractionSourceStatics2 interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IVisualInteractionSourceStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IVisualInteractionSource ** Default Interface **
@@ -4972,15 +4705,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_VisualInteractionSource_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_VisualInteractionSource_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_VisualInteractionSource[] = L"Microsoft.UI.Composition.Interactions.VisualInteractionSource";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 
@@ -5244,8 +4975,7 @@ typedef interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInte
 
 // Collection interface definitions
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CCompositionConditionalValue_INTERFACE_DEFINED__)
 #define ____FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CCompositionConditionalValue_INTERFACE_DEFINED__
 
@@ -5330,12 +5060,10 @@ interface __FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CCompositi
 
 #endif // ____FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CCompositionConditionalValue_INTERFACE_DEFINED__
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CCompositionConditionalValue_INTERFACE_DEFINED__)
 #define ____FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CCompositionConditionalValue_INTERFACE_DEFINED__
 
@@ -5406,12 +5134,10 @@ interface __FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CCompositi
 
 #endif // ____FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CCompositionConditionalValue_INTERFACE_DEFINED__
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_INTERFACE_DEFINED__)
 #define ____FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_INTERFACE_DEFINED__
 
@@ -5496,12 +5222,10 @@ interface __FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CIComposit
 
 #endif // ____FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_INTERFACE_DEFINED__
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_INTERFACE_DEFINED__)
 #define ____FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_INTERFACE_DEFINED__
 
@@ -5572,12 +5296,10 @@ interface __FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CIComposit
 
 #endif // ____FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_INTERFACE_DEFINED__
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerInertiaModifier_INTERFACE_DEFINED__)
 #define ____FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerInertiaModifier_INTERFACE_DEFINED__
 
@@ -5662,12 +5384,10 @@ interface __FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CInteracti
 
 #endif // ____FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerInertiaModifier_INTERFACE_DEFINED__
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerInertiaModifier_INTERFACE_DEFINED__)
 #define ____FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerInertiaModifier_INTERFACE_DEFINED__
 
@@ -5738,12 +5458,10 @@ interface __FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CInteracti
 
 #endif // ____FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerInertiaModifier_INTERFACE_DEFINED__
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerVector2InertiaModifier_INTERFACE_DEFINED__)
 #define ____FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerVector2InertiaModifier_INTERFACE_DEFINED__
 
@@ -5828,12 +5546,10 @@ interface __FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CInteracti
 
 #endif // ____FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerVector2InertiaModifier_INTERFACE_DEFINED__
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerVector2InertiaModifier_INTERFACE_DEFINED__)
 #define ____FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerVector2InertiaModifier_INTERFACE_DEFINED__
 
@@ -5904,8 +5620,7 @@ interface __FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CInteracti
 
 #endif // ____FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CInteractionTrackerVector2InertiaModifier_INTERFACE_DEFINED__
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 struct __x_ABI_CWindows_CFoundation_CNumerics_CVector3;
 
@@ -6022,6 +5737,9 @@ interface __FIReference_1_float
 
 
 
+
+
+
 #ifndef ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionAnimation_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionAnimation_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CComposition_CICompositionAnimation __x_ABI_CMicrosoft_CUI_CComposition_CICompositionAnimation;
@@ -6074,19 +5792,19 @@ typedef interface __x_ABI_CMicrosoft_CUI_CComposition_CIVisual __x_ABI_CMicrosof
 
 
 
+#ifndef ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+
+
+
+
+
+
 
 typedef struct __x_ABI_CWindows_CFoundation_CNumerics_CVector3 __x_ABI_CWindows_CFoundation_CNumerics_CVector3;
-
-
-
-
-#ifndef ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-#define ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-typedef interface __x_ABI_CWindows_CUI_CInput_CIPointerPoint __x_ABI_CWindows_CUI_CInput_CIPointerPoint;
-
-#endif // ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-
-
 
 
 
@@ -6181,21 +5899,17 @@ typedef enum __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CVisualInteractio
 
 
 
-
 /*
  *
  * Struct Microsoft.UI.Composition.Interactions.InteractionBindingAxisModes
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-/* [v1_enum, flags, experimental, contract] */
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+/* [v1_enum, flags, contract] */
 enum __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CInteractionBindingAxisModes
 {
     InteractionBindingAxisModes_None = 0,
@@ -6203,179 +5917,151 @@ enum __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CInteractionBindingAxisMo
     InteractionBindingAxisModes_PositionY = 0x2,
     InteractionBindingAxisModes_Scale = 0x4,
 };
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Struct Microsoft.UI.Composition.Interactions.InteractionChainingMode
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-/* [v1_enum, experimental, contract] */
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+/* [v1_enum, contract] */
 enum __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CInteractionChainingMode
 {
     InteractionChainingMode_Auto = 0,
     InteractionChainingMode_Always = 1,
     InteractionChainingMode_Never = 2,
 };
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Struct Microsoft.UI.Composition.Interactions.InteractionSourceMode
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-/* [v1_enum, experimental, contract] */
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+/* [v1_enum, contract] */
 enum __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CInteractionSourceMode
 {
     InteractionSourceMode_Disabled = 0,
     InteractionSourceMode_EnabledWithInertia = 1,
     InteractionSourceMode_EnabledWithoutInertia = 2,
 };
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Struct Microsoft.UI.Composition.Interactions.InteractionSourceRedirectionMode
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-/* [v1_enum, experimental, contract] */
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+/* [v1_enum, contract] */
 enum __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CInteractionSourceRedirectionMode
 {
     InteractionSourceRedirectionMode_Disabled = 0,
     InteractionSourceRedirectionMode_Enabled = 1,
 };
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Struct Microsoft.UI.Composition.Interactions.InteractionTrackerClampingOption
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-/* [v1_enum, experimental, contract] */
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+/* [v1_enum, contract] */
 enum __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CInteractionTrackerClampingOption
 {
     InteractionTrackerClampingOption_Auto = 0,
     InteractionTrackerClampingOption_Disabled = 1,
 };
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Struct Microsoft.UI.Composition.Interactions.InteractionTrackerPositionUpdateOption
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-/* [v1_enum, experimental, contract] */
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+/* [v1_enum, contract] */
 enum __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CInteractionTrackerPositionUpdateOption
 {
     InteractionTrackerPositionUpdateOption_Default = 0,
     InteractionTrackerPositionUpdateOption_AllowActiveCustomScaleAnimation = 1,
 };
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Struct Microsoft.UI.Composition.Interactions.VisualInteractionSourceRedirectionMode
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-/* [v1_enum, experimental, contract] */
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+/* [v1_enum, contract] */
 enum __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CVisualInteractionSourceRedirectionMode
 {
     VisualInteractionSourceRedirectionMode_Off = 0,
     VisualInteractionSourceRedirectionMode_CapableTouchpadOnly = 1,
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
     
     VisualInteractionSourceRedirectionMode_PointerWheelOnly = 2,
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
     
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
     
     VisualInteractionSourceRedirectionMode_CapableTouchpadAndPointerWheel = 3,
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
     
 };
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.ICompositionConditionalValue
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.CompositionConditionalValue
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValue_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValue_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_ICompositionConditionalValue[] = L"Microsoft.UI.Composition.Interactions.ICompositionConditionalValue";
-/* [object, uuid("3743DDA0-FBE2-5ECF-9E80-4638A011F707"), experimental, exclusiveto, contract] */
+/* [object, uuid("3743DDA0-FBE2-5ECF-9E80-4638A011F707"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValueVtbl
 {
     BEGIN_INTERFACE
@@ -6471,29 +6157,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditi
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValue;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValue_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.ICompositionConditionalValueStatics
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.CompositionConditionalValue
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValueStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValueStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_ICompositionConditionalValueStatics[] = L"Microsoft.UI.Composition.Interactions.ICompositionConditionalValueStatics";
-/* [object, uuid("DF133C1F-A185-536C-B54B-8F369212A581"), experimental, exclusiveto, contract] */
+/* [object, uuid("DF133C1F-A185-536C-B54B-8F369212A581"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValueStaticsVtbl
 {
     BEGIN_INTERFACE
@@ -6569,26 +6251,22 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditi
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValueStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionConditionalValueStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.ICompositionInteractionSource
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSource_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSource_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_ICompositionInteractionSource[] = L"Microsoft.UI.Composition.Interactions.ICompositionInteractionSource";
-/* [object, uuid("711C72C0-C406-4A12-859B-B44F651AF046"), experimental, contract] */
+/* [object, uuid("711C72C0-C406-4A12-859B-B44F651AF046"), contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSourceVtbl
 {
     BEGIN_INTERFACE
@@ -6656,29 +6334,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInterac
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSource;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSource_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.ICompositionInteractionSourceCollection
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.CompositionInteractionSourceCollection
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSourceCollection_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSourceCollection_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_ICompositionInteractionSourceCollection[] = L"Microsoft.UI.Composition.Interactions.ICompositionInteractionSourceCollection";
-/* [object, uuid("9AA1B86B-B002-5E2E-BB2B-0E2C547445E1"), experimental, exclusiveto, contract] */
+/* [object, uuid("9AA1B86B-B002-5E2E-BB2B-0E2C547445E1"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSourceCollectionVtbl
 {
     BEGIN_INTERFACE
@@ -6773,29 +6447,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInterac
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSourceCollection;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSourceCollection_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionSourceConfiguration
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionSourceConfiguration
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionSourceConfiguration_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionSourceConfiguration_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionSourceConfiguration[] = L"Microsoft.UI.Composition.Interactions.IInteractionSourceConfiguration";
-/* [object, uuid("099E0124-DADF-5BC6-A895-90387657550F"), experimental, exclusiveto, contract] */
+/* [object, uuid("099E0124-DADF-5BC6-A895-90387657550F"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionSourceConfigurationVtbl
 {
     BEGIN_INTERFACE
@@ -6905,29 +6575,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionSourceC
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionSourceConfiguration;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionSourceConfiguration_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTracker
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTracker
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTracker[] = L"Microsoft.UI.Composition.Interactions.IInteractionTracker";
-/* [object, uuid("02D8EC1F-8F04-505E-BD1E-47B2A204DE51"), experimental, exclusiveto, contract] */
+/* [object, uuid("02D8EC1F-8F04-505E-BD1E-47B2A204DE51"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVtbl
 {
     BEGIN_INTERFACE
@@ -7238,29 +6904,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTracker2
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTracker
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTracker2[] = L"Microsoft.UI.Composition.Interactions.IInteractionTracker2";
-/* [object, uuid("396D7FB1-2FAD-5508-8591-4FF0DC5A7484"), experimental, exclusiveto, contract] */
+/* [object, uuid("396D7FB1-2FAD-5508-8591-4FF0DC5A7484"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker2Vtbl
 {
     BEGIN_INTERFACE
@@ -7342,29 +7004,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker2;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTracker3
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTracker
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker3_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker3_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTracker3[] = L"Microsoft.UI.Composition.Interactions.IInteractionTracker3";
-/* [object, uuid("239752CF-266C-5ACB-ACC3-B3E3ECAF4D3F"), experimental, exclusiveto, contract] */
+/* [object, uuid("239752CF-266C-5ACB-ACC3-B3E3ECAF4D3F"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker3Vtbl
 {
     BEGIN_INTERFACE
@@ -7439,29 +7097,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker3;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker3_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTracker4
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTracker
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker4_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker4_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTracker4[] = L"Microsoft.UI.Composition.Interactions.IInteractionTracker4";
-/* [object, uuid("A9A9CE02-53C9-5690-A575-F340B7C2FDF2"), experimental, exclusiveto, contract] */
+/* [object, uuid("A9A9CE02-53C9-5690-A575-F340B7C2FDF2"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker4Vtbl
 {
     BEGIN_INTERFACE
@@ -7554,29 +7208,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker4;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker4_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTracker5
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTracker
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker5_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker5_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTracker5[] = L"Microsoft.UI.Composition.Interactions.IInteractionTracker5";
-/* [object, uuid("DBFCD333-C3BF-5057-A45E-25EDF06EBD8F"), experimental, exclusiveto, contract] */
+/* [object, uuid("DBFCD333-C3BF-5057-A45E-25EDF06EBD8F"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker5Vtbl
 {
     BEGIN_INTERFACE
@@ -7654,29 +7304,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker5;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker5_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerCustomAnimationStateEnteredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerCustomAnimationStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerCustomAnimationStateEnteredArgs[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerCustomAnimationStateEnteredArgs";
-/* [object, uuid("7464035C-CFCE-56DA-9472-420F276BD0A5"), experimental, exclusiveto, contract] */
+/* [object, uuid("7464035C-CFCE-56DA-9472-420F276BD0A5"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgsVtbl
 {
     BEGIN_INTERFACE
@@ -7751,29 +7397,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgs_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerCustomAnimationStateEnteredArgs2
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerCustomAnimationStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgs2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgs2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerCustomAnimationStateEnteredArgs2[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerCustomAnimationStateEnteredArgs2";
-/* [object, uuid("06B99FBC-D6A8-5AE3-88B8-E91621BECBD6"), experimental, exclusiveto, contract] */
+/* [object, uuid("06B99FBC-D6A8-5AE3-88B8-E91621BECBD6"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgs2Vtbl
 {
     BEGIN_INTERFACE
@@ -7848,29 +7490,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgs2;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerCustomAnimationStateEnteredArgs2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerIdleStateEnteredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerIdleStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerIdleStateEnteredArgs[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerIdleStateEnteredArgs";
-/* [object, uuid("199094AB-15FD-539C-97B8-964A8196F777"), experimental, exclusiveto, contract] */
+/* [object, uuid("199094AB-15FD-539C-97B8-964A8196F777"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgsVtbl
 {
     BEGIN_INTERFACE
@@ -7945,29 +7583,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgs_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerIdleStateEnteredArgs2
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerIdleStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgs2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgs2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerIdleStateEnteredArgs2[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerIdleStateEnteredArgs2";
-/* [object, uuid("4EB213C0-931C-5164-8965-11C0186D3390"), experimental, exclusiveto, contract] */
+/* [object, uuid("4EB213C0-931C-5164-8965-11C0186D3390"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgs2Vtbl
 {
     BEGIN_INTERFACE
@@ -8042,29 +7676,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgs2;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerIdleStateEnteredArgs2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaModifier
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaModifier
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifier_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifier_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaModifier[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaModifier";
-/* [object, uuid("4D3A0C6B-C508-5029-A47A-CBF64636F010"), experimental, exclusiveto, contract] */
+/* [object, uuid("4D3A0C6B-C508-5029-A47A-CBF64636F010"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifierVtbl
 {
     BEGIN_INTERFACE
@@ -8132,29 +7762,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifier;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifier_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaModifierFactory
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaModifier
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifierFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifierFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaModifierFactory[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaModifierFactory";
-/* [object, uuid("6DEE5B33-0B5A-57B1-8537-93D4FD038F9F"), experimental, exclusiveto, contract] */
+/* [object, uuid("6DEE5B33-0B5A-57B1-8537-93D4FD038F9F"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifierFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -8222,29 +7848,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifierFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaModifierFactory_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaMotion
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaMotion
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotion_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotion_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaMotion[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaMotion";
-/* [object, uuid("91F662C0-3141-5B5E-862F-CFC60BEE8CD6"), experimental, exclusiveto, contract] */
+/* [object, uuid("91F662C0-3141-5B5E-862F-CFC60BEE8CD6"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotionVtbl
 {
     BEGIN_INTERFACE
@@ -8340,29 +7962,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotion;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotion_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaMotionStatics
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaMotion
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotionStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotionStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaMotionStatics[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaMotionStatics";
-/* [object, uuid("B0185A4F-0059-52C6-A660-9AED0C44FF7D"), experimental, exclusiveto, contract] */
+/* [object, uuid("B0185A4F-0059-52C6-A660-9AED0C44FF7D"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotionStaticsVtbl
 {
     BEGIN_INTERFACE
@@ -8438,29 +8056,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotionStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaMotionStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaNaturalMotion
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaNaturalMotion
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotion_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotion_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaNaturalMotion[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaNaturalMotion";
-/* [object, uuid("8C7482E0-185D-56B1-B67F-FCA4FCD13CD2"), experimental, exclusiveto, contract] */
+/* [object, uuid("8C7482E0-185D-56B1-B67F-FCA4FCD13CD2"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotionVtbl
 {
     BEGIN_INTERFACE
@@ -8556,29 +8170,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotion;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotion_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaNaturalMotionStatics
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaNaturalMotion
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotionStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotionStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaNaturalMotionStatics[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaNaturalMotionStatics";
-/* [object, uuid("860EC143-F165-5298-ABF2-47369DD07F10"), experimental, exclusiveto, contract] */
+/* [object, uuid("860EC143-F165-5298-ABF2-47369DD07F10"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotionStaticsVtbl
 {
     BEGIN_INTERFACE
@@ -8654,29 +8264,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotionStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaNaturalMotionStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaRestingValue
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaRestingValue
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValue_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValue_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaRestingValue[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaRestingValue";
-/* [object, uuid("1A2B20CD-3371-53FF-A560-F4847B467D73"), experimental, exclusiveto, contract] */
+/* [object, uuid("1A2B20CD-3371-53FF-A560-F4847B467D73"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValueVtbl
 {
     BEGIN_INTERFACE
@@ -8772,29 +8378,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValue;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValue_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaRestingValueStatics
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaRestingValue
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValueStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValueStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaRestingValueStatics[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaRestingValueStatics";
-/* [object, uuid("CF0F0414-7FDF-5284-AEEF-28B71B62AA4F"), experimental, exclusiveto, contract] */
+/* [object, uuid("CF0F0414-7FDF-5284-AEEF-28B71B62AA4F"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValueStaticsVtbl
 {
     BEGIN_INTERFACE
@@ -8870,29 +8472,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValueStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaRestingValueStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaStateEnteredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaStateEnteredArgs[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaStateEnteredArgs";
-/* [object, uuid("5B76C949-A4D0-5C9D-9292-7013AE9656C7"), experimental, exclusiveto, contract] */
+/* [object, uuid("5B76C949-A4D0-5C9D-9292-7013AE9656C7"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgsVtbl
 {
     BEGIN_INTERFACE
@@ -9009,29 +8607,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaStateEnteredArgs2
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaStateEnteredArgs2[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaStateEnteredArgs2";
-/* [object, uuid("C42D7E8F-7199-57A9-8AEC-8727552B13E6"), experimental, exclusiveto, contract] */
+/* [object, uuid("C42D7E8F-7199-57A9-8AEC-8727552B13E6"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs2Vtbl
 {
     BEGIN_INTERFACE
@@ -9106,29 +8700,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs2;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaStateEnteredArgs3
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs3_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs3_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInertiaStateEnteredArgs3[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaStateEnteredArgs3";
-/* [object, uuid("CE726CA0-1C04-531B-9951-4AEC996952E4"), experimental, exclusiveto, contract] */
+/* [object, uuid("CE726CA0-1C04-531B-9951-4AEC996952E4"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs3Vtbl
 {
     BEGIN_INTERFACE
@@ -9203,29 +8793,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs3;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInertiaStateEnteredArgs3_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInteractingStateEnteredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInteractingStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInteractingStateEnteredArgs[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInteractingStateEnteredArgs";
-/* [object, uuid("70D29B84-0931-5F17-A8A1-82F8F8782532"), experimental, exclusiveto, contract] */
+/* [object, uuid("70D29B84-0931-5F17-A8A1-82F8F8782532"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgsVtbl
 {
     BEGIN_INTERFACE
@@ -9300,29 +8886,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgs_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerInteractingStateEnteredArgs2
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerInteractingStateEnteredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgs2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgs2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerInteractingStateEnteredArgs2[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerInteractingStateEnteredArgs2";
-/* [object, uuid("2F1FF38D-2F51-5CEB-8D09-BDA1519F9342"), experimental, exclusiveto, contract] */
+/* [object, uuid("2F1FF38D-2F51-5CEB-8D09-BDA1519F9342"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgs2Vtbl
 {
     BEGIN_INTERFACE
@@ -9397,26 +8979,22 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgs2;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerInteractingStateEnteredArgs2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerOwner
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerOwner_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerOwner_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerOwner[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerOwner";
-/* [object, uuid("8869779D-1D2A-5816-836A-68A910507D87"), experimental, contract] */
+/* [object, uuid("8869779D-1D2A-5816-836A-68A910507D87"), contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerOwnerVtbl
 {
     BEGIN_INTERFACE
@@ -9532,29 +9110,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerOwner;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerOwner_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerRequestIgnoredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerRequestIgnoredArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerRequestIgnoredArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerRequestIgnoredArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerRequestIgnoredArgs[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerRequestIgnoredArgs";
-/* [object, uuid("C276205E-F7A5-5BA2-AD45-D12C3C339149"), experimental, exclusiveto, contract] */
+/* [object, uuid("C276205E-F7A5-5BA2-AD45-D12C3C339149"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerRequestIgnoredArgsVtbl
 {
     BEGIN_INTERFACE
@@ -9629,29 +9203,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerRequestIgnoredArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerRequestIgnoredArgs_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerStatics
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTracker
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerStatics[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerStatics";
-/* [object, uuid("7AC9867A-E16E-56EF-9809-F6E404240F50"), experimental, exclusiveto, contract] */
+/* [object, uuid("7AC9867A-E16E-56EF-9809-F6E404240F50"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStaticsVtbl
 {
     BEGIN_INTERFACE
@@ -9736,29 +9306,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerStatics2
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTracker
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStatics2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStatics2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerStatics2[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerStatics2";
-/* [object, uuid("25658E4C-B99F-5108-AAB7-1CC44F11508B"), experimental, exclusiveto, contract] */
+/* [object, uuid("25658E4C-B99F-5108-AAB7-1CC44F11508B"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStatics2Vtbl
 {
     BEGIN_INTERFACE
@@ -9844,29 +9410,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStatics2;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerStatics2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerValuesChangedArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerValuesChangedArgs
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerValuesChangedArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerValuesChangedArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerValuesChangedArgs[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerValuesChangedArgs";
-/* [object, uuid("9B495BED-1CF7-55C1-82B9-8022CBF3C766"), experimental, exclusiveto, contract] */
+/* [object, uuid("9B495BED-1CF7-55C1-82B9-8022CBF3C766"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerValuesChangedArgsVtbl
 {
     BEGIN_INTERFACE
@@ -9955,29 +9517,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerValuesChangedArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerValuesChangedArgs_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaModifier
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaModifier
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifier_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifier_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerVector2InertiaModifier[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaModifier";
-/* [object, uuid("4B8ED310-CB61-5F0A-B99A-940CDD2C42B1"), experimental, exclusiveto, contract] */
+/* [object, uuid("4B8ED310-CB61-5F0A-B99A-940CDD2C42B1"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifierVtbl
 {
     BEGIN_INTERFACE
@@ -10045,29 +9603,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifier;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifier_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaModifierFactory
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaModifier
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifierFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifierFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerVector2InertiaModifierFactory[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaModifierFactory";
-/* [object, uuid("1B3FD240-BA66-5296-B801-62A2A3606613"), experimental, exclusiveto, contract] */
+/* [object, uuid("1B3FD240-BA66-5296-B801-62A2A3606613"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifierFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -10135,29 +9689,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifierFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaModifierFactory_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaNaturalMotion
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaNaturalMotion
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotion_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotion_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerVector2InertiaNaturalMotion[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaNaturalMotion";
-/* [object, uuid("097BA1A6-E077-52D1-86D3-38E3F6619DDF"), experimental, exclusiveto, contract] */
+/* [object, uuid("097BA1A6-E077-52D1-86D3-38E3F6619DDF"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotionVtbl
 {
     BEGIN_INTERFACE
@@ -10253,29 +9803,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotion;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotion_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaNaturalMotionStatics
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaNaturalMotion
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotionStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotionStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IInteractionTrackerVector2InertiaNaturalMotionStatics[] = L"Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaNaturalMotionStatics";
-/* [object, uuid("CC24AB87-9131-5286-B3CE-1EF97E0974E6"), experimental, exclusiveto, contract] */
+/* [object, uuid("CC24AB87-9131-5286-B3CE-1EF97E0974E6"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotionStaticsVtbl
 {
     BEGIN_INTERFACE
@@ -10351,29 +9897,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTracker
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotionStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIInteractionTrackerVector2InertiaNaturalMotionStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IVisualInteractionSource
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.VisualInteractionSource
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IVisualInteractionSource[] = L"Microsoft.UI.Composition.Interactions.IVisualInteractionSource";
-/* [object, uuid("A4BD7C59-5A0A-522F-B1B0-DE2FE0EFE9AA"), experimental, exclusiveto, contract] */
+/* [object, uuid("CFB7245C-35A6-577D-9572-D38B3A7BCDA4"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceVtbl
 {
     BEGIN_INTERFACE
@@ -10485,7 +10027,7 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
         );
     HRESULT ( STDMETHODCALLTYPE *TryRedirectForManipulation )(
         __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource * This,
-        /* [in] */__x_ABI_CWindows_CUI_CInput_CIPointerPoint * pointerPoint
+        /* [in] */__x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * pointerPoint
         );
     END_INTERFACE
     
@@ -10581,29 +10123,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionS
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IVisualInteractionSource2
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.VisualInteractionSource
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IVisualInteractionSource2[] = L"Microsoft.UI.Composition.Interactions.IVisualInteractionSource2";
-/* [object, uuid("FF1132BA-DC0D-519E-BE49-BE301E52306A"), experimental, exclusiveto, contract] */
+/* [object, uuid("FF1132BA-DC0D-519E-BE49-BE301E52306A"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource2Vtbl
 {
     BEGIN_INTERFACE
@@ -10748,29 +10286,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionS
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource2;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IVisualInteractionSource3
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.VisualInteractionSource
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource3_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource3_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IVisualInteractionSource3[] = L"Microsoft.UI.Composition.Interactions.IVisualInteractionSource3";
-/* [object, uuid("D523BD66-A05D-5417-8E07-84AE3CAF9752"), experimental, exclusiveto, contract] */
+/* [object, uuid("D523BD66-A05D-5417-8E07-84AE3CAF9752"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource3Vtbl
 {
     BEGIN_INTERFACE
@@ -10845,29 +10379,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionS
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource3;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSource3_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IVisualInteractionSourceObjectFactory
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.VisualInteractionSource
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceObjectFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceObjectFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IVisualInteractionSourceObjectFactory[] = L"Microsoft.UI.Composition.Interactions.IVisualInteractionSourceObjectFactory";
-/* [object, uuid("FEB73102-238C-52AA-8E03-B68D5ECC44B3"), experimental, exclusiveto, contract] */
+/* [object, uuid("FEB73102-238C-52AA-8E03-B68D5ECC44B3"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceObjectFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -10935,29 +10465,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionS
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceObjectFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceObjectFactory_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IVisualInteractionSourceStatics
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.VisualInteractionSource
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IVisualInteractionSourceStatics[] = L"Microsoft.UI.Composition.Interactions.IVisualInteractionSourceStatics";
-/* [object, uuid("5FC9C763-E2E5-530E-87CD-B93118ADE8A3"), experimental, exclusiveto, contract] */
+/* [object, uuid("5FC9C763-E2E5-530E-87CD-B93118ADE8A3"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStaticsVtbl
 {
     BEGIN_INTERFACE
@@ -11033,29 +10559,25 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionS
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Composition.Interactions.IVisualInteractionSourceStatics2
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Composition.Interactions.VisualInteractionSource
  *
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStatics2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStatics2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Interactions_IVisualInteractionSourceStatics2[] = L"Microsoft.UI.Composition.Interactions.IVisualInteractionSourceStatics2";
-/* [object, uuid("A6B494FE-12A1-5A73-B87E-4C4EF58EAC6C"), experimental, exclusiveto, contract] */
+/* [object, uuid("A6B494FE-12A1-5A73-B87E-4C4EF58EAC6C"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStatics2Vtbl
 {
     BEGIN_INTERFACE
@@ -11131,21 +10653,18 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionS
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStatics2;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisualInteractionSourceStatics2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.CompositionConditionalValue
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.ICompositionConditionalValueStatics interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.ICompositionConditionalValueStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.ICompositionConditionalValue ** Default Interface **
@@ -11155,25 +10674,21 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CIVisua
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_CompositionConditionalValue_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_CompositionConditionalValue_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_CompositionConditionalValue[] = L"Microsoft.UI.Composition.Interactions.CompositionConditionalValue";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.CompositionInteractionSourceCollection
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.ICompositionInteractionSourceCollection ** Default Interface **
@@ -11184,25 +10699,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_CompositionInteractionSourceCollection_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_CompositionInteractionSourceCollection_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_CompositionInteractionSourceCollection[] = L"Microsoft.UI.Composition.Interactions.CompositionInteractionSourceCollection";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionSourceConfiguration
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionSourceConfiguration ** Default Interface **
@@ -11212,29 +10723,25 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionSourceConfiguration_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionSourceConfiguration_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionSourceConfiguration[] = L"Microsoft.UI.Composition.Interactions.InteractionSourceConfiguration";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTracker
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerStatics2 interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerStatics interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerStatics2 interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTracker ** Default Interface **
@@ -11248,25 +10755,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTracker_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTracker_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTracker[] = L"Microsoft.UI.Composition.Interactions.InteractionTracker";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerCustomAnimationStateEnteredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerCustomAnimationStateEnteredArgs ** Default Interface **
@@ -11275,25 +10778,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerCustomAnimationStateEnteredArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerCustomAnimationStateEnteredArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerCustomAnimationStateEnteredArgs[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerCustomAnimationStateEnteredArgs";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerIdleStateEnteredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerIdleStateEnteredArgs ** Default Interface **
@@ -11302,25 +10801,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerIdleStateEnteredArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerIdleStateEnteredArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerIdleStateEnteredArgs[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerIdleStateEnteredArgs";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaModifier
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaModifier ** Default Interface **
@@ -11330,28 +10825,24 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaModifier_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaModifier_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaModifier[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaModifier";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaMotion
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaMotionStatics interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaMotionStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaMotion ** Default Interface **
@@ -11361,28 +10852,24 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaMotion_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaMotion_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaMotion[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaMotion";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaNaturalMotion
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaNaturalMotionStatics interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaNaturalMotionStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaNaturalMotion ** Default Interface **
@@ -11392,28 +10879,24 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaNaturalMotion_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaNaturalMotion_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaNaturalMotion[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaNaturalMotion";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaRestingValue
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaRestingValueStatics interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaRestingValueStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaRestingValue ** Default Interface **
@@ -11423,25 +10906,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaRestingValue_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaRestingValue_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaRestingValue[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaRestingValue";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaStateEnteredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerInertiaStateEnteredArgs ** Default Interface **
@@ -11451,25 +10930,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaStateEnteredArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaStateEnteredArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaStateEnteredArgs[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaStateEnteredArgs";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerInteractingStateEnteredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerInteractingStateEnteredArgs ** Default Interface **
@@ -11478,25 +10953,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInteractingStateEnteredArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerInteractingStateEnteredArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerInteractingStateEnteredArgs[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerInteractingStateEnteredArgs";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerRequestIgnoredArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerRequestIgnoredArgs ** Default Interface **
@@ -11504,25 +10975,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerRequestIgnoredArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerRequestIgnoredArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerRequestIgnoredArgs[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerRequestIgnoredArgs";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerValuesChangedArgs
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerValuesChangedArgs ** Default Interface **
@@ -11530,25 +10997,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerValuesChangedArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerValuesChangedArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerValuesChangedArgs[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerValuesChangedArgs";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaModifier
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaModifier ** Default Interface **
@@ -11558,28 +11021,24 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerVector2InertiaModifier_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerVector2InertiaModifier_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerVector2InertiaModifier[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaModifier";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaNaturalMotion
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaNaturalMotionStatics interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaNaturalMotionStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IInteractionTrackerVector2InertiaNaturalMotion ** Default Interface **
@@ -11589,29 +11048,25 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerVector2InertiaNaturalMotion_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_InteractionTrackerVector2InertiaNaturalMotion_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_InteractionTrackerVector2InertiaNaturalMotion[] = L"Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaNaturalMotion";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Composition.Interactions.VisualInteractionSource
  *
- * Introduced to Microsoft.UI.Composition.Interactions.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IVisualInteractionSourceStatics2 interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
- *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IVisualInteractionSourceStatics interface starting with version 1.0 of the Microsoft.UI.Composition.Interactions.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IVisualInteractionSourceStatics2 interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.UI.Composition.Interactions.IVisualInteractionSourceStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.Interactions.IVisualInteractionSource ** Default Interface **
@@ -11624,15 +11079,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Composition_Interactions_VisualInteractionSource_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Composition_Interactions_VisualInteractionSource_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Composition_Interactions_VisualInteractionSource[] = L"Microsoft.UI.Composition.Interactions.VisualInteractionSource";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 

@@ -49,21 +49,13 @@
 
 //  API Contract Inclusion Definitions
 #if !defined(SPECIFIC_API_CONTRACT_DEFINITIONS)
-#if !defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
@@ -74,7 +66,7 @@
 #endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x80000
+#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 
 #if !defined(WINDOWS_APPLICATIONMODEL_ACTIVATION_ACTIVATEDEVENTSCONTRACT_VERSION)
@@ -1366,14 +1358,11 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Hosting {
-                    /* [object, uuid("CB0F3D9B-6BA2-55DE-932C-6FE76BE86CC3"), exclusiveto, contract] */
-                    MIDL_INTERFACE("CB0F3D9B-6BA2-55DE-932C-6FE76BE86CC3")
+                    /* [object, uuid("73C343E9-379E-5420-ADFE-C7F327445F12"), exclusiveto, contract] */
+                    MIDL_INTERFACE("73C343E9-379E-5420-ADFE-C7F327445F12")
                     IXamlIsland : public IInspectable
                     {
                     public:
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_AppContent(
-                            /* [retval, out] */IInspectable * * value
-                            ) = 0;
                         /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Content(
                             /* [retval, out] */ABI::Microsoft::UI::Xaml::IUIElement * * value
                             ) = 0;
@@ -3037,7 +3026,7 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManage
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IXamlIsland[] = L"Microsoft.UI.Xaml.Hosting.IXamlIsland";
-/* [object, uuid("CB0F3D9B-6BA2-55DE-932C-6FE76BE86CC3"), exclusiveto, contract] */
+/* [object, uuid("73C343E9-379E-5420-ADFE-C7F327445F12"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandVtbl
 {
     BEGIN_INTERFACE
@@ -3071,11 +3060,7 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
     __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_AppContent )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * This,
-        /* [retval, out] */IInspectable * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Content )(
+/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Content )(
         __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * This,
         /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * * value
         );
@@ -3121,9 +3106,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland
 
 #define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_get_AppContent(This,value) \
-    ( (This)->lpVtbl->get_AppContent(This,value) )
 
 #define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_get_Content(This,value) \
     ( (This)->lpVtbl->get_Content(This,value) )

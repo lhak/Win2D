@@ -49,25 +49,13 @@
 
 //  API Contract Inclusion Definitions
 #if !defined(SPECIFIC_API_CONTRACT_DEFINITIONS)
-#if !defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
@@ -78,7 +66,7 @@
 #endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x80000
+#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 
 #if !defined(WINDOWS_APPLICATIONMODEL_ACTIVATION_ACTIVATEDEVENTSCONTRACT_VERSION)
@@ -250,11 +238,9 @@
 #include "EventToken.h"
 #include "windowscontracts.h"
 #include "Windows.Foundation.h"
-#include "Microsoft.UI.Composition.h"
+#include "Microsoft.Foundation.h"
 #include "Microsoft.UI.Xaml.h"
 #include "Windows.UI.h"
-// Importing Collections header
-#include <windows.foundation.collections.h>
 
 #if defined(__cplusplus) && !defined(CINTERFACE)
 /* Forward Declarations */
@@ -284,19 +270,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CIColorHelperStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            interface IColorHelperStatics2;
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2 ABI::Microsoft::UI::IColorHelperStatics2
-
-#endif // ____x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CIColors_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CIColors_FWD_DEFINED__
 namespace ABI {
@@ -323,182 +296,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CIColorsStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CIContentAutomation_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CIContentAutomation_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            interface IContentAutomation;
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomation ABI::Microsoft::UI::IContentAutomation
-
-#endif // ____x_ABI_CMicrosoft_CUI_CIContentAutomation_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            interface IContentAutomationProviderRequestedEventArgs;
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs ABI::Microsoft::UI::IContentAutomationProviderRequestedEventArgs
-
-#endif // ____x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            interface IContentAutomationStatics;
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics ABI::Microsoft::UI::IContentAutomationStatics
-
-#endif // ____x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CIUIContentRoot_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CIUIContentRoot_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            interface IUIContentRoot;
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRoot ABI::Microsoft::UI::IUIContentRoot
-
-#endif // ____x_ABI_CMicrosoft_CUI_CIUIContentRoot_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            interface IUIContentRootFactory;
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory ABI::Microsoft::UI::IUIContentRootFactory
-
-#endif // ____x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            interface IUIContentRootPartner;
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner ABI::Microsoft::UI::IUIContentRootPartner
-
-#endif // ____x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            interface IUIContentRoot_ContentAutomation;
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation ABI::Microsoft::UI::IUIContentRoot_ContentAutomation
-
-#endif // ____x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_FWD_DEFINED__
-
-// Parameterized interface forward declarations (C++)
-
-// Collection interface definitions
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            class ContentAutomation;
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            class ContentAutomationProviderRequestedEventArgs;
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-
-#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs_USE
-#define DEF___FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation {
-template <>
-struct __declspec(uuid("77c4e6ab-d324-5ab0-9b46-d88366cf08fd"))
-ITypedEventHandler<ABI::Microsoft::UI::ContentAutomation*,ABI::Microsoft::UI::ContentAutomationProviderRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::ContentAutomation*, ABI::Microsoft::UI::IContentAutomation*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::ContentAutomationProviderRequestedEventArgs*, ABI::Microsoft::UI::IContentAutomationProviderRequestedEventArgs*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.ContentAutomation, Microsoft.UI.ContentAutomationProviderRequestedEventArgs>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef ITypedEventHandler<ABI::Microsoft::UI::ContentAutomation*,ABI::Microsoft::UI::ContentAutomationProviderRequestedEventArgs*> __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs_t;
-#define __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs_t
-/* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::IContentAutomation*,ABI::Microsoft::UI::IContentAutomationProviderRequestedEventArgs*>
-//#define __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::IContentAutomation*,ABI::Microsoft::UI::IContentAutomationProviderRequestedEventArgs*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs_USE */
-
-
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Composition {
-                class CompositionIsland;
-            } /* Composition */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionIsland_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionIsland_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Composition {
-                interface ICompositionIsland;
-            } /* Composition */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CComposition_CICompositionIsland ABI::Microsoft::UI::Composition::ICompositionIsland
-
-#endif // ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionIsland_FWD_DEFINED__
-
 
 
 
@@ -519,14 +316,25 @@ namespace ABI {
 
 
 
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            
+            typedef struct DisplayId DisplayId;
+            
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
 
-
-
-
-
-
-
-
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            
+            typedef struct WindowId WindowId;
+            
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
 
 
 
@@ -552,20 +360,55 @@ namespace ABI {
 
 
 
+
+/*
+ *
+ * Struct Microsoft.UI.DisplayId
+ *
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
+ *
+ *
+ */
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+
 namespace ABI {
     namespace Microsoft {
         namespace UI {
-            class UIContentRoot;
+            /* [contract] */
+            struct DisplayId
+            {
+                UINT64 Value;
+            };
+            
         } /* UI */
     } /* Microsoft */
 } /* ABI */
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
+/*
+ *
+ * Struct Microsoft.UI.WindowId
+ *
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
+ *
+ *
+ */
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
-
-
-
-
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            /* [contract] */
+            struct WindowId
+            {
+                UINT64 Value;
+            };
+            
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -623,8 +466,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microso
 namespace ABI {
     namespace Microsoft {
         namespace UI {
-            /* [object, uuid("1D1D85A1-EB63-538A-84F0-019210BC406B"), exclusiveto, contract] */
-            MIDL_INTERFACE("1D1D85A1-EB63-538A-84F0-019210BC406B")
+            /* [object, uuid("BBBC53B3-6E0C-51EB-97EE-7ABFDFD50862"), exclusiveto, contract] */
+            MIDL_INTERFACE("BBBC53B3-6E0C-51EB-97EE-7ABFDFD50862")
             IColorHelperStatics : public IInspectable
             {
             public:
@@ -634,6 +477,10 @@ namespace ABI {
                     /* [in] */BYTE g,
                     /* [in] */BYTE b,
                     /* [retval, out] */ABI::Windows::UI::Color * result
+                    ) = 0;
+                virtual HRESULT STDMETHODCALLTYPE ToDisplayName(
+                    /* [in] */ABI::Windows::UI::Color color,
+                    /* [retval, out] */HSTRING * result
                     ) = 0;
                 
             };
@@ -651,57 +498,16 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIColorHelperStatics;
 
 /*
  *
- * Interface Microsoft.UI.IColorHelperStatics2
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 4.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.ColorHelper
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x40000
-#if !defined(____x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IColorHelperStatics2[] = L"Microsoft.UI.IColorHelperStatics2";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            /* [object, uuid("982A2D93-0EC4-56B7-9C20-0B5C77949066"), exclusiveto, contract] */
-            MIDL_INTERFACE("982A2D93-0EC4-56B7-9C20-0B5C77949066")
-            IColorHelperStatics2 : public IInspectable
-            {
-            public:
-                virtual HRESULT STDMETHODCALLTYPE ToDisplayName(
-                    /* [in] */ABI::Windows::UI::Color color,
-                    /* [retval, out] */HSTRING * result
-                    ) = 0;
-                
-            };
-
-            extern MIDL_CONST_ID IID & IID_IColorHelperStatics2=_uuidof(IColorHelperStatics2);
-            
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIColorHelperStatics2;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x40000
-
-
-/*
- *
  * Interface Microsoft.UI.IColors
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Colors
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CIColors_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CIColors_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IColors[] = L"Microsoft.UI.IColors";
@@ -724,21 +530,21 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIColors;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CIColors_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.IColorsStatics
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Colors
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CIColorsStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CIColorsStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IColorsStatics[] = L"Microsoft.UI.IColorsStatics";
@@ -1184,334 +990,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIColorsStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CIColorsStatics_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.IContentAutomation
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * Interface is a part of the implementation of type Microsoft.UI.ContentAutomation
- *
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if !defined(____x_ABI_CMicrosoft_CUI_CIContentAutomation_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CIContentAutomation_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IContentAutomation[] = L"Microsoft.UI.IContentAutomation";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            /* [object, uuid("DFA2BDCA-CBE1-53B5-B486-079B9ABFE444"), experimental, exclusiveto, contract] */
-            MIDL_INTERFACE("DFA2BDCA-CBE1-53B5-B486-079B9ABFE444")
-            IContentAutomation : public IInspectable
-            {
-            public:
-                /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_AutomationHostProvider(
-                    /* [retval, out] */IInspectable * * value
-                    ) = 0;
-                /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_AutomationProviderRequested(
-                    /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs * handler,
-                    /* [retval, out] */EventRegistrationToken * token
-                    ) = 0;
-                /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_AutomationProviderRequested(
-                    /* [in] */EventRegistrationToken token
-                    ) = 0;
-                
-            };
-
-            extern MIDL_CONST_ID IID & IID_IContentAutomation=_uuidof(IContentAutomation);
-            
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIContentAutomation;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CIContentAutomation_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.IContentAutomationProviderRequestedEventArgs
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * Interface is a part of the implementation of type Microsoft.UI.ContentAutomationProviderRequestedEventArgs
- *
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if !defined(____x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IContentAutomationProviderRequestedEventArgs[] = L"Microsoft.UI.IContentAutomationProviderRequestedEventArgs";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            /* [object, uuid("E3546970-06AD-5095-9590-FEE5D5241E49"), experimental, exclusiveto, contract] */
-            MIDL_INTERFACE("E3546970-06AD-5095-9590-FEE5D5241E49")
-            IContentAutomationProviderRequestedEventArgs : public IInspectable
-            {
-            public:
-                /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_AutomationProvider(
-                    /* [retval, out] */IInspectable * * value
-                    ) = 0;
-                /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_AutomationProvider(
-                    /* [in] */IInspectable * value
-                    ) = 0;
-                /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Handled(
-                    /* [retval, out] */::boolean * value
-                    ) = 0;
-                /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Handled(
-                    /* [in] */::boolean value
-                    ) = 0;
-                
-            };
-
-            extern MIDL_CONST_ID IID & IID_IContentAutomationProviderRequestedEventArgs=_uuidof(IContentAutomationProviderRequestedEventArgs);
-            
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.IContentAutomationStatics
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * Interface is a part of the implementation of type Microsoft.UI.ContentAutomation
- *
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if !defined(____x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IContentAutomationStatics[] = L"Microsoft.UI.IContentAutomationStatics";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            /* [object, uuid("5B520E50-FA18-5105-94FD-C9A8BCEE57F1"), experimental, exclusiveto, contract] */
-            MIDL_INTERFACE("5B520E50-FA18-5105-94FD-C9A8BCEE57F1")
-            IContentAutomationStatics : public IInspectable
-            {
-            public:
-                virtual HRESULT STDMETHODCALLTYPE CreateForContent(
-                    /* [in] */ABI::Microsoft::UI::IUIContentRoot * content,
-                    /* [retval, out] */ABI::Microsoft::UI::IContentAutomation * * result
-                    ) = 0;
-                
-            };
-
-            extern MIDL_CONST_ID IID & IID_IContentAutomationStatics=_uuidof(IContentAutomationStatics);
-            
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIContentAutomationStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.IUIContentRoot
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * Interface is a part of the implementation of type Microsoft.UI.UIContentRoot
- *
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if !defined(____x_ABI_CMicrosoft_CUI_CIUIContentRoot_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CIUIContentRoot_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IUIContentRoot[] = L"Microsoft.UI.IUIContentRoot";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            /* [object, uuid("F47C106F-C5DD-56D1-92C0-90861A2F7287"), experimental, exclusiveto, contract] */
-            MIDL_INTERFACE("F47C106F-C5DD-56D1-92C0-90861A2F7287")
-            IUIContentRoot : public IInspectable
-            {
-            public:
-                
-            };
-
-            extern MIDL_CONST_ID IID & IID_IUIContentRoot=_uuidof(IUIContentRoot);
-            
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIUIContentRoot;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CIUIContentRoot_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.IUIContentRootFactory
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * Interface is a part of the implementation of type Microsoft.UI.UIContentRoot
- *
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if !defined(____x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IUIContentRootFactory[] = L"Microsoft.UI.IUIContentRootFactory";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            /* [object, uuid("A9C562D7-4298-5DA9-8150-D777B532CC4D"), experimental, exclusiveto, contract] */
-            MIDL_INTERFACE("A9C562D7-4298-5DA9-8150-D777B532CC4D")
-            IUIContentRootFactory : public IInspectable
-            {
-            public:
-                virtual HRESULT STDMETHODCALLTYPE CreateInstance(
-                    /* [in] */ABI::Microsoft::UI::Composition::ICompositionIsland * island,
-                    /* [in] */IInspectable * inputSite,
-                    /* [retval, out] */ABI::Microsoft::UI::IUIContentRoot * * value
-                    ) = 0;
-                
-            };
-
-            extern MIDL_CONST_ID IID & IID_IUIContentRootFactory=_uuidof(IUIContentRootFactory);
-            
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIUIContentRootFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.IUIContentRootPartner
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * Interface is a part of the implementation of type Microsoft.UI.UIContentRoot
- *
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if !defined(____x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IUIContentRootPartner[] = L"Microsoft.UI.IUIContentRootPartner";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            /* [object, uuid("1A77AE47-6810-52A8-95C4-F92F1F0758A7"), experimental, exclusiveto, contract] */
-            MIDL_INTERFACE("1A77AE47-6810-52A8-95C4-F92F1F0758A7")
-            IUIContentRootPartner : public IInspectable
-            {
-            public:
-                /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_InputSite(
-                    /* [retval, out] */IInspectable * * value
-                    ) = 0;
-                /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Island(
-                    /* [retval, out] */ABI::Microsoft::UI::Composition::ICompositionIsland * * value
-                    ) = 0;
-                
-            };
-
-            extern MIDL_CONST_ID IID & IID_IUIContentRootPartner=_uuidof(IUIContentRootPartner);
-            
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIUIContentRootPartner;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.IUIContentRoot_ContentAutomation
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * Interface is a part of the implementation of type Microsoft.UI.UIContentRoot
- *
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if !defined(____x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IUIContentRoot_ContentAutomation[] = L"Microsoft.UI.IUIContentRoot_ContentAutomation";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            /* [object, uuid("A78CEA0C-7CC5-592E-B628-E21F5111DEB2"), experimental, exclusiveto, contract] */
-            MIDL_INTERFACE("A78CEA0C-7CC5-592E-B628-E21F5111DEB2")
-            IUIContentRoot_ContentAutomation : public IInspectable
-            {
-            public:
-                /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Automation(
-                    /* [retval, out] */ABI::Microsoft::UI::IContentAutomation * * value
-                    ) = 0;
-                
-            };
-
-            extern MIDL_CONST_ID IID & IID_IUIContentRoot_ContentAutomation=_uuidof(IUIContentRoot_ContentAutomation);
-            
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -1522,7 +1001,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation
  *
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.IColorHelperStatics2 interface starting with version 4.0 of the Microsoft.UI.Xaml.WinUIContract API contract
  *   Static Methods exist on the Microsoft.UI.IColorHelperStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.WinUIContract API contract
  *
  * Class implements the following interfaces:
@@ -1546,11 +1024,11 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Colors
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.IColorsStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.WinUIContract API contract
+ *   Static Methods exist on the Microsoft.UI.IColorsStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.IColors ** Default Interface **
@@ -1560,103 +1038,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Colors_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Colors_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Colors[] = L"Microsoft.UI.Colors";
 #endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.ContentAutomation
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.IContentAutomationStatics interface starting with version 1.0 of the Microsoft.UI.LiftedContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.IContentAutomation ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-
-#ifndef RUNTIMECLASS_Microsoft_UI_ContentAutomation_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_ContentAutomation_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_ContentAutomation[] = L"Microsoft.UI.ContentAutomation";
-#endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.ContentAutomationProviderRequestedEventArgs
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.IContentAutomationProviderRequestedEventArgs ** Default Interface **
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-
-#ifndef RUNTIMECLASS_Microsoft_UI_ContentAutomationProviderRequestedEventArgs_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_ContentAutomationProviderRequestedEventArgs_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_ContentAutomationProviderRequestedEventArgs[] = L"Microsoft.UI.ContentAutomationProviderRequestedEventArgs";
-#endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.UIContentRoot
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * RuntimeClass can be activated.
- *   Type can be activated via the Microsoft.UI.IUIContentRootFactory interface starting with version 1.0 of the Microsoft.UI.LiftedContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.IUIContentRoot ** Default Interface **
- *    Microsoft.UI.IUIContentRootPartner
- *    Microsoft.UI.IUIContentRoot_ContentAutomation
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-
-#ifndef RUNTIMECLASS_Microsoft_UI_UIContentRoot_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_UIContentRoot_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_UIContentRoot[] = L"Microsoft.UI.UIContentRoot";
-#endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 
@@ -1674,12 +1062,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CIColorHelperStatics __x_ABI_CMicrosoft
 
 #endif // ____x_ABI_CMicrosoft_CUI_CIColorHelperStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2 __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CIColors_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CIColors_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CIColors __x_ABI_CMicrosoft_CUI_CIColors;
@@ -1691,116 +1073,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CIColors __x_ABI_CMicrosoft_CUI_CIColor
 typedef interface __x_ABI_CMicrosoft_CUI_CIColorsStatics __x_ABI_CMicrosoft_CUI_CIColorsStatics;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CIColorsStatics_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CIContentAutomation_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CIContentAutomation_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CIContentAutomation __x_ABI_CMicrosoft_CUI_CIContentAutomation;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CIContentAutomation_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CIUIContentRoot_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CIUIContentRoot_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CIUIContentRoot __x_ABI_CMicrosoft_CUI_CIUIContentRoot;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CIUIContentRoot_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_FWD_DEFINED__
-
-// Parameterized interface forward declarations (C)
-
-// Collection interface definitions
-
-
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs_INTERFACE_DEFINED__)
-#define ____FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs_INTERFACE_DEFINED__
-
-typedef interface __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs;
-
-typedef struct __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs * This,
-        /* [in] */ __RPC__in REFIID riid,
-        /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs * This);
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs * This);
-
-    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CIContentAutomation * sender,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs * e);
-    END_INTERFACE
-} __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgsVtbl;
-
-interface __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs
-{
-    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs_Invoke(This,sender,e)	\
-    ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
-#endif /* COBJMACROS */
-
-
-
-#endif // ____FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs_INTERFACE_DEFINED__
-
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionIsland_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionIsland_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CComposition_CICompositionIsland __x_ABI_CMicrosoft_CUI_CComposition_CICompositionIsland;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionIsland_FWD_DEFINED__
-
 
 
 
@@ -1815,6 +1087,10 @@ typedef struct __x_ABI_CWindows_CUI_CColor __x_ABI_CWindows_CUI_CColor;
 
 
 
+typedef struct __x_ABI_CMicrosoft_CUI_CDisplayId __x_ABI_CMicrosoft_CUI_CDisplayId;
+
+
+typedef struct __x_ABI_CMicrosoft_CUI_CWindowId __x_ABI_CMicrosoft_CUI_CWindowId;
 
 
 
@@ -1825,18 +1101,40 @@ typedef struct __x_ABI_CWindows_CUI_CColor __x_ABI_CWindows_CUI_CColor;
 
 
 
+/*
+ *
+ * Struct Microsoft.UI.DisplayId
+ *
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
+ *
+ *
+ */
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+
+/* [contract] */
+struct __x_ABI_CMicrosoft_CUI_CDisplayId
+{
+    UINT64 Value;
+};
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
+/*
+ *
+ * Struct Microsoft.UI.WindowId
+ *
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
+ *
+ *
+ */
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
-
-
-
-
-
-
-
-
-
+/* [contract] */
+struct __x_ABI_CMicrosoft_CUI_CWindowId
+{
+    UINT64 Value;
+};
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -1940,7 +1238,7 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIColorHelper;
 #if !defined(____x_ABI_CMicrosoft_CUI_CIColorHelperStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CIColorHelperStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IColorHelperStatics[] = L"Microsoft.UI.IColorHelperStatics";
-/* [object, uuid("1D1D85A1-EB63-538A-84F0-019210BC406B"), exclusiveto, contract] */
+/* [object, uuid("BBBC53B3-6E0C-51EB-97EE-7ABFDFD50862"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CIColorHelperStaticsVtbl
 {
     BEGIN_INTERFACE
@@ -1982,6 +1280,11 @@ HRESULT ( STDMETHODCALLTYPE *FromArgb )(
         /* [in] */BYTE b,
         /* [retval, out] */__x_ABI_CWindows_CUI_CColor * result
         );
+    HRESULT ( STDMETHODCALLTYPE *ToDisplayName )(
+        __x_ABI_CMicrosoft_CUI_CIColorHelperStatics * This,
+        /* [in] */__x_ABI_CWindows_CUI_CColor color,
+        /* [retval, out] */HSTRING * result
+        );
     END_INTERFACE
     
 } __x_ABI_CMicrosoft_CUI_CIColorHelperStaticsVtbl;
@@ -2013,6 +1316,9 @@ interface __x_ABI_CMicrosoft_CUI_CIColorHelperStatics
 #define __x_ABI_CMicrosoft_CUI_CIColorHelperStatics_FromArgb(This,a,r,g,b,result) \
     ( (This)->lpVtbl->FromArgb(This,a,r,g,b,result) )
 
+#define __x_ABI_CMicrosoft_CUI_CIColorHelperStatics_ToDisplayName(This,color,result) \
+    ( (This)->lpVtbl->ToDisplayName(This,color,result) )
+
 
 #endif /* COBJMACROS */
 
@@ -2024,110 +1330,16 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIColorHelperStatics;
 
 /*
  *
- * Interface Microsoft.UI.IColorHelperStatics2
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 4.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.ColorHelper
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x40000
-#if !defined(____x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IColorHelperStatics2[] = L"Microsoft.UI.IColorHelperStatics2";
-/* [object, uuid("982A2D93-0EC4-56B7-9C20-0B5C77949066"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2Vtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2 * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2 * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2 * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2 * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2 * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2 * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *ToDisplayName )(
-        __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2 * This,
-        /* [in] */__x_ABI_CWindows_CUI_CColor color,
-        /* [retval, out] */HSTRING * result
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2Vtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2Vtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_ToDisplayName(This,color,result) \
-    ( (This)->lpVtbl->ToDisplayName(This,color,result) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIColorHelperStatics2;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CIColorHelperStatics2_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x40000
-
-
-/*
- *
  * Interface Microsoft.UI.IColors
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Colors
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CIColors_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CIColors_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IColors[] = L"Microsoft.UI.IColors";
@@ -2199,21 +1411,21 @@ interface __x_ABI_CMicrosoft_CUI_CIColors
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIColors;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CIColors_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.IColorsStatics
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Colors
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CIColorsStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CIColorsStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IColorsStatics[] = L"Microsoft.UI.IColorsStatics";
@@ -3272,725 +2484,7 @@ interface __x_ABI_CMicrosoft_CUI_CIColorsStatics
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIColorsStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CIColorsStatics_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.IContentAutomation
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * Interface is a part of the implementation of type Microsoft.UI.ContentAutomation
- *
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if !defined(____x_ABI_CMicrosoft_CUI_CIContentAutomation_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CIContentAutomation_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IContentAutomation[] = L"Microsoft.UI.IContentAutomation";
-/* [object, uuid("DFA2BDCA-CBE1-53B5-B486-079B9ABFE444"), experimental, exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CIContentAutomationVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomation * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomation * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomation * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomation * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomation * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomation * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_AutomationHostProvider )(
-        __x_ABI_CMicrosoft_CUI_CIContentAutomation * This,
-        /* [retval, out] */IInspectable * * value
-        );
-    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_AutomationProviderRequested )(
-        __x_ABI_CMicrosoft_CUI_CIContentAutomation * This,
-        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CContentAutomation_Microsoft__CUI__CContentAutomationProviderRequestedEventArgs * handler,
-        /* [retval, out] */EventRegistrationToken * token
-        );
-    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_AutomationProviderRequested )(
-        __x_ABI_CMicrosoft_CUI_CIContentAutomation * This,
-        /* [in] */EventRegistrationToken token
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CIContentAutomationVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CIContentAutomation
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CIContentAutomationVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomation_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomation_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomation_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomation_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomation_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomation_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomation_get_AutomationHostProvider(This,value) \
-    ( (This)->lpVtbl->get_AutomationHostProvider(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomation_add_AutomationProviderRequested(This,handler,token) \
-    ( (This)->lpVtbl->add_AutomationProviderRequested(This,handler,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomation_remove_AutomationProviderRequested(This,token) \
-    ( (This)->lpVtbl->remove_AutomationProviderRequested(This,token) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIContentAutomation;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CIContentAutomation_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.IContentAutomationProviderRequestedEventArgs
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * Interface is a part of the implementation of type Microsoft.UI.ContentAutomationProviderRequestedEventArgs
- *
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if !defined(____x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IContentAutomationProviderRequestedEventArgs[] = L"Microsoft.UI.IContentAutomationProviderRequestedEventArgs";
-/* [object, uuid("E3546970-06AD-5095-9590-FEE5D5241E49"), experimental, exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_AutomationProvider )(
-        __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs * This,
-        /* [retval, out] */IInspectable * * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_AutomationProvider )(
-        __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs * This,
-        /* [in] */IInspectable * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Handled )(
-        __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs * This,
-        /* [retval, out] */boolean * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_Handled )(
-        __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs * This,
-        /* [in] */boolean value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgsVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_get_AutomationProvider(This,value) \
-    ( (This)->lpVtbl->get_AutomationProvider(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_put_AutomationProvider(This,value) \
-    ( (This)->lpVtbl->put_AutomationProvider(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_get_Handled(This,value) \
-    ( (This)->lpVtbl->get_Handled(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_put_Handled(This,value) \
-    ( (This)->lpVtbl->put_Handled(This,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CIContentAutomationProviderRequestedEventArgs_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.IContentAutomationStatics
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * Interface is a part of the implementation of type Microsoft.UI.ContentAutomation
- *
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if !defined(____x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IContentAutomationStatics[] = L"Microsoft.UI.IContentAutomationStatics";
-/* [object, uuid("5B520E50-FA18-5105-94FD-C9A8BCEE57F1"), experimental, exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CIContentAutomationStaticsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateForContent )(
-        __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CIUIContentRoot * content,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CIContentAutomation * * result
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CIContentAutomationStaticsVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CIContentAutomationStaticsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_CreateForContent(This,content,result) \
-    ( (This)->lpVtbl->CreateForContent(This,content,result) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIContentAutomationStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CIContentAutomationStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.IUIContentRoot
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * Interface is a part of the implementation of type Microsoft.UI.UIContentRoot
- *
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if !defined(____x_ABI_CMicrosoft_CUI_CIUIContentRoot_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CIUIContentRoot_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IUIContentRoot[] = L"Microsoft.UI.IUIContentRoot";
-/* [object, uuid("F47C106F-C5DD-56D1-92C0-90861A2F7287"), experimental, exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CIUIContentRootVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRoot * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRoot * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRoot * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRoot * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRoot * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRoot * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CIUIContentRootVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CIUIContentRoot
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CIUIContentRootVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRoot_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRoot_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRoot_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRoot_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRoot_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRoot_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIUIContentRoot;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CIUIContentRoot_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.IUIContentRootFactory
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * Interface is a part of the implementation of type Microsoft.UI.UIContentRoot
- *
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if !defined(____x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IUIContentRootFactory[] = L"Microsoft.UI.IUIContentRootFactory";
-/* [object, uuid("A9C562D7-4298-5DA9-8150-D777B532CC4D"), experimental, exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CIUIContentRootFactoryVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
-        __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CComposition_CICompositionIsland * island,
-        /* [in] */IInspectable * inputSite,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CIUIContentRoot * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CIUIContentRootFactoryVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CIUIContentRootFactoryVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_CreateInstance(This,island,inputSite,value) \
-    ( (This)->lpVtbl->CreateInstance(This,island,inputSite,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIUIContentRootFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CIUIContentRootFactory_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.IUIContentRootPartner
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * Interface is a part of the implementation of type Microsoft.UI.UIContentRoot
- *
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if !defined(____x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IUIContentRootPartner[] = L"Microsoft.UI.IUIContentRootPartner";
-/* [object, uuid("1A77AE47-6810-52A8-95C4-F92F1F0758A7"), experimental, exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CIUIContentRootPartnerVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_InputSite )(
-        __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner * This,
-        /* [retval, out] */IInspectable * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Island )(
-        __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CComposition_CICompositionIsland * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CIUIContentRootPartnerVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CIUIContentRootPartnerVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_get_InputSite(This,value) \
-    ( (This)->lpVtbl->get_InputSite(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_get_Island(This,value) \
-    ( (This)->lpVtbl->get_Island(This,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIUIContentRootPartner;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CIUIContentRootPartner_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.IUIContentRoot_ContentAutomation
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * Interface is a part of the implementation of type Microsoft.UI.UIContentRoot
- *
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if !defined(____x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_IUIContentRoot_ContentAutomation[] = L"Microsoft.UI.IUIContentRoot_ContentAutomation";
-/* [object, uuid("A78CEA0C-7CC5-592E-B628-E21F5111DEB2"), experimental, exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomationVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Automation )(
-        __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CIContentAutomation * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomationVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomationVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_get_Automation(This,value) \
-    ( (This)->lpVtbl->get_Automation(This,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -4001,7 +2495,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CIUIContentRoot__ContentAutomation
  *
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.IColorHelperStatics2 interface starting with version 4.0 of the Microsoft.UI.Xaml.WinUIContract API contract
  *   Static Methods exist on the Microsoft.UI.IColorHelperStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.WinUIContract API contract
  *
  * Class implements the following interfaces:
@@ -4025,11 +2518,11 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Colors
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.IColorsStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.WinUIContract API contract
+ *   Static Methods exist on the Microsoft.UI.IColorsStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.IColors ** Default Interface **
@@ -4039,103 +2532,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Colors_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Colors_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Colors[] = L"Microsoft.UI.Colors";
 #endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.ContentAutomation
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.IContentAutomationStatics interface starting with version 1.0 of the Microsoft.UI.LiftedContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.IContentAutomation ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-
-#ifndef RUNTIMECLASS_Microsoft_UI_ContentAutomation_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_ContentAutomation_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_ContentAutomation[] = L"Microsoft.UI.ContentAutomation";
-#endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.ContentAutomationProviderRequestedEventArgs
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.IContentAutomationProviderRequestedEventArgs ** Default Interface **
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-
-#ifndef RUNTIMECLASS_Microsoft_UI_ContentAutomationProviderRequestedEventArgs_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_ContentAutomationProviderRequestedEventArgs_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_ContentAutomationProviderRequestedEventArgs[] = L"Microsoft.UI.ContentAutomationProviderRequestedEventArgs";
-#endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.UIContentRoot
- *
- * Introduced to Microsoft.UI.LiftedContract in version 1.0
- *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
- *
- * RuntimeClass can be activated.
- *   Type can be activated via the Microsoft.UI.IUIContentRootFactory interface starting with version 1.0 of the Microsoft.UI.LiftedContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.IUIContentRoot ** Default Interface **
- *    Microsoft.UI.IUIContentRootPartner
- *    Microsoft.UI.IUIContentRoot_ContentAutomation
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-
-#ifndef RUNTIMECLASS_Microsoft_UI_UIContentRoot_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_UIContentRoot_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_UIContentRoot[] = L"Microsoft.UI.UIContentRoot";
-#endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 

@@ -49,9 +49,13 @@
 
 //  API Contract Inclusion Definitions
 #if !defined(SPECIFIC_API_CONTRACT_DEFINITIONS)
-#if !defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
+
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
 #if !defined(WINDOWS_APPLICATIONMODEL_CALLS_CALLSPHONECONTRACT_VERSION)
 #define WINDOWS_APPLICATIONMODEL_CALLS_CALLSPHONECONTRACT_VERSION 0x50000
@@ -90,6 +94,7 @@
 #include "EventToken.h"
 #include "windowscontracts.h"
 #include "Windows.Foundation.h"
+#include "Microsoft.Foundation.h"
 // Importing Collections header
 #include <windows.foundation.collections.h>
 
@@ -160,6 +165,19 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics_FWD_DEFINED__
 
+#ifndef ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace System {
+            interface IDispatcherQueueControllerStatics2;
+        } /* System */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2 ABI::Microsoft::System::IDispatcherQueueControllerStatics2
+
+#endif // ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_FWD_DEFINED__
+
 #ifndef ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueShutdownStartingEventArgs_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueShutdownStartingEventArgs_FWD_DEFINED__
 namespace ABI {
@@ -212,8 +230,7 @@ namespace ABI {
 
 
 
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef DEF___FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueue_IInspectable_USE
 #define DEF___FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueue_IInspectable_USE
@@ -242,8 +259,7 @@ typedef ITypedEventHandler<ABI::Microsoft::System::DispatcherQueue*,IInspectable
 #endif /* DEF___FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueue_IInspectable_USE */
 
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 namespace ABI {
@@ -255,10 +271,8 @@ namespace ABI {
 } /* ABI */
 
 
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef DEF___FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueue_Microsoft__CSystem__CDispatcherQueueShutdownStartingEventArgs_USE
 #define DEF___FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueue_Microsoft__CSystem__CDispatcherQueueShutdownStartingEventArgs_USE
@@ -287,10 +301,8 @@ typedef ITypedEventHandler<ABI::Microsoft::System::DispatcherQueue*,ABI::Microso
 #endif /* DEF___FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueue_Microsoft__CSystem__CDispatcherQueueShutdownStartingEventArgs_USE */
 
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 namespace ABI {
     namespace Microsoft {
@@ -302,8 +314,7 @@ namespace ABI {
 
 
 
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef DEF___FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueueTimer_IInspectable_USE
 #define DEF___FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueueTimer_IInspectable_USE
@@ -332,8 +343,10 @@ typedef ITypedEventHandler<ABI::Microsoft::System::DispatcherQueueTimer*,IInspec
 #endif /* DEF___FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueueTimer_IInspectable_USE */
 
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+
+
+
 
 
 
@@ -385,7 +398,6 @@ namespace ABI {
 
 
 
-
 namespace ABI {
     namespace Microsoft {
         namespace System {
@@ -395,6 +407,7 @@ namespace ABI {
         } /* System */
     } /* Microsoft */
 } /* ABI */
+
 
 
 
@@ -422,24 +435,20 @@ namespace ABI {
 
 
 
-
 /*
  *
  * Struct Microsoft.System.DispatcherQueuePriority
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
 
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 namespace ABI {
     namespace Microsoft {
         namespace System {
-            /* [v1_enum, experimental, contract] */
+            /* [v1_enum, contract] */
             enum DispatcherQueuePriority : int
             {
                 DispatcherQueuePriority_Low = -10,
@@ -450,19 +459,18 @@ namespace ABI {
         } /* System */
     } /* Microsoft */
 } /* ABI */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Delegate Microsoft.System.DispatcherQueueHandler
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueHandler_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueHandler_INTERFACE_DEFINED__
 namespace ABI {
@@ -485,31 +493,28 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueueHandler;
 #endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueHandler_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.System.IDispatcherQueue
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.System.DispatcherQueue
  *
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_System_IDispatcherQueue[] = L"Microsoft.System.IDispatcherQueue";
 namespace ABI {
     namespace Microsoft {
         namespace System {
-            /* [object, uuid("02FE405F-96CF-5B1C-8413-3AC2C2D7C264"), experimental, exclusiveto, contract] */
+            /* [object, uuid("02FE405F-96CF-5B1C-8413-3AC2C2D7C264"), exclusiveto, contract] */
             MIDL_INTERFACE("02FE405F-96CF-5B1C-8413-3AC2C2D7C264")
             IDispatcherQueue : public IInspectable
             {
@@ -551,32 +556,28 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueue;
 #endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.System.IDispatcherQueue2
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.System.DispatcherQueue
  *
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_System_IDispatcherQueue2[] = L"Microsoft.System.IDispatcherQueue2";
 namespace ABI {
     namespace Microsoft {
         namespace System {
-            /* [object, uuid("628F432E-6697-5026-8432-185BF55F1524"), experimental, exclusiveto, contract] */
+            /* [object, uuid("628F432E-6697-5026-8432-185BF55F1524"), exclusiveto, contract] */
             MIDL_INTERFACE("628F432E-6697-5026-8432-185BF55F1524")
             IDispatcherQueue2 : public IInspectable
             {
@@ -595,32 +596,28 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueue2;
 #endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.System.IDispatcherQueueController
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.System.DispatcherQueueController
  *
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueController_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueController_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_System_IDispatcherQueueController[] = L"Microsoft.System.IDispatcherQueueController";
 namespace ABI {
     namespace Microsoft {
         namespace System {
-            /* [object, uuid("CD77F174-B93B-5B26-BA6C-2E5D6EE81C5C"), experimental, exclusiveto, contract] */
+            /* [object, uuid("CD77F174-B93B-5B26-BA6C-2E5D6EE81C5C"), exclusiveto, contract] */
             MIDL_INTERFACE("CD77F174-B93B-5B26-BA6C-2E5D6EE81C5C")
             IDispatcherQueueController : public IInspectable
             {
@@ -642,32 +639,28 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueueController;
 #endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueController_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.System.IDispatcherQueueControllerStatics
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.System.DispatcherQueueController
  *
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_System_IDispatcherQueueControllerStatics[] = L"Microsoft.System.IDispatcherQueueControllerStatics";
 namespace ABI {
     namespace Microsoft {
         namespace System {
-            /* [object, uuid("1776A6FD-CB56-5553-9381-E3E0F0DDB647"), experimental, exclusiveto, contract] */
+            /* [object, uuid("1776A6FD-CB56-5553-9381-E3E0F0DDB647"), exclusiveto, contract] */
             MIDL_INTERFACE("1776A6FD-CB56-5553-9381-E3E0F0DDB647")
             IDispatcherQueueControllerStatics : public IInspectable
             {
@@ -686,32 +679,68 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+
+
+/*
+ *
+ * Interface Microsoft.System.IDispatcherQueueControllerStatics2
+ *
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
+ *
+ *
+ * Interface is a part of the implementation of type Microsoft.System.DispatcherQueueController
+ *
+ *
+ */
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+#if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_System_IDispatcherQueueControllerStatics2[] = L"Microsoft.System.IDispatcherQueueControllerStatics2";
+namespace ABI {
+    namespace Microsoft {
+        namespace System {
+            /* [object, uuid("300E83C1-380B-537D-B1AA-281E690ED688"), exclusiveto, contract] */
+            MIDL_INTERFACE("300E83C1-380B-537D-B1AA-281E690ED688")
+            IDispatcherQueueControllerStatics2 : public IInspectable
+            {
+            public:
+                virtual HRESULT STDMETHODCALLTYPE CreateOnCurrentThread(
+                    /* [retval, out] */ABI::Microsoft::System::IDispatcherQueueController * * result
+                    ) = 0;
+                
+            };
+
+            extern MIDL_CONST_ID IID & IID_IDispatcherQueueControllerStatics2=_uuidof(IDispatcherQueueControllerStatics2);
+            
+        } /* System */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2;
+#endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_INTERFACE_DEFINED__) */
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.System.IDispatcherQueueShutdownStartingEventArgs
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.System.DispatcherQueueShutdownStartingEventArgs
  *
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueShutdownStartingEventArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueShutdownStartingEventArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_System_IDispatcherQueueShutdownStartingEventArgs[] = L"Microsoft.System.IDispatcherQueueShutdownStartingEventArgs";
 namespace ABI {
     namespace Microsoft {
         namespace System {
-            /* [object, uuid("B0A4EA8B-AD6C-5DEF-8546-1541E5112E94"), experimental, exclusiveto, contract] */
+            /* [object, uuid("B0A4EA8B-AD6C-5DEF-8546-1541E5112E94"), exclusiveto, contract] */
             MIDL_INTERFACE("B0A4EA8B-AD6C-5DEF-8546-1541E5112E94")
             IDispatcherQueueShutdownStartingEventArgs : public IInspectable
             {
@@ -730,32 +759,28 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueueShutdownStartingEventArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueShutdownStartingEventArgs_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.System.IDispatcherQueueStatics
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.System.DispatcherQueue
  *
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_System_IDispatcherQueueStatics[] = L"Microsoft.System.IDispatcherQueueStatics";
 namespace ABI {
     namespace Microsoft {
         namespace System {
-            /* [object, uuid("B5417ADD-2B64-5293-AE6D-AEE24CC0FC2A"), experimental, exclusiveto, contract] */
+            /* [object, uuid("B5417ADD-2B64-5293-AE6D-AEE24CC0FC2A"), exclusiveto, contract] */
             MIDL_INTERFACE("B5417ADD-2B64-5293-AE6D-AEE24CC0FC2A")
             IDispatcherQueueStatics : public IInspectable
             {
@@ -774,32 +799,28 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueueStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.System.IDispatcherQueueTimer
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.System.DispatcherQueueTimer
  *
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueTimer_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueTimer_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_System_IDispatcherQueueTimer[] = L"Microsoft.System.IDispatcherQueueTimer";
 namespace ABI {
     namespace Microsoft {
         namespace System {
-            /* [object, uuid("30357864-57C6-59A0-B7B1-EF7177D47D4D"), experimental, exclusiveto, contract] */
+            /* [object, uuid("30357864-57C6-59A0-B7B1-EF7177D47D4D"), exclusiveto, contract] */
             MIDL_INTERFACE("30357864-57C6-59A0-B7B1-EF7177D47D4D")
             IDispatcherQueueTimer : public IInspectable
             {
@@ -839,21 +860,18 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueueTimer;
 #endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueTimer_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.System.DispatcherQueue
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.System.IDispatcherQueueStatics interface starting with version 1.0 of the Microsoft.System.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.System.IDispatcherQueueStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.System.IDispatcherQueue ** Default Interface **
@@ -864,28 +882,25 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueueTimer;
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_System_DispatcherQueue_DEFINED
 #define RUNTIMECLASS_Microsoft_System_DispatcherQueue_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_System_DispatcherQueue[] = L"Microsoft.System.DispatcherQueue";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.System.DispatcherQueueController
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.System.IDispatcherQueueControllerStatics interface starting with version 1.0 of the Microsoft.System.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.System.IDispatcherQueueControllerStatics2 interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.System.IDispatcherQueueControllerStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.System.IDispatcherQueueController ** Default Interface **
@@ -895,25 +910,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_System_DispatcherQueueController_DEFINED
 #define RUNTIMECLASS_Microsoft_System_DispatcherQueueController_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_System_DispatcherQueueController[] = L"Microsoft.System.DispatcherQueueController";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.System.DispatcherQueueShutdownStartingEventArgs
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.System.IDispatcherQueueShutdownStartingEventArgs ** Default Interface **
@@ -921,25 +932,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_System_DispatcherQueueShutdownStartingEventArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_System_DispatcherQueueShutdownStartingEventArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_System_DispatcherQueueShutdownStartingEventArgs[] = L"Microsoft.System.DispatcherQueueShutdownStartingEventArgs";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.System.DispatcherQueueTimer
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.System.IDispatcherQueueTimer ** Default Interface **
@@ -947,15 +954,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_System_DispatcherQueueTimer_DEFINED
 #define RUNTIMECLASS_Microsoft_System_DispatcherQueueTimer_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_System_DispatcherQueueTimer[] = L"Microsoft.System.DispatcherQueueTimer";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 
@@ -991,6 +996,12 @@ typedef interface __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics 
 
 #endif // ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics_FWD_DEFINED__
 
+#ifndef ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2 __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2;
+
+#endif // ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_FWD_DEFINED__
+
 #ifndef ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueShutdownStartingEventArgs_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueShutdownStartingEventArgs_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueShutdownStartingEventArgs __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueShutdownStartingEventArgs;
@@ -1014,8 +1025,7 @@ typedef interface __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueTimer __x_ABI_CMic
 // Collection interface definitions
 
 
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueue_IInspectable_INTERFACE_DEFINED__)
 #define ____FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueue_IInspectable_INTERFACE_DEFINED__
 
@@ -1062,15 +1072,12 @@ interface __FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueue_IInspecta
 
 #endif // ____FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueue_IInspectable_INTERFACE_DEFINED__
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueue_Microsoft__CSystem__CDispatcherQueueShutdownStartingEventArgs_INTERFACE_DEFINED__)
 #define ____FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueue_Microsoft__CSystem__CDispatcherQueueShutdownStartingEventArgs_INTERFACE_DEFINED__
 
@@ -1117,15 +1124,12 @@ interface __FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueue_Microsoft
 
 #endif // ____FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueue_Microsoft__CSystem__CDispatcherQueueShutdownStartingEventArgs_INTERFACE_DEFINED__
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueueTimer_IInspectable_INTERFACE_DEFINED__)
 #define ____FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueueTimer_IInspectable_INTERFACE_DEFINED__
 
@@ -1172,8 +1176,10 @@ interface __FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueueTimer_IIns
 
 #endif // ____FITypedEventHandler_2_Microsoft__CSystem__CDispatcherQueueTimer_IInspectable_INTERFACE_DEFINED__
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+
+
+
 
 
 #ifndef ____x_ABI_CWindows_CFoundation_CIDeferral_FWD_DEFINED__
@@ -1192,7 +1198,6 @@ typedef interface __x_ABI_CWindows_CFoundation_CIAsyncAction __x_ABI_CWindows_CF
 
 
 typedef struct __x_ABI_CWindows_CFoundation_CTimeSpan __x_ABI_CWindows_CFoundation_CTimeSpan;
-
 
 
 
@@ -1222,35 +1227,31 @@ typedef enum __x_ABI_CMicrosoft_CSystem_CDispatcherQueuePriority __x_ABI_CMicros
  *
  * Struct Microsoft.System.DispatcherQueuePriority
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  */
 
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-/* [v1_enum, experimental, contract] */
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+/* [v1_enum, contract] */
 enum __x_ABI_CMicrosoft_CSystem_CDispatcherQueuePriority
 {
     DispatcherQueuePriority_Low = -10,
     DispatcherQueuePriority_Normal = 0,
     DispatcherQueuePriority_High = 10,
 };
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Delegate Microsoft.System.DispatcherQueueHandler
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueHandler_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueHandler_INTERFACE_DEFINED__
 /* [object, uuid("12C37105-AC93-5BEB-98FF-0D010DB18E21"), contract] */
@@ -1299,28 +1300,25 @@ interface __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueHandler
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueueHandler;
 #endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueHandler_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.System.IDispatcherQueue
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.System.DispatcherQueue
  *
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_System_IDispatcherQueue[] = L"Microsoft.System.IDispatcherQueue";
-/* [object, uuid("02FE405F-96CF-5B1C-8413-3AC2C2D7C264"), experimental, exclusiveto, contract] */
+/* [object, uuid("02FE405F-96CF-5B1C-8413-3AC2C2D7C264"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueVtbl
 {
     BEGIN_INTERFACE
@@ -1442,29 +1440,25 @@ interface __x_ABI_CMicrosoft_CSystem_CIDispatcherQueue
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueue;
 #endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.System.IDispatcherQueue2
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.System.DispatcherQueue
  *
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue2_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue2_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_System_IDispatcherQueue2[] = L"Microsoft.System.IDispatcherQueue2";
-/* [object, uuid("628F432E-6697-5026-8432-185BF55F1524"), experimental, exclusiveto, contract] */
+/* [object, uuid("628F432E-6697-5026-8432-185BF55F1524"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CSystem_CIDispatcherQueue2Vtbl
 {
     BEGIN_INTERFACE
@@ -1539,29 +1533,25 @@ interface __x_ABI_CMicrosoft_CSystem_CIDispatcherQueue2
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueue2;
 #endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueue2_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.System.IDispatcherQueueController
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.System.DispatcherQueueController
  *
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueController_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueController_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_System_IDispatcherQueueController[] = L"Microsoft.System.IDispatcherQueueController";
-/* [object, uuid("CD77F174-B93B-5B26-BA6C-2E5D6EE81C5C"), experimental, exclusiveto, contract] */
+/* [object, uuid("CD77F174-B93B-5B26-BA6C-2E5D6EE81C5C"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerVtbl
 {
     BEGIN_INTERFACE
@@ -1643,29 +1633,25 @@ interface __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueController
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueueController;
 #endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueController_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.System.IDispatcherQueueControllerStatics
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.System.DispatcherQueueController
  *
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_System_IDispatcherQueueControllerStatics[] = L"Microsoft.System.IDispatcherQueueControllerStatics";
-/* [object, uuid("1776A6FD-CB56-5553-9381-E3E0F0DDB647"), experimental, exclusiveto, contract] */
+/* [object, uuid("1776A6FD-CB56-5553-9381-E3E0F0DDB647"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStaticsVtbl
 {
     BEGIN_INTERFACE
@@ -1740,29 +1726,118 @@ interface __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+
+
+/*
+ *
+ * Interface Microsoft.System.IDispatcherQueueControllerStatics2
+ *
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
+ *
+ *
+ * Interface is a part of the implementation of type Microsoft.System.DispatcherQueueController
+ *
+ *
+ */
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
+#if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_System_IDispatcherQueueControllerStatics2[] = L"Microsoft.System.IDispatcherQueueControllerStatics2";
+/* [object, uuid("300E83C1-380B-537D-B1AA-281E690ED688"), exclusiveto, contract] */
+typedef struct __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2Vtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2 * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2 * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2 * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2 * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2 * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2 * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+HRESULT ( STDMETHODCALLTYPE *CreateOnCurrentThread )(
+        __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2 * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CSystem_CIDispatcherQueueController * * result
+        );
+    END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2Vtbl;
+
+interface __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2Vtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+#define __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_CreateOnCurrentThread(This,result) \
+    ( (This)->lpVtbl->CreateOnCurrentThread(This,result) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2;
+#endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueControllerStatics2_INTERFACE_DEFINED__) */
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.System.IDispatcherQueueShutdownStartingEventArgs
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.System.DispatcherQueueShutdownStartingEventArgs
  *
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueShutdownStartingEventArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueShutdownStartingEventArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_System_IDispatcherQueueShutdownStartingEventArgs[] = L"Microsoft.System.IDispatcherQueueShutdownStartingEventArgs";
-/* [object, uuid("B0A4EA8B-AD6C-5DEF-8546-1541E5112E94"), experimental, exclusiveto, contract] */
+/* [object, uuid("B0A4EA8B-AD6C-5DEF-8546-1541E5112E94"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueShutdownStartingEventArgsVtbl
 {
     BEGIN_INTERFACE
@@ -1837,29 +1912,25 @@ interface __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueShutdownStartingEventArgs
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueueShutdownStartingEventArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueShutdownStartingEventArgs_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.System.IDispatcherQueueStatics
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.System.DispatcherQueue
  *
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_System_IDispatcherQueueStatics[] = L"Microsoft.System.IDispatcherQueueStatics";
-/* [object, uuid("B5417ADD-2B64-5293-AE6D-AEE24CC0FC2A"), experimental, exclusiveto, contract] */
+/* [object, uuid("B5417ADD-2B64-5293-AE6D-AEE24CC0FC2A"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueStaticsVtbl
 {
     BEGIN_INTERFACE
@@ -1934,29 +2005,25 @@ interface __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueStatics
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueueStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueStatics_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.System.IDispatcherQueueTimer
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.System.DispatcherQueueTimer
  *
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueTimer_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueTimer_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_System_IDispatcherQueueTimer[] = L"Microsoft.System.IDispatcherQueueTimer";
-/* [object, uuid("30357864-57C6-59A0-B7B1-EF7177D47D4D"), experimental, exclusiveto, contract] */
+/* [object, uuid("30357864-57C6-59A0-B7B1-EF7177D47D4D"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueTimerVtbl
 {
     BEGIN_INTERFACE
@@ -2086,21 +2153,18 @@ interface __x_ABI_CMicrosoft_CSystem_CIDispatcherQueueTimer
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueueTimer;
 #endif /* !defined(____x_ABI_CMicrosoft_CSystem_CIDispatcherQueueTimer_INTERFACE_DEFINED__) */
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.System.DispatcherQueue
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.System.IDispatcherQueueStatics interface starting with version 1.0 of the Microsoft.System.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.System.IDispatcherQueueStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.System.IDispatcherQueue ** Default Interface **
@@ -2111,28 +2175,25 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CSystem_CIDispatcherQueueTimer;
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_System_DispatcherQueue_DEFINED
 #define RUNTIMECLASS_Microsoft_System_DispatcherQueue_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_System_DispatcherQueue[] = L"Microsoft.System.DispatcherQueue";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.System.DispatcherQueueController
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.System.IDispatcherQueueControllerStatics interface starting with version 1.0 of the Microsoft.System.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.System.IDispatcherQueueControllerStatics2 interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
+ *   Static Methods exist on the Microsoft.System.IDispatcherQueueControllerStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.System.IDispatcherQueueController ** Default Interface **
@@ -2142,25 +2203,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_System_DispatcherQueueController_DEFINED
 #define RUNTIMECLASS_Microsoft_System_DispatcherQueueController_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_System_DispatcherQueueController[] = L"Microsoft.System.DispatcherQueueController";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.System.DispatcherQueueShutdownStartingEventArgs
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.System.IDispatcherQueueShutdownStartingEventArgs ** Default Interface **
@@ -2168,25 +2225,21 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_System_DispatcherQueueShutdownStartingEventArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_System_DispatcherQueueShutdownStartingEventArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_System_DispatcherQueueShutdownStartingEventArgs[] = L"Microsoft.System.DispatcherQueueShutdownStartingEventArgs";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.System.DispatcherQueueTimer
  *
- * Introduced to Microsoft.System.LiftedContract in version 1.0
+ * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
- *
- * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.System.IDispatcherQueueTimer ** Default Interface **
@@ -2194,15 +2247,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_System_DispatcherQueueTimer_DEFINED
 #define RUNTIMECLASS_Microsoft_System_DispatcherQueueTimer_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_System_DispatcherQueueTimer[] = L"Microsoft.System.DispatcherQueueTimer";
 #endif
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 

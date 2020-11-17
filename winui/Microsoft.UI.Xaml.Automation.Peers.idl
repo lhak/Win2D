@@ -1068,7 +1068,7 @@ namespace Microsoft
                         LayoutInvalidated                                 = 29
                     };
 
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 6.0)]
+                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                     enum AutomationHeadingLevel
                     {
                         None   = 0,
@@ -1083,7 +1083,7 @@ namespace Microsoft
                         Level9 = 9
                     };
 
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 2.0)]
+                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                     enum AutomationLandmarkType
                     {
                         None       = 0,
@@ -1112,7 +1112,7 @@ namespace Microsoft
                         LastChild       = 4
                     };
 
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 5.0)]
+                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                     enum AutomationNotificationKind
                     {
                         ItemAdded       = 0,
@@ -1122,7 +1122,7 @@ namespace Microsoft
                         Other           = 4
                     };
 
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 5.0)]
+                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                     enum AutomationNotificationProcessing
                     {
                         ImportantAll          = 0,
@@ -2786,21 +2786,7 @@ namespace Microsoft
                         HRESULT CreateInstanceWithOwner([in] Microsoft.UI.Xaml.Controls.TreeViewList* owner, [in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Automation.Peers.TreeViewListAutomationPeer** value);
                     }
 
-                    [exclusiveto(Microsoft.UI.Xaml.Automation.Peers.WebView2AutomationPeer)]
-                    [uuid(8E556ECA-B000-5E51-810F-7B7D80C39D56)]
-                    [version(0x00000001)]
-                    interface IWebView2AutomationPeer : IInspectable
-                    {
-                    }
-
-                    [exclusiveto(Microsoft.UI.Xaml.Automation.Peers.WebView2AutomationPeer)]
-                    [uuid(68512210-E61E-5B56-A6AF-C4FB14677155)]
-                    [version(0x00000001)]
-                    interface IWebView2AutomationPeerFactory : IInspectable
-                    {
-                        HRESULT CreateInstance([in] Microsoft.UI.Xaml.Controls.WebView2* owner, [in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Automation.Peers.WebView2AutomationPeer** value);
-                    }
-
+              
                     [composable(Microsoft.UI.Xaml.Automation.Peers.IAnimatedVisualPlayerAutomationPeerFactory, public, 0x00000001)]
                     [marshaling_behavior(agile)]
                     [threading(both)]
@@ -3735,14 +3721,6 @@ namespace Microsoft
                         [default] interface Microsoft.UI.Xaml.Automation.Peers.ITreeViewListAutomationPeer;
                     }
 
-                    [composable(Microsoft.UI.Xaml.Automation.Peers.IWebView2AutomationPeerFactory, public, 0x00000001)]
-                    [marshaling_behavior(agile)]
-                    [threading(both)]
-                    [version(0x00000001)]
-                    runtimeclass WebView2AutomationPeer : Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer
-                    {
-                        [default] interface Microsoft.UI.Xaml.Automation.Peers.IWebView2AutomationPeer;
-                    }
                 }
             }
         }

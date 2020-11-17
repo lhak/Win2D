@@ -91,7 +91,7 @@
 #include <windows.foundation.metadata.h>
 #ifdef WINUI
 #include <microsoft.ui.composition.h>
-//#include <windows.ui.composition.interop.h>
+#include <microsoft.ui.composition.interop.h>
 #else
 #include <windows.ui.composition.h>
 #include <windows.ui.composition.interop.h>

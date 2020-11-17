@@ -4,7 +4,6 @@
 
 #include "pch.h"
 
-#ifndef WINUI
 #if WINVER > _WIN32_WINNT_WINBLUE
 
 #include "CanvasComposition.h"
@@ -12,7 +11,7 @@
 #include "../utils/ApiInformationAdapter.h"
 
 using namespace ABI::Microsoft::Graphics::Canvas::UI::Composition;
-using namespace ABI::Windows::UI::Composition;
+using namespace ABI::Microsoft::UI::Composition;
 
 
 ActivatableStaticOnlyFactory(CanvasCompositionStatics);
@@ -231,5 +230,4 @@ IFACEMETHODIMP CanvasCompositionStatics::Resize(
         });
 }
 
-#endif
 #endif

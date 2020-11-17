@@ -7,9 +7,17 @@ import "AsyncInfo.idl";
 import "EventToken.idl";
 import "windowscontracts.idl";
 import "Windows.Foundation.idl";
+import "Microsoft.Foundation.idl";
 import "Microsoft.UI.Composition.idl";
 
 // Forward Declare
+namespace Microsoft
+{
+    namespace Foundation
+    {
+        apicontract LiftedContract;
+    }
+}
 namespace Microsoft
 {
     namespace UI
@@ -30,8 +38,6 @@ namespace Microsoft
         {
             namespace Diagnostics
             {
-                apicontract LiftedContract;
-
                 typedef enum CompositionDebugOverdrawContentKinds CompositionDebugOverdrawContentKinds;
 
                 interface ICompositionDebugHeatMaps;
@@ -59,13 +65,7 @@ namespace Microsoft
         {
             namespace Diagnostics
             {
-                [contractversion(1.0)]
-                apicontract LiftedContract
-                {
-                }
-
-                [contract(Microsoft.UI.Composition.Diagnostics.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [flags]
                 enum CompositionDebugOverdrawContentKinds
                 {
@@ -80,9 +80,8 @@ namespace Microsoft
                     All               = 0xFFFFFFFF
                 };
 
-                [contract(Microsoft.UI.Composition.Diagnostics.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Diagnostics.CompositionDebugHeatMaps)]
-                [experimental]
                 [uuid(815016B8-F645-5C55-87B5-FE2167282B6F)]
                 interface ICompositionDebugHeatMaps : IInspectable
                 {
@@ -92,40 +91,36 @@ namespace Microsoft
                     HRESULT ShowRedraw([in] Microsoft.UI.Composition.Visual* subtree);
                 }
 
-                [contract(Microsoft.UI.Composition.Diagnostics.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Diagnostics.CompositionDebugSettings)]
-                [experimental]
                 [uuid(F4C0C0F6-7F5F-5014-A0D6-C8C7EEECACE6)]
                 interface ICompositionDebugSettings : IInspectable
                 {
                     [propget] HRESULT HeatMaps([out] [retval] Microsoft.UI.Composition.Diagnostics.CompositionDebugHeatMaps** value);
                 }
 
-                [contract(Microsoft.UI.Composition.Diagnostics.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Diagnostics.CompositionDebugSettings)]
-                [experimental]
                 [uuid(B56F8AAB-2B8C-51AA-B974-10E5C517F50E)]
                 interface ICompositionDebugSettingsStatics : IInspectable
                 {
                     HRESULT TryGetSettings([in] Microsoft.UI.Composition.Compositor* compositor, [out] [retval] Microsoft.UI.Composition.Diagnostics.CompositionDebugSettings** result);
                 }
 
-                [contract(Microsoft.UI.Composition.Diagnostics.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
                 runtimeclass CompositionDebugHeatMaps
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Diagnostics.ICompositionDebugHeatMaps;
+                    [default] interface Microsoft.UI.Composition.Diagnostics.ICompositionDebugHeatMaps;
                 }
 
-                [contract(Microsoft.UI.Composition.Diagnostics.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
-                [static(Microsoft.UI.Composition.Diagnostics.ICompositionDebugSettingsStatics, Microsoft.UI.Composition.Diagnostics.LiftedContract, 1.0)]
+                [static(Microsoft.UI.Composition.Diagnostics.ICompositionDebugSettingsStatics, Microsoft.Foundation.LiftedContract, 1.0)]
                 [threading(both)]
                 runtimeclass CompositionDebugSettings
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Diagnostics.ICompositionDebugSettings;
+                    [default] interface Microsoft.UI.Composition.Diagnostics.ICompositionDebugSettings;
                 }
             }
         }

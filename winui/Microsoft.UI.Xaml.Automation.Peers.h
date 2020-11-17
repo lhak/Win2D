@@ -49,21 +49,13 @@
 
 //  API Contract Inclusion Definitions
 #if !defined(SPECIFIC_API_CONTRACT_DEFINITIONS)
-#if !defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
@@ -74,7 +66,7 @@
 #endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x80000
+#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 
 #if !defined(WINDOWS_APPLICATIONMODEL_ACTIVATION_ACTIVATEDEVENTSCONTRACT_VERSION)
@@ -9376,12 +9368,12 @@ namespace ABI {
  *
  * Struct Microsoft.UI.Xaml.Automation.Peers.AutomationHeadingLevel
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 6.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  */
 
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x60000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -9409,19 +9401,19 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x60000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Struct Microsoft.UI.Xaml.Automation.Peers.AutomationLandmarkType
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 2.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  */
 
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x20000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -9445,7 +9437,7 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x20000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -9520,12 +9512,12 @@ namespace ABI {
  *
  * Struct Microsoft.UI.Xaml.Automation.Peers.AutomationNotificationKind
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 5.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  */
 
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x50000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -9548,19 +9540,19 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x50000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Struct Microsoft.UI.Xaml.Automation.Peers.AutomationNotificationProcessing
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 5.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  */
 
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x50000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -9583,7 +9575,7 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x50000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -24859,12 +24851,12 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CAutomationEvents
  *
  * Struct Microsoft.UI.Xaml.Automation.Peers.AutomationHeadingLevel
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 6.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  */
 
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x60000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 /* [v1_enum, contract] */
 enum __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CAutomationHeadingLevel
 {
@@ -24879,19 +24871,19 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CAutomationHeadingLevel
     AutomationHeadingLevel_Level8 = 8,
     AutomationHeadingLevel_Level9 = 9,
 };
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x60000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Struct Microsoft.UI.Xaml.Automation.Peers.AutomationLandmarkType
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 2.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  */
 
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x20000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 /* [v1_enum, contract] */
 enum __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CAutomationLandmarkType
 {
@@ -24902,7 +24894,7 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CAutomationLandmarkType
     AutomationLandmarkType_Navigation = 4,
     AutomationLandmarkType_Search = 5,
 };
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x20000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -24951,12 +24943,12 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CAutomationNavigationDirect
  *
  * Struct Microsoft.UI.Xaml.Automation.Peers.AutomationNotificationKind
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 5.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  */
 
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x50000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 /* [v1_enum, contract] */
 enum __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CAutomationNotificationKind
 {
@@ -24966,19 +24958,19 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CAutomationNotificationKind
     AutomationNotificationKind_ActionAborted = 3,
     AutomationNotificationKind_Other = 4,
 };
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x50000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Struct Microsoft.UI.Xaml.Automation.Peers.AutomationNotificationProcessing
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 5.0
+ * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
  *
  *
  */
 
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x50000
+#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 /* [v1_enum, contract] */
 enum __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CAutomationNotificationProcessing
 {
@@ -24988,7 +24980,7 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CAutomationNotificationProc
     AutomationNotificationProcessing_MostRecent = 3,
     AutomationNotificationProcessing_CurrentThenMostRecent = 4,
 };
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x50000
+#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*

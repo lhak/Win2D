@@ -7,11 +7,31 @@ import "AsyncInfo.idl";
 import "EventToken.idl";
 import "windowscontracts.idl";
 import "Windows.Foundation.idl";
+import "Microsoft.Foundation.idl";
+import "Microsoft.Graphics.DirectX.idl";
 import "Microsoft.UI.Composition.idl";
 import "Windows.Foundation.Numerics.idl";
-import "Windows.Graphics.DirectX.idl";
 
 // Forward Declare
+namespace Microsoft
+{
+    namespace Foundation
+    {
+        apicontract LiftedContract;
+    }
+}
+namespace Microsoft
+{
+    namespace Graphics
+    {
+        namespace DirectX
+        {
+            typedef enum DirectXPixelFormat DirectXPixelFormat;
+
+            typedef enum DirectXPrimitiveTopology DirectXPrimitiveTopology;
+        }
+    }
+}
 namespace Microsoft
 {
     namespace UI
@@ -47,16 +67,6 @@ namespace Windows
         }
     }
 }
-namespace Windows
-{
-    namespace Graphics
-    {
-        namespace DirectX
-        {
-            typedef enum DirectXPixelFormat DirectXPixelFormat;
-        }
-    }
-}
 namespace Microsoft
 {
     namespace UI
@@ -65,8 +75,6 @@ namespace Microsoft
         {
             namespace Scenes
             {
-                apicontract LiftedContract;
-
                 typedef enum SceneAlphaMode SceneAlphaMode;
 
                 typedef enum SceneAttributeSemantic SceneAttributeSemantic;
@@ -222,13 +230,7 @@ namespace Microsoft
         {
             namespace Scenes
             {
-                [contractversion(1.0)]
-                apicontract LiftedContract
-                {
-                }
-
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 enum SceneAlphaMode
                 {
                     Opaque    = 0,
@@ -236,8 +238,7 @@ namespace Microsoft
                     Blend     = 2
                 };
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 enum SceneAttributeSemantic
                 {
                     Index     = 0,
@@ -249,15 +250,13 @@ namespace Microsoft
                     Tangent   = 6
                 };
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 enum SceneComponentType
                 {
                     MeshRendererComponent = 0
                 };
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 enum SceneWrappingMode
                 {
                     ClampToEdge    = 0,
@@ -265,9 +264,8 @@ namespace Microsoft
                     Repeat         = 2
                 };
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneBoundingBox)]
-                [experimental]
                 [uuid(39FB48E0-216A-5608-9186-6BA9F98B5C67)]
                 interface ISceneBoundingBox : IInspectable
                 {
@@ -278,84 +276,76 @@ namespace Microsoft
                     [propget] HRESULT Size([out] [retval] Windows.Foundation.Numerics.Vector3* value);
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneComponent)]
-                [experimental]
                 [uuid(F73361CB-8027-50E2-98EE-B2E3EA050A54)]
                 interface ISceneComponent : IInspectable
                 {
                     [propget] HRESULT ComponentType([out] [retval] Microsoft.UI.Composition.Scenes.SceneComponentType* value);
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneComponentCollection)]
-                [experimental]
                 [uuid(E4B21C71-87E2-5AEB-85BE-884E8302273E)]
                 interface ISceneComponentCollection : IInspectable
                 {
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneComponent)]
-                [experimental]
                 [uuid(254088B0-BABF-503D-9A66-0D86AF5F7303)]
                 interface ISceneComponentFactory : IInspectable
                 {
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneMaterial)]
-                [experimental]
                 [uuid(042142A7-BF6B-57AD-BADC-F581F38EDB48)]
                 interface ISceneMaterial : IInspectable
                 {
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneMaterial)]
-                [experimental]
                 [uuid(25747893-8748-5F60-969F-318FA0B735CA)]
                 interface ISceneMaterialFactory : IInspectable
                 {
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneMaterialInput)]
-                [experimental]
                 [uuid(446BDADE-719B-5DB4-B699-F226D0062A2E)]
                 interface ISceneMaterialInput : IInspectable
                 {
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneMaterialInput)]
-                [experimental]
                 [uuid(B4DABD1D-58C0-5710-928A-BC49B0735694)]
                 interface ISceneMaterialInputFactory : IInspectable
                 {
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneMesh)]
-                [experimental]
-                [uuid(10A51DAC-E5CD-56B3-BF1C-E92189136540)]
+                [uuid(5CF846AA-F53F-555E-A3AD-F5BC52CA32FB)]
                 interface ISceneMesh : IInspectable
                 {
                     [propget] HRESULT Bounds([out] [retval] Microsoft.UI.Composition.Scenes.SceneBoundingBox** value);
-                    HRESULT FillMeshAttribute([in] Microsoft.UI.Composition.Scenes.SceneAttributeSemantic semantic, [in] Windows.Graphics.DirectX.DirectXPixelFormat format, [in] Windows.Foundation.MemoryBuffer* memory);
+                    [propget] HRESULT PrimitiveTopology([out] [retval] Microsoft.Graphics.DirectX.DirectXPrimitiveTopology* value);
+                    [propput] HRESULT PrimitiveTopology([in] Microsoft.Graphics.DirectX.DirectXPrimitiveTopology value);
+                    HRESULT FillMeshAttribute([in] Microsoft.UI.Composition.Scenes.SceneAttributeSemantic semantic, [in] Microsoft.Graphics.DirectX.DirectXPixelFormat format, [in] Windows.Foundation.MemoryBuffer* memory);
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneMeshMaterialAttributeMap)]
-                [experimental]
                 [uuid(2360C457-EDAE-5660-BEDC-89096582ED70)]
                 interface ISceneMeshMaterialAttributeMap : IInspectable
                 {
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneMeshRendererComponent)]
-                [experimental]
                 [uuid(D2BE85A0-70A8-5C62-84D8-8BA55E4C64A9)]
                 interface ISceneMeshRendererComponent : IInspectable
                 {
@@ -366,27 +356,24 @@ namespace Microsoft
                     [propget] HRESULT UVMappings([out] [retval] Microsoft.UI.Composition.Scenes.SceneMeshMaterialAttributeMap** value);
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneMeshRendererComponent)]
-                [experimental]
                 [uuid(C54F8C5A-A104-5CFA-89DC-13EDAA6E3D88)]
                 interface ISceneMeshRendererComponentStatics : IInspectable
                 {
                     HRESULT Create([in] Microsoft.UI.Composition.Compositor* compositor, [out] [retval] Microsoft.UI.Composition.Scenes.SceneMeshRendererComponent** result);
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneMesh)]
-                [experimental]
                 [uuid(29C52125-964B-5315-80F9-3893713290F5)]
                 interface ISceneMeshStatics : IInspectable
                 {
                     HRESULT Create([in] Microsoft.UI.Composition.Compositor* compositor, [out] [retval] Microsoft.UI.Composition.Scenes.SceneMesh** result);
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneMetallicRoughnessMaterial)]
-                [experimental]
                 [uuid(0A4AFCF4-7BAE-5702-9B85-8BC849F39987)]
                 interface ISceneMetallicRoughnessMaterial : IInspectable
                 {
@@ -402,18 +389,16 @@ namespace Microsoft
                     [propput] HRESULT RoughnessFactor([in] FLOAT value);
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneMetallicRoughnessMaterial)]
-                [experimental]
                 [uuid(DFFD2043-AB3C-57A0-8E13-6F09725E970F)]
                 interface ISceneMetallicRoughnessMaterialStatics : IInspectable
                 {
                     HRESULT Create([in] Microsoft.UI.Composition.Compositor* compositor, [out] [retval] Microsoft.UI.Composition.Scenes.SceneMetallicRoughnessMaterial** result);
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneModelTransform)]
-                [experimental]
                 [uuid(3F05555F-0F67-576E-9D8A-93C1F250C29F)]
                 interface ISceneModelTransform : IInspectable
                 {
@@ -431,9 +416,8 @@ namespace Microsoft
                     [propput] HRESULT Translation([in] Windows.Foundation.Numerics.Vector3 value);
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneNode)]
-                [experimental]
                 [uuid(A1BCE140-79C2-59E6-9B68-63B1BAB0E2A6)]
                 interface ISceneNode : IInspectable
                 {
@@ -444,42 +428,37 @@ namespace Microsoft
                     HRESULT FindFirstComponentOfType([in] Microsoft.UI.Composition.Scenes.SceneComponentType value, [out] [retval] Microsoft.UI.Composition.Scenes.SceneComponent** result);
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneNodeCollection)]
-                [experimental]
                 [uuid(F219B68E-5666-5C6C-AA4E-08DB07FD6BCF)]
                 interface ISceneNodeCollection : IInspectable
                 {
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneNode)]
-                [experimental]
                 [uuid(801C4394-4198-5DA1-AC39-6E8A44B5CE57)]
                 interface ISceneNodeStatics : IInspectable
                 {
                     HRESULT Create([in] Microsoft.UI.Composition.Compositor* compositor, [out] [retval] Microsoft.UI.Composition.Scenes.SceneNode** result);
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneObject)]
-                [experimental]
                 [uuid(4333E514-4FC7-521E-8BCA-11C51FBCAF1E)]
                 interface ISceneObject : IInspectable
                 {
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneObject)]
-                [experimental]
                 [uuid(EE797F7D-77DB-5C4C-B6F5-C1930FAD85C5)]
                 interface ISceneObjectFactory : IInspectable
                 {
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.ScenePbrMaterial)]
-                [experimental]
                 [uuid(295D0725-56FE-5954-8057-3F4CA7515B36)]
                 interface IScenePbrMaterial : IInspectable
                 {
@@ -503,33 +482,29 @@ namespace Microsoft
                     [propput] HRESULT OcclusionStrength([in] FLOAT value);
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.ScenePbrMaterial)]
-                [experimental]
                 [uuid(9E34D32A-E30C-51F5-84AC-6467950605CA)]
                 interface IScenePbrMaterialFactory : IInspectable
                 {
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneRendererComponent)]
-                [experimental]
                 [uuid(6BAB8030-89C1-5DBC-A48E-1805DDF9CDD1)]
                 interface ISceneRendererComponent : IInspectable
                 {
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneRendererComponent)]
-                [experimental]
                 [uuid(3CCAC1D6-6A0F-582E-BB1A-10EBC1E405CA)]
                 interface ISceneRendererComponentFactory : IInspectable
                 {
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneSurfaceMaterialInput)]
-                [experimental]
                 [uuid(B9854B4F-286C-50CD-A734-491A251D5FD3)]
                 interface ISceneSurfaceMaterialInput : IInspectable
                 {
@@ -543,18 +518,16 @@ namespace Microsoft
                     [propput] HRESULT WrappingVMode([in] Microsoft.UI.Composition.Scenes.SceneWrappingMode value);
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneSurfaceMaterialInput)]
-                [experimental]
                 [uuid(8E1BA937-AD60-51BC-8256-CA62C4B2AE92)]
                 interface ISceneSurfaceMaterialInputStatics : IInspectable
                 {
                     HRESULT Create([in] Microsoft.UI.Composition.Compositor* compositor, [out] [retval] Microsoft.UI.Composition.Scenes.SceneSurfaceMaterialInput** result);
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneVisual)]
-                [experimental]
                 [uuid(0144D7AD-6A7D-59CB-A0F9-74A04E85352C)]
                 interface ISceneVisual : IInspectable
                 {
@@ -562,184 +535,166 @@ namespace Microsoft
                     [propput] HRESULT Root([in] Microsoft.UI.Composition.Scenes.SceneNode* value);
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Scenes.SceneVisual)]
-                [experimental]
                 [uuid(7B8DA6D1-5BD8-5095-9264-E5572653EA07)]
                 interface ISceneVisualStatics : IInspectable
                 {
                     HRESULT Create([in] Microsoft.UI.Composition.Compositor* compositor, [out] [retval] Microsoft.UI.Composition.Scenes.SceneVisual** result);
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [threading(both)]
                 runtimeclass SceneBoundingBox : Microsoft.UI.Composition.Scenes.SceneObject
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Scenes.ISceneBoundingBox;
+                    [default] interface Microsoft.UI.Composition.Scenes.ISceneBoundingBox;
                 }
 
-                [composable(Microsoft.UI.Composition.Scenes.ISceneComponentFactory, public, Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [composable(Microsoft.UI.Composition.Scenes.ISceneComponentFactory, public, Microsoft.Foundation.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [threading(both)]
                 runtimeclass SceneComponent : Microsoft.UI.Composition.Scenes.SceneObject
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Scenes.ISceneComponent;
+                    [default] interface Microsoft.UI.Composition.Scenes.ISceneComponent;
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [threading(both)]
                 runtimeclass SceneComponentCollection : Microsoft.UI.Composition.Scenes.SceneObject
                 {
-                    [experimental] interface Microsoft.UI.Composition.Scenes.ISceneComponentCollection;
+                    interface Microsoft.UI.Composition.Scenes.ISceneComponentCollection;
                     [default] interface Windows.Foundation.Collections.IVector<Microsoft.UI.Composition.Scenes.SceneComponent*>;
                     interface Windows.Foundation.Collections.IIterable<Microsoft.UI.Composition.Scenes.SceneComponent*>;
                 }
 
-                [composable(Microsoft.UI.Composition.Scenes.ISceneMaterialFactory, public, Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [composable(Microsoft.UI.Composition.Scenes.ISceneMaterialFactory, public, Microsoft.Foundation.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [threading(both)]
                 runtimeclass SceneMaterial : Microsoft.UI.Composition.Scenes.SceneObject
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Scenes.ISceneMaterial;
+                    [default] interface Microsoft.UI.Composition.Scenes.ISceneMaterial;
                 }
 
-                [composable(Microsoft.UI.Composition.Scenes.ISceneMaterialInputFactory, public, Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [composable(Microsoft.UI.Composition.Scenes.ISceneMaterialInputFactory, public, Microsoft.Foundation.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [threading(both)]
                 runtimeclass SceneMaterialInput : Microsoft.UI.Composition.Scenes.SceneObject
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Scenes.ISceneMaterialInput;
+                    [default] interface Microsoft.UI.Composition.Scenes.ISceneMaterialInput;
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
-                [static(Microsoft.UI.Composition.Scenes.ISceneMeshStatics, Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [static(Microsoft.UI.Composition.Scenes.ISceneMeshStatics, Microsoft.Foundation.LiftedContract, 1.0)]
                 [threading(both)]
                 runtimeclass SceneMesh : Microsoft.UI.Composition.Scenes.SceneObject
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Scenes.ISceneMesh;
+                    [default] interface Microsoft.UI.Composition.Scenes.ISceneMesh;
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [threading(both)]
                 runtimeclass SceneMeshMaterialAttributeMap : Microsoft.UI.Composition.Scenes.SceneObject
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Scenes.ISceneMeshMaterialAttributeMap;
+                    [default] interface Microsoft.UI.Composition.Scenes.ISceneMeshMaterialAttributeMap;
                     interface Windows.Foundation.Collections.IMap<HSTRING, Microsoft.UI.Composition.Scenes.SceneAttributeSemantic>;
                     interface Windows.Foundation.Collections.IIterable<Windows.Foundation.Collections.IKeyValuePair<HSTRING, Microsoft.UI.Composition.Scenes.SceneAttributeSemantic>*>;
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
-                [static(Microsoft.UI.Composition.Scenes.ISceneMeshRendererComponentStatics, Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [static(Microsoft.UI.Composition.Scenes.ISceneMeshRendererComponentStatics, Microsoft.Foundation.LiftedContract, 1.0)]
                 [threading(both)]
                 runtimeclass SceneMeshRendererComponent : Microsoft.UI.Composition.Scenes.SceneRendererComponent
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Scenes.ISceneMeshRendererComponent;
+                    [default] interface Microsoft.UI.Composition.Scenes.ISceneMeshRendererComponent;
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
-                [static(Microsoft.UI.Composition.Scenes.ISceneMetallicRoughnessMaterialStatics, Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [static(Microsoft.UI.Composition.Scenes.ISceneMetallicRoughnessMaterialStatics, Microsoft.Foundation.LiftedContract, 1.0)]
                 [threading(both)]
                 runtimeclass SceneMetallicRoughnessMaterial : Microsoft.UI.Composition.Scenes.ScenePbrMaterial
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Scenes.ISceneMetallicRoughnessMaterial;
+                    [default] interface Microsoft.UI.Composition.Scenes.ISceneMetallicRoughnessMaterial;
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [threading(both)]
                 runtimeclass SceneModelTransform : Microsoft.UI.Composition.CompositionTransform
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Scenes.ISceneModelTransform;
+                    [default] interface Microsoft.UI.Composition.Scenes.ISceneModelTransform;
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
-                [static(Microsoft.UI.Composition.Scenes.ISceneNodeStatics, Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [static(Microsoft.UI.Composition.Scenes.ISceneNodeStatics, Microsoft.Foundation.LiftedContract, 1.0)]
                 [threading(both)]
                 runtimeclass SceneNode : Microsoft.UI.Composition.Scenes.SceneObject
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Scenes.ISceneNode;
+                    [default] interface Microsoft.UI.Composition.Scenes.ISceneNode;
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [threading(both)]
                 runtimeclass SceneNodeCollection : Microsoft.UI.Composition.Scenes.SceneObject
                 {
-                    [experimental] interface Microsoft.UI.Composition.Scenes.ISceneNodeCollection;
+                    interface Microsoft.UI.Composition.Scenes.ISceneNodeCollection;
                     [default] interface Windows.Foundation.Collections.IVector<Microsoft.UI.Composition.Scenes.SceneNode*>;
                     interface Windows.Foundation.Collections.IIterable<Microsoft.UI.Composition.Scenes.SceneNode*>;
                 }
 
-                [composable(Microsoft.UI.Composition.Scenes.ISceneObjectFactory, public, Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [composable(Microsoft.UI.Composition.Scenes.ISceneObjectFactory, public, Microsoft.Foundation.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [threading(both)]
                 runtimeclass SceneObject : Microsoft.UI.Composition.CompositionObject
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Scenes.ISceneObject;
+                    [default] interface Microsoft.UI.Composition.Scenes.ISceneObject;
                 }
 
-                [composable(Microsoft.UI.Composition.Scenes.IScenePbrMaterialFactory, public, Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [composable(Microsoft.UI.Composition.Scenes.IScenePbrMaterialFactory, public, Microsoft.Foundation.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [threading(both)]
                 runtimeclass ScenePbrMaterial : Microsoft.UI.Composition.Scenes.SceneMaterial
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Scenes.IScenePbrMaterial;
+                    [default] interface Microsoft.UI.Composition.Scenes.IScenePbrMaterial;
                 }
 
-                [composable(Microsoft.UI.Composition.Scenes.ISceneRendererComponentFactory, public, Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [composable(Microsoft.UI.Composition.Scenes.ISceneRendererComponentFactory, public, Microsoft.Foundation.LiftedContract, 1.0)]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [threading(both)]
                 runtimeclass SceneRendererComponent : Microsoft.UI.Composition.Scenes.SceneComponent
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Scenes.ISceneRendererComponent;
+                    [default] interface Microsoft.UI.Composition.Scenes.ISceneRendererComponent;
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
-                [static(Microsoft.UI.Composition.Scenes.ISceneSurfaceMaterialInputStatics, Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [static(Microsoft.UI.Composition.Scenes.ISceneSurfaceMaterialInputStatics, Microsoft.Foundation.LiftedContract, 1.0)]
                 [threading(both)]
                 runtimeclass SceneSurfaceMaterialInput : Microsoft.UI.Composition.Scenes.SceneMaterialInput
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Scenes.ISceneSurfaceMaterialInput;
+                    [default] interface Microsoft.UI.Composition.Scenes.ISceneSurfaceMaterialInput;
                 }
 
-                [contract(Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
-                [experimental]
+                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
                 [marshaling_behavior(agile)]
-                [static(Microsoft.UI.Composition.Scenes.ISceneVisualStatics, Microsoft.UI.Composition.Scenes.LiftedContract, 1.0)]
+                [static(Microsoft.UI.Composition.Scenes.ISceneVisualStatics, Microsoft.Foundation.LiftedContract, 1.0)]
                 [threading(both)]
                 runtimeclass SceneVisual : Microsoft.UI.Composition.ContainerVisual
                 {
-                    [default] [experimental] interface Microsoft.UI.Composition.Scenes.ISceneVisual;
+                    [default] interface Microsoft.UI.Composition.Scenes.ISceneVisual;
                 }
             }
         }

@@ -8,6 +8,7 @@ import "EventToken.idl";
 import "windowscontracts.idl";
 import "Windows.Foundation.idl";
 import "Microsoft.UI.Composition.idl";
+import "Microsoft.UI.Input.Experimental.idl";
 import "Microsoft.UI.Private.Controls.idl";
 import "Microsoft.UI.Text.idl";
 import "Microsoft.UI.Xaml.idl";
@@ -19,6 +20,7 @@ import "Microsoft.UI.Xaml.Interop.idl";
 import "Microsoft.UI.Xaml.Media.idl";
 import "Microsoft.UI.Xaml.Media.Animation.idl";
 import "Microsoft.UI.Xaml.Navigation.idl";
+import "Microsoft.Web.WebView2.Core.idl";
 import "Windows.ApplicationModel.Contacts.idl";
 import "Windows.ApplicationModel.DataTransfer.idl";
 import "Windows.Foundation.Numerics.idl";
@@ -31,6 +33,7 @@ import "Windows.Media.Playback.idl";
 import "Windows.Media.Protection.idl";
 import "Windows.Storage.Streams.idl";
 import "Windows.UI.idl";
+import "Windows.UI.Core.idl";
 import "Windows.UI.Text.idl";
 import "Windows.UI.Xaml.Interop.idl";
 import "Windows.Web.idl";
@@ -53,6 +56,19 @@ namespace Microsoft
             runtimeclass Compositor;
 
             runtimeclass Visual;
+        }
+    }
+}
+namespace Microsoft
+{
+    namespace UI
+    {
+        namespace Input
+        {
+            namespace Experimental
+            {
+                runtimeclass ExpIndependentPointerInputObserver;
+            }
         }
     }
 }
@@ -244,8 +260,6 @@ namespace Microsoft
             typedef enum ElementSoundMode ElementSoundMode;
 
             delegate ExceptionRoutedEventHandler;
-
-            typedef enum FocusState FocusState;
 
             runtimeclass FrameworkElement;
 
@@ -459,6 +473,19 @@ namespace Microsoft
         }
     }
 }
+namespace Microsoft
+{
+    namespace Web
+    {
+        namespace WebView2
+        {
+            namespace Core
+            {
+                runtimeclass CoreWebView2;
+            }
+        }
+    }
+}
 namespace Windows
 {
     namespace ApplicationModel
@@ -617,6 +644,16 @@ namespace Windows
     namespace UI
     {
         typedef struct Color Color;
+    }
+}
+namespace Windows
+{
+    namespace UI
+    {
+        namespace Core
+        {
+            typedef enum CoreInputDeviceTypes CoreInputDeviceTypes;
+        }
     }
 }
 namespace Windows
@@ -2153,6 +2190,8 @@ namespace Microsoft
 
                 interface IWebView2;
 
+                interface IWebView2CoreWebView2ReadyEventArgs;
+
                 interface IWebView2Factory;
 
                 interface IWebView2NavigationCompletedEventArgs;
@@ -2771,6 +2810,8 @@ namespace Microsoft
 
                 runtimeclass WebView2;
 
+                runtimeclass WebView2CoreWebView2ReadyEventArgs;
+
                 runtimeclass WebView2NavigationCompletedEventArgs;
 
                 runtimeclass WebView2NavigationStartingEventArgs;
@@ -3112,13 +3153,6 @@ namespace Microsoft
 
                     interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.TwoPaneView*, IInspectable*>;
 
-                    interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.WebView2*, Microsoft.UI.Xaml.Controls.WebView2NavigationCompletedEventArgs*>;
-
-                    interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.WebView2*, Microsoft.UI.Xaml.Controls.WebView2NavigationStartingEventArgs*>;
-
-                    interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.WebView2*, Microsoft.UI.Xaml.Controls.WebView2ProcessFailedEventArgs*>;
-
-                    interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.WebView2*, Microsoft.UI.Xaml.Controls.WebView2WebMessageReceivedEventArgs*>;
                 }
             }
         }
@@ -3169,7 +3203,7 @@ namespace Microsoft
                     SuggestionChosen   = 2
                 };
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 7.0)]
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 enum BackgroundSizing
                 {
                     InnerBorderEdge = 0,
@@ -3287,7 +3321,7 @@ namespace Microsoft
                     Collapsed = 2
                 };
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 4.0)]
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 enum ContentDialogButton
                 {
                     None      = 0,
@@ -3296,7 +3330,7 @@ namespace Microsoft
                     Close     = 3
                 };
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 5.0)]
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 enum ContentDialogPlacement
                 {
                     Popup   = 0,
@@ -3623,7 +3657,7 @@ namespace Microsoft
                     Refreshing  = 4
                 };
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 3.0)]
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 enum RequiresPointer
                 {
                     Never       = 0,
@@ -4052,7 +4086,7 @@ namespace Microsoft
                     Recycling = 1
                 };
 
-                
+                [experimental]
                 [version(0x00000001)]
                 enum WebView2ProcessFailedKind
                 {
@@ -5751,7 +5785,7 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.Control)]
-                [uuid(8DCC6F25-C305-5B92-B9D4-FF594AF5966F)]
+                [uuid(857D6E8A-D45A-5C69-A99C-BF6A5C54FB38)]
                 interface IControl : IInspectable
                 {
                     [propget] HRESULT IsFocusEngagementEnabled([out] [retval] boolean* value);
@@ -5810,7 +5844,6 @@ namespace Microsoft
                     [eventremove] HRESULT IsEnabledChanged([in] EventRegistrationToken token);
                     HRESULT RemoveFocusEngagement();
                     HRESULT ApplyTemplate([out] [retval] boolean* result);
-                    HRESULT Focus([in] Microsoft.UI.Xaml.FocusState value, [out] [retval] boolean* result);
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -6081,7 +6114,7 @@ namespace Microsoft
                     [propget] HRESULT YearFormatProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                 }
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 7.0)]
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.DatePickerSelectedValueChangedEventArgs)]
                 [uuid(305ED436-370F-5E82-ACF2-F1413E8F9EC4)]
                 interface IDatePickerSelectedValueChangedEventArgs : IInspectable
@@ -6439,7 +6472,7 @@ namespace Microsoft
                     [propget] HRESULT FlyoutPresenterStyleProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                 }
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 3.0)]
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.FocusDisengagedEventArgs)]
                 [uuid(C0B4B88C-C195-5064-84C7-33CB262CB240)]
                 interface IFocusDisengagedEventArgs : IInspectable
@@ -10153,7 +10186,7 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.RichTextBlock)]
-                [uuid(780BB38D-96F8-575F-A3C1-02A1730F1C24)]
+                [uuid(D766E4DB-A684-50B7-A202-C8E91FA26FF3)]
                 interface IRichTextBlock : IInspectable
                 {
                     [propget] HRESULT FontSize([out] [retval] DOUBLE* value);
@@ -10225,7 +10258,6 @@ namespace Microsoft
                     HRESULT SelectAll();
                     HRESULT Select([in] Microsoft.UI.Xaml.Documents.TextPointer* start, [in] Microsoft.UI.Xaml.Documents.TextPointer* end);
                     HRESULT GetPositionFromPoint([in] Windows.Foundation.Point point, [out] [retval] Microsoft.UI.Xaml.Documents.TextPointer** result);
-                    HRESULT Focus([in] Microsoft.UI.Xaml.FocusState value, [out] [retval] boolean* result);
                     HRESULT CopySelectionToClipboard();
                     [propget] HRESULT TextIndent([out] [retval] DOUBLE* value);
                     [propput] HRESULT TextIndent([in] DOUBLE value);
@@ -10233,7 +10265,7 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.RichTextBlockOverflow)]
-                [uuid(611043DA-405F-5E28-B21E-C82C9739CC47)]
+                [uuid(015C2522-0646-5C71-9F54-3C38C7235A62)]
                 interface IRichTextBlockOverflow : IInspectable
                 {
                     [propget] HRESULT OverflowContentTarget([out] [retval] Microsoft.UI.Xaml.Controls.RichTextBlockOverflow** value);
@@ -10251,7 +10283,6 @@ namespace Microsoft
                     [eventadd] HRESULT IsTextTrimmedChanged([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.RichTextBlockOverflow*, Microsoft.UI.Xaml.Controls.IsTextTrimmedChangedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
                     [eventremove] HRESULT IsTextTrimmedChanged([in] EventRegistrationToken token);
                     HRESULT GetPositionFromPoint([in] Windows.Foundation.Point point, [out] [retval] Microsoft.UI.Xaml.Documents.TextPointer** result);
-                    HRESULT Focus([in] Microsoft.UI.Xaml.FocusState value, [out] [retval] boolean* result);
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -11188,13 +11219,14 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.SwapChainPanel)]
-                [uuid(88411E23-5430-51BD-8A25-EC9542F75C54)]
+                [uuid(A8178157-5116-5491-AF96-070C0BCF0C48)]
                 interface ISwapChainPanel : IInspectable
                 {
                     [propget] HRESULT CompositionScaleX([out] [retval] FLOAT* value);
                     [propget] HRESULT CompositionScaleY([out] [retval] FLOAT* value);
                     [eventadd] HRESULT CompositionScaleChanged([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.SwapChainPanel*, IInspectable*>* handler, [out] [retval] EventRegistrationToken* token);
                     [eventremove] HRESULT CompositionScaleChanged([in] EventRegistrationToken token);
+                    HRESULT CreateCoreIndependentInputSource([in] Windows.UI.Core.CoreInputDeviceTypes deviceTypes, [out] [retval] Microsoft.UI.Input.Experimental.ExpIndependentPointerInputObserver** result);
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -11727,7 +11759,7 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.TextBlock)]
-                [uuid(F3508D7E-5FC7-55D3-BF43-DAE81D67EAA3)]
+                [uuid(1AC8D84F-392C-5C7E-83F5-A53E3BF0ABB0)]
                 interface ITextBlock : IInspectable
                 {
                     [propget] HRESULT FontSize([out] [retval] DOUBLE* value);
@@ -11797,7 +11829,6 @@ namespace Microsoft
                     [eventremove] HRESULT IsTextTrimmedChanged([in] EventRegistrationToken token);
                     HRESULT SelectAll();
                     HRESULT Select([in] Microsoft.UI.Xaml.Documents.TextPointer* start, [in] Microsoft.UI.Xaml.Documents.TextPointer* end);
-                    HRESULT Focus([in] Microsoft.UI.Xaml.FocusState value, [out] [retval] boolean* result);
                     HRESULT GetAlphaMask([out] [retval] Microsoft.UI.Composition.CompositionBrush** result);
                     HRESULT CopySelectionToClipboard();
                 }
@@ -12077,7 +12108,7 @@ namespace Microsoft
                     [propget] HRESULT Length([out] [retval] INT32* value);
                 }
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 5.0)]
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.TextControlCopyingToClipboardEventArgs)]
                 [uuid(1DAAC6D5-8DB5-5D9F-9382-1E644F9AA437)]
                 interface ITextControlCopyingToClipboardEventArgs : IInspectable
@@ -12086,7 +12117,7 @@ namespace Microsoft
                     [propput] HRESULT Handled([in] boolean value);
                 }
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 5.0)]
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.TextControlCuttingToClipboardEventArgs)]
                 [uuid(9D73671F-EA30-555D-8129-5A96AEC73A14)]
                 interface ITextControlCuttingToClipboardEventArgs : IInspectable
@@ -12189,7 +12220,7 @@ namespace Microsoft
                     [propget] HRESULT MinuteIncrementProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                 }
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 7.0)]
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.TimePickerSelectedValueChangedEventArgs)]
                 [uuid(6ED7EDF1-9B0B-5E7B-9E10-F35660A29FD2)]
                 interface ITimePickerSelectedValueChangedEventArgs : IInspectable
@@ -13002,90 +13033,7 @@ namespace Microsoft
                     HRESULT GetIsVirtualizing([in] Microsoft.UI.Xaml.DependencyObject* o, [out] [retval] boolean* result);
                 }
 
-                [exclusiveto(Microsoft.UI.Xaml.Controls.WebView2)]
-                [uuid(4A7EBB28-DBB2-5EE5-BAF0-1DEFB9C5B658)]
-                [version(0x00000001)]
-                interface IWebView2 : IInspectable
-                {
-                    HRESULT ExecuteScriptAsync([in] HSTRING javascriptCode, [out] [retval] Windows.Foundation.IAsyncOperation<HSTRING>** operation);
-                    [propget] HRESULT Source([out] [retval] Windows.Foundation.Uri** value);
-                    [propput] HRESULT Source([in] Windows.Foundation.Uri* value);
-                    [propget] HRESULT CanGoForward([out] [retval] boolean* value);
-                    [propput] HRESULT CanGoForward([in] boolean value);
-                    [propget] HRESULT CanGoBack([out] [retval] boolean* value);
-                    [propput] HRESULT CanGoBack([in] boolean value);
-                    HRESULT Reload();
-                    HRESULT GoForward();
-                    HRESULT GoBack();
-                    HRESULT NavigateToString([in] HSTRING htmlContent);
-                    [eventadd] HRESULT NavigationCompleted([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.WebView2*, Microsoft.UI.Xaml.Controls.WebView2NavigationCompletedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
-                    [eventremove] HRESULT NavigationCompleted([in] EventRegistrationToken token);
-                    [eventadd] HRESULT WebMessageReceived([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.WebView2*, Microsoft.UI.Xaml.Controls.WebView2WebMessageReceivedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
-                    [eventremove] HRESULT WebMessageReceived([in] EventRegistrationToken token);
-                    [eventadd] HRESULT NavigationStarting([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.WebView2*, Microsoft.UI.Xaml.Controls.WebView2NavigationStartingEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
-                    [eventremove] HRESULT NavigationStarting([in] EventRegistrationToken token);
-                    [eventadd] HRESULT CoreProcessFailed([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.WebView2*, Microsoft.UI.Xaml.Controls.WebView2ProcessFailedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
-                    [eventremove] HRESULT CoreProcessFailed([in] EventRegistrationToken token);
-                }
-
-                [exclusiveto(Microsoft.UI.Xaml.Controls.WebView2)]
-                [uuid(FB4EC2CE-3074-5C42-B655-64FB81FBD040)]
-                [version(0x00000001)]
-                interface IWebView2Factory : IInspectable
-                {
-                    HRESULT CreateInstance([in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Controls.WebView2** value);
-                }
-
-                [exclusiveto(Microsoft.UI.Xaml.Controls.WebView2NavigationCompletedEventArgs)]
-                [uuid(42C8ED25-F9ED-539A-8448-9E69874B05D9)]
-                [version(0x00000001)]
-                interface IWebView2NavigationCompletedEventArgs : IInspectable
-                {
-                    [propget] HRESULT IsSuccess([out] [retval] boolean* value);
-                    [propget] HRESULT WebErrorStatus([out] [retval] Windows.Web.WebErrorStatus* value);
-                }
-
-                [exclusiveto(Microsoft.UI.Xaml.Controls.WebView2NavigationStartingEventArgs)]
-                [uuid(E1938B96-82FA-59CA-B894-C4AA6BE7E691)]
-                [version(0x00000001)]
-                interface IWebView2NavigationStartingEventArgs : IInspectable
-                {
-                    [propget] HRESULT Uri([out] [retval] HSTRING* value);
-                    [propget] HRESULT IsUserInitiated([out] [retval] boolean* value);
-                    [propget] HRESULT IsRedirected([out] [retval] boolean* value);
-                    [propget] HRESULT Cancel([out] [retval] boolean* value);
-                    [propput] HRESULT Cancel([in] boolean value);
-                }
-
-                [exclusiveto(Microsoft.UI.Xaml.Controls.WebView2ProcessFailedEventArgs)]
-                [uuid(F1F42552-A47C-5624-AC99-E98826936D3F)]
-                [version(0x00000001)]
-                interface IWebView2ProcessFailedEventArgs : IInspectable
-                {
-                    [propget] HRESULT ProcessFailedKind([out] [retval] Microsoft.UI.Xaml.Controls.WebView2ProcessFailedKind* value);
-                }
-
-                [exclusiveto(Microsoft.UI.Xaml.Controls.WebView2)]
-                [uuid(0179DCF1-1856-5A3B-B3F4-843487D3A49B)]
-                [version(0x00000001)]
-                interface IWebView2Statics : IInspectable
-                {
-                    [propget] HRESULT SourceProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT CanGoForwardProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT CanGoBackProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                }
-
-                [exclusiveto(Microsoft.UI.Xaml.Controls.WebView2WebMessageReceivedEventArgs)]
-                [uuid(E40226B9-48DA-504C-A881-1998C032E002)]
-                [version(0x00000001)]
-                interface IWebView2WebMessageReceivedEventArgs : IInspectable
-                {
-                    [propget] HRESULT Source([out] [retval] HSTRING* value);
-                    [propget] HRESULT WebMessageAsJson([out] [retval] HSTRING* value);
-                    [propget] HRESULT WebMessageAsString([out] [retval] HSTRING* value);
-                }
-
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                      [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.WrapGrid)]
                 [uuid(2E570B6A-FF97-53B8-A887-348F59EE0544)]
                 interface IWrapGrid : IInspectable
@@ -13702,7 +13650,7 @@ namespace Microsoft
                     [default] interface Microsoft.UI.Xaml.Controls.IDatePickerFlyoutPresenter;
                 }
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 7.0)]
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [marshaling_behavior(agile)]
                 runtimeclass DatePickerSelectedValueChangedEventArgs
                 {
@@ -13849,7 +13797,7 @@ namespace Microsoft
                     [default] interface Microsoft.UI.Xaml.Controls.IFlyoutPresenter;
                 }
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 3.0)]
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [threading(both)]
                 runtimeclass FocusDisengagedEventArgs : Microsoft.UI.Xaml.RoutedEventArgs
@@ -15520,14 +15468,14 @@ namespace Microsoft
                     [default] interface Microsoft.UI.Xaml.Controls.ITextCompositionStartedEventArgs;
                 }
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 5.0)]
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [marshaling_behavior(agile)]
                 runtimeclass TextControlCopyingToClipboardEventArgs
                 {
                     [default] interface Microsoft.UI.Xaml.Controls.ITextControlCopyingToClipboardEventArgs;
                 }
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 5.0)]
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [marshaling_behavior(agile)]
                 runtimeclass TextControlCuttingToClipboardEventArgs
                 {
@@ -15579,7 +15527,7 @@ namespace Microsoft
                     [default] interface Microsoft.UI.Xaml.Controls.ITimePickerFlyoutPresenter;
                 }
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 7.0)]
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [marshaling_behavior(agile)]
                 runtimeclass TimePickerSelectedValueChangedEventArgs
                 {
@@ -15851,48 +15799,6 @@ namespace Microsoft
                     [overridable] interface Microsoft.UI.Xaml.Controls.IVirtualizingStackPanelOverrides;
                 }
 
-                [composable(Microsoft.UI.Xaml.Controls.IWebView2Factory, public, 0x00000001)]
-                
-                [marshaling_behavior(agile)]
-                [static(Microsoft.UI.Xaml.Controls.IWebView2Statics, 0x00000001)]
-                [threading(both)]
-                [version(0x00000001)]
-                runtimeclass WebView2 : Microsoft.UI.Xaml.FrameworkElement
-                {
-                    [default] interface Microsoft.UI.Xaml.Controls.IWebView2;
-                }
-
-                
-                [marshaling_behavior(agile)]
-                [version(0x00000001)]
-                runtimeclass WebView2NavigationCompletedEventArgs
-                {
-                    [default] interface Microsoft.UI.Xaml.Controls.IWebView2NavigationCompletedEventArgs;
-                }
-
-                
-                [marshaling_behavior(agile)]
-                [version(0x00000001)]
-                runtimeclass WebView2NavigationStartingEventArgs
-                {
-                    [default] interface Microsoft.UI.Xaml.Controls.IWebView2NavigationStartingEventArgs;
-                }
-
-                
-                [marshaling_behavior(agile)]
-                [version(0x00000001)]
-                runtimeclass WebView2ProcessFailedEventArgs
-                {
-                    [default] interface Microsoft.UI.Xaml.Controls.IWebView2ProcessFailedEventArgs;
-                }
-
-                
-                [marshaling_behavior(agile)]
-                [version(0x00000001)]
-                runtimeclass WebView2WebMessageReceivedEventArgs
-                {
-                    [default] interface Microsoft.UI.Xaml.Controls.IWebView2WebMessageReceivedEventArgs;
-                }
 
                 [activatable(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]

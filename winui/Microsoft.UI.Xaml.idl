@@ -9,7 +9,7 @@ import "windowscontracts.idl";
 import "Windows.Foundation.idl";
 import "Microsoft.System.idl";
 import "Microsoft.UI.Composition.idl";
-import "Microsoft.UI.Xaml.Automation.idl";
+import "Microsoft.UI.Input.Experimental.idl";
 import "Microsoft.UI.Xaml.Automation.Peers.idl";
 import "Microsoft.UI.Xaml.Controls.idl";
 import "Microsoft.UI.Xaml.Controls.Primitives.idl";
@@ -30,7 +30,6 @@ import "Windows.Graphics.DirectX.idl";
 import "Windows.Graphics.Imaging.idl";
 import "Windows.UI.idl";
 import "Windows.UI.Core.idl";
-import "Windows.UI.Input.idl";
 import "Windows.UI.Xaml.Interop.idl";
 
 // Forward Declare
@@ -56,6 +55,8 @@ namespace Microsoft
             interface ICompositionAnimationBase;
 
             interface IVisualElement;
+
+            interface IVisualElement2;
         }
     }
 }
@@ -63,13 +64,11 @@ namespace Microsoft
 {
     namespace UI
     {
-        namespace Xaml
+        namespace Input
         {
-            namespace Automation
+            namespace Experimental
             {
-                runtimeclass AutomationProperty;
-
-                runtimeclass ComponentPropertyValue;
+                runtimeclass ExpPointerPoint;
             }
         }
     }
@@ -450,19 +449,11 @@ namespace Windows
     {
         namespace Core
         {
+            runtimeclass CoreCursor;
+
             runtimeclass CoreDispatcher;
 
             runtimeclass CoreWindow;
-        }
-    }
-}
-namespace Windows
-{
-    namespace UI
-    {
-        namespace Input
-        {
-            runtimeclass PointerPoint;
         }
     }
 }
@@ -831,9 +822,9 @@ namespace Microsoft
 
             interface IUIElementFactory;
 
-            interface IUIElementHostingPreviewStaticsPrivate;
-
             interface IUIElementOverrides;
+
+            interface IUIElementProtected;
 
             interface IUIElementStatics;
 
@@ -889,7 +880,7 @@ namespace Microsoft
 
             interface IXamlRootChangedEventArgs;
 
-            interface IXamlRootStatics;
+            interface IXamlServiceProvider;
 
             runtimeclass AdaptiveTrigger;
 
@@ -1191,7 +1182,7 @@ namespace Microsoft
             {
             }
 
-            [contractversion(8.0)]
+            [contractversion(1.0)]
             apicontract WinUIContract
             {
             }
@@ -1517,7 +1508,7 @@ namespace Microsoft
                 Reparent = 3
             };
 
-            [contract(Microsoft.UI.Xaml.WinUIContract, 7.0)]
+            [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [flags]
             enum Vector3TransitionComponents
             {
@@ -1812,7 +1803,7 @@ namespace Microsoft
                 [propput] HRESULT Handled([in] boolean value);
             }
 
-            [contract(Microsoft.UI.Xaml.WinUIContract, 7.0)]
+            [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [exclusiveto(Microsoft.UI.Xaml.BrushTransition)]
             [uuid(A996A7BA-4567-5963-A112-76E3C0000204)]
             interface IBrushTransition : IInspectable
@@ -1821,7 +1812,7 @@ namespace Microsoft
                 [propput] HRESULT Duration([in] Windows.Foundation.TimeSpan value);
             }
 
-            [contract(Microsoft.UI.Xaml.WinUIContract, 7.0)]
+            [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [exclusiveto(Microsoft.UI.Xaml.BrushTransition)]
             [uuid(13735998-C3B6-5C24-B40A-7B166A6FFC2C)]
             interface IBrushTransitionFactory : IInspectable
@@ -2685,7 +2676,7 @@ namespace Microsoft
                 HRESULT CreateInstance([in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.RoutedEventArgs** value);
             }
 
-            [contract(Microsoft.UI.Xaml.WinUIContract, 7.0)]
+            [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [exclusiveto(Microsoft.UI.Xaml.ScalarTransition)]
             [uuid(C2DA2AC8-814C-5889-B2F4-4EBE4B001EE3)]
             interface IScalarTransition : IInspectable
@@ -2694,7 +2685,7 @@ namespace Microsoft
                 [propput] HRESULT Duration([in] Windows.Foundation.TimeSpan value);
             }
 
-            [contract(Microsoft.UI.Xaml.WinUIContract, 7.0)]
+            [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [exclusiveto(Microsoft.UI.Xaml.ScalarTransition)]
             [uuid(A1650CF8-A15B-54FC-B595-C52491318F58)]
             interface IScalarTransitionFactory : IInspectable
@@ -2914,7 +2905,7 @@ namespace Microsoft
 
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [exclusiveto(Microsoft.UI.Xaml.UIElement)]
-            [uuid(BA741F05-21DC-5B24-9D8B-B430CA730C5D)]
+            [uuid(C6A6B834-85F2-5A6A-87E3-125475FFEE44)]
             interface IUIElement : IInspectable
             {
                 [propget] HRESULT DesiredSize([out] [retval] Windows.Foundation.Size* value);
@@ -3133,10 +3124,11 @@ namespace Microsoft
                 HRESULT InvalidateArrange();
                 HRESULT UpdateLayout();
                 HRESULT CancelDirectManipulations([out] [retval] boolean* result);
-                HRESULT StartDragAsync([in] Windows.UI.Input.PointerPoint* pointerPoint, [out] [retval] Windows.Foundation.IAsyncOperation<Windows.ApplicationModel.DataTransfer.DataPackageOperation>** operation);
+                HRESULT StartDragAsync([in] Microsoft.UI.Input.Experimental.ExpPointerPoint* pointerPoint, [out] [retval] Windows.Foundation.IAsyncOperation<Windows.ApplicationModel.DataTransfer.DataPackageOperation>** operation);
                 [overload("StartBringIntoView")] HRESULT StartBringIntoView();
                 [overload("StartBringIntoView")] HRESULT StartBringIntoViewWithOptions([in] Microsoft.UI.Xaml.BringIntoViewOptions* options);
                 HRESULT TryInvokeKeyboardAccelerator([in] Microsoft.UI.Xaml.Input.ProcessKeyboardAcceleratorEventArgs* args);
+                HRESULT Focus([in] Microsoft.UI.Xaml.FocusState value, [out] [retval] boolean* result);
                 HRESULT StartAnimation([in] Microsoft.UI.Composition.ICompositionAnimationBase* animation);
                 HRESULT StopAnimation([in] Microsoft.UI.Composition.ICompositionAnimationBase* animation);
             }
@@ -3146,14 +3138,6 @@ namespace Microsoft
             [uuid(14D1D309-ADD0-5CCB-B946-77488CD70F87)]
             interface IUIElementFactory : IInspectable
             {
-            }
-
-            [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            [uuid(FA6A542F-03AB-5F1B-8AC0-E52AE01B9F79)]
-            interface IUIElementHostingPreviewStaticsPrivate : IInspectable
-            {
-                HRESULT SetComponentSite([in] Microsoft.UI.Xaml.UIElement* element, [in] IInspectable* componentSite);
-                HRESULT SetAutomationProperty([in] Microsoft.UI.Xaml.UIElement* element, [in] Microsoft.UI.Xaml.Automation.AutomationProperty* property, [in] Microsoft.UI.Xaml.Automation.ComponentPropertyValue* value);
             }
 
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -3169,6 +3153,15 @@ namespace Microsoft
                 HRESULT OnProcessKeyboardAccelerators([in] Microsoft.UI.Xaml.Input.ProcessKeyboardAcceleratorEventArgs* args);
                 HRESULT OnBringIntoViewRequested([in] Microsoft.UI.Xaml.BringIntoViewRequestedEventArgs* e);
                 HRESULT PopulatePropertyInfoOverride([in] HSTRING propertyName, [in] Microsoft.UI.Composition.AnimationPropertyInfo* animationPropertyInfo);
+            }
+
+            [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+            [exclusiveto(Microsoft.UI.Xaml.UIElement)]
+            [uuid(DAF64AC6-6A6D-5F58-B326-296BF114CBBA)]
+            interface IUIElementProtected : IInspectable
+            {
+                [propget] HRESULT ProtectedCursor([out] [retval] Windows.UI.Core.CoreCursor** value);
+                [propput] HRESULT ProtectedCursor([in] Windows.UI.Core.CoreCursor* value);
             }
 
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -3287,7 +3280,7 @@ namespace Microsoft
                 [propput] HRESULT Handled([in] boolean value);
             }
 
-            [contract(Microsoft.UI.Xaml.WinUIContract, 7.0)]
+            [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [exclusiveto(Microsoft.UI.Xaml.Vector3Transition)]
             [uuid(0C408BB9-F9A2-55D7-8AED-143D36D603F2)]
             interface IVector3Transition : IInspectable
@@ -3298,7 +3291,7 @@ namespace Microsoft
                 [propput] HRESULT Components([in] Microsoft.UI.Xaml.Vector3TransitionComponents value);
             }
 
-            [contract(Microsoft.UI.Xaml.WinUIContract, 7.0)]
+            [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [exclusiveto(Microsoft.UI.Xaml.Vector3Transition)]
             [uuid(A3A084FC-B965-534B-900F-78E288129232)]
             interface IVector3TransitionFactory : IInspectable
@@ -3522,14 +3515,13 @@ namespace Microsoft
 
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [exclusiveto(Microsoft.UI.Xaml.XamlRoot)]
-            [uuid(41125F0A-70B7-5696-AF98-5730882E360B)]
+            [uuid(60CB215A-AD15-520A-8B01-4416824F0441)]
             interface IXamlRoot : IInspectable
             {
                 [propget] HRESULT Content([out] [retval] Microsoft.UI.Xaml.UIElement** value);
                 [propget] HRESULT Size([out] [retval] Windows.Foundation.Size* value);
                 [propget] HRESULT RasterizationScale([out] [retval] DOUBLE* value);
                 [propget] HRESULT IsHostVisible([out] [retval] boolean* value);
-                [propget] HRESULT Compositor([out] [retval] Microsoft.UI.Composition.Compositor** value);
                 [eventadd] HRESULT Changed([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.XamlRoot*, Microsoft.UI.Xaml.XamlRootChangedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
                 [eventremove] HRESULT Changed([in] EventRegistrationToken token);
             }
@@ -3542,11 +3534,10 @@ namespace Microsoft
             }
 
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-            [exclusiveto(Microsoft.UI.Xaml.XamlRoot)]
-            [uuid(2BD69A78-5675-5D62-960A-BF44C2DD5F61)]
-            interface IXamlRootStatics : IInspectable
+            [uuid(68B3A2DF-8173-539F-B524-C8A2348F5AFB)]
+            interface IXamlServiceProvider : IInspectable
             {
-                [propget] HRESULT _Internal_Use_Only_Compositor([out] [retval] Microsoft.UI.Composition.Compositor** value);
+                HRESULT GetService([in] Windows.UI.Xaml.Interop.TypeName type, [out] [retval] IInspectable** result);
             }
 
             [composable(Microsoft.UI.Xaml.IAdaptiveTriggerFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -3601,8 +3592,8 @@ namespace Microsoft
                 [default] interface Microsoft.UI.Xaml.IBringIntoViewRequestedEventArgs;
             }
 
-            [composable(Microsoft.UI.Xaml.IBrushTransitionFactory, public, Microsoft.UI.Xaml.WinUIContract, 7.0)]
-            [contract(Microsoft.UI.Xaml.WinUIContract, 7.0)]
+            [composable(Microsoft.UI.Xaml.IBrushTransitionFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
+            [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [marshaling_behavior(agile)]
             [threading(both)]
             runtimeclass BrushTransition
@@ -3952,8 +3943,8 @@ namespace Microsoft
                 [default] interface Microsoft.UI.Xaml.IRoutedEventArgs;
             }
 
-            [composable(Microsoft.UI.Xaml.IScalarTransitionFactory, public, Microsoft.UI.Xaml.WinUIContract, 7.0)]
-            [contract(Microsoft.UI.Xaml.WinUIContract, 7.0)]
+            [composable(Microsoft.UI.Xaml.IScalarTransitionFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
+            [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [marshaling_behavior(agile)]
             [threading(both)]
             runtimeclass ScalarTransition
@@ -4101,9 +4092,11 @@ namespace Microsoft
             runtimeclass UIElement : Microsoft.UI.Xaml.DependencyObject
             {
                 [default] interface Microsoft.UI.Xaml.IUIElement;
+                [protected] interface Microsoft.UI.Xaml.IUIElementProtected;
                 [overridable] interface Microsoft.UI.Xaml.IUIElementOverrides;
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] [experimental] interface Microsoft.UI.Composition.IAnimationObject;
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] [experimental] interface Microsoft.UI.Composition.IVisualElement;
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] interface Microsoft.UI.Composition.IAnimationObject;
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] interface Microsoft.UI.Composition.IVisualElement;
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] interface Microsoft.UI.Composition.IVisualElement2;
             }
 
             [composable(Microsoft.UI.Xaml.IUIElementWeakCollectionFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -4123,8 +4116,8 @@ namespace Microsoft
                 [default] interface Microsoft.UI.Xaml.IUnhandledExceptionEventArgs;
             }
 
-            [composable(Microsoft.UI.Xaml.IVector3TransitionFactory, public, Microsoft.UI.Xaml.WinUIContract, 7.0)]
-            [contract(Microsoft.UI.Xaml.WinUIContract, 7.0)]
+            [composable(Microsoft.UI.Xaml.IVector3TransitionFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
+            [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [marshaling_behavior(agile)]
             [threading(both)]
             runtimeclass Vector3Transition
@@ -4227,8 +4220,6 @@ namespace Microsoft
 
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [marshaling_behavior(agile)]
-            [static(Microsoft.UI.Xaml.IXamlRootStatics, Microsoft.UI.Xaml.WinUIContract, 1.0)]
-            [threading(both)]
             runtimeclass XamlRoot
             {
                 [default] interface Microsoft.UI.Xaml.IXamlRoot;

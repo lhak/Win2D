@@ -49,21 +49,13 @@
 
 //  API Contract Inclusion Definitions
 #if !defined(SPECIFIC_API_CONTRACT_DEFINITIONS)
-#if !defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
@@ -74,7 +66,7 @@
 #endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x80000
+#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 
 #if !defined(WINDOWS_APPLICATIONMODEL_ACTIVATION_ACTIVATEDEVENTSCONTRACT_VERSION)
@@ -1403,8 +1395,7 @@ namespace ABI {
 #endif // ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSource_FWD_DEFINED__
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef DEF___FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_USE
 #define DEF___FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_USE
@@ -1433,12 +1424,10 @@ typedef IIterator<ABI::Microsoft::UI::Composition::Interactions::ICompositionInt
 #endif /* DEF___FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_USE */
 
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #ifndef DEF___FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_USE
 #define DEF___FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_USE
@@ -1467,8 +1456,7 @@ typedef IIterable<ABI::Microsoft::UI::Composition::Interactions::ICompositionInt
 #endif /* DEF___FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_USE */
 
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
 #ifndef DEF___FIReference_1_boolean_USE
@@ -4215,8 +4203,8 @@ namespace ABI {
         namespace UI {
             namespace Private {
                 namespace Controls {
-                    /* [object, version, uuid("3050D99C-773C-52B1-A0DA-4B5A52629EFC"), exclusiveto] */
-                    MIDL_INTERFACE("3050D99C-773C-52B1-A0DA-4B5A52629EFC")
+                    /* [object, version, uuid("9CFE2DD0-23A1-5391-911C-61C76BD3ABD9"), exclusiveto] */
+                    MIDL_INTERFACE("9CFE2DD0-23A1-5391-911C-61C76BD3ABD9")
                     IScrollerTestHooksStatics : public IInspectable
                     {
                     public:
@@ -4238,41 +4226,11 @@ namespace ABI {
                         /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_AreExpressionAnimationStatusNotificationsRaised(
                             /* [in] */::boolean value
                             ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_IsInteractionTrackerPointerWheelRedirectionEnabled(
-                            /* [retval, out] */::boolean * value
-                            ) = 0;
-                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_IsInteractionTrackerPointerWheelRedirectionEnabled(
-                            /* [in] */::boolean value
-                            ) = 0;
                         /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_IsAnimationsEnabledOverride(
                             /* [retval, out] */__FIReference_1_boolean * * value
                             ) = 0;
                         /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_IsAnimationsEnabledOverride(
                             /* [in] */__FIReference_1_boolean * value
-                            ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_MouseWheelDeltaForVelocityUnit(
-                            /* [retval, out] */INT32 * value
-                            ) = 0;
-                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_MouseWheelDeltaForVelocityUnit(
-                            /* [in] */INT32 value
-                            ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_MouseWheelScrollLines(
-                            /* [retval, out] */INT32 * value
-                            ) = 0;
-                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_MouseWheelScrollLines(
-                            /* [in] */INT32 value
-                            ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_MouseWheelScrollChars(
-                            /* [retval, out] */INT32 * value
-                            ) = 0;
-                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_MouseWheelScrollChars(
-                            /* [in] */INT32 value
-                            ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_MouseWheelInertiaDecayRate(
-                            /* [retval, out] */FLOAT * value
-                            ) = 0;
-                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_MouseWheelInertiaDecayRate(
-                            /* [in] */FLOAT value
                             ) = 0;
                         virtual HRESULT STDMETHODCALLTYPE GetOffsetsChangeVelocityParameters(
                             /* [out] */INT32 * millisecondsPerUnit,
@@ -6099,8 +6057,7 @@ typedef interface __x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositio
 #endif // ____x_ABI_CMicrosoft_CUI_CComposition_CInteractions_CICompositionInteractionSource_FWD_DEFINED__
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_INTERFACE_DEFINED__)
 #define ____FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_INTERFACE_DEFINED__
 
@@ -6185,12 +6142,10 @@ interface __FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CIComposit
 
 #endif // ____FIIterator_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_INTERFACE_DEFINED__
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
-#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 #if !defined(____FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_INTERFACE_DEFINED__)
 #define ____FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_INTERFACE_DEFINED__
 
@@ -6261,8 +6216,7 @@ interface __FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CIComposit
 
 #endif // ____FIIterable_1_Microsoft__CUI__CComposition__CInteractions__CICompositionInteractionSource_INTERFACE_DEFINED__
 
-#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
-#endif // MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 #if !defined(____FIReference_1_boolean_INTERFACE_DEFINED__)
 #define ____FIReference_1_boolean_INTERFACE_DEFINED__
@@ -10471,7 +10425,7 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestH
 #if !defined(____x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Private_Controls_IScrollerTestHooksStatics[] = L"Microsoft.UI.Private.Controls.IScrollerTestHooksStatics";
-/* [object, version, uuid("3050D99C-773C-52B1-A0DA-4B5A52629EFC"), exclusiveto] */
+/* [object, version, uuid("9CFE2DD0-23A1-5391-911C-61C76BD3ABD9"), exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStaticsVtbl
 {
     BEGIN_INTERFACE
@@ -10529,14 +10483,6 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
         __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics * This,
         /* [in] */boolean value
         );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_IsInteractionTrackerPointerWheelRedirectionEnabled )(
-        __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics * This,
-        /* [retval, out] */boolean * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_IsInteractionTrackerPointerWheelRedirectionEnabled )(
-        __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics * This,
-        /* [in] */boolean value
-        );
     /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_IsAnimationsEnabledOverride )(
         __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics * This,
         /* [retval, out] */__FIReference_1_boolean * * value
@@ -10544,38 +10490,6 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
     /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_IsAnimationsEnabledOverride )(
         __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics * This,
         /* [in] */__FIReference_1_boolean * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_MouseWheelDeltaForVelocityUnit )(
-        __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics * This,
-        /* [retval, out] */INT32 * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_MouseWheelDeltaForVelocityUnit )(
-        __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics * This,
-        /* [in] */INT32 value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_MouseWheelScrollLines )(
-        __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics * This,
-        /* [retval, out] */INT32 * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_MouseWheelScrollLines )(
-        __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics * This,
-        /* [in] */INT32 value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_MouseWheelScrollChars )(
-        __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics * This,
-        /* [retval, out] */INT32 * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_MouseWheelScrollChars )(
-        __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics * This,
-        /* [in] */INT32 value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_MouseWheelInertiaDecayRate )(
-        __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics * This,
-        /* [retval, out] */FLOAT * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_MouseWheelInertiaDecayRate )(
-        __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics * This,
-        /* [in] */FLOAT value
         );
     HRESULT ( STDMETHODCALLTYPE *GetOffsetsChangeVelocityParameters )(
         __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics * This,
@@ -10798,41 +10712,11 @@ interface __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics
 #define __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics_put_AreExpressionAnimationStatusNotificationsRaised(This,value) \
     ( (This)->lpVtbl->put_AreExpressionAnimationStatusNotificationsRaised(This,value) )
 
-#define __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics_get_IsInteractionTrackerPointerWheelRedirectionEnabled(This,value) \
-    ( (This)->lpVtbl->get_IsInteractionTrackerPointerWheelRedirectionEnabled(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics_put_IsInteractionTrackerPointerWheelRedirectionEnabled(This,value) \
-    ( (This)->lpVtbl->put_IsInteractionTrackerPointerWheelRedirectionEnabled(This,value) )
-
 #define __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics_get_IsAnimationsEnabledOverride(This,value) \
     ( (This)->lpVtbl->get_IsAnimationsEnabledOverride(This,value) )
 
 #define __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics_put_IsAnimationsEnabledOverride(This,value) \
     ( (This)->lpVtbl->put_IsAnimationsEnabledOverride(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics_get_MouseWheelDeltaForVelocityUnit(This,value) \
-    ( (This)->lpVtbl->get_MouseWheelDeltaForVelocityUnit(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics_put_MouseWheelDeltaForVelocityUnit(This,value) \
-    ( (This)->lpVtbl->put_MouseWheelDeltaForVelocityUnit(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics_get_MouseWheelScrollLines(This,value) \
-    ( (This)->lpVtbl->get_MouseWheelScrollLines(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics_put_MouseWheelScrollLines(This,value) \
-    ( (This)->lpVtbl->put_MouseWheelScrollLines(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics_get_MouseWheelScrollChars(This,value) \
-    ( (This)->lpVtbl->get_MouseWheelScrollChars(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics_put_MouseWheelScrollChars(This,value) \
-    ( (This)->lpVtbl->put_MouseWheelScrollChars(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics_get_MouseWheelInertiaDecayRate(This,value) \
-    ( (This)->lpVtbl->get_MouseWheelInertiaDecayRate(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics_put_MouseWheelInertiaDecayRate(This,value) \
-    ( (This)->lpVtbl->put_MouseWheelInertiaDecayRate(This,value) )
 
 #define __x_ABI_CMicrosoft_CUI_CPrivate_CControls_CIScrollerTestHooksStatics_GetOffsetsChangeVelocityParameters(This,millisecondsPerUnit,minMilliseconds,maxMilliseconds) \
     ( (This)->lpVtbl->GetOffsetsChangeVelocityParameters(This,millisecondsPerUnit,minMilliseconds,maxMilliseconds) )

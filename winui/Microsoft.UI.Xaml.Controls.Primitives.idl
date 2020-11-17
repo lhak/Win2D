@@ -8,6 +8,7 @@ import "EventToken.idl";
 import "windowscontracts.idl";
 import "Windows.Foundation.idl";
 import "Microsoft.UI.Composition.idl";
+import "Microsoft.UI.Input.Experimental.idl";
 import "Microsoft.UI.Xaml.idl";
 import "Microsoft.UI.Xaml.Controls.idl";
 import "Microsoft.UI.Xaml.Data.idl";
@@ -16,7 +17,6 @@ import "Microsoft.UI.Xaml.Media.idl";
 import "Microsoft.UI.Xaml.Media.Animation.idl";
 import "Windows.Foundation.Numerics.idl";
 import "Windows.UI.idl";
-import "Windows.UI.Input.idl";
 
 // Forward Declare
 namespace Microsoft
@@ -30,6 +30,19 @@ namespace Microsoft
             runtimeclass CompositionPropertySet;
 
             runtimeclass Visual;
+        }
+    }
+}
+namespace Microsoft
+{
+    namespace UI
+    {
+        namespace Input
+        {
+            namespace Experimental
+            {
+                runtimeclass ExpPointerPoint;
+            }
         }
     }
 }
@@ -235,16 +248,6 @@ namespace Windows
     namespace UI
     {
         typedef struct Color Color;
-    }
-}
-namespace Windows
-{
-    namespace UI
-    {
-        namespace Input
-        {
-            runtimeclass PointerPoint;
-        }
     }
 }
 namespace Microsoft
@@ -871,7 +874,7 @@ namespace Microsoft
                         Auto                   = 13
                     };
 
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 7.0)]
+                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                     enum FlyoutShowMode
                     {
                         Auto                                  = 0,
@@ -2315,21 +2318,21 @@ namespace Microsoft
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerInteractionRequestedEventArgs)]
-                    [uuid(9CA050FA-6A7B-5BED-9E26-8F2DA0EE73A1)]
+                    [uuid(9D39B918-9C63-5154-92FB-59CB928E8FAE)]
                     [version(0x00000001)]
                     interface IScrollControllerInteractionRequestedEventArgs : IInspectable
                     {
-                        [propget] HRESULT PointerPoint([out] [retval] Windows.UI.Input.PointerPoint** value);
+                        [propget] HRESULT PointerPoint([out] [retval] Microsoft.UI.Input.Experimental.ExpPointerPoint** value);
                         [propget] HRESULT Handled([out] [retval] boolean* value);
                         [propput] HRESULT Handled([in] boolean value);
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerInteractionRequestedEventArgs)]
-                    [uuid(1CCE9A33-698D-54DC-B144-D68B9E7B76C2)]
+                    [uuid(C74FE9BA-8660-59C9-889A-12E292032B89)]
                     [version(0x00000001)]
                     interface IScrollControllerInteractionRequestedEventArgsFactory : IInspectable
                     {
-                        HRESULT CreateInstance([in] Windows.UI.Input.PointerPoint* pointerPoint, [out] [retval] Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerInteractionRequestedEventArgs** value);
+                        HRESULT CreateInstance([in] Microsoft.UI.Input.Experimental.ExpPointerPoint* pointerPoint, [out] [retval] Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerInteractionRequestedEventArgs** value);
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollByRequestedEventArgs)]

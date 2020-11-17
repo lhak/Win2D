@@ -660,7 +660,7 @@ namespace Microsoft
                 }
 
                 [exclusiveto(Microsoft.UI.Private.Controls.ScrollerTestHooks)]
-                [uuid(3050D99C-773C-52B1-A0DA-4B5A52629EFC)]
+                [uuid(9CFE2DD0-23A1-5391-911C-61C76BD3ABD9)]
                 [version(0x00000001)]
                 interface IScrollerTestHooksStatics : IInspectable
                 {
@@ -670,18 +670,8 @@ namespace Microsoft
                     [propput] HRESULT AreInteractionSourcesNotificationsRaised([in] boolean value);
                     [propget] HRESULT AreExpressionAnimationStatusNotificationsRaised([out] [retval] boolean* value);
                     [propput] HRESULT AreExpressionAnimationStatusNotificationsRaised([in] boolean value);
-                    [propget] HRESULT IsInteractionTrackerPointerWheelRedirectionEnabled([out] [retval] boolean* value);
-                    [propput] HRESULT IsInteractionTrackerPointerWheelRedirectionEnabled([in] boolean value);
                     [propget] HRESULT IsAnimationsEnabledOverride([out] [retval] Windows.Foundation.IReference<boolean>** value);
                     [propput] HRESULT IsAnimationsEnabledOverride([in] Windows.Foundation.IReference<boolean>* value);
-                    [propget] HRESULT MouseWheelDeltaForVelocityUnit([out] [retval] INT32* value);
-                    [propput] HRESULT MouseWheelDeltaForVelocityUnit([in] INT32 value);
-                    [propget] HRESULT MouseWheelScrollLines([out] [retval] INT32* value);
-                    [propput] HRESULT MouseWheelScrollLines([in] INT32 value);
-                    [propget] HRESULT MouseWheelScrollChars([out] [retval] INT32* value);
-                    [propput] HRESULT MouseWheelScrollChars([in] INT32 value);
-                    [propget] HRESULT MouseWheelInertiaDecayRate([out] [retval] FLOAT* value);
-                    [propput] HRESULT MouseWheelInertiaDecayRate([in] FLOAT value);
                     HRESULT GetOffsetsChangeVelocityParameters([out] INT32* millisecondsPerUnit, [out] INT32* minMilliseconds, [out] INT32* maxMilliseconds);
                     HRESULT SetOffsetsChangeVelocityParameters([in] INT32 millisecondsPerUnit, [in] INT32 minMilliseconds, [in] INT32 maxMilliseconds);
                     HRESULT GetZoomFactorChangeVelocityParameters([out] INT32* millisecondsPerUnit, [out] INT32* minMilliseconds, [out] INT32* maxMilliseconds);

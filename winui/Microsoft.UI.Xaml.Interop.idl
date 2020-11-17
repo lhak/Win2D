@@ -8,7 +8,6 @@ import "EventToken.idl";
 import "windowscontracts.idl";
 import "Windows.Foundation.idl";
 import "Microsoft.UI.Xaml.idl";
-import "Windows.UI.Xaml.Interop.idl";
 
 // Forward Declare
 namespace Microsoft
@@ -21,19 +20,6 @@ namespace Microsoft
         }
     }
 }
-namespace Windows
-{
-    namespace UI
-    {
-        namespace Xaml
-        {
-            namespace Interop
-            {
-                typedef enum NotifyCollectionChangedAction NotifyCollectionChangedAction;
-            }
-        }
-    }
-}
 namespace Microsoft
 {
     namespace UI
@@ -42,6 +28,8 @@ namespace Microsoft
         {
             namespace Interop
             {
+                typedef enum NotifyCollectionChangedAction NotifyCollectionChangedAction;
+
                 delegate BindableVectorChangedEventHandler;
 
                 delegate NotifyCollectionChangedEventHandler;
@@ -80,24 +68,30 @@ namespace Microsoft
             namespace Interop
             {
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [uuid(724CD4E1-D007-43B1-9C03-AF4D3E6258C4)]
+                enum NotifyCollectionChangedAction
+                {
+                    Add_d = 0
+                };
+
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [uuid(624CD4E1-D007-43B1-9C03-AF4D3E6258C5)]
                 delegate
                     HRESULT BindableVectorChangedEventHandler([in] Microsoft.UI.Xaml.Interop.IBindableObservableVector* vector, [in] IInspectable* e);
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [uuid(9B0909DC-2005-5D93-BF8A-725F017BAA8D)]
+                [uuid(8B0909DC-2005-5D93-BF8A-725F017BAA8A)]
                 delegate
                     HRESULT NotifyCollectionChangedEventHandler([in] IInspectable* sender, [in] Microsoft.UI.Xaml.Interop.NotifyCollectionChangedEventArgs* e);
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [uuid(136D2C08-DF29-41AF-8AA2-D774BE62BA6F)]
+                [uuid(036D2C08-DF29-41AF-8AA2-D774BE62BA6E)]
                 interface IBindableIterable : IInspectable
                 {
                     HRESULT First([out] [retval] Microsoft.UI.Xaml.Interop.IBindableIterator** result);
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [uuid(7A1D6C07-076D-49F2-8314-F52C9C9A8331)]
+                [uuid(6A1D6C07-076D-49F2-8314-F52C9C9A8332)]
                 interface IBindableIterator : IInspectable
                 {
                     [propget] HRESULT Current([out] [retval] IInspectable** value);
@@ -106,7 +100,7 @@ namespace Microsoft
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [uuid(AE1EB536-7E7F-4F90-AC9A-474984AAE512)]
+                [uuid(FE1EB536-7E7F-4F90-AC9A-474984AAE513)]
                 interface IBindableObservableVector : IInspectable
                     requires
                         Microsoft.UI.Xaml.Interop.IBindableVector,
@@ -117,7 +111,7 @@ namespace Microsoft
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [uuid(493DE7DE-6FD0-4C0D-BB71-47244A113E93)]
+                [uuid(393DE7DE-6FD0-4C0D-BB71-47244A113E94)]
                 interface IBindableVector : IInspectable
                     requires
                         Microsoft.UI.Xaml.Interop.IBindableIterable
@@ -135,7 +129,7 @@ namespace Microsoft
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [uuid(446DD6E7-976E-4BC3-815D-ECE243BC0F33)]
+                [uuid(346DD6E7-976E-4BC3-815D-ECE243BC0F34)]
                 interface IBindableVectorView : IInspectable
                     requires
                         Microsoft.UI.Xaml.Interop.IBindableIterable
@@ -146,7 +140,7 @@ namespace Microsoft
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [uuid(630155E1-28A5-5693-87CE-30724D95A06D)]
+                [uuid(530155E1-28A5-5693-87CE-30724D95A06D)]
                 interface INotifyCollectionChanged : IInspectable
                 {
                     [eventadd] HRESULT CollectionChanged([in] Microsoft.UI.Xaml.Interop.NotifyCollectionChangedEventHandler* handler, [out] [retval] EventRegistrationToken* token);
@@ -155,10 +149,10 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Interop.NotifyCollectionChangedEventArgs)]
-                [uuid(EA049FF2-D2E0-5FE8-8C7B-F87F26060B6F)]
+                [uuid(DA049FF2-D2E0-5FE8-8C7B-F87F26060B6F)]
                 interface INotifyCollectionChangedEventArgs : IInspectable
                 {
-                    [propget] HRESULT Action([out] [retval] Windows.UI.Xaml.Interop.NotifyCollectionChangedAction* value);
+                    [propget] HRESULT Action([out] [retval] Microsoft.UI.Xaml.Interop.NotifyCollectionChangedAction* value);
                     [propget] HRESULT NewItems([out] [retval] Microsoft.UI.Xaml.Interop.IBindableVector** value);
                     [propget] HRESULT OldItems([out] [retval] Microsoft.UI.Xaml.Interop.IBindableVector** value);
                     [propget] HRESULT NewStartingIndex([out] [retval] INT32* value);
@@ -167,10 +161,10 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Interop.NotifyCollectionChangedEventArgs)]
-                [uuid(6108EBA4-4892-5A20-8374-A96815E0FD27)]
+                [uuid(5108EBA4-4892-5A20-8374-A96815E0FD27)]
                 interface INotifyCollectionChangedEventArgsFactory : IInspectable
                 {
-                    HRESULT CreateInstanceWithAllParameters([in] Windows.UI.Xaml.Interop.NotifyCollectionChangedAction action, [in] Microsoft.UI.Xaml.Interop.IBindableVector* newItems, [in] Microsoft.UI.Xaml.Interop.IBindableVector* oldItems, [in] INT32 newIndex, [in] INT32 oldIndex, [in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Interop.NotifyCollectionChangedEventArgs** value);
+                    HRESULT CreateInstanceWithAllParameters([in] Microsoft.UI.Xaml.Interop.NotifyCollectionChangedAction action, [in] Microsoft.UI.Xaml.Interop.IBindableVector* newItems, [in] Microsoft.UI.Xaml.Interop.IBindableVector* oldItems, [in] INT32 newIndex, [in] INT32 oldIndex, [in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Interop.NotifyCollectionChangedEventArgs** value);
                 }
 
                 [composable(Microsoft.UI.Xaml.Interop.INotifyCollectionChangedEventArgsFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -185,5 +179,3 @@ namespace Microsoft
         }
     }
 }
-   
-

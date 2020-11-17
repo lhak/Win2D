@@ -7,6 +7,7 @@ import "AsyncInfo.idl";
 import "EventToken.idl";
 import "windowscontracts.idl";
 import "Windows.Foundation.idl";
+import "Microsoft.UI.Input.Experimental.idl";
 import "Microsoft.UI.Xaml.idl";
 import "Microsoft.UI.Xaml.Controls.idl";
 import "Microsoft.UI.Xaml.Documents.idl";
@@ -16,6 +17,19 @@ import "Windows.UI.Core.idl";
 import "Windows.UI.Input.idl";
 
 // Forward Declare
+namespace Microsoft
+{
+    namespace UI
+    {
+        namespace Input
+        {
+            namespace Experimental
+            {
+                runtimeclass ExpPointerPoint;
+            }
+        }
+    }
+}
 namespace Microsoft
 {
     namespace UI
@@ -121,8 +135,6 @@ namespace Windows
             typedef struct ManipulationDelta ManipulationDelta;
 
             typedef struct ManipulationVelocities ManipulationVelocities;
-
-            runtimeclass PointerPoint;
         }
     }
 }
@@ -1223,7 +1235,7 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Input.PointerRoutedEventArgs)]
-                [uuid(A950D7AF-1EF8-5322-875D-47A70E0FD9CF)]
+                [uuid(52E918F4-A644-53ED-85A3-DFD1A0BEE39F)]
                 interface IPointerRoutedEventArgs : IInspectable
                 {
                     [propget] HRESULT Pointer([out] [retval] Microsoft.UI.Xaml.Input.Pointer** value);
@@ -1231,8 +1243,8 @@ namespace Microsoft
                     [propget] HRESULT Handled([out] [retval] boolean* value);
                     [propput] HRESULT Handled([in] boolean value);
                     [propget] HRESULT IsGenerated([out] [retval] boolean* value);
-                    HRESULT GetCurrentPoint([in] Microsoft.UI.Xaml.UIElement* relativeTo, [out] [retval] Windows.UI.Input.PointerPoint** result);
-                    HRESULT GetIntermediatePoints([in] Microsoft.UI.Xaml.UIElement* relativeTo, [out] [retval] Windows.Foundation.Collections.IVector<Windows.UI.Input.PointerPoint*>** result);
+                    HRESULT GetCurrentPoint([in] Microsoft.UI.Xaml.UIElement* relativeTo, [out] [retval] Microsoft.UI.Input.Experimental.ExpPointerPoint** result);
+                    HRESULT GetIntermediatePoints([in] Microsoft.UI.Xaml.UIElement* relativeTo, [out] [retval] Windows.Foundation.Collections.IVector<Microsoft.UI.Input.Experimental.ExpPointerPoint*>** result);
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]

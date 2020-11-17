@@ -146,265 +146,156 @@ namespace Microsoft
             [version(0x00000001)]
             enum CaretType
             {
-                Normal_d = 0,
-                Null_d = 1
+                Normal_d = 0
             };
 
             [flags]
             [version(0x00000001)]
             enum FindOptions
             {
-                None_d = 0x0,
-                Word_d = 0x2,
-                Case_d = 0x4
+                None_d = 0x0
             };
 
             [version(0x00000001)]
             enum FormatEffect
             {
-                Off_d = 0,
-                On_d = 1,
-                Toggle_d = 2,
-                Undefined_d = 3
+                Off_d = 0
             };
 
             [version(0x00000001)]
             enum HorizontalCharacterAlignment
             {
-                Left_d = 0,
-                Right_d = 1,
-                Center_d = 2
+                Left_d = 0
             };
 
             [version(0x00000001)]
             enum LetterCase
             {
-                Lower_d = 0,
-                Upper_d = 1
+                Lower_d = 0
             };
-
             [version(0x00000001)]
             enum LineSpacingRule
             {
-                Undefined_d = 0,
-                Single_d = 1,
-                OneAndHalf_d = 2,
-                Double_d = 3,
-                AtLeast_d = 4,
-                Exactly_d = 5,
-                Multiple_d = 6,
-                Percent_d = 7
+                Undefined_d = 0
             };
 
             [version(0x00000001)]
             enum LinkType
             {
-                Undefined_d = 0,
-                NotALink_d = 1,
-                ClientLink_d = 2,
-                FriendlyLinkName_d = 3,
-                FriendlyLinkAddress_d = 4,
-                AutoLink_d = 5,
-                AutoLinkEmail_d = 6,
-                AutoLinkPhone_d = 7,
-                AutoLinkPath_d = 8
+                Undefined_d = 0
             };
 
             [version(0x00000001)]
             enum MarkerAlignment
             {
-                Undefined_d = 0,
-                Left_d = 1,
-                Center_d = 2,
-                Right_d = 3
+                Undefined_d = 0
             };
 
             [version(0x00000001)]
             enum MarkerStyle
             {
-                Undefined_d = 0,
-                Parenthesis_d = 1,
-                Parentheses_d = 2,
-                Period_d = 3,
-                Plain_d = 4,
-                Minus_d = 5,
-                NoNumber_d = 6
+                Undefined_d = 0
             };
 
             [version(0x00000001)]
             enum MarkerType
             {
-                Undefined_d = 0,
-                None_d = 1,
-                Bullet_d = 2,
-                Arabic_d = 3,
-                LowercaseEnglishLetter_d = 4,
-                UppercaseEnglishLetter_d = 5,
-                LowercaseRoman_d = 6,
-                UppercaseRoman_d = 7,
-                DeActUnicodeSequence        = 8,
-                DeActCircledNumber          = 9,
-                DeActBlackCircleWingding    = 10,
-                DeActWhiteCircleWingding    = 11,
-                DeActArabicWide             = 12,
-                DeActSimplifiedChinese      = 13,
-                DeActTraditionalChinese     = 14,
-                DeActJapanSimplifiedChinese = 15,
-                DeActJapanKorea             = 16,
-                DeActArabicDictionary       = 17,
-                DeActArabicAbjad            = 18,
-                DeActHebrew                 = 19,
-                DeActThaiAlphabetic         = 20,
-                DeActThaiNumeric            = 21,
-                DeActDevanagariVowel        = 22,
-                DeActDevanagariConsonant    = 23,
-                DeActDevanagariNumeric      = 24
+                Undefined_d = 0
             };
 
             [version(0x00000001)]
             enum ParagraphAlignment
             {
-                DeActUndefined = 0,
-                DeActLeft      = 1,
-                DeActCenter    = 2,
-                DeActRight     = 3,
-                DeActJustify   = 4
+                Undefined_d = 0
             };
 
             [version(0x00000001)]
             enum ParagraphStyle
             {
-                DeActUndefined = 0,
-                DeActNone      = 1,
-                DeActDeActNormal    = 2,
-                DeActHeading1  = 3,
-                DeActHeading2  = 4,
-                DeActHeading3  = 5,
-                DeActHeading4  = 6,
-                DeActHeading5  = 7,
-                DeActHeading6  = 8,
-                DeActHeading7  = 9,
-                DeActHeading8  = 10,
-                DeActHeading9  = 11
+                Undefined_d = 0
             };
 
             [flags]
             [version(0x00000001)]
             enum PointOptions
             {
-                DeActNone               = 0x0,
-                DeActIncludeInset       = 0x1,
-                DeActStart              = 0x20,
-                DeActClientCoordinates  = 0x100,
-                DeActAllowOffClient     = 0x200,
-                DeActTransform          = 0x400,
-                DeActNoHorizontalScroll = 0x10000,
-                DeActNoVerticalScroll   = 0x40000
+                None_d = 0x0
             };
 
             [version(0x00000001)]
             enum RangeGravity
             {
-                DeActUIBehavior = 0,
-                DeActBackward   = 1,
-                DeActForward    = 2,
-                DeActInward     = 3,
-                DeActOutward    = 4
+                UIBehavior_d = 0
             };
 
             [version(0x00000001)]
             enum RichEditMathMode
             {
-                DeActNoMath   = 0,
-                DeActMathOnly = 1
+                NoMath   = 0,
+                MathOnly = 1
             };
 
             [flags]
             [version(0x00000001)]
             enum SelectionOptions
             {
-                DeActStartActive = 0x1,
-                DeActAtEndOfLine = 0x2,
-                DeActOvertype    = 0x4,
-                DeActActive      = 0x8,
-                DeActReplace     = 0x10
+                StartActive_d = 0x1
             };
 
             [version(0x00000001)]
             enum SelectionType
             {
-                DeActNone           = 0,
-                DeActInsertionPoint = 1,
-                DeActNormal         = 2,
-                DeActInlineShape    = 7,
-                DeActShape          = 8
+                None_d = 0
             };
 
             [version(0x00000001)]
             enum TabAlignment
             {
-                DeActLeft    = 0,
-                DeActCenter  = 1,
-                DeActRight   = 2,
-                DeActDecimal = 3,
-                DeActBar     = 4
+                Left_d = 0
             };
 
             [version(0x00000001)]
             enum TabLeader
             {
-                DeActSpaces     = 0,
-                DeActDots       = 1,
-                DeActDashes     = 2,
-                DeActLines      = 3,
-                DeActThickLines = 4,
-                DeActEquals     = 5
+                Spaces_d = 0
             };
 
             [flags]
             [version(0x00000001)]
             enum TextGetOptions
             {
-                DeActNone             = 0x0,
-                DeActAdjustCrlf       = 0x1,
-                DeActUseCrlf          = 0x2,
-                DeActUseObjectText    = 0x4,
-                DeActAllowFinalEop    = 0x8,
-                DeActNoHidden         = 0x20,
-                DeActIncludeNumbering = 0x40,
-                DeActFormatRtf        = 0x2000,
-                DeActUseLf            = 0x1000000
+                None_d = 0x0
             };
 
             [version(0x00000001)]
             enum TextRangeUnit
             {
-                DeActCharacter       = 0
+                Character_d = 0
             };
 
             [version(0x00000001)]
             enum TextScript
             {
-                DeActUndefined     = 0
+                Undefined_d = 0
             };
 
             [flags]
             [version(0x00000001)]
             enum TextSetOptions
             {
-                DeActNone                     = 0x0
+                None_d = 0x0
             };
 
             [version(0x00000001)]
             enum UnderlineType
             {
-                DeActUndefined       = 0
+                Undefined_d = 0
             };
 
             [version(0x00000001)]
             enum VerticalCharacterAlignment
             {
-                DeActTop      = 0
+                Top_d = 0
             };
 
             [exclusiveto(Microsoft.UI.Text.FontWeights)]

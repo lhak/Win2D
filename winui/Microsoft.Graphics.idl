@@ -7,14 +7,13 @@ import "AsyncInfo.idl";
 import "EventToken.idl";
 import "windowscontracts.idl";
 import "Windows.Foundation.idl";
+import "Microsoft.Foundation.idl";
 
 // Forward Declare
 namespace Microsoft
 {
     namespace Graphics
     {
-        apicontract LiftedContract;
-
         interface IGeometrySource2D;
     }
 }
@@ -26,13 +25,7 @@ namespace Microsoft
 {
     namespace Graphics
     {
-        [contractversion(1.0)]
-        apicontract LiftedContract
-        {
-        }
-
-        [contract(Microsoft.Graphics.LiftedContract, 1.0)]
-        
+        [contract(Microsoft.Foundation.LiftedContract, 1.0)]
         [uuid(EB4728DE-0C12-4428-A840-4DCAC71490E8)]
         interface IGeometrySource2D : IInspectable
         {

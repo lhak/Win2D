@@ -49,21 +49,13 @@
 
 //  API Contract Inclusion Definitions
 #if !defined(SPECIFIC_API_CONTRACT_DEFINITIONS)
-#if !defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_GRAPHICS_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_SYSTEM_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_INTERACTIONS_LIFTEDCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
-#define MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_COMPOSITION_LIFTEDCONTRACT_VERSION)
+#if !defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
+#define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
+#endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
@@ -74,7 +66,7 @@
 #endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
 
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x80000
+#define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 
 #if !defined(WINDOWS_APPLICATIONMODEL_ACTIVATION_ACTIVATEDEVENTSCONTRACT_VERSION)
@@ -246,6 +238,7 @@
 #include "EventToken.h"
 #include "windowscontracts.h"
 #include "Windows.Foundation.h"
+#include "Microsoft.UI.Input.Experimental.h"
 #include "Microsoft.UI.Xaml.h"
 #include "Microsoft.UI.Xaml.Controls.h"
 #include "Microsoft.UI.Xaml.Documents.h"
@@ -2398,7 +2391,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("8bd06d13-a6d4-53a2-917e-4a2bfd654000"))
+struct __declspec(uuid("908d9617-2255-51d7-8503-54894b26c3f7"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::AccessKeyDisplayDismissedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::AccessKeyDisplayDismissedEventArgs*, ABI::Microsoft::UI::Xaml::Input::IAccessKeyDisplayDismissedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -2433,7 +2426,7 @@ typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("9cbc96f0-7059-5064-b432-b6d98ef21fa0"))
+struct __declspec(uuid("66e42c2f-5194-5f8a-a1e8-a697f22ec2d0"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::AccessKeyDisplayRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::AccessKeyDisplayRequestedEventArgs*, ABI::Microsoft::UI::Xaml::Input::IAccessKeyDisplayRequestedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -2468,7 +2461,7 @@ typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("bc91cb83-e956-5ee2-85dd-9105063fd381"))
+struct __declspec(uuid("6c6d3f12-4a96-5a4f-8036-dc2be0c710cb"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::AccessKeyInvokedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::AccessKeyInvokedEventArgs*, ABI::Microsoft::UI::Xaml::Input::IAccessKeyInvokedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -2515,7 +2508,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("12e844dc-4c82-5057-adff-1207226704fe"))
+struct __declspec(uuid("79015521-03a8-533b-a411-791b22794e88"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::CharacterReceivedRoutedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::CharacterReceivedRoutedEventArgs*, ABI::Microsoft::UI::Xaml::Input::ICharacterReceivedRoutedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -2562,7 +2555,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("6df80487-4427-5fc3-af11-664075dfce23"))
+struct __declspec(uuid("2599c76f-c116-5d7b-94d8-b656b66d7fad"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::ContextRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::ContextRequestedEventArgs*, ABI::Microsoft::UI::Xaml::Input::IContextRequestedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -2597,7 +2590,7 @@ typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("0b1ffd20-921d-5463-adcb-d066f18b4e4e"))
+struct __declspec(uuid("8ed085b9-a846-5699-86f4-bb1f11e2506d"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::GettingFocusEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::GettingFocusEventArgs*, ABI::Microsoft::UI::Xaml::Input::IGettingFocusEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -2632,7 +2625,7 @@ typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("84f2708f-62e3-5fea-a123-5828133fb274"))
+struct __declspec(uuid("9aa03259-128a-580b-9e4c-045fa63dd436"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::LosingFocusEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::LosingFocusEventArgs*, ABI::Microsoft::UI::Xaml::Input::ILosingFocusEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -2679,7 +2672,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("d1e7b8e5-4e62-529f-a368-c48eedbcd938"))
+struct __declspec(uuid("81f7f184-2258-556c-b27a-bd8d7955b617"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::NoFocusCandidateFoundEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::NoFocusCandidateFoundEventArgs*, ABI::Microsoft::UI::Xaml::Input::INoFocusCandidateFoundEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -2726,7 +2719,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("3b9746a4-d7b6-5bcd-becd-4ac55738c3a1"))
+struct __declspec(uuid("b0b8278e-bb3a-5ef4-87e3-15ce9d639e39"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::UIElement*,ABI::Microsoft::UI::Xaml::Input::ProcessKeyboardAcceleratorEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::UIElement*, ABI::Microsoft::UI::Xaml::IUIElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Input::ProcessKeyboardAcceleratorEventArgs*, ABI::Microsoft::UI::Xaml::Input::IProcessKeyboardAcceleratorEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -2813,157 +2806,166 @@ typedef IEventHandler<IInspectable*> __FIEventHandler_1_IInspectable_t;
 
 
 namespace ABI {
-    namespace Windows {
+    namespace Microsoft {
         namespace UI {
             namespace Input {
-                class PointerPoint;
+                namespace Experimental {
+                    class ExpPointerPoint;
+                } /* Experimental */
             } /* Input */
         } /* UI */
-    } /* Windows */
+    } /* Microsoft */
 } /* ABI */
 
-#ifndef ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-#define ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
+#ifndef ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
 namespace ABI {
-    namespace Windows {
+    namespace Microsoft {
         namespace UI {
             namespace Input {
-                interface IPointerPoint;
+                namespace Experimental {
+                    interface IExpPointerPoint;
+                } /* Experimental */
             } /* Input */
         } /* UI */
-    } /* Windows */
+    } /* Microsoft */
 } /* ABI */
-#define __x_ABI_CWindows_CUI_CInput_CIPointerPoint ABI::Windows::UI::Input::IPointerPoint
+#define __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint
 
-#endif // ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
+#endif // ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
 
 
-#if WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
 
-#ifndef DEF___FIIterator_1_Windows__CUI__CInput__CPointerPoint_USE
-#define DEF___FIIterator_1_Windows__CUI__CInput__CPointerPoint_USE
+#ifndef DEF___FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_USE
+#define DEF___FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_USE
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("721fe01c-5ad4-5262-b078-3ab345105db8"))
-IIterator<ABI::Windows::UI::Input::PointerPoint*> : IIterator_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Windows::UI::Input::PointerPoint*, ABI::Windows::UI::Input::IPointerPoint*>> 
+struct __declspec(uuid("c00df92b-1706-5163-8886-3716a9455025"))
+IIterator<ABI::Microsoft::UI::Input::Experimental::ExpPointerPoint*> : IIterator_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Input::Experimental::ExpPointerPoint*, ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
     {
-        return L"Windows.Foundation.Collections.IIterator`1<Windows.UI.Input.PointerPoint>"; 
+        return L"Windows.Foundation.Collections.IIterator`1<Microsoft.UI.Input.Experimental.ExpPointerPoint>"; 
     }
 };
 // Define a typedef for the parameterized interface specialization's mangled name.
 // This allows code which uses the mangled name for the parameterized interface to access the
 // correct parameterized interface specialization.
-typedef IIterator<ABI::Windows::UI::Input::PointerPoint*> __FIIterator_1_Windows__CUI__CInput__CPointerPoint_t;
-#define __FIIterator_1_Windows__CUI__CInput__CPointerPoint ABI::Windows::Foundation::Collections::__FIIterator_1_Windows__CUI__CInput__CPointerPoint_t
+typedef IIterator<ABI::Microsoft::UI::Input::Experimental::ExpPointerPoint*> __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_t;
+#define __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint ABI::Windows::Foundation::Collections::__FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_t
 /* Collections */ } /* Foundation */ } /* Windows */ } /* ABI */ } 
 
 ////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FIIterator_1_Windows__CUI__CInput__CPointerPoint ABI::Windows::Foundation::Collections::IIterator<ABI::Windows::UI::Input::IPointerPoint*>
-//#define __FIIterator_1_Windows__CUI__CInput__CPointerPoint_t ABI::Windows::Foundation::Collections::IIterator<ABI::Windows::UI::Input::IPointerPoint*>
+//#define __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint ABI::Windows::Foundation::Collections::IIterator<ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint*>
+//#define __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_t ABI::Windows::Foundation::Collections::IIterator<ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint*>
 #endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FIIterator_1_Windows__CUI__CInput__CPointerPoint_USE */
+#endif /* DEF___FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_USE */
 
 
-#endif // WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
 
 
-#if WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
 
-#ifndef DEF___FIIterable_1_Windows__CUI__CInput__CPointerPoint_USE
-#define DEF___FIIterable_1_Windows__CUI__CInput__CPointerPoint_USE
+#ifndef DEF___FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_USE
+#define DEF___FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_USE
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("f6f2cba6-7076-5b59-9631-f6ac32b57695"))
-IIterable<ABI::Windows::UI::Input::PointerPoint*> : IIterable_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Windows::UI::Input::PointerPoint*, ABI::Windows::UI::Input::IPointerPoint*>> 
+struct __declspec(uuid("6330b5b1-88dd-5715-b556-36bbdf4b91f3"))
+IIterable<ABI::Microsoft::UI::Input::Experimental::ExpPointerPoint*> : IIterable_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Input::Experimental::ExpPointerPoint*, ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
     {
-        return L"Windows.Foundation.Collections.IIterable`1<Windows.UI.Input.PointerPoint>"; 
+        return L"Windows.Foundation.Collections.IIterable`1<Microsoft.UI.Input.Experimental.ExpPointerPoint>"; 
     }
 };
 // Define a typedef for the parameterized interface specialization's mangled name.
 // This allows code which uses the mangled name for the parameterized interface to access the
 // correct parameterized interface specialization.
-typedef IIterable<ABI::Windows::UI::Input::PointerPoint*> __FIIterable_1_Windows__CUI__CInput__CPointerPoint_t;
-#define __FIIterable_1_Windows__CUI__CInput__CPointerPoint ABI::Windows::Foundation::Collections::__FIIterable_1_Windows__CUI__CInput__CPointerPoint_t
+typedef IIterable<ABI::Microsoft::UI::Input::Experimental::ExpPointerPoint*> __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_t;
+#define __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint ABI::Windows::Foundation::Collections::__FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_t
 /* Collections */ } /* Foundation */ } /* Windows */ } /* ABI */ } 
 
 ////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FIIterable_1_Windows__CUI__CInput__CPointerPoint ABI::Windows::Foundation::Collections::IIterable<ABI::Windows::UI::Input::IPointerPoint*>
-//#define __FIIterable_1_Windows__CUI__CInput__CPointerPoint_t ABI::Windows::Foundation::Collections::IIterable<ABI::Windows::UI::Input::IPointerPoint*>
+//#define __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint ABI::Windows::Foundation::Collections::IIterable<ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint*>
+//#define __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_t ABI::Windows::Foundation::Collections::IIterable<ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint*>
 #endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FIIterable_1_Windows__CUI__CInput__CPointerPoint_USE */
+#endif /* DEF___FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_USE */
 
 
-#endif // WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
 
 
-#if WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
 
-#ifndef DEF___FIVectorView_1_Windows__CUI__CInput__CPointerPoint_USE
-#define DEF___FIVectorView_1_Windows__CUI__CInput__CPointerPoint_USE
+#ifndef DEF___FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_USE
+#define DEF___FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_USE
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("f0f57411-7786-5174-8752-4c5e834b6da2"))
-IVectorView<ABI::Windows::UI::Input::PointerPoint*> : IVectorView_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Windows::UI::Input::PointerPoint*, ABI::Windows::UI::Input::IPointerPoint*>> 
+struct __declspec(uuid("b6a0ab42-d763-5bfe-b814-8f718993bd2f"))
+IVectorView<ABI::Microsoft::UI::Input::Experimental::ExpPointerPoint*> : IVectorView_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Input::Experimental::ExpPointerPoint*, ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
     {
-        return L"Windows.Foundation.Collections.IVectorView`1<Windows.UI.Input.PointerPoint>"; 
+        return L"Windows.Foundation.Collections.IVectorView`1<Microsoft.UI.Input.Experimental.ExpPointerPoint>"; 
     }
 };
 // Define a typedef for the parameterized interface specialization's mangled name.
 // This allows code which uses the mangled name for the parameterized interface to access the
 // correct parameterized interface specialization.
-typedef IVectorView<ABI::Windows::UI::Input::PointerPoint*> __FIVectorView_1_Windows__CUI__CInput__CPointerPoint_t;
-#define __FIVectorView_1_Windows__CUI__CInput__CPointerPoint ABI::Windows::Foundation::Collections::__FIVectorView_1_Windows__CUI__CInput__CPointerPoint_t
+typedef IVectorView<ABI::Microsoft::UI::Input::Experimental::ExpPointerPoint*> __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_t;
+#define __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint ABI::Windows::Foundation::Collections::__FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_t
 /* Collections */ } /* Foundation */ } /* Windows */ } /* ABI */ } 
 
 ////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FIVectorView_1_Windows__CUI__CInput__CPointerPoint ABI::Windows::Foundation::Collections::IVectorView<ABI::Windows::UI::Input::IPointerPoint*>
-//#define __FIVectorView_1_Windows__CUI__CInput__CPointerPoint_t ABI::Windows::Foundation::Collections::IVectorView<ABI::Windows::UI::Input::IPointerPoint*>
+//#define __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint ABI::Windows::Foundation::Collections::IVectorView<ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint*>
+//#define __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_t ABI::Windows::Foundation::Collections::IVectorView<ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint*>
 #endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FIVectorView_1_Windows__CUI__CInput__CPointerPoint_USE */
+#endif /* DEF___FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_USE */
 
 
-#endif // WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
 
 
-#if WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION >= 0x10000
+#if MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
 
-#ifndef DEF___FIVector_1_Windows__CUI__CInput__CPointerPoint_USE
-#define DEF___FIVector_1_Windows__CUI__CInput__CPointerPoint_USE
+#ifndef DEF___FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_USE
+#define DEF___FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_USE
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
 template <>
-struct __declspec(uuid("dfa655cf-fde7-5048-b4bf-c909231b7edb"))
-IVector<ABI::Windows::UI::Input::PointerPoint*> : IVector_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Windows::UI::Input::PointerPoint*, ABI::Windows::UI::Input::IPointerPoint*>> 
+struct __declspec(uuid("de68c59e-6edb-5445-9a93-b2040653f38c"))
+IVector<ABI::Microsoft::UI::Input::Experimental::ExpPointerPoint*> : IVector_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Input::Experimental::ExpPointerPoint*, ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
     {
-        return L"Windows.Foundation.Collections.IVector`1<Windows.UI.Input.PointerPoint>"; 
+        return L"Windows.Foundation.Collections.IVector`1<Microsoft.UI.Input.Experimental.ExpPointerPoint>"; 
     }
 };
 // Define a typedef for the parameterized interface specialization's mangled name.
 // This allows code which uses the mangled name for the parameterized interface to access the
 // correct parameterized interface specialization.
-typedef IVector<ABI::Windows::UI::Input::PointerPoint*> __FIVector_1_Windows__CUI__CInput__CPointerPoint_t;
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint ABI::Windows::Foundation::Collections::__FIVector_1_Windows__CUI__CInput__CPointerPoint_t
+typedef IVector<ABI::Microsoft::UI::Input::Experimental::ExpPointerPoint*> __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_t;
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint ABI::Windows::Foundation::Collections::__FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_t
 /* Collections */ } /* Foundation */ } /* Windows */ } /* ABI */ } 
 
 ////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FIVector_1_Windows__CUI__CInput__CPointerPoint ABI::Windows::Foundation::Collections::IVector<ABI::Windows::UI::Input::IPointerPoint*>
-//#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_t ABI::Windows::Foundation::Collections::IVector<ABI::Windows::UI::Input::IPointerPoint*>
+//#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint ABI::Windows::Foundation::Collections::IVector<ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint*>
+//#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_t ABI::Windows::Foundation::Collections::IVector<ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint*>
 #endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FIVector_1_Windows__CUI__CInput__CPointerPoint_USE */
+#endif /* DEF___FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_USE */
 
 
-#endif // WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+
+
+
+
+
 
 
 
@@ -3214,7 +3216,6 @@ namespace ABI {
         } /* UI */
     } /* Windows */
 } /* ABI */
-
 
 
 
@@ -7236,8 +7237,8 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Input {
-                    /* [object, uuid("A950D7AF-1EF8-5322-875D-47A70E0FD9CF"), exclusiveto, contract] */
-                    MIDL_INTERFACE("A950D7AF-1EF8-5322-875D-47A70E0FD9CF")
+                    /* [object, uuid("52E918F4-A644-53ED-85A3-DFD1A0BEE39F"), exclusiveto, contract] */
+                    MIDL_INTERFACE("52E918F4-A644-53ED-85A3-DFD1A0BEE39F")
                     IPointerRoutedEventArgs : public IInspectable
                     {
                     public:
@@ -7258,11 +7259,11 @@ namespace ABI {
                             ) = 0;
                         virtual HRESULT STDMETHODCALLTYPE GetCurrentPoint(
                             /* [in] */ABI::Microsoft::UI::Xaml::IUIElement * relativeTo,
-                            /* [retval, out] */ABI::Windows::UI::Input::IPointerPoint * * result
+                            /* [retval, out] */ABI::Microsoft::UI::Input::Experimental::IExpPointerPoint * * result
                             ) = 0;
                         virtual HRESULT STDMETHODCALLTYPE GetIntermediatePoints(
                             /* [in] */ABI::Microsoft::UI::Xaml::IUIElement * relativeTo,
-                            /* [retval, out] */__FIVector_1_Windows__CUI__CInput__CPointerPoint * * result
+                            /* [retval, out] */__FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * * result
                             ) = 0;
                         
                     };
@@ -11517,54 +11518,54 @@ interface __FIEventHandler_1_IInspectable
 #endif // ____FIEventHandler_1_IInspectable_INTERFACE_DEFINED__
 
 
-#ifndef ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-#define ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
-typedef interface __x_ABI_CWindows_CUI_CInput_CIPointerPoint __x_ABI_CWindows_CUI_CInput_CIPointerPoint;
+#ifndef ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint;
 
-#endif // ____x_ABI_CWindows_CUI_CInput_CIPointerPoint_FWD_DEFINED__
+#endif // ____x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint_FWD_DEFINED__
 
 
-#if WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION >= 0x10000
-#if !defined(____FIIterator_1_Windows__CUI__CInput__CPointerPoint_INTERFACE_DEFINED__)
-#define ____FIIterator_1_Windows__CUI__CInput__CPointerPoint_INTERFACE_DEFINED__
+#if MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+#if !defined(____FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_INTERFACE_DEFINED__)
+#define ____FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_INTERFACE_DEFINED__
 
-typedef interface __FIIterator_1_Windows__CUI__CInput__CPointerPoint __FIIterator_1_Windows__CUI__CInput__CPointerPoint;
+typedef interface __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint;
 
 //  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FIIterator_1_Windows__CUI__CInput__CPointerPoint;
+EXTERN_C const IID IID___FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint;
 
-typedef struct __FIIterator_1_Windows__CUI__CInput__CPointerPointVtbl
+typedef struct __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPointVtbl
 {
     BEGIN_INTERFACE
 
     HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-        __RPC__in __FIIterator_1_Windows__CUI__CInput__CPointerPoint * This,
+        __RPC__in __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
         /* [in] */ __RPC__in REFIID riid,
         /* [annotation][iid_is][out] */ 
         _COM_Outptr_  void **ppvObject);
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FIIterator_1_Windows__CUI__CInput__CPointerPoint * This);
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FIIterator_1_Windows__CUI__CInput__CPointerPoint * This);
-    HRESULT ( STDMETHODCALLTYPE *GetIids )(__RPC__in __FIIterator_1_Windows__CUI__CInput__CPointerPoint * This,
+    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This);
+    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This);
+    HRESULT ( STDMETHODCALLTYPE *GetIids )(__RPC__in __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
         /* [out] */ __RPC__out ULONG *iidCount,
         /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids);
 
-    HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(__RPC__in __FIIterator_1_Windows__CUI__CInput__CPointerPoint * This, /* [out] */ __RPC__deref_out_opt HSTRING *className);
-    HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(__RPC__in __FIIterator_1_Windows__CUI__CInput__CPointerPoint * This, /* [out] */ __RPC__out TrustLevel *trustLevel);
+    HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(__RPC__in __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This, /* [out] */ __RPC__deref_out_opt HSTRING *className);
+    HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(__RPC__in __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This, /* [out] */ __RPC__out TrustLevel *trustLevel);
 
-    /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Current )(__RPC__in __FIIterator_1_Windows__CUI__CInput__CPointerPoint * This, /* [retval][out] */ __RPC__out __x_ABI_CWindows_CUI_CInput_CIPointerPoint * *current);
-    /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_HasCurrent )(__RPC__in __FIIterator_1_Windows__CUI__CInput__CPointerPoint * This, /* [retval][out] */ __RPC__out boolean *hasCurrent);
-    HRESULT ( STDMETHODCALLTYPE *MoveNext )(__RPC__in __FIIterator_1_Windows__CUI__CInput__CPointerPoint * This, /* [retval][out] */ __RPC__out boolean *hasCurrent);
-    HRESULT ( STDMETHODCALLTYPE *GetMany )(__RPC__in __FIIterator_1_Windows__CUI__CInput__CPointerPoint * This,
+    /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Current )(__RPC__in __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This, /* [retval][out] */ __RPC__out __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * *current);
+    /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_HasCurrent )(__RPC__in __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This, /* [retval][out] */ __RPC__out boolean *hasCurrent);
+    HRESULT ( STDMETHODCALLTYPE *MoveNext )(__RPC__in __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This, /* [retval][out] */ __RPC__out boolean *hasCurrent);
+    HRESULT ( STDMETHODCALLTYPE *GetMany )(__RPC__in __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
         /* [in] */ unsigned int capacity,
-        /* [size_is][length_is][out] */ __RPC__out_ecount_part(capacity, *actual) __x_ABI_CWindows_CUI_CInput_CIPointerPoint * *items,
+        /* [size_is][length_is][out] */ __RPC__out_ecount_part(capacity, *actual) __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * *items,
         /* [retval][out] */ __RPC__out unsigned int *actual);
 
     END_INTERFACE
-} __FIIterator_1_Windows__CUI__CInput__CPointerPointVtbl;
+} __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPointVtbl;
 
-interface __FIIterator_1_Windows__CUI__CInput__CPointerPoint
+interface __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint
 {
-    CONST_VTBL struct __FIIterator_1_Windows__CUI__CInput__CPointerPointVtbl *lpVtbl;
+    CONST_VTBL struct __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPointVtbl *lpVtbl;
 };
 
 
@@ -11572,183 +11573,183 @@ interface __FIIterator_1_Windows__CUI__CInput__CPointerPoint
 #ifdef COBJMACROS
 
 
-#define __FIIterator_1_Windows__CUI__CInput__CPointerPoint_QueryInterface(This,riid,ppvObject)	\
+#define __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_QueryInterface(This,riid,ppvObject)	\
     ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
 
-#define __FIIterator_1_Windows__CUI__CInput__CPointerPoint_AddRef(This)	\
+#define __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_AddRef(This)	\
     ( (This)->lpVtbl -> AddRef(This) ) 
 
-#define __FIIterator_1_Windows__CUI__CInput__CPointerPoint_Release(This)	\
+#define __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_Release(This)	\
     ( (This)->lpVtbl -> Release(This) ) 
 
 
-#define __FIIterator_1_Windows__CUI__CInput__CPointerPoint_GetIids(This,iidCount,iids)	\
+#define __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetIids(This,iidCount,iids)	\
     ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
 
-#define __FIIterator_1_Windows__CUI__CInput__CPointerPoint_GetRuntimeClassName(This,className)	\
+#define __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetRuntimeClassName(This,className)	\
     ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
 
-#define __FIIterator_1_Windows__CUI__CInput__CPointerPoint_GetTrustLevel(This,trustLevel)	\
+#define __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetTrustLevel(This,trustLevel)	\
     ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
 
 
-#define __FIIterator_1_Windows__CUI__CInput__CPointerPoint_get_Current(This,current)	\
+#define __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_get_Current(This,current)	\
     ( (This)->lpVtbl -> get_Current(This,current) ) 
 
-#define __FIIterator_1_Windows__CUI__CInput__CPointerPoint_get_HasCurrent(This,hasCurrent)	\
+#define __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_get_HasCurrent(This,hasCurrent)	\
     ( (This)->lpVtbl -> get_HasCurrent(This,hasCurrent) ) 
 
-#define __FIIterator_1_Windows__CUI__CInput__CPointerPoint_MoveNext(This,hasCurrent)	\
+#define __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_MoveNext(This,hasCurrent)	\
     ( (This)->lpVtbl -> MoveNext(This,hasCurrent) ) 
 
-#define __FIIterator_1_Windows__CUI__CInput__CPointerPoint_GetMany(This,capacity,items,actual)	\
+#define __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetMany(This,capacity,items,actual)	\
     ( (This)->lpVtbl -> GetMany(This,capacity,items,actual) ) 
 
 #endif /* COBJMACROS */
 
 
-#endif // ____FIIterator_1_Windows__CUI__CInput__CPointerPoint_INTERFACE_DEFINED__
+#endif // ____FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_INTERFACE_DEFINED__
 
-#endif // WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
 
 
-#if WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION >= 0x10000
-#if !defined(____FIIterable_1_Windows__CUI__CInput__CPointerPoint_INTERFACE_DEFINED__)
-#define ____FIIterable_1_Windows__CUI__CInput__CPointerPoint_INTERFACE_DEFINED__
+#if MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+#if !defined(____FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_INTERFACE_DEFINED__)
+#define ____FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_INTERFACE_DEFINED__
 
-typedef interface __FIIterable_1_Windows__CUI__CInput__CPointerPoint __FIIterable_1_Windows__CUI__CInput__CPointerPoint;
+typedef interface __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint;
 
 //  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FIIterable_1_Windows__CUI__CInput__CPointerPoint;
+EXTERN_C const IID IID___FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint;
 
-typedef  struct __FIIterable_1_Windows__CUI__CInput__CPointerPointVtbl
+typedef  struct __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPointVtbl
 {
     BEGIN_INTERFACE
 
     HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-        __RPC__in __FIIterable_1_Windows__CUI__CInput__CPointerPoint * This,
+        __RPC__in __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
         /* [in] */ __RPC__in REFIID riid,
         /* [annotation][iid_is][out] */ 
         _COM_Outptr_  void **ppvObject);
 
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FIIterable_1_Windows__CUI__CInput__CPointerPoint * This);
+    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This);
 
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FIIterable_1_Windows__CUI__CInput__CPointerPoint * This);
+    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This);
 
-    HRESULT ( STDMETHODCALLTYPE *GetIids )(__RPC__in __FIIterable_1_Windows__CUI__CInput__CPointerPoint * This,
+    HRESULT ( STDMETHODCALLTYPE *GetIids )(__RPC__in __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
                                            /* [out] */ __RPC__out ULONG *iidCount,
                                            /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids);
 
-    HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(__RPC__in __FIIterable_1_Windows__CUI__CInput__CPointerPoint * This, /* [out] */ __RPC__deref_out_opt HSTRING *className);
+    HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(__RPC__in __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This, /* [out] */ __RPC__deref_out_opt HSTRING *className);
 
-    HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(__RPC__in __FIIterable_1_Windows__CUI__CInput__CPointerPoint * This, /* [out] */ __RPC__out TrustLevel *trustLevel);
+    HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(__RPC__in __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This, /* [out] */ __RPC__out TrustLevel *trustLevel);
 
-    HRESULT ( STDMETHODCALLTYPE *First )(__RPC__in __FIIterable_1_Windows__CUI__CInput__CPointerPoint * This, /* [retval][out] */ __RPC__deref_out_opt __FIIterator_1_Windows__CUI__CInput__CPointerPoint **first);
+    HRESULT ( STDMETHODCALLTYPE *First )(__RPC__in __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This, /* [retval][out] */ __RPC__deref_out_opt __FIIterator_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint **first);
 
     END_INTERFACE
-} __FIIterable_1_Windows__CUI__CInput__CPointerPointVtbl;
+} __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPointVtbl;
 
-interface __FIIterable_1_Windows__CUI__CInput__CPointerPoint
+interface __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint
 {
-    CONST_VTBL struct __FIIterable_1_Windows__CUI__CInput__CPointerPointVtbl *lpVtbl;
+    CONST_VTBL struct __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPointVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
 
-#define __FIIterable_1_Windows__CUI__CInput__CPointerPoint_QueryInterface(This,riid,ppvObject)	\
+#define __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_QueryInterface(This,riid,ppvObject)	\
     ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
 
-#define __FIIterable_1_Windows__CUI__CInput__CPointerPoint_AddRef(This)	\
+#define __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_AddRef(This)	\
     ( (This)->lpVtbl -> AddRef(This) ) 
 
-#define __FIIterable_1_Windows__CUI__CInput__CPointerPoint_Release(This)	\
+#define __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_Release(This)	\
     ( (This)->lpVtbl -> Release(This) ) 
 
 
-#define __FIIterable_1_Windows__CUI__CInput__CPointerPoint_GetIids(This,iidCount,iids)	\
+#define __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetIids(This,iidCount,iids)	\
     ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
 
-#define __FIIterable_1_Windows__CUI__CInput__CPointerPoint_GetRuntimeClassName(This,className)	\
+#define __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetRuntimeClassName(This,className)	\
     ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
 
-#define __FIIterable_1_Windows__CUI__CInput__CPointerPoint_GetTrustLevel(This,trustLevel)	\
+#define __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetTrustLevel(This,trustLevel)	\
     ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
 
 
-#define __FIIterable_1_Windows__CUI__CInput__CPointerPoint_First(This,first)	\
+#define __FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_First(This,first)	\
     ( (This)->lpVtbl -> First(This,first) ) 
 
 #endif /* COBJMACROS */
 
 
-#endif // ____FIIterable_1_Windows__CUI__CInput__CPointerPoint_INTERFACE_DEFINED__
+#endif // ____FIIterable_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_INTERFACE_DEFINED__
 
-#endif // WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
 
 
-#if WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION >= 0x10000
-#if !defined(____FIVectorView_1_Windows__CUI__CInput__CPointerPoint_INTERFACE_DEFINED__)
-#define ____FIVectorView_1_Windows__CUI__CInput__CPointerPoint_INTERFACE_DEFINED__
+#if MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+#if !defined(____FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_INTERFACE_DEFINED__)
+#define ____FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_INTERFACE_DEFINED__
 
-typedef interface __FIVectorView_1_Windows__CUI__CInput__CPointerPoint __FIVectorView_1_Windows__CUI__CInput__CPointerPoint;
+typedef interface __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint;
 
 //  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FIVectorView_1_Windows__CUI__CInput__CPointerPoint;
+EXTERN_C const IID IID___FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint;
 
-typedef struct __FIVectorView_1_Windows__CUI__CInput__CPointerPointVtbl
+typedef struct __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPointVtbl
 {
     BEGIN_INTERFACE
 
     HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-        __RPC__in __FIVectorView_1_Windows__CUI__CInput__CPointerPoint * This,
+        __RPC__in __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
         /* [in] */ __RPC__in REFIID riid,
         /* [annotation][iid_is][out] */ 
         _COM_Outptr_  void **ppvObject);
 
-    ULONG ( STDMETHODCALLTYPE *AddRef )( __RPC__in __FIVectorView_1_Windows__CUI__CInput__CPointerPoint * This);
+    ULONG ( STDMETHODCALLTYPE *AddRef )( __RPC__in __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This);
 
-    ULONG ( STDMETHODCALLTYPE *Release )( __RPC__in __FIVectorView_1_Windows__CUI__CInput__CPointerPoint * This);
+    ULONG ( STDMETHODCALLTYPE *Release )( __RPC__in __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This);
 
-    HRESULT ( STDMETHODCALLTYPE *GetIids )( __RPC__in __FIVectorView_1_Windows__CUI__CInput__CPointerPoint * This,
+    HRESULT ( STDMETHODCALLTYPE *GetIids )( __RPC__in __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
                                             /* [out] */ __RPC__out ULONG *iidCount,
                                             /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids);
 
     HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )( 
-        __RPC__in __FIVectorView_1_Windows__CUI__CInput__CPointerPoint * This,
+        __RPC__in __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
             /* [out] */ __RPC__deref_out_opt HSTRING *className);
 
     HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )( 
-        __RPC__in __FIVectorView_1_Windows__CUI__CInput__CPointerPoint * This,
+        __RPC__in __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
             /* [out] */ __RPC__out TrustLevel *trustLevel);
 
     HRESULT ( STDMETHODCALLTYPE *GetAt )( 
-                                         __RPC__in __FIVectorView_1_Windows__CUI__CInput__CPointerPoint * This,
+                                         __RPC__in __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
                                          /* [in] */ unsigned int index,
-                                         /* [retval][out] */ __RPC__out __x_ABI_CWindows_CUI_CInput_CIPointerPoint * *item);
+                                         /* [retval][out] */ __RPC__out __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * *item);
 
         /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Size )( 
-            __RPC__in __FIVectorView_1_Windows__CUI__CInput__CPointerPoint * This,
+            __RPC__in __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
             /* [retval][out] */ __RPC__out unsigned int *size);
 
         HRESULT ( STDMETHODCALLTYPE *IndexOf )( 
-                                               __RPC__in __FIVectorView_1_Windows__CUI__CInput__CPointerPoint * This,
-            /* [in] */ __x_ABI_CWindows_CUI_CInput_CIPointerPoint * item,
+                                               __RPC__in __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
+            /* [in] */ __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * item,
             /* [out] */ __RPC__out unsigned int *index,
             /* [retval][out] */ __RPC__out boolean *found);
 
         HRESULT ( STDMETHODCALLTYPE *GetMany )( 
-                                               __RPC__in __FIVectorView_1_Windows__CUI__CInput__CPointerPoint * This,
+                                               __RPC__in __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
             /* [in] */ unsigned int startIndex,
             /* [in] */ unsigned int capacity,
-            /* [size_is][length_is][out] */ __RPC__out_ecount_part(capacity, *actual) __x_ABI_CWindows_CUI_CInput_CIPointerPoint * *items,
+            /* [size_is][length_is][out] */ __RPC__out_ecount_part(capacity, *actual) __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * *items,
             /* [retval][out] */ __RPC__out unsigned int *actual);
 
         END_INTERFACE
-} __FIVectorView_1_Windows__CUI__CInput__CPointerPointVtbl;
+} __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPointVtbl;
 
-interface __FIVectorView_1_Windows__CUI__CInput__CPointerPoint
+interface __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint
 {
-    CONST_VTBL struct __FIVectorView_1_Windows__CUI__CInput__CPointerPointVtbl *lpVtbl;
+    CONST_VTBL struct __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPointVtbl *lpVtbl;
 };
 
 
@@ -11756,118 +11757,118 @@ interface __FIVectorView_1_Windows__CUI__CInput__CPointerPoint
 #ifdef COBJMACROS
 
 
-#define __FIVectorView_1_Windows__CUI__CInput__CPointerPoint_QueryInterface(This,riid,ppvObject)	\
+#define __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_QueryInterface(This,riid,ppvObject)	\
     ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
 
-#define __FIVectorView_1_Windows__CUI__CInput__CPointerPoint_AddRef(This)	\
+#define __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_AddRef(This)	\
     ( (This)->lpVtbl -> AddRef(This) ) 
 
-#define __FIVectorView_1_Windows__CUI__CInput__CPointerPoint_Release(This)	\
+#define __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_Release(This)	\
     ( (This)->lpVtbl -> Release(This) ) 
 
 
-#define __FIVectorView_1_Windows__CUI__CInput__CPointerPoint_GetIids(This,iidCount,iids)	\
+#define __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetIids(This,iidCount,iids)	\
     ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
 
-#define __FIVectorView_1_Windows__CUI__CInput__CPointerPoint_GetRuntimeClassName(This,className)	\
+#define __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetRuntimeClassName(This,className)	\
     ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
 
-#define __FIVectorView_1_Windows__CUI__CInput__CPointerPoint_GetTrustLevel(This,trustLevel)	\
+#define __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetTrustLevel(This,trustLevel)	\
     ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
 
 
-#define __FIVectorView_1_Windows__CUI__CInput__CPointerPoint_GetAt(This,index,item)	\
+#define __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetAt(This,index,item)	\
     ( (This)->lpVtbl -> GetAt(This,index,item) ) 
 
-#define __FIVectorView_1_Windows__CUI__CInput__CPointerPoint_get_Size(This,size)	\
+#define __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_get_Size(This,size)	\
     ( (This)->lpVtbl -> get_Size(This,size) ) 
 
-#define __FIVectorView_1_Windows__CUI__CInput__CPointerPoint_IndexOf(This,item,index,found)	\
+#define __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_IndexOf(This,item,index,found)	\
     ( (This)->lpVtbl -> IndexOf(This,item,index,found) ) 
 
-#define __FIVectorView_1_Windows__CUI__CInput__CPointerPoint_GetMany(This,startIndex,capacity,items,actual)	\
+#define __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetMany(This,startIndex,capacity,items,actual)	\
     ( (This)->lpVtbl -> GetMany(This,startIndex,capacity,items,actual) ) 
 
 #endif /* COBJMACROS */
 
 
 
-#endif // ____FIVectorView_1_Windows__CUI__CInput__CPointerPoint_INTERFACE_DEFINED__
+#endif // ____FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_INTERFACE_DEFINED__
 
-#endif // WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
 
 
-#if WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION >= 0x10000
-#if !defined(____FIVector_1_Windows__CUI__CInput__CPointerPoint_INTERFACE_DEFINED__)
-#define ____FIVector_1_Windows__CUI__CInput__CPointerPoint_INTERFACE_DEFINED__
+#if MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+#if !defined(____FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_INTERFACE_DEFINED__)
+#define ____FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_INTERFACE_DEFINED__
 
-typedef interface __FIVector_1_Windows__CUI__CInput__CPointerPoint __FIVector_1_Windows__CUI__CInput__CPointerPoint;
+typedef interface __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint;
 
 //  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FIVector_1_Windows__CUI__CInput__CPointerPoint;
+EXTERN_C const IID IID___FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint;
 
-typedef struct __FIVector_1_Windows__CUI__CInput__CPointerPointVtbl
+typedef struct __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPointVtbl
 {
     BEGIN_INTERFACE
 
     HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-        __RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This,
+        __RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
             /* [in] */ __RPC__in REFIID riid,
             /* [annotation][iid_is][out] */ 
         _COM_Outptr_  void **ppvObject);
 
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This);
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This);
-    HRESULT ( STDMETHODCALLTYPE *GetIids )(__RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This,
+    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This);
+    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This);
+    HRESULT ( STDMETHODCALLTYPE *GetIids )(__RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
         /* [out] */ __RPC__out ULONG *iidCount,
         /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids);
 
-    HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(__RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This, /* [out] */ __RPC__deref_out_opt __x_ABI_CWindows_CUI_CInput_CIPointerPoint * *className);
-    HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(__RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This, /* [out] */ __RPC__out TrustLevel *trustLevel);
+    HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(__RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This, /* [out] */ __RPC__deref_out_opt __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * *className);
+    HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(__RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This, /* [out] */ __RPC__out TrustLevel *trustLevel);
 
-    HRESULT ( STDMETHODCALLTYPE *GetAt )(__RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This,
+    HRESULT ( STDMETHODCALLTYPE *GetAt )(__RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
         /* [in] */ unsigned int index,
-        /* [retval][out] */ __RPC__deref_out_opt __x_ABI_CWindows_CUI_CInput_CIPointerPoint * *item);
+        /* [retval][out] */ __RPC__deref_out_opt __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * *item);
 
     /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Size )( 
-        __RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This,
+        __RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
         /* [retval][out] */ __RPC__out unsigned int *size);
 
-    HRESULT ( STDMETHODCALLTYPE *GetView )(__RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This, /* [retval][out] */ __RPC__deref_out_opt __FIVectorView_1_Windows__CUI__CInput__CPointerPoint **view);
+    HRESULT ( STDMETHODCALLTYPE *GetView )(__RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This, /* [retval][out] */ __RPC__deref_out_opt __FIVectorView_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint **view);
 
-    HRESULT ( STDMETHODCALLTYPE *IndexOf )(__RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This,
-        /* [in] */ __RPC__in __x_ABI_CWindows_CUI_CInput_CIPointerPoint * item,
+    HRESULT ( STDMETHODCALLTYPE *IndexOf )(__RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
+        /* [in] */ __RPC__in __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * item,
         /* [out] */ __RPC__out unsigned int *index,
         /* [retval][out] */ __RPC__out boolean *found);
 
-    HRESULT ( STDMETHODCALLTYPE *SetAt )(__RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This,
+    HRESULT ( STDMETHODCALLTYPE *SetAt )(__RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
         /* [in] */ unsigned int index,
-        /* [in] */ __RPC__in __x_ABI_CWindows_CUI_CInput_CIPointerPoint * item);
+        /* [in] */ __RPC__in __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * item);
 
-    HRESULT ( STDMETHODCALLTYPE *InsertAt )(__RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This,
+    HRESULT ( STDMETHODCALLTYPE *InsertAt )(__RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
         /* [in] */ unsigned int index,
-        /* [in] */ __RPC__in __x_ABI_CWindows_CUI_CInput_CIPointerPoint * item);
+        /* [in] */ __RPC__in __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * item);
 
-    HRESULT ( STDMETHODCALLTYPE *RemoveAt )(__RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This, /* [in] */ unsigned int index);
-    HRESULT ( STDMETHODCALLTYPE *Append )(__RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This, /* [in] */ __RPC__in __x_ABI_CWindows_CUI_CInput_CIPointerPoint * item);
-    HRESULT ( STDMETHODCALLTYPE *RemoveAtEnd )(__RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This);
-    HRESULT ( STDMETHODCALLTYPE *Clear )(__RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This);
-    HRESULT ( STDMETHODCALLTYPE *GetMany )(__RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This,
+    HRESULT ( STDMETHODCALLTYPE *RemoveAt )(__RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This, /* [in] */ unsigned int index);
+    HRESULT ( STDMETHODCALLTYPE *Append )(__RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This, /* [in] */ __RPC__in __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * item);
+    HRESULT ( STDMETHODCALLTYPE *RemoveAtEnd )(__RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This);
+    HRESULT ( STDMETHODCALLTYPE *Clear )(__RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This);
+    HRESULT ( STDMETHODCALLTYPE *GetMany )(__RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
         /* [in] */ unsigned int startIndex,
         /* [in] */ unsigned int capacity,
-        /* [size_is][length_is][out] */ __RPC__out_ecount_part(capacity, *actual) __x_ABI_CWindows_CUI_CInput_CIPointerPoint * *items,
+        /* [size_is][length_is][out] */ __RPC__out_ecount_part(capacity, *actual) __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * *items,
         /* [retval][out] */ __RPC__out unsigned int *actual);
 
-    HRESULT ( STDMETHODCALLTYPE *ReplaceAll )(__RPC__in __FIVector_1_Windows__CUI__CInput__CPointerPoint * This,
+    HRESULT ( STDMETHODCALLTYPE *ReplaceAll )(__RPC__in __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * This,
         /* [in] */ unsigned int count,
-        /* [size_is][in] */ __RPC__in_ecount_full(count) __x_ABI_CWindows_CUI_CInput_CIPointerPoint * *value);
+        /* [size_is][in] */ __RPC__in_ecount_full(count) __x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * *value);
 
     END_INTERFACE
-} __FIVector_1_Windows__CUI__CInput__CPointerPointVtbl;
+} __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPointVtbl;
 
-interface __FIVector_1_Windows__CUI__CInput__CPointerPoint
+interface __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint
 {
-    CONST_VTBL struct __FIVector_1_Windows__CUI__CInput__CPointerPointVtbl *lpVtbl;
+    CONST_VTBL struct __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPointVtbl *lpVtbl;
 };
 
 
@@ -11875,69 +11876,74 @@ interface __FIVector_1_Windows__CUI__CInput__CPointerPoint
 #ifdef COBJMACROS
 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_QueryInterface(This,riid,ppvObject)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_QueryInterface(This,riid,ppvObject)	\
     ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_AddRef(This)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_AddRef(This)	\
     ( (This)->lpVtbl -> AddRef(This) ) 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_Release(This)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_Release(This)	\
     ( (This)->lpVtbl -> Release(This) ) 
 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_GetIids(This,iidCount,iids)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetIids(This,iidCount,iids)	\
     ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_GetRuntimeClassName(This,className)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetRuntimeClassName(This,className)	\
     ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_GetTrustLevel(This,trustLevel)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetTrustLevel(This,trustLevel)	\
     ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_GetAt(This,index,item)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetAt(This,index,item)	\
     ( (This)->lpVtbl -> GetAt(This,index,item) ) 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_get_Size(This,size)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_get_Size(This,size)	\
     ( (This)->lpVtbl -> get_Size(This,size) ) 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_GetView(This,view)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetView(This,view)	\
     ( (This)->lpVtbl -> GetView(This,view) ) 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_IndexOf(This,item,index,found)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_IndexOf(This,item,index,found)	\
     ( (This)->lpVtbl -> IndexOf(This,item,index,found) ) 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_SetAt(This,index,item)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_SetAt(This,index,item)	\
     ( (This)->lpVtbl -> SetAt(This,index,item) ) 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_InsertAt(This,index,item)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_InsertAt(This,index,item)	\
     ( (This)->lpVtbl -> InsertAt(This,index,item) ) 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_RemoveAt(This,index)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_RemoveAt(This,index)	\
     ( (This)->lpVtbl -> RemoveAt(This,index) ) 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_Append(This,item)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_Append(This,item)	\
     ( (This)->lpVtbl -> Append(This,item) ) 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_RemoveAtEnd(This)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_RemoveAtEnd(This)	\
     ( (This)->lpVtbl -> RemoveAtEnd(This) ) 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_Clear(This)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_Clear(This)	\
     ( (This)->lpVtbl -> Clear(This) ) 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_GetMany(This,startIndex,capacity,items,actual)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_GetMany(This,startIndex,capacity,items,actual)	\
     ( (This)->lpVtbl -> GetMany(This,startIndex,capacity,items,actual) ) 
 
-#define __FIVector_1_Windows__CUI__CInput__CPointerPoint_ReplaceAll(This,count,value)	\
+#define __FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_ReplaceAll(This,count,value)	\
     ( (This)->lpVtbl -> ReplaceAll(This,count,value) ) 
 
 #endif /* COBJMACROS */
 
 
 
-#endif // ____FIVector_1_Windows__CUI__CInput__CPointerPoint_INTERFACE_DEFINED__
+#endif // ____FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint_INTERFACE_DEFINED__
 
-#endif // WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION >= 0x10000
+#endif // MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+
+
+
+
+
 
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIIconSource_FWD_DEFINED__
@@ -12025,7 +12031,6 @@ typedef struct __x_ABI_CWindows_CUI_CInput_CManipulationDelta __x_ABI_CWindows_C
 
 
 typedef struct __x_ABI_CWindows_CUI_CInput_CManipulationVelocities __x_ABI_CWindows_CUI_CInput_CManipulationVelocities;
-
 
 
 
@@ -18636,7 +18641,7 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIPointer;
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIPointerRoutedEventArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIPointerRoutedEventArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Input_IPointerRoutedEventArgs[] = L"Microsoft.UI.Xaml.Input.IPointerRoutedEventArgs";
-/* [object, uuid("A950D7AF-1EF8-5322-875D-47A70E0FD9CF"), exclusiveto, contract] */
+/* [object, uuid("52E918F4-A644-53ED-85A3-DFD1A0BEE39F"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIPointerRoutedEventArgsVtbl
 {
     BEGIN_INTERFACE
@@ -18693,12 +18698,12 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
     HRESULT ( STDMETHODCALLTYPE *GetCurrentPoint )(
         __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIPointerRoutedEventArgs * This,
         /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * relativeTo,
-        /* [retval, out] */__x_ABI_CWindows_CUI_CInput_CIPointerPoint * * result
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpPointerPoint * * result
         );
     HRESULT ( STDMETHODCALLTYPE *GetIntermediatePoints )(
         __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIPointerRoutedEventArgs * This,
         /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * relativeTo,
-        /* [retval, out] */__FIVector_1_Windows__CUI__CInput__CPointerPoint * * result
+        /* [retval, out] */__FIVector_1_Microsoft__CUI__CInput__CExperimental__CExpPointerPoint * * result
         );
     END_INTERFACE
     
