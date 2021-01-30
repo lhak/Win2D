@@ -27,7 +27,7 @@
 		</CsWinRTParams>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.0.1" />
+		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.1.1" />
 		<PackageReference Include="Microsoft.WinUI">
 			<Version>3.0.0-preview3.201113.0</Version>
 		</PackageReference>
