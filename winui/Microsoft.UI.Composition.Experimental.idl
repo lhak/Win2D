@@ -196,10 +196,12 @@ namespace Microsoft
 
                 [contract(Microsoft.Foundation.LiftedExperimentalContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Composition.Experimental.ExpCompositionContent)]
-                [uuid(7E8E5D4C-B0C8-5070-BD3B-123714471328)]
+                [uuid(5DE14537-CE1A-50A7-99DE-A357142A394D)]
                 interface IExpCompositionContent : IInspectable
                 {
                     [propget] HRESULT ActualSize([out] [retval] Windows.Foundation.Numerics.Vector2* value);
+                    [propget] HRESULT AppData([out] [retval] IInspectable** value);
+                    [propput] HRESULT AppData([in] IInspectable* value);
                     [propget] HRESULT Compositor([out] [retval] Microsoft.UI.Composition.Compositor** value);
                     [propget] HRESULT DispatcherQueue([out] [retval] Microsoft.System.DispatcherQueue** value);
                     [propget] HRESULT DisplayScale([out] [retval] FLOAT* value);

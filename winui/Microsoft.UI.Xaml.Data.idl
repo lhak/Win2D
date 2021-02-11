@@ -21,8 +21,6 @@ namespace Microsoft
 
             runtimeclass DependencyProperty;
 
-            apicontract PrivateApiContract;
-
             runtimeclass PropertyPath;
 
             apicontract WinUIContract;
@@ -58,8 +56,6 @@ namespace Microsoft
             namespace Data
             {
                 typedef enum BindingMode BindingMode;
-
-                typedef enum EffectiveSourceType EffectiveSourceType;
 
                 typedef enum RelativeSourceMode RelativeSourceMode;
 
@@ -204,20 +200,6 @@ namespace Microsoft
                     OneWay  = 1,
                     OneTime = 2,
                     TwoWay  = 3
-                };
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                enum EffectiveSourceType
-                {
-                    None                   = 0,
-                    Binding_Source         = 1,
-                    DataContext            = 2,
-                    Mentor_DataContext     = 3,
-                    Target                 = 4,
-                    TemplatedParent        = 5,
-                    Mentor_TemplatedParent = 6,
-                    ElementName            = 7,
-                    Mentor_ElementName     = 8
                 };
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]

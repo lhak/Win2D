@@ -57,14 +57,6 @@
 #define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
@@ -1165,25 +1157,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBaseOverrides_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        interface IFlyoutBasePrivate;
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate ABI::Microsoft::UI::Xaml::Controls::Primitives::IFlyoutBasePrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBaseStatics_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBaseStatics_FWD_DEFINED__
 namespace ABI {
@@ -1354,6 +1327,63 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIGridViewItemTemplateSettings ABI::Microsoft::UI::Xaml::Controls::Primitives::IGridViewItemTemplateSettings
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIGridViewItemTemplateSettings_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        interface IInfoBarPanel;
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel ABI::Microsoft::UI::Xaml::Controls::Primitives::IInfoBarPanel
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        interface IInfoBarPanelFactory;
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory ABI::Microsoft::UI::Xaml::Controls::Primitives::IInfoBarPanelFactory
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        interface IInfoBarPanelStatics;
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics ABI::Microsoft::UI::Xaml::Controls::Primitives::IInfoBarPanelStatics
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIItemsChangedEventArgs_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIItemsChangedEventArgs_FWD_DEFINED__
@@ -2267,6 +2297,44 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_FWD_DEFINED__
 
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        interface IScrollControllerAddScrollVelocityRequestedEventArgs;
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerAddScrollVelocityRequestedEventArgs
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        interface IScrollControllerAddScrollVelocityRequestedEventArgsFactory;
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerAddScrollVelocityRequestedEventArgsFactory
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_FWD_DEFINED__
+
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs_FWD_DEFINED__
 namespace ABI {
@@ -2343,44 +2411,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgsFactory_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        interface IScrollControllerScrollFromRequestedEventArgs;
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerScrollFromRequestedEventArgs
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        interface IScrollControllerScrollFromRequestedEventArgsFactory;
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerScrollFromRequestedEventArgsFactory
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs_FWD_DEFINED__
 namespace ABI {
@@ -2437,6 +2467,63 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollEventArgs ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollEventArgs
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollEventArgs_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        interface IScrollPresenter;
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        interface IScrollPresenterFactory;
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenterFactory
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        interface IScrollPresenterStatics;
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenterStatics
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPoint_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPoint_FWD_DEFINED__
@@ -2532,63 +2619,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointsInfo ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollSnapPointsInfo
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointsInfo_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        interface IScroller;
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        interface IScrollerFactory;
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollerFactory
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        interface IScrollerStatics;
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollerStatics
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISelector_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISelector_FWD_DEFINED__
@@ -3161,6 +3191,7 @@ namespace ABI {
 } /* ABI */
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef DEF___FIIterator_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_USE
 #define DEF___FIIterator_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_USE
@@ -3189,8 +3220,10 @@ typedef IIterator<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollSnapPoin
 #endif /* DEF___FIIterator_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_USE */
 
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef DEF___FIIterable_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_USE
 #define DEF___FIIterable_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_USE
@@ -3219,6 +3252,7 @@ typedef IIterable<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollSnapPoin
 #endif /* DEF___FIIterable_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_USE */
 
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 namespace ABI {
     namespace Microsoft {
@@ -3235,6 +3269,7 @@ namespace ABI {
 } /* ABI */
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef DEF___FIIterator_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_USE
 #define DEF___FIIterator_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_USE
@@ -3263,8 +3298,10 @@ typedef IIterator<ABI::Microsoft::UI::Xaml::Controls::Primitives::ZoomSnapPointB
 #endif /* DEF___FIIterator_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_USE */
 
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef DEF___FIIterable_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_USE
 #define DEF___FIIterable_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_USE
@@ -3293,6 +3330,7 @@ typedef IIterable<ABI::Microsoft::UI::Xaml::Controls::Primitives::ZoomSnapPointB
 #endif /* DEF___FIIterable_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_USE */
 
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 #if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
@@ -3327,6 +3365,7 @@ typedef IVectorView<ABI::Microsoft::UI::Xaml::Controls::Primitives::Popup*> __FI
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef DEF___FIVectorView_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_USE
 #define DEF___FIVectorView_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_USE
@@ -3355,8 +3394,10 @@ typedef IVectorView<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollSnapPo
 #endif /* DEF___FIVectorView_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_USE */
 
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef DEF___FIVectorView_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_USE
 #define DEF___FIVectorView_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_USE
@@ -3385,8 +3426,10 @@ typedef IVectorView<ABI::Microsoft::UI::Xaml::Controls::Primitives::ZoomSnapPoin
 #endif /* DEF___FIVectorView_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_USE */
 
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef DEF___FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_USE
 #define DEF___FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_USE
@@ -3415,8 +3458,10 @@ typedef IVector<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollSnapPointB
 #endif /* DEF___FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_USE */
 
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef DEF___FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_USE
 #define DEF___FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_USE
@@ -3445,6 +3490,7 @@ typedef IVector<ABI::Microsoft::UI::Xaml::Controls::Primitives::ZoomSnapPointBas
 #endif /* DEF___FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_USE */
 
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 namespace ABI {
     namespace Microsoft {
@@ -3511,13 +3557,14 @@ typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::Flyou
 
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_IInspectable_USE
 #define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_IInspectable_USE
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("7bd22f18-3d32-5f9e-9a29-032a1873bba5"))
+struct __declspec(uuid("c5c9e936-6374-5812-b0fb-1bd63820a24d"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,IInspectable*> : ITypedEventHandler_impl<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,IInspectable*> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -3539,6 +3586,56 @@ typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScro
 #endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_IInspectable_USE */
 
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        class ScrollControllerAddScrollVelocityRequestedEventArgs;
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs_USE
+#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs_USE
+#if !defined(RO_NO_TEMPLATE_NAME)
+namespace ABI { namespace Windows { namespace Foundation {
+template <>
+struct __declspec(uuid("bf724889-532e-511e-809e-32f85fbe5dd9"))
+ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollControllerAddScrollVelocityRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollControllerAddScrollVelocityRequestedEventArgs*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerAddScrollVelocityRequestedEventArgs*>> 
+{
+    static const wchar_t* z_get_rc_name_impl() 
+    {
+        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.Primitives.IScrollController, Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerAddScrollVelocityRequestedEventArgs>"; 
+    }
+};
+// Define a typedef for the parameterized interface specialization's mangled name.
+// This allows code which uses the mangled name for the parameterized interface to access the
+// correct parameterized interface specialization.
+typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollControllerAddScrollVelocityRequestedEventArgs*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs_t;
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs_t
+/* Foundation */ } /* Windows */ } /* ABI */ } 
+
+////  Define an alias for the C version of the interface for compatibility purposes.
+//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerAddScrollVelocityRequestedEventArgs*>
+//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerAddScrollVelocityRequestedEventArgs*>
+#endif // !defined(RO_NO_TEMPLATE_NAME)
+#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs_USE */
+
+
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 namespace ABI {
@@ -3556,13 +3653,15 @@ namespace ABI {
 } /* ABI */
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerInteractionRequestedEventArgs_USE
 #define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerInteractionRequestedEventArgs_USE
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("ef5d8633-b47b-534a-9e1d-b822b7ac7784"))
+struct __declspec(uuid("69016bc1-a886-53a4-84e9-2cd7121216f2"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollControllerInteractionRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollControllerInteractionRequestedEventArgs*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerInteractionRequestedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -3584,6 +3683,8 @@ typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScro
 #endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerInteractionRequestedEventArgs_USE */
 
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 namespace ABI {
@@ -3601,13 +3702,15 @@ namespace ABI {
 } /* ABI */
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollByRequestedEventArgs_USE
 #define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollByRequestedEventArgs_USE
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("af906c23-71cd-597b-8452-f428b7ebf402"))
+struct __declspec(uuid("15fad112-0cc2-5290-8f73-9446719f1adf"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollControllerScrollByRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollControllerScrollByRequestedEventArgs*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerScrollByRequestedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -3629,51 +3732,8 @@ typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScro
 #endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollByRequestedEventArgs_USE */
 
 
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        class ScrollControllerScrollFromRequestedEventArgs;
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-
-#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs_USE
-#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation {
-template <>
-struct __declspec(uuid("73edb91b-f841-5554-977d-30560759e28b"))
-ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollControllerScrollFromRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollControllerScrollFromRequestedEventArgs*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerScrollFromRequestedEventArgs*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.Primitives.IScrollController, Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollFromRequestedEventArgs>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollControllerScrollFromRequestedEventArgs*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs_t;
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs_t
-/* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerScrollFromRequestedEventArgs*>
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerScrollFromRequestedEventArgs*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs_USE */
-
-
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 namespace ABI {
@@ -3691,13 +3751,15 @@ namespace ABI {
 } /* ABI */
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollToRequestedEventArgs_USE
 #define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollToRequestedEventArgs_USE
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("e855ee7e-1e55-54c2-a940-a3988b4d09bd"))
+struct __declspec(uuid("e377872a-3553-503b-a696-358081356129"))
 ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollControllerScrollToRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController*,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollControllerScrollToRequestedEventArgs*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerScrollToRequestedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -3719,6 +3781,8 @@ typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScro
 #endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollToRequestedEventArgs_USE */
 
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 namespace ABI {
     namespace Microsoft {
@@ -3726,7 +3790,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        class Scroller;
+                        class ScrollPresenter;
                     } /* Primitives */
                 } /* Controls */
             } /* Xaml */
@@ -3736,34 +3800,36 @@ namespace ABI {
 
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
-#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable_USE
-#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable_USE
+#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable_USE
+#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable_USE
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("f2e026bb-c265-5a7a-a7b3-6cf7219b68b9"))
-ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*,IInspectable*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*>,IInspectable*> 
+struct __declspec(uuid("0c15b9a1-f982-59bc-b706-33ffbac2e7c8"))
+ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*,IInspectable*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*>,IInspectable*> 
 {
     static const wchar_t* z_get_rc_name_impl() 
     {
-        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.Primitives.Scroller, Object>"; 
+        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, Object>"; 
     }
 };
 // Define a typedef for the parameterized interface specialization's mangled name.
 // This allows code which uses the mangled name for the parameterized interface to access the
 // correct parameterized interface specialization.
-typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*,IInspectable*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable_t;
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable_t
+typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*,IInspectable*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable_t;
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable_t
 /* Foundation */ } /* Windows */ } /* ABI */ } 
 
 ////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*,IInspectable*>
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*,IInspectable*>
+//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*,IInspectable*>
+//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*,IInspectable*>
 #endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable_USE */
+#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable_USE */
 
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 namespace ABI {
     namespace Microsoft {
@@ -4255,6 +4321,430 @@ typedef IReference<float> __FIReference_1_float_t;
 
 
 
+namespace ABI {
+    namespace Windows {
+        namespace Foundation {
+            namespace Numerics {
+                struct Vector2;
+                
+            } /* Numerics */
+        } /* Foundation */
+    } /* Windows */
+} /* ABI */
+
+
+#ifndef DEF___FIReference_1_Windows__CFoundation__CNumerics__CVector2_USE
+#define DEF___FIReference_1_Windows__CFoundation__CNumerics__CVector2_USE
+#if !defined(RO_NO_TEMPLATE_NAME)
+namespace ABI { namespace Windows { namespace Foundation {
+template <>
+struct __declspec(uuid("48f6a69e-8465-57ae-9400-9764087f65ad"))
+IReference<struct ABI::Windows::Foundation::Numerics::Vector2> : IReference_impl<struct ABI::Windows::Foundation::Numerics::Vector2> 
+{
+    static const wchar_t* z_get_rc_name_impl() 
+    {
+        return L"Windows.Foundation.IReference`1<Windows.Foundation.Numerics.Vector2>"; 
+    }
+};
+// Define a typedef for the parameterized interface specialization's mangled name.
+// This allows code which uses the mangled name for the parameterized interface to access the
+// correct parameterized interface specialization.
+typedef IReference<struct ABI::Windows::Foundation::Numerics::Vector2> __FIReference_1_Windows__CFoundation__CNumerics__CVector2_t;
+#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2 ABI::Windows::Foundation::__FIReference_1_Windows__CFoundation__CNumerics__CVector2_t
+/* Foundation */ } /* Windows */ } /* ABI */ } 
+
+////  Define an alias for the C version of the interface for compatibility purposes.
+//#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2 ABI::Windows::Foundation::IReference<ABI::Windows::Foundation::Numerics::Vector2>
+//#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2_t ABI::Windows::Foundation::IReference<ABI::Windows::Foundation::Numerics::Vector2>
+#endif // !defined(RO_NO_TEMPLATE_NAME)
+#endif /* DEF___FIReference_1_Windows__CFoundation__CNumerics__CVector2_USE */
+
+
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    class ScrollingScrollAnimationStartingEventArgs;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollAnimationStartingEventArgs_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollAnimationStartingEventArgs_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    interface IScrollingScrollAnimationStartingEventArgs;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollAnimationStartingEventArgs ABI::Microsoft::UI::Xaml::Controls::IScrollingScrollAnimationStartingEventArgs
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollAnimationStartingEventArgs_FWD_DEFINED__
+
+
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs_USE
+#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs_USE
+#if !defined(RO_NO_TEMPLATE_NAME)
+namespace ABI { namespace Windows { namespace Foundation {
+template <>
+struct __declspec(uuid("c4396355-450c-5685-a854-fde11830a80f"))
+ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::ScrollingScrollAnimationStartingEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::ScrollingScrollAnimationStartingEventArgs*, ABI::Microsoft::UI::Xaml::Controls::IScrollingScrollAnimationStartingEventArgs*>> 
+{
+    static const wchar_t* z_get_rc_name_impl() 
+    {
+        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, Microsoft.UI.Xaml.Controls.ScrollingScrollAnimationStartingEventArgs>"; 
+    }
+};
+// Define a typedef for the parameterized interface specialization's mangled name.
+// This allows code which uses the mangled name for the parameterized interface to access the
+// correct parameterized interface specialization.
+typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::ScrollingScrollAnimationStartingEventArgs*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs_t;
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs_t
+/* Foundation */ } /* Windows */ } /* ABI */ } 
+
+////  Define an alias for the C version of the interface for compatibility purposes.
+//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::IScrollingScrollAnimationStartingEventArgs*>
+//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::IScrollingScrollAnimationStartingEventArgs*>
+#endif // !defined(RO_NO_TEMPLATE_NAME)
+#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs_USE */
+
+
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    class ScrollingZoomAnimationStartingEventArgs;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomAnimationStartingEventArgs_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomAnimationStartingEventArgs_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    interface IScrollingZoomAnimationStartingEventArgs;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomAnimationStartingEventArgs ABI::Microsoft::UI::Xaml::Controls::IScrollingZoomAnimationStartingEventArgs
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomAnimationStartingEventArgs_FWD_DEFINED__
+
+
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs_USE
+#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs_USE
+#if !defined(RO_NO_TEMPLATE_NAME)
+namespace ABI { namespace Windows { namespace Foundation {
+template <>
+struct __declspec(uuid("3d0cdad6-3679-542c-9f8c-6752c4aca749"))
+ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::ScrollingZoomAnimationStartingEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::ScrollingZoomAnimationStartingEventArgs*, ABI::Microsoft::UI::Xaml::Controls::IScrollingZoomAnimationStartingEventArgs*>> 
+{
+    static const wchar_t* z_get_rc_name_impl() 
+    {
+        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, Microsoft.UI.Xaml.Controls.ScrollingZoomAnimationStartingEventArgs>"; 
+    }
+};
+// Define a typedef for the parameterized interface specialization's mangled name.
+// This allows code which uses the mangled name for the parameterized interface to access the
+// correct parameterized interface specialization.
+typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::ScrollingZoomAnimationStartingEventArgs*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs_t;
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs_t
+/* Foundation */ } /* Windows */ } /* ABI */ } 
+
+////  Define an alias for the C version of the interface for compatibility purposes.
+//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::IScrollingZoomAnimationStartingEventArgs*>
+//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::IScrollingZoomAnimationStartingEventArgs*>
+#endif // !defined(RO_NO_TEMPLATE_NAME)
+#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs_USE */
+
+
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    class ScrollingScrollCompletedEventArgs;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollCompletedEventArgs_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollCompletedEventArgs_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    interface IScrollingScrollCompletedEventArgs;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollCompletedEventArgs ABI::Microsoft::UI::Xaml::Controls::IScrollingScrollCompletedEventArgs
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollCompletedEventArgs_FWD_DEFINED__
+
+
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs_USE
+#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs_USE
+#if !defined(RO_NO_TEMPLATE_NAME)
+namespace ABI { namespace Windows { namespace Foundation {
+template <>
+struct __declspec(uuid("161bc1c5-6ff0-52b0-a1b9-da940222b008"))
+ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::ScrollingScrollCompletedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::ScrollingScrollCompletedEventArgs*, ABI::Microsoft::UI::Xaml::Controls::IScrollingScrollCompletedEventArgs*>> 
+{
+    static const wchar_t* z_get_rc_name_impl() 
+    {
+        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, Microsoft.UI.Xaml.Controls.ScrollingScrollCompletedEventArgs>"; 
+    }
+};
+// Define a typedef for the parameterized interface specialization's mangled name.
+// This allows code which uses the mangled name for the parameterized interface to access the
+// correct parameterized interface specialization.
+typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::ScrollingScrollCompletedEventArgs*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs_t;
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs_t
+/* Foundation */ } /* Windows */ } /* ABI */ } 
+
+////  Define an alias for the C version of the interface for compatibility purposes.
+//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::IScrollingScrollCompletedEventArgs*>
+//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::IScrollingScrollCompletedEventArgs*>
+#endif // !defined(RO_NO_TEMPLATE_NAME)
+#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs_USE */
+
+
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    class ScrollingZoomCompletedEventArgs;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomCompletedEventArgs_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomCompletedEventArgs_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    interface IScrollingZoomCompletedEventArgs;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomCompletedEventArgs ABI::Microsoft::UI::Xaml::Controls::IScrollingZoomCompletedEventArgs
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomCompletedEventArgs_FWD_DEFINED__
+
+
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs_USE
+#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs_USE
+#if !defined(RO_NO_TEMPLATE_NAME)
+namespace ABI { namespace Windows { namespace Foundation {
+template <>
+struct __declspec(uuid("1ec9434b-6833-51cb-9c52-3f0105b7a855"))
+ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::ScrollingZoomCompletedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::ScrollingZoomCompletedEventArgs*, ABI::Microsoft::UI::Xaml::Controls::IScrollingZoomCompletedEventArgs*>> 
+{
+    static const wchar_t* z_get_rc_name_impl() 
+    {
+        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, Microsoft.UI.Xaml.Controls.ScrollingZoomCompletedEventArgs>"; 
+    }
+};
+// Define a typedef for the parameterized interface specialization's mangled name.
+// This allows code which uses the mangled name for the parameterized interface to access the
+// correct parameterized interface specialization.
+typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::ScrollingZoomCompletedEventArgs*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs_t;
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs_t
+/* Foundation */ } /* Windows */ } /* ABI */ } 
+
+////  Define an alias for the C version of the interface for compatibility purposes.
+//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::IScrollingZoomCompletedEventArgs*>
+//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::IScrollingZoomCompletedEventArgs*>
+#endif // !defined(RO_NO_TEMPLATE_NAME)
+#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs_USE */
+
+
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    class ScrollingBringingIntoViewEventArgs;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingBringingIntoViewEventArgs_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingBringingIntoViewEventArgs_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    interface IScrollingBringingIntoViewEventArgs;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingBringingIntoViewEventArgs ABI::Microsoft::UI::Xaml::Controls::IScrollingBringingIntoViewEventArgs
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingBringingIntoViewEventArgs_FWD_DEFINED__
+
+
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs_USE
+#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs_USE
+#if !defined(RO_NO_TEMPLATE_NAME)
+namespace ABI { namespace Windows { namespace Foundation {
+template <>
+struct __declspec(uuid("19387a29-c770-5144-9347-0c852c893d5b"))
+ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::ScrollingBringingIntoViewEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::ScrollingBringingIntoViewEventArgs*, ABI::Microsoft::UI::Xaml::Controls::IScrollingBringingIntoViewEventArgs*>> 
+{
+    static const wchar_t* z_get_rc_name_impl() 
+    {
+        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, Microsoft.UI.Xaml.Controls.ScrollingBringingIntoViewEventArgs>"; 
+    }
+};
+// Define a typedef for the parameterized interface specialization's mangled name.
+// This allows code which uses the mangled name for the parameterized interface to access the
+// correct parameterized interface specialization.
+typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::ScrollingBringingIntoViewEventArgs*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs_t;
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs_t
+/* Foundation */ } /* Windows */ } /* ABI */ } 
+
+////  Define an alias for the C version of the interface for compatibility purposes.
+//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::IScrollingBringingIntoViewEventArgs*>
+//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::IScrollingBringingIntoViewEventArgs*>
+#endif // !defined(RO_NO_TEMPLATE_NAME)
+#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs_USE */
+
+
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    class ScrollingAnchorRequestedEventArgs;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingAnchorRequestedEventArgs_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingAnchorRequestedEventArgs_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    interface IScrollingAnchorRequestedEventArgs;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingAnchorRequestedEventArgs ABI::Microsoft::UI::Xaml::Controls::IScrollingAnchorRequestedEventArgs
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingAnchorRequestedEventArgs_FWD_DEFINED__
+
+
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs_USE
+#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs_USE
+#if !defined(RO_NO_TEMPLATE_NAME)
+namespace ABI { namespace Windows { namespace Foundation {
+template <>
+struct __declspec(uuid("975a8ece-22dc-531c-913a-633195941e95"))
+ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::ScrollingAnchorRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::ScrollingAnchorRequestedEventArgs*, ABI::Microsoft::UI::Xaml::Controls::IScrollingAnchorRequestedEventArgs*>> 
+{
+    static const wchar_t* z_get_rc_name_impl() 
+    {
+        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, Microsoft.UI.Xaml.Controls.ScrollingAnchorRequestedEventArgs>"; 
+    }
+};
+// Define a typedef for the parameterized interface specialization's mangled name.
+// This allows code which uses the mangled name for the parameterized interface to access the
+// correct parameterized interface specialization.
+typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::ScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::ScrollingAnchorRequestedEventArgs*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs_t;
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs_t
+/* Foundation */ } /* Windows */ } /* ABI */ } 
+
+////  Define an alias for the C version of the interface for compatibility purposes.
+//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::IScrollingAnchorRequestedEventArgs*>
+//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter*,ABI::Microsoft::UI::Xaml::Controls::IScrollingAnchorRequestedEventArgs*>
+#endif // !defined(RO_NO_TEMPLATE_NAME)
+#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs_USE */
+
+
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
 
 #ifndef DEF___FIIterator_1_float_USE
 #define DEF___FIIterator_1_float_USE
@@ -4342,406 +4832,6 @@ typedef IVectorView<float> __FIVectorView_1_float_t;
 
 
 
-namespace ABI {
-    namespace Windows {
-        namespace Foundation {
-            namespace Numerics {
-                struct Vector2;
-                
-            } /* Numerics */
-        } /* Foundation */
-    } /* Windows */
-} /* ABI */
-
-
-#ifndef DEF___FIReference_1_Windows__CFoundation__CNumerics__CVector2_USE
-#define DEF___FIReference_1_Windows__CFoundation__CNumerics__CVector2_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation {
-template <>
-struct __declspec(uuid("48f6a69e-8465-57ae-9400-9764087f65ad"))
-IReference<struct ABI::Windows::Foundation::Numerics::Vector2> : IReference_impl<struct ABI::Windows::Foundation::Numerics::Vector2> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.IReference`1<Windows.Foundation.Numerics.Vector2>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef IReference<struct ABI::Windows::Foundation::Numerics::Vector2> __FIReference_1_Windows__CFoundation__CNumerics__CVector2_t;
-#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2 ABI::Windows::Foundation::__FIReference_1_Windows__CFoundation__CNumerics__CVector2_t
-/* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2 ABI::Windows::Foundation::IReference<ABI::Windows::Foundation::Numerics::Vector2>
-//#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2_t ABI::Windows::Foundation::IReference<ABI::Windows::Foundation::Numerics::Vector2>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FIReference_1_Windows__CFoundation__CNumerics__CVector2_USE */
-
-
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    class ScrollAnimationStartingEventArgs;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnimationStartingEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnimationStartingEventArgs_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    interface IScrollAnimationStartingEventArgs;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnimationStartingEventArgs ABI::Microsoft::UI::Xaml::Controls::IScrollAnimationStartingEventArgs
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnimationStartingEventArgs_FWD_DEFINED__
-
-
-
-#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs_USE
-#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation {
-template <>
-struct __declspec(uuid("02b0dedb-37a8-599e-afa8-2a7cf6f3d529"))
-ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*,ABI::Microsoft::UI::Xaml::Controls::ScrollAnimationStartingEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::ScrollAnimationStartingEventArgs*, ABI::Microsoft::UI::Xaml::Controls::IScrollAnimationStartingEventArgs*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.Primitives.Scroller, Microsoft.UI.Xaml.Controls.ScrollAnimationStartingEventArgs>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*,ABI::Microsoft::UI::Xaml::Controls::ScrollAnimationStartingEventArgs*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs_t;
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs_t
-/* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*,ABI::Microsoft::UI::Xaml::Controls::IScrollAnimationStartingEventArgs*>
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*,ABI::Microsoft::UI::Xaml::Controls::IScrollAnimationStartingEventArgs*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs_USE */
-
-
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    class ZoomAnimationStartingEventArgs;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomAnimationStartingEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomAnimationStartingEventArgs_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    interface IZoomAnimationStartingEventArgs;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomAnimationStartingEventArgs ABI::Microsoft::UI::Xaml::Controls::IZoomAnimationStartingEventArgs
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomAnimationStartingEventArgs_FWD_DEFINED__
-
-
-
-#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs_USE
-#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation {
-template <>
-struct __declspec(uuid("25af49c0-278a-59f2-88ee-497b54eb5766"))
-ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*,ABI::Microsoft::UI::Xaml::Controls::ZoomAnimationStartingEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::ZoomAnimationStartingEventArgs*, ABI::Microsoft::UI::Xaml::Controls::IZoomAnimationStartingEventArgs*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.Primitives.Scroller, Microsoft.UI.Xaml.Controls.ZoomAnimationStartingEventArgs>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*,ABI::Microsoft::UI::Xaml::Controls::ZoomAnimationStartingEventArgs*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs_t;
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs_t
-/* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*,ABI::Microsoft::UI::Xaml::Controls::IZoomAnimationStartingEventArgs*>
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*,ABI::Microsoft::UI::Xaml::Controls::IZoomAnimationStartingEventArgs*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs_USE */
-
-
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    class ScrollCompletedEventArgs;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollCompletedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollCompletedEventArgs_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    interface IScrollCompletedEventArgs;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollCompletedEventArgs ABI::Microsoft::UI::Xaml::Controls::IScrollCompletedEventArgs
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollCompletedEventArgs_FWD_DEFINED__
-
-
-
-#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs_USE
-#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation {
-template <>
-struct __declspec(uuid("ab9a89db-b400-59b2-91a8-c66caf276b86"))
-ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*,ABI::Microsoft::UI::Xaml::Controls::ScrollCompletedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::ScrollCompletedEventArgs*, ABI::Microsoft::UI::Xaml::Controls::IScrollCompletedEventArgs*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.Primitives.Scroller, Microsoft.UI.Xaml.Controls.ScrollCompletedEventArgs>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*,ABI::Microsoft::UI::Xaml::Controls::ScrollCompletedEventArgs*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs_t;
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs_t
-/* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*,ABI::Microsoft::UI::Xaml::Controls::IScrollCompletedEventArgs*>
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*,ABI::Microsoft::UI::Xaml::Controls::IScrollCompletedEventArgs*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs_USE */
-
-
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    class ZoomCompletedEventArgs;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomCompletedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomCompletedEventArgs_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    interface IZoomCompletedEventArgs;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomCompletedEventArgs ABI::Microsoft::UI::Xaml::Controls::IZoomCompletedEventArgs
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomCompletedEventArgs_FWD_DEFINED__
-
-
-
-#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs_USE
-#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation {
-template <>
-struct __declspec(uuid("4a430598-f7d7-58f8-ad33-84c0bec17591"))
-ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*,ABI::Microsoft::UI::Xaml::Controls::ZoomCompletedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::ZoomCompletedEventArgs*, ABI::Microsoft::UI::Xaml::Controls::IZoomCompletedEventArgs*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.Primitives.Scroller, Microsoft.UI.Xaml.Controls.ZoomCompletedEventArgs>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*,ABI::Microsoft::UI::Xaml::Controls::ZoomCompletedEventArgs*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs_t;
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs_t
-/* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*,ABI::Microsoft::UI::Xaml::Controls::IZoomCompletedEventArgs*>
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*,ABI::Microsoft::UI::Xaml::Controls::IZoomCompletedEventArgs*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs_USE */
-
-
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    class ScrollerBringingIntoViewEventArgs;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerBringingIntoViewEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerBringingIntoViewEventArgs_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    interface IScrollerBringingIntoViewEventArgs;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerBringingIntoViewEventArgs ABI::Microsoft::UI::Xaml::Controls::IScrollerBringingIntoViewEventArgs
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerBringingIntoViewEventArgs_FWD_DEFINED__
-
-
-
-#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs_USE
-#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation {
-template <>
-struct __declspec(uuid("4f7775ff-4d55-5931-b9d4-5ea8a085db4a"))
-ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*,ABI::Microsoft::UI::Xaml::Controls::ScrollerBringingIntoViewEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::ScrollerBringingIntoViewEventArgs*, ABI::Microsoft::UI::Xaml::Controls::IScrollerBringingIntoViewEventArgs*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.Primitives.Scroller, Microsoft.UI.Xaml.Controls.ScrollerBringingIntoViewEventArgs>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*,ABI::Microsoft::UI::Xaml::Controls::ScrollerBringingIntoViewEventArgs*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs_t;
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs_t
-/* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*,ABI::Microsoft::UI::Xaml::Controls::IScrollerBringingIntoViewEventArgs*>
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*,ABI::Microsoft::UI::Xaml::Controls::IScrollerBringingIntoViewEventArgs*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs_USE */
-
-
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    class ScrollerAnchorRequestedEventArgs;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerAnchorRequestedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerAnchorRequestedEventArgs_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    interface IScrollerAnchorRequestedEventArgs;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerAnchorRequestedEventArgs ABI::Microsoft::UI::Xaml::Controls::IScrollerAnchorRequestedEventArgs
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerAnchorRequestedEventArgs_FWD_DEFINED__
-
-
-
-#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs_USE
-#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation {
-template <>
-struct __declspec(uuid("6ea685cf-8d8a-5bdc-8762-6476809764f7"))
-ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*,ABI::Microsoft::UI::Xaml::Controls::ScrollerAnchorRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*, ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::ScrollerAnchorRequestedEventArgs*, ABI::Microsoft::UI::Xaml::Controls::IScrollerAnchorRequestedEventArgs*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.Primitives.Scroller, Microsoft.UI.Xaml.Controls.ScrollerAnchorRequestedEventArgs>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::Scroller*,ABI::Microsoft::UI::Xaml::Controls::ScrollerAnchorRequestedEventArgs*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs_t;
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs_t
-/* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*,ABI::Microsoft::UI::Xaml::Controls::IScrollerAnchorRequestedEventArgs*>
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller*,ABI::Microsoft::UI::Xaml::Controls::IScrollerAnchorRequestedEventArgs*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs_USE */
-
-
-
 
 #ifndef DEF___FIReference_1_boolean_USE
 #define DEF___FIReference_1_boolean_USE
@@ -4825,32 +4915,6 @@ namespace ABI {
 #endif // ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionPropertySet_FWD_DEFINED__
 
 
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Composition {
-                class Visual;
-            } /* Composition */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CComposition_CIVisual_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CComposition_CIVisual_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Composition {
-                interface IVisual;
-            } /* Composition */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CComposition_CIVisual ABI::Microsoft::UI::Composition::IVisual
-
-#endif // ____x_ABI_CMicrosoft_CUI_CComposition_CIVisual_FWD_DEFINED__
-
-
 
 
 
@@ -4917,20 +4981,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIAutoSuggestBox_FWD_DEFINED__
 
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    
-                    typedef enum ChainingMode : int ChainingMode;
-                    
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
 
 namespace ABI {
     namespace Microsoft {
@@ -5024,20 +5074,6 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Controls {
-                    
-                    typedef enum ContentOrientation : int ContentOrientation;
-                    
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
                     class Control;
                 } /* Controls */
             } /* Xaml */
@@ -5081,6 +5117,24 @@ namespace ABI {
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIInsertionPanel_FWD_DEFINED__
 
 
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnchorProvider_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnchorProvider_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    interface IScrollAnchorProvider;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnchorProvider ABI::Microsoft::UI::Xaml::Controls::IScrollAnchorProvider
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnchorProvider_FWD_DEFINED__
+
+
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -5117,34 +5171,6 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     
-                    typedef enum InputKind : unsigned int InputKind;
-                    
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    
-                    typedef enum InteractionState : int InteractionState;
-                    
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    
                     typedef enum LightDismissOverlayMode : int LightDismissOverlayMode;
                     
                 } /* Controls */
@@ -5167,13 +5193,71 @@ namespace ABI {
     } /* Microsoft */
 } /* ABI */
 
+
+
 namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Xaml {
                 namespace Controls {
                     
-                    typedef enum RailingMode : int RailingMode;
+                    typedef enum ScrollingChainMode : int ScrollingChainMode;
+                    
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    
+                    typedef enum ScrollingContentOrientation : int ScrollingContentOrientation;
+                    
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    
+                    typedef enum ScrollingInputKinds : unsigned int ScrollingInputKinds;
+                    
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    
+                    typedef enum ScrollingInteractionState : int ScrollingInteractionState;
+                    
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    
+                    typedef enum ScrollingRailMode : int ScrollingRailMode;
                     
                 } /* Controls */
             } /* Xaml */
@@ -5189,7 +5273,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     
-                    typedef struct ScrollInfo ScrollInfo;
+                    typedef enum ScrollingScrollMode : int ScrollingScrollMode;
                     
                 } /* Controls */
             } /* Xaml */
@@ -5202,8 +5286,40 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Controls {
+                    class ScrollingScrollOptions;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollOptions_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollOptions_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    interface IScrollingScrollOptions;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollOptions ABI::Microsoft::UI::Xaml::Controls::IScrollingScrollOptions
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollOptions_FWD_DEFINED__
+
+
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
                     
-                    typedef enum ScrollMode : int ScrollMode;
+                    typedef enum ScrollingZoomMode : int ScrollingZoomMode;
                     
                 } /* Controls */
             } /* Xaml */
@@ -5216,31 +5332,29 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Controls {
-                    class ScrollOptions;
+                    class ScrollingZoomOptions;
                 } /* Controls */
             } /* Xaml */
         } /* UI */
     } /* Microsoft */
 } /* ABI */
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollOptions_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollOptions_FWD_DEFINED__
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomOptions_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomOptions_FWD_DEFINED__
 namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Xaml {
                 namespace Controls {
-                    interface IScrollOptions;
+                    interface IScrollingZoomOptions;
                 } /* Controls */
             } /* Xaml */
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollOptions ABI::Microsoft::UI::Xaml::Controls::IScrollOptions
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomOptions ABI::Microsoft::UI::Xaml::Controls::IScrollingZoomOptions
 
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollOptions_FWD_DEFINED__
-
-
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomOptions_FWD_DEFINED__
 
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CISelectionChangedEventHandler_FWD_DEFINED__
@@ -5259,66 +5373,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CISelectionChangedEventHandler ABI::Microsoft::UI::Xaml::Controls::ISelectionChangedEventHandler
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CISelectionChangedEventHandler_FWD_DEFINED__
-
-
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    
-                    typedef struct ZoomInfo ZoomInfo;
-                    
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    
-                    typedef enum ZoomMode : int ZoomMode;
-                    
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    class ZoomOptions;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomOptions_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomOptions_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    interface IZoomOptions;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomOptions ABI::Microsoft::UI::Xaml::Controls::IZoomOptions
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomOptions_FWD_DEFINED__
 
 
 
@@ -5590,7 +5644,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBrush ABI::Microsoft::UI::Xaml::Media::IBrush
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBrush_FWD_DEFINED__
-
 
 
 
@@ -6212,6 +6265,8 @@ namespace ABI {
 
 
 
+
+
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -6567,6 +6622,21 @@ namespace ABI {
                 namespace Controls {
                     namespace Primitives {
                         class GridViewItemTemplateSettings;
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        class InfoBarPanel;
                     } /* Primitives */
                 } /* Controls */
             } /* Xaml */
@@ -6970,6 +7040,7 @@ namespace ABI {
 } /* ABI */
 
 
+
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -6983,7 +7054,6 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-
 
 
 
@@ -7282,6 +7352,14 @@ namespace ABI {
                             CornerRadiusToThicknessConverterKind_FilterTopAndBottomFromRight = 1,
                             CornerRadiusToThicknessConverterKind_FilterLeftAndRightFromTop = 2,
                             CornerRadiusToThicknessConverterKind_FilterLeftAndRightFromBottom = 3,
+                            CornerRadiusToThicknessConverterKind_FilterTopFromTopLeft = 4,
+                            CornerRadiusToThicknessConverterKind_FilterTopFromTopRight = 5,
+                            CornerRadiusToThicknessConverterKind_FilterRightFromTopRight = 6,
+                            CornerRadiusToThicknessConverterKind_FilterRightFromBottomRight = 7,
+                            CornerRadiusToThicknessConverterKind_FilterBottomFromBottomRight = 8,
+                            CornerRadiusToThicknessConverterKind_FilterBottomFromBottomLeft = 9,
+                            CornerRadiusToThicknessConverterKind_FilterLeftFromBottomLeft = 10,
+                            CornerRadiusToThicknessConverterKind_FilterLeftFromTopLeft = 11,
                         };
                         
                     } /* Primitives */
@@ -7578,15 +7656,18 @@ namespace ABI {
  *
  * Struct Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointsAlignment
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  */
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [v1_enum, version] */
+                        /* [v1_enum, version, experimental] */
                         enum ScrollSnapPointsAlignment : int
                         {
                             ScrollSnapPointsAlignment_Near = 0,
@@ -7600,6 +7681,7 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -9745,8 +9827,8 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("04F7ECA4-89C2-5731-AFF9-6B66B0A0C01E"), exclusiveto] */
-                        MIDL_INTERFACE("04F7ECA4-89C2-5731-AFF9-6B66B0A0C01E")
+                        /* [object, version, uuid("B36AA8AE-166E-5CA5-93D2-95E9907C1222"), exclusiveto] */
+                        MIDL_INTERFACE("B36AA8AE-166E-5CA5-93D2-95E9907C1222")
                         ICornerRadiusToThicknessConverter : public IInspectable
                         {
                         public:
@@ -9755,6 +9837,12 @@ namespace ABI {
                                 ) = 0;
                             /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_ConversionKind(
                                 /* [in] */ABI::Microsoft::UI::Xaml::Controls::Primitives::CornerRadiusToThicknessConverterKind value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Multiplier(
+                                /* [retval, out] */DOUBLE * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Multiplier(
+                                /* [in] */DOUBLE value
                                 ) = 0;
                             
                         };
@@ -9789,12 +9877,15 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("6ACE137E-DA86-5E4C-AC5C-94C176221C0A"), exclusiveto] */
-                        MIDL_INTERFACE("6ACE137E-DA86-5E4C-AC5C-94C176221C0A")
+                        /* [object, version, uuid("92AD9D36-5483-5258-A43B-4356443087F1"), exclusiveto] */
+                        MIDL_INTERFACE("92AD9D36-5483-5258-A43B-4356443087F1")
                         ICornerRadiusToThicknessConverterStatics : public IInspectable
                         {
                         public:
                             /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ConversionKindProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_MultiplierProperty(
                                 /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
                                 ) = 0;
                             
@@ -10412,61 +10503,6 @@ namespace ABI {
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBaseOverrides;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBaseOverrides_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Controls.Primitives.IFlyoutBasePrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IFlyoutBasePrivate[] = L"Microsoft.UI.Xaml.Controls.Primitives.IFlyoutBasePrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        /* [object, uuid("1E299B54-C5A9-59C3-8C76-3B0C17F6BA55"), contract] */
-                        MIDL_INTERFACE("1E299B54-C5A9-59C3-8C76-3B0C17F6BA55")
-                        IFlyoutBasePrivate : public IInspectable
-                        {
-                        public:
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_UsePickerFlyoutTheme(
-                                /* [retval, out] */::boolean * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_UsePickerFlyoutTheme(
-                                /* [in] */::boolean value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_IsLightDismissOverlayEnabled(
-                                /* [retval, out] */::boolean * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_IsLightDismissOverlayEnabled(
-                                /* [in] */::boolean value
-                                ) = 0;
-                            virtual HRESULT STDMETHODCALLTYPE PlaceFlyoutForDateTimePicker(
-                                /* [in] */ABI::Windows::Foundation::Point point
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IFlyoutBasePrivate=_uuidof(IFlyoutBasePrivate);
-                        
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -11144,6 +11180,165 @@ namespace ABI {
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIGridViewItemTemplateSettings;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIGridViewItemTemplateSettings_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Controls.Primitives.IInfoBarPanel
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.InfoBarPanel
+ *
+ *
+ */
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IInfoBarPanel[] = L"Microsoft.UI.Xaml.Controls.Primitives.IInfoBarPanel";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        /* [object, version, uuid("4D2FD5FE-CB75-52FF-B57F-A992912383CC"), exclusiveto] */
+                        MIDL_INTERFACE("4D2FD5FE-CB75-52FF-B57F-A992912383CC")
+                        IInfoBarPanel : public IInspectable
+                        {
+                        public:
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalOrientationPadding(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Thickness * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_HorizontalOrientationPadding(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Thickness value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalOrientationPadding(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Thickness * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_VerticalOrientationPadding(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Thickness value
+                                ) = 0;
+                            
+                        };
+
+                        extern MIDL_CONST_ID IID & IID_IInfoBarPanel=_uuidof(IInfoBarPanel);
+                        
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_INTERFACE_DEFINED__) */
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Controls.Primitives.IInfoBarPanelFactory
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.InfoBarPanel
+ *
+ *
+ */
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IInfoBarPanelFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IInfoBarPanelFactory";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        /* [object, version, uuid("00D1A8C5-F631-564A-8E9C-7C5CCAD238DE"), exclusiveto] */
+                        MIDL_INTERFACE("00D1A8C5-F631-564A-8E9C-7C5CCAD238DE")
+                        IInfoBarPanelFactory : public IInspectable
+                        {
+                        public:
+                            virtual HRESULT STDMETHODCALLTYPE CreateInstance(
+                                /* [in] */IInspectable * baseInterface,
+                                /* [out] */IInspectable * * innerInterface,
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IInfoBarPanel * * value
+                                ) = 0;
+                            
+                        };
+
+                        extern MIDL_CONST_ID IID & IID_IInfoBarPanelFactory=_uuidof(IInfoBarPanelFactory);
+                        
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_INTERFACE_DEFINED__) */
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Controls.Primitives.IInfoBarPanelStatics
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.InfoBarPanel
+ *
+ *
+ */
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IInfoBarPanelStatics[] = L"Microsoft.UI.Xaml.Controls.Primitives.IInfoBarPanelStatics";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        /* [object, version, uuid("E0F19305-B392-5FA6-9670-895895A067FF"), exclusiveto] */
+                        MIDL_INTERFACE("E0F19305-B392-5FA6-9670-895895A067FF")
+                        IInfoBarPanelStatics : public IInspectable
+                        {
+                        public:
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalOrientationPaddingProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalOrientationPaddingProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            virtual HRESULT STDMETHODCALLTYPE SetHorizontalOrientationMargin(
+                                /* [in] */ABI::Microsoft::UI::Xaml::IDependencyObject * object,
+                                /* [in] */ABI::Microsoft::UI::Xaml::Thickness value
+                                ) = 0;
+                            virtual HRESULT STDMETHODCALLTYPE GetHorizontalOrientationMargin(
+                                /* [in] */ABI::Microsoft::UI::Xaml::IDependencyObject * object,
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Thickness * result
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalOrientationMarginProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            virtual HRESULT STDMETHODCALLTYPE SetVerticalOrientationMargin(
+                                /* [in] */ABI::Microsoft::UI::Xaml::IDependencyObject * object,
+                                /* [in] */ABI::Microsoft::UI::Xaml::Thickness value
+                                ) = 0;
+                            virtual HRESULT STDMETHODCALLTYPE GetVerticalOrientationMargin(
+                                /* [in] */ABI::Microsoft::UI::Xaml::IDependencyObject * object,
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Thickness * result
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalOrientationMarginProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            
+                        };
+
+                        extern MIDL_CONST_ID IID & IID_IInfoBarPanelStatics=_uuidof(IInfoBarPanelStatics);
+                        
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_INTERFACE_DEFINED__) */
 
 
 /*
@@ -13643,10 +13838,13 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepe
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IRepeatedScrollSnapPoint
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.RepeatedScrollSnapPoint
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPoint_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPoint_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IRepeatedScrollSnapPoint[] = L"Microsoft.UI.Xaml.Controls.Primitives.IRepeatedScrollSnapPoint";
@@ -13656,7 +13854,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("5828FB51-8EBB-596D-A871-50063479362D"), exclusiveto] */
+                        /* [object, version, uuid("5828FB51-8EBB-596D-A871-50063479362D"), experimental, exclusiveto] */
                         MIDL_INTERFACE("5828FB51-8EBB-596D-A871-50063479362D")
                         IRepeatedScrollSnapPoint : public IInspectable
                         {
@@ -13687,16 +13885,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPoint;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPoint_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IRepeatedScrollSnapPointFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.RepeatedScrollSnapPoint
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPointFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPointFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IRepeatedScrollSnapPointFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IRepeatedScrollSnapPointFactory";
@@ -13706,7 +13908,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("F2FD8403-679E-5C31-B431-72A0E0014E6A"), exclusiveto] */
+                        /* [object, version, uuid("F2FD8403-679E-5C31-B431-72A0E0014E6A"), experimental, exclusiveto] */
                         MIDL_INTERFACE("F2FD8403-679E-5C31-B431-72A0E0014E6A")
                         IRepeatedScrollSnapPointFactory : public IInspectable
                         {
@@ -13735,16 +13937,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPointFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPointFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IRepeatedZoomSnapPoint
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.RepeatedZoomSnapPoint
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPoint_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPoint_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IRepeatedZoomSnapPoint[] = L"Microsoft.UI.Xaml.Controls.Primitives.IRepeatedZoomSnapPoint";
@@ -13754,7 +13960,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("1FA6DBBE-5E11-5D32-873B-C92B1D171538"), exclusiveto] */
+                        /* [object, version, uuid("1FA6DBBE-5E11-5D32-873B-C92B1D171538"), experimental, exclusiveto] */
                         MIDL_INTERFACE("1FA6DBBE-5E11-5D32-873B-C92B1D171538")
                         IRepeatedZoomSnapPoint : public IInspectable
                         {
@@ -13785,16 +13991,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPoint;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPoint_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IRepeatedZoomSnapPointFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.RepeatedZoomSnapPoint
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPointFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPointFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IRepeatedZoomSnapPointFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IRepeatedZoomSnapPointFactory";
@@ -13804,7 +14014,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("7D032A7C-D91C-5660-B1C2-B36E8810AC65"), exclusiveto] */
+                        /* [object, version, uuid("7D032A7C-D91C-5660-B1C2-B36E8810AC65"), experimental, exclusiveto] */
                         MIDL_INTERFACE("7D032A7C-D91C-5660-B1C2-B36E8810AC65")
                         IRepeatedZoomSnapPointFactory : public IInspectable
                         {
@@ -13832,6 +14042,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPointFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPointFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -13958,7 +14169,10 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScro
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollController
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollController[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollController";
@@ -13968,12 +14182,12 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("641B7AFB-3C4E-5D3D-815B-A45C8D68789F")] */
-                        MIDL_INTERFACE("641B7AFB-3C4E-5D3D-815B-A45C8D68789F")
+                        /* [object, version, uuid("C8C5E259-0692-5B18-AC47-5259D25F9FEB"), experimental] */
+                        MIDL_INTERFACE("C8C5E259-0692-5B18-AC47-5259D25F9FEB")
                         IScrollController : public IInspectable
                         {
                         public:
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_AreInteractionsAllowed(
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_AreScrollControllerInteractionsAllowed(
                                 /* [retval, out] */::boolean * value
                                 ) = 0;
                             /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_AreScrollerInteractionsAllowed(
@@ -13982,13 +14196,13 @@ namespace ABI {
                             /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_IsInteracting(
                                 /* [retval, out] */::boolean * value
                                 ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_IsInteractionVisualRailEnabled(
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_IsInteractionElementRailEnabled(
                                 /* [retval, out] */::boolean * value
                                 ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_InteractionVisual(
-                                /* [retval, out] */ABI::Microsoft::UI::Composition::IVisual * * value
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_InteractionElement(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IUIElement * * value
                                 ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_InteractionVisualScrollOrientation(
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_InteractionElementScrollOrientation(
                                 /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::Orientation * value
                                 ) = 0;
                             virtual HRESULT STDMETHODCALLTYPE SetExpressionAnimationSources(
@@ -13999,7 +14213,7 @@ namespace ABI {
                                 /* [in] */HSTRING multiplierPropertyName
                                 ) = 0;
                             virtual HRESULT STDMETHODCALLTYPE SetScrollMode(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollMode scrollMode
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollingScrollMode scrollMode
                                 ) = 0;
                             virtual HRESULT STDMETHODCALLTYPE SetValues(
                                 /* [in] */DOUBLE minOffset,
@@ -14008,13 +14222,13 @@ namespace ABI {
                                 /* [in] */DOUBLE viewport
                                 ) = 0;
                             virtual HRESULT STDMETHODCALLTYPE GetScrollAnimation(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollInfo info,
+                                /* [in] */INT32 correlationId,
                                 /* [in] */ABI::Windows::Foundation::Numerics::Vector2 currentPosition,
                                 /* [in] */ABI::Microsoft::UI::Composition::ICompositionAnimation * defaultAnimation,
                                 /* [retval, out] */ABI::Microsoft::UI::Composition::ICompositionAnimation * * result
                                 ) = 0;
-                            virtual HRESULT STDMETHODCALLTYPE OnScrollCompleted(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollInfo info
+                            virtual HRESULT STDMETHODCALLTYPE NotifyScrollCompleted(
+                                /* [in] */INT32 correlationId
                                 ) = 0;
                             /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_ScrollToRequested(
                                 /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollToRequestedEventArgs * handler,
@@ -14030,11 +14244,11 @@ namespace ABI {
                             /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_ScrollByRequested(
                                 /* [in] */EventRegistrationToken token
                                 ) = 0;
-                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_ScrollFromRequested(
-                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs * handler,
+                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_AddScrollVelocityRequested(
+                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs * handler,
                                 /* [retval, out] */EventRegistrationToken * token
                                 ) = 0;
-                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_ScrollFromRequested(
+                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_AddScrollVelocityRequested(
                                 /* [in] */EventRegistrationToken token
                                 ) = 0;
                             /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_InteractionRequested(
@@ -14065,16 +14279,121 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerAddScrollVelocityRequestedEventArgs
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerAddScrollVelocityRequestedEventArgs
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerAddScrollVelocityRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerAddScrollVelocityRequestedEventArgs";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        /* [object, version, uuid("317BBC1A-0CF7-5815-A8A7-BD7E6EEF966A"), experimental, exclusiveto] */
+                        MIDL_INTERFACE("317BBC1A-0CF7-5815-A8A7-BD7E6EEF966A")
+                        IScrollControllerAddScrollVelocityRequestedEventArgs : public IInspectable
+                        {
+                        public:
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_OffsetVelocity(
+                                /* [retval, out] */FLOAT * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_InertiaDecayRate(
+                                /* [retval, out] */__FIReference_1_float * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_CorrelationId(
+                                /* [retval, out] */INT32 * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_CorrelationId(
+                                /* [in] */INT32 value
+                                ) = 0;
+                            
+                        };
+
+                        extern MIDL_CONST_ID IID & IID_IScrollControllerAddScrollVelocityRequestedEventArgs=_uuidof(IScrollControllerAddScrollVelocityRequestedEventArgs);
+                        
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerAddScrollVelocityRequestedEventArgsFactory
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerAddScrollVelocityRequestedEventArgs
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerAddScrollVelocityRequestedEventArgsFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerAddScrollVelocityRequestedEventArgsFactory";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        /* [object, version, uuid("9221D193-6F82-5E21-AACC-0B1460818AB5"), experimental, exclusiveto] */
+                        MIDL_INTERFACE("9221D193-6F82-5E21-AACC-0B1460818AB5")
+                        IScrollControllerAddScrollVelocityRequestedEventArgsFactory : public IInspectable
+                        {
+                        public:
+                            virtual HRESULT STDMETHODCALLTYPE CreateInstance(
+                                /* [in] */FLOAT offsetVelocity,
+                                /* [in] */__FIReference_1_float * inertiaDecayRate,
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerAddScrollVelocityRequestedEventArgs * * value
+                                ) = 0;
+                            
+                        };
+
+                        extern MIDL_CONST_ID IID & IID_IScrollControllerAddScrollVelocityRequestedEventArgsFactory=_uuidof(IScrollControllerAddScrollVelocityRequestedEventArgsFactory);
+                        
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerInteractionRequestedEventArgs
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerInteractionRequestedEventArgs
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerInteractionRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerInteractionRequestedEventArgs";
@@ -14084,7 +14403,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("9D39B918-9C63-5154-92FB-59CB928E8FAE"), exclusiveto] */
+                        /* [object, version, uuid("9D39B918-9C63-5154-92FB-59CB928E8FAE"), experimental, exclusiveto] */
                         MIDL_INTERFACE("9D39B918-9C63-5154-92FB-59CB928E8FAE")
                         IScrollControllerInteractionRequestedEventArgs : public IInspectable
                         {
@@ -14112,16 +14431,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerInteractionRequestedEventArgsFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerInteractionRequestedEventArgs
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgsFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgsFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerInteractionRequestedEventArgsFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerInteractionRequestedEventArgsFactory";
@@ -14131,7 +14454,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("C74FE9BA-8660-59C9-889A-12E292032B89"), exclusiveto] */
+                        /* [object, version, uuid("C74FE9BA-8660-59C9-889A-12E292032B89"), experimental, exclusiveto] */
                         MIDL_INTERFACE("C74FE9BA-8660-59C9-889A-12E292032B89")
                         IScrollControllerInteractionRequestedEventArgsFactory : public IInspectable
                         {
@@ -14154,16 +14477,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgsFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgsFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollByRequestedEventArgs
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollByRequestedEventArgs
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerScrollByRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollByRequestedEventArgs";
@@ -14173,8 +14500,8 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("38CF8BD7-5BB2-575D-9C83-9B5E23D2363D"), exclusiveto] */
-                        MIDL_INTERFACE("38CF8BD7-5BB2-575D-9C83-9B5E23D2363D")
+                        /* [object, version, uuid("E7F305FA-4073-5D88-8BF1-AE4ECB9208BF"), experimental, exclusiveto] */
+                        MIDL_INTERFACE("E7F305FA-4073-5D88-8BF1-AE4ECB9208BF")
                         IScrollControllerScrollByRequestedEventArgs : public IInspectable
                         {
                         public:
@@ -14182,13 +14509,13 @@ namespace ABI {
                                 /* [retval, out] */DOUBLE * value
                                 ) = 0;
                             /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Options(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::IScrollOptions * * value
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::IScrollingScrollOptions * * value
                                 ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Info(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollInfo * value
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_CorrelationId(
+                                /* [retval, out] */INT32 * value
                                 ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Info(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollInfo value
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_CorrelationId(
+                                /* [in] */INT32 value
                                 ) = 0;
                             
                         };
@@ -14204,16 +14531,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgs_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollByRequestedEventArgsFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollByRequestedEventArgs
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgsFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgsFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerScrollByRequestedEventArgsFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollByRequestedEventArgsFactory";
@@ -14223,14 +14554,14 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("A690796D-B6C8-550E-B7BE-40C581684639"), exclusiveto] */
-                        MIDL_INTERFACE("A690796D-B6C8-550E-B7BE-40C581684639")
+                        /* [object, version, uuid("7ECF01A7-EF3F-5AF9-93B4-38BC1BAFD335"), experimental, exclusiveto] */
+                        MIDL_INTERFACE("7ECF01A7-EF3F-5AF9-93B4-38BC1BAFD335")
                         IScrollControllerScrollByRequestedEventArgsFactory : public IInspectable
                         {
                         public:
                             virtual HRESULT STDMETHODCALLTYPE CreateInstance(
                                 /* [in] */DOUBLE offsetDelta,
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IScrollOptions * options,
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IScrollingScrollOptions * options,
                                 /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerScrollByRequestedEventArgs * * value
                                 ) = 0;
                             
@@ -14247,109 +14578,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgsFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgsFactory_INTERFACE_DEFINED__) */
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollFromRequestedEventArgs
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollFromRequestedEventArgs
- *
- *
- */
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerScrollFromRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollFromRequestedEventArgs";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        /* [object, version, uuid("CFB817EB-2A20-550B-97BC-BD15BADA69EC"), exclusiveto] */
-                        MIDL_INTERFACE("CFB817EB-2A20-550B-97BC-BD15BADA69EC")
-                        IScrollControllerScrollFromRequestedEventArgs : public IInspectable
-                        {
-                        public:
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_OffsetVelocity(
-                                /* [retval, out] */FLOAT * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_InertiaDecayRate(
-                                /* [retval, out] */__FIReference_1_float * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Info(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollInfo * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Info(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollInfo value
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IScrollControllerScrollFromRequestedEventArgs=_uuidof(IScrollControllerScrollFromRequestedEventArgs);
-                        
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_INTERFACE_DEFINED__) */
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollFromRequestedEventArgsFactory
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollFromRequestedEventArgs
- *
- *
- */
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerScrollFromRequestedEventArgsFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollFromRequestedEventArgsFactory";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        /* [object, version, uuid("0C4F8B39-D458-51DA-B7B7-BE899D0D9835"), exclusiveto] */
-                        MIDL_INTERFACE("0C4F8B39-D458-51DA-B7B7-BE899D0D9835")
-                        IScrollControllerScrollFromRequestedEventArgsFactory : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateInstance(
-                                /* [in] */FLOAT offsetVelocity,
-                                /* [in] */__FIReference_1_float * inertiaDecayRate,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerScrollFromRequestedEventArgs * * value
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IScrollControllerScrollFromRequestedEventArgsFactory=_uuidof(IScrollControllerScrollFromRequestedEventArgsFactory);
-                        
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollToRequestedEventArgs
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollToRequestedEventArgs
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerScrollToRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollToRequestedEventArgs";
@@ -14359,8 +14601,8 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("4A87932C-A2E0-542E-87CE-ADBC284CDCF0"), exclusiveto] */
-                        MIDL_INTERFACE("4A87932C-A2E0-542E-87CE-ADBC284CDCF0")
+                        /* [object, version, uuid("73F16B99-7310-5C73-872B-276E5A9D4913"), experimental, exclusiveto] */
+                        MIDL_INTERFACE("73F16B99-7310-5C73-872B-276E5A9D4913")
                         IScrollControllerScrollToRequestedEventArgs : public IInspectable
                         {
                         public:
@@ -14368,13 +14610,13 @@ namespace ABI {
                                 /* [retval, out] */DOUBLE * value
                                 ) = 0;
                             /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Options(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::IScrollOptions * * value
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::IScrollingScrollOptions * * value
                                 ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Info(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollInfo * value
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_CorrelationId(
+                                /* [retval, out] */INT32 * value
                                 ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Info(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollInfo value
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_CorrelationId(
+                                /* [in] */INT32 value
                                 ) = 0;
                             
                         };
@@ -14390,16 +14632,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollToRequestedEventArgsFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollToRequestedEventArgs
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgsFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgsFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerScrollToRequestedEventArgsFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollToRequestedEventArgsFactory";
@@ -14409,14 +14655,14 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("CA68119D-6ADE-5164-BB13-CC36F1AC652F"), exclusiveto] */
-                        MIDL_INTERFACE("CA68119D-6ADE-5164-BB13-CC36F1AC652F")
+                        /* [object, version, uuid("01675DC4-1074-54E8-BEBB-66B03A33DA0D"), experimental, exclusiveto] */
+                        MIDL_INTERFACE("01675DC4-1074-54E8-BEBB-66B03A33DA0D")
                         IScrollControllerScrollToRequestedEventArgsFactory : public IInspectable
                         {
                         public:
                             virtual HRESULT STDMETHODCALLTYPE CreateInstance(
                                 /* [in] */DOUBLE offset,
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IScrollOptions * options,
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IScrollingScrollOptions * options,
                                 /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollControllerScrollToRequestedEventArgs * * value
                                 ) = 0;
                             
@@ -14433,6 +14679,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgsFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgsFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -14486,12 +14733,462 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScro
 
 /*
  *
+ * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenter
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenter";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        /* [object, version, uuid("225D573C-F6C9-5231-B101-06BA96F77EC1"), experimental, exclusiveto] */
+                        MIDL_INTERFACE("225D573C-F6C9-5231-B101-06BA96F77EC1")
+                        IScrollPresenter : public IInspectable
+                        {
+                        public:
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Background(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Media::IBrush * * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Background(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Media::IBrush * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Content(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IUIElement * * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Content(
+                                /* [in] */ABI::Microsoft::UI::Xaml::IUIElement * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ExpressionAnimationSources(
+                                /* [retval, out] */ABI::Microsoft::UI::Composition::ICompositionPropertySet * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalOffset(
+                                /* [retval, out] */DOUBLE * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalOffset(
+                                /* [retval, out] */DOUBLE * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ZoomFactor(
+                                /* [retval, out] */FLOAT * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ExtentWidth(
+                                /* [retval, out] */DOUBLE * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ExtentHeight(
+                                /* [retval, out] */DOUBLE * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ViewportWidth(
+                                /* [retval, out] */DOUBLE * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ViewportHeight(
+                                /* [retval, out] */DOUBLE * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ScrollableWidth(
+                                /* [retval, out] */DOUBLE * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ScrollableHeight(
+                                /* [retval, out] */DOUBLE * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ContentOrientation(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollingContentOrientation * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_ContentOrientation(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollingContentOrientation value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalScrollChainMode(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollingChainMode * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_HorizontalScrollChainMode(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollingChainMode value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalScrollChainMode(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollingChainMode * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_VerticalScrollChainMode(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollingChainMode value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalScrollRailMode(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollingRailMode * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_HorizontalScrollRailMode(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollingRailMode value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalScrollRailMode(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollingRailMode * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_VerticalScrollRailMode(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollingRailMode value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalScrollMode(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollingScrollMode * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_HorizontalScrollMode(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollingScrollMode value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalScrollMode(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollingScrollMode * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_VerticalScrollMode(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollingScrollMode value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ZoomChainMode(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollingChainMode * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_ZoomChainMode(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollingChainMode value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ZoomMode(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollingZoomMode * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_ZoomMode(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollingZoomMode value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_IgnoredInputKinds(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollingInputKinds * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_IgnoredInputKinds(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollingInputKinds value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_MinZoomFactor(
+                                /* [retval, out] */DOUBLE * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_MinZoomFactor(
+                                /* [in] */DOUBLE value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_MaxZoomFactor(
+                                /* [retval, out] */DOUBLE * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_MaxZoomFactor(
+                                /* [in] */DOUBLE value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_State(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollingInteractionState * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalScrollController(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController * * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_HorizontalScrollController(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalScrollController(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController * * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_VerticalScrollController(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalAnchorRatio(
+                                /* [retval, out] */DOUBLE * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_HorizontalAnchorRatio(
+                                /* [in] */DOUBLE value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalAnchorRatio(
+                                /* [retval, out] */DOUBLE * value
+                                ) = 0;
+                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_VerticalAnchorRatio(
+                                /* [in] */DOUBLE value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalSnapPoints(
+                                /* [retval, out] */__FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalSnapPoints(
+                                /* [retval, out] */__FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ZoomSnapPoints(
+                                /* [retval, out] */__FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase * * value
+                                ) = 0;
+                            /* [overload] */virtual HRESULT STDMETHODCALLTYPE ScrollTo(
+                                /* [in] */DOUBLE horizontalOffset,
+                                /* [in] */DOUBLE verticalOffset,
+                                /* [retval, out] */INT32 * result
+                                ) = 0;
+                            /* [overload] */virtual HRESULT STDMETHODCALLTYPE ScrollToWithOptions(
+                                /* [in] */DOUBLE horizontalOffset,
+                                /* [in] */DOUBLE verticalOffset,
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IScrollingScrollOptions * options,
+                                /* [retval, out] */INT32 * result
+                                ) = 0;
+                            /* [overload] */virtual HRESULT STDMETHODCALLTYPE ScrollBy(
+                                /* [in] */DOUBLE horizontalOffsetDelta,
+                                /* [in] */DOUBLE verticalOffsetDelta,
+                                /* [retval, out] */INT32 * result
+                                ) = 0;
+                            /* [overload] */virtual HRESULT STDMETHODCALLTYPE ScrollByWithOptions(
+                                /* [in] */DOUBLE horizontalOffsetDelta,
+                                /* [in] */DOUBLE verticalOffsetDelta,
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IScrollingScrollOptions * options,
+                                /* [retval, out] */INT32 * result
+                                ) = 0;
+                            virtual HRESULT STDMETHODCALLTYPE AddScrollVelocity(
+                                /* [in] */ABI::Windows::Foundation::Numerics::Vector2 offsetsVelocity,
+                                /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * inertiaDecayRate,
+                                /* [retval, out] */INT32 * result
+                                ) = 0;
+                            /* [overload] */virtual HRESULT STDMETHODCALLTYPE ZoomTo(
+                                /* [in] */FLOAT zoomFactor,
+                                /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
+                                /* [retval, out] */INT32 * result
+                                ) = 0;
+                            /* [overload] */virtual HRESULT STDMETHODCALLTYPE ZoomToWithOptions(
+                                /* [in] */FLOAT zoomFactor,
+                                /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IScrollingZoomOptions * options,
+                                /* [retval, out] */INT32 * result
+                                ) = 0;
+                            /* [overload] */virtual HRESULT STDMETHODCALLTYPE ZoomBy(
+                                /* [in] */FLOAT zoomFactorDelta,
+                                /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
+                                /* [retval, out] */INT32 * result
+                                ) = 0;
+                            /* [overload] */virtual HRESULT STDMETHODCALLTYPE ZoomByWithOptions(
+                                /* [in] */FLOAT zoomFactorDelta,
+                                /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IScrollingZoomOptions * options,
+                                /* [retval, out] */INT32 * result
+                                ) = 0;
+                            virtual HRESULT STDMETHODCALLTYPE AddZoomVelocity(
+                                /* [in] */FLOAT zoomFactorVelocity,
+                                /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
+                                /* [in] */__FIReference_1_float * inertiaDecayRate,
+                                /* [retval, out] */INT32 * result
+                                ) = 0;
+                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_ExtentChanged(
+                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable * handler,
+                                /* [retval, out] */EventRegistrationToken * token
+                                ) = 0;
+                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_ExtentChanged(
+                                /* [in] */EventRegistrationToken token
+                                ) = 0;
+                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_StateChanged(
+                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable * handler,
+                                /* [retval, out] */EventRegistrationToken * token
+                                ) = 0;
+                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_StateChanged(
+                                /* [in] */EventRegistrationToken token
+                                ) = 0;
+                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_ViewChanged(
+                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable * handler,
+                                /* [retval, out] */EventRegistrationToken * token
+                                ) = 0;
+                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_ViewChanged(
+                                /* [in] */EventRegistrationToken token
+                                ) = 0;
+                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_ScrollAnimationStarting(
+                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs * handler,
+                                /* [retval, out] */EventRegistrationToken * token
+                                ) = 0;
+                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_ScrollAnimationStarting(
+                                /* [in] */EventRegistrationToken token
+                                ) = 0;
+                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_ZoomAnimationStarting(
+                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs * handler,
+                                /* [retval, out] */EventRegistrationToken * token
+                                ) = 0;
+                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_ZoomAnimationStarting(
+                                /* [in] */EventRegistrationToken token
+                                ) = 0;
+                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_ScrollCompleted(
+                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs * handler,
+                                /* [retval, out] */EventRegistrationToken * token
+                                ) = 0;
+                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_ScrollCompleted(
+                                /* [in] */EventRegistrationToken token
+                                ) = 0;
+                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_ZoomCompleted(
+                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs * handler,
+                                /* [retval, out] */EventRegistrationToken * token
+                                ) = 0;
+                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_ZoomCompleted(
+                                /* [in] */EventRegistrationToken token
+                                ) = 0;
+                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_BringingIntoView(
+                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs * handler,
+                                /* [retval, out] */EventRegistrationToken * token
+                                ) = 0;
+                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_BringingIntoView(
+                                /* [in] */EventRegistrationToken token
+                                ) = 0;
+                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_AnchorRequested(
+                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs * handler,
+                                /* [retval, out] */EventRegistrationToken * token
+                                ) = 0;
+                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_AnchorRequested(
+                                /* [in] */EventRegistrationToken token
+                                ) = 0;
+                            
+                        };
+
+                        extern MIDL_CONST_ID IID & IID_IScrollPresenter=_uuidof(IScrollPresenter);
+                        
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenterFactory
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenterFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenterFactory";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        /* [object, version, uuid("9F5CDC57-D229-52B2-AEE4-37C496764EA3"), experimental, exclusiveto] */
+                        MIDL_INTERFACE("9F5CDC57-D229-52B2-AEE4-37C496764EA3")
+                        IScrollPresenterFactory : public IInspectable
+                        {
+                        public:
+                            virtual HRESULT STDMETHODCALLTYPE CreateInstance(
+                                /* [in] */IInspectable * baseInterface,
+                                /* [out] */IInspectable * * innerInterface,
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter * * value
+                                ) = 0;
+                            
+                        };
+
+                        extern MIDL_CONST_ID IID & IID_IScrollPresenterFactory=_uuidof(IScrollPresenterFactory);
+                        
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenterStatics
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenterStatics[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenterStatics";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    namespace Primitives {
+                        /* [object, version, uuid("CB3764AB-C2FD-5770-8067-2856267D26D8"), experimental, exclusiveto] */
+                        MIDL_INTERFACE("CB3764AB-C2FD-5770-8067-2856267D26D8")
+                        IScrollPresenterStatics : public IInspectable
+                        {
+                        public:
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_BackgroundProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ContentProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ContentOrientationProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalScrollChainModeProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalScrollChainModeProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalScrollRailModeProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalScrollRailModeProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalScrollModeProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalScrollModeProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ZoomChainModeProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ZoomModeProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_IgnoredInputKindsProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_MinZoomFactorProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_MaxZoomFactorProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalAnchorRatioProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalAnchorRatioProperty(
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
+                                ) = 0;
+                            
+                        };
+
+                        extern MIDL_CONST_ID IID & IID_IScrollPresenterStatics=_uuidof(IScrollPresenterStatics);
+                        
+                    } /* Primitives */
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPoint
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPoint
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPoint_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPoint_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollSnapPoint[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPoint";
@@ -14501,7 +15198,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("73D918FF-D16C-52CD-9657-E392EE08868A"), exclusiveto] */
+                        /* [object, version, uuid("73D918FF-D16C-52CD-9657-E392EE08868A"), experimental, exclusiveto] */
                         MIDL_INTERFACE("73D918FF-D16C-52CD-9657-E392EE08868A")
                         IScrollSnapPoint : public IInspectable
                         {
@@ -14523,16 +15220,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPoint;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPoint_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointBase
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointBase
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBase_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBase_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollSnapPointBase[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointBase";
@@ -14542,7 +15243,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("45D7319D-C9EB-5109-9668-FF3FC6CCDF11"), exclusiveto] */
+                        /* [object, version, uuid("45D7319D-C9EB-5109-9668-FF3FC6CCDF11"), experimental, exclusiveto] */
                         MIDL_INTERFACE("45D7319D-C9EB-5109-9668-FF3FC6CCDF11")
                         IScrollSnapPointBase : public IInspectable
                         {
@@ -14564,16 +15265,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBase;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBase_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointBaseFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointBase
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBaseFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBaseFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollSnapPointBaseFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointBaseFactory";
@@ -14583,7 +15288,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("3FA2E552-1A45-5691-99DC-6400087CBB38"), exclusiveto] */
+                        /* [object, version, uuid("3FA2E552-1A45-5691-99DC-6400087CBB38"), experimental, exclusiveto] */
                         MIDL_INTERFACE("3FA2E552-1A45-5691-99DC-6400087CBB38")
                         IScrollSnapPointBaseFactory : public IInspectable
                         {
@@ -14602,16 +15307,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBaseFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBaseFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPoint
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollSnapPointFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointFactory";
@@ -14621,7 +15330,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("39304BC7-0E54-5C06-8920-ADCF67E7C466"), exclusiveto] */
+                        /* [object, version, uuid("39304BC7-0E54-5C06-8920-ADCF67E7C466"), experimental, exclusiveto] */
                         MIDL_INTERFACE("39304BC7-0E54-5C06-8920-ADCF67E7C466")
                         IScrollSnapPointFactory : public IInspectable
                         {
@@ -14647,6 +15356,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -14718,441 +15428,6 @@ namespace ABI {
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointsInfo;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointsInfo_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Controls.Primitives.IScroller
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.Scroller
- *
- *
- */
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScroller[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScroller";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        /* [object, version, uuid("FC76B194-4EC5-5EA0-BE6A-64EC73BFA7CC"), exclusiveto] */
-                        MIDL_INTERFACE("FC76B194-4EC5-5EA0-BE6A-64EC73BFA7CC")
-                        IScroller : public IInspectable
-                        {
-                        public:
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Background(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Media::IBrush * * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Background(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Media::IBrush * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Content(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IUIElement * * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Content(
-                                /* [in] */ABI::Microsoft::UI::Xaml::IUIElement * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ExpressionAnimationSources(
-                                /* [retval, out] */ABI::Microsoft::UI::Composition::ICompositionPropertySet * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalOffset(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalOffset(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ZoomFactor(
-                                /* [retval, out] */FLOAT * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ExtentWidth(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ExtentHeight(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ViewportWidth(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ViewportHeight(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ScrollableWidth(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ScrollableHeight(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ContentOrientation(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ContentOrientation * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_ContentOrientation(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ContentOrientation value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalScrollChainingMode(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ChainingMode * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_HorizontalScrollChainingMode(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ChainingMode value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalScrollChainingMode(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ChainingMode * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_VerticalScrollChainingMode(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ChainingMode value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalScrollRailingMode(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::RailingMode * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_HorizontalScrollRailingMode(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::RailingMode value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalScrollRailingMode(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::RailingMode * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_VerticalScrollRailingMode(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::RailingMode value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalScrollMode(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollMode * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_HorizontalScrollMode(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollMode value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalScrollMode(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollMode * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_VerticalScrollMode(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ScrollMode value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ZoomChainingMode(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ChainingMode * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_ZoomChainingMode(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ChainingMode value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ZoomMode(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ZoomMode * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_ZoomMode(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ZoomMode value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_IgnoredInputKind(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::InputKind * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_IgnoredInputKind(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::InputKind value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_MinZoomFactor(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_MinZoomFactor(
-                                /* [in] */DOUBLE value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_MaxZoomFactor(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_MaxZoomFactor(
-                                /* [in] */DOUBLE value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_State(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::InteractionState * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalScrollController(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController * * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_HorizontalScrollController(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalScrollController(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController * * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_VerticalScrollController(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollController * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalAnchorRatio(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_HorizontalAnchorRatio(
-                                /* [in] */DOUBLE value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalAnchorRatio(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_VerticalAnchorRatio(
-                                /* [in] */DOUBLE value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalSnapPoints(
-                                /* [retval, out] */__FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalSnapPoints(
-                                /* [retval, out] */__FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ZoomSnapPoints(
-                                /* [retval, out] */__FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase * * value
-                                ) = 0;
-                            /* [overload] */virtual HRESULT STDMETHODCALLTYPE ScrollTo(
-                                /* [in] */DOUBLE horizontalOffset,
-                                /* [in] */DOUBLE verticalOffset,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollInfo * result
-                                ) = 0;
-                            /* [overload] */virtual HRESULT STDMETHODCALLTYPE ScrollToWithOptions(
-                                /* [in] */DOUBLE horizontalOffset,
-                                /* [in] */DOUBLE verticalOffset,
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IScrollOptions * options,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollInfo * result
-                                ) = 0;
-                            /* [overload] */virtual HRESULT STDMETHODCALLTYPE ScrollBy(
-                                /* [in] */DOUBLE horizontalOffsetDelta,
-                                /* [in] */DOUBLE verticalOffsetDelta,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollInfo * result
-                                ) = 0;
-                            /* [overload] */virtual HRESULT STDMETHODCALLTYPE ScrollByWithOptions(
-                                /* [in] */DOUBLE horizontalOffsetDelta,
-                                /* [in] */DOUBLE verticalOffsetDelta,
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IScrollOptions * options,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollInfo * result
-                                ) = 0;
-                            virtual HRESULT STDMETHODCALLTYPE ScrollFrom(
-                                /* [in] */ABI::Windows::Foundation::Numerics::Vector2 offsetsVelocity,
-                                /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * inertiaDecayRate,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ScrollInfo * result
-                                ) = 0;
-                            /* [overload] */virtual HRESULT STDMETHODCALLTYPE ZoomTo(
-                                /* [in] */FLOAT zoomFactor,
-                                /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ZoomInfo * result
-                                ) = 0;
-                            /* [overload] */virtual HRESULT STDMETHODCALLTYPE ZoomToWithOptions(
-                                /* [in] */FLOAT zoomFactor,
-                                /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IZoomOptions * options,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ZoomInfo * result
-                                ) = 0;
-                            /* [overload] */virtual HRESULT STDMETHODCALLTYPE ZoomBy(
-                                /* [in] */FLOAT zoomFactorDelta,
-                                /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ZoomInfo * result
-                                ) = 0;
-                            /* [overload] */virtual HRESULT STDMETHODCALLTYPE ZoomByWithOptions(
-                                /* [in] */FLOAT zoomFactorDelta,
-                                /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IZoomOptions * options,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ZoomInfo * result
-                                ) = 0;
-                            virtual HRESULT STDMETHODCALLTYPE ZoomFrom(
-                                /* [in] */FLOAT zoomFactorVelocity,
-                                /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
-                                /* [in] */__FIReference_1_float * inertiaDecayRate,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::ZoomInfo * result
-                                ) = 0;
-                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_ExtentChanged(
-                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable * handler,
-                                /* [retval, out] */EventRegistrationToken * token
-                                ) = 0;
-                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_ExtentChanged(
-                                /* [in] */EventRegistrationToken token
-                                ) = 0;
-                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_StateChanged(
-                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable * handler,
-                                /* [retval, out] */EventRegistrationToken * token
-                                ) = 0;
-                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_StateChanged(
-                                /* [in] */EventRegistrationToken token
-                                ) = 0;
-                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_ViewChanged(
-                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable * handler,
-                                /* [retval, out] */EventRegistrationToken * token
-                                ) = 0;
-                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_ViewChanged(
-                                /* [in] */EventRegistrationToken token
-                                ) = 0;
-                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_ScrollAnimationStarting(
-                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs * handler,
-                                /* [retval, out] */EventRegistrationToken * token
-                                ) = 0;
-                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_ScrollAnimationStarting(
-                                /* [in] */EventRegistrationToken token
-                                ) = 0;
-                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_ZoomAnimationStarting(
-                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs * handler,
-                                /* [retval, out] */EventRegistrationToken * token
-                                ) = 0;
-                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_ZoomAnimationStarting(
-                                /* [in] */EventRegistrationToken token
-                                ) = 0;
-                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_ScrollCompleted(
-                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs * handler,
-                                /* [retval, out] */EventRegistrationToken * token
-                                ) = 0;
-                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_ScrollCompleted(
-                                /* [in] */EventRegistrationToken token
-                                ) = 0;
-                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_ZoomCompleted(
-                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs * handler,
-                                /* [retval, out] */EventRegistrationToken * token
-                                ) = 0;
-                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_ZoomCompleted(
-                                /* [in] */EventRegistrationToken token
-                                ) = 0;
-                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_BringingIntoView(
-                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs * handler,
-                                /* [retval, out] */EventRegistrationToken * token
-                                ) = 0;
-                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_BringingIntoView(
-                                /* [in] */EventRegistrationToken token
-                                ) = 0;
-                            /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_AnchorRequested(
-                                /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs * handler,
-                                /* [retval, out] */EventRegistrationToken * token
-                                ) = 0;
-                            /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_AnchorRequested(
-                                /* [in] */EventRegistrationToken token
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IScroller=_uuidof(IScroller);
-                        
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_INTERFACE_DEFINED__) */
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollerFactory
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.Scroller
- *
- *
- */
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollerFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollerFactory";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        /* [object, version, uuid("6094F4DD-F93D-5636-B4B5-E938C0CB068E"), exclusiveto] */
-                        MIDL_INTERFACE("6094F4DD-F93D-5636-B4B5-E938C0CB068E")
-                        IScrollerFactory : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateInstance(
-                                /* [in] */IInspectable * baseInterface,
-                                /* [out] */IInspectable * * innerInterface,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller * * value
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IScrollerFactory=_uuidof(IScrollerFactory);
-                        
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_INTERFACE_DEFINED__) */
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollerStatics
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.Scroller
- *
- *
- */
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollerStatics[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollerStatics";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        /* [object, version, uuid("75A0D811-DF8D-5606-A3FC-7131848CFC38"), exclusiveto] */
-                        MIDL_INTERFACE("75A0D811-DF8D-5606-A3FC-7131848CFC38")
-                        IScrollerStatics : public IInspectable
-                        {
-                        public:
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_BackgroundProperty(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ContentProperty(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ContentOrientationProperty(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalScrollChainingModeProperty(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalScrollChainingModeProperty(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalScrollRailingModeProperty(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalScrollRailingModeProperty(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalScrollModeProperty(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalScrollModeProperty(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ZoomChainingModeProperty(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ZoomModeProperty(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_IgnoredInputKindProperty(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_MinZoomFactorProperty(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_MaxZoomFactorProperty(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_HorizontalAnchorRatioProperty(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_VerticalAnchorRatioProperty(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IScrollerStatics=_uuidof(IScrollerStatics);
-                        
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_INTERFACE_DEFINED__) */
 
 
 /*
@@ -15487,10 +15762,13 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISele
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.ISnapPointBase
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.SnapPointBase
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBase_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBase_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_ISnapPointBase[] = L"Microsoft.UI.Xaml.Controls.Primitives.ISnapPointBase";
@@ -15500,7 +15778,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("14ED1089-FB97-5211-8C45-C352CD8B96A1"), exclusiveto] */
+                        /* [object, version, uuid("14ED1089-FB97-5211-8C45-C352CD8B96A1"), experimental, exclusiveto] */
                         MIDL_INTERFACE("14ED1089-FB97-5211-8C45-C352CD8B96A1")
                         ISnapPointBase : public IInspectable
                         {
@@ -15519,16 +15797,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBase;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBase_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.ISnapPointBaseFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.SnapPointBase
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBaseFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBaseFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_ISnapPointBaseFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.ISnapPointBaseFactory";
@@ -15538,7 +15820,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("50266508-15F8-530A-A213-E976E04E670B"), exclusiveto] */
+                        /* [object, version, uuid("50266508-15F8-530A-A213-E976E04E670B"), experimental, exclusiveto] */
                         MIDL_INTERFACE("50266508-15F8-530A-A213-E976E04E670B")
                         ISnapPointBaseFactory : public IInspectable
                         {
@@ -15557,6 +15839,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBaseFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBaseFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -16247,10 +16530,13 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CITool
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPoint
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPoint
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPoint_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPoint_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IZoomSnapPoint[] = L"Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPoint";
@@ -16260,7 +16546,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("8101D353-8DB3-5AC6-A7F8-B18EB9C123AC"), exclusiveto] */
+                        /* [object, version, uuid("8101D353-8DB3-5AC6-A7F8-B18EB9C123AC"), experimental, exclusiveto] */
                         MIDL_INTERFACE("8101D353-8DB3-5AC6-A7F8-B18EB9C123AC")
                         IZoomSnapPoint : public IInspectable
                         {
@@ -16282,16 +16568,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPoint;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPoint_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointBase
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPointBase
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBase_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBase_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IZoomSnapPointBase[] = L"Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointBase";
@@ -16301,7 +16591,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("C6D08756-0860-5C2D-ABEC-6EB4AA4B53D7"), exclusiveto] */
+                        /* [object, version, uuid("C6D08756-0860-5C2D-ABEC-6EB4AA4B53D7"), experimental, exclusiveto] */
                         MIDL_INTERFACE("C6D08756-0860-5C2D-ABEC-6EB4AA4B53D7")
                         IZoomSnapPointBase : public IInspectable
                         {
@@ -16320,16 +16610,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBase;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBase_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointBaseFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPointBase
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBaseFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBaseFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IZoomSnapPointBaseFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointBaseFactory";
@@ -16339,7 +16633,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("2C689EEA-B6CF-5024-847B-589355D5A2FA"), exclusiveto] */
+                        /* [object, version, uuid("2C689EEA-B6CF-5024-847B-589355D5A2FA"), experimental, exclusiveto] */
                         MIDL_INTERFACE("2C689EEA-B6CF-5024-847B-589355D5A2FA")
                         IZoomSnapPointBaseFactory : public IInspectable
                         {
@@ -16358,16 +16652,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBaseFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBaseFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPoint
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IZoomSnapPointFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointFactory";
@@ -16377,7 +16675,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        /* [object, version, uuid("0B3B5418-BFF6-5A9E-B734-B68ADF49F775"), exclusiveto] */
+                        /* [object, version, uuid("0B3B5418-BFF6-5A9E-B734-B68ADF49F775"), experimental, exclusiveto] */
                         MIDL_INTERFACE("0B3B5418-BFF6-5A9E-B734-B68ADF49F775")
                         IZoomSnapPointFactory : public IInspectable
                         {
@@ -16402,6 +16700,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -17044,6 +17343,27 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
+ * Class Microsoft.UI.Xaml.Controls.Primitives.InfoBarPanel
+ *
+ * RuntimeClass contains static methods.
+ *
+ * Class implements the following interfaces:
+ *    Microsoft.UI.Xaml.Controls.Primitives.IInfoBarPanel ** Default Interface **
+ *
+ * Class Threading Model:  Both Single and Multi Threaded Apartment
+ *
+ * Class Marshaling Behavior:  Agile - Class is agile
+ *
+ */
+
+#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_InfoBarPanel_DEFINED
+#define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_InfoBarPanel_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_InfoBarPanel[] = L"Microsoft.UI.Xaml.Controls.Primitives.InfoBarPanel";
+#endif
+
+
+/*
+ *
  * Class Microsoft.UI.Xaml.Controls.Primitives.ItemsChangedEventArgs
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -17646,6 +17966,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Xaml.Controls.Primitives.RepeatedScrollSnapPoint
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Controls.Primitives.IRepeatedScrollSnapPoint ** Default Interface **
  *
@@ -17654,16 +17976,20 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_RepeatedScrollSnapPoint_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_RepeatedScrollSnapPoint_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_RepeatedScrollSnapPoint[] = L"Microsoft.UI.Xaml.Controls.Primitives.RepeatedScrollSnapPoint";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Class Microsoft.UI.Xaml.Controls.Primitives.RepeatedZoomSnapPoint
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Controls.Primitives.IRepeatedZoomSnapPoint ** Default Interface **
@@ -17673,11 +17999,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_RepeatedZoomSnapPoint_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_RepeatedZoomSnapPoint_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_RepeatedZoomSnapPoint[] = L"Microsoft.UI.Xaml.Controls.Primitives.RepeatedZoomSnapPoint";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -17712,7 +18040,34 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
+ * Class Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerAddScrollVelocityRequestedEventArgs
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * RuntimeClass can be activated.
+ *
+ * Class implements the following interfaces:
+ *    Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerAddScrollVelocityRequestedEventArgs ** Default Interface **
+ *
+ * Class Threading Model:  Both Single and Multi Threaded Apartment
+ *
+ * Class Marshaling Behavior:  Agile - Class is agile
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerAddScrollVelocityRequestedEventArgs_DEFINED
+#define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerAddScrollVelocityRequestedEventArgs_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerAddScrollVelocityRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerAddScrollVelocityRequestedEventArgs";
+#endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
  * Class Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerInteractionRequestedEventArgs
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass can be activated.
  *
@@ -17724,16 +18079,20 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerInteractionRequestedEventArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerInteractionRequestedEventArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerInteractionRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerInteractionRequestedEventArgs";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Class Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollByRequestedEventArgs
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass can be activated.
  *
@@ -17745,37 +18104,20 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollByRequestedEventArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollByRequestedEventArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollByRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollByRequestedEventArgs";
 #endif
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollFromRequestedEventArgs
- *
- * RuntimeClass can be activated.
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollFromRequestedEventArgs ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollFromRequestedEventArgs_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollFromRequestedEventArgs_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollFromRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollFromRequestedEventArgs";
-#endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Class Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollToRequestedEventArgs
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass can be activated.
  *
@@ -17787,11 +18129,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollToRequestedEventArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollToRequestedEventArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollToRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollToRequestedEventArgs";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -17823,7 +18167,35 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
+ * Class Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * RuntimeClass contains static methods.
+ *
+ * Class implements the following interfaces:
+ *    Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenter ** Default Interface **
+ *    Microsoft.UI.Xaml.Controls.IScrollAnchorProvider
+ *
+ * Class Threading Model:  Both Single and Multi Threaded Apartment
+ *
+ * Class Marshaling Behavior:  Agile - Class is agile
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollPresenter_DEFINED
+#define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollPresenter_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ScrollPresenter[] = L"Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter";
+#endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
  * Class Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPoint
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPoint ** Default Interface **
@@ -17833,16 +18205,20 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollSnapPoint_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollSnapPoint_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ScrollSnapPoint[] = L"Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPoint";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Class Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointBase
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointBase ** Default Interface **
@@ -17852,32 +18228,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollSnapPointBase_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollSnapPointBase_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ScrollSnapPointBase[] = L"Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointBase";
 #endif
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Controls.Primitives.Scroller
- *
- * RuntimeClass contains static methods.
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Controls.Primitives.IScroller ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_Scroller_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_Scroller_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_Scroller[] = L"Microsoft.UI.Xaml.Controls.Primitives.Scroller";
-#endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -17938,6 +18295,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Xaml.Controls.Primitives.SnapPointBase
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Controls.Primitives.ISnapPointBase ** Default Interface **
  *
@@ -17946,11 +18305,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_SnapPointBase_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_SnapPointBase_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_SnapPointBase[] = L"Microsoft.UI.Xaml.Controls.Primitives.SnapPointBase";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -18136,6 +18497,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPoint
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPoint ** Default Interface **
  *
@@ -18144,16 +18507,20 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ZoomSnapPoint_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ZoomSnapPoint_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ZoomSnapPoint[] = L"Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPoint";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Class Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPointBase
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointBase ** Default Interface **
@@ -18163,11 +18530,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ZoomSnapPointBase_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ZoomSnapPointBase_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ZoomSnapPointBase[] = L"Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPointBase";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 
@@ -18464,12 +18833,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBas
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBaseOverrides_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBaseStatics_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBaseStatics_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBaseStatics __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBaseStatics;
@@ -18523,6 +18886,24 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIGridViewI
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIGridViewItemTemplateSettings __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIGridViewItemTemplateSettings;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIGridViewItemTemplateSettings_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIItemsChangedEventArgs_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIItemsChangedEventArgs_FWD_DEFINED__
@@ -18812,6 +19193,18 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollCon
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_FWD_DEFINED__
 
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_FWD_DEFINED__
+
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs;
@@ -18836,18 +19229,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollCon
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgsFactory_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs;
@@ -18865,6 +19246,24 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollCon
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollEventArgs;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollEventArgs_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPoint_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPoint_FWD_DEFINED__
@@ -18895,24 +19294,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSna
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointsInfo __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointsInfo;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointsInfo_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISelector_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISelector_FWD_DEFINED__
@@ -19230,6 +19611,7 @@ interface __FIIterable_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CPopup
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____FIIterator_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_INTERFACE_DEFINED__)
 #define ____FIIterator_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_INTERFACE_DEFINED__
 
@@ -19314,8 +19696,10 @@ interface __FIIterator_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollS
 
 #endif // ____FIIterator_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_INTERFACE_DEFINED__
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____FIIterable_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_INTERFACE_DEFINED__)
 #define ____FIIterable_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_INTERFACE_DEFINED__
 
@@ -19386,8 +19770,10 @@ interface __FIIterable_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollS
 
 #endif // ____FIIterable_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_INTERFACE_DEFINED__
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____FIIterator_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_INTERFACE_DEFINED__)
 #define ____FIIterator_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_INTERFACE_DEFINED__
 
@@ -19472,8 +19858,10 @@ interface __FIIterator_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSna
 
 #endif // ____FIIterator_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_INTERFACE_DEFINED__
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____FIIterable_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_INTERFACE_DEFINED__)
 #define ____FIIterable_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_INTERFACE_DEFINED__
 
@@ -19544,6 +19932,7 @@ interface __FIIterable_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSna
 
 #endif // ____FIIterable_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_INTERFACE_DEFINED__
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 #if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
@@ -19657,6 +20046,7 @@ interface __FIVectorView_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CPopup
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____FIVectorView_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_INTERFACE_DEFINED__)
 #define ____FIVectorView_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_INTERFACE_DEFINED__
 
@@ -19764,8 +20154,10 @@ interface __FIVectorView_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrol
 
 #endif // ____FIVectorView_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_INTERFACE_DEFINED__
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____FIVectorView_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_INTERFACE_DEFINED__)
 #define ____FIVectorView_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_INTERFACE_DEFINED__
 
@@ -19873,8 +20265,10 @@ interface __FIVectorView_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomS
 
 #endif // ____FIVectorView_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_INTERFACE_DEFINED__
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_INTERFACE_DEFINED__)
 #define ____FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_INTERFACE_DEFINED__
 
@@ -20014,8 +20408,10 @@ interface __FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSna
 
 #endif // ____FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase_INTERFACE_DEFINED__
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_INTERFACE_DEFINED__)
 #define ____FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_INTERFACE_DEFINED__
 
@@ -20155,6 +20551,7 @@ interface __FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapP
 
 #endif // ____FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase_INTERFACE_DEFINED__
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 
@@ -20211,6 +20608,7 @@ interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives_
 
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_IInspectable_INTERFACE_DEFINED__)
 #define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_IInspectable_INTERFACE_DEFINED__
 
@@ -20257,9 +20655,65 @@ interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives_
 
 #endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_IInspectable_INTERFACE_DEFINED__
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs_INTERFACE_DEFINED__)
+#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs_INTERFACE_DEFINED__
+
+typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs;
+
+//  Declare the parameterized interface IID.
+EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs;
+
+typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgsVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs * This,
+        /* [in] */ __RPC__in REFIID riid,
+        /* [annotation][iid_is][out] */ 
+        _COM_Outptr_  void **ppvObject);
+    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs * This);
+    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs * This);
+
+    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * sender,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs * e);
+    END_INTERFACE
+} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgsVtbl;
+
+interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs
+{
+    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgsVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs_Invoke(This,sender,e)	\
+    ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
+#endif /* COBJMACROS */
+
+
+
+#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs_INTERFACE_DEFINED__
+
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerInteractionRequestedEventArgs_INTERFACE_DEFINED__)
 #define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerInteractionRequestedEventArgs_INTERFACE_DEFINED__
 
@@ -20306,9 +20760,13 @@ interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives_
 
 #endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerInteractionRequestedEventArgs_INTERFACE_DEFINED__
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollByRequestedEventArgs_INTERFACE_DEFINED__)
 #define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollByRequestedEventArgs_INTERFACE_DEFINED__
 
@@ -20355,58 +20813,13 @@ interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives_
 
 #endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollByRequestedEventArgs_INTERFACE_DEFINED__
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 
-#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs_INTERFACE_DEFINED__)
-#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs_INTERFACE_DEFINED__
-
-typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs;
-
-typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs * This,
-        /* [in] */ __RPC__in REFIID riid,
-        /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs * This);
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs * This);
-
-    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * sender,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs * e);
-    END_INTERFACE
-} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgsVtbl;
-
-interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs
-{
-    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs_Invoke(This,sender,e)	\
-    ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
-#endif /* COBJMACROS */
-
-
-
-#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs_INTERFACE_DEFINED__
-
-
-
-
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollToRequestedEventArgs_INTERFACE_DEFINED__)
 #define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollToRequestedEventArgs_INTERFACE_DEFINED__
 
@@ -20453,55 +20866,59 @@ interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives_
 
 #endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollToRequestedEventArgs_INTERFACE_DEFINED__
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 
-#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable_INTERFACE_DEFINED__)
-#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable_INTERFACE_DEFINED__
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable_INTERFACE_DEFINED__)
+#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable_INTERFACE_DEFINED__
 
-typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable;
+typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable;
 
 //  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable;
+EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable;
 
-typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectableVtbl
+typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectableVtbl
 {
     BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable * This,
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable * This,
         /* [in] */ __RPC__in REFIID riid,
         /* [annotation][iid_is][out] */ 
         _COM_Outptr_  void **ppvObject);
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable * This);
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable * This);
+    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable * This);
+    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable * This);
 
-    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * sender,/* [in] */ __RPC__in_opt IInspectable * e);
+    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * sender,/* [in] */ __RPC__in_opt IInspectable * e);
     END_INTERFACE
-} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectableVtbl;
+} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectableVtbl;
 
-interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable
+interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable
 {
-    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectableVtbl *lpVtbl;
+    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectableVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable_QueryInterface(This,riid,ppvObject)	\
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable_QueryInterface(This,riid,ppvObject)	\
     ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
 
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable_AddRef(This)	\
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable_AddRef(This)	\
     ( (This)->lpVtbl -> AddRef(This) ) 
 
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable_Release(This)	\
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable_Release(This)	\
     ( (This)->lpVtbl -> Release(This) ) 
 
 
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable_Invoke(This,sender,e)	\
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable_Invoke(This,sender,e)	\
     ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
 #endif /* COBJMACROS */
 
 
 
-#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable_INTERFACE_DEFINED__
+#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable_INTERFACE_DEFINED__
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIColorChangedEventArgs_FWD_DEFINED__
@@ -21604,6 +22021,418 @@ interface __FIReference_1_float
 #endif // ____FIReference_1_float_INTERFACE_DEFINED__
 
 
+struct __x_ABI_CWindows_CFoundation_CNumerics_CVector2;
+
+#if !defined(____FIReference_1_Windows__CFoundation__CNumerics__CVector2_INTERFACE_DEFINED__)
+#define ____FIReference_1_Windows__CFoundation__CNumerics__CVector2_INTERFACE_DEFINED__
+
+typedef interface __FIReference_1_Windows__CFoundation__CNumerics__CVector2 __FIReference_1_Windows__CFoundation__CNumerics__CVector2;
+
+//  Declare the parameterized interface IID.
+EXTERN_C const IID IID___FIReference_1_Windows__CFoundation__CNumerics__CVector2;
+
+typedef struct __FIReference_1_Windows__CFoundation__CNumerics__CVector2Vtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FIReference_1_Windows__CFoundation__CNumerics__CVector2 * This,
+        /* [in] */ __RPC__in REFIID riid,
+        /* [annotation][iid_is][out] */ 
+        _COM_Outptr_  void **ppvObject);
+    ULONG ( STDMETHODCALLTYPE *AddRef )( __RPC__in __FIReference_1_Windows__CFoundation__CNumerics__CVector2 * This );
+    ULONG ( STDMETHODCALLTYPE *Release )( __RPC__in __FIReference_1_Windows__CFoundation__CNumerics__CVector2 * This );
+
+    HRESULT ( STDMETHODCALLTYPE *GetIids )( __RPC__in __FIReference_1_Windows__CFoundation__CNumerics__CVector2 * This, 
+                                            /* [out] */ __RPC__out ULONG *iidCount,
+                                            /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids);
+    HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )( __RPC__in __FIReference_1_Windows__CFoundation__CNumerics__CVector2 * This, /* [out] */ __RPC__deref_out_opt HSTRING *className);
+    HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )( __RPC__in __FIReference_1_Windows__CFoundation__CNumerics__CVector2 * This, /* [out] */ __RPC__out TrustLevel *trustLevel);
+
+    /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Value )(__RPC__in __FIReference_1_Windows__CFoundation__CNumerics__CVector2 * This, /* [retval][out] */ __RPC__out struct __x_ABI_CWindows_CFoundation_CNumerics_CVector2 *value);
+    END_INTERFACE
+} __FIReference_1_Windows__CFoundation__CNumerics__CVector2Vtbl;
+
+interface __FIReference_1_Windows__CFoundation__CNumerics__CVector2
+{
+    CONST_VTBL struct __FIReference_1_Windows__CFoundation__CNumerics__CVector2Vtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2_GetIids(This,iidCount,iids)	\
+    ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
+#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2_GetRuntimeClassName(This,className)	\
+    ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
+#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2_GetTrustLevel(This,trustLevel)	\
+    ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
+
+#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2_get_Value(This,value)	\
+    ( (This)->lpVtbl -> get_Value(This,value) ) 
+#endif /* COBJMACROS */
+
+
+#endif // ____FIReference_1_Windows__CFoundation__CNumerics__CVector2_INTERFACE_DEFINED__
+
+
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollAnimationStartingEventArgs_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollAnimationStartingEventArgs_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollAnimationStartingEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollAnimationStartingEventArgs;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollAnimationStartingEventArgs_FWD_DEFINED__
+
+
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs_INTERFACE_DEFINED__)
+#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs_INTERFACE_DEFINED__
+
+typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs;
+
+//  Declare the parameterized interface IID.
+EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs;
+
+typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgsVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs * This,
+        /* [in] */ __RPC__in REFIID riid,
+        /* [annotation][iid_is][out] */ 
+        _COM_Outptr_  void **ppvObject);
+    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs * This);
+    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs * This);
+
+    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * sender,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollAnimationStartingEventArgs * e);
+    END_INTERFACE
+} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgsVtbl;
+
+interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs
+{
+    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgsVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs_Invoke(This,sender,e)	\
+    ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
+#endif /* COBJMACROS */
+
+
+
+#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs_INTERFACE_DEFINED__
+
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomAnimationStartingEventArgs_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomAnimationStartingEventArgs_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomAnimationStartingEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomAnimationStartingEventArgs;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomAnimationStartingEventArgs_FWD_DEFINED__
+
+
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs_INTERFACE_DEFINED__)
+#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs_INTERFACE_DEFINED__
+
+typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs;
+
+//  Declare the parameterized interface IID.
+EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs;
+
+typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgsVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs * This,
+        /* [in] */ __RPC__in REFIID riid,
+        /* [annotation][iid_is][out] */ 
+        _COM_Outptr_  void **ppvObject);
+    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs * This);
+    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs * This);
+
+    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * sender,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomAnimationStartingEventArgs * e);
+    END_INTERFACE
+} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgsVtbl;
+
+interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs
+{
+    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgsVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs_Invoke(This,sender,e)	\
+    ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
+#endif /* COBJMACROS */
+
+
+
+#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs_INTERFACE_DEFINED__
+
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollCompletedEventArgs_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollCompletedEventArgs_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollCompletedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollCompletedEventArgs;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollCompletedEventArgs_FWD_DEFINED__
+
+
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs_INTERFACE_DEFINED__)
+#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs_INTERFACE_DEFINED__
+
+typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs;
+
+//  Declare the parameterized interface IID.
+EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs;
+
+typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgsVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs * This,
+        /* [in] */ __RPC__in REFIID riid,
+        /* [annotation][iid_is][out] */ 
+        _COM_Outptr_  void **ppvObject);
+    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs * This);
+    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs * This);
+
+    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * sender,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollCompletedEventArgs * e);
+    END_INTERFACE
+} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgsVtbl;
+
+interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs
+{
+    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgsVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs_Invoke(This,sender,e)	\
+    ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
+#endif /* COBJMACROS */
+
+
+
+#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs_INTERFACE_DEFINED__
+
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomCompletedEventArgs_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomCompletedEventArgs_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomCompletedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomCompletedEventArgs;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomCompletedEventArgs_FWD_DEFINED__
+
+
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs_INTERFACE_DEFINED__)
+#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs_INTERFACE_DEFINED__
+
+typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs;
+
+//  Declare the parameterized interface IID.
+EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs;
+
+typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgsVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs * This,
+        /* [in] */ __RPC__in REFIID riid,
+        /* [annotation][iid_is][out] */ 
+        _COM_Outptr_  void **ppvObject);
+    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs * This);
+    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs * This);
+
+    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * sender,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomCompletedEventArgs * e);
+    END_INTERFACE
+} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgsVtbl;
+
+interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs
+{
+    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgsVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs_Invoke(This,sender,e)	\
+    ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
+#endif /* COBJMACROS */
+
+
+
+#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs_INTERFACE_DEFINED__
+
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingBringingIntoViewEventArgs_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingBringingIntoViewEventArgs_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingBringingIntoViewEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingBringingIntoViewEventArgs;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingBringingIntoViewEventArgs_FWD_DEFINED__
+
+
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs_INTERFACE_DEFINED__)
+#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs_INTERFACE_DEFINED__
+
+typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs;
+
+//  Declare the parameterized interface IID.
+EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs;
+
+typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgsVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs * This,
+        /* [in] */ __RPC__in REFIID riid,
+        /* [annotation][iid_is][out] */ 
+        _COM_Outptr_  void **ppvObject);
+    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs * This);
+    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs * This);
+
+    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * sender,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingBringingIntoViewEventArgs * e);
+    END_INTERFACE
+} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgsVtbl;
+
+interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs
+{
+    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgsVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs_Invoke(This,sender,e)	\
+    ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
+#endif /* COBJMACROS */
+
+
+
+#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs_INTERFACE_DEFINED__
+
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingAnchorRequestedEventArgs_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingAnchorRequestedEventArgs_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingAnchorRequestedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingAnchorRequestedEventArgs;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingAnchorRequestedEventArgs_FWD_DEFINED__
+
+
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs_INTERFACE_DEFINED__)
+#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs_INTERFACE_DEFINED__
+
+typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs;
+
+//  Declare the parameterized interface IID.
+EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs;
+
+typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgsVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs * This,
+        /* [in] */ __RPC__in REFIID riid,
+        /* [annotation][iid_is][out] */ 
+        _COM_Outptr_  void **ppvObject);
+    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs * This);
+    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs * This);
+
+    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * sender,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingAnchorRequestedEventArgs * e);
+    END_INTERFACE
+} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgsVtbl;
+
+interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs
+{
+    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgsVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs_Invoke(This,sender,e)	\
+    ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
+#endif /* COBJMACROS */
+
+
+
+#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs_INTERFACE_DEFINED__
+
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
 #if !defined(____FIIterator_1_float_INTERFACE_DEFINED__)
 #define ____FIIterator_1_float_INTERFACE_DEFINED__
 
@@ -21868,394 +22697,6 @@ interface __FIVectorView_1_float
 #endif // ____FIVectorView_1_float_INTERFACE_DEFINED__
 
 
-struct __x_ABI_CWindows_CFoundation_CNumerics_CVector2;
-
-#if !defined(____FIReference_1_Windows__CFoundation__CNumerics__CVector2_INTERFACE_DEFINED__)
-#define ____FIReference_1_Windows__CFoundation__CNumerics__CVector2_INTERFACE_DEFINED__
-
-typedef interface __FIReference_1_Windows__CFoundation__CNumerics__CVector2 __FIReference_1_Windows__CFoundation__CNumerics__CVector2;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FIReference_1_Windows__CFoundation__CNumerics__CVector2;
-
-typedef struct __FIReference_1_Windows__CFoundation__CNumerics__CVector2Vtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FIReference_1_Windows__CFoundation__CNumerics__CVector2 * This,
-        /* [in] */ __RPC__in REFIID riid,
-        /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-    ULONG ( STDMETHODCALLTYPE *AddRef )( __RPC__in __FIReference_1_Windows__CFoundation__CNumerics__CVector2 * This );
-    ULONG ( STDMETHODCALLTYPE *Release )( __RPC__in __FIReference_1_Windows__CFoundation__CNumerics__CVector2 * This );
-
-    HRESULT ( STDMETHODCALLTYPE *GetIids )( __RPC__in __FIReference_1_Windows__CFoundation__CNumerics__CVector2 * This, 
-                                            /* [out] */ __RPC__out ULONG *iidCount,
-                                            /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids);
-    HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )( __RPC__in __FIReference_1_Windows__CFoundation__CNumerics__CVector2 * This, /* [out] */ __RPC__deref_out_opt HSTRING *className);
-    HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )( __RPC__in __FIReference_1_Windows__CFoundation__CNumerics__CVector2 * This, /* [out] */ __RPC__out TrustLevel *trustLevel);
-
-    /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Value )(__RPC__in __FIReference_1_Windows__CFoundation__CNumerics__CVector2 * This, /* [retval][out] */ __RPC__out struct __x_ABI_CWindows_CFoundation_CNumerics_CVector2 *value);
-    END_INTERFACE
-} __FIReference_1_Windows__CFoundation__CNumerics__CVector2Vtbl;
-
-interface __FIReference_1_Windows__CFoundation__CNumerics__CVector2
-{
-    CONST_VTBL struct __FIReference_1_Windows__CFoundation__CNumerics__CVector2Vtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2_GetIids(This,iidCount,iids)	\
-    ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
-#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2_GetRuntimeClassName(This,className)	\
-    ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
-#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2_GetTrustLevel(This,trustLevel)	\
-    ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
-
-#define __FIReference_1_Windows__CFoundation__CNumerics__CVector2_get_Value(This,value)	\
-    ( (This)->lpVtbl -> get_Value(This,value) ) 
-#endif /* COBJMACROS */
-
-
-#endif // ____FIReference_1_Windows__CFoundation__CNumerics__CVector2_INTERFACE_DEFINED__
-
-
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnimationStartingEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnimationStartingEventArgs_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnimationStartingEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnimationStartingEventArgs;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnimationStartingEventArgs_FWD_DEFINED__
-
-
-#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs_INTERFACE_DEFINED__)
-#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs_INTERFACE_DEFINED__
-
-typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs;
-
-typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs * This,
-        /* [in] */ __RPC__in REFIID riid,
-        /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs * This);
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs * This);
-
-    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * sender,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnimationStartingEventArgs * e);
-    END_INTERFACE
-} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgsVtbl;
-
-interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs
-{
-    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs_Invoke(This,sender,e)	\
-    ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
-#endif /* COBJMACROS */
-
-
-
-#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs_INTERFACE_DEFINED__
-
-
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomAnimationStartingEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomAnimationStartingEventArgs_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomAnimationStartingEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomAnimationStartingEventArgs;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomAnimationStartingEventArgs_FWD_DEFINED__
-
-
-#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs_INTERFACE_DEFINED__)
-#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs_INTERFACE_DEFINED__
-
-typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs;
-
-typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs * This,
-        /* [in] */ __RPC__in REFIID riid,
-        /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs * This);
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs * This);
-
-    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * sender,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomAnimationStartingEventArgs * e);
-    END_INTERFACE
-} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgsVtbl;
-
-interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs
-{
-    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs_Invoke(This,sender,e)	\
-    ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
-#endif /* COBJMACROS */
-
-
-
-#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs_INTERFACE_DEFINED__
-
-
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollCompletedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollCompletedEventArgs_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollCompletedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollCompletedEventArgs;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollCompletedEventArgs_FWD_DEFINED__
-
-
-#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs_INTERFACE_DEFINED__)
-#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs_INTERFACE_DEFINED__
-
-typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs;
-
-typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs * This,
-        /* [in] */ __RPC__in REFIID riid,
-        /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs * This);
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs * This);
-
-    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * sender,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollCompletedEventArgs * e);
-    END_INTERFACE
-} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgsVtbl;
-
-interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs
-{
-    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs_Invoke(This,sender,e)	\
-    ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
-#endif /* COBJMACROS */
-
-
-
-#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs_INTERFACE_DEFINED__
-
-
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomCompletedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomCompletedEventArgs_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomCompletedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomCompletedEventArgs;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomCompletedEventArgs_FWD_DEFINED__
-
-
-#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs_INTERFACE_DEFINED__)
-#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs_INTERFACE_DEFINED__
-
-typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs;
-
-typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs * This,
-        /* [in] */ __RPC__in REFIID riid,
-        /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs * This);
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs * This);
-
-    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * sender,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomCompletedEventArgs * e);
-    END_INTERFACE
-} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgsVtbl;
-
-interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs
-{
-    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs_Invoke(This,sender,e)	\
-    ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
-#endif /* COBJMACROS */
-
-
-
-#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs_INTERFACE_DEFINED__
-
-
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerBringingIntoViewEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerBringingIntoViewEventArgs_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerBringingIntoViewEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerBringingIntoViewEventArgs;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerBringingIntoViewEventArgs_FWD_DEFINED__
-
-
-#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs_INTERFACE_DEFINED__)
-#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs_INTERFACE_DEFINED__
-
-typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs;
-
-typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs * This,
-        /* [in] */ __RPC__in REFIID riid,
-        /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs * This);
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs * This);
-
-    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * sender,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerBringingIntoViewEventArgs * e);
-    END_INTERFACE
-} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgsVtbl;
-
-interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs
-{
-    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs_Invoke(This,sender,e)	\
-    ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
-#endif /* COBJMACROS */
-
-
-
-#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs_INTERFACE_DEFINED__
-
-
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerAnchorRequestedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerAnchorRequestedEventArgs_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerAnchorRequestedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerAnchorRequestedEventArgs;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerAnchorRequestedEventArgs_FWD_DEFINED__
-
-
-#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs_INTERFACE_DEFINED__)
-#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs_INTERFACE_DEFINED__
-
-typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs;
-
-typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs * This,
-        /* [in] */ __RPC__in REFIID riid,
-        /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs * This);
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs * This);
-
-    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * sender,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollerAnchorRequestedEventArgs * e);
-    END_INTERFACE
-} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgsVtbl;
-
-interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs
-{
-    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs_Invoke(This,sender,e)	\
-    ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
-#endif /* COBJMACROS */
-
-
-
-#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs_INTERFACE_DEFINED__
-
-
 #if !defined(____FIReference_1_boolean_INTERFACE_DEFINED__)
 #define ____FIReference_1_boolean_INTERFACE_DEFINED__
 
@@ -22327,13 +22768,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CComposition_CICompositionPropertySet _
 #endif // ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionPropertySet_FWD_DEFINED__
 
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CComposition_CIVisual_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CComposition_CIVisual_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CComposition_CIVisual __x_ABI_CMicrosoft_CUI_CComposition_CIVisual;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CComposition_CIVisual_FWD_DEFINED__
-
-
 
 
 
@@ -22356,9 +22790,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIAutoSuggestBox __x_AB
 
 
 
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CChainingMode __x_ABI_CMicrosoft_CUI_CXaml_CControls_CChainingMode;
-
-
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CClickMode __x_ABI_CMicrosoft_CUI_CXaml_CControls_CClickMode;
 
 
@@ -22378,9 +22809,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIComboBox __x_ABI_CMic
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIComboBox_FWD_DEFINED__
 
 
-
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CContentOrientation __x_ABI_CMicrosoft_CUI_CXaml_CControls_CContentOrientation;
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIControl_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIControl_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIControl __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIControl;
@@ -22395,6 +22823,13 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIInsertionPanel __x_AB
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIInsertionPanel_FWD_DEFINED__
 
 
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnchorProvider_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnchorProvider_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnchorProvider __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnchorProvider;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollAnchorProvider_FWD_DEFINED__
+
+
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIIconElement_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIIconElement_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIIconElement __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIIconElement;
@@ -22403,35 +22838,50 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIIconElement __x_ABI_C
 
 
 
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CInputKind __x_ABI_CMicrosoft_CUI_CXaml_CControls_CInputKind;
-
-
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CInteractionState __x_ABI_CMicrosoft_CUI_CXaml_CControls_CInteractionState;
-
-
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CLightDismissOverlayMode __x_ABI_CMicrosoft_CUI_CXaml_CControls_CLightDismissOverlayMode;
 
 
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_COrientation __x_ABI_CMicrosoft_CUI_CXaml_CControls_COrientation;
 
 
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CRailingMode __x_ABI_CMicrosoft_CUI_CXaml_CControls_CRailingMode;
+
+
+typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingChainMode __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingChainMode;
+
+
+typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingContentOrientation __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingContentOrientation;
+
+
+typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingInputKinds __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingInputKinds;
+
+
+typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingInteractionState __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingInteractionState;
+
+
+typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingRailMode __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingRailMode;
 
 
 
 
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollInfo __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollInfo;
+typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingScrollMode __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingScrollMode;
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollOptions_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollOptions_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollOptions __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollOptions;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollOptions_FWD_DEFINED__
 
 
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollMode __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollMode;
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollOptions_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollOptions_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollOptions __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollOptions;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollOptions_FWD_DEFINED__
 
 
+
+typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingZoomMode __x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingZoomMode;
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomOptions_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomOptions_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomOptions __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomOptions;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomOptions_FWD_DEFINED__
 
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CISelectionChangedEventHandler_FWD_DEFINED__
@@ -22439,21 +22889,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollOptions __x_ABI
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CISelectionChangedEventHandler __x_ABI_CMicrosoft_CUI_CXaml_CControls_CISelectionChangedEventHandler;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CISelectionChangedEventHandler_FWD_DEFINED__
-
-
-
-
-
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CZoomInfo __x_ABI_CMicrosoft_CUI_CXaml_CControls_CZoomInfo;
-
-
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CZoomMode __x_ABI_CMicrosoft_CUI_CXaml_CControls_CZoomMode;
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomOptions_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomOptions_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomOptions __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomOptions;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomOptions_FWD_DEFINED__
 
 
 
@@ -22540,7 +22975,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIProcessKeyboardAccelerat
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBrush __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBrush;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBrush_FWD_DEFINED__
-
 
 
 
@@ -22893,6 +23327,9 @@ typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CGeneratorPosi
 
 
 
+
+
+
 /*
  *
  * Struct Microsoft.UI.Xaml.Controls.Primitives.AnimationDirection
@@ -22965,6 +23402,14 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CCornerRadiusToThickness
     CornerRadiusToThicknessConverterKind_FilterTopAndBottomFromRight = 1,
     CornerRadiusToThicknessConverterKind_FilterLeftAndRightFromTop = 2,
     CornerRadiusToThicknessConverterKind_FilterLeftAndRightFromBottom = 3,
+    CornerRadiusToThicknessConverterKind_FilterTopFromTopLeft = 4,
+    CornerRadiusToThicknessConverterKind_FilterTopFromTopRight = 5,
+    CornerRadiusToThicknessConverterKind_FilterRightFromTopRight = 6,
+    CornerRadiusToThicknessConverterKind_FilterRightFromBottomRight = 7,
+    CornerRadiusToThicknessConverterKind_FilterBottomFromBottomRight = 8,
+    CornerRadiusToThicknessConverterKind_FilterBottomFromBottomLeft = 9,
+    CornerRadiusToThicknessConverterKind_FilterLeftFromBottomLeft = 10,
+    CornerRadiusToThicknessConverterKind_FilterLeftFromTopLeft = 11,
 };
 
 
@@ -23150,15 +23595,19 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CScrollEventType
  *
  * Struct Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointsAlignment
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  */
 
-/* [v1_enum, version] */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+/* [v1_enum, version, experimental] */
 enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CScrollSnapPointsAlignment
 {
     ScrollSnapPointsAlignment_Near = 0,
     ScrollSnapPointsAlignment_Center = 1,
     ScrollSnapPointsAlignment_Far = 2,
 };
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -27325,7 +27774,7 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICorn
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverter_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverter_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_ICornerRadiusToThicknessConverter[] = L"Microsoft.UI.Xaml.Controls.Primitives.ICornerRadiusToThicknessConverter";
-/* [object, version, uuid("04F7ECA4-89C2-5731-AFF9-6B66B0A0C01E"), exclusiveto] */
+/* [object, version, uuid("B36AA8AE-166E-5CA5-93D2-95E9907C1222"), exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverterVtbl
 {
     BEGIN_INTERFACE
@@ -27367,6 +27816,14 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverter * This,
         /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CCornerRadiusToThicknessConverterKind value
         );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Multiplier )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverter * This,
+        /* [retval, out] */DOUBLE * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_Multiplier )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverter * This,
+        /* [in] */DOUBLE value
+        );
     END_INTERFACE
     
 } __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverterVtbl;
@@ -27401,6 +27858,12 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThi
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverter_put_ConversionKind(This,value) \
     ( (This)->lpVtbl->put_ConversionKind(This,value) )
 
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverter_get_Multiplier(This,value) \
+    ( (This)->lpVtbl->get_Multiplier(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverter_put_Multiplier(This,value) \
+    ( (This)->lpVtbl->put_Multiplier(This,value) )
+
 
 #endif /* COBJMACROS */
 
@@ -27420,7 +27883,7 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICorn
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverterStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverterStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_ICornerRadiusToThicknessConverterStatics[] = L"Microsoft.UI.Xaml.Controls.Primitives.ICornerRadiusToThicknessConverterStatics";
-/* [object, version, uuid("6ACE137E-DA86-5E4C-AC5C-94C176221C0A"), exclusiveto] */
+/* [object, version, uuid("92AD9D36-5483-5258-A43B-4356443087F1"), exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverterStaticsVtbl
 {
     BEGIN_INTERFACE
@@ -27458,6 +27921,10 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverterStatics * This,
         /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
         );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_MultiplierProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverterStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
     END_INTERFACE
     
 } __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverterStaticsVtbl;
@@ -27488,6 +27955,9 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThi
 
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverterStatics_get_ConversionKindProperty(This,value) \
     ( (This)->lpVtbl->get_ConversionKindProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICornerRadiusToThicknessConverterStatics_get_MultiplierProperty(This,value) \
+    ( (This)->lpVtbl->get_MultiplierProperty(This,value) )
 
 
 #endif /* COBJMACROS */
@@ -28731,124 +29201,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBaseOverrid
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBaseOverrides;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBaseOverrides_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Controls.Primitives.IFlyoutBasePrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IFlyoutBasePrivate[] = L"Microsoft.UI.Xaml.Controls.Primitives.IFlyoutBasePrivate";
-/* [object, uuid("1E299B54-C5A9-59C3-8C76-3B0C17F6BA55"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_UsePickerFlyoutTheme )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate * This,
-        /* [retval, out] */boolean * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_UsePickerFlyoutTheme )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate * This,
-        /* [in] */boolean value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_IsLightDismissOverlayEnabled )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate * This,
-        /* [retval, out] */boolean * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_IsLightDismissOverlayEnabled )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate * This,
-        /* [in] */boolean value
-        );
-    HRESULT ( STDMETHODCALLTYPE *PlaceFlyoutForDateTimePicker )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate * This,
-        /* [in] */__x_ABI_CWindows_CFoundation_CPoint point
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_get_UsePickerFlyoutTheme(This,value) \
-    ( (This)->lpVtbl->get_UsePickerFlyoutTheme(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_put_UsePickerFlyoutTheme(This,value) \
-    ( (This)->lpVtbl->put_UsePickerFlyoutTheme(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_get_IsLightDismissOverlayEnabled(This,value) \
-    ( (This)->lpVtbl->get_IsLightDismissOverlayEnabled(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_put_IsLightDismissOverlayEnabled(This,value) \
-    ( (This)->lpVtbl->put_IsLightDismissOverlayEnabled(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_PlaceFlyoutForDateTimePicker(This,point) \
-    ( (This)->lpVtbl->PlaceFlyoutForDateTimePicker(This,point) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBasePrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -30289,6 +30641,346 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIGridViewItemTempl
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIGridViewItemTemplateSettings;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIGridViewItemTemplateSettings_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Controls.Primitives.IInfoBarPanel
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.InfoBarPanel
+ *
+ *
+ */
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IInfoBarPanel[] = L"Microsoft.UI.Xaml.Controls.Primitives.IInfoBarPanel";
+/* [object, version, uuid("4D2FD5FE-CB75-52FF-B57F-A992912383CC"), exclusiveto] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalOrientationPadding )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CThickness * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_HorizontalOrientationPadding )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CThickness value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalOrientationPadding )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CThickness * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_VerticalOrientationPadding )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CThickness value
+        );
+    END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_get_HorizontalOrientationPadding(This,value) \
+    ( (This)->lpVtbl->get_HorizontalOrientationPadding(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_put_HorizontalOrientationPadding(This,value) \
+    ( (This)->lpVtbl->put_HorizontalOrientationPadding(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_get_VerticalOrientationPadding(This,value) \
+    ( (This)->lpVtbl->get_VerticalOrientationPadding(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_put_VerticalOrientationPadding(This,value) \
+    ( (This)->lpVtbl->put_VerticalOrientationPadding(This,value) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel_INTERFACE_DEFINED__) */
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Controls.Primitives.IInfoBarPanelFactory
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.InfoBarPanel
+ *
+ *
+ */
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IInfoBarPanelFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IInfoBarPanelFactory";
+/* [object, version, uuid("00D1A8C5-F631-564A-8E9C-7C5CCAD238DE"), exclusiveto] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactoryVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory * This,
+        /* [in] */IInspectable * baseInterface,
+        /* [out] */IInspectable * * innerInterface,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanel * * value
+        );
+    END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactoryVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactoryVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_CreateInstance(This,baseInterface,innerInterface,value) \
+    ( (This)->lpVtbl->CreateInstance(This,baseInterface,innerInterface,value) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelFactory_INTERFACE_DEFINED__) */
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Controls.Primitives.IInfoBarPanelStatics
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.InfoBarPanel
+ *
+ *
+ */
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IInfoBarPanelStatics[] = L"Microsoft.UI.Xaml.Controls.Primitives.IInfoBarPanelStatics";
+/* [object, version, uuid("E0F19305-B392-5FA6-9670-895895A067FF"), exclusiveto] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStaticsVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalOrientationPaddingProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalOrientationPaddingProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    HRESULT ( STDMETHODCALLTYPE *SetHorizontalOrientationMargin )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject * object,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CThickness value
+        );
+    HRESULT ( STDMETHODCALLTYPE *GetHorizontalOrientationMargin )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject * object,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CThickness * result
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalOrientationMarginProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    HRESULT ( STDMETHODCALLTYPE *SetVerticalOrientationMargin )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject * object,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CThickness value
+        );
+    HRESULT ( STDMETHODCALLTYPE *GetVerticalOrientationMargin )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject * object,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CThickness * result
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalOrientationMarginProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStaticsVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStaticsVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_get_HorizontalOrientationPaddingProperty(This,value) \
+    ( (This)->lpVtbl->get_HorizontalOrientationPaddingProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_get_VerticalOrientationPaddingProperty(This,value) \
+    ( (This)->lpVtbl->get_VerticalOrientationPaddingProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_SetHorizontalOrientationMargin(This,object,value) \
+    ( (This)->lpVtbl->SetHorizontalOrientationMargin(This,object,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_GetHorizontalOrientationMargin(This,object,result) \
+    ( (This)->lpVtbl->GetHorizontalOrientationMargin(This,object,result) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_get_HorizontalOrientationMarginProperty(This,value) \
+    ( (This)->lpVtbl->get_HorizontalOrientationMarginProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_SetVerticalOrientationMargin(This,object,value) \
+    ( (This)->lpVtbl->SetVerticalOrientationMargin(This,object,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_GetVerticalOrientationMargin(This,object,result) \
+    ( (This)->lpVtbl->GetVerticalOrientationMargin(This,object,result) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_get_VerticalOrientationMarginProperty(This,value) \
+    ( (This)->lpVtbl->get_VerticalOrientationMarginProperty(This,value) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIInfoBarPanelStatics_INTERFACE_DEFINED__) */
 
 
 /*
@@ -35560,14 +36252,17 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepe
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IRepeatedScrollSnapPoint
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.RepeatedScrollSnapPoint
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPoint_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPoint_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IRepeatedScrollSnapPoint[] = L"Microsoft.UI.Xaml.Controls.Primitives.IRepeatedScrollSnapPoint";
-/* [object, version, uuid("5828FB51-8EBB-596D-A871-50063479362D"), exclusiveto] */
+/* [object, version, uuid("5828FB51-8EBB-596D-A871-50063479362D"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPointVtbl
 {
     BEGIN_INTERFACE
@@ -35663,20 +36358,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSna
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPoint;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPoint_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IRepeatedScrollSnapPointFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.RepeatedScrollSnapPoint
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPointFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPointFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IRepeatedScrollSnapPointFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IRepeatedScrollSnapPointFactory";
-/* [object, version, uuid("F2FD8403-679E-5C31-B431-72A0E0014E6A"), exclusiveto] */
+/* [object, version, uuid("F2FD8403-679E-5C31-B431-72A0E0014E6A"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPointFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -35758,20 +36457,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSna
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPointFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedScrollSnapPointFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IRepeatedZoomSnapPoint
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.RepeatedZoomSnapPoint
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPoint_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPoint_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IRepeatedZoomSnapPoint[] = L"Microsoft.UI.Xaml.Controls.Primitives.IRepeatedZoomSnapPoint";
-/* [object, version, uuid("1FA6DBBE-5E11-5D32-873B-C92B1D171538"), exclusiveto] */
+/* [object, version, uuid("1FA6DBBE-5E11-5D32-873B-C92B1D171538"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPointVtbl
 {
     BEGIN_INTERFACE
@@ -35867,20 +36570,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapP
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPoint;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPoint_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IRepeatedZoomSnapPointFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.RepeatedZoomSnapPoint
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPointFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPointFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IRepeatedZoomSnapPointFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IRepeatedZoomSnapPointFactory";
-/* [object, version, uuid("7D032A7C-D91C-5660-B1C2-B36E8810AC65"), exclusiveto] */
+/* [object, version, uuid("7D032A7C-D91C-5660-B1C2-B36E8810AC65"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPointFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -35961,6 +36668,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapP
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPointFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRepeatedZoomSnapPointFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -36217,11 +36925,14 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScro
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollController
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollController[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollController";
-/* [object, version, uuid("641B7AFB-3C4E-5D3D-815B-A45C8D68789F")] */
+/* [object, version, uuid("C8C5E259-0692-5B18-AC47-5259D25F9FEB"), experimental] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerVtbl
 {
     BEGIN_INTERFACE
@@ -36255,7 +36966,7 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
     __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_AreInteractionsAllowed )(
+/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_AreScrollControllerInteractionsAllowed )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * This,
         /* [retval, out] */boolean * value
         );
@@ -36267,15 +36978,15 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * This,
         /* [retval, out] */boolean * value
         );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_IsInteractionVisualRailEnabled )(
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_IsInteractionElementRailEnabled )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * This,
         /* [retval, out] */boolean * value
         );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_InteractionVisual )(
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_InteractionElement )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CComposition_CIVisual * * value
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * * value
         );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_InteractionVisualScrollOrientation )(
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_InteractionElementScrollOrientation )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * This,
         /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_COrientation * value
         );
@@ -36289,7 +37000,7 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
         );
     HRESULT ( STDMETHODCALLTYPE *SetScrollMode )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollMode scrollMode
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingScrollMode scrollMode
         );
     HRESULT ( STDMETHODCALLTYPE *SetValues )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * This,
@@ -36300,14 +37011,14 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
         );
     HRESULT ( STDMETHODCALLTYPE *GetScrollAnimation )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollInfo info,
+        /* [in] */INT32 correlationId,
         /* [in] */__x_ABI_CWindows_CFoundation_CNumerics_CVector2 currentPosition,
         /* [in] */__x_ABI_CMicrosoft_CUI_CComposition_CICompositionAnimation * defaultAnimation,
         /* [retval, out] */__x_ABI_CMicrosoft_CUI_CComposition_CICompositionAnimation * * result
         );
-    HRESULT ( STDMETHODCALLTYPE *OnScrollCompleted )(
+    HRESULT ( STDMETHODCALLTYPE *NotifyScrollCompleted )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollInfo info
+        /* [in] */INT32 correlationId
         );
     /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_ScrollToRequested )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * This,
@@ -36327,12 +37038,12 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * This,
         /* [in] */EventRegistrationToken token
         );
-    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_ScrollFromRequested )(
+    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_AddScrollVelocityRequested )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * This,
-        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerScrollFromRequestedEventArgs * handler,
+        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CIScrollController_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollControllerAddScrollVelocityRequestedEventArgs * handler,
         /* [retval, out] */EventRegistrationToken * token
         );
-    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_ScrollFromRequested )(
+    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_AddScrollVelocityRequested )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * This,
         /* [in] */EventRegistrationToken token
         );
@@ -36382,8 +37093,8 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_get_AreInteractionsAllowed(This,value) \
-    ( (This)->lpVtbl->get_AreInteractionsAllowed(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_get_AreScrollControllerInteractionsAllowed(This,value) \
+    ( (This)->lpVtbl->get_AreScrollControllerInteractionsAllowed(This,value) )
 
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_get_AreScrollerInteractionsAllowed(This,value) \
     ( (This)->lpVtbl->get_AreScrollerInteractionsAllowed(This,value) )
@@ -36391,14 +37102,14 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_get_IsInteracting(This,value) \
     ( (This)->lpVtbl->get_IsInteracting(This,value) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_get_IsInteractionVisualRailEnabled(This,value) \
-    ( (This)->lpVtbl->get_IsInteractionVisualRailEnabled(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_get_IsInteractionElementRailEnabled(This,value) \
+    ( (This)->lpVtbl->get_IsInteractionElementRailEnabled(This,value) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_get_InteractionVisual(This,value) \
-    ( (This)->lpVtbl->get_InteractionVisual(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_get_InteractionElement(This,value) \
+    ( (This)->lpVtbl->get_InteractionElement(This,value) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_get_InteractionVisualScrollOrientation(This,value) \
-    ( (This)->lpVtbl->get_InteractionVisualScrollOrientation(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_get_InteractionElementScrollOrientation(This,value) \
+    ( (This)->lpVtbl->get_InteractionElementScrollOrientation(This,value) )
 
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_SetExpressionAnimationSources(This,propertySet,minOffsetPropertyName,maxOffsetPropertyName,offsetPropertyName,multiplierPropertyName) \
     ( (This)->lpVtbl->SetExpressionAnimationSources(This,propertySet,minOffsetPropertyName,maxOffsetPropertyName,offsetPropertyName,multiplierPropertyName) )
@@ -36409,11 +37120,11 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_SetValues(This,minOffset,maxOffset,offset,viewport) \
     ( (This)->lpVtbl->SetValues(This,minOffset,maxOffset,offset,viewport) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_GetScrollAnimation(This,info,currentPosition,defaultAnimation,result) \
-    ( (This)->lpVtbl->GetScrollAnimation(This,info,currentPosition,defaultAnimation,result) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_GetScrollAnimation(This,correlationId,currentPosition,defaultAnimation,result) \
+    ( (This)->lpVtbl->GetScrollAnimation(This,correlationId,currentPosition,defaultAnimation,result) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_OnScrollCompleted(This,info) \
-    ( (This)->lpVtbl->OnScrollCompleted(This,info) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_NotifyScrollCompleted(This,correlationId) \
+    ( (This)->lpVtbl->NotifyScrollCompleted(This,correlationId) )
 
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_add_ScrollToRequested(This,handler,token) \
     ( (This)->lpVtbl->add_ScrollToRequested(This,handler,token) )
@@ -36427,11 +37138,11 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_remove_ScrollByRequested(This,token) \
     ( (This)->lpVtbl->remove_ScrollByRequested(This,token) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_add_ScrollFromRequested(This,handler,token) \
-    ( (This)->lpVtbl->add_ScrollFromRequested(This,handler,token) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_add_AddScrollVelocityRequested(This,handler,token) \
+    ( (This)->lpVtbl->add_AddScrollVelocityRequested(This,handler,token) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_remove_ScrollFromRequested(This,token) \
-    ( (This)->lpVtbl->remove_ScrollFromRequested(This,token) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_remove_AddScrollVelocityRequested(This,token) \
+    ( (This)->lpVtbl->remove_AddScrollVelocityRequested(This,token) )
 
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_add_InteractionRequested(This,handler,token) \
     ( (This)->lpVtbl->add_InteractionRequested(This,handler,token) )
@@ -36451,20 +37162,231 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerAddScrollVelocityRequestedEventArgs
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerAddScrollVelocityRequestedEventArgs
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerAddScrollVelocityRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerAddScrollVelocityRequestedEventArgs";
+/* [object, version, uuid("317BBC1A-0CF7-5815-A8A7-BD7E6EEF966A"), experimental, exclusiveto] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_OffsetVelocity )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs * This,
+        /* [retval, out] */FLOAT * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_InertiaDecayRate )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs * This,
+        /* [retval, out] */__FIReference_1_float * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_CorrelationId )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs * This,
+        /* [retval, out] */INT32 * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_CorrelationId )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs * This,
+        /* [in] */INT32 value
+        );
+    END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_get_OffsetVelocity(This,value) \
+    ( (This)->lpVtbl->get_OffsetVelocity(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_get_InertiaDecayRate(This,value) \
+    ( (This)->lpVtbl->get_InertiaDecayRate(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_get_CorrelationId(This,value) \
+    ( (This)->lpVtbl->get_CorrelationId(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_put_CorrelationId(This,value) \
+    ( (This)->lpVtbl->put_CorrelationId(This,value) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerAddScrollVelocityRequestedEventArgsFactory
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerAddScrollVelocityRequestedEventArgs
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerAddScrollVelocityRequestedEventArgsFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerAddScrollVelocityRequestedEventArgsFactory";
+/* [object, version, uuid("9221D193-6F82-5E21-AACC-0B1460818AB5"), experimental, exclusiveto] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactoryVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory * This,
+        /* [in] */FLOAT offsetVelocity,
+        /* [in] */__FIReference_1_float * inertiaDecayRate,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgs * * value
+        );
+    END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactoryVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactoryVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_CreateInstance(This,offsetVelocity,inertiaDecayRate,value) \
+    ( (This)->lpVtbl->CreateInstance(This,offsetVelocity,inertiaDecayRate,value) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerAddScrollVelocityRequestedEventArgsFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerInteractionRequestedEventArgs
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerInteractionRequestedEventArgs
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerInteractionRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerInteractionRequestedEventArgs";
-/* [object, version, uuid("9D39B918-9C63-5154-92FB-59CB928E8FAE"), exclusiveto] */
+/* [object, version, uuid("9D39B918-9C63-5154-92FB-59CB928E8FAE"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgsVtbl
 {
     BEGIN_INTERFACE
@@ -36553,20 +37475,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerI
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgs_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerInteractionRequestedEventArgsFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerInteractionRequestedEventArgs
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgsFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgsFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerInteractionRequestedEventArgsFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerInteractionRequestedEventArgsFactory";
-/* [object, version, uuid("C74FE9BA-8660-59C9-889A-12E292032B89"), exclusiveto] */
+/* [object, version, uuid("C74FE9BA-8660-59C9-889A-12E292032B89"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgsFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -36642,20 +37568,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerI
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgsFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerInteractionRequestedEventArgsFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollByRequestedEventArgs
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollByRequestedEventArgs
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerScrollByRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollByRequestedEventArgs";
-/* [object, version, uuid("38CF8BD7-5BB2-575D-9C83-9B5E23D2363D"), exclusiveto] */
+/* [object, version, uuid("E7F305FA-4073-5D88-8BF1-AE4ECB9208BF"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgsVtbl
 {
     BEGIN_INTERFACE
@@ -36695,15 +37625,15 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
         );
     /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Options )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgs * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollOptions * * value
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollOptions * * value
         );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Info )(
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_CorrelationId )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgs * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollInfo * value
+        /* [retval, out] */INT32 * value
         );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_Info )(
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_CorrelationId )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgs * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollInfo value
+        /* [in] */INT32 value
         );
     END_INTERFACE
     
@@ -36739,11 +37669,11 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerS
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgs_get_Options(This,value) \
     ( (This)->lpVtbl->get_Options(This,value) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgs_get_Info(This,value) \
-    ( (This)->lpVtbl->get_Info(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgs_get_CorrelationId(This,value) \
+    ( (This)->lpVtbl->get_CorrelationId(This,value) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgs_put_Info(This,value) \
-    ( (This)->lpVtbl->put_Info(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgs_put_CorrelationId(This,value) \
+    ( (This)->lpVtbl->put_CorrelationId(This,value) )
 
 
 #endif /* COBJMACROS */
@@ -36751,20 +37681,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerS
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgs_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollByRequestedEventArgsFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollByRequestedEventArgs
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgsFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgsFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerScrollByRequestedEventArgsFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollByRequestedEventArgsFactory";
-/* [object, version, uuid("A690796D-B6C8-550E-B7BE-40C581684639"), exclusiveto] */
+/* [object, version, uuid("7ECF01A7-EF3F-5AF9-93B4-38BC1BAFD335"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgsFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -36801,7 +37735,7 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
 HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgsFactory * This,
         /* [in] */DOUBLE offsetDelta,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollOptions * options,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollOptions * options,
         /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgs * * value
         );
     END_INTERFACE
@@ -36841,219 +37775,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerS
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgsFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollByRequestedEventArgsFactory_INTERFACE_DEFINED__) */
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollFromRequestedEventArgs
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollFromRequestedEventArgs
- *
- *
- */
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerScrollFromRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollFromRequestedEventArgs";
-/* [object, version, uuid("CFB817EB-2A20-550B-97BC-BD15BADA69EC"), exclusiveto] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_OffsetVelocity )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs * This,
-        /* [retval, out] */FLOAT * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_InertiaDecayRate )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs * This,
-        /* [retval, out] */__FIReference_1_float * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Info )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollInfo * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_Info )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollInfo value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_get_OffsetVelocity(This,value) \
-    ( (This)->lpVtbl->get_OffsetVelocity(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_get_InertiaDecayRate(This,value) \
-    ( (This)->lpVtbl->get_InertiaDecayRate(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_get_Info(This,value) \
-    ( (This)->lpVtbl->get_Info(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_put_Info(This,value) \
-    ( (This)->lpVtbl->put_Info(This,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs_INTERFACE_DEFINED__) */
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollFromRequestedEventArgsFactory
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollFromRequestedEventArgs
- *
- *
- */
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerScrollFromRequestedEventArgsFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollFromRequestedEventArgsFactory";
-/* [object, version, uuid("0C4F8B39-D458-51DA-B7B7-BE899D0D9835"), exclusiveto] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactoryVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory * This,
-        /* [in] */FLOAT offsetVelocity,
-        /* [in] */__FIReference_1_float * inertiaDecayRate,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgs * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactoryVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactoryVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_CreateInstance(This,offsetVelocity,inertiaDecayRate,value) \
-    ( (This)->lpVtbl->CreateInstance(This,offsetVelocity,inertiaDecayRate,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollFromRequestedEventArgsFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollToRequestedEventArgs
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollToRequestedEventArgs
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerScrollToRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollToRequestedEventArgs";
-/* [object, version, uuid("4A87932C-A2E0-542E-87CE-ADBC284CDCF0"), exclusiveto] */
+/* [object, version, uuid("73F16B99-7310-5C73-872B-276E5A9D4913"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgsVtbl
 {
     BEGIN_INTERFACE
@@ -37093,15 +37832,15 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
         );
     /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Options )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollOptions * * value
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollOptions * * value
         );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Info )(
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_CorrelationId )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollInfo * value
+        /* [retval, out] */INT32 * value
         );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_Info )(
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_CorrelationId )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollInfo value
+        /* [in] */INT32 value
         );
     END_INTERFACE
     
@@ -37137,11 +37876,11 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerS
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs_get_Options(This,value) \
     ( (This)->lpVtbl->get_Options(This,value) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs_get_Info(This,value) \
-    ( (This)->lpVtbl->get_Info(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs_get_CorrelationId(This,value) \
+    ( (This)->lpVtbl->get_CorrelationId(This,value) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs_put_Info(This,value) \
-    ( (This)->lpVtbl->put_Info(This,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs_put_CorrelationId(This,value) \
+    ( (This)->lpVtbl->put_CorrelationId(This,value) )
 
 
 #endif /* COBJMACROS */
@@ -37149,20 +37888,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerS
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollToRequestedEventArgsFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollToRequestedEventArgs
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgsFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgsFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollControllerScrollToRequestedEventArgsFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollToRequestedEventArgsFactory";
-/* [object, version, uuid("CA68119D-6ADE-5164-BB13-CC36F1AC652F"), exclusiveto] */
+/* [object, version, uuid("01675DC4-1074-54E8-BEBB-66B03A33DA0D"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgsFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -37199,7 +37942,7 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
 HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
         __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgsFactory * This,
         /* [in] */DOUBLE offset,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollOptions * options,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollOptions * options,
         /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgs * * value
         );
     END_INTERFACE
@@ -37239,6 +37982,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerS
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgsFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollControllerScrollToRequestedEventArgsFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -37343,16 +38087,975 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScro
 
 /*
  *
+ * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenter
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenter";
+/* [object, version, uuid("225D573C-F6C9-5231-B101-06BA96F77EC1"), experimental, exclusiveto] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Background )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBrush * * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_Background )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBrush * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Content )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_Content )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ExpressionAnimationSources )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CComposition_CICompositionPropertySet * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalOffset )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */DOUBLE * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalOffset )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */DOUBLE * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ZoomFactor )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */FLOAT * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ExtentWidth )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */DOUBLE * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ExtentHeight )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */DOUBLE * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ViewportWidth )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */DOUBLE * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ViewportHeight )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */DOUBLE * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ScrollableWidth )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */DOUBLE * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ScrollableHeight )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */DOUBLE * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ContentOrientation )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingContentOrientation * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_ContentOrientation )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingContentOrientation value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalScrollChainMode )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingChainMode * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_HorizontalScrollChainMode )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingChainMode value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalScrollChainMode )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingChainMode * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_VerticalScrollChainMode )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingChainMode value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalScrollRailMode )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingRailMode * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_HorizontalScrollRailMode )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingRailMode value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalScrollRailMode )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingRailMode * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_VerticalScrollRailMode )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingRailMode value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalScrollMode )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingScrollMode * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_HorizontalScrollMode )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingScrollMode value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalScrollMode )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingScrollMode * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_VerticalScrollMode )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingScrollMode value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ZoomChainMode )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingChainMode * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_ZoomChainMode )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingChainMode value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ZoomMode )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingZoomMode * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_ZoomMode )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingZoomMode value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_IgnoredInputKinds )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingInputKinds * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_IgnoredInputKinds )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingInputKinds value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_MinZoomFactor )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */DOUBLE * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_MinZoomFactor )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */DOUBLE value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_MaxZoomFactor )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */DOUBLE * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_MaxZoomFactor )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */DOUBLE value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_State )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollingInteractionState * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalScrollController )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_HorizontalScrollController )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalScrollController )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_VerticalScrollController )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalAnchorRatio )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */DOUBLE * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_HorizontalAnchorRatio )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */DOUBLE value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalAnchorRatio )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */DOUBLE * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_VerticalAnchorRatio )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */DOUBLE value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalSnapPoints )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalSnapPoints )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ZoomSnapPoints )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [retval, out] */__FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase * * value
+        );
+    /* [overload] */HRESULT ( STDMETHODCALLTYPE *ScrollTo )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */DOUBLE horizontalOffset,
+        /* [in] */DOUBLE verticalOffset,
+        /* [retval, out] */INT32 * result
+        );
+    /* [overload] */HRESULT ( STDMETHODCALLTYPE *ScrollToWithOptions )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */DOUBLE horizontalOffset,
+        /* [in] */DOUBLE verticalOffset,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollOptions * options,
+        /* [retval, out] */INT32 * result
+        );
+    /* [overload] */HRESULT ( STDMETHODCALLTYPE *ScrollBy )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */DOUBLE horizontalOffsetDelta,
+        /* [in] */DOUBLE verticalOffsetDelta,
+        /* [retval, out] */INT32 * result
+        );
+    /* [overload] */HRESULT ( STDMETHODCALLTYPE *ScrollByWithOptions )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */DOUBLE horizontalOffsetDelta,
+        /* [in] */DOUBLE verticalOffsetDelta,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingScrollOptions * options,
+        /* [retval, out] */INT32 * result
+        );
+    HRESULT ( STDMETHODCALLTYPE *AddScrollVelocity )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__x_ABI_CWindows_CFoundation_CNumerics_CVector2 offsetsVelocity,
+        /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * inertiaDecayRate,
+        /* [retval, out] */INT32 * result
+        );
+    /* [overload] */HRESULT ( STDMETHODCALLTYPE *ZoomTo )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */FLOAT zoomFactor,
+        /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
+        /* [retval, out] */INT32 * result
+        );
+    /* [overload] */HRESULT ( STDMETHODCALLTYPE *ZoomToWithOptions )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */FLOAT zoomFactor,
+        /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomOptions * options,
+        /* [retval, out] */INT32 * result
+        );
+    /* [overload] */HRESULT ( STDMETHODCALLTYPE *ZoomBy )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */FLOAT zoomFactorDelta,
+        /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
+        /* [retval, out] */INT32 * result
+        );
+    /* [overload] */HRESULT ( STDMETHODCALLTYPE *ZoomByWithOptions )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */FLOAT zoomFactorDelta,
+        /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollingZoomOptions * options,
+        /* [retval, out] */INT32 * result
+        );
+    HRESULT ( STDMETHODCALLTYPE *AddZoomVelocity )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */FLOAT zoomFactorVelocity,
+        /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
+        /* [in] */__FIReference_1_float * inertiaDecayRate,
+        /* [retval, out] */INT32 * result
+        );
+    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_ExtentChanged )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable * handler,
+        /* [retval, out] */EventRegistrationToken * token
+        );
+    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_ExtentChanged )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */EventRegistrationToken token
+        );
+    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_StateChanged )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable * handler,
+        /* [retval, out] */EventRegistrationToken * token
+        );
+    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_StateChanged )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */EventRegistrationToken token
+        );
+    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_ViewChanged )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_IInspectable * handler,
+        /* [retval, out] */EventRegistrationToken * token
+        );
+    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_ViewChanged )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */EventRegistrationToken token
+        );
+    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_ScrollAnimationStarting )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollAnimationStartingEventArgs * handler,
+        /* [retval, out] */EventRegistrationToken * token
+        );
+    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_ScrollAnimationStarting )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */EventRegistrationToken token
+        );
+    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_ZoomAnimationStarting )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomAnimationStartingEventArgs * handler,
+        /* [retval, out] */EventRegistrationToken * token
+        );
+    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_ZoomAnimationStarting )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */EventRegistrationToken token
+        );
+    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_ScrollCompleted )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingScrollCompletedEventArgs * handler,
+        /* [retval, out] */EventRegistrationToken * token
+        );
+    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_ScrollCompleted )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */EventRegistrationToken token
+        );
+    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_ZoomCompleted )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingZoomCompletedEventArgs * handler,
+        /* [retval, out] */EventRegistrationToken * token
+        );
+    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_ZoomCompleted )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */EventRegistrationToken token
+        );
+    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_BringingIntoView )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingBringingIntoViewEventArgs * handler,
+        /* [retval, out] */EventRegistrationToken * token
+        );
+    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_BringingIntoView )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */EventRegistrationToken token
+        );
+    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_AnchorRequested )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollPresenter_Microsoft__CUI__CXaml__CControls__CScrollingAnchorRequestedEventArgs * handler,
+        /* [retval, out] */EventRegistrationToken * token
+        );
+    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_AnchorRequested )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * This,
+        /* [in] */EventRegistrationToken token
+        );
+    END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_Background(This,value) \
+    ( (This)->lpVtbl->get_Background(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_Background(This,value) \
+    ( (This)->lpVtbl->put_Background(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_Content(This,value) \
+    ( (This)->lpVtbl->get_Content(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_Content(This,value) \
+    ( (This)->lpVtbl->put_Content(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_ExpressionAnimationSources(This,value) \
+    ( (This)->lpVtbl->get_ExpressionAnimationSources(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_HorizontalOffset(This,value) \
+    ( (This)->lpVtbl->get_HorizontalOffset(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_VerticalOffset(This,value) \
+    ( (This)->lpVtbl->get_VerticalOffset(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_ZoomFactor(This,value) \
+    ( (This)->lpVtbl->get_ZoomFactor(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_ExtentWidth(This,value) \
+    ( (This)->lpVtbl->get_ExtentWidth(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_ExtentHeight(This,value) \
+    ( (This)->lpVtbl->get_ExtentHeight(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_ViewportWidth(This,value) \
+    ( (This)->lpVtbl->get_ViewportWidth(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_ViewportHeight(This,value) \
+    ( (This)->lpVtbl->get_ViewportHeight(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_ScrollableWidth(This,value) \
+    ( (This)->lpVtbl->get_ScrollableWidth(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_ScrollableHeight(This,value) \
+    ( (This)->lpVtbl->get_ScrollableHeight(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_ContentOrientation(This,value) \
+    ( (This)->lpVtbl->get_ContentOrientation(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_ContentOrientation(This,value) \
+    ( (This)->lpVtbl->put_ContentOrientation(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_HorizontalScrollChainMode(This,value) \
+    ( (This)->lpVtbl->get_HorizontalScrollChainMode(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_HorizontalScrollChainMode(This,value) \
+    ( (This)->lpVtbl->put_HorizontalScrollChainMode(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_VerticalScrollChainMode(This,value) \
+    ( (This)->lpVtbl->get_VerticalScrollChainMode(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_VerticalScrollChainMode(This,value) \
+    ( (This)->lpVtbl->put_VerticalScrollChainMode(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_HorizontalScrollRailMode(This,value) \
+    ( (This)->lpVtbl->get_HorizontalScrollRailMode(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_HorizontalScrollRailMode(This,value) \
+    ( (This)->lpVtbl->put_HorizontalScrollRailMode(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_VerticalScrollRailMode(This,value) \
+    ( (This)->lpVtbl->get_VerticalScrollRailMode(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_VerticalScrollRailMode(This,value) \
+    ( (This)->lpVtbl->put_VerticalScrollRailMode(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_HorizontalScrollMode(This,value) \
+    ( (This)->lpVtbl->get_HorizontalScrollMode(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_HorizontalScrollMode(This,value) \
+    ( (This)->lpVtbl->put_HorizontalScrollMode(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_VerticalScrollMode(This,value) \
+    ( (This)->lpVtbl->get_VerticalScrollMode(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_VerticalScrollMode(This,value) \
+    ( (This)->lpVtbl->put_VerticalScrollMode(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_ZoomChainMode(This,value) \
+    ( (This)->lpVtbl->get_ZoomChainMode(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_ZoomChainMode(This,value) \
+    ( (This)->lpVtbl->put_ZoomChainMode(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_ZoomMode(This,value) \
+    ( (This)->lpVtbl->get_ZoomMode(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_ZoomMode(This,value) \
+    ( (This)->lpVtbl->put_ZoomMode(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_IgnoredInputKinds(This,value) \
+    ( (This)->lpVtbl->get_IgnoredInputKinds(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_IgnoredInputKinds(This,value) \
+    ( (This)->lpVtbl->put_IgnoredInputKinds(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_MinZoomFactor(This,value) \
+    ( (This)->lpVtbl->get_MinZoomFactor(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_MinZoomFactor(This,value) \
+    ( (This)->lpVtbl->put_MinZoomFactor(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_MaxZoomFactor(This,value) \
+    ( (This)->lpVtbl->get_MaxZoomFactor(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_MaxZoomFactor(This,value) \
+    ( (This)->lpVtbl->put_MaxZoomFactor(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_State(This,value) \
+    ( (This)->lpVtbl->get_State(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_HorizontalScrollController(This,value) \
+    ( (This)->lpVtbl->get_HorizontalScrollController(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_HorizontalScrollController(This,value) \
+    ( (This)->lpVtbl->put_HorizontalScrollController(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_VerticalScrollController(This,value) \
+    ( (This)->lpVtbl->get_VerticalScrollController(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_VerticalScrollController(This,value) \
+    ( (This)->lpVtbl->put_VerticalScrollController(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_HorizontalAnchorRatio(This,value) \
+    ( (This)->lpVtbl->get_HorizontalAnchorRatio(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_HorizontalAnchorRatio(This,value) \
+    ( (This)->lpVtbl->put_HorizontalAnchorRatio(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_VerticalAnchorRatio(This,value) \
+    ( (This)->lpVtbl->get_VerticalAnchorRatio(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_put_VerticalAnchorRatio(This,value) \
+    ( (This)->lpVtbl->put_VerticalAnchorRatio(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_HorizontalSnapPoints(This,value) \
+    ( (This)->lpVtbl->get_HorizontalSnapPoints(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_VerticalSnapPoints(This,value) \
+    ( (This)->lpVtbl->get_VerticalSnapPoints(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_get_ZoomSnapPoints(This,value) \
+    ( (This)->lpVtbl->get_ZoomSnapPoints(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_ScrollTo(This,horizontalOffset,verticalOffset,result) \
+    ( (This)->lpVtbl->ScrollTo(This,horizontalOffset,verticalOffset,result) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_ScrollToWithOptions(This,horizontalOffset,verticalOffset,options,result) \
+    ( (This)->lpVtbl->ScrollToWithOptions(This,horizontalOffset,verticalOffset,options,result) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_ScrollBy(This,horizontalOffsetDelta,verticalOffsetDelta,result) \
+    ( (This)->lpVtbl->ScrollBy(This,horizontalOffsetDelta,verticalOffsetDelta,result) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_ScrollByWithOptions(This,horizontalOffsetDelta,verticalOffsetDelta,options,result) \
+    ( (This)->lpVtbl->ScrollByWithOptions(This,horizontalOffsetDelta,verticalOffsetDelta,options,result) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_AddScrollVelocity(This,offsetsVelocity,inertiaDecayRate,result) \
+    ( (This)->lpVtbl->AddScrollVelocity(This,offsetsVelocity,inertiaDecayRate,result) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_ZoomTo(This,zoomFactor,centerPoint,result) \
+    ( (This)->lpVtbl->ZoomTo(This,zoomFactor,centerPoint,result) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_ZoomToWithOptions(This,zoomFactor,centerPoint,options,result) \
+    ( (This)->lpVtbl->ZoomToWithOptions(This,zoomFactor,centerPoint,options,result) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_ZoomBy(This,zoomFactorDelta,centerPoint,result) \
+    ( (This)->lpVtbl->ZoomBy(This,zoomFactorDelta,centerPoint,result) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_ZoomByWithOptions(This,zoomFactorDelta,centerPoint,options,result) \
+    ( (This)->lpVtbl->ZoomByWithOptions(This,zoomFactorDelta,centerPoint,options,result) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_AddZoomVelocity(This,zoomFactorVelocity,centerPoint,inertiaDecayRate,result) \
+    ( (This)->lpVtbl->AddZoomVelocity(This,zoomFactorVelocity,centerPoint,inertiaDecayRate,result) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_add_ExtentChanged(This,handler,token) \
+    ( (This)->lpVtbl->add_ExtentChanged(This,handler,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_remove_ExtentChanged(This,token) \
+    ( (This)->lpVtbl->remove_ExtentChanged(This,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_add_StateChanged(This,handler,token) \
+    ( (This)->lpVtbl->add_StateChanged(This,handler,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_remove_StateChanged(This,token) \
+    ( (This)->lpVtbl->remove_StateChanged(This,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_add_ViewChanged(This,handler,token) \
+    ( (This)->lpVtbl->add_ViewChanged(This,handler,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_remove_ViewChanged(This,token) \
+    ( (This)->lpVtbl->remove_ViewChanged(This,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_add_ScrollAnimationStarting(This,handler,token) \
+    ( (This)->lpVtbl->add_ScrollAnimationStarting(This,handler,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_remove_ScrollAnimationStarting(This,token) \
+    ( (This)->lpVtbl->remove_ScrollAnimationStarting(This,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_add_ZoomAnimationStarting(This,handler,token) \
+    ( (This)->lpVtbl->add_ZoomAnimationStarting(This,handler,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_remove_ZoomAnimationStarting(This,token) \
+    ( (This)->lpVtbl->remove_ZoomAnimationStarting(This,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_add_ScrollCompleted(This,handler,token) \
+    ( (This)->lpVtbl->add_ScrollCompleted(This,handler,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_remove_ScrollCompleted(This,token) \
+    ( (This)->lpVtbl->remove_ScrollCompleted(This,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_add_ZoomCompleted(This,handler,token) \
+    ( (This)->lpVtbl->add_ZoomCompleted(This,handler,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_remove_ZoomCompleted(This,token) \
+    ( (This)->lpVtbl->remove_ZoomCompleted(This,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_add_BringingIntoView(This,handler,token) \
+    ( (This)->lpVtbl->add_BringingIntoView(This,handler,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_remove_BringingIntoView(This,token) \
+    ( (This)->lpVtbl->remove_BringingIntoView(This,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_add_AnchorRequested(This,handler,token) \
+    ( (This)->lpVtbl->add_AnchorRequested(This,handler,token) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_remove_AnchorRequested(This,token) \
+    ( (This)->lpVtbl->remove_AnchorRequested(This,token) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenterFactory
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenterFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenterFactory";
+/* [object, version, uuid("9F5CDC57-D229-52B2-AEE4-37C496764EA3"), experimental, exclusiveto] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactoryVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory * This,
+        /* [in] */IInspectable * baseInterface,
+        /* [out] */IInspectable * * innerInterface,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * * value
+        );
+    END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactoryVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactoryVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_CreateInstance(This,baseInterface,innerInterface,value) \
+    ( (This)->lpVtbl->CreateInstance(This,baseInterface,innerInterface,value) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenterStatics
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenterStatics[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenterStatics";
+/* [object, version, uuid("CB3764AB-C2FD-5770-8067-2856267D26D8"), experimental, exclusiveto] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStaticsVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_BackgroundProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ContentProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ContentOrientationProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalScrollChainModeProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalScrollChainModeProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalScrollRailModeProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalScrollRailModeProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalScrollModeProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalScrollModeProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ZoomChainModeProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ZoomModeProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_IgnoredInputKindsProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_MinZoomFactorProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_MaxZoomFactorProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalAnchorRatioProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalAnchorRatioProperty )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
+        );
+    END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStaticsVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStaticsVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_get_BackgroundProperty(This,value) \
+    ( (This)->lpVtbl->get_BackgroundProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_get_ContentProperty(This,value) \
+    ( (This)->lpVtbl->get_ContentProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_get_ContentOrientationProperty(This,value) \
+    ( (This)->lpVtbl->get_ContentOrientationProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_get_HorizontalScrollChainModeProperty(This,value) \
+    ( (This)->lpVtbl->get_HorizontalScrollChainModeProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_get_VerticalScrollChainModeProperty(This,value) \
+    ( (This)->lpVtbl->get_VerticalScrollChainModeProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_get_HorizontalScrollRailModeProperty(This,value) \
+    ( (This)->lpVtbl->get_HorizontalScrollRailModeProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_get_VerticalScrollRailModeProperty(This,value) \
+    ( (This)->lpVtbl->get_VerticalScrollRailModeProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_get_HorizontalScrollModeProperty(This,value) \
+    ( (This)->lpVtbl->get_HorizontalScrollModeProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_get_VerticalScrollModeProperty(This,value) \
+    ( (This)->lpVtbl->get_VerticalScrollModeProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_get_ZoomChainModeProperty(This,value) \
+    ( (This)->lpVtbl->get_ZoomChainModeProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_get_ZoomModeProperty(This,value) \
+    ( (This)->lpVtbl->get_ZoomModeProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_get_IgnoredInputKindsProperty(This,value) \
+    ( (This)->lpVtbl->get_IgnoredInputKindsProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_get_MinZoomFactorProperty(This,value) \
+    ( (This)->lpVtbl->get_MinZoomFactorProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_get_MaxZoomFactorProperty(This,value) \
+    ( (This)->lpVtbl->get_MaxZoomFactorProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_get_HorizontalAnchorRatioProperty(This,value) \
+    ( (This)->lpVtbl->get_HorizontalAnchorRatioProperty(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_get_VerticalAnchorRatioProperty(This,value) \
+    ( (This)->lpVtbl->get_VerticalAnchorRatioProperty(This,value) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenterStatics_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPoint
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPoint
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPoint_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPoint_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollSnapPoint[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPoint";
-/* [object, version, uuid("73D918FF-D16C-52CD-9657-E392EE08868A"), exclusiveto] */
+/* [object, version, uuid("73D918FF-D16C-52CD-9657-E392EE08868A"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointVtbl
 {
     BEGIN_INTERFACE
@@ -37427,20 +39130,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPoint
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPoint;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPoint_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointBase
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointBase
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBase_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBase_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollSnapPointBase[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointBase";
-/* [object, version, uuid("45D7319D-C9EB-5109-9668-FF3FC6CCDF11"), exclusiveto] */
+/* [object, version, uuid("45D7319D-C9EB-5109-9668-FF3FC6CCDF11"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBaseVtbl
 {
     BEGIN_INTERFACE
@@ -37515,20 +39222,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBa
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBase;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBase_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointBaseFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointBase
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBaseFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBaseFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollSnapPointBaseFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointBaseFactory";
-/* [object, version, uuid("3FA2E552-1A45-5691-99DC-6400087CBB38"), exclusiveto] */
+/* [object, version, uuid("3FA2E552-1A45-5691-99DC-6400087CBB38"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBaseFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -37596,20 +39307,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBa
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBaseFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointBaseFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPoint
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollSnapPointFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointFactory";
-/* [object, version, uuid("39304BC7-0E54-5C06-8920-ADCF67E7C466"), exclusiveto] */
+/* [object, version, uuid("39304BC7-0E54-5C06-8920-ADCF67E7C466"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -37688,6 +39403,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointFa
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -37834,950 +39550,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointsI
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointsInfo;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollSnapPointsInfo_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Controls.Primitives.IScroller
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.Scroller
- *
- *
- */
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScroller[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScroller";
-/* [object, version, uuid("FC76B194-4EC5-5EA0-BE6A-64EC73BFA7CC"), exclusiveto] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Background )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBrush * * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_Background )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBrush * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Content )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_Content )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ExpressionAnimationSources )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CComposition_CICompositionPropertySet * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalOffset )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalOffset )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ZoomFactor )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */FLOAT * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ExtentWidth )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ExtentHeight )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ViewportWidth )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ViewportHeight )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ScrollableWidth )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ScrollableHeight )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ContentOrientation )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CContentOrientation * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_ContentOrientation )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CContentOrientation value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalScrollChainingMode )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CChainingMode * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_HorizontalScrollChainingMode )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CChainingMode value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalScrollChainingMode )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CChainingMode * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_VerticalScrollChainingMode )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CChainingMode value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalScrollRailingMode )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CRailingMode * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_HorizontalScrollRailingMode )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CRailingMode value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalScrollRailingMode )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CRailingMode * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_VerticalScrollRailingMode )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CRailingMode value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalScrollMode )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollMode * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_HorizontalScrollMode )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollMode value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalScrollMode )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollMode * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_VerticalScrollMode )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollMode value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ZoomChainingMode )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CChainingMode * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_ZoomChainingMode )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CChainingMode value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ZoomMode )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CZoomMode * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_ZoomMode )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CZoomMode value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_IgnoredInputKind )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CInputKind * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_IgnoredInputKind )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CInputKind value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_MinZoomFactor )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_MinZoomFactor )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */DOUBLE value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_MaxZoomFactor )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_MaxZoomFactor )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */DOUBLE value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_State )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CInteractionState * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalScrollController )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_HorizontalScrollController )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalScrollController )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_VerticalScrollController )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollController * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalAnchorRatio )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_HorizontalAnchorRatio )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */DOUBLE value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalAnchorRatio )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_VerticalAnchorRatio )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */DOUBLE value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalSnapPoints )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalSnapPoints )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CScrollSnapPointBase * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ZoomSnapPoints )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [retval, out] */__FIVector_1_Microsoft__CUI__CXaml__CControls__CPrimitives__CZoomSnapPointBase * * value
-        );
-    /* [overload] */HRESULT ( STDMETHODCALLTYPE *ScrollTo )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */DOUBLE horizontalOffset,
-        /* [in] */DOUBLE verticalOffset,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollInfo * result
-        );
-    /* [overload] */HRESULT ( STDMETHODCALLTYPE *ScrollToWithOptions )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */DOUBLE horizontalOffset,
-        /* [in] */DOUBLE verticalOffset,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollOptions * options,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollInfo * result
-        );
-    /* [overload] */HRESULT ( STDMETHODCALLTYPE *ScrollBy )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */DOUBLE horizontalOffsetDelta,
-        /* [in] */DOUBLE verticalOffsetDelta,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollInfo * result
-        );
-    /* [overload] */HRESULT ( STDMETHODCALLTYPE *ScrollByWithOptions )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */DOUBLE horizontalOffsetDelta,
-        /* [in] */DOUBLE verticalOffsetDelta,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollOptions * options,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollInfo * result
-        );
-    HRESULT ( STDMETHODCALLTYPE *ScrollFrom )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__x_ABI_CWindows_CFoundation_CNumerics_CVector2 offsetsVelocity,
-        /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * inertiaDecayRate,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CScrollInfo * result
-        );
-    /* [overload] */HRESULT ( STDMETHODCALLTYPE *ZoomTo )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */FLOAT zoomFactor,
-        /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CZoomInfo * result
-        );
-    /* [overload] */HRESULT ( STDMETHODCALLTYPE *ZoomToWithOptions )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */FLOAT zoomFactor,
-        /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomOptions * options,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CZoomInfo * result
-        );
-    /* [overload] */HRESULT ( STDMETHODCALLTYPE *ZoomBy )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */FLOAT zoomFactorDelta,
-        /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CZoomInfo * result
-        );
-    /* [overload] */HRESULT ( STDMETHODCALLTYPE *ZoomByWithOptions )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */FLOAT zoomFactorDelta,
-        /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIZoomOptions * options,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CZoomInfo * result
-        );
-    HRESULT ( STDMETHODCALLTYPE *ZoomFrom )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */FLOAT zoomFactorVelocity,
-        /* [in] */__FIReference_1_Windows__CFoundation__CNumerics__CVector2 * centerPoint,
-        /* [in] */__FIReference_1_float * inertiaDecayRate,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CZoomInfo * result
-        );
-    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_ExtentChanged )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable * handler,
-        /* [retval, out] */EventRegistrationToken * token
-        );
-    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_ExtentChanged )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */EventRegistrationToken token
-        );
-    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_StateChanged )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable * handler,
-        /* [retval, out] */EventRegistrationToken * token
-        );
-    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_StateChanged )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */EventRegistrationToken token
-        );
-    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_ViewChanged )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_IInspectable * handler,
-        /* [retval, out] */EventRegistrationToken * token
-        );
-    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_ViewChanged )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */EventRegistrationToken token
-        );
-    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_ScrollAnimationStarting )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollAnimationStartingEventArgs * handler,
-        /* [retval, out] */EventRegistrationToken * token
-        );
-    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_ScrollAnimationStarting )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */EventRegistrationToken token
-        );
-    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_ZoomAnimationStarting )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomAnimationStartingEventArgs * handler,
-        /* [retval, out] */EventRegistrationToken * token
-        );
-    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_ZoomAnimationStarting )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */EventRegistrationToken token
-        );
-    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_ScrollCompleted )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollCompletedEventArgs * handler,
-        /* [retval, out] */EventRegistrationToken * token
-        );
-    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_ScrollCompleted )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */EventRegistrationToken token
-        );
-    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_ZoomCompleted )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CZoomCompletedEventArgs * handler,
-        /* [retval, out] */EventRegistrationToken * token
-        );
-    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_ZoomCompleted )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */EventRegistrationToken token
-        );
-    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_BringingIntoView )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerBringingIntoViewEventArgs * handler,
-        /* [retval, out] */EventRegistrationToken * token
-        );
-    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_BringingIntoView )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */EventRegistrationToken token
-        );
-    /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_AnchorRequested )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CPrimitives__CScroller_Microsoft__CUI__CXaml__CControls__CScrollerAnchorRequestedEventArgs * handler,
-        /* [retval, out] */EventRegistrationToken * token
-        );
-    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_AnchorRequested )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * This,
-        /* [in] */EventRegistrationToken token
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_Background(This,value) \
-    ( (This)->lpVtbl->get_Background(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_Background(This,value) \
-    ( (This)->lpVtbl->put_Background(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_Content(This,value) \
-    ( (This)->lpVtbl->get_Content(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_Content(This,value) \
-    ( (This)->lpVtbl->put_Content(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_ExpressionAnimationSources(This,value) \
-    ( (This)->lpVtbl->get_ExpressionAnimationSources(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_HorizontalOffset(This,value) \
-    ( (This)->lpVtbl->get_HorizontalOffset(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_VerticalOffset(This,value) \
-    ( (This)->lpVtbl->get_VerticalOffset(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_ZoomFactor(This,value) \
-    ( (This)->lpVtbl->get_ZoomFactor(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_ExtentWidth(This,value) \
-    ( (This)->lpVtbl->get_ExtentWidth(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_ExtentHeight(This,value) \
-    ( (This)->lpVtbl->get_ExtentHeight(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_ViewportWidth(This,value) \
-    ( (This)->lpVtbl->get_ViewportWidth(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_ViewportHeight(This,value) \
-    ( (This)->lpVtbl->get_ViewportHeight(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_ScrollableWidth(This,value) \
-    ( (This)->lpVtbl->get_ScrollableWidth(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_ScrollableHeight(This,value) \
-    ( (This)->lpVtbl->get_ScrollableHeight(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_ContentOrientation(This,value) \
-    ( (This)->lpVtbl->get_ContentOrientation(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_ContentOrientation(This,value) \
-    ( (This)->lpVtbl->put_ContentOrientation(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_HorizontalScrollChainingMode(This,value) \
-    ( (This)->lpVtbl->get_HorizontalScrollChainingMode(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_HorizontalScrollChainingMode(This,value) \
-    ( (This)->lpVtbl->put_HorizontalScrollChainingMode(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_VerticalScrollChainingMode(This,value) \
-    ( (This)->lpVtbl->get_VerticalScrollChainingMode(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_VerticalScrollChainingMode(This,value) \
-    ( (This)->lpVtbl->put_VerticalScrollChainingMode(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_HorizontalScrollRailingMode(This,value) \
-    ( (This)->lpVtbl->get_HorizontalScrollRailingMode(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_HorizontalScrollRailingMode(This,value) \
-    ( (This)->lpVtbl->put_HorizontalScrollRailingMode(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_VerticalScrollRailingMode(This,value) \
-    ( (This)->lpVtbl->get_VerticalScrollRailingMode(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_VerticalScrollRailingMode(This,value) \
-    ( (This)->lpVtbl->put_VerticalScrollRailingMode(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_HorizontalScrollMode(This,value) \
-    ( (This)->lpVtbl->get_HorizontalScrollMode(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_HorizontalScrollMode(This,value) \
-    ( (This)->lpVtbl->put_HorizontalScrollMode(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_VerticalScrollMode(This,value) \
-    ( (This)->lpVtbl->get_VerticalScrollMode(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_VerticalScrollMode(This,value) \
-    ( (This)->lpVtbl->put_VerticalScrollMode(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_ZoomChainingMode(This,value) \
-    ( (This)->lpVtbl->get_ZoomChainingMode(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_ZoomChainingMode(This,value) \
-    ( (This)->lpVtbl->put_ZoomChainingMode(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_ZoomMode(This,value) \
-    ( (This)->lpVtbl->get_ZoomMode(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_ZoomMode(This,value) \
-    ( (This)->lpVtbl->put_ZoomMode(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_IgnoredInputKind(This,value) \
-    ( (This)->lpVtbl->get_IgnoredInputKind(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_IgnoredInputKind(This,value) \
-    ( (This)->lpVtbl->put_IgnoredInputKind(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_MinZoomFactor(This,value) \
-    ( (This)->lpVtbl->get_MinZoomFactor(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_MinZoomFactor(This,value) \
-    ( (This)->lpVtbl->put_MinZoomFactor(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_MaxZoomFactor(This,value) \
-    ( (This)->lpVtbl->get_MaxZoomFactor(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_MaxZoomFactor(This,value) \
-    ( (This)->lpVtbl->put_MaxZoomFactor(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_State(This,value) \
-    ( (This)->lpVtbl->get_State(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_HorizontalScrollController(This,value) \
-    ( (This)->lpVtbl->get_HorizontalScrollController(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_HorizontalScrollController(This,value) \
-    ( (This)->lpVtbl->put_HorizontalScrollController(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_VerticalScrollController(This,value) \
-    ( (This)->lpVtbl->get_VerticalScrollController(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_VerticalScrollController(This,value) \
-    ( (This)->lpVtbl->put_VerticalScrollController(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_HorizontalAnchorRatio(This,value) \
-    ( (This)->lpVtbl->get_HorizontalAnchorRatio(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_HorizontalAnchorRatio(This,value) \
-    ( (This)->lpVtbl->put_HorizontalAnchorRatio(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_VerticalAnchorRatio(This,value) \
-    ( (This)->lpVtbl->get_VerticalAnchorRatio(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_put_VerticalAnchorRatio(This,value) \
-    ( (This)->lpVtbl->put_VerticalAnchorRatio(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_HorizontalSnapPoints(This,value) \
-    ( (This)->lpVtbl->get_HorizontalSnapPoints(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_VerticalSnapPoints(This,value) \
-    ( (This)->lpVtbl->get_VerticalSnapPoints(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_get_ZoomSnapPoints(This,value) \
-    ( (This)->lpVtbl->get_ZoomSnapPoints(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_ScrollTo(This,horizontalOffset,verticalOffset,result) \
-    ( (This)->lpVtbl->ScrollTo(This,horizontalOffset,verticalOffset,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_ScrollToWithOptions(This,horizontalOffset,verticalOffset,options,result) \
-    ( (This)->lpVtbl->ScrollToWithOptions(This,horizontalOffset,verticalOffset,options,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_ScrollBy(This,horizontalOffsetDelta,verticalOffsetDelta,result) \
-    ( (This)->lpVtbl->ScrollBy(This,horizontalOffsetDelta,verticalOffsetDelta,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_ScrollByWithOptions(This,horizontalOffsetDelta,verticalOffsetDelta,options,result) \
-    ( (This)->lpVtbl->ScrollByWithOptions(This,horizontalOffsetDelta,verticalOffsetDelta,options,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_ScrollFrom(This,offsetsVelocity,inertiaDecayRate,result) \
-    ( (This)->lpVtbl->ScrollFrom(This,offsetsVelocity,inertiaDecayRate,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_ZoomTo(This,zoomFactor,centerPoint,result) \
-    ( (This)->lpVtbl->ZoomTo(This,zoomFactor,centerPoint,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_ZoomToWithOptions(This,zoomFactor,centerPoint,options,result) \
-    ( (This)->lpVtbl->ZoomToWithOptions(This,zoomFactor,centerPoint,options,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_ZoomBy(This,zoomFactorDelta,centerPoint,result) \
-    ( (This)->lpVtbl->ZoomBy(This,zoomFactorDelta,centerPoint,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_ZoomByWithOptions(This,zoomFactorDelta,centerPoint,options,result) \
-    ( (This)->lpVtbl->ZoomByWithOptions(This,zoomFactorDelta,centerPoint,options,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_ZoomFrom(This,zoomFactorVelocity,centerPoint,inertiaDecayRate,result) \
-    ( (This)->lpVtbl->ZoomFrom(This,zoomFactorVelocity,centerPoint,inertiaDecayRate,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_add_ExtentChanged(This,handler,token) \
-    ( (This)->lpVtbl->add_ExtentChanged(This,handler,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_remove_ExtentChanged(This,token) \
-    ( (This)->lpVtbl->remove_ExtentChanged(This,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_add_StateChanged(This,handler,token) \
-    ( (This)->lpVtbl->add_StateChanged(This,handler,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_remove_StateChanged(This,token) \
-    ( (This)->lpVtbl->remove_StateChanged(This,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_add_ViewChanged(This,handler,token) \
-    ( (This)->lpVtbl->add_ViewChanged(This,handler,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_remove_ViewChanged(This,token) \
-    ( (This)->lpVtbl->remove_ViewChanged(This,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_add_ScrollAnimationStarting(This,handler,token) \
-    ( (This)->lpVtbl->add_ScrollAnimationStarting(This,handler,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_remove_ScrollAnimationStarting(This,token) \
-    ( (This)->lpVtbl->remove_ScrollAnimationStarting(This,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_add_ZoomAnimationStarting(This,handler,token) \
-    ( (This)->lpVtbl->add_ZoomAnimationStarting(This,handler,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_remove_ZoomAnimationStarting(This,token) \
-    ( (This)->lpVtbl->remove_ZoomAnimationStarting(This,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_add_ScrollCompleted(This,handler,token) \
-    ( (This)->lpVtbl->add_ScrollCompleted(This,handler,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_remove_ScrollCompleted(This,token) \
-    ( (This)->lpVtbl->remove_ScrollCompleted(This,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_add_ZoomCompleted(This,handler,token) \
-    ( (This)->lpVtbl->add_ZoomCompleted(This,handler,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_remove_ZoomCompleted(This,token) \
-    ( (This)->lpVtbl->remove_ZoomCompleted(This,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_add_BringingIntoView(This,handler,token) \
-    ( (This)->lpVtbl->add_BringingIntoView(This,handler,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_remove_BringingIntoView(This,token) \
-    ( (This)->lpVtbl->remove_BringingIntoView(This,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_add_AnchorRequested(This,handler,token) \
-    ( (This)->lpVtbl->add_AnchorRequested(This,handler,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_remove_AnchorRequested(This,token) \
-    ( (This)->lpVtbl->remove_AnchorRequested(This,token) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_INTERFACE_DEFINED__) */
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollerFactory
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.Scroller
- *
- *
- */
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollerFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollerFactory";
-/* [object, version, uuid("6094F4DD-F93D-5636-B4B5-E938C0CB068E"), exclusiveto] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactoryVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory * This,
-        /* [in] */IInspectable * baseInterface,
-        /* [out] */IInspectable * * innerInterface,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactoryVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactoryVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_CreateInstance(This,baseInterface,innerInterface,value) \
-    ( (This)->lpVtbl->CreateInstance(This,baseInterface,innerInterface,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerFactory_INTERFACE_DEFINED__) */
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Controls.Primitives.IScrollerStatics
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.Scroller
- *
- *
- */
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IScrollerStatics[] = L"Microsoft.UI.Xaml.Controls.Primitives.IScrollerStatics";
-/* [object, version, uuid("75A0D811-DF8D-5606-A3FC-7131848CFC38"), exclusiveto] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStaticsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_BackgroundProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ContentProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ContentOrientationProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalScrollChainingModeProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalScrollChainingModeProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalScrollRailingModeProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalScrollRailingModeProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalScrollModeProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalScrollModeProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ZoomChainingModeProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ZoomModeProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_IgnoredInputKindProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_MinZoomFactorProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_MaxZoomFactorProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_HorizontalAnchorRatioProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_VerticalAnchorRatioProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStaticsVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStaticsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_get_BackgroundProperty(This,value) \
-    ( (This)->lpVtbl->get_BackgroundProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_get_ContentProperty(This,value) \
-    ( (This)->lpVtbl->get_ContentProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_get_ContentOrientationProperty(This,value) \
-    ( (This)->lpVtbl->get_ContentOrientationProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_get_HorizontalScrollChainingModeProperty(This,value) \
-    ( (This)->lpVtbl->get_HorizontalScrollChainingModeProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_get_VerticalScrollChainingModeProperty(This,value) \
-    ( (This)->lpVtbl->get_VerticalScrollChainingModeProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_get_HorizontalScrollRailingModeProperty(This,value) \
-    ( (This)->lpVtbl->get_HorizontalScrollRailingModeProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_get_VerticalScrollRailingModeProperty(This,value) \
-    ( (This)->lpVtbl->get_VerticalScrollRailingModeProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_get_HorizontalScrollModeProperty(This,value) \
-    ( (This)->lpVtbl->get_HorizontalScrollModeProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_get_VerticalScrollModeProperty(This,value) \
-    ( (This)->lpVtbl->get_VerticalScrollModeProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_get_ZoomChainingModeProperty(This,value) \
-    ( (This)->lpVtbl->get_ZoomChainingModeProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_get_ZoomModeProperty(This,value) \
-    ( (This)->lpVtbl->get_ZoomModeProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_get_IgnoredInputKindProperty(This,value) \
-    ( (This)->lpVtbl->get_IgnoredInputKindProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_get_MinZoomFactorProperty(This,value) \
-    ( (This)->lpVtbl->get_MinZoomFactorProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_get_MaxZoomFactorProperty(This,value) \
-    ( (This)->lpVtbl->get_MaxZoomFactorProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_get_HorizontalAnchorRatioProperty(This,value) \
-    ( (This)->lpVtbl->get_HorizontalAnchorRatioProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_get_VerticalAnchorRatioProperty(This,value) \
-    ( (This)->lpVtbl->get_VerticalAnchorRatioProperty(This,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollerStatics_INTERFACE_DEFINED__) */
 
 
 /*
@@ -39458,14 +40230,17 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISele
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.ISnapPointBase
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.SnapPointBase
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBase_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBase_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_ISnapPointBase[] = L"Microsoft.UI.Xaml.Controls.Primitives.ISnapPointBase";
-/* [object, version, uuid("14ED1089-FB97-5211-8C45-C352CD8B96A1"), exclusiveto] */
+/* [object, version, uuid("14ED1089-FB97-5211-8C45-C352CD8B96A1"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBaseVtbl
 {
     BEGIN_INTERFACE
@@ -39533,20 +40308,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBase
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBase;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBase_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.ISnapPointBaseFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.SnapPointBase
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBaseFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBaseFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_ISnapPointBaseFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.ISnapPointBaseFactory";
-/* [object, version, uuid("50266508-15F8-530A-A213-E976E04E670B"), exclusiveto] */
+/* [object, version, uuid("50266508-15F8-530A-A213-E976E04E670B"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBaseFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -39614,6 +40393,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBaseFact
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBaseFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISnapPointBaseFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -41037,14 +41817,17 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CITool
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPoint
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPoint
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPoint_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPoint_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IZoomSnapPoint[] = L"Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPoint";
-/* [object, version, uuid("8101D353-8DB3-5AC6-A7F8-B18EB9C123AC"), exclusiveto] */
+/* [object, version, uuid("8101D353-8DB3-5AC6-A7F8-B18EB9C123AC"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointVtbl
 {
     BEGIN_INTERFACE
@@ -41119,20 +41902,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPoint
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPoint;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPoint_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointBase
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPointBase
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBase_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBase_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IZoomSnapPointBase[] = L"Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointBase";
-/* [object, version, uuid("C6D08756-0860-5C2D-ABEC-6EB4AA4B53D7"), exclusiveto] */
+/* [object, version, uuid("C6D08756-0860-5C2D-ABEC-6EB4AA4B53D7"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBaseVtbl
 {
     BEGIN_INTERFACE
@@ -41200,20 +41987,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBase
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBase;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBase_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointBaseFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPointBase
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBaseFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBaseFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IZoomSnapPointBaseFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointBaseFactory";
-/* [object, version, uuid("2C689EEA-B6CF-5024-847B-589355D5A2FA"), exclusiveto] */
+/* [object, version, uuid("2C689EEA-B6CF-5024-847B-589355D5A2FA"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBaseFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -41281,20 +42072,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBase
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBaseFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointBaseFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPoint
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IZoomSnapPointFactory[] = L"Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointFactory";
-/* [object, version, uuid("0B3B5418-BFF6-5A9E-B734-B68ADF49F775"), exclusiveto] */
+/* [object, version, uuid("0B3B5418-BFF6-5A9E-B734-B68ADF49F775"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -41372,6 +42167,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointFact
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIZoomSnapPointFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -42014,6 +42810,27 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
+ * Class Microsoft.UI.Xaml.Controls.Primitives.InfoBarPanel
+ *
+ * RuntimeClass contains static methods.
+ *
+ * Class implements the following interfaces:
+ *    Microsoft.UI.Xaml.Controls.Primitives.IInfoBarPanel ** Default Interface **
+ *
+ * Class Threading Model:  Both Single and Multi Threaded Apartment
+ *
+ * Class Marshaling Behavior:  Agile - Class is agile
+ *
+ */
+
+#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_InfoBarPanel_DEFINED
+#define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_InfoBarPanel_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_InfoBarPanel[] = L"Microsoft.UI.Xaml.Controls.Primitives.InfoBarPanel";
+#endif
+
+
+/*
+ *
  * Class Microsoft.UI.Xaml.Controls.Primitives.ItemsChangedEventArgs
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -42616,6 +43433,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Xaml.Controls.Primitives.RepeatedScrollSnapPoint
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Controls.Primitives.IRepeatedScrollSnapPoint ** Default Interface **
  *
@@ -42624,16 +43443,20 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_RepeatedScrollSnapPoint_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_RepeatedScrollSnapPoint_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_RepeatedScrollSnapPoint[] = L"Microsoft.UI.Xaml.Controls.Primitives.RepeatedScrollSnapPoint";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Class Microsoft.UI.Xaml.Controls.Primitives.RepeatedZoomSnapPoint
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Controls.Primitives.IRepeatedZoomSnapPoint ** Default Interface **
@@ -42643,11 +43466,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_RepeatedZoomSnapPoint_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_RepeatedZoomSnapPoint_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_RepeatedZoomSnapPoint[] = L"Microsoft.UI.Xaml.Controls.Primitives.RepeatedZoomSnapPoint";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -42682,7 +43507,34 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
+ * Class Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerAddScrollVelocityRequestedEventArgs
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * RuntimeClass can be activated.
+ *
+ * Class implements the following interfaces:
+ *    Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerAddScrollVelocityRequestedEventArgs ** Default Interface **
+ *
+ * Class Threading Model:  Both Single and Multi Threaded Apartment
+ *
+ * Class Marshaling Behavior:  Agile - Class is agile
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerAddScrollVelocityRequestedEventArgs_DEFINED
+#define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerAddScrollVelocityRequestedEventArgs_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerAddScrollVelocityRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerAddScrollVelocityRequestedEventArgs";
+#endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
  * Class Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerInteractionRequestedEventArgs
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass can be activated.
  *
@@ -42694,16 +43546,20 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerInteractionRequestedEventArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerInteractionRequestedEventArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerInteractionRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerInteractionRequestedEventArgs";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Class Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollByRequestedEventArgs
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass can be activated.
  *
@@ -42715,37 +43571,20 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollByRequestedEventArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollByRequestedEventArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollByRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollByRequestedEventArgs";
 #endif
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollFromRequestedEventArgs
- *
- * RuntimeClass can be activated.
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollFromRequestedEventArgs ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollFromRequestedEventArgs_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollFromRequestedEventArgs_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollFromRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollFromRequestedEventArgs";
-#endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Class Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollToRequestedEventArgs
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass can be activated.
  *
@@ -42757,11 +43596,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollToRequestedEventArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollToRequestedEventArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ScrollControllerScrollToRequestedEventArgs[] = L"Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollToRequestedEventArgs";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -42793,7 +43634,35 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
+ * Class Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * RuntimeClass contains static methods.
+ *
+ * Class implements the following interfaces:
+ *    Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenter ** Default Interface **
+ *    Microsoft.UI.Xaml.Controls.IScrollAnchorProvider
+ *
+ * Class Threading Model:  Both Single and Multi Threaded Apartment
+ *
+ * Class Marshaling Behavior:  Agile - Class is agile
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollPresenter_DEFINED
+#define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollPresenter_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ScrollPresenter[] = L"Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter";
+#endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
  * Class Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPoint
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPoint ** Default Interface **
@@ -42803,16 +43672,20 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollSnapPoint_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollSnapPoint_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ScrollSnapPoint[] = L"Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPoint";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Class Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointBase
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointBase ** Default Interface **
@@ -42822,32 +43695,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollSnapPointBase_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ScrollSnapPointBase_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ScrollSnapPointBase[] = L"Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointBase";
 #endif
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Controls.Primitives.Scroller
- *
- * RuntimeClass contains static methods.
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Controls.Primitives.IScroller ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_Scroller_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_Scroller_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_Scroller[] = L"Microsoft.UI.Xaml.Controls.Primitives.Scroller";
-#endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -42908,6 +43762,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Xaml.Controls.Primitives.SnapPointBase
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Controls.Primitives.ISnapPointBase ** Default Interface **
  *
@@ -42916,11 +43772,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_SnapPointBase_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_SnapPointBase_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_SnapPointBase[] = L"Microsoft.UI.Xaml.Controls.Primitives.SnapPointBase";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -43106,6 +43964,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPoint
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPoint ** Default Interface **
  *
@@ -43114,16 +43974,20 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ZoomSnapPoint_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ZoomSnapPoint_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ZoomSnapPoint[] = L"Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPoint";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Class Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPointBase
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointBase ** Default Interface **
@@ -43133,11 +43997,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ZoomSnapPointBase_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ZoomSnapPointBase_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ZoomSnapPointBase[] = L"Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPointBase";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 

@@ -57,14 +57,6 @@
 #define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
@@ -1279,7 +1271,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("a512d3b7-9846-50b8-8417-aec7939086a6"))
+struct __declspec(uuid("1c6254d9-7c92-504d-a23c-904d1fa20ce0"))
 ITypedEventHandler<ABI::Microsoft::UI::Hosting::Experimental::ExpDesktopWindowBridge*,ABI::Microsoft::UI::Input::Experimental::ExpNavigateFocusRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Hosting::Experimental::ExpDesktopWindowBridge*, ABI::Microsoft::UI::Hosting::Experimental::IExpDesktopWindowBridge*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Input::Experimental::ExpNavigateFocusRequestedEventArgs*, ABI::Microsoft::UI::Input::Experimental::IExpNavigateFocusRequestedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 

@@ -76,8 +76,6 @@ namespace Microsoft
         {
             typedef enum FocusState FocusState;
 
-            apicontract PrivateApiContract;
-
             runtimeclass UIElement;
 
             apicontract WinUIContract;
@@ -158,8 +156,6 @@ namespace Microsoft
 
                 typedef enum KeyboardNavigationMode KeyboardNavigationMode;
 
-                typedef enum LastInputDeviceType LastInputDeviceType;
-
                 typedef enum ManipulationModes ManipulationModes;
 
                 typedef enum StandardUICommandKind StandardUICommandKind;
@@ -171,8 +167,6 @@ namespace Microsoft
                 typedef enum XYFocusNavigationStrategyOverride XYFocusNavigationStrategyOverride;
 
                 delegate DoubleTappedEventHandler;
-
-                delegate FocusedElementRemovedEventHandler;
 
                 delegate HoldingEventHandler;
 
@@ -218,8 +212,6 @@ namespace Microsoft
 
                 interface IFindNextElementOptions;
 
-                interface IFindNextElementOptionsPrivate;
-
                 interface IFocusManager;
 
                 interface IFocusManagerGotFocusEventArgs;
@@ -228,11 +220,7 @@ namespace Microsoft
 
                 interface IFocusManagerStatics;
 
-                interface IFocusManagerStaticsPrivate;
-
                 interface IFocusMovementResult;
-
-                interface IFocusedElementRemovedEventArgs;
 
                 interface IGettingFocusEventArgs;
 
@@ -243,8 +231,6 @@ namespace Microsoft
                 interface IInertiaRotationBehavior;
 
                 interface IInertiaTranslationBehavior;
-
-                interface IInputManagerStatics;
 
                 interface IInputScope;
 
@@ -332,8 +318,6 @@ namespace Microsoft
 
                 runtimeclass FocusMovementResult;
 
-                runtimeclass FocusedElementRemovedEventArgs;
-
                 runtimeclass GettingFocusEventArgs;
 
                 runtimeclass HoldingRoutedEventArgs;
@@ -343,8 +327,6 @@ namespace Microsoft
                 runtimeclass InertiaRotationBehavior;
 
                 runtimeclass InertiaTranslationBehavior;
-
-                runtimeclass InputManager;
 
                 runtimeclass InputScope;
 
@@ -575,17 +557,6 @@ namespace Microsoft
                     Once  = 2
                 };
 
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                enum LastInputDeviceType
-                {
-                    None            = 0,
-                    Mouse           = 1,
-                    Touch           = 2,
-                    Pen             = 3,
-                    Keyboard        = 4,
-                    GamepadOrRemote = 5
-                };
-
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [flags]
                 enum ManipulationModes
@@ -657,11 +628,6 @@ namespace Microsoft
                 [uuid(F7A501B9-E277-5611-87B0-0E0607622183)]
                 delegate
                     HRESULT DoubleTappedEventHandler([in] IInspectable* sender, [in] Microsoft.UI.Xaml.Input.DoubleTappedRoutedEventArgs* e);
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [uuid(BE7AD825-7E45-57C4-8E5E-96F4AFB4DB58)]
-                delegate
-                    HRESULT FocusedElementRemovedEventHandler([in] IInspectable* sender, [in] Microsoft.UI.Xaml.Input.FocusedElementRemovedEventArgs* e);
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [uuid(FE23C5BD-4984-56B6-B92B-FC9D1216B24E)]
@@ -832,14 +798,6 @@ namespace Microsoft
                     [propput] HRESULT XYFocusNavigationStrategyOverride([in] Microsoft.UI.Xaml.Input.XYFocusNavigationStrategyOverride value);
                 }
 
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [uuid(98B29E17-62D0-57FD-8937-DC47B8B580A1)]
-                interface IFindNextElementOptionsPrivate : IInspectable
-                {
-                    [propget] HRESULT IgnoreOcclusivity([out] [retval] boolean* value);
-                    [propput] HRESULT IgnoreOcclusivity([in] boolean value);
-                }
-
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Input.FocusManager)]
                 [uuid(9FD07BC5-D2D4-53FE-A31A-846DE8B7A257)]
@@ -893,36 +851,12 @@ namespace Microsoft
                     [overload("GetFocusedElement")] HRESULT GetFocusedElementWithRoot([in] Microsoft.UI.Xaml.XamlRoot* xamlRoot, [out] [retval] IInspectable** result);
                 }
 
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [uuid(870BB840-0A1E-54CC-8A82-06E6199824F9)]
-                interface IFocusManagerStaticsPrivate : IInspectable
-                {
-                    [eventadd] HRESULT FocusedElementRemoved([in] Microsoft.UI.Xaml.Input.FocusedElementRemovedEventHandler* handler, [out] [retval] EventRegistrationToken* token);
-                    [eventremove] HRESULT FocusedElementRemoved([in] EventRegistrationToken token);
-                    HRESULT FindNextFocusWithSearchRootIgnoreEngagement([in] Microsoft.UI.Xaml.Input.FocusNavigationDirection focusNavigationDirection, [in] IInspectable* searchRoot, [out] [retval] IInspectable** result);
-                    HRESULT FindNextFocusWithSearchRootIgnoreEngagementWithHintRect([in] Microsoft.UI.Xaml.Input.FocusNavigationDirection focusNavigationDirection, [in] IInspectable* searchRoot, [in] Windows.Foundation.Rect hintRect, [in] Windows.Foundation.Rect exclusionRect, [out] [retval] IInspectable** result);
-                    HRESULT FindNextFocusWithSearchRootIgnoreEngagementWithClip([in] Microsoft.UI.Xaml.Input.FocusNavigationDirection focusNavigationDirection, [in] IInspectable* searchRoot, [in] boolean ignoreClipping, [in] boolean ignoreCone, [out] [retval] IInspectable** result);
-                    HRESULT SetEngagedControl([in] IInspectable* engagedControl);
-                    [overload("SetFocusedElement")] HRESULT SetFocusedElement([in] Microsoft.UI.Xaml.DependencyObject* element, [in] Microsoft.UI.Xaml.FocusState focusState, [in] boolean animateIfBringIntoView, [in] boolean forceBringIntoView, [in] boolean isProcessingTab, [in] boolean isShiftPressed, [out] [retval] boolean* result);
-                    [overload("SetFocusedElement")] HRESULT SetFocusedElementWithDirection([in] Microsoft.UI.Xaml.DependencyObject* element, [in] Microsoft.UI.Xaml.FocusState focusState, [in] boolean animateIfBringIntoView, [in] boolean forceBringIntoView, [in] Microsoft.UI.Xaml.Input.FocusNavigationDirection focusNavigationDirection, [out] [retval] boolean* result);
-                }
-
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Input.FocusMovementResult)]
                 [uuid(A46259FD-3EDD-554B-A188-0A47B71E4E1A)]
                 interface IFocusMovementResult : IInspectable
                 {
                     [propget] HRESULT Succeeded([out] [retval] boolean* value);
-                }
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Input.FocusedElementRemovedEventArgs)]
-                [uuid(68B4A7EA-8841-52EE-8875-7DC86CFD9B68)]
-                interface IFocusedElementRemovedEventArgs : IInspectable
-                {
-                    [propget] HRESULT OldFocusedElement([out] [retval] Microsoft.UI.Xaml.DependencyObject** value);
-                    [propget] HRESULT NewFocusedElement([out] [retval] Microsoft.UI.Xaml.DependencyObject** value);
-                    [propput] HRESULT NewFocusedElement([in] Microsoft.UI.Xaml.DependencyObject* value);
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -988,14 +922,6 @@ namespace Microsoft
                     [propput] HRESULT DesiredDeceleration([in] DOUBLE value);
                     [propget] HRESULT DesiredDisplacement([out] [retval] DOUBLE* value);
                     [propput] HRESULT DesiredDisplacement([in] DOUBLE value);
-                }
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Input.InputManager)]
-                [uuid(77F40F44-9F61-54A0-A820-C7912D0782C0)]
-                interface IInputManagerStatics : IInspectable
-                {
-                    HRESULT GetLastInputDeviceType([out] [retval] Microsoft.UI.Xaml.Input.LastInputDeviceType* result);
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -1465,13 +1391,6 @@ namespace Microsoft
                     [default] interface Microsoft.UI.Xaml.Input.IFocusMovementResult;
                 }
 
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [marshaling_behavior(agile)]
-                runtimeclass FocusedElementRemovedEventArgs
-                {
-                    [default] interface Microsoft.UI.Xaml.Input.IFocusedElementRemovedEventArgs;
-                }
-
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [threading(both)]
@@ -1508,14 +1427,6 @@ namespace Microsoft
                 runtimeclass InertiaTranslationBehavior
                 {
                     [default] interface Microsoft.UI.Xaml.Input.IInertiaTranslationBehavior;
-                }
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [marshaling_behavior(agile)]
-                [static(Microsoft.UI.Xaml.Input.IInputManagerStatics, Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [threading(both)]
-                runtimeclass InputManager
-                {
                 }
 
                 [activatable(Microsoft.UI.Xaml.WinUIContract, 1.0)]

@@ -346,7 +346,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("f0cf2975-12f5-50af-845a-1af3c23139f9"))
+struct __declspec(uuid("7ed73cdd-89c1-57dc-a581-8815e1d4d374"))
 ITypedEventHandler<ABI::Microsoft::UI::Composition::Experimental::ExpCompositionContent*,ABI::Microsoft::UI::Composition::Experimental::ExpCompositionContentAutomationProviderRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Composition::Experimental::ExpCompositionContent*, ABI::Microsoft::UI::Composition::Experimental::IExpCompositionContent*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Composition::Experimental::ExpCompositionContentAutomationProviderRequestedEventArgs*, ABI::Microsoft::UI::Composition::Experimental::IExpCompositionContentAutomationProviderRequestedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -393,7 +393,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("5e4f515f-7ec9-526b-b7e0-b4038f5ae71e"))
+struct __declspec(uuid("b7e22e54-d7d2-5e1b-b04f-38965964f19f"))
 ITypedEventHandler<ABI::Microsoft::UI::Composition::Experimental::ExpCompositionContent*,ABI::Microsoft::UI::Composition::Experimental::ExpCompositionContentEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Composition::Experimental::ExpCompositionContent*, ABI::Microsoft::UI::Composition::Experimental::IExpCompositionContent*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Composition::Experimental::ExpCompositionContentEventArgs*, ABI::Microsoft::UI::Composition::Experimental::IExpCompositionContentEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -810,13 +810,19 @@ namespace ABI {
         namespace UI {
             namespace Composition {
                 namespace Experimental {
-                    /* [object, uuid("7E8E5D4C-B0C8-5070-BD3B-123714471328"), exclusiveto, contract] */
-                    MIDL_INTERFACE("7E8E5D4C-B0C8-5070-BD3B-123714471328")
+                    /* [object, uuid("5DE14537-CE1A-50A7-99DE-A357142A394D"), exclusiveto, contract] */
+                    MIDL_INTERFACE("5DE14537-CE1A-50A7-99DE-A357142A394D")
                     IExpCompositionContent : public IInspectable
                     {
                     public:
                         /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ActualSize(
                             /* [retval, out] */ABI::Windows::Foundation::Numerics::Vector2 * value
+                            ) = 0;
+                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_AppData(
+                            /* [retval, out] */IInspectable * * value
+                            ) = 0;
+                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_AppData(
+                            /* [in] */IInspectable * value
                             ) = 0;
                         /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Compositor(
                             /* [retval, out] */ABI::Microsoft::UI::Composition::ICompositor * * value
@@ -1927,7 +1933,7 @@ enum __x_ABI_CMicrosoft_CUI_CComposition_CExperimental_CExpExpressionNotificatio
 #if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CExperimental_CIExpCompositionContent_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CExperimental_CIExpCompositionContent_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_Experimental_IExpCompositionContent[] = L"Microsoft.UI.Composition.Experimental.IExpCompositionContent";
-/* [object, uuid("7E8E5D4C-B0C8-5070-BD3B-123714471328"), exclusiveto, contract] */
+/* [object, uuid("5DE14537-CE1A-50A7-99DE-A357142A394D"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CExperimental_CIExpCompositionContentVtbl
 {
     BEGIN_INTERFACE
@@ -1964,6 +1970,14 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
 /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ActualSize )(
         __x_ABI_CMicrosoft_CUI_CComposition_CExperimental_CIExpCompositionContent * This,
         /* [retval, out] */__x_ABI_CWindows_CFoundation_CNumerics_CVector2 * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_AppData )(
+        __x_ABI_CMicrosoft_CUI_CComposition_CExperimental_CIExpCompositionContent * This,
+        /* [retval, out] */IInspectable * * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_AppData )(
+        __x_ABI_CMicrosoft_CUI_CComposition_CExperimental_CIExpCompositionContent * This,
+        /* [in] */IInspectable * value
         );
     /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Compositor )(
         __x_ABI_CMicrosoft_CUI_CComposition_CExperimental_CIExpCompositionContent * This,
@@ -2095,6 +2109,12 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CExperimental_CIExpCompositionCont
 
 #define __x_ABI_CMicrosoft_CUI_CComposition_CExperimental_CIExpCompositionContent_get_ActualSize(This,value) \
     ( (This)->lpVtbl->get_ActualSize(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CComposition_CExperimental_CIExpCompositionContent_get_AppData(This,value) \
+    ( (This)->lpVtbl->get_AppData(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CComposition_CExperimental_CIExpCompositionContent_put_AppData(This,value) \
+    ( (This)->lpVtbl->put_AppData(This,value) )
 
 #define __x_ABI_CMicrosoft_CUI_CComposition_CExperimental_CIExpCompositionContent_get_Compositor(This,value) \
     ( (This)->lpVtbl->get_Compositor(This,value) )

@@ -69,12 +69,6 @@ namespace Microsoft
 
             typedef struct Duration Duration;
 
-            apicontract PrivateApiContract;
-
-            typedef enum TransitionParent TransitionParent;
-
-            typedef enum TransitionTrigger TransitionTrigger;
-
             runtimeclass UIElement;
 
             apicontract WinUIContract;
@@ -86,8 +80,6 @@ namespace Windows
     namespace Foundation
     {
         typedef struct Point Point;
-
-        typedef struct Rect Rect;
 
         typedef struct TimeSpan TimeSpan;
     }
@@ -116,8 +108,6 @@ namespace Microsoft
                     typedef enum EasingMode EasingMode;
 
                     typedef enum FillBehavior FillBehavior;
-
-                    typedef enum NavigationTrigger NavigationTrigger;
 
                     typedef enum RepeatBehaviorType RepeatBehaviorType;
 
@@ -305,10 +295,6 @@ namespace Microsoft
 
                     interface INavigationTransitionInfoOverrides;
 
-                    interface INavigationTransitionInfoOverridesPrivate;
-
-                    interface INavigationTransitionInfoPrivate;
-
                     interface IObjectAnimationUsingKeyFrames;
 
                     interface IObjectAnimationUsingKeyFramesStatics;
@@ -421,12 +407,6 @@ namespace Microsoft
 
                     interface ISwipeHintThemeAnimationStatics;
 
-                    interface IThemeAnimationBase;
-
-                    interface IThemeAnimationBaseFactory;
-
-                    interface IThemeAnimationBaseOverrides;
-
                     interface ITimeline;
 
                     interface ITimelineFactory;
@@ -436,10 +416,6 @@ namespace Microsoft
                     interface ITransition;
 
                     interface ITransitionFactory;
-
-                    interface ITransitionFactoryPrivate;
-
-                    interface ITransitionPrivate;
 
                     runtimeclass AddDeleteThemeTransition;
 
@@ -607,8 +583,6 @@ namespace Microsoft
 
                     runtimeclass SwipeHintThemeAnimation;
 
-                    runtimeclass ThemeAnimationBase;
-
                     runtimeclass Timeline;
 
                     runtimeclass TimelineCollection;
@@ -643,8 +617,6 @@ namespace Microsoft
 
                         interface Windows.Foundation.Collections.IIterable<Microsoft.UI.Xaml.Media.Animation.PointKeyFrame*>;
 
-                        interface Windows.Foundation.Collections.IIterable<Microsoft.UI.Xaml.Media.Animation.Storyboard*>;
-
                         interface Windows.Foundation.Collections.IIterable<Microsoft.UI.Xaml.Media.Animation.Timeline*>;
 
                         interface Windows.Foundation.Collections.IIterable<Microsoft.UI.Xaml.Media.Animation.Transition*>;
@@ -656,8 +628,6 @@ namespace Microsoft
                         interface Windows.Foundation.Collections.IIterator<Microsoft.UI.Xaml.Media.Animation.ObjectKeyFrame*>;
 
                         interface Windows.Foundation.Collections.IIterator<Microsoft.UI.Xaml.Media.Animation.PointKeyFrame*>;
-
-                        interface Windows.Foundation.Collections.IIterator<Microsoft.UI.Xaml.Media.Animation.Storyboard*>;
 
                         interface Windows.Foundation.Collections.IIterator<Microsoft.UI.Xaml.Media.Animation.Timeline*>;
 
@@ -671,8 +641,6 @@ namespace Microsoft
 
                         interface Windows.Foundation.Collections.IVectorView<Microsoft.UI.Xaml.Media.Animation.PointKeyFrame*>;
 
-                        interface Windows.Foundation.Collections.IVectorView<Microsoft.UI.Xaml.Media.Animation.Storyboard*>;
-
                         interface Windows.Foundation.Collections.IVectorView<Microsoft.UI.Xaml.Media.Animation.Timeline*>;
 
                         interface Windows.Foundation.Collections.IVectorView<Microsoft.UI.Xaml.Media.Animation.Transition*>;
@@ -684,8 +652,6 @@ namespace Microsoft
                         interface Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Media.Animation.ObjectKeyFrame*>;
 
                         interface Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Media.Animation.PointKeyFrame*>;
-
-                        interface Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Media.Animation.Storyboard*>;
 
                         interface Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Media.Animation.Timeline*>;
 
@@ -740,15 +706,6 @@ namespace Microsoft
                     {
                         HoldEnd = 0,
                         Stop    = 1
-                    };
-
-                    [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                    enum NavigationTrigger
-                    {
-                        NavigatingAway     = 0,
-                        NavigatingTo       = 1,
-                        BackNavigatingAway = 2,
-                        BackNavigatingTo   = 3
                     };
 
                     [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -1607,20 +1564,6 @@ namespace Microsoft
                         HRESULT SetNavigationStateCore([in] HSTRING navigationState);
                     }
 
-                    [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                    [uuid(AA47C9A0-3374-5DA7-8BEC-6D732E7BFA7D)]
-                    interface INavigationTransitionInfoOverridesPrivate : IInspectable
-                    {
-                        HRESULT CreateStoryboardsCore([in] Microsoft.UI.Xaml.UIElement* element, [in] Microsoft.UI.Xaml.Media.Animation.NavigationTrigger trigger, [in] Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Media.Animation.Storyboard*>* storyboards);
-                    }
-
-                    [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                    [uuid(CD9B65A0-1C10-5E4E-996D-CDDFA5F01B46)]
-                    interface INavigationTransitionInfoPrivate : IInspectable
-                    {
-                        HRESULT CreateStoryboards([in] Microsoft.UI.Xaml.UIElement* element, [in] Microsoft.UI.Xaml.Media.Animation.NavigationTrigger trigger, [in] Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Media.Animation.Storyboard*>* storyboards);
-                    }
-
                     [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                     [exclusiveto(Microsoft.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames)]
                     [uuid(AA08DC4C-0B03-5C0A-B084-D95D272B2F0D)]
@@ -2211,29 +2154,6 @@ namespace Microsoft
                         [propget] HRESULT ToVerticalOffsetProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     }
 
-                    [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                    [exclusiveto(Microsoft.UI.Xaml.Media.Animation.ThemeAnimationBase)]
-                    [uuid(65116F90-6460-5EAA-ACB3-F6DA608B2A94)]
-                    interface IThemeAnimationBase : IInspectable
-                    {
-                    }
-
-                    [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                    [exclusiveto(Microsoft.UI.Xaml.Media.Animation.ThemeAnimationBase)]
-                    [uuid(A0FD400F-0962-55A3-9F39-270E1EFFF225)]
-                    interface IThemeAnimationBaseFactory : IInspectable
-                    {
-                        HRESULT CreateInstance([in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Media.Animation.ThemeAnimationBase** value);
-                    }
-
-                    [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                    [exclusiveto(Microsoft.UI.Xaml.Media.Animation.ThemeAnimationBase)]
-                    [uuid(E38F48FD-CE59-5B27-ACDF-84E72DD0EE67)]
-                    interface IThemeAnimationBaseOverrides : IInspectable
-                    {
-                        HRESULT CreateTimelinesInternal([in] boolean onlyGenerateSteadyState, [in] Microsoft.UI.Xaml.Media.Animation.TimelineCollection* timelineCollection);
-                    }
-
                     [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                     [exclusiveto(Microsoft.UI.Xaml.Media.Animation.Timeline)]
                     [uuid(D0F9B330-CC2A-5B05-9786-2DA4C6584581)]
@@ -2290,21 +2210,6 @@ namespace Microsoft
                     [uuid(B7023E3B-BCD3-50EC-AACF-8CFCECE25F17)]
                     interface ITransitionFactory : IInspectable
                     {
-                    }
-
-                    [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                    [uuid(41005935-7E80-565A-AD85-EAD029C11306)]
-                    interface ITransitionFactoryPrivate : IInspectable
-                    {
-                        HRESULT CreateInstance([in] IInspectable* outer, [out] IInspectable** inner, [out] [retval] Microsoft.UI.Xaml.Media.Animation.Transition** result);
-                    }
-
-                    [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                    [uuid(40026AB3-5BB2-5C6E-8DA1-475AF8037BAD)]
-                    interface ITransitionPrivate : IInspectable
-                    {
-                        HRESULT CreateStoryboard([in] Microsoft.UI.Xaml.UIElement* element, [in] Windows.Foundation.Rect start, [in] Windows.Foundation.Rect destination, [in] Microsoft.UI.Xaml.TransitionTrigger transitionTrigger, [in] Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Media.Animation.Storyboard*>* storyboards, [out] Microsoft.UI.Xaml.TransitionParent* parentForTransition);
-                        HRESULT ParticipatesInTransition([in] Microsoft.UI.Xaml.UIElement* element, [in] Microsoft.UI.Xaml.TransitionTrigger transitonTrigger, [out] [retval] boolean* result);
                     }
 
                     [activatable(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -3107,16 +3012,6 @@ namespace Microsoft
                     runtimeclass SwipeHintThemeAnimation : Microsoft.UI.Xaml.Media.Animation.Timeline
                     {
                         [default] interface Microsoft.UI.Xaml.Media.Animation.ISwipeHintThemeAnimation;
-                    }
-
-                    [composable(Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBaseFactory, protected, Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                    [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                    [marshaling_behavior(agile)]
-                    [threading(both)]
-                    runtimeclass ThemeAnimationBase : Microsoft.UI.Xaml.Media.Animation.Timeline
-                    {
-                        [default] interface Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBase;
-                        [overridable] interface Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBaseOverrides;
                     }
 
                     [composable(Microsoft.UI.Xaml.Media.Animation.ITimelineFactory, protected, Microsoft.UI.Xaml.WinUIContract, 1.0)]

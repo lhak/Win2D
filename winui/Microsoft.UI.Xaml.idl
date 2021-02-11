@@ -14,7 +14,6 @@ import "Microsoft.UI.Xaml.Automation.Peers.idl";
 import "Microsoft.UI.Xaml.Controls.idl";
 import "Microsoft.UI.Xaml.Controls.Primitives.idl";
 import "Microsoft.UI.Xaml.Data.idl";
-import "Microsoft.UI.Xaml.Hosting.idl";
 import "Microsoft.UI.Xaml.Input.idl";
 import "Microsoft.UI.Xaml.Media.idl";
 import "Microsoft.UI.Xaml.Media.Animation.idl";
@@ -26,7 +25,6 @@ import "Windows.ApplicationModel.Core.idl";
 import "Windows.ApplicationModel.DataTransfer.idl";
 import "Windows.ApplicationModel.DataTransfer.DragDrop.idl";
 import "Windows.Foundation.Numerics.idl";
-import "Windows.Graphics.DirectX.idl";
 import "Windows.Graphics.Imaging.idl";
 import "Windows.UI.idl";
 import "Windows.UI.Core.idl";
@@ -133,19 +131,6 @@ namespace Microsoft
                 runtimeclass BindingBase;
 
                 runtimeclass BindingExpression;
-            }
-        }
-    }
-}
-namespace Microsoft
-{
-    namespace UI
-    {
-        namespace Xaml
-        {
-            namespace Hosting
-            {
-                runtimeclass XamlIsland;
             }
         }
     }
@@ -420,16 +405,6 @@ namespace Windows
 {
     namespace Graphics
     {
-        namespace DirectX
-        {
-            typedef enum DirectXPixelFormat DirectXPixelFormat;
-        }
-    }
-}
-namespace Windows
-{
-    namespace Graphics
-    {
         namespace Imaging
         {
             runtimeclass SoftwareBitmap;
@@ -476,8 +451,6 @@ namespace Microsoft
     {
         namespace Xaml
         {
-            apicontract PrivateApiContract;
-
             apicontract WinUIContract;
 
             typedef enum ApplicationHighContrastAdjustment ApplicationHighContrastAdjustment;
@@ -540,10 +513,6 @@ namespace Microsoft
 
             typedef enum TextWrapping TextWrapping;
 
-            typedef enum TransitionParent TransitionParent;
-
-            typedef enum TransitionTrigger TransitionTrigger;
-
             typedef enum Vector3TransitionComponents Vector3TransitionComponents;
 
             typedef enum VerticalAlignment VerticalAlignment;
@@ -605,8 +574,6 @@ namespace Microsoft
             interface IApplicationOverrides;
 
             interface IApplicationStatics;
-
-            interface IAtlasRequestCallback;
 
             interface IBindingFailedEventArgs;
 
@@ -674,10 +641,6 @@ namespace Microsoft
 
             interface IDurationHelperStatics;
 
-            interface IDxamlCoreTestHooks;
-
-            interface IDxamlCoreTestHooksStatics;
-
             interface IEffectiveViewportChangedEventArgs;
 
             interface IElementFactory;
@@ -694,17 +657,11 @@ namespace Microsoft
 
             interface IElementSoundPlayerStatics;
 
-            interface IElementSoundPlayerStaticsPrivate;
-
             interface IEventTrigger;
 
             interface IExceptionRoutedEventArgs;
 
             interface IExceptionRoutedEventArgsFactory;
-
-            interface IFrameworkApplicationPrivate;
-
-            interface IFrameworkApplicationStaticsPrivate;
 
             interface IFrameworkElement;
 
@@ -720,8 +677,6 @@ namespace Microsoft
 
             interface IFrameworkTemplateFactory;
 
-            interface IFrameworkTemplatePrivate;
-
             interface IFrameworkView;
 
             interface IFrameworkViewSource;
@@ -733,8 +688,6 @@ namespace Microsoft
             interface ILaunchActivatedEventArgs;
 
             interface IMediaFailedRoutedEventArgs;
-
-            interface IMemoryInfoPrivate;
 
             interface IPointHelper;
 
@@ -753,8 +706,6 @@ namespace Microsoft
             interface IRectHelper;
 
             interface IRectHelperStatics;
-
-            interface IRectHelperStaticsPrivate;
 
             interface IResourceDictionary;
 
@@ -785,8 +736,6 @@ namespace Microsoft
             interface ISizeHelper;
 
             interface ISizeHelperStatics;
-
-            interface ISourceInfoPrivate;
 
             interface IStateTrigger;
 
@@ -828,8 +777,6 @@ namespace Microsoft
 
             interface IUIElementStatics;
 
-            interface IUIElementStaticsPrivate;
-
             interface IUIElementWeakCollectionFactory;
 
             interface IUnhandledExceptionEventArgs;
@@ -867,8 +814,6 @@ namespace Microsoft
             interface IWindowEventArgs;
 
             interface IWindowFactory;
-
-            interface IWindowPrivate;
 
             interface IWindowSizeChangedEventArgs;
 
@@ -931,8 +876,6 @@ namespace Microsoft
             runtimeclass DropCompletedEventArgs;
 
             runtimeclass DurationHelper;
-
-            runtimeclass DxamlCoreTestHooks;
 
             runtimeclass EffectiveViewportChangedEventArgs;
 
@@ -1177,11 +1120,6 @@ namespace Microsoft
     {
         namespace Xaml
         {
-            [contractversion(1.0)]
-            apicontract PrivateApiContract
-            {
-            }
-
             [contractversion(1.0)]
             apicontract WinUIContract
             {
@@ -1491,23 +1429,6 @@ namespace Microsoft
                 WrapWholeWords = 3
             };
 
-            [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            enum TransitionParent
-            {
-                ParentToRoot         = 0,
-                ParentToCommonParent = 1,
-                ParentToGrandParent  = 2
-            };
-
-            [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            enum TransitionTrigger
-            {
-                Load     = 0,
-                Layout   = 1,
-                Unload   = 2,
-                Reparent = 3
-            };
-
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [flags]
             enum Vector3TransitionComponents
@@ -1746,13 +1667,6 @@ namespace Microsoft
                 HRESULT Start([in] Microsoft.UI.Xaml.ApplicationInitializationCallback* callback);
                 [overload("LoadComponent")] HRESULT LoadComponent([in] IInspectable* component, [in] Windows.Foundation.Uri* resourceLocator);
                 [overload("LoadComponent")] HRESULT LoadComponentWithResourceLocation([in] IInspectable* component, [in] Windows.Foundation.Uri* resourceLocator, [in] Microsoft.UI.Xaml.Controls.Primitives.ComponentResourceLocation componentResourceLocation);
-            }
-
-            [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            [uuid(15645012-8F3F-5090-B584-DF078FCC509A)]
-            interface IAtlasRequestCallback : IInspectable
-            {
-                HRESULT AtlasRequest([in] UINT32 width, [in] UINT32 height, [in] Windows.Graphics.DirectX.DirectXPixelFormat pixelFormat, [out] [retval] boolean* result);
             }
 
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -2171,21 +2085,6 @@ namespace Microsoft
                 HRESULT Subtract([in] Microsoft.UI.Xaml.Duration target, [in] Microsoft.UI.Xaml.Duration duration, [out] [retval] Microsoft.UI.Xaml.Duration* result);
             }
 
-            [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            [exclusiveto(Microsoft.UI.Xaml.DxamlCoreTestHooks)]
-            [uuid(E44D8E58-844D-5201-83BD-5D48CEB7035D)]
-            interface IDxamlCoreTestHooks : IInspectable
-            {
-            }
-
-            [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            [exclusiveto(Microsoft.UI.Xaml.DxamlCoreTestHooks)]
-            [uuid(4B2F7A38-3584-53E8-A67F-F3EDF229E5AB)]
-            interface IDxamlCoreTestHooksStatics : IInspectable
-            {
-                HRESULT GetForCurrentThread([out] [retval] Microsoft.UI.Xaml.DxamlCoreTestHooks** result);
-            }
-
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [exclusiveto(Microsoft.UI.Xaml.EffectiveViewportChangedEventArgs)]
             [uuid(636E8159-2D82-538A-8483-CD576E41D0DF)]
@@ -2264,14 +2163,6 @@ namespace Microsoft
                 HRESULT Play([in] Microsoft.UI.Xaml.ElementSoundKind sound);
             }
 
-            [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            [uuid(65D2203B-6FB0-5EBA-8821-F6DD313C33FB)]
-            interface IElementSoundPlayerStaticsPrivate : IInspectable
-            {
-                HRESULT RequestInteractionSoundForElement([in] Microsoft.UI.Xaml.ElementSoundKind sound, [in] Microsoft.UI.Xaml.DependencyObject* element);
-                HRESULT GetEffectiveSoundMode([in] Microsoft.UI.Xaml.DependencyObject* element, [out] [retval] Microsoft.UI.Xaml.ElementSoundMode* result);
-            }
-
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [exclusiveto(Microsoft.UI.Xaml.EventTrigger)]
             [uuid(8C6F0541-C6AC-5F27-9D45-CF8BDBDFABE6)]
@@ -2295,24 +2186,6 @@ namespace Microsoft
             [uuid(E1E71FB6-2AD0-5189-8D96-33BAE488C5FB)]
             interface IExceptionRoutedEventArgsFactory : IInspectable
             {
-            }
-
-            [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            [uuid(5CA69216-9979-5E26-B067-D45856580732)]
-            interface IFrameworkApplicationPrivate : IInspectable
-            {
-                HRESULT StartOnCurrentThread([in] Microsoft.UI.Xaml.ApplicationInitializationCallback* callback);
-                HRESULT CreateIsland([out] [retval] Microsoft.UI.Xaml.Hosting.XamlIsland** result);
-                HRESULT CreateIslandWithContentBridge([in] IInspectable* owner, [in] IInspectable* contentBridge, [out] [retval] Microsoft.UI.Xaml.Hosting.XamlIsland** result);
-                HRESULT RemoveIsland([in] Microsoft.UI.Xaml.Hosting.XamlIsland* island);
-                HRESULT SetSynchronizationWindow([in] UINT64 commitResizeWindow);
-            }
-
-            [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            [uuid(66CB5498-0063-5D10-B06B-6C6CE06E4D2D)]
-            interface IFrameworkApplicationStaticsPrivate : IInspectable
-            {
-                HRESULT EnableFailFastOnStowedException();
             }
 
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -2472,13 +2345,6 @@ namespace Microsoft
                 HRESULT CreateInstance([in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.FrameworkTemplate** value);
             }
 
-            [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            [uuid(3EC693E7-F042-5FDC-9661-5DCC9F03385D)]
-            interface IFrameworkTemplatePrivate : IInspectable
-            {
-                HRESULT EnableTemplateCaching([in] boolean isTemplateCachingEnabled);
-            }
-
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [exclusiveto(Microsoft.UI.Xaml.FrameworkView)]
             [uuid(E60094C3-45AF-5A8F-9511-1781D7DF1799)]
@@ -2529,14 +2395,6 @@ namespace Microsoft
             interface IMediaFailedRoutedEventArgs : IInspectable
             {
                 [propget] HRESULT ErrorTrace([out] [retval] HSTRING* value);
-            }
-
-            [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            [uuid(D11FAA49-8D7C-5C62-9D50-68E875A434BB)]
-            interface IMemoryInfoPrivate : IInspectable
-            {
-                HRESULT GetCountOfDescendantUIElements([out] [retval] UINT64* result);
-                HRESULT GetEstimatedSizeOfDescendantImages([out] [retval] UINT64* result);
             }
 
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -2625,13 +2483,6 @@ namespace Microsoft
                 HRESULT Intersect([in] Windows.Foundation.Rect target, [in] Windows.Foundation.Rect rect, [out] [retval] Windows.Foundation.Rect* result);
                 [default_overload] [overload("Union")] HRESULT UnionWithPoint([in] Windows.Foundation.Rect target, [in] Windows.Foundation.Point point, [out] [retval] Windows.Foundation.Rect* result);
                 [overload("Union")] HRESULT UnionWithRect([in] Windows.Foundation.Rect target, [in] Windows.Foundation.Rect rect, [out] [retval] Windows.Foundation.Rect* result);
-            }
-
-            [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            [uuid(08298572-672B-5053-8A13-31110E24314F)]
-            interface IRectHelperStaticsPrivate : IInspectable
-            {
-                HRESULT DipsRectToPhysicalRect([in] Windows.Foundation.Rect dipsRect, [out] [retval] Windows.Foundation.Rect* result);
             }
 
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -2762,20 +2613,6 @@ namespace Microsoft
                 HRESULT FromDimensions([in] FLOAT width, [in] FLOAT height, [out] [retval] Windows.Foundation.Size* result);
                 HRESULT GetIsEmpty([in] Windows.Foundation.Size target, [out] [retval] boolean* result);
                 HRESULT Equals([in] Windows.Foundation.Size target, [in] Windows.Foundation.Size value, [out] [retval] boolean* result);
-            }
-
-            [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            [uuid(3ACB731C-C37D-5F03-9596-AC62990F520C)]
-            interface ISourceInfoPrivate : IInspectable
-            {
-                [propget] HRESULT Line([out] [retval] INT32* value);
-                [propput] HRESULT Line([in] INT32 value);
-                [propget] HRESULT Column([out] [retval] INT32* value);
-                [propput] HRESULT Column([in] INT32 value);
-                [propget] HRESULT ParseUri([out] [retval] HSTRING* value);
-                [propput] HRESULT ParseUri([in] HSTRING value);
-                [propget] HRESULT XbfHash([out] [retval] HSTRING* value);
-                [propput] HRESULT XbfHash([in] HSTRING value);
             }
 
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -3253,14 +3090,6 @@ namespace Microsoft
                 HRESULT RegisterAsScrollPort([in] Microsoft.UI.Xaml.UIElement* element);
             }
 
-            [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            [uuid(B35B8888-C508-52DC-AF8F-8A3C38ADBB86)]
-            interface IUIElementStaticsPrivate : IInspectable
-            {
-                HRESULT InternalGetIsEnabled([in] Microsoft.UI.Xaml.UIElement* element, [out] [retval] boolean* result);
-                HRESULT InternalPutIsEnabled([in] Microsoft.UI.Xaml.UIElement* element, [in] boolean value);
-            }
-
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [exclusiveto(Microsoft.UI.Xaml.UIElementWeakCollection)]
             [uuid(B4D69F09-D494-5BC8-AE68-B6307D845049)]
@@ -3410,7 +3239,7 @@ namespace Microsoft
 
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
             [exclusiveto(Microsoft.UI.Xaml.Window)]
-            [uuid(8DE74F65-EA02-5380-BA58-28B3FC36BAE9)]
+            [uuid(AA7369E8-FFE4-5731-8A8E-7A3A551A194D)]
             interface IWindow : IInspectable
             {
                 [propget] HRESULT Bounds([out] [retval] Windows.Foundation.Rect* value);
@@ -3423,6 +3252,8 @@ namespace Microsoft
                 [propget] HRESULT DispatcherQueue([out] [retval] Microsoft.System.DispatcherQueue** value);
                 [propget] HRESULT Title([out] [retval] HSTRING* value);
                 [propput] HRESULT Title([in] HSTRING value);
+                [propget] HRESULT ExtendsContentIntoTitleBar([out] [retval] boolean* value);
+                [propput] HRESULT ExtendsContentIntoTitleBar([in] boolean value);
                 [eventadd] HRESULT Activated([in] Windows.Foundation.TypedEventHandler<IInspectable*, Microsoft.UI.Xaml.WindowActivatedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
                 [eventremove] HRESULT Activated([in] EventRegistrationToken token);
                 [eventadd] HRESULT Closed([in] Windows.Foundation.TypedEventHandler<IInspectable*, Microsoft.UI.Xaml.WindowEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
@@ -3433,6 +3264,7 @@ namespace Microsoft
                 [eventremove] HRESULT VisibilityChanged([in] EventRegistrationToken token);
                 HRESULT Activate();
                 HRESULT Close();
+                HRESULT SetTitleBar([in] Microsoft.UI.Xaml.UIElement* titleBar);
             }
 
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -3468,21 +3300,6 @@ namespace Microsoft
             interface IWindowFactory : IInspectable
             {
                 HRESULT CreateInstance([in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Window** value);
-            }
-
-            [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            [uuid(F5DEF8F6-95C2-55CB-B1A4-551B9DA34220)]
-            interface IWindowPrivate : IInspectable
-            {
-                [propget] HRESULT TransparentBackground([out] [retval] boolean* value);
-                [propput] HRESULT TransparentBackground([in] boolean value);
-                HRESULT Show();
-                HRESULT Hide();
-                HRESULT MoveWindow([in] INT32 x, [in] INT32 y, [in] INT32 width, [in] INT32 height);
-                HRESULT SetAtlasSizeHint([in] UINT32 width, [in] UINT32 height);
-                HRESULT ReleaseGraphicsDeviceOnSuspend([in] boolean enable);
-                HRESULT SetAtlasRequestCallback([in] Microsoft.UI.Xaml.IAtlasRequestCallback* callback);
-                HRESULT GetWindowContentBoundsForElement([in] Microsoft.UI.Xaml.DependencyObject* element, [out] [retval] Windows.Foundation.Rect* result);
             }
 
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -3750,16 +3567,6 @@ namespace Microsoft
             runtimeclass DurationHelper
             {
                 [default] interface Microsoft.UI.Xaml.IDurationHelper;
-            }
-
-            [activatable(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            [marshaling_behavior(agile)]
-            [static(Microsoft.UI.Xaml.IDxamlCoreTestHooksStatics, Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-            [threading(both)]
-            runtimeclass DxamlCoreTestHooks
-            {
-                [default] interface Microsoft.UI.Xaml.IDxamlCoreTestHooks;
             }
 
             [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]

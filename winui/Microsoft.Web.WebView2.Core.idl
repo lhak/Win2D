@@ -6,11 +6,22 @@ import "inspectable.idl";
 import "AsyncInfo.idl";
 import "EventToken.idl";
 import "Windows.Foundation.idl";
+import "Windows.ApplicationModel.DataTransfer.idl";
 import "Windows.Foundation.Numerics.idl";
 import "Windows.Storage.Streams.idl";
 import "Windows.UI.Core.idl";
 
 // Forward Declare
+namespace Windows
+{
+    namespace ApplicationModel
+    {
+        namespace DataTransfer
+        {
+            runtimeclass DataPackage;
+        }
+    }
+}
 namespace Windows
 {
     namespace Foundation
@@ -69,9 +80,13 @@ namespace Microsoft
         {
             namespace Core
             {
+                typedef enum CoreWebView2BoundsMode CoreWebView2BoundsMode;
+
                 typedef enum CoreWebView2CapturePreviewImageFormat CoreWebView2CapturePreviewImageFormat;
 
                 typedef enum CoreWebView2CookieSameSiteKind CoreWebView2CookieSameSiteKind;
+
+                typedef enum CoreWebView2HostResourceAccessKind CoreWebView2HostResourceAccessKind;
 
                 typedef enum CoreWebView2KeyEventKind CoreWebView2KeyEventKind;
 
@@ -116,8 +131,6 @@ namespace Microsoft
                 interface ICoreWebView2ControllerWindowReferenceStatics;
 
                 interface ICoreWebView2Cookie;
-
-                interface ICoreWebView2CookieList;
 
                 interface ICoreWebView2CookieManager;
 
@@ -190,8 +203,6 @@ namespace Microsoft
                 runtimeclass CoreWebView2ControllerWindowReference;
 
                 runtimeclass CoreWebView2Cookie;
-
-                runtimeclass CoreWebView2CookieList;
 
                 runtimeclass CoreWebView2CookieManager;
 
@@ -266,8 +277,6 @@ namespace Microsoft
 
                     interface Windows.Foundation.IAsyncOperation<Microsoft.Web.WebView2.Core.CoreWebView2Controller*>;
 
-                    interface Windows.Foundation.IAsyncOperation<Microsoft.Web.WebView2.Core.CoreWebView2CookieList*>;
-
                     interface Windows.Foundation.IAsyncOperation<Microsoft.Web.WebView2.Core.CoreWebView2Environment*>;
 
                     interface Windows.Foundation.TypedEventHandler<Microsoft.Web.WebView2.Core.CoreWebView2*, IInspectable*>;
@@ -323,6 +332,13 @@ namespace Microsoft
             namespace Core
             {
                 [version(0x00000001)]
+                enum CoreWebView2BoundsMode
+                {
+                    UseRawPixels          = 0,
+                    UseRasterizationScale = 1
+                };
+
+                [version(0x00000001)]
                 enum CoreWebView2CapturePreviewImageFormat
                 {
                     Png  = 0,
@@ -335,6 +351,14 @@ namespace Microsoft
                     None   = 0,
                     Lax    = 1,
                     Strict = 2
+                };
+
+                [version(0x00000001)]
+                enum CoreWebView2HostResourceAccessKind
+                {
+                    Deny     = 0,
+                    Allow    = 1,
+                    DenyCors = 2
                 };
 
                 [version(0x00000001)]
@@ -493,7 +517,7 @@ namespace Microsoft
                 };
 
                 [exclusiveto(Microsoft.Web.WebView2.Core.CoreWebView2)]
-                [uuid(A75E2412-ECDF-5158-AC63-8E332A6026F2)]
+                [uuid(3E1AB759-8CB8-5581-8CF7-2E1966F52978)]
                 [version(0x00000001)]
                 interface ICoreWebView2 : IInspectable
                 {
@@ -562,6 +586,8 @@ namespace Microsoft
                     [eventadd] HRESULT DOMContentLoaded([in] Windows.Foundation.TypedEventHandler<Microsoft.Web.WebView2.Core.CoreWebView2*, Microsoft.Web.WebView2.Core.CoreWebView2DOMContentLoadedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
                     [eventremove] HRESULT DOMContentLoaded([in] EventRegistrationToken token);
                     HRESULT NavigateWithWebResourceRequest([in] Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest* Request);
+                    HRESULT SetVirtualHostNameToFolderMapping([in] HSTRING hostName, [in] HSTRING folderPath, [in] Microsoft.Web.WebView2.Core.CoreWebView2HostResourceAccessKind accessKind);
+                    HRESULT ClearVirtualHostNameToFolderMapping([in] HSTRING hostName);
                 }
 
                 [exclusiveto(Microsoft.Web.WebView2.Core.CoreWebView2AcceleratorKeyPressedEventArgs)]
@@ -578,10 +604,14 @@ namespace Microsoft
                 }
 
                 [exclusiveto(Microsoft.Web.WebView2.Core.CoreWebView2CompositionController)]
-                [uuid(37B16A2D-0E01-5568-856C-4BCBD51CE5A3)]
+                [uuid(D5BEC4E0-8967-5DE7-B6E0-B8D54AB5DD09)]
                 [version(0x00000001)]
                 interface ICoreWebView2CompositionController : IInspectable
                 {
+                    HRESULT DragEnter([in] Windows.ApplicationModel.DataTransfer.DataPackage* dataObject, [in] UINT32 keyState, [in] Windows.Foundation.Point point, [out] [retval] UINT32* result);
+                    HRESULT DragLeave();
+                    HRESULT DragOver([in] UINT32 keyState, [in] Windows.Foundation.Point point, [out] [retval] UINT32* result);
+                    HRESULT Drop([in] Windows.ApplicationModel.DataTransfer.DataPackage* dataObject, [in] UINT32 keyState, [in] Windows.Foundation.Point point, [out] [retval] UINT32* result);
                     [propget] HRESULT UIAProvider([out] [retval] IInspectable** value);
                     [propget] HRESULT RootVisualTarget([out] [retval] IInspectable** value);
                     [propput] HRESULT RootVisualTarget([in] IInspectable* value);
@@ -613,7 +643,7 @@ namespace Microsoft
                 }
 
                 [exclusiveto(Microsoft.Web.WebView2.Core.CoreWebView2Controller)]
-                [uuid(A588121C-53BF-590E-80E5-29D729CBD743)]
+                [uuid(C601C246-2CB0-56B4-8264-CA03EDA7FB7D)]
                 [version(0x00000001)]
                 interface ICoreWebView2Controller : IInspectable
                 {
@@ -640,6 +670,14 @@ namespace Microsoft
                     HRESULT MoveFocus([in] Microsoft.Web.WebView2.Core.CoreWebView2MoveFocusReason reason);
                     HRESULT NotifyParentWindowPositionChanged();
                     HRESULT Close();
+                    [propget] HRESULT RasterizationScale([out] [retval] DOUBLE* value);
+                    [propput] HRESULT RasterizationScale([in] DOUBLE value);
+                    [propget] HRESULT ShouldDetectMonitorScaleChanges([out] [retval] INT32* value);
+                    [propput] HRESULT ShouldDetectMonitorScaleChanges([in] INT32 value);
+                    [propget] HRESULT BoundsMode([out] [retval] Microsoft.Web.WebView2.Core.CoreWebView2BoundsMode* value);
+                    [propput] HRESULT BoundsMode([in] Microsoft.Web.WebView2.Core.CoreWebView2BoundsMode value);
+                    [eventadd] HRESULT RasterizationScaleChanged([in] Windows.Foundation.TypedEventHandler<Microsoft.Web.WebView2.Core.CoreWebView2Controller*, IInspectable*>* handler, [out] [retval] EventRegistrationToken* token);
+                    [eventremove] HRESULT RasterizationScaleChanged([in] EventRegistrationToken token);
                 }
 
                 [exclusiveto(Microsoft.Web.WebView2.Core.CoreWebView2Controller)]
@@ -688,23 +726,13 @@ namespace Microsoft
                     [propget] HRESULT IsSession([out] [retval] boolean* value);
                 }
 
-                [exclusiveto(Microsoft.Web.WebView2.Core.CoreWebView2CookieList)]
-                [uuid(FCCFF50E-52FE-51C6-9055-7E5F80F21D13)]
-                [version(0x00000001)]
-                interface ICoreWebView2CookieList : IInspectable
-                {
-                    [propget] HRESULT Count([out] [retval] UINT32* value);
-                    HRESULT GetValueAtIndex([in] UINT32 index, [out] [retval] Microsoft.Web.WebView2.Core.CoreWebView2Cookie** result);
-                }
-
                 [exclusiveto(Microsoft.Web.WebView2.Core.CoreWebView2CookieManager)]
-                [uuid(AB45CFC9-21F2-52DD-AD6D-C29793CCE982)]
+                [uuid(E4736DAC-2241-5AB3-85EF-47E8A1077DEF)]
                 [version(0x00000001)]
                 interface ICoreWebView2CookieManager : IInspectable
                 {
                     HRESULT CreateCookie([in] HSTRING name, [in] HSTRING value, [in] HSTRING Domain, [in] HSTRING Path, [out] [retval] Microsoft.Web.WebView2.Core.CoreWebView2Cookie** result);
                     HRESULT CreateCookieWithCookie([in] Microsoft.Web.WebView2.Core.CoreWebView2Cookie* cookieParam, [out] [retval] Microsoft.Web.WebView2.Core.CoreWebView2Cookie** result);
-                    HRESULT GetCookiesAsync([in] HSTRING uri, [out] [retval] Windows.Foundation.IAsyncOperation<Microsoft.Web.WebView2.Core.CoreWebView2CookieList*>** operation);
                     HRESULT AddOrUpdateCookie([in] Microsoft.Web.WebView2.Core.CoreWebView2Cookie* cookie);
                     HRESULT DeleteCookie([in] Microsoft.Web.WebView2.Core.CoreWebView2Cookie* cookie);
                     HRESULT DeleteCookies([in] HSTRING name, [in] HSTRING uri);
@@ -738,7 +766,7 @@ namespace Microsoft
                 }
 
                 [exclusiveto(Microsoft.Web.WebView2.Core.CoreWebView2Environment)]
-                [uuid(3F0272FB-964B-55E9-9BF1-8FA57ADDD5BE)]
+                [uuid(CE0D6036-A775-5A99-A9C0-5742F0B3AF9C)]
                 [version(0x00000001)]
                 interface ICoreWebView2Environment : IInspectable
                 {
@@ -747,10 +775,10 @@ namespace Microsoft
                     [eventremove] HRESULT NewBrowserVersionAvailable([in] EventRegistrationToken token);
                     HRESULT CreateCoreWebView2ControllerAsync([in] Microsoft.Web.WebView2.Core.CoreWebView2ControllerWindowReference* ParentWindow, [out] [retval] Windows.Foundation.IAsyncOperation<Microsoft.Web.WebView2.Core.CoreWebView2Controller*>** operation);
                     HRESULT CreateWebResourceResponse([in] Windows.Storage.Streams.IRandomAccessStream* Content, [in] INT32 StatusCode, [in] HSTRING ReasonPhrase, [in] HSTRING Headers, [out] [retval] Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponse** result);
+                    HRESULT CreateWebResourceRequest([in] HSTRING uri, [in] HSTRING Method, [in] Windows.Storage.Streams.IRandomAccessStream* postData, [in] HSTRING Headers, [out] [retval] Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest** result);
                     HRESULT CreateCoreWebView2CompositionControllerAsync([in] Microsoft.Web.WebView2.Core.CoreWebView2ControllerWindowReference* ParentWindow, [out] [retval] Windows.Foundation.IAsyncOperation<Microsoft.Web.WebView2.Core.CoreWebView2CompositionController*>** operation);
                     HRESULT CreateCoreWebView2PointerInfo([out] [retval] Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo** result);
                     HRESULT GetProviderForHwnd([in] Microsoft.Web.WebView2.Core.CoreWebView2ControllerWindowReference* hwnd, [out] [retval] IInspectable** result);
-                    HRESULT CreateWebResourceRequest([in] HSTRING uri, [in] HSTRING Method, [in] Windows.Storage.Streams.IRandomAccessStream* postData, [in] HSTRING Headers, [out] [retval] Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest** result);
                 }
 
                 [exclusiveto(Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentInterop)]
@@ -1145,13 +1173,6 @@ namespace Microsoft
                 runtimeclass CoreWebView2Cookie
                 {
                     [default] interface Microsoft.Web.WebView2.Core.ICoreWebView2Cookie;
-                }
-
-                [marshaling_behavior(agile)]
-                [version(0x00000001)]
-                runtimeclass CoreWebView2CookieList
-                {
-                    [default] interface Microsoft.Web.WebView2.Core.ICoreWebView2CookieList;
                 }
 
                 [marshaling_behavior(agile)]

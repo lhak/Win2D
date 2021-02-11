@@ -28,8 +28,6 @@ namespace Microsoft
             runtimeclass CompositionAnimation;
 
             runtimeclass CompositionPropertySet;
-
-            runtimeclass Visual;
         }
     }
 }
@@ -56,8 +54,6 @@ namespace Microsoft
             {
                 runtimeclass AutoSuggestBox;
 
-                typedef enum ChainingMode ChainingMode;
-
                 typedef enum ClickMode ClickMode;
 
                 runtimeclass ColorChangedEventArgs;
@@ -70,49 +66,49 @@ namespace Microsoft
 
                 runtimeclass ComboBox;
 
-                typedef enum ContentOrientation ContentOrientation;
-
                 runtimeclass Control;
 
                 interface IInsertionPanel;
 
+                interface IScrollAnchorProvider;
+
                 runtimeclass IconElement;
-
-                typedef enum InputKind InputKind;
-
-                typedef enum InteractionState InteractionState;
 
                 typedef enum LightDismissOverlayMode LightDismissOverlayMode;
 
                 typedef enum Orientation Orientation;
 
-                typedef enum RailingMode RailingMode;
+                runtimeclass ScrollingAnchorRequestedEventArgs;
 
-                runtimeclass ScrollAnimationStartingEventArgs;
+                runtimeclass ScrollingBringingIntoViewEventArgs;
 
-                runtimeclass ScrollCompletedEventArgs;
+                typedef enum ScrollingChainMode ScrollingChainMode;
 
-                typedef struct ScrollInfo ScrollInfo;
+                typedef enum ScrollingContentOrientation ScrollingContentOrientation;
 
-                typedef enum ScrollMode ScrollMode;
+                typedef enum ScrollingInputKinds ScrollingInputKinds;
 
-                runtimeclass ScrollOptions;
+                typedef enum ScrollingInteractionState ScrollingInteractionState;
 
-                runtimeclass ScrollerAnchorRequestedEventArgs;
+                typedef enum ScrollingRailMode ScrollingRailMode;
 
-                runtimeclass ScrollerBringingIntoViewEventArgs;
+                runtimeclass ScrollingScrollAnimationStartingEventArgs;
+
+                runtimeclass ScrollingScrollCompletedEventArgs;
+
+                typedef enum ScrollingScrollMode ScrollingScrollMode;
+
+                runtimeclass ScrollingScrollOptions;
+
+                runtimeclass ScrollingZoomAnimationStartingEventArgs;
+
+                runtimeclass ScrollingZoomCompletedEventArgs;
+
+                typedef enum ScrollingZoomMode ScrollingZoomMode;
+
+                runtimeclass ScrollingZoomOptions;
 
                 delegate SelectionChangedEventHandler;
-
-                runtimeclass ZoomAnimationStartingEventArgs;
-
-                runtimeclass ZoomCompletedEventArgs;
-
-                typedef struct ZoomInfo ZoomInfo;
-
-                typedef enum ZoomMode ZoomMode;
-
-                runtimeclass ZoomOptions;
             }
         }
     }
@@ -202,8 +198,6 @@ namespace Microsoft
     {
         namespace Xaml
         {
-            apicontract PrivateApiContract;
-
             delegate RoutedEventHandler;
 
             typedef struct Thickness Thickness;
@@ -392,8 +386,6 @@ namespace Microsoft
 
                     interface IFlyoutBaseOverrides;
 
-                    interface IFlyoutBasePrivate;
-
                     interface IFlyoutBaseStatics;
 
                     interface IFlyoutShowOptions;
@@ -411,6 +403,12 @@ namespace Microsoft
                     interface IGridViewItemPresenterStatics;
 
                     interface IGridViewItemTemplateSettings;
+
+                    interface IInfoBarPanel;
+
+                    interface IInfoBarPanelFactory;
+
+                    interface IInfoBarPanelStatics;
 
                     interface IItemsChangedEventArgs;
 
@@ -508,6 +506,10 @@ namespace Microsoft
 
                     interface IScrollController;
 
+                    interface IScrollControllerAddScrollVelocityRequestedEventArgs;
+
+                    interface IScrollControllerAddScrollVelocityRequestedEventArgsFactory;
+
                     interface IScrollControllerInteractionRequestedEventArgs;
 
                     interface IScrollControllerInteractionRequestedEventArgsFactory;
@@ -516,15 +518,17 @@ namespace Microsoft
 
                     interface IScrollControllerScrollByRequestedEventArgsFactory;
 
-                    interface IScrollControllerScrollFromRequestedEventArgs;
-
-                    interface IScrollControllerScrollFromRequestedEventArgsFactory;
-
                     interface IScrollControllerScrollToRequestedEventArgs;
 
                     interface IScrollControllerScrollToRequestedEventArgsFactory;
 
                     interface IScrollEventArgs;
+
+                    interface IScrollPresenter;
+
+                    interface IScrollPresenterFactory;
+
+                    interface IScrollPresenterStatics;
 
                     interface IScrollSnapPoint;
 
@@ -535,12 +539,6 @@ namespace Microsoft
                     interface IScrollSnapPointFactory;
 
                     interface IScrollSnapPointsInfo;
-
-                    interface IScroller;
-
-                    interface IScrollerFactory;
-
-                    interface IScrollerStatics;
 
                     interface ISelector;
 
@@ -646,6 +644,8 @@ namespace Microsoft
 
                     runtimeclass GridViewItemTemplateSettings;
 
+                    runtimeclass InfoBarPanel;
+
                     runtimeclass ItemsChangedEventArgs;
 
                     runtimeclass JumpListItemBackgroundConverter;
@@ -698,21 +698,21 @@ namespace Microsoft
 
                     runtimeclass ScrollBar;
 
+                    runtimeclass ScrollControllerAddScrollVelocityRequestedEventArgs;
+
                     runtimeclass ScrollControllerInteractionRequestedEventArgs;
 
                     runtimeclass ScrollControllerScrollByRequestedEventArgs;
-
-                    runtimeclass ScrollControllerScrollFromRequestedEventArgs;
 
                     runtimeclass ScrollControllerScrollToRequestedEventArgs;
 
                     runtimeclass ScrollEventArgs;
 
+                    runtimeclass ScrollPresenter;
+
                     runtimeclass ScrollSnapPoint;
 
                     runtimeclass ScrollSnapPointBase;
-
-                    runtimeclass Scroller;
 
                     runtimeclass Selector;
 
@@ -782,15 +782,15 @@ namespace Microsoft
 
                         interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.IScrollController*, IInspectable*>;
 
+                        interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.IScrollController*, Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerAddScrollVelocityRequestedEventArgs*>;
+
                         interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.IScrollController*, Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerInteractionRequestedEventArgs*>;
 
                         interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.IScrollController*, Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollByRequestedEventArgs*>;
 
-                        interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.IScrollController*, Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollFromRequestedEventArgs*>;
-
                         interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.IScrollController*, Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollToRequestedEventArgs*>;
 
-                        interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.Scroller*, IInspectable*>;
+                        interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter*, IInspectable*>;
                     }
                 }
             }
@@ -843,7 +843,15 @@ namespace Microsoft
                         FilterTopAndBottomFromLeft   = 0,
                         FilterTopAndBottomFromRight  = 1,
                         FilterLeftAndRightFromTop    = 2,
-                        FilterLeftAndRightFromBottom = 3
+                        FilterLeftAndRightFromBottom = 3,
+                        FilterTopFromTopLeft         = 4,
+                        FilterTopFromTopRight        = 5,
+                        FilterRightFromTopRight      = 6,
+                        FilterRightFromBottomRight   = 7,
+                        FilterBottomFromBottomRight  = 8,
+                        FilterBottomFromBottomLeft   = 9,
+                        FilterLeftFromBottomLeft     = 10,
+                        FilterLeftFromTopLeft        = 11
                     };
 
                     [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -928,6 +936,7 @@ namespace Microsoft
                         EndScroll      = 8
                     };
 
+                    [experimental]
                     [version(0x00000001)]
                     enum ScrollSnapPointsAlignment
                     {
@@ -1386,20 +1395,23 @@ namespace Microsoft
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.CornerRadiusToThicknessConverter)]
-                    [uuid(04F7ECA4-89C2-5731-AFF9-6B66B0A0C01E)]
+                    [uuid(B36AA8AE-166E-5CA5-93D2-95E9907C1222)]
                     [version(0x00000001)]
                     interface ICornerRadiusToThicknessConverter : IInspectable
                     {
                         [propget] HRESULT ConversionKind([out] [retval] Microsoft.UI.Xaml.Controls.Primitives.CornerRadiusToThicknessConverterKind* value);
                         [propput] HRESULT ConversionKind([in] Microsoft.UI.Xaml.Controls.Primitives.CornerRadiusToThicknessConverterKind value);
+                        [propget] HRESULT Multiplier([out] [retval] DOUBLE* value);
+                        [propput] HRESULT Multiplier([in] DOUBLE value);
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.CornerRadiusToThicknessConverter)]
-                    [uuid(6ACE137E-DA86-5E4C-AC5C-94C176221C0A)]
+                    [uuid(92AD9D36-5483-5258-A43B-4356443087F1)]
                     [version(0x00000001)]
                     interface ICornerRadiusToThicknessConverterStatics : IInspectable
                     {
                         [propget] HRESULT ConversionKindProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        [propget] HRESULT MultiplierProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     }
 
                     [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -1521,17 +1533,6 @@ namespace Microsoft
                     {
                         HRESULT CreatePresenter([out] [retval] Microsoft.UI.Xaml.Controls.Control** result);
                         HRESULT OnProcessKeyboardAccelerators([in] Microsoft.UI.Xaml.Input.ProcessKeyboardAcceleratorEventArgs* args);
-                    }
-
-                    [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                    [uuid(1E299B54-C5A9-59C3-8C76-3B0C17F6BA55)]
-                    interface IFlyoutBasePrivate : IInspectable
-                    {
-                        [propget] HRESULT UsePickerFlyoutTheme([out] [retval] boolean* value);
-                        [propput] HRESULT UsePickerFlyoutTheme([in] boolean value);
-                        [propget] HRESULT IsLightDismissOverlayEnabled([out] [retval] boolean* value);
-                        [propput] HRESULT IsLightDismissOverlayEnabled([in] boolean value);
-                        HRESULT PlaceFlyoutForDateTimePicker([in] Windows.Foundation.Point point);
                     }
 
                     [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -1689,6 +1690,40 @@ namespace Microsoft
                     interface IGridViewItemTemplateSettings : IInspectable
                     {
                         [propget] HRESULT DragItemsCount([out] [retval] INT32* value);
+                    }
+
+                    [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.InfoBarPanel)]
+                    [uuid(4D2FD5FE-CB75-52FF-B57F-A992912383CC)]
+                    [version(0x00000001)]
+                    interface IInfoBarPanel : IInspectable
+                    {
+                        [propget] HRESULT HorizontalOrientationPadding([out] [retval] Microsoft.UI.Xaml.Thickness* value);
+                        [propput] HRESULT HorizontalOrientationPadding([in] Microsoft.UI.Xaml.Thickness value);
+                        [propget] HRESULT VerticalOrientationPadding([out] [retval] Microsoft.UI.Xaml.Thickness* value);
+                        [propput] HRESULT VerticalOrientationPadding([in] Microsoft.UI.Xaml.Thickness value);
+                    }
+
+                    [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.InfoBarPanel)]
+                    [uuid(00D1A8C5-F631-564A-8E9C-7C5CCAD238DE)]
+                    [version(0x00000001)]
+                    interface IInfoBarPanelFactory : IInspectable
+                    {
+                        HRESULT CreateInstance([in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Controls.Primitives.InfoBarPanel** value);
+                    }
+
+                    [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.InfoBarPanel)]
+                    [uuid(E0F19305-B392-5FA6-9670-895895A067FF)]
+                    [version(0x00000001)]
+                    interface IInfoBarPanelStatics : IInspectable
+                    {
+                        [propget] HRESULT HorizontalOrientationPaddingProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        [propget] HRESULT VerticalOrientationPaddingProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        HRESULT SetHorizontalOrientationMargin([in] Microsoft.UI.Xaml.DependencyObject* object, [in] Microsoft.UI.Xaml.Thickness value);
+                        HRESULT GetHorizontalOrientationMargin([in] Microsoft.UI.Xaml.DependencyObject* object, [out] [retval] Microsoft.UI.Xaml.Thickness* result);
+                        [propget] HRESULT HorizontalOrientationMarginProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        HRESULT SetVerticalOrientationMargin([in] Microsoft.UI.Xaml.DependencyObject* object, [in] Microsoft.UI.Xaml.Thickness value);
+                        HRESULT GetVerticalOrientationMargin([in] Microsoft.UI.Xaml.DependencyObject* object, [out] [retval] Microsoft.UI.Xaml.Thickness* result);
+                        [propget] HRESULT VerticalOrientationMarginProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     }
 
                     [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -2228,6 +2263,7 @@ namespace Microsoft
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.RepeatedScrollSnapPoint)]
+                    [experimental]
                     [uuid(5828FB51-8EBB-596D-A871-50063479362D)]
                     [version(0x00000001)]
                     interface IRepeatedScrollSnapPoint : IInspectable
@@ -2239,6 +2275,7 @@ namespace Microsoft
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.RepeatedScrollSnapPoint)]
+                    [experimental]
                     [uuid(F2FD8403-679E-5C31-B431-72A0E0014E6A)]
                     [version(0x00000001)]
                     interface IRepeatedScrollSnapPointFactory : IInspectable
@@ -2247,6 +2284,7 @@ namespace Microsoft
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.RepeatedZoomSnapPoint)]
+                    [experimental]
                     [uuid(1FA6DBBE-5E11-5D32-873B-C92B1D171538)]
                     [version(0x00000001)]
                     interface IRepeatedZoomSnapPoint : IInspectable
@@ -2258,6 +2296,7 @@ namespace Microsoft
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.RepeatedZoomSnapPoint)]
+                    [experimental]
                     [uuid(7D032A7C-D91C-5660-B1C2-B36E8810AC65)]
                     [version(0x00000001)]
                     interface IRepeatedZoomSnapPointFactory : IInspectable
@@ -2290,34 +2329,57 @@ namespace Microsoft
                         [propget] HRESULT IndicatorModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     }
 
-                    [uuid(641B7AFB-3C4E-5D3D-815B-A45C8D68789F)]
+                    [experimental]
+                    [uuid(C8C5E259-0692-5B18-AC47-5259D25F9FEB)]
                     [version(0x00000001)]
                     interface IScrollController : IInspectable
                     {
-                        [propget] HRESULT AreInteractionsAllowed([out] [retval] boolean* value);
+                        [propget] HRESULT AreScrollControllerInteractionsAllowed([out] [retval] boolean* value);
                         [propget] HRESULT AreScrollerInteractionsAllowed([out] [retval] boolean* value);
                         [propget] HRESULT IsInteracting([out] [retval] boolean* value);
-                        [propget] HRESULT IsInteractionVisualRailEnabled([out] [retval] boolean* value);
-                        [propget] HRESULT InteractionVisual([out] [retval] Microsoft.UI.Composition.Visual** value);
-                        [propget] HRESULT InteractionVisualScrollOrientation([out] [retval] Microsoft.UI.Xaml.Controls.Orientation* value);
+                        [propget] HRESULT IsInteractionElementRailEnabled([out] [retval] boolean* value);
+                        [propget] HRESULT InteractionElement([out] [retval] Microsoft.UI.Xaml.UIElement** value);
+                        [propget] HRESULT InteractionElementScrollOrientation([out] [retval] Microsoft.UI.Xaml.Controls.Orientation* value);
                         HRESULT SetExpressionAnimationSources([in] Microsoft.UI.Composition.CompositionPropertySet* propertySet, [in] HSTRING minOffsetPropertyName, [in] HSTRING maxOffsetPropertyName, [in] HSTRING offsetPropertyName, [in] HSTRING multiplierPropertyName);
-                        HRESULT SetScrollMode([in] Microsoft.UI.Xaml.Controls.ScrollMode scrollMode);
+                        HRESULT SetScrollMode([in] Microsoft.UI.Xaml.Controls.ScrollingScrollMode scrollMode);
                         HRESULT SetValues([in] DOUBLE minOffset, [in] DOUBLE maxOffset, [in] DOUBLE offset, [in] DOUBLE viewport);
-                        HRESULT GetScrollAnimation([in] Microsoft.UI.Xaml.Controls.ScrollInfo info, [in] Windows.Foundation.Numerics.Vector2 currentPosition, [in] Microsoft.UI.Composition.CompositionAnimation* defaultAnimation, [out] [retval] Microsoft.UI.Composition.CompositionAnimation** result);
-                        HRESULT OnScrollCompleted([in] Microsoft.UI.Xaml.Controls.ScrollInfo info);
+                        HRESULT GetScrollAnimation([in] INT32 correlationId, [in] Windows.Foundation.Numerics.Vector2 currentPosition, [in] Microsoft.UI.Composition.CompositionAnimation* defaultAnimation, [out] [retval] Microsoft.UI.Composition.CompositionAnimation** result);
+                        HRESULT NotifyScrollCompleted([in] INT32 correlationId);
                         [eventadd] HRESULT ScrollToRequested([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.IScrollController*, Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollToRequestedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
                         [eventremove] HRESULT ScrollToRequested([in] EventRegistrationToken token);
                         [eventadd] HRESULT ScrollByRequested([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.IScrollController*, Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollByRequestedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
                         [eventremove] HRESULT ScrollByRequested([in] EventRegistrationToken token);
-                        [eventadd] HRESULT ScrollFromRequested([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.IScrollController*, Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollFromRequestedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
-                        [eventremove] HRESULT ScrollFromRequested([in] EventRegistrationToken token);
+                        [eventadd] HRESULT AddScrollVelocityRequested([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.IScrollController*, Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerAddScrollVelocityRequestedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
+                        [eventremove] HRESULT AddScrollVelocityRequested([in] EventRegistrationToken token);
                         [eventadd] HRESULT InteractionRequested([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.IScrollController*, Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerInteractionRequestedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
                         [eventremove] HRESULT InteractionRequested([in] EventRegistrationToken token);
                         [eventadd] HRESULT InteractionInfoChanged([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.IScrollController*, IInspectable*>* handler, [out] [retval] EventRegistrationToken* token);
                         [eventremove] HRESULT InteractionInfoChanged([in] EventRegistrationToken token);
                     }
 
+                    [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerAddScrollVelocityRequestedEventArgs)]
+                    [experimental]
+                    [uuid(317BBC1A-0CF7-5815-A8A7-BD7E6EEF966A)]
+                    [version(0x00000001)]
+                    interface IScrollControllerAddScrollVelocityRequestedEventArgs : IInspectable
+                    {
+                        [propget] HRESULT OffsetVelocity([out] [retval] FLOAT* value);
+                        [propget] HRESULT InertiaDecayRate([out] [retval] Windows.Foundation.IReference<FLOAT>** value);
+                        [propget] HRESULT CorrelationId([out] [retval] INT32* value);
+                        [propput] HRESULT CorrelationId([in] INT32 value);
+                    }
+
+                    [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerAddScrollVelocityRequestedEventArgs)]
+                    [experimental]
+                    [uuid(9221D193-6F82-5E21-AACC-0B1460818AB5)]
+                    [version(0x00000001)]
+                    interface IScrollControllerAddScrollVelocityRequestedEventArgsFactory : IInspectable
+                    {
+                        HRESULT CreateInstance([in] FLOAT offsetVelocity, [in] Windows.Foundation.IReference<FLOAT>* inertiaDecayRate, [out] [retval] Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerAddScrollVelocityRequestedEventArgs** value);
+                    }
+
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerInteractionRequestedEventArgs)]
+                    [experimental]
                     [uuid(9D39B918-9C63-5154-92FB-59CB928E8FAE)]
                     [version(0x00000001)]
                     interface IScrollControllerInteractionRequestedEventArgs : IInspectable
@@ -2328,6 +2390,7 @@ namespace Microsoft
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerInteractionRequestedEventArgs)]
+                    [experimental]
                     [uuid(C74FE9BA-8660-59C9-889A-12E292032B89)]
                     [version(0x00000001)]
                     interface IScrollControllerInteractionRequestedEventArgsFactory : IInspectable
@@ -2336,60 +2399,45 @@ namespace Microsoft
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollByRequestedEventArgs)]
-                    [uuid(38CF8BD7-5BB2-575D-9C83-9B5E23D2363D)]
+                    [experimental]
+                    [uuid(E7F305FA-4073-5D88-8BF1-AE4ECB9208BF)]
                     [version(0x00000001)]
                     interface IScrollControllerScrollByRequestedEventArgs : IInspectable
                     {
                         [propget] HRESULT OffsetDelta([out] [retval] DOUBLE* value);
-                        [propget] HRESULT Options([out] [retval] Microsoft.UI.Xaml.Controls.ScrollOptions** value);
-                        [propget] HRESULT Info([out] [retval] Microsoft.UI.Xaml.Controls.ScrollInfo* value);
-                        [propput] HRESULT Info([in] Microsoft.UI.Xaml.Controls.ScrollInfo value);
+                        [propget] HRESULT Options([out] [retval] Microsoft.UI.Xaml.Controls.ScrollingScrollOptions** value);
+                        [propget] HRESULT CorrelationId([out] [retval] INT32* value);
+                        [propput] HRESULT CorrelationId([in] INT32 value);
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollByRequestedEventArgs)]
-                    [uuid(A690796D-B6C8-550E-B7BE-40C581684639)]
+                    [experimental]
+                    [uuid(7ECF01A7-EF3F-5AF9-93B4-38BC1BAFD335)]
                     [version(0x00000001)]
                     interface IScrollControllerScrollByRequestedEventArgsFactory : IInspectable
                     {
-                        HRESULT CreateInstance([in] DOUBLE offsetDelta, [in] Microsoft.UI.Xaml.Controls.ScrollOptions* options, [out] [retval] Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollByRequestedEventArgs** value);
-                    }
-
-                    [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollFromRequestedEventArgs)]
-                    [uuid(CFB817EB-2A20-550B-97BC-BD15BADA69EC)]
-                    [version(0x00000001)]
-                    interface IScrollControllerScrollFromRequestedEventArgs : IInspectable
-                    {
-                        [propget] HRESULT OffsetVelocity([out] [retval] FLOAT* value);
-                        [propget] HRESULT InertiaDecayRate([out] [retval] Windows.Foundation.IReference<FLOAT>** value);
-                        [propget] HRESULT Info([out] [retval] Microsoft.UI.Xaml.Controls.ScrollInfo* value);
-                        [propput] HRESULT Info([in] Microsoft.UI.Xaml.Controls.ScrollInfo value);
-                    }
-
-                    [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollFromRequestedEventArgs)]
-                    [uuid(0C4F8B39-D458-51DA-B7B7-BE899D0D9835)]
-                    [version(0x00000001)]
-                    interface IScrollControllerScrollFromRequestedEventArgsFactory : IInspectable
-                    {
-                        HRESULT CreateInstance([in] FLOAT offsetVelocity, [in] Windows.Foundation.IReference<FLOAT>* inertiaDecayRate, [out] [retval] Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollFromRequestedEventArgs** value);
+                        HRESULT CreateInstance([in] DOUBLE offsetDelta, [in] Microsoft.UI.Xaml.Controls.ScrollingScrollOptions* options, [out] [retval] Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollByRequestedEventArgs** value);
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollToRequestedEventArgs)]
-                    [uuid(4A87932C-A2E0-542E-87CE-ADBC284CDCF0)]
+                    [experimental]
+                    [uuid(73F16B99-7310-5C73-872B-276E5A9D4913)]
                     [version(0x00000001)]
                     interface IScrollControllerScrollToRequestedEventArgs : IInspectable
                     {
                         [propget] HRESULT Offset([out] [retval] DOUBLE* value);
-                        [propget] HRESULT Options([out] [retval] Microsoft.UI.Xaml.Controls.ScrollOptions** value);
-                        [propget] HRESULT Info([out] [retval] Microsoft.UI.Xaml.Controls.ScrollInfo* value);
-                        [propput] HRESULT Info([in] Microsoft.UI.Xaml.Controls.ScrollInfo value);
+                        [propget] HRESULT Options([out] [retval] Microsoft.UI.Xaml.Controls.ScrollingScrollOptions** value);
+                        [propget] HRESULT CorrelationId([out] [retval] INT32* value);
+                        [propput] HRESULT CorrelationId([in] INT32 value);
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollToRequestedEventArgs)]
-                    [uuid(CA68119D-6ADE-5164-BB13-CC36F1AC652F)]
+                    [experimental]
+                    [uuid(01675DC4-1074-54E8-BEBB-66B03A33DA0D)]
                     [version(0x00000001)]
                     interface IScrollControllerScrollToRequestedEventArgsFactory : IInspectable
                     {
-                        HRESULT CreateInstance([in] DOUBLE offset, [in] Microsoft.UI.Xaml.Controls.ScrollOptions* options, [out] [retval] Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollToRequestedEventArgs** value);
+                        HRESULT CreateInstance([in] DOUBLE offset, [in] Microsoft.UI.Xaml.Controls.ScrollingScrollOptions* options, [out] [retval] Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollToRequestedEventArgs** value);
                     }
 
                     [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -2401,7 +2449,127 @@ namespace Microsoft
                         [propget] HRESULT ScrollEventType([out] [retval] Microsoft.UI.Xaml.Controls.Primitives.ScrollEventType* value);
                     }
 
+                    [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter)]
+                    [experimental]
+                    [uuid(225D573C-F6C9-5231-B101-06BA96F77EC1)]
+                    [version(0x00000001)]
+                    interface IScrollPresenter : IInspectable
+                    {
+                        [propget] HRESULT Background([out] [retval] Microsoft.UI.Xaml.Media.Brush** value);
+                        [propput] HRESULT Background([in] Microsoft.UI.Xaml.Media.Brush* value);
+                        [propget] HRESULT Content([out] [retval] Microsoft.UI.Xaml.UIElement** value);
+                        [propput] HRESULT Content([in] Microsoft.UI.Xaml.UIElement* value);
+                        [propget] HRESULT ExpressionAnimationSources([out] [retval] Microsoft.UI.Composition.CompositionPropertySet** value);
+                        [propget] HRESULT HorizontalOffset([out] [retval] DOUBLE* value);
+                        [propget] HRESULT VerticalOffset([out] [retval] DOUBLE* value);
+                        [propget] HRESULT ZoomFactor([out] [retval] FLOAT* value);
+                        [propget] HRESULT ExtentWidth([out] [retval] DOUBLE* value);
+                        [propget] HRESULT ExtentHeight([out] [retval] DOUBLE* value);
+                        [propget] HRESULT ViewportWidth([out] [retval] DOUBLE* value);
+                        [propget] HRESULT ViewportHeight([out] [retval] DOUBLE* value);
+                        [propget] HRESULT ScrollableWidth([out] [retval] DOUBLE* value);
+                        [propget] HRESULT ScrollableHeight([out] [retval] DOUBLE* value);
+                        [propget] HRESULT ContentOrientation([out] [retval] Microsoft.UI.Xaml.Controls.ScrollingContentOrientation* value);
+                        [propput] HRESULT ContentOrientation([in] Microsoft.UI.Xaml.Controls.ScrollingContentOrientation value);
+                        [propget] HRESULT HorizontalScrollChainMode([out] [retval] Microsoft.UI.Xaml.Controls.ScrollingChainMode* value);
+                        [propput] HRESULT HorizontalScrollChainMode([in] Microsoft.UI.Xaml.Controls.ScrollingChainMode value);
+                        [propget] HRESULT VerticalScrollChainMode([out] [retval] Microsoft.UI.Xaml.Controls.ScrollingChainMode* value);
+                        [propput] HRESULT VerticalScrollChainMode([in] Microsoft.UI.Xaml.Controls.ScrollingChainMode value);
+                        [propget] HRESULT HorizontalScrollRailMode([out] [retval] Microsoft.UI.Xaml.Controls.ScrollingRailMode* value);
+                        [propput] HRESULT HorizontalScrollRailMode([in] Microsoft.UI.Xaml.Controls.ScrollingRailMode value);
+                        [propget] HRESULT VerticalScrollRailMode([out] [retval] Microsoft.UI.Xaml.Controls.ScrollingRailMode* value);
+                        [propput] HRESULT VerticalScrollRailMode([in] Microsoft.UI.Xaml.Controls.ScrollingRailMode value);
+                        [propget] HRESULT HorizontalScrollMode([out] [retval] Microsoft.UI.Xaml.Controls.ScrollingScrollMode* value);
+                        [propput] HRESULT HorizontalScrollMode([in] Microsoft.UI.Xaml.Controls.ScrollingScrollMode value);
+                        [propget] HRESULT VerticalScrollMode([out] [retval] Microsoft.UI.Xaml.Controls.ScrollingScrollMode* value);
+                        [propput] HRESULT VerticalScrollMode([in] Microsoft.UI.Xaml.Controls.ScrollingScrollMode value);
+                        [propget] HRESULT ZoomChainMode([out] [retval] Microsoft.UI.Xaml.Controls.ScrollingChainMode* value);
+                        [propput] HRESULT ZoomChainMode([in] Microsoft.UI.Xaml.Controls.ScrollingChainMode value);
+                        [propget] HRESULT ZoomMode([out] [retval] Microsoft.UI.Xaml.Controls.ScrollingZoomMode* value);
+                        [propput] HRESULT ZoomMode([in] Microsoft.UI.Xaml.Controls.ScrollingZoomMode value);
+                        [propget] HRESULT IgnoredInputKinds([out] [retval] Microsoft.UI.Xaml.Controls.ScrollingInputKinds* value);
+                        [propput] HRESULT IgnoredInputKinds([in] Microsoft.UI.Xaml.Controls.ScrollingInputKinds value);
+                        [propget] HRESULT MinZoomFactor([out] [retval] DOUBLE* value);
+                        [propput] HRESULT MinZoomFactor([in] DOUBLE value);
+                        [propget] HRESULT MaxZoomFactor([out] [retval] DOUBLE* value);
+                        [propput] HRESULT MaxZoomFactor([in] DOUBLE value);
+                        [propget] HRESULT State([out] [retval] Microsoft.UI.Xaml.Controls.ScrollingInteractionState* value);
+                        [propget] HRESULT HorizontalScrollController([out] [retval] Microsoft.UI.Xaml.Controls.Primitives.IScrollController** value);
+                        [propput] HRESULT HorizontalScrollController([in] Microsoft.UI.Xaml.Controls.Primitives.IScrollController* value);
+                        [propget] HRESULT VerticalScrollController([out] [retval] Microsoft.UI.Xaml.Controls.Primitives.IScrollController** value);
+                        [propput] HRESULT VerticalScrollController([in] Microsoft.UI.Xaml.Controls.Primitives.IScrollController* value);
+                        [propget] HRESULT HorizontalAnchorRatio([out] [retval] DOUBLE* value);
+                        [propput] HRESULT HorizontalAnchorRatio([in] DOUBLE value);
+                        [propget] HRESULT VerticalAnchorRatio([out] [retval] DOUBLE* value);
+                        [propput] HRESULT VerticalAnchorRatio([in] DOUBLE value);
+                        [propget] HRESULT HorizontalSnapPoints([out] [retval] Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointBase*>** value);
+                        [propget] HRESULT VerticalSnapPoints([out] [retval] Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointBase*>** value);
+                        [propget] HRESULT ZoomSnapPoints([out] [retval] Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPointBase*>** value);
+                        [overload("ScrollTo")] HRESULT ScrollTo([in] DOUBLE horizontalOffset, [in] DOUBLE verticalOffset, [out] [retval] INT32* result);
+                        [overload("ScrollTo")] HRESULT ScrollToWithOptions([in] DOUBLE horizontalOffset, [in] DOUBLE verticalOffset, [in] Microsoft.UI.Xaml.Controls.ScrollingScrollOptions* options, [out] [retval] INT32* result);
+                        [overload("ScrollBy")] HRESULT ScrollBy([in] DOUBLE horizontalOffsetDelta, [in] DOUBLE verticalOffsetDelta, [out] [retval] INT32* result);
+                        [overload("ScrollBy")] HRESULT ScrollByWithOptions([in] DOUBLE horizontalOffsetDelta, [in] DOUBLE verticalOffsetDelta, [in] Microsoft.UI.Xaml.Controls.ScrollingScrollOptions* options, [out] [retval] INT32* result);
+                        HRESULT AddScrollVelocity([in] Windows.Foundation.Numerics.Vector2 offsetsVelocity, [in] Windows.Foundation.IReference<Windows.Foundation.Numerics.Vector2>* inertiaDecayRate, [out] [retval] INT32* result);
+                        [overload("ZoomTo")] HRESULT ZoomTo([in] FLOAT zoomFactor, [in] Windows.Foundation.IReference<Windows.Foundation.Numerics.Vector2>* centerPoint, [out] [retval] INT32* result);
+                        [overload("ZoomTo")] HRESULT ZoomToWithOptions([in] FLOAT zoomFactor, [in] Windows.Foundation.IReference<Windows.Foundation.Numerics.Vector2>* centerPoint, [in] Microsoft.UI.Xaml.Controls.ScrollingZoomOptions* options, [out] [retval] INT32* result);
+                        [overload("ZoomBy")] HRESULT ZoomBy([in] FLOAT zoomFactorDelta, [in] Windows.Foundation.IReference<Windows.Foundation.Numerics.Vector2>* centerPoint, [out] [retval] INT32* result);
+                        [overload("ZoomBy")] HRESULT ZoomByWithOptions([in] FLOAT zoomFactorDelta, [in] Windows.Foundation.IReference<Windows.Foundation.Numerics.Vector2>* centerPoint, [in] Microsoft.UI.Xaml.Controls.ScrollingZoomOptions* options, [out] [retval] INT32* result);
+                        HRESULT AddZoomVelocity([in] FLOAT zoomFactorVelocity, [in] Windows.Foundation.IReference<Windows.Foundation.Numerics.Vector2>* centerPoint, [in] Windows.Foundation.IReference<FLOAT>* inertiaDecayRate, [out] [retval] INT32* result);
+                        [eventadd] HRESULT ExtentChanged([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter*, IInspectable*>* handler, [out] [retval] EventRegistrationToken* token);
+                        [eventremove] HRESULT ExtentChanged([in] EventRegistrationToken token);
+                        [eventadd] HRESULT StateChanged([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter*, IInspectable*>* handler, [out] [retval] EventRegistrationToken* token);
+                        [eventremove] HRESULT StateChanged([in] EventRegistrationToken token);
+                        [eventadd] HRESULT ViewChanged([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter*, IInspectable*>* handler, [out] [retval] EventRegistrationToken* token);
+                        [eventremove] HRESULT ViewChanged([in] EventRegistrationToken token);
+                        [eventadd] HRESULT ScrollAnimationStarting([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter*, Microsoft.UI.Xaml.Controls.ScrollingScrollAnimationStartingEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
+                        [eventremove] HRESULT ScrollAnimationStarting([in] EventRegistrationToken token);
+                        [eventadd] HRESULT ZoomAnimationStarting([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter*, Microsoft.UI.Xaml.Controls.ScrollingZoomAnimationStartingEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
+                        [eventremove] HRESULT ZoomAnimationStarting([in] EventRegistrationToken token);
+                        [eventadd] HRESULT ScrollCompleted([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter*, Microsoft.UI.Xaml.Controls.ScrollingScrollCompletedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
+                        [eventremove] HRESULT ScrollCompleted([in] EventRegistrationToken token);
+                        [eventadd] HRESULT ZoomCompleted([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter*, Microsoft.UI.Xaml.Controls.ScrollingZoomCompletedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
+                        [eventremove] HRESULT ZoomCompleted([in] EventRegistrationToken token);
+                        [eventadd] HRESULT BringingIntoView([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter*, Microsoft.UI.Xaml.Controls.ScrollingBringingIntoViewEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
+                        [eventremove] HRESULT BringingIntoView([in] EventRegistrationToken token);
+                        [eventadd] HRESULT AnchorRequested([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter*, Microsoft.UI.Xaml.Controls.ScrollingAnchorRequestedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
+                        [eventremove] HRESULT AnchorRequested([in] EventRegistrationToken token);
+                    }
+
+                    [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter)]
+                    [experimental]
+                    [uuid(9F5CDC57-D229-52B2-AEE4-37C496764EA3)]
+                    [version(0x00000001)]
+                    interface IScrollPresenterFactory : IInspectable
+                    {
+                        HRESULT CreateInstance([in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter** value);
+                    }
+
+                    [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter)]
+                    [experimental]
+                    [uuid(CB3764AB-C2FD-5770-8067-2856267D26D8)]
+                    [version(0x00000001)]
+                    interface IScrollPresenterStatics : IInspectable
+                    {
+                        [propget] HRESULT BackgroundProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        [propget] HRESULT ContentProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        [propget] HRESULT ContentOrientationProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        [propget] HRESULT HorizontalScrollChainModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        [propget] HRESULT VerticalScrollChainModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        [propget] HRESULT HorizontalScrollRailModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        [propget] HRESULT VerticalScrollRailModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        [propget] HRESULT HorizontalScrollModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        [propget] HRESULT VerticalScrollModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        [propget] HRESULT ZoomChainModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        [propget] HRESULT ZoomModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        [propget] HRESULT IgnoredInputKindsProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        [propget] HRESULT MinZoomFactorProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        [propget] HRESULT MaxZoomFactorProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        [propget] HRESULT HorizontalAnchorRatioProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                        [propget] HRESULT VerticalAnchorRatioProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                    }
+
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPoint)]
+                    [experimental]
                     [uuid(73D918FF-D16C-52CD-9657-E392EE08868A)]
                     [version(0x00000001)]
                     interface IScrollSnapPoint : IInspectable
@@ -2410,6 +2578,7 @@ namespace Microsoft
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointBase)]
+                    [experimental]
                     [uuid(45D7319D-C9EB-5109-9668-FF3FC6CCDF11)]
                     [version(0x00000001)]
                     interface IScrollSnapPointBase : IInspectable
@@ -2418,6 +2587,7 @@ namespace Microsoft
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointBase)]
+                    [experimental]
                     [uuid(3FA2E552-1A45-5691-99DC-6400087CBB38)]
                     [version(0x00000001)]
                     interface IScrollSnapPointBaseFactory : IInspectable
@@ -2425,6 +2595,7 @@ namespace Microsoft
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPoint)]
+                    [experimental]
                     [uuid(39304BC7-0E54-5C06-8920-ADCF67E7C466)]
                     [version(0x00000001)]
                     interface IScrollSnapPointFactory : IInspectable
@@ -2444,122 +2615,6 @@ namespace Microsoft
                         [eventremove] HRESULT VerticalSnapPointsChanged([in] EventRegistrationToken token);
                         HRESULT GetIrregularSnapPoints([in] Microsoft.UI.Xaml.Controls.Orientation orientation, [in] Microsoft.UI.Xaml.Controls.Primitives.SnapPointsAlignment alignment, [out] [retval] Windows.Foundation.Collections.IVectorView<FLOAT>** result);
                         HRESULT GetRegularSnapPoints([in] Microsoft.UI.Xaml.Controls.Orientation orientation, [in] Microsoft.UI.Xaml.Controls.Primitives.SnapPointsAlignment alignment, [out] FLOAT* offset, [out] [retval] FLOAT* returnValue);
-                    }
-
-                    [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.Scroller)]
-                    [uuid(FC76B194-4EC5-5EA0-BE6A-64EC73BFA7CC)]
-                    [version(0x00000001)]
-                    interface IScroller : IInspectable
-                    {
-                        [propget] HRESULT Background([out] [retval] Microsoft.UI.Xaml.Media.Brush** value);
-                        [propput] HRESULT Background([in] Microsoft.UI.Xaml.Media.Brush* value);
-                        [propget] HRESULT Content([out] [retval] Microsoft.UI.Xaml.UIElement** value);
-                        [propput] HRESULT Content([in] Microsoft.UI.Xaml.UIElement* value);
-                        [propget] HRESULT ExpressionAnimationSources([out] [retval] Microsoft.UI.Composition.CompositionPropertySet** value);
-                        [propget] HRESULT HorizontalOffset([out] [retval] DOUBLE* value);
-                        [propget] HRESULT VerticalOffset([out] [retval] DOUBLE* value);
-                        [propget] HRESULT ZoomFactor([out] [retval] FLOAT* value);
-                        [propget] HRESULT ExtentWidth([out] [retval] DOUBLE* value);
-                        [propget] HRESULT ExtentHeight([out] [retval] DOUBLE* value);
-                        [propget] HRESULT ViewportWidth([out] [retval] DOUBLE* value);
-                        [propget] HRESULT ViewportHeight([out] [retval] DOUBLE* value);
-                        [propget] HRESULT ScrollableWidth([out] [retval] DOUBLE* value);
-                        [propget] HRESULT ScrollableHeight([out] [retval] DOUBLE* value);
-                        [propget] HRESULT ContentOrientation([out] [retval] Microsoft.UI.Xaml.Controls.ContentOrientation* value);
-                        [propput] HRESULT ContentOrientation([in] Microsoft.UI.Xaml.Controls.ContentOrientation value);
-                        [propget] HRESULT HorizontalScrollChainingMode([out] [retval] Microsoft.UI.Xaml.Controls.ChainingMode* value);
-                        [propput] HRESULT HorizontalScrollChainingMode([in] Microsoft.UI.Xaml.Controls.ChainingMode value);
-                        [propget] HRESULT VerticalScrollChainingMode([out] [retval] Microsoft.UI.Xaml.Controls.ChainingMode* value);
-                        [propput] HRESULT VerticalScrollChainingMode([in] Microsoft.UI.Xaml.Controls.ChainingMode value);
-                        [propget] HRESULT HorizontalScrollRailingMode([out] [retval] Microsoft.UI.Xaml.Controls.RailingMode* value);
-                        [propput] HRESULT HorizontalScrollRailingMode([in] Microsoft.UI.Xaml.Controls.RailingMode value);
-                        [propget] HRESULT VerticalScrollRailingMode([out] [retval] Microsoft.UI.Xaml.Controls.RailingMode* value);
-                        [propput] HRESULT VerticalScrollRailingMode([in] Microsoft.UI.Xaml.Controls.RailingMode value);
-                        [propget] HRESULT HorizontalScrollMode([out] [retval] Microsoft.UI.Xaml.Controls.ScrollMode* value);
-                        [propput] HRESULT HorizontalScrollMode([in] Microsoft.UI.Xaml.Controls.ScrollMode value);
-                        [propget] HRESULT VerticalScrollMode([out] [retval] Microsoft.UI.Xaml.Controls.ScrollMode* value);
-                        [propput] HRESULT VerticalScrollMode([in] Microsoft.UI.Xaml.Controls.ScrollMode value);
-                        [propget] HRESULT ZoomChainingMode([out] [retval] Microsoft.UI.Xaml.Controls.ChainingMode* value);
-                        [propput] HRESULT ZoomChainingMode([in] Microsoft.UI.Xaml.Controls.ChainingMode value);
-                        [propget] HRESULT ZoomMode([out] [retval] Microsoft.UI.Xaml.Controls.ZoomMode* value);
-                        [propput] HRESULT ZoomMode([in] Microsoft.UI.Xaml.Controls.ZoomMode value);
-                        [propget] HRESULT IgnoredInputKind([out] [retval] Microsoft.UI.Xaml.Controls.InputKind* value);
-                        [propput] HRESULT IgnoredInputKind([in] Microsoft.UI.Xaml.Controls.InputKind value);
-                        [propget] HRESULT MinZoomFactor([out] [retval] DOUBLE* value);
-                        [propput] HRESULT MinZoomFactor([in] DOUBLE value);
-                        [propget] HRESULT MaxZoomFactor([out] [retval] DOUBLE* value);
-                        [propput] HRESULT MaxZoomFactor([in] DOUBLE value);
-                        [propget] HRESULT State([out] [retval] Microsoft.UI.Xaml.Controls.InteractionState* value);
-                        [propget] HRESULT HorizontalScrollController([out] [retval] Microsoft.UI.Xaml.Controls.Primitives.IScrollController** value);
-                        [propput] HRESULT HorizontalScrollController([in] Microsoft.UI.Xaml.Controls.Primitives.IScrollController* value);
-                        [propget] HRESULT VerticalScrollController([out] [retval] Microsoft.UI.Xaml.Controls.Primitives.IScrollController** value);
-                        [propput] HRESULT VerticalScrollController([in] Microsoft.UI.Xaml.Controls.Primitives.IScrollController* value);
-                        [propget] HRESULT HorizontalAnchorRatio([out] [retval] DOUBLE* value);
-                        [propput] HRESULT HorizontalAnchorRatio([in] DOUBLE value);
-                        [propget] HRESULT VerticalAnchorRatio([out] [retval] DOUBLE* value);
-                        [propput] HRESULT VerticalAnchorRatio([in] DOUBLE value);
-                        [propget] HRESULT HorizontalSnapPoints([out] [retval] Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointBase*>** value);
-                        [propget] HRESULT VerticalSnapPoints([out] [retval] Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointBase*>** value);
-                        [propget] HRESULT ZoomSnapPoints([out] [retval] Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPointBase*>** value);
-                        [overload("ScrollTo")] HRESULT ScrollTo([in] DOUBLE horizontalOffset, [in] DOUBLE verticalOffset, [out] [retval] Microsoft.UI.Xaml.Controls.ScrollInfo* result);
-                        [overload("ScrollTo")] HRESULT ScrollToWithOptions([in] DOUBLE horizontalOffset, [in] DOUBLE verticalOffset, [in] Microsoft.UI.Xaml.Controls.ScrollOptions* options, [out] [retval] Microsoft.UI.Xaml.Controls.ScrollInfo* result);
-                        [overload("ScrollBy")] HRESULT ScrollBy([in] DOUBLE horizontalOffsetDelta, [in] DOUBLE verticalOffsetDelta, [out] [retval] Microsoft.UI.Xaml.Controls.ScrollInfo* result);
-                        [overload("ScrollBy")] HRESULT ScrollByWithOptions([in] DOUBLE horizontalOffsetDelta, [in] DOUBLE verticalOffsetDelta, [in] Microsoft.UI.Xaml.Controls.ScrollOptions* options, [out] [retval] Microsoft.UI.Xaml.Controls.ScrollInfo* result);
-                        HRESULT ScrollFrom([in] Windows.Foundation.Numerics.Vector2 offsetsVelocity, [in] Windows.Foundation.IReference<Windows.Foundation.Numerics.Vector2>* inertiaDecayRate, [out] [retval] Microsoft.UI.Xaml.Controls.ScrollInfo* result);
-                        [overload("ZoomTo")] HRESULT ZoomTo([in] FLOAT zoomFactor, [in] Windows.Foundation.IReference<Windows.Foundation.Numerics.Vector2>* centerPoint, [out] [retval] Microsoft.UI.Xaml.Controls.ZoomInfo* result);
-                        [overload("ZoomTo")] HRESULT ZoomToWithOptions([in] FLOAT zoomFactor, [in] Windows.Foundation.IReference<Windows.Foundation.Numerics.Vector2>* centerPoint, [in] Microsoft.UI.Xaml.Controls.ZoomOptions* options, [out] [retval] Microsoft.UI.Xaml.Controls.ZoomInfo* result);
-                        [overload("ZoomBy")] HRESULT ZoomBy([in] FLOAT zoomFactorDelta, [in] Windows.Foundation.IReference<Windows.Foundation.Numerics.Vector2>* centerPoint, [out] [retval] Microsoft.UI.Xaml.Controls.ZoomInfo* result);
-                        [overload("ZoomBy")] HRESULT ZoomByWithOptions([in] FLOAT zoomFactorDelta, [in] Windows.Foundation.IReference<Windows.Foundation.Numerics.Vector2>* centerPoint, [in] Microsoft.UI.Xaml.Controls.ZoomOptions* options, [out] [retval] Microsoft.UI.Xaml.Controls.ZoomInfo* result);
-                        HRESULT ZoomFrom([in] FLOAT zoomFactorVelocity, [in] Windows.Foundation.IReference<Windows.Foundation.Numerics.Vector2>* centerPoint, [in] Windows.Foundation.IReference<FLOAT>* inertiaDecayRate, [out] [retval] Microsoft.UI.Xaml.Controls.ZoomInfo* result);
-                        [eventadd] HRESULT ExtentChanged([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.Scroller*, IInspectable*>* handler, [out] [retval] EventRegistrationToken* token);
-                        [eventremove] HRESULT ExtentChanged([in] EventRegistrationToken token);
-                        [eventadd] HRESULT StateChanged([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.Scroller*, IInspectable*>* handler, [out] [retval] EventRegistrationToken* token);
-                        [eventremove] HRESULT StateChanged([in] EventRegistrationToken token);
-                        [eventadd] HRESULT ViewChanged([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.Scroller*, IInspectable*>* handler, [out] [retval] EventRegistrationToken* token);
-                        [eventremove] HRESULT ViewChanged([in] EventRegistrationToken token);
-                        [eventadd] HRESULT ScrollAnimationStarting([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.Scroller*, Microsoft.UI.Xaml.Controls.ScrollAnimationStartingEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
-                        [eventremove] HRESULT ScrollAnimationStarting([in] EventRegistrationToken token);
-                        [eventadd] HRESULT ZoomAnimationStarting([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.Scroller*, Microsoft.UI.Xaml.Controls.ZoomAnimationStartingEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
-                        [eventremove] HRESULT ZoomAnimationStarting([in] EventRegistrationToken token);
-                        [eventadd] HRESULT ScrollCompleted([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.Scroller*, Microsoft.UI.Xaml.Controls.ScrollCompletedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
-                        [eventremove] HRESULT ScrollCompleted([in] EventRegistrationToken token);
-                        [eventadd] HRESULT ZoomCompleted([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.Scroller*, Microsoft.UI.Xaml.Controls.ZoomCompletedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
-                        [eventremove] HRESULT ZoomCompleted([in] EventRegistrationToken token);
-                        [eventadd] HRESULT BringingIntoView([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.Scroller*, Microsoft.UI.Xaml.Controls.ScrollerBringingIntoViewEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
-                        [eventremove] HRESULT BringingIntoView([in] EventRegistrationToken token);
-                        [eventadd] HRESULT AnchorRequested([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.Scroller*, Microsoft.UI.Xaml.Controls.ScrollerAnchorRequestedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
-                        [eventremove] HRESULT AnchorRequested([in] EventRegistrationToken token);
-                    }
-
-                    [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.Scroller)]
-                    [uuid(6094F4DD-F93D-5636-B4B5-E938C0CB068E)]
-                    [version(0x00000001)]
-                    interface IScrollerFactory : IInspectable
-                    {
-                        HRESULT CreateInstance([in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Controls.Primitives.Scroller** value);
-                    }
-
-                    [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.Scroller)]
-                    [uuid(75A0D811-DF8D-5606-A3FC-7131848CFC38)]
-                    [version(0x00000001)]
-                    interface IScrollerStatics : IInspectable
-                    {
-                        [propget] HRESULT BackgroundProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                        [propget] HRESULT ContentProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                        [propget] HRESULT ContentOrientationProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                        [propget] HRESULT HorizontalScrollChainingModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                        [propget] HRESULT VerticalScrollChainingModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                        [propget] HRESULT HorizontalScrollRailingModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                        [propget] HRESULT VerticalScrollRailingModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                        [propget] HRESULT HorizontalScrollModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                        [propget] HRESULT VerticalScrollModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                        [propget] HRESULT ZoomChainingModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                        [propget] HRESULT ZoomModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                        [propget] HRESULT IgnoredInputKindProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                        [propget] HRESULT MinZoomFactorProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                        [propget] HRESULT MaxZoomFactorProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                        [propget] HRESULT HorizontalAnchorRatioProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                        [propget] HRESULT VerticalAnchorRatioProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     }
 
                     [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -2627,6 +2682,7 @@ namespace Microsoft
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.SnapPointBase)]
+                    [experimental]
                     [uuid(14ED1089-FB97-5211-8C45-C352CD8B96A1)]
                     [version(0x00000001)]
                     interface ISnapPointBase : IInspectable
@@ -2634,6 +2690,7 @@ namespace Microsoft
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.SnapPointBase)]
+                    [experimental]
                     [uuid(50266508-15F8-530A-A213-E976E04E670B)]
                     [version(0x00000001)]
                     interface ISnapPointBaseFactory : IInspectable
@@ -2775,6 +2832,7 @@ namespace Microsoft
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPoint)]
+                    [experimental]
                     [uuid(8101D353-8DB3-5AC6-A7F8-B18EB9C123AC)]
                     [version(0x00000001)]
                     interface IZoomSnapPoint : IInspectable
@@ -2783,6 +2841,7 @@ namespace Microsoft
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPointBase)]
+                    [experimental]
                     [uuid(C6D08756-0860-5C2D-ABEC-6EB4AA4B53D7)]
                     [version(0x00000001)]
                     interface IZoomSnapPointBase : IInspectable
@@ -2790,6 +2849,7 @@ namespace Microsoft
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPointBase)]
+                    [experimental]
                     [uuid(2C689EEA-B6CF-5024-847B-589355D5A2FA)]
                     [version(0x00000001)]
                     interface IZoomSnapPointBaseFactory : IInspectable
@@ -2797,6 +2857,7 @@ namespace Microsoft
                     }
 
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPoint)]
+                    [experimental]
                     [uuid(0B3B5418-BFF6-5A9E-B734-B68ADF49F775)]
                     [version(0x00000001)]
                     interface IZoomSnapPointFactory : IInspectable
@@ -3049,6 +3110,16 @@ namespace Microsoft
                         [default] interface Microsoft.UI.Xaml.Controls.Primitives.IGridViewItemTemplateSettings;
                     }
 
+                    [composable(Microsoft.UI.Xaml.Controls.Primitives.IInfoBarPanelFactory, public, 0x00000001)]
+                    [marshaling_behavior(agile)]
+                    [static(Microsoft.UI.Xaml.Controls.Primitives.IInfoBarPanelStatics, 0x00000001)]
+                    [threading(both)]
+                    [version(0x00000001)]
+                    runtimeclass InfoBarPanel : Microsoft.UI.Xaml.Controls.Panel
+                    {
+                        [default] interface Microsoft.UI.Xaml.Controls.Primitives.IInfoBarPanel;
+                    }
+
                     [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                     [marshaling_behavior(agile)]
                     runtimeclass ItemsChangedEventArgs
@@ -3263,21 +3334,23 @@ namespace Microsoft
                     }
 
                     [composable(Microsoft.UI.Xaml.Controls.Primitives.IRepeatedScrollSnapPointFactory, public, 0x00000001)]
+                    [experimental]
                     [marshaling_behavior(agile)]
                     [threading(both)]
                     [version(0x00000001)]
                     runtimeclass RepeatedScrollSnapPoint : Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointBase
                     {
-                        [default] interface Microsoft.UI.Xaml.Controls.Primitives.IRepeatedScrollSnapPoint;
+                        [default] [experimental] interface Microsoft.UI.Xaml.Controls.Primitives.IRepeatedScrollSnapPoint;
                     }
 
                     [composable(Microsoft.UI.Xaml.Controls.Primitives.IRepeatedZoomSnapPointFactory, public, 0x00000001)]
+                    [experimental]
                     [marshaling_behavior(agile)]
                     [threading(both)]
                     [version(0x00000001)]
                     runtimeclass RepeatedZoomSnapPoint : Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPointBase
                     {
-                        [default] interface Microsoft.UI.Xaml.Controls.Primitives.IRepeatedZoomSnapPoint;
+                        [default] [experimental] interface Microsoft.UI.Xaml.Controls.Primitives.IRepeatedZoomSnapPoint;
                     }
 
                     [activatable(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -3290,40 +3363,44 @@ namespace Microsoft
                         [default] interface Microsoft.UI.Xaml.Controls.Primitives.IScrollBar;
                     }
 
+                    [activatable(Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerAddScrollVelocityRequestedEventArgsFactory, 0x00000001)]
+                    [experimental]
+                    [marshaling_behavior(agile)]
+                    [threading(both)]
+                    [version(0x00000001)]
+                    runtimeclass ScrollControllerAddScrollVelocityRequestedEventArgs
+                    {
+                        [default] [experimental] interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerAddScrollVelocityRequestedEventArgs;
+                    }
+
                     [activatable(Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerInteractionRequestedEventArgsFactory, 0x00000001)]
+                    [experimental]
                     [marshaling_behavior(agile)]
                     [threading(both)]
                     [version(0x00000001)]
                     runtimeclass ScrollControllerInteractionRequestedEventArgs
                     {
-                        [default] interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerInteractionRequestedEventArgs;
+                        [default] [experimental] interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerInteractionRequestedEventArgs;
                     }
 
                     [activatable(Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollByRequestedEventArgsFactory, 0x00000001)]
+                    [experimental]
                     [marshaling_behavior(agile)]
                     [threading(both)]
                     [version(0x00000001)]
                     runtimeclass ScrollControllerScrollByRequestedEventArgs
                     {
-                        [default] interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollByRequestedEventArgs;
-                    }
-
-                    [activatable(Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollFromRequestedEventArgsFactory, 0x00000001)]
-                    [marshaling_behavior(agile)]
-                    [threading(both)]
-                    [version(0x00000001)]
-                    runtimeclass ScrollControllerScrollFromRequestedEventArgs
-                    {
-                        [default] interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollFromRequestedEventArgs;
+                        [default] [experimental] interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollByRequestedEventArgs;
                     }
 
                     [activatable(Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollToRequestedEventArgsFactory, 0x00000001)]
+                    [experimental]
                     [marshaling_behavior(agile)]
                     [threading(both)]
                     [version(0x00000001)]
                     runtimeclass ScrollControllerScrollToRequestedEventArgs
                     {
-                        [default] interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollToRequestedEventArgs;
+                        [default] [experimental] interface Microsoft.UI.Xaml.Controls.Primitives.IScrollControllerScrollToRequestedEventArgs;
                     }
 
                     [activatable(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -3335,32 +3412,36 @@ namespace Microsoft
                         [default] interface Microsoft.UI.Xaml.Controls.Primitives.IScrollEventArgs;
                     }
 
+                    [composable(Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenterFactory, public, 0x00000001)]
+                    [experimental]
+                    [marshaling_behavior(agile)]
+                    [static(Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenterStatics, 0x00000001)]
+                    [threading(both)]
+                    [version(0x00000001)]
+                    runtimeclass ScrollPresenter : Microsoft.UI.Xaml.FrameworkElement
+                    {
+                        [default] [experimental] interface Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenter;
+                        interface Microsoft.UI.Xaml.Controls.IScrollAnchorProvider;
+                    }
+
                     [composable(Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointFactory, public, 0x00000001)]
+                    [experimental]
                     [marshaling_behavior(agile)]
                     [threading(both)]
                     [version(0x00000001)]
                     runtimeclass ScrollSnapPoint : Microsoft.UI.Xaml.Controls.Primitives.ScrollSnapPointBase
                     {
-                        [default] interface Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPoint;
+                        [default] [experimental] interface Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPoint;
                     }
 
                     [composable(Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointBaseFactory, public, 0x00000001)]
+                    [experimental]
                     [marshaling_behavior(agile)]
                     [threading(both)]
                     [version(0x00000001)]
                     runtimeclass ScrollSnapPointBase : Microsoft.UI.Xaml.Controls.Primitives.SnapPointBase
                     {
-                        [default] interface Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointBase;
-                    }
-
-                    [composable(Microsoft.UI.Xaml.Controls.Primitives.IScrollerFactory, public, 0x00000001)]
-                    [marshaling_behavior(agile)]
-                    [static(Microsoft.UI.Xaml.Controls.Primitives.IScrollerStatics, 0x00000001)]
-                    [threading(both)]
-                    [version(0x00000001)]
-                    runtimeclass Scroller : Microsoft.UI.Xaml.FrameworkElement
-                    {
-                        [default] interface Microsoft.UI.Xaml.Controls.Primitives.IScroller;
+                        [default] [experimental] interface Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointBase;
                     }
 
                     [composable(Microsoft.UI.Xaml.Controls.Primitives.ISelectorFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -3384,12 +3465,13 @@ namespace Microsoft
                     }
 
                     [composable(Microsoft.UI.Xaml.Controls.Primitives.ISnapPointBaseFactory, public, 0x00000001)]
+                    [experimental]
                     [marshaling_behavior(agile)]
                     [threading(both)]
                     [version(0x00000001)]
                     runtimeclass SnapPointBase : Microsoft.UI.Xaml.DependencyObject
                     {
-                        [default] interface Microsoft.UI.Xaml.Controls.Primitives.ISnapPointBase;
+                        [default] [experimental] interface Microsoft.UI.Xaml.Controls.Primitives.ISnapPointBase;
                     }
 
                     [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -3457,21 +3539,23 @@ namespace Microsoft
                     }
 
                     [composable(Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointFactory, public, 0x00000001)]
+                    [experimental]
                     [marshaling_behavior(agile)]
                     [threading(both)]
                     [version(0x00000001)]
                     runtimeclass ZoomSnapPoint : Microsoft.UI.Xaml.Controls.Primitives.ZoomSnapPointBase
                     {
-                        [default] interface Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPoint;
+                        [default] [experimental] interface Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPoint;
                     }
 
                     [composable(Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointBaseFactory, public, 0x00000001)]
+                    [experimental]
                     [marshaling_behavior(agile)]
                     [threading(both)]
                     [version(0x00000001)]
                     runtimeclass ZoomSnapPointBase : Microsoft.UI.Xaml.Controls.Primitives.SnapPointBase
                     {
-                        [default] interface Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointBase;
+                        [default] [experimental] interface Microsoft.UI.Xaml.Controls.Primitives.IZoomSnapPointBase;
                     }
                 }
             }

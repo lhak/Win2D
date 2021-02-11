@@ -57,14 +57,6 @@
 #define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
@@ -267,23 +259,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIDoubleTappedEventHandler ABI::Microsoft::UI::Xaml::Input::IDoubleTappedEventHandler
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIDoubleTappedEventHandler_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Input {
-                    interface IFocusedElementRemovedEventHandler;
-                } /* Input */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler ABI::Microsoft::UI::Xaml::Input::IFocusedElementRemovedEventHandler
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIHoldingEventHandler_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIHoldingEventHandler_FWD_DEFINED__
@@ -659,23 +634,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptions_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Input {
-                    interface IFindNextElementOptionsPrivate;
-                } /* Input */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate ABI::Microsoft::UI::Xaml::Input::IFindNextElementOptionsPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManager_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManager_FWD_DEFINED__
 namespace ABI {
@@ -744,23 +702,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Input {
-                    interface IFocusManagerStaticsPrivate;
-                } /* Input */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate ABI::Microsoft::UI::Xaml::Input::IFocusManagerStaticsPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusMovementResult_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusMovementResult_FWD_DEFINED__
 namespace ABI {
@@ -777,23 +718,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusMovementResult ABI::Microsoft::UI::Xaml::Input::IFocusMovementResult
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusMovementResult_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Input {
-                    interface IFocusedElementRemovedEventArgs;
-                } /* Input */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs ABI::Microsoft::UI::Xaml::Input::IFocusedElementRemovedEventArgs
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIGettingFocusEventArgs_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIGettingFocusEventArgs_FWD_DEFINED__
@@ -879,23 +803,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInertiaTranslationBehavior ABI::Microsoft::UI::Xaml::Input::IInertiaTranslationBehavior
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInertiaTranslationBehavior_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Input {
-                    interface IInputManagerStatics;
-                } /* Input */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics ABI::Microsoft::UI::Xaml::Input::IInputManagerStatics
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputScope_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputScope_FWD_DEFINED__
@@ -3077,7 +2984,6 @@ namespace ABI {
 
 
 
-
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -3310,20 +3216,6 @@ namespace ABI {
             namespace Xaml {
                 namespace Input {
                     
-                    typedef enum LastInputDeviceType : int LastInputDeviceType;
-                    
-                } /* Input */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Input {
-                    
                     typedef enum ManipulationModes : unsigned int ManipulationModes;
                     
                 } /* Input */
@@ -3453,11 +3345,6 @@ namespace ABI {
 
 
 
-
-
-
-
-
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -3517,19 +3404,6 @@ namespace ABI {
 
 
 
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Input {
-                    class FocusedElementRemovedEventArgs;
-                } /* Input */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
 
 namespace ABI {
     namespace Microsoft {
@@ -3581,7 +3455,6 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-
 
 
 namespace ABI {
@@ -3996,40 +3869,6 @@ namespace ABI {
 
 /*
  *
- * Struct Microsoft.UI.Xaml.Input.LastInputDeviceType
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Input {
-                    /* [v1_enum, contract] */
-                    enum LastInputDeviceType : int
-                    {
-                        LastInputDeviceType_None = 0,
-                        LastInputDeviceType_Mouse = 1,
-                        LastInputDeviceType_Touch = 2,
-                        LastInputDeviceType_Pen = 3,
-                        LastInputDeviceType_Keyboard = 4,
-                        LastInputDeviceType_GamepadOrRemote = 5,
-                    };
-                    
-                } /* Input */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Struct Microsoft.UI.Xaml.Input.ManipulationModes
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -4250,47 +4089,6 @@ namespace ABI {
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIDoubleTappedEventHandler;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIDoubleTappedEventHandler_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Delegate Microsoft.UI.Xaml.Input.FocusedElementRemovedEventHandler
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler_INTERFACE_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Input {
-                    /* [object, uuid("BE7AD825-7E45-57C4-8E5E-96F4AFB4DB58"), contract] */
-                    MIDL_INTERFACE("BE7AD825-7E45-57C4-8E5E-96F4AFB4DB58")
-                    IFocusedElementRemovedEventHandler : public IUnknown
-                    {
-                    public:
-                        virtual HRESULT STDMETHODCALLTYPE Invoke(
-                            /* [in] */IInspectable * sender,
-                            /* [in] */ABI::Microsoft::UI::Xaml::Input::IFocusedElementRemovedEventArgs * e
-                            ) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_IFocusedElementRemovedEventHandler=_uuidof(IFocusedElementRemovedEventHandler);
-                    
-                } /* Input */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -5306,50 +5104,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOpti
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Input.IFindNextElementOptionsPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Input_IFindNextElementOptionsPrivate[] = L"Microsoft.UI.Xaml.Input.IFindNextElementOptionsPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Input {
-                    /* [object, uuid("98B29E17-62D0-57FD-8937-DC47B8B580A1"), contract] */
-                    MIDL_INTERFACE("98B29E17-62D0-57FD-8937-DC47B8B580A1")
-                    IFindNextElementOptionsPrivate : public IInspectable
-                    {
-                    public:
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_IgnoreOcclusivity(
-                            /* [retval, out] */::boolean * value
-                            ) = 0;
-                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_IgnoreOcclusivity(
-                            /* [in] */::boolean value
-                            ) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_IFindNextElementOptionsPrivate=_uuidof(IFindNextElementOptionsPrivate);
-                    
-                } /* Input */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Input.IFocusManager
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -5610,90 +5364,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStatics
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Input.IFocusManagerStaticsPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Input_IFocusManagerStaticsPrivate[] = L"Microsoft.UI.Xaml.Input.IFocusManagerStaticsPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Input {
-                    /* [object, uuid("870BB840-0A1E-54CC-8A82-06E6199824F9"), contract] */
-                    MIDL_INTERFACE("870BB840-0A1E-54CC-8A82-06E6199824F9")
-                    IFocusManagerStaticsPrivate : public IInspectable
-                    {
-                    public:
-                        /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_FocusedElementRemoved(
-                            /* [in] */ABI::Microsoft::UI::Xaml::Input::IFocusedElementRemovedEventHandler  * handler,
-                            /* [retval, out] */EventRegistrationToken * token
-                            ) = 0;
-                        /* [eventremove] */virtual HRESULT STDMETHODCALLTYPE remove_FocusedElementRemoved(
-                            /* [in] */EventRegistrationToken token
-                            ) = 0;
-                        virtual HRESULT STDMETHODCALLTYPE FindNextFocusWithSearchRootIgnoreEngagement(
-                            /* [in] */ABI::Microsoft::UI::Xaml::Input::FocusNavigationDirection focusNavigationDirection,
-                            /* [in] */IInspectable * searchRoot,
-                            /* [retval, out] */IInspectable * * result
-                            ) = 0;
-                        virtual HRESULT STDMETHODCALLTYPE FindNextFocusWithSearchRootIgnoreEngagementWithHintRect(
-                            /* [in] */ABI::Microsoft::UI::Xaml::Input::FocusNavigationDirection focusNavigationDirection,
-                            /* [in] */IInspectable * searchRoot,
-                            /* [in] */ABI::Windows::Foundation::Rect hintRect,
-                            /* [in] */ABI::Windows::Foundation::Rect exclusionRect,
-                            /* [retval, out] */IInspectable * * result
-                            ) = 0;
-                        virtual HRESULT STDMETHODCALLTYPE FindNextFocusWithSearchRootIgnoreEngagementWithClip(
-                            /* [in] */ABI::Microsoft::UI::Xaml::Input::FocusNavigationDirection focusNavigationDirection,
-                            /* [in] */IInspectable * searchRoot,
-                            /* [in] */::boolean ignoreClipping,
-                            /* [in] */::boolean ignoreCone,
-                            /* [retval, out] */IInspectable * * result
-                            ) = 0;
-                        virtual HRESULT STDMETHODCALLTYPE SetEngagedControl(
-                            /* [in] */IInspectable * engagedControl
-                            ) = 0;
-                        /* [overload] */virtual HRESULT STDMETHODCALLTYPE SetFocusedElement(
-                            /* [in] */ABI::Microsoft::UI::Xaml::IDependencyObject * element,
-                            /* [in] */ABI::Microsoft::UI::Xaml::FocusState focusState,
-                            /* [in] */::boolean animateIfBringIntoView,
-                            /* [in] */::boolean forceBringIntoView,
-                            /* [in] */::boolean isProcessingTab,
-                            /* [in] */::boolean isShiftPressed,
-                            /* [retval, out] */::boolean * result
-                            ) = 0;
-                        /* [overload] */virtual HRESULT STDMETHODCALLTYPE SetFocusedElementWithDirection(
-                            /* [in] */ABI::Microsoft::UI::Xaml::IDependencyObject * element,
-                            /* [in] */ABI::Microsoft::UI::Xaml::FocusState focusState,
-                            /* [in] */::boolean animateIfBringIntoView,
-                            /* [in] */::boolean forceBringIntoView,
-                            /* [in] */ABI::Microsoft::UI::Xaml::Input::FocusNavigationDirection focusNavigationDirection,
-                            /* [retval, out] */::boolean * result
-                            ) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_IFocusManagerStaticsPrivate=_uuidof(IFocusManagerStaticsPrivate);
-                    
-                } /* Input */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Input.IFocusMovementResult
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -5734,56 +5404,6 @@ namespace ABI {
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusMovementResult;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusMovementResult_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Input.IFocusedElementRemovedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Input.FocusedElementRemovedEventArgs
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Input_IFocusedElementRemovedEventArgs[] = L"Microsoft.UI.Xaml.Input.IFocusedElementRemovedEventArgs";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Input {
-                    /* [object, uuid("68B4A7EA-8841-52EE-8875-7DC86CFD9B68"), exclusiveto, contract] */
-                    MIDL_INTERFACE("68B4A7EA-8841-52EE-8875-7DC86CFD9B68")
-                    IFocusedElementRemovedEventArgs : public IInspectable
-                    {
-                    public:
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_OldFocusedElement(
-                            /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyObject * * value
-                            ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_NewFocusedElement(
-                            /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyObject * * value
-                            ) = 0;
-                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_NewFocusedElement(
-                            /* [in] */ABI::Microsoft::UI::Xaml::IDependencyObject * value
-                            ) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_IFocusedElementRemovedEventArgs=_uuidof(IFocusedElementRemovedEventArgs);
-                    
-                } /* Input */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -6081,50 +5701,6 @@ namespace ABI {
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInertiaTranslationBehavior;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInertiaTranslationBehavior_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Input.IInputManagerStatics
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Input.InputManager
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Input_IInputManagerStatics[] = L"Microsoft.UI.Xaml.Input.IInputManagerStatics";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Input {
-                    /* [object, uuid("77F40F44-9F61-54A0-A820-C7912D0782C0"), exclusiveto, contract] */
-                    MIDL_INTERFACE("77F40F44-9F61-54A0-A820-C7912D0782C0")
-                    IInputManagerStatics : public IInspectable
-                    {
-                    public:
-                        virtual HRESULT STDMETHODCALLTYPE GetLastInputDeviceType(
-                            /* [retval, out] */ABI::Microsoft::UI::Xaml::Input::LastInputDeviceType * result
-                            ) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_IInputManagerStatics=_uuidof(IInputManagerStatics);
-                    
-                } /* Input */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -8131,28 +7707,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
- * Class Microsoft.UI.Xaml.Input.FocusedElementRemovedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Input.IFocusedElementRemovedEventArgs ** Default Interface **
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Input_FocusedElementRemovedEventArgs_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Input_FocusedElementRemovedEventArgs_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Input_FocusedElementRemovedEventArgs[] = L"Microsoft.UI.Xaml.Input.FocusedElementRemovedEventArgs";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Class Microsoft.UI.Xaml.Input.GettingFocusEventArgs
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -8266,29 +7820,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Input_InertiaTranslationBehavior[] = L"Microsoft.UI.Xaml.Input.InertiaTranslationBehavior";
 #endif
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Input.InputManager
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Xaml.Input.IInputManagerStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Input_InputManager_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Input_InputManager_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Input_InputManager[] = L"Microsoft.UI.Xaml.Input.InputManager";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -8815,12 +8346,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIDoubleTappedEventHandler
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIDoubleTappedEventHandler_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIHoldingEventHandler_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIHoldingEventHandler_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIHoldingEventHandler __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIHoldingEventHandler;
@@ -8953,12 +8478,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptions _
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptions_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManager_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManager_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManager __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManager;
@@ -8983,23 +8502,11 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStatics __x_
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusMovementResult_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusMovementResult_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusMovementResult __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusMovementResult;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusMovementResult_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIGettingFocusEventArgs_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIGettingFocusEventArgs_FWD_DEFINED__
@@ -9030,12 +8537,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInertiaRotationBehavior 
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInertiaTranslationBehavior __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInertiaTranslationBehavior;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInertiaTranslationBehavior_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputScope_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputScope_FWD_DEFINED__
@@ -11984,7 +11485,6 @@ typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CFocusState __x_ABI_CMicrosoft_CUI_CXa
 
 
 
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRoot_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIXamlRoot_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRoot __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRoot;
@@ -12054,9 +11554,6 @@ typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CInput_CKeyboardAcceleratorPlacementMo
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CInput_CKeyboardNavigationMode __x_ABI_CMicrosoft_CUI_CXaml_CInput_CKeyboardNavigationMode;
 
 
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CInput_CLastInputDeviceType __x_ABI_CMicrosoft_CUI_CXaml_CInput_CLastInputDeviceType;
-
-
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CInput_CManipulationModes __x_ABI_CMicrosoft_CUI_CXaml_CInput_CManipulationModes;
 
 
@@ -12070,13 +11567,6 @@ typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CInput_CXYFocusNavigationStrategy __x_
 
 
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CInput_CXYFocusNavigationStrategyOverride __x_ABI_CMicrosoft_CUI_CXaml_CInput_CXYFocusNavigationStrategyOverride;
-
-
-
-
-
-
-
 
 
 
@@ -12361,29 +11851,6 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CInput_CKeyboardNavigationMode
 
 /*
  *
- * Struct Microsoft.UI.Xaml.Input.LastInputDeviceType
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-/* [v1_enum, contract] */
-enum __x_ABI_CMicrosoft_CUI_CXaml_CInput_CLastInputDeviceType
-{
-    LastInputDeviceType_None = 0,
-    LastInputDeviceType_Mouse = 1,
-    LastInputDeviceType_Touch = 2,
-    LastInputDeviceType_Pen = 3,
-    LastInputDeviceType_Keyboard = 4,
-    LastInputDeviceType_GamepadOrRemote = 5,
-};
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Struct Microsoft.UI.Xaml.Input.ManipulationModes
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -12568,68 +12035,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIDoubleTappedEventHandler
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIDoubleTappedEventHandler;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIDoubleTappedEventHandler_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Delegate Microsoft.UI.Xaml.Input.FocusedElementRemovedEventHandler
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler_INTERFACE_DEFINED__
-/* [object, uuid("BE7AD825-7E45-57C4-8E5E-96F4AFB4DB58"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandlerVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject);
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler * This);
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler * This);
-HRESULT ( STDMETHODCALLTYPE *Invoke )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler * This,
-        /* [in] */IInspectable * sender,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs * e
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandlerVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandlerVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler_Invoke(This,sender,e) \
-    ( (This)->lpVtbl->Invoke(This,sender,e) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -14540,103 +13945,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOpti
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Input.IFindNextElementOptionsPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Input_IFindNextElementOptionsPrivate[] = L"Microsoft.UI.Xaml.Input.IFindNextElementOptionsPrivate";
-/* [object, uuid("98B29E17-62D0-57FD-8937-DC47B8B580A1"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_IgnoreOcclusivity )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate * This,
-        /* [retval, out] */boolean * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_IgnoreOcclusivity )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate * This,
-        /* [in] */boolean value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_get_IgnoreOcclusivity(This,value) \
-    ( (This)->lpVtbl->get_IgnoreOcclusivity(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_put_IgnoreOcclusivity(This,value) \
-    ( (This)->lpVtbl->put_IgnoreOcclusivity(This,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFindNextElementOptionsPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Input.IFocusManager
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -15177,167 +14485,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStatics
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Input.IFocusManagerStaticsPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Input_IFocusManagerStaticsPrivate[] = L"Microsoft.UI.Xaml.Input.IFocusManagerStaticsPrivate";
-/* [object, uuid("870BB840-0A1E-54CC-8A82-06E6199824F9"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_FocusedElementRemoved )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventHandler  * handler,
-        /* [retval, out] */EventRegistrationToken * token
-        );
-    /* [eventremove] */HRESULT ( STDMETHODCALLTYPE *remove_FocusedElementRemoved )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate * This,
-        /* [in] */EventRegistrationToken token
-        );
-    HRESULT ( STDMETHODCALLTYPE *FindNextFocusWithSearchRootIgnoreEngagement )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CInput_CFocusNavigationDirection focusNavigationDirection,
-        /* [in] */IInspectable * searchRoot,
-        /* [retval, out] */IInspectable * * result
-        );
-    HRESULT ( STDMETHODCALLTYPE *FindNextFocusWithSearchRootIgnoreEngagementWithHintRect )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CInput_CFocusNavigationDirection focusNavigationDirection,
-        /* [in] */IInspectable * searchRoot,
-        /* [in] */__x_ABI_CWindows_CFoundation_CRect hintRect,
-        /* [in] */__x_ABI_CWindows_CFoundation_CRect exclusionRect,
-        /* [retval, out] */IInspectable * * result
-        );
-    HRESULT ( STDMETHODCALLTYPE *FindNextFocusWithSearchRootIgnoreEngagementWithClip )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CInput_CFocusNavigationDirection focusNavigationDirection,
-        /* [in] */IInspectable * searchRoot,
-        /* [in] */boolean ignoreClipping,
-        /* [in] */boolean ignoreCone,
-        /* [retval, out] */IInspectable * * result
-        );
-    HRESULT ( STDMETHODCALLTYPE *SetEngagedControl )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate * This,
-        /* [in] */IInspectable * engagedControl
-        );
-    /* [overload] */HRESULT ( STDMETHODCALLTYPE *SetFocusedElement )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject * element,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CFocusState focusState,
-        /* [in] */boolean animateIfBringIntoView,
-        /* [in] */boolean forceBringIntoView,
-        /* [in] */boolean isProcessingTab,
-        /* [in] */boolean isShiftPressed,
-        /* [retval, out] */boolean * result
-        );
-    /* [overload] */HRESULT ( STDMETHODCALLTYPE *SetFocusedElementWithDirection )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject * element,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CFocusState focusState,
-        /* [in] */boolean animateIfBringIntoView,
-        /* [in] */boolean forceBringIntoView,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CInput_CFocusNavigationDirection focusNavigationDirection,
-        /* [retval, out] */boolean * result
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_add_FocusedElementRemoved(This,handler,token) \
-    ( (This)->lpVtbl->add_FocusedElementRemoved(This,handler,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_remove_FocusedElementRemoved(This,token) \
-    ( (This)->lpVtbl->remove_FocusedElementRemoved(This,token) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_FindNextFocusWithSearchRootIgnoreEngagement(This,focusNavigationDirection,searchRoot,result) \
-    ( (This)->lpVtbl->FindNextFocusWithSearchRootIgnoreEngagement(This,focusNavigationDirection,searchRoot,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_FindNextFocusWithSearchRootIgnoreEngagementWithHintRect(This,focusNavigationDirection,searchRoot,hintRect,exclusionRect,result) \
-    ( (This)->lpVtbl->FindNextFocusWithSearchRootIgnoreEngagementWithHintRect(This,focusNavigationDirection,searchRoot,hintRect,exclusionRect,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_FindNextFocusWithSearchRootIgnoreEngagementWithClip(This,focusNavigationDirection,searchRoot,ignoreClipping,ignoreCone,result) \
-    ( (This)->lpVtbl->FindNextFocusWithSearchRootIgnoreEngagementWithClip(This,focusNavigationDirection,searchRoot,ignoreClipping,ignoreCone,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_SetEngagedControl(This,engagedControl) \
-    ( (This)->lpVtbl->SetEngagedControl(This,engagedControl) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_SetFocusedElement(This,element,focusState,animateIfBringIntoView,forceBringIntoView,isProcessingTab,isShiftPressed,result) \
-    ( (This)->lpVtbl->SetFocusedElement(This,element,focusState,animateIfBringIntoView,forceBringIntoView,isProcessingTab,isShiftPressed,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_SetFocusedElementWithDirection(This,element,focusState,animateIfBringIntoView,forceBringIntoView,focusNavigationDirection,result) \
-    ( (This)->lpVtbl->SetFocusedElementWithDirection(This,element,focusState,animateIfBringIntoView,forceBringIntoView,focusNavigationDirection,result) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusManagerStaticsPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Input.IFocusMovementResult
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -15427,113 +14574,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusMovementResult
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusMovementResult;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusMovementResult_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Input.IFocusedElementRemovedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Input.FocusedElementRemovedEventArgs
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Input_IFocusedElementRemovedEventArgs[] = L"Microsoft.UI.Xaml.Input.IFocusedElementRemovedEventArgs";
-/* [object, uuid("68B4A7EA-8841-52EE-8875-7DC86CFD9B68"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_OldFocusedElement )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_NewFocusedElement )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject * * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_NewFocusedElement )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgsVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_get_OldFocusedElement(This,value) \
-    ( (This)->lpVtbl->get_OldFocusedElement(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_get_NewFocusedElement(This,value) \
-    ( (This)->lpVtbl->get_NewFocusedElement(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_put_NewFocusedElement(This,value) \
-    ( (This)->lpVtbl->put_NewFocusedElement(This,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIFocusedElementRemovedEventArgs_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -16176,99 +15216,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInertiaTranslationBehavior
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInertiaTranslationBehavior;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInertiaTranslationBehavior_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Input.IInputManagerStatics
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Input.InputManager
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Input_IInputManagerStatics[] = L"Microsoft.UI.Xaml.Input.IInputManagerStatics";
-/* [object, uuid("77F40F44-9F61-54A0-A820-C7912D0782C0"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStaticsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *GetLastInputDeviceType )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CInput_CLastInputDeviceType * result
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStaticsVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStaticsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_GetLastInputDeviceType(This,result) \
-    ( (This)->lpVtbl->GetLastInputDeviceType(This,result) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CInput_CIInputManagerStatics_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -20179,28 +19126,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
- * Class Microsoft.UI.Xaml.Input.FocusedElementRemovedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Input.IFocusedElementRemovedEventArgs ** Default Interface **
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Input_FocusedElementRemovedEventArgs_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Input_FocusedElementRemovedEventArgs_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Input_FocusedElementRemovedEventArgs[] = L"Microsoft.UI.Xaml.Input.FocusedElementRemovedEventArgs";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Class Microsoft.UI.Xaml.Input.GettingFocusEventArgs
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -20314,29 +19239,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Input_InertiaTranslationBehavior[] = L"Microsoft.UI.Xaml.Input.InertiaTranslationBehavior";
 #endif
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Input.InputManager
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Xaml.Input.IInputManagerStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Input_InputManager_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Input_InputManager_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Input_InputManager[] = L"Microsoft.UI.Xaml.Input.InputManager";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*

@@ -70,7 +70,7 @@ namespace Microsoft
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 enum NotifyCollectionChangedAction
                 {
-                    Add_d = 0
+                    Add_d     = 0
                 };
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -129,7 +129,7 @@ namespace Microsoft
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [uuid(346DD6E7-976E-4BC3-815D-ECE243BC0F34)]
+                [uuid(346DD6E7-976E-4BC3-815D-ECE243BC0F32)]
                 interface IBindableVectorView : IInspectable
                     requires
                         Microsoft.UI.Xaml.Interop.IBindableIterable

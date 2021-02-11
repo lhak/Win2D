@@ -9,10 +9,8 @@ import "windowscontracts.idl";
 import "Windows.Foundation.idl";
 import "Microsoft.UI.Composition.idl";
 import "Microsoft.UI.Xaml.idl";
-import "Microsoft.UI.Xaml.Controls.idl";
 import "Microsoft.UI.Xaml.Controls.Primitives.idl";
 import "Microsoft.UI.Xaml.Media.Media3D.idl";
-import "Windows.Media.Playback.idl";
 import "Windows.Storage.Streams.idl";
 import "Windows.UI.idl";
 
@@ -46,21 +44,6 @@ namespace Microsoft
         namespace Xaml
         {
             typedef enum ApplicationTheme ApplicationTheme;
-        }
-    }
-}
-namespace Microsoft
-{
-    namespace UI
-    {
-        namespace Xaml
-        {
-            namespace Controls
-            {
-                runtimeclass MediaElement;
-
-                runtimeclass MediaTransportControls;
-            }
         }
     }
 }
@@ -116,8 +99,6 @@ namespace Microsoft
     {
         namespace Xaml
         {
-            apicontract PrivateApiContract;
-
             delegate RoutedEventHandler;
 
             runtimeclass UIElement;
@@ -136,8 +117,6 @@ namespace Windows
 {
     namespace Foundation
     {
-        runtimeclass Deferral;
-
         interface IClosable;
 
         typedef struct Point Point;
@@ -153,22 +132,10 @@ namespace Windows
 }
 namespace Windows
 {
-    namespace Media
-    {
-        namespace Playback
-        {
-            typedef enum FailedMediaStreamKind FailedMediaStreamKind;
-        }
-    }
-}
-namespace Windows
-{
     namespace Storage
     {
         namespace Streams
         {
-            interface IInputStream;
-
             interface IRandomAccessStream;
         }
     }
@@ -194,17 +161,11 @@ namespace Microsoft
 
                 typedef enum AlignmentY AlignmentY;
 
-                typedef enum AudioCategory AudioCategory;
-
-                typedef enum AudioDeviceType AudioDeviceType;
-
                 typedef enum BrushMappingMode BrushMappingMode;
 
                 typedef enum ColorInterpolationMode ColorInterpolationMode;
 
                 typedef enum ElementCompositeMode ElementCompositeMode;
-
-                typedef enum FastPlayFallbackBehaviour FastPlayFallbackBehaviour;
 
                 typedef enum FillRule FillRule;
 
@@ -212,19 +173,11 @@ namespace Microsoft
 
                 typedef enum LoadedImageSourceLoadStatus LoadedImageSourceLoadStatus;
 
-                typedef enum MediaCanPlayResponse MediaCanPlayResponse;
-
-                typedef enum MediaElementState MediaElementState;
-
                 typedef enum PenLineCap PenLineCap;
 
                 typedef enum PenLineJoin PenLineJoin;
 
                 typedef enum RevealBrushState RevealBrushState;
-
-                typedef enum Stereo3DVideoPackingMode Stereo3DVideoPackingMode;
-
-                typedef enum Stereo3DVideoRenderMode Stereo3DVideoRenderMode;
 
                 typedef enum Stretch Stretch;
 
@@ -233,10 +186,6 @@ namespace Microsoft
                 typedef enum SweepDirection SweepDirection;
 
                 typedef struct Matrix Matrix;
-
-                delegate RateChangedRoutedEventHandler;
-
-                delegate TimelineMarkerRoutedEventHandler;
 
                 interface IAcrylicBrush;
 
@@ -350,10 +299,6 @@ namespace Microsoft
 
                 interface IMatrixTransformStatics;
 
-                interface IMediaTransportControlsThumbnailRequestedEventArgs;
-
-                interface IPartialMediaFailureDetectedEventArgs;
-
                 interface IPathFigure;
 
                 interface IPathFigureStatics;
@@ -395,8 +340,6 @@ namespace Microsoft
                 interface IRadialGradientBrushFactory;
 
                 interface IRadialGradientBrushStatics;
-
-                interface IRateChangedRoutedEventArgs;
 
                 interface IRectangleGeometry;
 
@@ -452,14 +395,6 @@ namespace Microsoft
 
                 interface ITileBrushStatics;
 
-                interface ITimelineMarker;
-
-                interface ITimelineMarkerCollection;
-
-                interface ITimelineMarkerRoutedEventArgs;
-
-                interface ITimelineMarkerStatics;
-
                 interface ITransform;
 
                 interface ITransformFactory;
@@ -481,10 +416,6 @@ namespace Microsoft
                 interface IXamlCompositionBrushBaseFactory;
 
                 interface IXamlCompositionBrushBaseOverrides;
-
-                interface IXamlCompositionBrushBaseOverridesPrivate;
-
-                interface IXamlCompositionBrushBasePrivates;
 
                 interface IXamlCompositionBrushBaseProtected;
 
@@ -558,10 +489,6 @@ namespace Microsoft
 
                 runtimeclass MatrixTransform;
 
-                runtimeclass MediaTransportControlsThumbnailRequestedEventArgs;
-
-                runtimeclass PartialMediaFailureDetectedEventArgs;
-
                 runtimeclass PathFigure;
 
                 runtimeclass PathFigureCollection;
@@ -588,8 +515,6 @@ namespace Microsoft
 
                 runtimeclass RadialGradientBrush;
 
-                runtimeclass RateChangedRoutedEventArgs;
-
                 runtimeclass RectangleGeometry;
 
                 runtimeclass RenderedEventArgs;
@@ -615,12 +540,6 @@ namespace Microsoft
                 runtimeclass ThemeShadow;
 
                 runtimeclass TileBrush;
-
-                runtimeclass TimelineMarker;
-
-                runtimeclass TimelineMarkerCollection;
-
-                runtimeclass TimelineMarkerRoutedEventArgs;
 
                 runtimeclass Transform;
 
@@ -661,8 +580,6 @@ namespace Microsoft
 
                     interface Windows.Foundation.Collections.IIterable<Microsoft.UI.Xaml.Media.PathSegment*>;
 
-                    interface Windows.Foundation.Collections.IIterable<Microsoft.UI.Xaml.Media.TimelineMarker*>;
-
                     interface Windows.Foundation.Collections.IIterable<Microsoft.UI.Xaml.Media.Transform*>;
 
                     interface Windows.Foundation.Collections.IIterable<Microsoft.UI.Xaml.Media.XamlLight*>;
@@ -676,8 +593,6 @@ namespace Microsoft
                     interface Windows.Foundation.Collections.IIterator<Microsoft.UI.Xaml.Media.PathFigure*>;
 
                     interface Windows.Foundation.Collections.IIterator<Microsoft.UI.Xaml.Media.PathSegment*>;
-
-                    interface Windows.Foundation.Collections.IIterator<Microsoft.UI.Xaml.Media.TimelineMarker*>;
 
                     interface Windows.Foundation.Collections.IIterator<Microsoft.UI.Xaml.Media.Transform*>;
 
@@ -695,8 +610,6 @@ namespace Microsoft
 
                     interface Windows.Foundation.Collections.IVectorView<Microsoft.UI.Xaml.Media.PathSegment*>;
 
-                    interface Windows.Foundation.Collections.IVectorView<Microsoft.UI.Xaml.Media.TimelineMarker*>;
-
                     interface Windows.Foundation.Collections.IVectorView<Microsoft.UI.Xaml.Media.Transform*>;
 
                     interface Windows.Foundation.Collections.IVectorView<Microsoft.UI.Xaml.Media.XamlLight*>;
@@ -711,17 +624,11 @@ namespace Microsoft
 
                     interface Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Media.PathSegment*>;
 
-                    interface Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Media.TimelineMarker*>;
-
                     interface Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Media.Transform*>;
 
                     interface Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Media.XamlLight*>;
 
                     interface Windows.Foundation.EventHandler<Microsoft.UI.Xaml.Media.RenderedEventArgs*>;
-
-                    interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.MediaElement*, Microsoft.UI.Xaml.Media.PartialMediaFailureDetectedEventArgs*>;
-
-                    interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.MediaTransportControls*, Microsoft.UI.Xaml.Media.MediaTransportControlsThumbnailRequestedEventArgs*>;
 
                     interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Media.LoadedImageSurface*, Microsoft.UI.Xaml.Media.LoadedImageSourceLoadCompletedEventArgs*>;
                 }
@@ -762,31 +669,6 @@ namespace Microsoft
                     Bottom = 2
                 };
 
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                enum AudioCategory
-                {
-                    Other                  = 0,
-                    ForegroundOnlyMedia    = 1,
-                    BackgroundCapableMedia = 2,
-                    Communications         = 3,
-                    Alerts                 = 4,
-                    SoundEffects           = 5,
-                    GameEffects            = 6,
-                    GameMedia              = 7,
-                    GameChat               = 8,
-                    Speech                 = 9,
-                    Movie                  = 10,
-                    Media                  = 11
-                };
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                enum AudioDeviceType
-                {
-                    Console        = 0,
-                    Multimedia     = 1,
-                    Communications = 2
-                };
-
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 enum BrushMappingMode
                 {
@@ -807,14 +689,6 @@ namespace Microsoft
                     Inherit    = 0,
                     SourceOver = 1,
                     MinBlend   = 2
-                };
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                enum FastPlayFallbackBehaviour
-                {
-                    Skip    = 0,
-                    Hide    = 1,
-                    Disable = 2
                 };
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -841,25 +715,6 @@ namespace Microsoft
                     Other         = 3
                 };
 
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                enum MediaCanPlayResponse
-                {
-                    NotSupported = 0,
-                    Maybe        = 1,
-                    Probably     = 2
-                };
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                enum MediaElementState
-                {
-                    Closed    = 0,
-                    Opening   = 1,
-                    Buffering = 2,
-                    Playing   = 3,
-                    Paused    = 4,
-                    Stopped   = 5
-                };
-
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 enum PenLineCap
                 {
@@ -883,21 +738,6 @@ namespace Microsoft
                     Normal      = 0,
                     PointerOver = 1,
                     Pressed     = 2
-                };
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                enum Stereo3DVideoPackingMode
-                {
-                    None       = 0,
-                    SideBySide = 1,
-                    TopBottom  = 2
-                };
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                enum Stereo3DVideoRenderMode
-                {
-                    Mono   = 0,
-                    Stereo = 1
                 };
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -935,16 +775,6 @@ namespace Microsoft
                     DOUBLE OffsetX;
                     DOUBLE OffsetY;
                 };
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [uuid(3AE21290-7C9D-5C94-AB84-8132A04DF2A5)]
-                delegate
-                    HRESULT RateChangedRoutedEventHandler([in] IInspectable* sender, [in] Microsoft.UI.Xaml.Media.RateChangedRoutedEventArgs* e);
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [uuid(EADA0FFB-E81A-527D-B0DE-D263395D0D5A)]
-                delegate
-                    HRESULT TimelineMarkerRoutedEventHandler([in] IInspectable* sender, [in] Microsoft.UI.Xaml.Media.TimelineMarkerRoutedEventArgs* e);
 
                 [exclusiveto(Microsoft.UI.Xaml.Media.AcrylicBrush)]
                 [uuid(71EC4F17-4ECC-5FC1-8AB0-7CA397EB112B)]
@@ -1521,24 +1351,6 @@ namespace Microsoft
                     [propget] HRESULT MatrixProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                 }
 
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Media.MediaTransportControlsThumbnailRequestedEventArgs)]
-                [uuid(FE0FFB86-74B0-5031-ACCC-B34D0382A637)]
-                interface IMediaTransportControlsThumbnailRequestedEventArgs : IInspectable
-                {
-                    HRESULT SetThumbnailImage([in] Windows.Storage.Streams.IInputStream* source);
-                    HRESULT GetDeferral([out] [retval] Windows.Foundation.Deferral** result);
-                }
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Media.PartialMediaFailureDetectedEventArgs)]
-                [uuid(40292B1E-C3B7-5BBD-8E75-8926FADA3CE6)]
-                interface IPartialMediaFailureDetectedEventArgs : IInspectable
-                {
-                    [propget] HRESULT StreamKind([out] [retval] Windows.Media.Playback.FailedMediaStreamKind* value);
-                    [propget] HRESULT ExtendedError([out] [retval] HRESULT* value);
-                }
-
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Media.PathFigure)]
                 [uuid(0EE00712-BF65-5F27-9C06-14ABDF6656D7)]
@@ -1779,13 +1591,6 @@ namespace Microsoft
                     [propget] HRESULT InterpolationSpaceProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT MappingModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT SpreadMethodProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                }
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Media.RateChangedRoutedEventArgs)]
-                [uuid(07873493-7BE3-5CA8-824F-EDCF3EA46BB7)]
-                interface IRateChangedRoutedEventArgs : IInspectable
-                {
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -2046,45 +1851,6 @@ namespace Microsoft
                     [propget] HRESULT StretchProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                 }
 
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Media.TimelineMarker)]
-                [uuid(0D8307EE-0BBB-5EE3-80A9-B953D83F1FA1)]
-                interface ITimelineMarker : IInspectable
-                {
-                    [propget] HRESULT Time([out] [retval] Windows.Foundation.TimeSpan* value);
-                    [propput] HRESULT Time([in] Windows.Foundation.TimeSpan value);
-                    [propget] HRESULT Type([out] [retval] HSTRING* value);
-                    [propput] HRESULT Type([in] HSTRING value);
-                    [propget] HRESULT Text([out] [retval] HSTRING* value);
-                    [propput] HRESULT Text([in] HSTRING value);
-                }
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Media.TimelineMarkerCollection)]
-                [uuid(18E3ED41-9E59-5EF1-9252-BEDEA8CC6FC5)]
-                interface ITimelineMarkerCollection : IInspectable
-                {
-                }
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Media.TimelineMarkerRoutedEventArgs)]
-                [uuid(44094816-6F81-5BA1-9548-233F72F93056)]
-                interface ITimelineMarkerRoutedEventArgs : IInspectable
-                {
-                    [propget] HRESULT Marker([out] [retval] Microsoft.UI.Xaml.Media.TimelineMarker** value);
-                    [propput] HRESULT Marker([in] Microsoft.UI.Xaml.Media.TimelineMarker* value);
-                }
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Media.TimelineMarker)]
-                [uuid(185FA9E3-90F1-5A6D-979F-4C71EA283BF6)]
-                interface ITimelineMarkerStatics : IInspectable
-                {
-                    [propget] HRESULT TimeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT TypeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT TextProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                }
-
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Media.Transform)]
                 [uuid(92A8DEE5-1413-56B9-8CCA-3C46918FDE1B)]
@@ -2185,23 +1951,6 @@ namespace Microsoft
                 {
                     HRESULT OnConnected();
                     HRESULT OnDisconnected();
-                }
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [uuid(8379ABB1-27CB-5C26-B766-A56CC31939C2)]
-                interface IXamlCompositionBrushBaseOverridesPrivate : IInspectable
-                {
-                    HRESULT OnElementConnected([in] Microsoft.UI.Xaml.DependencyObject* element);
-                }
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [uuid(5B4B1E3E-B69A-5476-89E8-1D559A446D1A)]
-                interface IXamlCompositionBrushBasePrivates : IInspectable
-                {
-                    HRESULT SetBrushForXamlRoot([in] IInspectable* xamlRoot, [in] Microsoft.UI.Composition.CompositionBrush* brush);
-                    HRESULT GetBrushForXamlRoot([in] IInspectable* xamlRoot, [out] [retval] Microsoft.UI.Composition.CompositionBrush** result);
-                    HRESULT ClearBrushForXamlRoot([in] IInspectable* xamlRoot, [in] Microsoft.UI.Composition.CompositionBrush* brush);
-                    HRESULT ClearCompositionBrushMap();
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -2552,22 +2301,6 @@ namespace Microsoft
                     [default] interface Microsoft.UI.Xaml.Media.IMatrixTransform;
                 }
 
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [marshaling_behavior(agile)]
-                runtimeclass MediaTransportControlsThumbnailRequestedEventArgs
-                {
-                    [default] interface Microsoft.UI.Xaml.Media.IMediaTransportControlsThumbnailRequestedEventArgs;
-                }
-
-                [activatable(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [marshaling_behavior(agile)]
-                [threading(both)]
-                runtimeclass PartialMediaFailureDetectedEventArgs
-                {
-                    [default] interface Microsoft.UI.Xaml.Media.IPartialMediaFailureDetectedEventArgs;
-                }
-
                 [activatable(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [marshaling_behavior(agile)]
@@ -2696,15 +2429,6 @@ namespace Microsoft
                     [default] interface Microsoft.UI.Xaml.Media.IRadialGradientBrush;
                 }
 
-                [activatable(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [marshaling_behavior(agile)]
-                [threading(both)]
-                runtimeclass RateChangedRoutedEventArgs : Microsoft.UI.Xaml.RoutedEventArgs
-                {
-                    [default] interface Microsoft.UI.Xaml.Media.IRateChangedRoutedEventArgs;
-                }
-
                 [activatable(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [marshaling_behavior(agile)]
@@ -2824,36 +2548,6 @@ namespace Microsoft
                 runtimeclass TileBrush : Microsoft.UI.Xaml.Media.Brush
                 {
                     [default] interface Microsoft.UI.Xaml.Media.ITileBrush;
-                }
-
-                [activatable(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [marshaling_behavior(agile)]
-                [static(Microsoft.UI.Xaml.Media.ITimelineMarkerStatics, Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [threading(both)]
-                runtimeclass TimelineMarker : Microsoft.UI.Xaml.DependencyObject
-                {
-                    [default] interface Microsoft.UI.Xaml.Media.ITimelineMarker;
-                }
-
-                [activatable(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [marshaling_behavior(agile)]
-                [threading(both)]
-                runtimeclass TimelineMarkerCollection
-                {
-                    [default] interface Microsoft.UI.Xaml.Media.ITimelineMarkerCollection;
-                    [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)] interface Windows.Foundation.Collections.IVector<Microsoft.UI.Xaml.Media.TimelineMarker*>;
-                    [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)] interface Windows.Foundation.Collections.IIterable<Microsoft.UI.Xaml.Media.TimelineMarker*>;
-                }
-
-                [activatable(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [marshaling_behavior(agile)]
-                [threading(both)]
-                runtimeclass TimelineMarkerRoutedEventArgs : Microsoft.UI.Xaml.RoutedEventArgs
-                {
-                    [default] interface Microsoft.UI.Xaml.Media.ITimelineMarkerRoutedEventArgs;
                 }
 
                 [composable(Microsoft.UI.Xaml.Media.ITransformFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]

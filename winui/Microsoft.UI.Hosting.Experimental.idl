@@ -12,6 +12,7 @@ import "Microsoft.UI.idl";
 import "Microsoft.UI.Composition.idl";
 import "Microsoft.UI.Composition.Experimental.idl";
 import "Microsoft.UI.Input.Experimental.idl";
+import "Windows.UI.idl";
 import "Windows.UI.Core.idl";
 
 // Forward Declare
@@ -99,6 +100,13 @@ namespace Windows
 {
     namespace UI
     {
+        typedef struct Color Color;
+    }
+}
+namespace Windows
+{
+    namespace UI
+    {
         namespace Core
         {
             runtimeclass CoreWindow;
@@ -123,6 +131,10 @@ namespace Microsoft
 
                 interface IExpDesktopWindowBridgeStatics;
 
+                interface IExpPopupWindowBridge;
+
+                interface IExpPopupWindowBridgeStatics;
+
                 interface IExpSystemVisualBridge;
 
                 interface IExpSystemVisualBridgeStatics;
@@ -130,6 +142,8 @@ namespace Microsoft
                 runtimeclass ExpCoreWindowBridge;
 
                 runtimeclass ExpDesktopWindowBridge;
+
+                runtimeclass ExpPopupWindowBridge;
 
                 runtimeclass ExpSystemVisualBridge;
             }
@@ -165,19 +179,21 @@ namespace Microsoft
             namespace Experimental
             {
                 [contract(Microsoft.Foundation.LiftedExperimentalContract, 1.0)]
-                [uuid(5B85BA18-F850-5621-919E-E545723AB94E)]
+                [uuid(72B6526E-0A46-56CC-B29C-5225BD2AF251)]
                 interface IExpContentBridge : IInspectable
                     requires
                         Windows.Foundation.IClosable
                 {
+                    [propget] HRESULT Content([out] [retval] Microsoft.UI.Composition.Experimental.ExpCompositionContent** value);
                     HRESULT Connect([in] Microsoft.UI.Composition.Experimental.ExpCompositionContent* content, [in] Microsoft.UI.Input.Experimental.ExpInputSite* inputSite);
                 }
 
                 [contract(Microsoft.Foundation.LiftedExperimentalContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Hosting.Experimental.ExpCoreWindowBridge)]
-                [uuid(87B0E524-DF7F-55E6-B8DF-F8032FC115CE)]
+                [uuid(CE931E38-5B79-5224-8EFE-965FB4CCA211)]
                 interface IExpCoreWindowBridge : IInspectable
                 {
+                    HRESULT CreatePopup([out] [retval] Microsoft.UI.Hosting.Experimental.ExpPopupWindowBridge** result);
                 }
 
                 [contract(Microsoft.Foundation.LiftedExperimentalContract, 1.0)]
@@ -191,16 +207,17 @@ namespace Microsoft
 
                 [contract(Microsoft.Foundation.LiftedExperimentalContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Hosting.Experimental.ExpDesktopWindowBridge)]
-                [uuid(CD7C2FED-95AE-532D-90CA-92C4DC3A09B9)]
+                [uuid(CE1208DA-2BF6-542B-A605-3F83FEAAAE6F)]
                 interface IExpDesktopWindowBridge : IInspectable
                 {
-                    [propget] HRESULT AppliedScaleFactor([out] [retval] FLOAT* value);
                     [propget] HRESULT ChildWindowId([out] [retval] Microsoft.UI.WindowId* value);
+                    [propget] HRESULT FillTopLevelWindow([out] [retval] boolean* value);
+                    [propput] HRESULT FillTopLevelWindow([in] boolean value);
                     [propget] HRESULT TopLevelDisplayId([out] [retval] Microsoft.UI.DisplayId* value);
                     HRESULT SetOverrideScaleFactor([in] FLOAT value);
-                    HRESULT NotifyHostActivationChange([in] boolean active);
                     HRESULT NavigateFocus([in] Microsoft.UI.Input.Experimental.ExpFocusNavigationRequest* request, [out] [retval] Microsoft.UI.Input.Experimental.ExpFocusNavigationResult** result);
                     HRESULT PreTranslateKeyboardMessage([in] UINT64 windowHandle, [in] UINT32 keyboardMessage, [in] UINT32 virtualKey, [in] UINT64 keyInfo, [out] [retval] boolean* result);
+                    HRESULT CreatePopup([out] [retval] Microsoft.UI.Hosting.Experimental.ExpPopupWindowBridge** result);
                     [eventadd] HRESULT TakeFocusRequested([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Hosting.Experimental.ExpDesktopWindowBridge*, Microsoft.UI.Input.Experimental.ExpNavigateFocusRequestedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
                     [eventremove] HRESULT TakeFocusRequested([in] EventRegistrationToken token);
                     [eventadd] HRESULT TopLevelStateChanged([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Hosting.Experimental.ExpDesktopWindowBridge*, IInspectable*>* handler, [out] [retval] EventRegistrationToken* token);
@@ -217,11 +234,29 @@ namespace Microsoft
                 }
 
                 [contract(Microsoft.Foundation.LiftedExperimentalContract, 1.0)]
+                [exclusiveto(Microsoft.UI.Hosting.Experimental.ExpPopupWindowBridge)]
+                [uuid(2EA5D840-9EA6-5BE2-A2BE-7D01EE689091)]
+                interface IExpPopupWindowBridge : IInspectable
+                {
+                    [propget] HRESULT PopupWindowId([out] [retval] Microsoft.UI.WindowId* value);
+                }
+
+                [contract(Microsoft.Foundation.LiftedExperimentalContract, 1.0)]
+                [exclusiveto(Microsoft.UI.Hosting.Experimental.ExpPopupWindowBridge)]
+                [uuid(9DFC7ECC-C7C1-5952-8AAD-77B822F7D4C7)]
+                interface IExpPopupWindowBridgeStatics : IInspectable
+                {
+                    HRESULT IsSupported([out] [retval] boolean* result);
+                }
+
+                [contract(Microsoft.Foundation.LiftedExperimentalContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Hosting.Experimental.ExpSystemVisualBridge)]
-                [uuid(C1AD453A-881B-500A-8315-A3563BBEF753)]
+                [uuid(AF3AABAA-F231-5682-BF72-3BE27E60F6D1)]
                 interface IExpSystemVisualBridge : IInspectable
                 {
                     [propget] HRESULT BridgeVisual([out] [retval] Microsoft.UI.Composition.Visual** value);
+                    [propget] HRESULT BackgroundColor([out] [retval] Windows.UI.Color* value);
+                    [propput] HRESULT BackgroundColor([in] Windows.UI.Color value);
                 }
 
                 [contract(Microsoft.Foundation.LiftedExperimentalContract, 1.0)]
@@ -251,6 +286,17 @@ namespace Microsoft
                 runtimeclass ExpDesktopWindowBridge
                 {
                     [default] interface Microsoft.UI.Hosting.Experimental.IExpDesktopWindowBridge;
+                    interface Microsoft.UI.Hosting.Experimental.IExpContentBridge;
+                    interface Windows.Foundation.IClosable;
+                }
+
+                [contract(Microsoft.Foundation.LiftedExperimentalContract, 1.0)]
+                [marshaling_behavior(agile)]
+                [static(Microsoft.UI.Hosting.Experimental.IExpPopupWindowBridgeStatics, Microsoft.Foundation.LiftedExperimentalContract, 1.0)]
+                [threading(both)]
+                runtimeclass ExpPopupWindowBridge
+                {
+                    [default] interface Microsoft.UI.Hosting.Experimental.IExpPopupWindowBridge;
                     interface Microsoft.UI.Hosting.Experimental.IExpContentBridge;
                     interface Windows.Foundation.IClosable;
                 }

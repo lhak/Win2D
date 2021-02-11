@@ -57,14 +57,6 @@
 #define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
@@ -240,10 +232,8 @@
 #include "Windows.Foundation.h"
 #include "Microsoft.UI.Composition.h"
 #include "Microsoft.UI.Xaml.h"
-#include "Microsoft.UI.Xaml.Controls.h"
 #include "Microsoft.UI.Xaml.Controls.Primitives.h"
 #include "Microsoft.UI.Xaml.Media.Media3D.h"
-#include "Windows.Media.Playback.h"
 #include "Windows.Storage.Streams.h"
 #include "Windows.UI.h"
 // Importing Collections header
@@ -251,40 +241,6 @@
 
 #if defined(__cplusplus) && !defined(CINTERFACE)
 /* Forward Declarations */
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    interface IRateChangedRoutedEventHandler;
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler ABI::Microsoft::UI::Xaml::Media::IRateChangedRoutedEventHandler
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    interface ITimelineMarkerRoutedEventHandler;
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler ABI::Microsoft::UI::Xaml::Media::ITimelineMarkerRoutedEventHandler
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIAcrylicBrush_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIAcrylicBrush_FWD_DEFINED__
 namespace ABI {
@@ -1237,40 +1193,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixTransformStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    interface IMediaTransportControlsThumbnailRequestedEventArgs;
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs ABI::Microsoft::UI::Xaml::Media::IMediaTransportControlsThumbnailRequestedEventArgs
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    interface IPartialMediaFailureDetectedEventArgs;
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs ABI::Microsoft::UI::Xaml::Media::IPartialMediaFailureDetectedEventArgs
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPathFigure_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPathFigure_FWD_DEFINED__
 namespace ABI {
@@ -1627,23 +1549,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics ABI::Microsoft::UI::Xaml::Media::IRadialGradientBrushStatics
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    interface IRateChangedRoutedEventArgs;
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs ABI::Microsoft::UI::Xaml::Media::IRateChangedRoutedEventArgs
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRectangleGeometry_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRectangleGeometry_FWD_DEFINED__
@@ -2104,74 +2009,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrushStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    interface ITimelineMarker;
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker ABI::Microsoft::UI::Xaml::Media::ITimelineMarker
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    interface ITimelineMarkerCollection;
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection ABI::Microsoft::UI::Xaml::Media::ITimelineMarkerCollection
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    interface ITimelineMarkerRoutedEventArgs;
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs ABI::Microsoft::UI::Xaml::Media::ITimelineMarkerRoutedEventArgs
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    interface ITimelineMarkerStatics;
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics ABI::Microsoft::UI::Xaml::Media::ITimelineMarkerStatics
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransform_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransform_FWD_DEFINED__
 namespace ABI {
@@ -2358,40 +2195,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverrides ABI::Microsoft::UI::Xaml::Media::IXamlCompositionBrushBaseOverrides
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverrides_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    interface IXamlCompositionBrushBaseOverridesPrivate;
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate ABI::Microsoft::UI::Xaml::Media::IXamlCompositionBrushBaseOverridesPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    interface IXamlCompositionBrushBasePrivates;
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates ABI::Microsoft::UI::Xaml::Media::IXamlCompositionBrushBasePrivates
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseProtected_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseProtected_FWD_DEFINED__
@@ -2900,82 +2703,6 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Media {
-                    class TimelineMarker;
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef DEF___FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_USE
-#define DEF___FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
-template <>
-struct __declspec(uuid("d45caf01-8539-5443-9d5d-e7f390f0d5a3"))
-IIterator<ABI::Microsoft::UI::Xaml::Media::TimelineMarker*> : IIterator_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Media::TimelineMarker*, ABI::Microsoft::UI::Xaml::Media::ITimelineMarker*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.Collections.IIterator`1<Microsoft.UI.Xaml.Media.TimelineMarker>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef IIterator<ABI::Microsoft::UI::Xaml::Media::TimelineMarker*> __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_t;
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker ABI::Windows::Foundation::Collections::__FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_t
-/* Collections */ } /* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker ABI::Windows::Foundation::Collections::IIterator<ABI::Microsoft::UI::Xaml::Media::ITimelineMarker*>
-//#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_t ABI::Windows::Foundation::Collections::IIterator<ABI::Microsoft::UI::Xaml::Media::ITimelineMarker*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_USE */
-
-
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef DEF___FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_USE
-#define DEF___FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
-template <>
-struct __declspec(uuid("e0b6e605-c209-5214-8670-cc851ed6f107"))
-IIterable<ABI::Microsoft::UI::Xaml::Media::TimelineMarker*> : IIterable_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Media::TimelineMarker*, ABI::Microsoft::UI::Xaml::Media::ITimelineMarker*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.Collections.IIterable`1<Microsoft.UI.Xaml.Media.TimelineMarker>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef IIterable<ABI::Microsoft::UI::Xaml::Media::TimelineMarker*> __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_t;
-#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker ABI::Windows::Foundation::Collections::__FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_t
-/* Collections */ } /* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker ABI::Windows::Foundation::Collections::IIterable<ABI::Microsoft::UI::Xaml::Media::ITimelineMarker*>
-//#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_t ABI::Windows::Foundation::Collections::IIterable<ABI::Microsoft::UI::Xaml::Media::ITimelineMarker*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_USE */
-
-
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
                     class Transform;
                 } /* Media */
             } /* Xaml */
@@ -3380,38 +3107,6 @@ typedef IVectorView<ABI::Microsoft::UI::Xaml::Media::PathSegment*> __FIVectorVie
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef DEF___FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_USE
-#define DEF___FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
-template <>
-struct __declspec(uuid("2c48f119-93f4-5302-a919-c73d20d109cf"))
-IVectorView<ABI::Microsoft::UI::Xaml::Media::TimelineMarker*> : IVectorView_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Media::TimelineMarker*, ABI::Microsoft::UI::Xaml::Media::ITimelineMarker*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.Collections.IVectorView`1<Microsoft.UI.Xaml.Media.TimelineMarker>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef IVectorView<ABI::Microsoft::UI::Xaml::Media::TimelineMarker*> __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_t;
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker ABI::Windows::Foundation::Collections::__FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_t
-/* Collections */ } /* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker ABI::Windows::Foundation::Collections::IVectorView<ABI::Microsoft::UI::Xaml::Media::ITimelineMarker*>
-//#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_t ABI::Windows::Foundation::Collections::IVectorView<ABI::Microsoft::UI::Xaml::Media::ITimelineMarker*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_USE */
-
-
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
 #if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 #ifndef DEF___FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTransform_USE
@@ -3604,38 +3299,6 @@ typedef IVector<ABI::Microsoft::UI::Xaml::Media::PathSegment*> __FIVector_1_Micr
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef DEF___FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_USE
-#define DEF___FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
-template <>
-struct __declspec(uuid("c64bc83c-82c5-5bf9-942b-d4872128ab63"))
-IVector<ABI::Microsoft::UI::Xaml::Media::TimelineMarker*> : IVector_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Media::TimelineMarker*, ABI::Microsoft::UI::Xaml::Media::ITimelineMarker*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.Collections.IVector`1<Microsoft.UI.Xaml.Media.TimelineMarker>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef IVector<ABI::Microsoft::UI::Xaml::Media::TimelineMarker*> __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_t;
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker ABI::Windows::Foundation::Collections::__FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_t
-/* Collections */ } /* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker ABI::Windows::Foundation::Collections::IVector<ABI::Microsoft::UI::Xaml::Media::ITimelineMarker*>
-//#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_t ABI::Windows::Foundation::Collections::IVector<ABI::Microsoft::UI::Xaml::Media::ITimelineMarker*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_USE */
-
-
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
 #if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 #ifndef DEF___FIVector_1_Microsoft__CUI__CXaml__CMedia__CTransform_USE
@@ -3742,158 +3405,6 @@ typedef IEventHandler<ABI::Microsoft::UI::Xaml::Media::RenderedEventArgs*> __FIE
 
 
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    class MediaElement;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    interface IMediaElement;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement ABI::Microsoft::UI::Xaml::Controls::IMediaElement
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement_FWD_DEFINED__
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    class PartialMediaFailureDetectedEventArgs;
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs_USE
-#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation {
-template <>
-struct __declspec(uuid("b1c3564b-2fd3-5ad4-9f3a-47653f6aea2f"))
-ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::MediaElement*,ABI::Microsoft::UI::Xaml::Media::PartialMediaFailureDetectedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::MediaElement*, ABI::Microsoft::UI::Xaml::Controls::IMediaElement*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Media::PartialMediaFailureDetectedEventArgs*, ABI::Microsoft::UI::Xaml::Media::IPartialMediaFailureDetectedEventArgs*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.MediaElement, Microsoft.UI.Xaml.Media.PartialMediaFailureDetectedEventArgs>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::MediaElement*,ABI::Microsoft::UI::Xaml::Media::PartialMediaFailureDetectedEventArgs*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs_t;
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs_t
-/* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::IMediaElement*,ABI::Microsoft::UI::Xaml::Media::IPartialMediaFailureDetectedEventArgs*>
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::IMediaElement*,ABI::Microsoft::UI::Xaml::Media::IPartialMediaFailureDetectedEventArgs*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs_USE */
-
-
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    class MediaTransportControls;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    interface IMediaTransportControls;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls ABI::Microsoft::UI::Xaml::Controls::IMediaTransportControls
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls_FWD_DEFINED__
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    class MediaTransportControlsThumbnailRequestedEventArgs;
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs_USE
-#define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation {
-template <>
-struct __declspec(uuid("613880e6-702e-55cb-9be2-c720da4db9c8"))
-ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::MediaTransportControls*,ABI::Microsoft::UI::Xaml::Media::MediaTransportControlsThumbnailRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Controls::MediaTransportControls*, ABI::Microsoft::UI::Xaml::Controls::IMediaTransportControls*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Media::MediaTransportControlsThumbnailRequestedEventArgs*, ABI::Microsoft::UI::Xaml::Media::IMediaTransportControlsThumbnailRequestedEventArgs*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.TypedEventHandler`2<Microsoft.UI.Xaml.Controls.MediaTransportControls, Microsoft.UI.Xaml.Media.MediaTransportControlsThumbnailRequestedEventArgs>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::MediaTransportControls*,ABI::Microsoft::UI::Xaml::Media::MediaTransportControlsThumbnailRequestedEventArgs*> __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs_t;
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs ABI::Windows::Foundation::__FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs_t
-/* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::IMediaTransportControls*,ABI::Microsoft::UI::Xaml::Media::IMediaTransportControlsThumbnailRequestedEventArgs*>
-//#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs_t ABI::Windows::Foundation::ITypedEventHandler<ABI::Microsoft::UI::Xaml::Controls::IMediaTransportControls*,ABI::Microsoft::UI::Xaml::Media::IMediaTransportControlsThumbnailRequestedEventArgs*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs_USE */
-
-
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 namespace ABI {
     namespace Microsoft {
@@ -4713,12 +4224,6 @@ namespace ABI {
 
 
 
-
-
-
-
-
-
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -4811,7 +4316,6 @@ namespace ABI {
 
 
 
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIRoutedEventHandler_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIRoutedEventHandler_FWD_DEFINED__
 namespace ABI {
@@ -4896,28 +4400,6 @@ namespace ABI {
 
 
 
-namespace ABI {
-    namespace Windows {
-        namespace Foundation {
-            class Deferral;
-        } /* Foundation */
-    } /* Windows */
-} /* ABI */
-
-#ifndef ____x_ABI_CWindows_CFoundation_CIDeferral_FWD_DEFINED__
-#define ____x_ABI_CWindows_CFoundation_CIDeferral_FWD_DEFINED__
-namespace ABI {
-    namespace Windows {
-        namespace Foundation {
-            interface IDeferral;
-        } /* Foundation */
-    } /* Windows */
-} /* ABI */
-#define __x_ABI_CWindows_CFoundation_CIDeferral ABI::Windows::Foundation::IDeferral
-
-#endif // ____x_ABI_CWindows_CFoundation_CIDeferral_FWD_DEFINED__
-
-
 #ifndef ____x_ABI_CWindows_CFoundation_CIClosable_FWD_DEFINED__
 #define ____x_ABI_CWindows_CFoundation_CIClosable_FWD_DEFINED__
 namespace ABI {
@@ -4994,37 +4476,6 @@ namespace ABI {
 #endif // ____x_ABI_CWindows_CFoundation_CIUriRuntimeClass_FWD_DEFINED__
 
 
-
-
-namespace ABI {
-    namespace Windows {
-        namespace Media {
-            namespace Playback {
-                
-                typedef enum FailedMediaStreamKind : int FailedMediaStreamKind;
-                
-            } /* Playback */
-        } /* Media */
-    } /* Windows */
-} /* ABI */
-
-
-
-
-#ifndef ____x_ABI_CWindows_CStorage_CStreams_CIInputStream_FWD_DEFINED__
-#define ____x_ABI_CWindows_CStorage_CStreams_CIInputStream_FWD_DEFINED__
-namespace ABI {
-    namespace Windows {
-        namespace Storage {
-            namespace Streams {
-                interface IInputStream;
-            } /* Streams */
-        } /* Storage */
-    } /* Windows */
-} /* ABI */
-#define __x_ABI_CWindows_CStorage_CStreams_CIInputStream ABI::Windows::Storage::Streams::IInputStream
-
-#endif // ____x_ABI_CWindows_CStorage_CStreams_CIInputStream_FWD_DEFINED__
 
 
 #ifndef ____x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStream_FWD_DEFINED__
@@ -5106,34 +4557,6 @@ namespace ABI {
             namespace Xaml {
                 namespace Media {
                     
-                    typedef enum AudioCategory : int AudioCategory;
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    
-                    typedef enum AudioDeviceType : int AudioDeviceType;
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    
                     typedef enum BrushMappingMode : int BrushMappingMode;
                     
                 } /* Media */
@@ -5163,20 +4586,6 @@ namespace ABI {
                 namespace Media {
                     
                     typedef enum ElementCompositeMode : int ElementCompositeMode;
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    
-                    typedef enum FastPlayFallbackBehaviour : int FastPlayFallbackBehaviour;
                     
                 } /* Media */
             } /* Xaml */
@@ -5232,34 +4641,6 @@ namespace ABI {
             namespace Xaml {
                 namespace Media {
                     
-                    typedef enum MediaCanPlayResponse : int MediaCanPlayResponse;
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    
-                    typedef enum MediaElementState : int MediaElementState;
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    
                     typedef enum PenLineCap : int PenLineCap;
                     
                 } /* Media */
@@ -5289,34 +4670,6 @@ namespace ABI {
                 namespace Media {
                     
                     typedef enum RevealBrushState : int RevealBrushState;
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    
-                    typedef enum Stereo3DVideoPackingMode : int Stereo3DVideoPackingMode;
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    
-                    typedef enum Stereo3DVideoRenderMode : int Stereo3DVideoRenderMode;
                     
                 } /* Media */
             } /* Xaml */
@@ -5379,17 +4732,6 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -5831,8 +5173,6 @@ namespace ABI {
 
 
 
-
-
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -5970,19 +5310,6 @@ namespace ABI {
             namespace Xaml {
                 namespace Media {
                     class RadialGradientBrush;
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    class RateChangedRoutedEventArgs;
                 } /* Media */
             } /* Xaml */
         } /* UI */
@@ -6140,33 +5467,6 @@ namespace ABI {
             namespace Xaml {
                 namespace Media {
                     class TileBrush;
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    class TimelineMarkerCollection;
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    class TimelineMarkerRoutedEventArgs;
                 } /* Media */
             } /* Xaml */
         } /* UI */
@@ -6340,77 +5640,6 @@ namespace ABI {
 
 /*
  *
- * Struct Microsoft.UI.Xaml.Media.AudioCategory
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [v1_enum, contract] */
-                    enum AudioCategory : int
-                    {
-                        AudioCategory_Other = 0,
-                        AudioCategory_ForegroundOnlyMedia = 1,
-                        AudioCategory_BackgroundCapableMedia = 2,
-                        AudioCategory_Communications = 3,
-                        AudioCategory_Alerts = 4,
-                        AudioCategory_SoundEffects = 5,
-                        AudioCategory_GameEffects = 6,
-                        AudioCategory_GameMedia = 7,
-                        AudioCategory_GameChat = 8,
-                        AudioCategory_Speech = 9,
-                        AudioCategory_Movie = 10,
-                        AudioCategory_Media = 11,
-                    };
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.Media.AudioDeviceType
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [v1_enum, contract] */
-                    enum AudioDeviceType : int
-                    {
-                        AudioDeviceType_Console = 0,
-                        AudioDeviceType_Multimedia = 1,
-                        AudioDeviceType_Communications = 2,
-                    };
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Struct Microsoft.UI.Xaml.Media.BrushMappingMode
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -6498,37 +5727,6 @@ namespace ABI {
     } /* Microsoft */
 } /* ABI */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.Media.FastPlayFallbackBehaviour
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [v1_enum, contract] */
-                    enum FastPlayFallbackBehaviour : int
-                    {
-                        FastPlayFallbackBehaviour_Skip = 0,
-                        FastPlayFallbackBehaviour_Hide = 1,
-                        FastPlayFallbackBehaviour_Disable = 2,
-                    };
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -6626,71 +5824,6 @@ namespace ABI {
 
 /*
  *
- * Struct Microsoft.UI.Xaml.Media.MediaCanPlayResponse
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [v1_enum, contract] */
-                    enum MediaCanPlayResponse : int
-                    {
-                        MediaCanPlayResponse_NotSupported = 0,
-                        MediaCanPlayResponse_Maybe = 1,
-                        MediaCanPlayResponse_Probably = 2,
-                    };
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.Media.MediaElementState
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [v1_enum, contract] */
-                    enum MediaElementState : int
-                    {
-                        MediaElementState_Closed = 0,
-                        MediaElementState_Opening = 1,
-                        MediaElementState_Buffering = 2,
-                        MediaElementState_Playing = 3,
-                        MediaElementState_Paused = 4,
-                        MediaElementState_Stopped = 5,
-                    };
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Struct Microsoft.UI.Xaml.Media.PenLineCap
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -6776,67 +5909,6 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.Media.Stereo3DVideoPackingMode
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [v1_enum, contract] */
-                    enum Stereo3DVideoPackingMode : int
-                    {
-                        Stereo3DVideoPackingMode_None = 0,
-                        Stereo3DVideoPackingMode_SideBySide = 1,
-                        Stereo3DVideoPackingMode_TopBottom = 2,
-                    };
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.Media.Stereo3DVideoRenderMode
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [v1_enum, contract] */
-                    enum Stereo3DVideoRenderMode : int
-                    {
-                        Stereo3DVideoRenderMode_Mono = 0,
-                        Stereo3DVideoRenderMode_Stereo = 1,
-                    };
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -6965,88 +6037,6 @@ namespace ABI {
     } /* Microsoft */
 } /* ABI */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Delegate Microsoft.UI.Xaml.Media.RateChangedRoutedEventHandler
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler_INTERFACE_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [object, uuid("3AE21290-7C9D-5C94-AB84-8132A04DF2A5"), contract] */
-                    MIDL_INTERFACE("3AE21290-7C9D-5C94-AB84-8132A04DF2A5")
-                    IRateChangedRoutedEventHandler : public IUnknown
-                    {
-                    public:
-                        virtual HRESULT STDMETHODCALLTYPE Invoke(
-                            /* [in] */IInspectable * sender,
-                            /* [in] */ABI::Microsoft::UI::Xaml::Media::IRateChangedRoutedEventArgs * e
-                            ) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_IRateChangedRoutedEventHandler=_uuidof(IRateChangedRoutedEventHandler);
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Delegate Microsoft.UI.Xaml.Media.TimelineMarkerRoutedEventHandler
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler_INTERFACE_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [object, uuid("EADA0FFB-E81A-527D-B0DE-D263395D0D5A"), contract] */
-                    MIDL_INTERFACE("EADA0FFB-E81A-527D-B0DE-D263395D0D5A")
-                    ITimelineMarkerRoutedEventHandler : public IUnknown
-                    {
-                    public:
-                        virtual HRESULT STDMETHODCALLTYPE Invoke(
-                            /* [in] */IInspectable * sender,
-                            /* [in] */ABI::Microsoft::UI::Xaml::Media::ITimelineMarkerRoutedEventArgs * e
-                            ) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_ITimelineMarkerRoutedEventHandler=_uuidof(ITimelineMarkerRoutedEventHandler);
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -9925,100 +8915,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixTransformStat
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Media.IMediaTransportControlsThumbnailRequestedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.MediaTransportControlsThumbnailRequestedEventArgs
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IMediaTransportControlsThumbnailRequestedEventArgs[] = L"Microsoft.UI.Xaml.Media.IMediaTransportControlsThumbnailRequestedEventArgs";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [object, uuid("FE0FFB86-74B0-5031-ACCC-B34D0382A637"), exclusiveto, contract] */
-                    MIDL_INTERFACE("FE0FFB86-74B0-5031-ACCC-B34D0382A637")
-                    IMediaTransportControlsThumbnailRequestedEventArgs : public IInspectable
-                    {
-                    public:
-                        virtual HRESULT STDMETHODCALLTYPE SetThumbnailImage(
-                            /* [in] */ABI::Windows::Storage::Streams::IInputStream * source
-                            ) = 0;
-                        virtual HRESULT STDMETHODCALLTYPE GetDeferral(
-                            /* [retval, out] */ABI::Windows::Foundation::IDeferral * * result
-                            ) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_IMediaTransportControlsThumbnailRequestedEventArgs=_uuidof(IMediaTransportControlsThumbnailRequestedEventArgs);
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.IPartialMediaFailureDetectedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.PartialMediaFailureDetectedEventArgs
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IPartialMediaFailureDetectedEventArgs[] = L"Microsoft.UI.Xaml.Media.IPartialMediaFailureDetectedEventArgs";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [object, uuid("40292B1E-C3B7-5BBD-8E75-8926FADA3CE6"), exclusiveto, contract] */
-                    MIDL_INTERFACE("40292B1E-C3B7-5BBD-8E75-8926FADA3CE6")
-                    IPartialMediaFailureDetectedEventArgs : public IInspectable
-                    {
-                    public:
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_StreamKind(
-                            /* [retval, out] */ABI::Windows::Media::Playback::FailedMediaStreamKind * value
-                            ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ExtendedError(
-                            /* [retval, out] */HRESULT * value
-                            ) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_IPartialMediaFailureDetectedEventArgs=_uuidof(IPartialMediaFailureDetectedEventArgs);
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Media.IPathFigure
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -11150,47 +10046,6 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics_INTERFACE_DEFINED__) */
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.IRateChangedRoutedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.RateChangedRoutedEventArgs
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRateChangedRoutedEventArgs[] = L"Microsoft.UI.Xaml.Media.IRateChangedRoutedEventArgs";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [object, uuid("07873493-7BE3-5CA8-824F-EDCF3EA46BB7"), exclusiveto, contract] */
-                    MIDL_INTERFACE("07873493-7BE3-5CA8-824F-EDCF3EA46BB7")
-                    IRateChangedRoutedEventArgs : public IInspectable
-                    {
-                    public:
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_IRateChangedRoutedEventArgs=_uuidof(IRateChangedRoutedEventArgs);
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -12487,203 +11342,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrushStatics;
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Media.ITimelineMarker
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.TimelineMarker
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_ITimelineMarker[] = L"Microsoft.UI.Xaml.Media.ITimelineMarker";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [object, uuid("0D8307EE-0BBB-5EE3-80A9-B953D83F1FA1"), exclusiveto, contract] */
-                    MIDL_INTERFACE("0D8307EE-0BBB-5EE3-80A9-B953D83F1FA1")
-                    ITimelineMarker : public IInspectable
-                    {
-                    public:
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Time(
-                            /* [retval, out] */ABI::Windows::Foundation::TimeSpan * value
-                            ) = 0;
-                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Time(
-                            /* [in] */ABI::Windows::Foundation::TimeSpan value
-                            ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Type(
-                            /* [retval, out] */HSTRING * value
-                            ) = 0;
-                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Type(
-                            /* [in] */HSTRING value
-                            ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Text(
-                            /* [retval, out] */HSTRING * value
-                            ) = 0;
-                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Text(
-                            /* [in] */HSTRING value
-                            ) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_ITimelineMarker=_uuidof(ITimelineMarker);
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.ITimelineMarkerCollection
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.TimelineMarkerCollection
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_ITimelineMarkerCollection[] = L"Microsoft.UI.Xaml.Media.ITimelineMarkerCollection";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [object, uuid("18E3ED41-9E59-5EF1-9252-BEDEA8CC6FC5"), exclusiveto, contract] */
-                    MIDL_INTERFACE("18E3ED41-9E59-5EF1-9252-BEDEA8CC6FC5")
-                    ITimelineMarkerCollection : public IInspectable
-                    {
-                    public:
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_ITimelineMarkerCollection=_uuidof(ITimelineMarkerCollection);
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.ITimelineMarkerRoutedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.TimelineMarkerRoutedEventArgs
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_ITimelineMarkerRoutedEventArgs[] = L"Microsoft.UI.Xaml.Media.ITimelineMarkerRoutedEventArgs";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [object, uuid("44094816-6F81-5BA1-9548-233F72F93056"), exclusiveto, contract] */
-                    MIDL_INTERFACE("44094816-6F81-5BA1-9548-233F72F93056")
-                    ITimelineMarkerRoutedEventArgs : public IInspectable
-                    {
-                    public:
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Marker(
-                            /* [retval, out] */ABI::Microsoft::UI::Xaml::Media::ITimelineMarker * * value
-                            ) = 0;
-                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Marker(
-                            /* [in] */ABI::Microsoft::UI::Xaml::Media::ITimelineMarker * value
-                            ) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_ITimelineMarkerRoutedEventArgs=_uuidof(ITimelineMarkerRoutedEventArgs);
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.ITimelineMarkerStatics
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.TimelineMarker
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_ITimelineMarkerStatics[] = L"Microsoft.UI.Xaml.Media.ITimelineMarkerStatics";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [object, uuid("185FA9E3-90F1-5A6D-979F-4C71EA283BF6"), exclusiveto, contract] */
-                    MIDL_INTERFACE("185FA9E3-90F1-5A6D-979F-4C71EA283BF6")
-                    ITimelineMarkerStatics : public IInspectable
-                    {
-                    public:
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_TimeProperty(
-                            /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                            ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_TypeProperty(
-                            /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                            ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_TextProperty(
-                            /* [retval, out] */ABI::Microsoft::UI::Xaml::IDependencyProperty * * value
-                            ) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_ITimelineMarkerStatics=_uuidof(ITimelineMarkerStatics);
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Media.ITransform
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -13220,98 +11878,6 @@ namespace ABI {
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverrides;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverrides_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.IXamlCompositionBrushBaseOverridesPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IXamlCompositionBrushBaseOverridesPrivate[] = L"Microsoft.UI.Xaml.Media.IXamlCompositionBrushBaseOverridesPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [object, uuid("8379ABB1-27CB-5C26-B766-A56CC31939C2"), contract] */
-                    MIDL_INTERFACE("8379ABB1-27CB-5C26-B766-A56CC31939C2")
-                    IXamlCompositionBrushBaseOverridesPrivate : public IInspectable
-                    {
-                    public:
-                        virtual HRESULT STDMETHODCALLTYPE OnElementConnected(
-                            /* [in] */ABI::Microsoft::UI::Xaml::IDependencyObject * element
-                            ) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_IXamlCompositionBrushBaseOverridesPrivate=_uuidof(IXamlCompositionBrushBaseOverridesPrivate);
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.IXamlCompositionBrushBasePrivates
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IXamlCompositionBrushBasePrivates[] = L"Microsoft.UI.Xaml.Media.IXamlCompositionBrushBasePrivates";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    /* [object, uuid("5B4B1E3E-B69A-5476-89E8-1D559A446D1A"), contract] */
-                    MIDL_INTERFACE("5B4B1E3E-B69A-5476-89E8-1D559A446D1A")
-                    IXamlCompositionBrushBasePrivates : public IInspectable
-                    {
-                    public:
-                        virtual HRESULT STDMETHODCALLTYPE SetBrushForXamlRoot(
-                            /* [in] */IInspectable * xamlRoot,
-                            /* [in] */ABI::Microsoft::UI::Composition::ICompositionBrush * brush
-                            ) = 0;
-                        virtual HRESULT STDMETHODCALLTYPE GetBrushForXamlRoot(
-                            /* [in] */IInspectable * xamlRoot,
-                            /* [retval, out] */ABI::Microsoft::UI::Composition::ICompositionBrush * * result
-                            ) = 0;
-                        virtual HRESULT STDMETHODCALLTYPE ClearBrushForXamlRoot(
-                            /* [in] */IInspectable * xamlRoot,
-                            /* [in] */ABI::Microsoft::UI::Composition::ICompositionBrush * brush
-                            ) = 0;
-                        virtual HRESULT STDMETHODCALLTYPE ClearCompositionBrushMap(void) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_IXamlCompositionBrushBasePrivates=_uuidof(IXamlCompositionBrushBasePrivates);
-                    
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -14457,55 +13023,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
- * Class Microsoft.UI.Xaml.Media.MediaTransportControlsThumbnailRequestedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Media.IMediaTransportControlsThumbnailRequestedEventArgs ** Default Interface **
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_MediaTransportControlsThumbnailRequestedEventArgs_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Media_MediaTransportControlsThumbnailRequestedEventArgs_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_MediaTransportControlsThumbnailRequestedEventArgs[] = L"Microsoft.UI.Xaml.Media.MediaTransportControlsThumbnailRequestedEventArgs";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Media.PartialMediaFailureDetectedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via RoActivateInstance starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Media.IPartialMediaFailureDetectedEventArgs ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_PartialMediaFailureDetectedEventArgs_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Media_PartialMediaFailureDetectedEventArgs_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_PartialMediaFailureDetectedEventArgs[] = L"Microsoft.UI.Xaml.Media.PartialMediaFailureDetectedEventArgs";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Class Microsoft.UI.Xaml.Media.PathFigure
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -14869,33 +13386,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
- * Class Microsoft.UI.Xaml.Media.RateChangedRoutedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via RoActivateInstance starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Media.IRateChangedRoutedEventArgs ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_RateChangedRoutedEventArgs_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Media_RateChangedRoutedEventArgs_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_RateChangedRoutedEventArgs[] = L"Microsoft.UI.Xaml.Media.RateChangedRoutedEventArgs";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Class Microsoft.UI.Xaml.Media.RectangleGeometry
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -15225,92 +13715,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
- * Class Microsoft.UI.Xaml.Media.TimelineMarker
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via RoActivateInstance starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Xaml.Media.ITimelineMarkerStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Media.ITimelineMarker ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_TimelineMarker_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Media_TimelineMarker_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_TimelineMarker[] = L"Microsoft.UI.Xaml.Media.TimelineMarker";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Media.TimelineMarkerCollection
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via RoActivateInstance starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Media.ITimelineMarkerCollection ** Default Interface **
- *    Windows.Foundation.Collections.IVector_1_Microsoft.UI.Xaml.Media.TimelineMarker
- *    Windows.Foundation.Collections.IIterable_1_Microsoft.UI.Xaml.Media.TimelineMarker
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_TimelineMarkerCollection_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Media_TimelineMarkerCollection_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_TimelineMarkerCollection[] = L"Microsoft.UI.Xaml.Media.TimelineMarkerCollection";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Media.TimelineMarkerRoutedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via RoActivateInstance starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Media.ITimelineMarkerRoutedEventArgs ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_TimelineMarkerRoutedEventArgs_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Media_TimelineMarkerRoutedEventArgs_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_TimelineMarkerRoutedEventArgs[] = L"Microsoft.UI.Xaml.Media.TimelineMarkerRoutedEventArgs";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Class Microsoft.UI.Xaml.Media.Transform
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -15511,18 +13915,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 #else // !defined(__cplusplus)
 /* Forward Declarations */
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIAcrylicBrush_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIAcrylicBrush_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIAcrylicBrush __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIAcrylicBrush;
@@ -15859,18 +14251,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixTransformStatics _
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixTransformStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPathFigure_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPathFigure_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPathFigure __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPathFigure;
@@ -15996,12 +14376,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushFacto
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRectangleGeometry_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRectangleGeometry_FWD_DEFINED__
@@ -16165,30 +14539,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrushStatics __x_ABI
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrushStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransform_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransform_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransform __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransform;
@@ -16254,18 +14604,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBase
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverrides __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverrides;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverrides_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseProtected_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseProtected_FWD_DEFINED__
@@ -17121,168 +15459,6 @@ interface __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CPathSegment
 #endif // ____FIIterable_1_Microsoft__CUI__CXaml__CMedia__CPathSegment_INTERFACE_DEFINED__
 
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_INTERFACE_DEFINED__)
-#define ____FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_INTERFACE_DEFINED__
-
-typedef interface __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker;
-
-typedef struct __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarkerVtbl
-{
-    BEGIN_INTERFACE
-
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-        __RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-        /* [in] */ __RPC__in REFIID riid,
-        /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This);
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This);
-    HRESULT ( STDMETHODCALLTYPE *GetIids )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-        /* [out] */ __RPC__out ULONG *iidCount,
-        /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids);
-
-    HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This, /* [out] */ __RPC__deref_out_opt HSTRING *className);
-    HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This, /* [out] */ __RPC__out TrustLevel *trustLevel);
-
-    /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Current )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This, /* [retval][out] */ __RPC__out __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * *current);
-    /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_HasCurrent )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This, /* [retval][out] */ __RPC__out boolean *hasCurrent);
-    HRESULT ( STDMETHODCALLTYPE *MoveNext )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This, /* [retval][out] */ __RPC__out boolean *hasCurrent);
-    HRESULT ( STDMETHODCALLTYPE *GetMany )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-        /* [in] */ unsigned int capacity,
-        /* [size_is][length_is][out] */ __RPC__out_ecount_part(capacity, *actual) __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * *items,
-        /* [retval][out] */ __RPC__out unsigned int *actual);
-
-    END_INTERFACE
-} __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarkerVtbl;
-
-interface __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker
-{
-    CONST_VTBL struct __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarkerVtbl *lpVtbl;
-};
-
-
-
-#ifdef COBJMACROS
-
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetIids(This,iidCount,iids)	\
-    ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetRuntimeClassName(This,className)	\
-    ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetTrustLevel(This,trustLevel)	\
-    ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
-
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_get_Current(This,current)	\
-    ( (This)->lpVtbl -> get_Current(This,current) ) 
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_get_HasCurrent(This,hasCurrent)	\
-    ( (This)->lpVtbl -> get_HasCurrent(This,hasCurrent) ) 
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_MoveNext(This,hasCurrent)	\
-    ( (This)->lpVtbl -> MoveNext(This,hasCurrent) ) 
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetMany(This,capacity,items,actual)	\
-    ( (This)->lpVtbl -> GetMany(This,capacity,items,actual) ) 
-
-#endif /* COBJMACROS */
-
-
-#endif // ____FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_INTERFACE_DEFINED__
-
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_INTERFACE_DEFINED__)
-#define ____FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_INTERFACE_DEFINED__
-
-typedef interface __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker;
-
-typedef  struct __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarkerVtbl
-{
-    BEGIN_INTERFACE
-
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-        __RPC__in __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-        /* [in] */ __RPC__in REFIID riid,
-        /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This);
-
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This);
-
-    HRESULT ( STDMETHODCALLTYPE *GetIids )(__RPC__in __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-                                           /* [out] */ __RPC__out ULONG *iidCount,
-                                           /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids);
-
-    HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(__RPC__in __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This, /* [out] */ __RPC__deref_out_opt HSTRING *className);
-
-    HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(__RPC__in __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This, /* [out] */ __RPC__out TrustLevel *trustLevel);
-
-    HRESULT ( STDMETHODCALLTYPE *First )(__RPC__in __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This, /* [retval][out] */ __RPC__deref_out_opt __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker **first);
-
-    END_INTERFACE
-} __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarkerVtbl;
-
-interface __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker
-{
-    CONST_VTBL struct __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarkerVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-
-#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetIids(This,iidCount,iids)	\
-    ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
-
-#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetRuntimeClassName(This,className)	\
-    ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
-
-#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetTrustLevel(This,trustLevel)	\
-    ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
-
-
-#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_First(This,first)	\
-    ( (This)->lpVtbl -> First(This,first) ) 
-
-#endif /* COBJMACROS */
-
-
-#endif // ____FIIterable_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_INTERFACE_DEFINED__
-
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 #if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
@@ -18423,117 +16599,6 @@ interface __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CPathSegment
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_INTERFACE_DEFINED__)
-#define ____FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_INTERFACE_DEFINED__
-
-typedef interface __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker;
-
-typedef struct __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarkerVtbl
-{
-    BEGIN_INTERFACE
-
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-        __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-        /* [in] */ __RPC__in REFIID riid,
-        /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-
-    ULONG ( STDMETHODCALLTYPE *AddRef )( __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This);
-
-    ULONG ( STDMETHODCALLTYPE *Release )( __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This);
-
-    HRESULT ( STDMETHODCALLTYPE *GetIids )( __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-                                            /* [out] */ __RPC__out ULONG *iidCount,
-                                            /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids);
-
-    HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )( 
-        __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-            /* [out] */ __RPC__deref_out_opt HSTRING *className);
-
-    HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )( 
-        __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-            /* [out] */ __RPC__out TrustLevel *trustLevel);
-
-    HRESULT ( STDMETHODCALLTYPE *GetAt )( 
-                                         __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-                                         /* [in] */ unsigned int index,
-                                         /* [retval][out] */ __RPC__out __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * *item);
-
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Size )( 
-            __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-            /* [retval][out] */ __RPC__out unsigned int *size);
-
-        HRESULT ( STDMETHODCALLTYPE *IndexOf )( 
-                                               __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-            /* [in] */ __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * item,
-            /* [out] */ __RPC__out unsigned int *index,
-            /* [retval][out] */ __RPC__out boolean *found);
-
-        HRESULT ( STDMETHODCALLTYPE *GetMany )( 
-                                               __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-            /* [in] */ unsigned int startIndex,
-            /* [in] */ unsigned int capacity,
-            /* [size_is][length_is][out] */ __RPC__out_ecount_part(capacity, *actual) __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * *items,
-            /* [retval][out] */ __RPC__out unsigned int *actual);
-
-        END_INTERFACE
-} __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarkerVtbl;
-
-interface __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker
-{
-    CONST_VTBL struct __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarkerVtbl *lpVtbl;
-};
-
-
-
-#ifdef COBJMACROS
-
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetIids(This,iidCount,iids)	\
-    ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetRuntimeClassName(This,className)	\
-    ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetTrustLevel(This,trustLevel)	\
-    ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
-
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetAt(This,index,item)	\
-    ( (This)->lpVtbl -> GetAt(This,index,item) ) 
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_get_Size(This,size)	\
-    ( (This)->lpVtbl -> get_Size(This,size) ) 
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_IndexOf(This,item,index,found)	\
-    ( (This)->lpVtbl -> IndexOf(This,item,index,found) ) 
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetMany(This,startIndex,capacity,items,actual)	\
-    ( (This)->lpVtbl -> GetMany(This,startIndex,capacity,items,actual) ) 
-
-#endif /* COBJMACROS */
-
-
-
-#endif // ____FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_INTERFACE_DEFINED__
-
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
 #if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTransform_INTERFACE_DEFINED__)
 #define ____FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTransform_INTERFACE_DEFINED__
@@ -19328,149 +17393,6 @@ interface __FIVector_1_Microsoft__CUI__CXaml__CMedia__CPathSegment
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_INTERFACE_DEFINED__)
-#define ____FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_INTERFACE_DEFINED__
-
-typedef interface __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker;
-
-typedef struct __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarkerVtbl
-{
-    BEGIN_INTERFACE
-
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-        __RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-            /* [in] */ __RPC__in REFIID riid,
-            /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This);
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This);
-    HRESULT ( STDMETHODCALLTYPE *GetIids )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-        /* [out] */ __RPC__out ULONG *iidCount,
-        /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids);
-
-    HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This, /* [out] */ __RPC__deref_out_opt __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * *className);
-    HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This, /* [out] */ __RPC__out TrustLevel *trustLevel);
-
-    HRESULT ( STDMETHODCALLTYPE *GetAt )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-        /* [in] */ unsigned int index,
-        /* [retval][out] */ __RPC__deref_out_opt __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * *item);
-
-    /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Size )( 
-        __RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-        /* [retval][out] */ __RPC__out unsigned int *size);
-
-    HRESULT ( STDMETHODCALLTYPE *GetView )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This, /* [retval][out] */ __RPC__deref_out_opt __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker **view);
-
-    HRESULT ( STDMETHODCALLTYPE *IndexOf )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-        /* [in] */ __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * item,
-        /* [out] */ __RPC__out unsigned int *index,
-        /* [retval][out] */ __RPC__out boolean *found);
-
-    HRESULT ( STDMETHODCALLTYPE *SetAt )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-        /* [in] */ unsigned int index,
-        /* [in] */ __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * item);
-
-    HRESULT ( STDMETHODCALLTYPE *InsertAt )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-        /* [in] */ unsigned int index,
-        /* [in] */ __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * item);
-
-    HRESULT ( STDMETHODCALLTYPE *RemoveAt )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This, /* [in] */ unsigned int index);
-    HRESULT ( STDMETHODCALLTYPE *Append )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This, /* [in] */ __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * item);
-    HRESULT ( STDMETHODCALLTYPE *RemoveAtEnd )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This);
-    HRESULT ( STDMETHODCALLTYPE *Clear )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This);
-    HRESULT ( STDMETHODCALLTYPE *GetMany )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-        /* [in] */ unsigned int startIndex,
-        /* [in] */ unsigned int capacity,
-        /* [size_is][length_is][out] */ __RPC__out_ecount_part(capacity, *actual) __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * *items,
-        /* [retval][out] */ __RPC__out unsigned int *actual);
-
-    HRESULT ( STDMETHODCALLTYPE *ReplaceAll )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker * This,
-        /* [in] */ unsigned int count,
-        /* [size_is][in] */ __RPC__in_ecount_full(count) __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * *value);
-
-    END_INTERFACE
-} __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarkerVtbl;
-
-interface __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker
-{
-    CONST_VTBL struct __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarkerVtbl *lpVtbl;
-};
-
-
-
-#ifdef COBJMACROS
-
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetIids(This,iidCount,iids)	\
-    ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetRuntimeClassName(This,className)	\
-    ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetTrustLevel(This,trustLevel)	\
-    ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
-
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetAt(This,index,item)	\
-    ( (This)->lpVtbl -> GetAt(This,index,item) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_get_Size(This,size)	\
-    ( (This)->lpVtbl -> get_Size(This,size) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetView(This,view)	\
-    ( (This)->lpVtbl -> GetView(This,view) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_IndexOf(This,item,index,found)	\
-    ( (This)->lpVtbl -> IndexOf(This,item,index,found) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_SetAt(This,index,item)	\
-    ( (This)->lpVtbl -> SetAt(This,index,item) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_InsertAt(This,index,item)	\
-    ( (This)->lpVtbl -> InsertAt(This,index,item) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_RemoveAt(This,index)	\
-    ( (This)->lpVtbl -> RemoveAt(This,index) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_Append(This,item)	\
-    ( (This)->lpVtbl -> Append(This,item) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_RemoveAtEnd(This)	\
-    ( (This)->lpVtbl -> RemoveAtEnd(This) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_Clear(This)	\
-    ( (This)->lpVtbl -> Clear(This) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_GetMany(This,startIndex,capacity,items,actual)	\
-    ( (This)->lpVtbl -> GetMany(This,startIndex,capacity,items,actual) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_ReplaceAll(This,count,value)	\
-    ( (This)->lpVtbl -> ReplaceAll(This,count,value) ) 
-
-#endif /* COBJMACROS */
-
-
-
-#endif // ____FIVector_1_Microsoft__CUI__CXaml__CMedia__CTimelineMarker_INTERFACE_DEFINED__
-
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
 #if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____FIVector_1_Microsoft__CUI__CXaml__CMedia__CTransform_INTERFACE_DEFINED__)
 #define ____FIVector_1_Microsoft__CUI__CXaml__CMedia__CTransform_INTERFACE_DEFINED__
@@ -19801,124 +17723,6 @@ interface __FIEventHandler_1_Microsoft__CUI__CXaml__CMedia__CRenderedEventArgs
 #endif // ____FIEventHandler_1_Microsoft__CUI__CXaml__CMedia__CRenderedEventArgs_INTERFACE_DEFINED__
 
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement_FWD_DEFINED__
-
-
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs_INTERFACE_DEFINED__)
-#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs_INTERFACE_DEFINED__
-
-typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs;
-
-typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs * This,
-        /* [in] */ __RPC__in REFIID riid,
-        /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs * This);
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs * This);
-
-    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement * sender,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs * e);
-    END_INTERFACE
-} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgsVtbl;
-
-interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs
-{
-    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs_Invoke(This,sender,e)	\
-    ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
-#endif /* COBJMACROS */
-
-
-
-#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaElement_Microsoft__CUI__CXaml__CMedia__CPartialMediaFailureDetectedEventArgs_INTERFACE_DEFINED__
-
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls_FWD_DEFINED__
-
-
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs_INTERFACE_DEFINED__)
-#define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs_INTERFACE_DEFINED__
-
-typedef interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs;
-
-typedef struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs * This,
-        /* [in] */ __RPC__in REFIID riid,
-        /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs * This);
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs * This);
-
-    HRESULT ( STDMETHODCALLTYPE *Invoke )(__RPC__in __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs * This,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls * sender,/* [in] */ __RPC__in_opt __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs * e);
-    END_INTERFACE
-} __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgsVtbl;
-
-interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs
-{
-    CONST_VTBL struct __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs_Invoke(This,sender,e)	\
-    ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
-#endif /* COBJMACROS */
-
-
-
-#endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CControls__CMediaTransportControls_Microsoft__CUI__CXaml__CMedia__CMediaTransportControlsThumbnailRequestedEventArgs_INTERFACE_DEFINED__
-
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 
@@ -21648,12 +19452,6 @@ typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CApplicationTheme __x_ABI_CMicrosoft_C
 
 
 
-
-
-
-
-
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject __x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject;
@@ -21680,7 +19478,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIExceptionRoutedEventHandler __x
 
 
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMedia3D_CMatrix3D __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMedia3D_CMatrix3D;
-
 
 
 
@@ -21714,13 +19511,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIXamlRoot __x_ABI_CMicrosoft_CUI
 
 
 
-#ifndef ____x_ABI_CWindows_CFoundation_CIDeferral_FWD_DEFINED__
-#define ____x_ABI_CWindows_CFoundation_CIDeferral_FWD_DEFINED__
-typedef interface __x_ABI_CWindows_CFoundation_CIDeferral __x_ABI_CWindows_CFoundation_CIDeferral;
-
-#endif // ____x_ABI_CWindows_CFoundation_CIDeferral_FWD_DEFINED__
-
-
 #ifndef ____x_ABI_CWindows_CFoundation_CIClosable_FWD_DEFINED__
 #define ____x_ABI_CWindows_CFoundation_CIClosable_FWD_DEFINED__
 typedef interface __x_ABI_CWindows_CFoundation_CIClosable __x_ABI_CWindows_CFoundation_CIClosable;
@@ -21749,19 +19539,6 @@ typedef interface __x_ABI_CWindows_CFoundation_CIUriRuntimeClass __x_ABI_CWindow
 
 
 
-
-typedef enum __x_ABI_CWindows_CMedia_CPlayback_CFailedMediaStreamKind __x_ABI_CWindows_CMedia_CPlayback_CFailedMediaStreamKind;
-
-
-
-
-#ifndef ____x_ABI_CWindows_CStorage_CStreams_CIInputStream_FWD_DEFINED__
-#define ____x_ABI_CWindows_CStorage_CStreams_CIInputStream_FWD_DEFINED__
-typedef interface __x_ABI_CWindows_CStorage_CStreams_CIInputStream __x_ABI_CWindows_CStorage_CStreams_CIInputStream;
-
-#endif // ____x_ABI_CWindows_CStorage_CStreams_CIInputStream_FWD_DEFINED__
-
-
 #ifndef ____x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStream_FWD_DEFINED__
 #define ____x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStream_FWD_DEFINED__
 typedef interface __x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStream __x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStream;
@@ -21787,12 +19564,6 @@ typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAlignmentX __x_ABI_CMicrosoft_
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAlignmentY __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAlignmentY;
 
 
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAudioCategory __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAudioCategory;
-
-
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAudioDeviceType __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAudioDeviceType;
-
-
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CBrushMappingMode __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CBrushMappingMode;
 
 
@@ -21800,9 +19571,6 @@ typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CColorInterpolationMode __x_ABI
 
 
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CElementCompositeMode __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CElementCompositeMode;
-
-
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CFastPlayFallbackBehaviour __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CFastPlayFallbackBehaviour;
 
 
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CFillRule __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CFillRule;
@@ -21814,12 +19582,6 @@ typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CGradientSpreadMethod __x_ABI_C
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CLoadedImageSourceLoadStatus __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CLoadedImageSourceLoadStatus;
 
 
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMediaCanPlayResponse __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMediaCanPlayResponse;
-
-
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMediaElementState __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMediaElementState;
-
-
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CPenLineCap __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CPenLineCap;
 
 
@@ -21827,12 +19589,6 @@ typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CPenLineJoin __x_ABI_CMicrosoft
 
 
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CRevealBrushState __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CRevealBrushState;
-
-
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CStereo3DVideoPackingMode __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CStereo3DVideoPackingMode;
-
-
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CStereo3DVideoRenderMode __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CStereo3DVideoRenderMode;
 
 
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CStretch __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CStretch;
@@ -21845,23 +19601,6 @@ typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CSweepDirection __x_ABI_CMicros
 
 
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMatrix __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMatrix;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -22113,55 +19852,6 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAlignmentY
 
 /*
  *
- * Struct Microsoft.UI.Xaml.Media.AudioCategory
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-/* [v1_enum, contract] */
-enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAudioCategory
-{
-    AudioCategory_Other = 0,
-    AudioCategory_ForegroundOnlyMedia = 1,
-    AudioCategory_BackgroundCapableMedia = 2,
-    AudioCategory_Communications = 3,
-    AudioCategory_Alerts = 4,
-    AudioCategory_SoundEffects = 5,
-    AudioCategory_GameEffects = 6,
-    AudioCategory_GameMedia = 7,
-    AudioCategory_GameChat = 8,
-    AudioCategory_Speech = 9,
-    AudioCategory_Movie = 10,
-    AudioCategory_Media = 11,
-};
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.Media.AudioDeviceType
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-/* [v1_enum, contract] */
-enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAudioDeviceType
-{
-    AudioDeviceType_Console = 0,
-    AudioDeviceType_Multimedia = 1,
-    AudioDeviceType_Communications = 2,
-};
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Struct Microsoft.UI.Xaml.Media.BrushMappingMode
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -22216,26 +19906,6 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CElementCompositeMode
     ElementCompositeMode_MinBlend = 2,
 };
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.Media.FastPlayFallbackBehaviour
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-/* [v1_enum, contract] */
-enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CFastPlayFallbackBehaviour
-{
-    FastPlayFallbackBehaviour_Skip = 0,
-    FastPlayFallbackBehaviour_Hide = 1,
-    FastPlayFallbackBehaviour_Disable = 2,
-};
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -22300,49 +19970,6 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CLoadedImageSourceLoadStatus
 
 /*
  *
- * Struct Microsoft.UI.Xaml.Media.MediaCanPlayResponse
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-/* [v1_enum, contract] */
-enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMediaCanPlayResponse
-{
-    MediaCanPlayResponse_NotSupported = 0,
-    MediaCanPlayResponse_Maybe = 1,
-    MediaCanPlayResponse_Probably = 2,
-};
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.Media.MediaElementState
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-/* [v1_enum, contract] */
-enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMediaElementState
-{
-    MediaElementState_Closed = 0,
-    MediaElementState_Opening = 1,
-    MediaElementState_Buffering = 2,
-    MediaElementState_Playing = 3,
-    MediaElementState_Paused = 4,
-    MediaElementState_Stopped = 5,
-};
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Struct Microsoft.UI.Xaml.Media.PenLineCap
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -22395,45 +20022,6 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CRevealBrushState
     RevealBrushState_PointerOver = 1,
     RevealBrushState_Pressed = 2,
 };
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.Media.Stereo3DVideoPackingMode
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-/* [v1_enum, contract] */
-enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CStereo3DVideoPackingMode
-{
-    Stereo3DVideoPackingMode_None = 0,
-    Stereo3DVideoPackingMode_SideBySide = 1,
-    Stereo3DVideoPackingMode_TopBottom = 2,
-};
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.Media.Stereo3DVideoRenderMode
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-/* [v1_enum, contract] */
-enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CStereo3DVideoRenderMode
-{
-    Stereo3DVideoRenderMode_Mono = 0,
-    Stereo3DVideoRenderMode_Stereo = 1,
-};
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -22518,130 +20106,6 @@ struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMatrix
     DOUBLE OffsetY;
 };
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Delegate Microsoft.UI.Xaml.Media.RateChangedRoutedEventHandler
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler_INTERFACE_DEFINED__
-/* [object, uuid("3AE21290-7C9D-5C94-AB84-8132A04DF2A5"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandlerVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject);
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler * This);
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler * This);
-HRESULT ( STDMETHODCALLTYPE *Invoke )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler * This,
-        /* [in] */IInspectable * sender,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs * e
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandlerVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandlerVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler_Invoke(This,sender,e) \
-    ( (This)->lpVtbl->Invoke(This,sender,e) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventHandler_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Delegate Microsoft.UI.Xaml.Media.TimelineMarkerRoutedEventHandler
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler_INTERFACE_DEFINED__
-/* [object, uuid("EADA0FFB-E81A-527D-B0DE-D263395D0D5A"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandlerVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject);
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler * This);
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler * This);
-HRESULT ( STDMETHODCALLTYPE *Invoke )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler * This,
-        /* [in] */IInspectable * sender,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs * e
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandlerVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandlerVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler_Invoke(This,sender,e) \
-    ( (This)->lpVtbl->Invoke(This,sender,e) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventHandler_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -28772,206 +26236,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixTransformStat
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Media.IMediaTransportControlsThumbnailRequestedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.MediaTransportControlsThumbnailRequestedEventArgs
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IMediaTransportControlsThumbnailRequestedEventArgs[] = L"Microsoft.UI.Xaml.Media.IMediaTransportControlsThumbnailRequestedEventArgs";
-/* [object, uuid("FE0FFB86-74B0-5031-ACCC-B34D0382A637"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *SetThumbnailImage )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs * This,
-        /* [in] */__x_ABI_CWindows_CStorage_CStreams_CIInputStream * source
-        );
-    HRESULT ( STDMETHODCALLTYPE *GetDeferral )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs * This,
-        /* [retval, out] */__x_ABI_CWindows_CFoundation_CIDeferral * * result
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgsVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_SetThumbnailImage(This,source) \
-    ( (This)->lpVtbl->SetThumbnailImage(This,source) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_GetDeferral(This,result) \
-    ( (This)->lpVtbl->GetDeferral(This,result) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.IPartialMediaFailureDetectedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.PartialMediaFailureDetectedEventArgs
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IPartialMediaFailureDetectedEventArgs[] = L"Microsoft.UI.Xaml.Media.IPartialMediaFailureDetectedEventArgs";
-/* [object, uuid("40292B1E-C3B7-5BBD-8E75-8926FADA3CE6"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_StreamKind )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs * This,
-        /* [retval, out] */__x_ABI_CWindows_CMedia_CPlayback_CFailedMediaStreamKind * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ExtendedError )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs * This,
-        /* [retval, out] */HRESULT * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgsVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_get_StreamKind(This,value) \
-    ( (This)->lpVtbl->get_StreamKind(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_get_ExtendedError(This,value) \
-    ( (This)->lpVtbl->get_ExtendedError(This,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPartialMediaFailureDetectedEventArgs_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Media.IPathFigure
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -31428,92 +28692,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics_INTERFACE_DEFINED__) */
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.IRateChangedRoutedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.RateChangedRoutedEventArgs
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRateChangedRoutedEventArgs[] = L"Microsoft.UI.Xaml.Media.IRateChangedRoutedEventArgs";
-/* [object, uuid("07873493-7BE3-5CA8-824F-EDCF3EA46BB7"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgsVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRateChangedRoutedEventArgs_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -34301,427 +31479,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrushStatics;
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Media.ITimelineMarker
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.TimelineMarker
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_ITimelineMarker[] = L"Microsoft.UI.Xaml.Media.ITimelineMarker";
-/* [object, uuid("0D8307EE-0BBB-5EE3-80A9-B953D83F1FA1"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Time )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * This,
-        /* [retval, out] */__x_ABI_CWindows_CFoundation_CTimeSpan * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_Time )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * This,
-        /* [in] */__x_ABI_CWindows_CFoundation_CTimeSpan value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Type )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * This,
-        /* [retval, out] */HSTRING * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_Type )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * This,
-        /* [in] */HSTRING value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Text )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * This,
-        /* [retval, out] */HSTRING * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_Text )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * This,
-        /* [in] */HSTRING value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_get_Time(This,value) \
-    ( (This)->lpVtbl->get_Time(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_put_Time(This,value) \
-    ( (This)->lpVtbl->put_Time(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_get_Type(This,value) \
-    ( (This)->lpVtbl->get_Type(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_put_Type(This,value) \
-    ( (This)->lpVtbl->put_Type(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_get_Text(This,value) \
-    ( (This)->lpVtbl->get_Text(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_put_Text(This,value) \
-    ( (This)->lpVtbl->put_Text(This,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.ITimelineMarkerCollection
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.TimelineMarkerCollection
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_ITimelineMarkerCollection[] = L"Microsoft.UI.Xaml.Media.ITimelineMarkerCollection";
-/* [object, uuid("18E3ED41-9E59-5EF1-9252-BEDEA8CC6FC5"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollectionVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollectionVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollectionVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerCollection_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.ITimelineMarkerRoutedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.TimelineMarkerRoutedEventArgs
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_ITimelineMarkerRoutedEventArgs[] = L"Microsoft.UI.Xaml.Media.ITimelineMarkerRoutedEventArgs";
-/* [object, uuid("44094816-6F81-5BA1-9548-233F72F93056"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Marker )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_Marker )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarker * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgsVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_get_Marker(This,value) \
-    ( (This)->lpVtbl->get_Marker(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_put_Marker(This,value) \
-    ( (This)->lpVtbl->put_Marker(This,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerRoutedEventArgs_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.ITimelineMarkerStatics
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.TimelineMarker
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_ITimelineMarkerStatics[] = L"Microsoft.UI.Xaml.Media.ITimelineMarkerStatics";
-/* [object, uuid("185FA9E3-90F1-5A6D-979F-4C71EA283BF6"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStaticsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_TimeProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_TypeProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_TextProperty )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStaticsVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStaticsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_get_TimeProperty(This,value) \
-    ( (This)->lpVtbl->get_TimeProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_get_TypeProperty(This,value) \
-    ( (This)->lpVtbl->get_TypeProperty(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_get_TextProperty(This,value) \
-    ( (This)->lpVtbl->get_TextProperty(This,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITimelineMarkerStatics_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Media.ITransform
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -35855,209 +32612,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverride
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverrides;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverrides_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.IXamlCompositionBrushBaseOverridesPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IXamlCompositionBrushBaseOverridesPrivate[] = L"Microsoft.UI.Xaml.Media.IXamlCompositionBrushBaseOverridesPrivate";
-/* [object, uuid("8379ABB1-27CB-5C26-B766-A56CC31939C2"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *OnElementConnected )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject * element
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_OnElementConnected(This,element) \
-    ( (This)->lpVtbl->OnElementConnected(This,element) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverridesPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.IXamlCompositionBrushBasePrivates
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IXamlCompositionBrushBasePrivates[] = L"Microsoft.UI.Xaml.Media.IXamlCompositionBrushBasePrivates";
-/* [object, uuid("5B4B1E3E-B69A-5476-89E8-1D559A446D1A"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivatesVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *SetBrushForXamlRoot )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates * This,
-        /* [in] */IInspectable * xamlRoot,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CComposition_CICompositionBrush * brush
-        );
-    HRESULT ( STDMETHODCALLTYPE *GetBrushForXamlRoot )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates * This,
-        /* [in] */IInspectable * xamlRoot,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CComposition_CICompositionBrush * * result
-        );
-    HRESULT ( STDMETHODCALLTYPE *ClearBrushForXamlRoot )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates * This,
-        /* [in] */IInspectable * xamlRoot,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CComposition_CICompositionBrush * brush
-        );
-    HRESULT ( STDMETHODCALLTYPE *ClearCompositionBrushMap )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates * This
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivatesVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivatesVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_SetBrushForXamlRoot(This,xamlRoot,brush) \
-    ( (This)->lpVtbl->SetBrushForXamlRoot(This,xamlRoot,brush) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_GetBrushForXamlRoot(This,xamlRoot,result) \
-    ( (This)->lpVtbl->GetBrushForXamlRoot(This,xamlRoot,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_ClearBrushForXamlRoot(This,xamlRoot,brush) \
-    ( (This)->lpVtbl->ClearBrushForXamlRoot(This,xamlRoot,brush) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_ClearCompositionBrushMap(This) \
-    ( (This)->lpVtbl->ClearCompositionBrushMap(This) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBasePrivates_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -37570,55 +34124,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
- * Class Microsoft.UI.Xaml.Media.MediaTransportControlsThumbnailRequestedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Media.IMediaTransportControlsThumbnailRequestedEventArgs ** Default Interface **
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_MediaTransportControlsThumbnailRequestedEventArgs_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Media_MediaTransportControlsThumbnailRequestedEventArgs_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_MediaTransportControlsThumbnailRequestedEventArgs[] = L"Microsoft.UI.Xaml.Media.MediaTransportControlsThumbnailRequestedEventArgs";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Media.PartialMediaFailureDetectedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via RoActivateInstance starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Media.IPartialMediaFailureDetectedEventArgs ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_PartialMediaFailureDetectedEventArgs_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Media_PartialMediaFailureDetectedEventArgs_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_PartialMediaFailureDetectedEventArgs[] = L"Microsoft.UI.Xaml.Media.PartialMediaFailureDetectedEventArgs";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Class Microsoft.UI.Xaml.Media.PathFigure
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -37982,33 +34487,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
- * Class Microsoft.UI.Xaml.Media.RateChangedRoutedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via RoActivateInstance starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Media.IRateChangedRoutedEventArgs ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_RateChangedRoutedEventArgs_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Media_RateChangedRoutedEventArgs_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_RateChangedRoutedEventArgs[] = L"Microsoft.UI.Xaml.Media.RateChangedRoutedEventArgs";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Class Microsoft.UI.Xaml.Media.RectangleGeometry
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -38334,92 +34812,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_TileBrush[] = L"Microsoft.UI.Xaml.Media.TileBrush";
 #endif
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Media.TimelineMarker
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via RoActivateInstance starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Xaml.Media.ITimelineMarkerStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Media.ITimelineMarker ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_TimelineMarker_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Media_TimelineMarker_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_TimelineMarker[] = L"Microsoft.UI.Xaml.Media.TimelineMarker";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Media.TimelineMarkerCollection
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via RoActivateInstance starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Media.ITimelineMarkerCollection ** Default Interface **
- *    Windows.Foundation.Collections.IVector_1_Microsoft.UI.Xaml.Media.TimelineMarker
- *    Windows.Foundation.Collections.IIterable_1_Microsoft.UI.Xaml.Media.TimelineMarker
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_TimelineMarkerCollection_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Media_TimelineMarkerCollection_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_TimelineMarkerCollection[] = L"Microsoft.UI.Xaml.Media.TimelineMarkerCollection";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Media.TimelineMarkerRoutedEventArgs
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via RoActivateInstance starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Media.ITimelineMarkerRoutedEventArgs ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_TimelineMarkerRoutedEventArgs_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Media_TimelineMarkerRoutedEventArgs_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_TimelineMarkerRoutedEventArgs[] = L"Microsoft.UI.Xaml.Media.TimelineMarkerRoutedEventArgs";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*

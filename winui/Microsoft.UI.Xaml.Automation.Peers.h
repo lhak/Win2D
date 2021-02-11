@@ -57,14 +57,6 @@
 #define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
@@ -248,25 +240,6 @@
 
 #if defined(__cplusplus) && !defined(CINTERFACE)
 /* Forward Declarations */
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface FrameworkElementAutomationPeerPrivate;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate ABI::Microsoft::UI::Xaml::Automation::Peers::FrameworkElementAutomationPeerPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAnimatedVisualPlayerAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAnimatedVisualPlayerAutomationPeer_FWD_DEFINED__
 namespace ABI {
@@ -571,25 +544,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerOverrides_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface IAutomationPeerPrivate;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate ABI::Microsoft::UI::Xaml::Automation::Peers::IAutomationPeerPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerProtected_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerProtected_FWD_DEFINED__
 namespace ABI {
@@ -741,44 +695,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICalendarDatePickerAutomationPeerFactory ABI::Microsoft::UI::Xaml::Automation::Peers::ICalendarDatePickerAutomationPeerFactory
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICalendarDatePickerAutomationPeerFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface ICaptureElementAutomationPeer;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer ABI::Microsoft::UI::Xaml::Automation::Peers::ICaptureElementAutomationPeer
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface ICaptureElementAutomationPeerFactory;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory ABI::Microsoft::UI::Xaml::Automation::Peers::ICaptureElementAutomationPeerFactory
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICheckBoxAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICheckBoxAutomationPeer_FWD_DEFINED__
@@ -1102,6 +1018,44 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIDropDownButtonAutomationPeerFactory ABI::Microsoft::UI::Xaml::Automation::Peers::IDropDownButtonAutomationPeerFactory
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIDropDownButtonAutomationPeerFactory_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        interface IExpanderAutomationPeer;
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer ABI::Microsoft::UI::Xaml::Automation::Peers::IExpanderAutomationPeer
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        interface IExpanderAutomationPeerFactory;
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory ABI::Microsoft::UI::Xaml::Automation::Peers::IExpanderAutomationPeerFactory
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIFlipViewAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIFlipViewAutomationPeer_FWD_DEFINED__
@@ -1654,6 +1608,44 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIImageAutomationPeerFactory_FWD_DEFINED__
 
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        interface IInfoBarAutomationPeer;
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer ABI::Microsoft::UI::Xaml::Automation::Peers::IInfoBarAutomationPeer
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        interface IInfoBarAutomationPeerFactory;
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory ABI::Microsoft::UI::Xaml::Automation::Peers::IInfoBarAutomationPeerFactory
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_FWD_DEFINED__
+
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIItemAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIItemAutomationPeer_FWD_DEFINED__
 namespace ABI {
@@ -2167,120 +2159,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CILoopingSelectorItemDataAutomationPeer_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface IMediaElementAutomationPeer;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer ABI::Microsoft::UI::Xaml::Automation::Peers::IMediaElementAutomationPeer
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface IMediaElementAutomationPeerFactory;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory ABI::Microsoft::UI::Xaml::Automation::Peers::IMediaElementAutomationPeerFactory
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface IMediaPlayerElementAutomationPeer;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer ABI::Microsoft::UI::Xaml::Automation::Peers::IMediaPlayerElementAutomationPeer
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface IMediaPlayerElementAutomationPeerFactory;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory ABI::Microsoft::UI::Xaml::Automation::Peers::IMediaPlayerElementAutomationPeerFactory
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface IMediaTransportControlsAutomationPeer;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer ABI::Microsoft::UI::Xaml::Automation::Peers::IMediaTransportControlsAutomationPeer
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface IMediaTransportControlsAutomationPeerFactory;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory ABI::Microsoft::UI::Xaml::Automation::Peers::IMediaTransportControlsAutomationPeerFactory
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMenuBarAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMenuBarAutomationPeer_FWD_DEFINED__
 namespace ABI {
@@ -2546,6 +2424,44 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINumberBoxAutomationPeerFactory ABI::Microsoft::UI::Xaml::Automation::Peers::INumberBoxAutomationPeerFactory
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINumberBoxAutomationPeerFactory_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        interface IPagerControlAutomationPeer;
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer ABI::Microsoft::UI::Xaml::Automation::Peers::IPagerControlAutomationPeer
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        interface IPagerControlAutomationPeerFactory;
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory ABI::Microsoft::UI::Xaml::Automation::Peers::IPagerControlAutomationPeerFactory
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPasswordBoxAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPasswordBoxAutomationPeer_FWD_DEFINED__
@@ -3174,6 +3090,44 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollBarAutomationPeerFactory_FWD_DEFINED__
 
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        interface IScrollPresenterAutomationPeer;
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer ABI::Microsoft::UI::Xaml::Automation::Peers::IScrollPresenterAutomationPeer
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        interface IScrollPresenterAutomationPeerFactory;
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory ABI::Microsoft::UI::Xaml::Automation::Peers::IScrollPresenterAutomationPeerFactory
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_FWD_DEFINED__
+
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollViewerAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollViewerAutomationPeer_FWD_DEFINED__
 namespace ABI {
@@ -3211,44 +3165,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollViewerAutomationPeerFactory ABI::Microsoft::UI::Xaml::Automation::Peers::IScrollViewerAutomationPeerFactory
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollViewerAutomationPeerFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface IScrollerAutomationPeer;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer ABI::Microsoft::UI::Xaml::Automation::Peers::IScrollerAutomationPeer
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface IScrollerAutomationPeerFactory;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory ABI::Microsoft::UI::Xaml::Automation::Peers::IScrollerAutomationPeerFactory
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CISelectorAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CISelectorAutomationPeer_FWD_DEFINED__
@@ -4981,36 +4897,6 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Controls {
-                    class CaptureElement;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CICaptureElement_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CICaptureElement_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    interface ICaptureElement;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CICaptureElement ABI::Microsoft::UI::Xaml::Controls::ICaptureElement
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CICaptureElement_FWD_DEFINED__
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
                     class CheckBox;
                 } /* Controls */
             } /* Xaml */
@@ -5154,6 +5040,36 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIDropDownButton ABI::Microsoft::UI::Xaml::Controls::IDropDownButton
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIDropDownButton_FWD_DEFINED__
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    class Expander;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIExpander_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIExpander_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    interface IExpander;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIExpander ABI::Microsoft::UI::Xaml::Controls::IExpander
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIExpander_FWD_DEFINED__
 
 
 namespace ABI {
@@ -5491,6 +5407,36 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Controls {
+                    class InfoBar;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIInfoBar_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIInfoBar_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    interface IInfoBar;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIInfoBar ABI::Microsoft::UI::Xaml::Controls::IInfoBar
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIInfoBar_FWD_DEFINED__
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
                     class ItemsControl;
                 } /* Controls */
             } /* Xaml */
@@ -5761,96 +5707,6 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Controls {
-                    class MediaElement;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    interface IMediaElement;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement ABI::Microsoft::UI::Xaml::Controls::IMediaElement
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement_FWD_DEFINED__
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    class MediaPlayerElement;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaPlayerElement_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaPlayerElement_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    interface IMediaPlayerElement;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaPlayerElement ABI::Microsoft::UI::Xaml::Controls::IMediaPlayerElement
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaPlayerElement_FWD_DEFINED__
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    class MediaTransportControls;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    interface IMediaTransportControls;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls ABI::Microsoft::UI::Xaml::Controls::IMediaTransportControls
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls_FWD_DEFINED__
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
                     class MenuBar;
                 } /* Controls */
             } /* Xaml */
@@ -6054,6 +5910,36 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CINumberBox ABI::Microsoft::UI::Xaml::Controls::INumberBox
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CINumberBox_FWD_DEFINED__
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    class PagerControl;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPagerControl_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPagerControl_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Controls {
+                    interface IPagerControl;
+                } /* Controls */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPagerControl ABI::Microsoft::UI::Xaml::Controls::IPagerControl
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPagerControl_FWD_DEFINED__
 
 
 namespace ABI {
@@ -6390,7 +6276,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        class Scroller;
+                        class ScrollPresenter;
                     } /* Primitives */
                 } /* Controls */
             } /* Xaml */
@@ -6398,24 +6284,24 @@ namespace ABI {
     } /* Microsoft */
 } /* ABI */
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_FWD_DEFINED__
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_FWD_DEFINED__
 namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Xaml {
                 namespace Controls {
                     namespace Primitives {
-                        interface IScroller;
+                        interface IScrollPresenter;
                     } /* Primitives */
                 } /* Controls */
             } /* Xaml */
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller
+#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter
 
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_FWD_DEFINED__
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_FWD_DEFINED__
 
 
 namespace ABI {
@@ -7271,7 +7157,6 @@ namespace ABI {
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkElement_FWD_DEFINED__
 
 
-
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -7727,10 +7612,6 @@ namespace ABI {
 
 
 
-
-
-
-
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -7845,21 +7726,6 @@ namespace ABI {
                 namespace Automation {
                     namespace Peers {
                         class CalendarDatePickerAutomationPeer;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        class CaptureElementAutomationPeer;
                     } /* Peers */
                 } /* Automation */
             } /* Xaml */
@@ -7995,6 +7861,21 @@ namespace ABI {
                 namespace Automation {
                     namespace Peers {
                         class DropDownButtonAutomationPeer;
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        class ExpanderAutomationPeer;
                     } /* Peers */
                 } /* Automation */
             } /* Xaml */
@@ -8205,6 +8086,21 @@ namespace ABI {
                 namespace Automation {
                     namespace Peers {
                         class ImageAutomationPeer;
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        class InfoBarAutomationPeer;
                     } /* Peers */
                 } /* Automation */
             } /* Xaml */
@@ -8444,51 +8340,6 @@ namespace ABI {
             namespace Xaml {
                 namespace Automation {
                     namespace Peers {
-                        class MediaElementAutomationPeer;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        class MediaPlayerElementAutomationPeer;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        class MediaTransportControlsAutomationPeer;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
                         class MenuBarAutomationPeer;
                     } /* Peers */
                 } /* Automation */
@@ -8580,6 +8431,21 @@ namespace ABI {
                 namespace Automation {
                     namespace Peers {
                         class NumberBoxAutomationPeer;
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        class PagerControlAutomationPeer;
                     } /* Peers */
                 } /* Automation */
             } /* Xaml */
@@ -8849,7 +8715,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Automation {
                     namespace Peers {
-                        class ScrollViewerAutomationPeer;
+                        class ScrollPresenterAutomationPeer;
                     } /* Peers */
                 } /* Automation */
             } /* Xaml */
@@ -8864,7 +8730,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Automation {
                     namespace Peers {
-                        class ScrollerAutomationPeer;
+                        class ScrollViewerAutomationPeer;
                     } /* Peers */
                 } /* Automation */
             } /* Xaml */
@@ -9741,50 +9607,6 @@ namespace ABI {
     } /* Microsoft */
 } /* ABI */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeerPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_FrameworkElementAutomationPeerPrivate[] = L"Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeerPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, uuid("099C9F27-FE99-5168-8338-11E7027C0193"), contract] */
-                        MIDL_INTERFACE("099C9F27-FE99-5168-8338-11E7027C0193")
-                        FrameworkElementAutomationPeerPrivate : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE GetAutomationPeersForChildrenOfElement(
-                                /* [in] */ABI::Microsoft::UI::Xaml::IUIElement * element,
-                                /* [retval, out] */__FIVector_1_Microsoft__CUI__CXaml__CAutomation__CPeers__CAutomationPeer * * result
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_FrameworkElementAutomationPeerPrivate=_uuidof(FrameworkElementAutomationPeerPrivate);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -10835,47 +10657,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomat
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IAutomationPeerPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IAutomationPeerPrivate[] = L"Microsoft.UI.Xaml.Automation.Peers.IAutomationPeerPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, uuid("00A70D4A-4F3F-5BBD-8DB3-6179EB2D91D2"), contract] */
-                        MIDL_INTERFACE("00A70D4A-4F3F-5BBD-8DB3-6179EB2D91D2")
-                        IAutomationPeerPrivate : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE SetAutomationFocus(void) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IAutomationPeerPrivate=_uuidof(IAutomationPeerPrivate);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Automation.Peers.IAutomationPeerProtected
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -11249,98 +11030,6 @@ namespace ABI {
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICalendarDatePickerAutomationPeerFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICalendarDatePickerAutomationPeerFactory_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.ICaptureElementAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.CaptureElementAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_ICaptureElementAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.ICaptureElementAutomationPeer";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, uuid("F14F1866-8587-5C46-AD52-97E99072DCD5"), exclusiveto, contract] */
-                        MIDL_INTERFACE("F14F1866-8587-5C46-AD52-97E99072DCD5")
-                        ICaptureElementAutomationPeer : public IInspectable
-                        {
-                        public:
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_ICaptureElementAutomationPeer=_uuidof(ICaptureElementAutomationPeer);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.ICaptureElementAutomationPeerFactory
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.CaptureElementAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_ICaptureElementAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.ICaptureElementAutomationPeerFactory";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, uuid("E7CF7375-88D3-5CF0-B8F9-9D2100BCA54D"), exclusiveto, contract] */
-                        MIDL_INTERFACE("E7CF7375-88D3-5CF0-B8F9-9D2100BCA54D")
-                        ICaptureElementAutomationPeerFactory : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateInstanceWithOwner(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::ICaptureElement * owner,
-                                /* [in] */IInspectable * baseInterface,
-                                /* [out] */IInspectable * * innerInterface,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Automation::Peers::ICaptureElementAutomationPeer * * value
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_ICaptureElementAutomationPeerFactory=_uuidof(ICaptureElementAutomationPeerFactory);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -12091,6 +11780,96 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIDropDownButtonAutomationPeerFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIDropDownButtonAutomationPeerFactory_INTERFACE_DEFINED__) */
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Automation.Peers.IExpanderAutomationPeer
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ExpanderAutomationPeer
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IExpanderAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IExpanderAutomationPeer";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        /* [object, version, uuid("F7527408-CC89-5B65-BBDE-EAE6D66DC3E5"), experimental, exclusiveto] */
+                        MIDL_INTERFACE("F7527408-CC89-5B65-BBDE-EAE6D66DC3E5")
+                        IExpanderAutomationPeer : public IInspectable
+                        {
+                        public:
+                            
+                        };
+
+                        extern MIDL_CONST_ID IID & IID_IExpanderAutomationPeer=_uuidof(IExpanderAutomationPeer);
+                        
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Automation.Peers.IExpanderAutomationPeerFactory
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ExpanderAutomationPeer
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IExpanderAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IExpanderAutomationPeerFactory";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        /* [object, version, uuid("2024523B-4A40-5976-AAAB-0F05664F7494"), experimental, exclusiveto] */
+                        MIDL_INTERFACE("2024523B-4A40-5976-AAAB-0F05664F7494")
+                        IExpanderAutomationPeerFactory : public IInspectable
+                        {
+                        public:
+                            virtual HRESULT STDMETHODCALLTYPE CreateInstance(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IExpander * owner,
+                                /* [in] */IInspectable * baseInterface,
+                                /* [out] */IInspectable * * innerInterface,
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Automation::Peers::IExpanderAutomationPeer * * value
+                                ) = 0;
+                            
+                        };
+
+                        extern MIDL_CONST_ID IID & IID_IExpanderAutomationPeerFactory=_uuidof(IExpanderAutomationPeerFactory);
+                        
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -13439,6 +13218,88 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIImageAu
 
 /*
  *
+ * Interface Microsoft.UI.Xaml.Automation.Peers.IInfoBarAutomationPeer
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.InfoBarAutomationPeer
+ *
+ *
+ */
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IInfoBarAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IInfoBarAutomationPeer";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        /* [object, version, uuid("AA2C40EB-DF80-5050-92C5-5FDA5ABFDEF2"), exclusiveto] */
+                        MIDL_INTERFACE("AA2C40EB-DF80-5050-92C5-5FDA5ABFDEF2")
+                        IInfoBarAutomationPeer : public IInspectable
+                        {
+                        public:
+                            
+                        };
+
+                        extern MIDL_CONST_ID IID & IID_IInfoBarAutomationPeer=_uuidof(IInfoBarAutomationPeer);
+                        
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_INTERFACE_DEFINED__) */
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Automation.Peers.IInfoBarAutomationPeerFactory
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.InfoBarAutomationPeer
+ *
+ *
+ */
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IInfoBarAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IInfoBarAutomationPeerFactory";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        /* [object, version, uuid("5FD3E590-68B9-5C9C-A572-0BC10167CE46"), exclusiveto] */
+                        MIDL_INTERFACE("5FD3E590-68B9-5C9C-A572-0BC10167CE46")
+                        IInfoBarAutomationPeerFactory : public IInspectable
+                        {
+                        public:
+                            virtual HRESULT STDMETHODCALLTYPE CreateInstance(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IInfoBar * owner,
+                                /* [in] */IInspectable * baseInterface,
+                                /* [out] */IInspectable * * innerInterface,
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Automation::Peers::IInfoBarAutomationPeer * * value
+                                ) = 0;
+                            
+                        };
+
+                        extern MIDL_CONST_ID IID & IID_IInfoBarAutomationPeerFactory=_uuidof(IInfoBarAutomationPeerFactory);
+                        
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_INTERFACE_DEFINED__) */
+
+
+/*
+ *
  * Interface Microsoft.UI.Xaml.Automation.Peers.IItemAutomationPeer
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -14683,282 +14544,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CILooping
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IMediaElementAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.MediaElementAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IMediaElementAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IMediaElementAutomationPeer";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, uuid("91955284-23AC-5336-AE2A-4AC1B8970C59"), exclusiveto, contract] */
-                        MIDL_INTERFACE("91955284-23AC-5336-AE2A-4AC1B8970C59")
-                        IMediaElementAutomationPeer : public IInspectable
-                        {
-                        public:
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IMediaElementAutomationPeer=_uuidof(IMediaElementAutomationPeer);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IMediaElementAutomationPeerFactory
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.MediaElementAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IMediaElementAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IMediaElementAutomationPeerFactory";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, uuid("02E3425F-E698-5C1D-9C24-5889848A696F"), exclusiveto, contract] */
-                        MIDL_INTERFACE("02E3425F-E698-5C1D-9C24-5889848A696F")
-                        IMediaElementAutomationPeerFactory : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateInstanceWithOwner(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IMediaElement * owner,
-                                /* [in] */IInspectable * baseInterface,
-                                /* [out] */IInspectable * * innerInterface,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Automation::Peers::IMediaElementAutomationPeer * * value
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IMediaElementAutomationPeerFactory=_uuidof(IMediaElementAutomationPeerFactory);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IMediaPlayerElementAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.MediaPlayerElementAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IMediaPlayerElementAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IMediaPlayerElementAutomationPeer";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, uuid("F68B8CA2-4428-5C35-B6A8-1B2EA062C22C"), exclusiveto, contract] */
-                        MIDL_INTERFACE("F68B8CA2-4428-5C35-B6A8-1B2EA062C22C")
-                        IMediaPlayerElementAutomationPeer : public IInspectable
-                        {
-                        public:
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IMediaPlayerElementAutomationPeer=_uuidof(IMediaPlayerElementAutomationPeer);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IMediaPlayerElementAutomationPeerFactory
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.MediaPlayerElementAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IMediaPlayerElementAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IMediaPlayerElementAutomationPeerFactory";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, uuid("2AE1AA11-7A7C-5580-A7D7-F7597859BDC2"), exclusiveto, contract] */
-                        MIDL_INTERFACE("2AE1AA11-7A7C-5580-A7D7-F7597859BDC2")
-                        IMediaPlayerElementAutomationPeerFactory : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateInstanceWithOwner(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IMediaPlayerElement * owner,
-                                /* [in] */IInspectable * baseInterface,
-                                /* [out] */IInspectable * * innerInterface,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Automation::Peers::IMediaPlayerElementAutomationPeer * * value
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IMediaPlayerElementAutomationPeerFactory=_uuidof(IMediaPlayerElementAutomationPeerFactory);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IMediaTransportControlsAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.MediaTransportControlsAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IMediaTransportControlsAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IMediaTransportControlsAutomationPeer";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, uuid("DA850D4E-8715-5AE7-81A9-ABD10D17C1ED"), exclusiveto, contract] */
-                        MIDL_INTERFACE("DA850D4E-8715-5AE7-81A9-ABD10D17C1ED")
-                        IMediaTransportControlsAutomationPeer : public IInspectable
-                        {
-                        public:
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IMediaTransportControlsAutomationPeer=_uuidof(IMediaTransportControlsAutomationPeer);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IMediaTransportControlsAutomationPeerFactory
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.MediaTransportControlsAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IMediaTransportControlsAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IMediaTransportControlsAutomationPeerFactory";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, uuid("77F281E1-CB51-5360-B74E-6FE4F8EE5028"), exclusiveto, contract] */
-                        MIDL_INTERFACE("77F281E1-CB51-5360-B74E-6FE4F8EE5028")
-                        IMediaTransportControlsAutomationPeerFactory : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateInstanceWithOwner(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IMediaTransportControls * owner,
-                                /* [in] */IInspectable * baseInterface,
-                                /* [out] */IInspectable * * innerInterface,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Automation::Peers::IMediaTransportControlsAutomationPeer * * value
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IMediaTransportControlsAutomationPeerFactory=_uuidof(IMediaTransportControlsAutomationPeerFactory);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Automation.Peers.IMenuBarAutomationPeer
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.MenuBarAutomationPeer
@@ -15309,10 +14894,13 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMenuFly
  *
  * Interface Microsoft.UI.Xaml.Automation.Peers.INavigationViewAutomationPeer
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.NavigationViewAutomationPeer
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeer_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeer_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_INavigationViewAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.INavigationViewAutomationPeer";
@@ -15322,7 +14910,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Automation {
                     namespace Peers {
-                        /* [object, version, uuid("72013EAE-B015-550D-BA8D-A05112B62731"), exclusiveto] */
+                        /* [object, version, uuid("72013EAE-B015-550D-BA8D-A05112B62731"), experimental, exclusiveto] */
                         MIDL_INTERFACE("72013EAE-B015-550D-BA8D-A05112B62731")
                         INavigationViewAutomationPeer : public IInspectable
                         {
@@ -15341,16 +14929,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeer;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeer_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Automation.Peers.INavigationViewAutomationPeerFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.NavigationViewAutomationPeer
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeerFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeerFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_INavigationViewAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.INavigationViewAutomationPeerFactory";
@@ -15360,7 +14952,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Automation {
                     namespace Peers {
-                        /* [object, version, uuid("75075B03-A2F7-5869-B23C-63CBE5ACC43A"), exclusiveto] */
+                        /* [object, version, uuid("75075B03-A2F7-5869-B23C-63CBE5ACC43A"), experimental, exclusiveto] */
                         MIDL_INTERFACE("75075B03-A2F7-5869-B23C-63CBE5ACC43A")
                         INavigationViewAutomationPeerFactory : public IInspectable
                         {
@@ -15385,6 +14977,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeerFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeerFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -15549,6 +15142,96 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINumberBoxAutomationPeerFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINumberBoxAutomationPeerFactory_INTERFACE_DEFINED__) */
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeer
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IPagerControlAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeer";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        /* [object, version, uuid("426B3254-1C6E-5F23-B58D-0378C34BDAF6"), experimental, exclusiveto] */
+                        MIDL_INTERFACE("426B3254-1C6E-5F23-B58D-0378C34BDAF6")
+                        IPagerControlAutomationPeer : public IInspectable
+                        {
+                        public:
+                            
+                        };
+
+                        extern MIDL_CONST_ID IID & IID_IPagerControlAutomationPeer=_uuidof(IPagerControlAutomationPeer);
+                        
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeerFactory
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IPagerControlAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeerFactory";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        /* [object, version, uuid("E35F3D24-484D-5AF2-8A0C-6F1EDA4691FA"), experimental, exclusiveto] */
+                        MIDL_INTERFACE("E35F3D24-484D-5AF2-8A0C-6F1EDA4691FA")
+                        IPagerControlAutomationPeerFactory : public IInspectable
+                        {
+                        public:
+                            virtual HRESULT STDMETHODCALLTYPE CreateInstance(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IPagerControl * owner,
+                                /* [in] */IInspectable * baseInterface,
+                                /* [out] */IInspectable * * innerInterface,
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Automation::Peers::IPagerControlAutomationPeer * * value
+                                ) = 0;
+                            
+                        };
+
+                        extern MIDL_CONST_ID IID & IID_IPagerControlAutomationPeerFactory=_uuidof(IPagerControlAutomationPeerFactory);
+                        
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -17033,6 +16716,96 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollB
 
 /*
  *
+ * Interface Microsoft.UI.Xaml.Automation.Peers.IScrollPresenterAutomationPeer
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ScrollPresenterAutomationPeer
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IScrollPresenterAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IScrollPresenterAutomationPeer";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        /* [object, version, uuid("995A6964-607F-5D95-BDF9-1870A5E82A0C"), experimental, exclusiveto] */
+                        MIDL_INTERFACE("995A6964-607F-5D95-BDF9-1870A5E82A0C")
+                        IScrollPresenterAutomationPeer : public IInspectable
+                        {
+                        public:
+                            
+                        };
+
+                        extern MIDL_CONST_ID IID & IID_IScrollPresenterAutomationPeer=_uuidof(IScrollPresenterAutomationPeer);
+                        
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Automation.Peers.IScrollPresenterAutomationPeerFactory
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ScrollPresenterAutomationPeer
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IScrollPresenterAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IScrollPresenterAutomationPeerFactory";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Automation {
+                    namespace Peers {
+                        /* [object, version, uuid("47E29168-5E30-5ABC-B844-7D89B5C3EEC0"), experimental, exclusiveto] */
+                        MIDL_INTERFACE("47E29168-5E30-5ABC-B844-7D89B5C3EEC0")
+                        IScrollPresenterAutomationPeerFactory : public IInspectable
+                        {
+                        public:
+                            virtual HRESULT STDMETHODCALLTYPE CreateInstance(
+                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IScrollPresenter * owner,
+                                /* [in] */IInspectable * baseInterface,
+                                /* [out] */IInspectable * * innerInterface,
+                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Automation::Peers::IScrollPresenterAutomationPeer * * value
+                                ) = 0;
+                            
+                        };
+
+                        extern MIDL_CONST_ID IID & IID_IScrollPresenterAutomationPeerFactory=_uuidof(IScrollPresenterAutomationPeerFactory);
+                        
+                    } /* Peers */
+                } /* Automation */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
  * Interface Microsoft.UI.Xaml.Automation.Peers.IScrollViewerAutomationPeer
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -17121,88 +16894,6 @@ namespace ABI {
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollViewerAutomationPeerFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollViewerAutomationPeerFactory_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IScrollerAutomationPeer
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ScrollerAutomationPeer
- *
- *
- */
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IScrollerAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IScrollerAutomationPeer";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, version, uuid("C821C7D9-3166-59DA-89C4-82FBE2A5F000"), exclusiveto] */
-                        MIDL_INTERFACE("C821C7D9-3166-59DA-89C4-82FBE2A5F000")
-                        IScrollerAutomationPeer : public IInspectable
-                        {
-                        public:
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IScrollerAutomationPeer=_uuidof(IScrollerAutomationPeer);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_INTERFACE_DEFINED__) */
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IScrollerAutomationPeerFactory
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ScrollerAutomationPeer
- *
- *
- */
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IScrollerAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IScrollerAutomationPeerFactory";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, version, uuid("ABF0A206-A0E7-5F58-B621-3F73903B678D"), exclusiveto] */
-                        MIDL_INTERFACE("ABF0A206-A0E7-5F58-B621-3F73903B678D")
-                        IScrollerAutomationPeerFactory : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateInstance(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::Primitives::IScroller * owner,
-                                /* [in] */IInspectable * baseInterface,
-                                /* [out] */IInspectable * * innerInterface,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Automation::Peers::IScrollerAutomationPeer * * value
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IScrollerAutomationPeerFactory=_uuidof(IScrollerAutomationPeerFactory);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_INTERFACE_DEFINED__) */
 
 
 /*
@@ -19260,30 +18951,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
- * Class Microsoft.UI.Xaml.Automation.Peers.CaptureElementAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.Peers.ICaptureElementAutomationPeer ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_CaptureElementAutomationPeer_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_CaptureElementAutomationPeer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_CaptureElementAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.CaptureElementAutomationPeer";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Class Microsoft.UI.Xaml.Automation.Peers.CheckBoxAutomationPeer
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -19486,6 +19153,30 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_DropDownButtonAutomationPeer_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_DropDownButtonAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.DropDownButtonAutomationPeer";
 #endif
+
+
+/*
+ *
+ * Class Microsoft.UI.Xaml.Automation.Peers.ExpanderAutomationPeer
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Class implements the following interfaces:
+ *    Microsoft.UI.Xaml.Automation.Peers.IExpanderAutomationPeer ** Default Interface **
+ *    Microsoft.UI.Xaml.Automation.Provider.IExpandCollapseProvider
+ *
+ * Class Threading Model:  Both Single and Multi Threaded Apartment
+ *
+ * Class Marshaling Behavior:  Agile - Class is agile
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ExpanderAutomationPeer_DEFINED
+#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ExpanderAutomationPeer_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_ExpanderAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.ExpanderAutomationPeer";
+#endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -19829,6 +19520,25 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_ImageAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.ImageAutomationPeer";
 #endif
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+
+
+/*
+ *
+ * Class Microsoft.UI.Xaml.Automation.Peers.InfoBarAutomationPeer
+ *
+ * Class implements the following interfaces:
+ *    Microsoft.UI.Xaml.Automation.Peers.IInfoBarAutomationPeer ** Default Interface **
+ *
+ * Class Threading Model:  Both Single and Multi Threaded Apartment
+ *
+ * Class Marshaling Behavior:  Agile - Class is agile
+ *
+ */
+
+#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_InfoBarAutomationPeer_DEFINED
+#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_InfoBarAutomationPeer_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_InfoBarAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.InfoBarAutomationPeer";
+#endif
 
 
 /*
@@ -20205,78 +19915,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
- * Class Microsoft.UI.Xaml.Automation.Peers.MediaElementAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.Peers.IMediaElementAutomationPeer ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_MediaElementAutomationPeer_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_MediaElementAutomationPeer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_MediaElementAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.MediaElementAutomationPeer";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Automation.Peers.MediaPlayerElementAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.Peers.IMediaPlayerElementAutomationPeer ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_MediaPlayerElementAutomationPeer_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_MediaPlayerElementAutomationPeer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_MediaPlayerElementAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.MediaPlayerElementAutomationPeer";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Automation.Peers.MediaTransportControlsAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.Peers.IMediaTransportControlsAutomationPeer ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_MediaTransportControlsAutomationPeer_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_MediaTransportControlsAutomationPeer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_MediaTransportControlsAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.MediaTransportControlsAutomationPeer";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Class Microsoft.UI.Xaml.Automation.Peers.MenuBarAutomationPeer
  *
  * Class implements the following interfaces:
@@ -20368,6 +20006,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Xaml.Automation.Peers.NavigationViewAutomationPeer
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Automation.Peers.INavigationViewAutomationPeer ** Default Interface **
  *
@@ -20376,11 +20016,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_NavigationViewAutomationPeer_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_NavigationViewAutomationPeer_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_NavigationViewAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.NavigationViewAutomationPeer";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -20389,6 +20031,7 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Automation.Peers.INavigationViewItemAutomationPeer ** Default Interface **
+ *    Microsoft.UI.Xaml.Automation.Provider.IExpandCollapseProvider
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
  *
@@ -20419,6 +20062,29 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_NumberBoxAutomationPeer_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_NumberBoxAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.NumberBoxAutomationPeer";
 #endif
+
+
+/*
+ *
+ * Class Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Class implements the following interfaces:
+ *    Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeer ** Default Interface **
+ *
+ * Class Threading Model:  Both Single and Multi Threaded Apartment
+ *
+ * Class Marshaling Behavior:  Agile - Class is agile
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_PagerControlAutomationPeer_DEFINED
+#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_PagerControlAutomationPeer_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_PagerControlAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer";
+#endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -20833,6 +20499,29 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
+ * Class Microsoft.UI.Xaml.Automation.Peers.ScrollPresenterAutomationPeer
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Class implements the following interfaces:
+ *    Microsoft.UI.Xaml.Automation.Peers.IScrollPresenterAutomationPeer ** Default Interface **
+ *
+ * Class Threading Model:  Both Single and Multi Threaded Apartment
+ *
+ * Class Marshaling Behavior:  Agile - Class is agile
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ScrollPresenterAutomationPeer_DEFINED
+#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ScrollPresenterAutomationPeer_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_ScrollPresenterAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.ScrollPresenterAutomationPeer";
+#endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
  * Class Microsoft.UI.Xaml.Automation.Peers.ScrollViewerAutomationPeer
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -20854,25 +20543,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_ScrollViewerAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.ScrollViewerAutomationPeer";
 #endif
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Automation.Peers.ScrollerAutomationPeer
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.Peers.IScrollerAutomationPeer ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ScrollerAutomationPeer_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ScrollerAutomationPeer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_ScrollerAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.ScrollerAutomationPeer";
-#endif
 
 
 /*
@@ -21352,12 +21022,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 #else // !defined(__cplusplus)
 /* Forward Declarations */
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAnimatedVisualPlayerAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAnimatedVisualPlayerAutomationPeer_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAnimatedVisualPlayerAutomationPeer __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAnimatedVisualPlayerAutomationPeer;
@@ -21454,12 +21118,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPe
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerOverrides_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerProtected_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerProtected_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerProtected __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerProtected;
@@ -21507,18 +21165,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICalendarDate
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICalendarDatePickerAutomationPeerFactory __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICalendarDatePickerAutomationPeerFactory;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICalendarDatePickerAutomationPeerFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICheckBoxAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICheckBoxAutomationPeer_FWD_DEFINED__
@@ -21621,6 +21267,18 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIDropDownButt
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIDropDownButtonAutomationPeerFactory __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIDropDownButtonAutomationPeerFactory;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIDropDownButtonAutomationPeerFactory_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIFlipViewAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIFlipViewAutomationPeer_FWD_DEFINED__
@@ -21796,6 +21454,18 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIImageAutomat
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIImageAutomationPeerFactory_FWD_DEFINED__
 
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_FWD_DEFINED__
+
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIItemAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIItemAutomationPeer_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIItemAutomationPeer __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIItemAutomationPeer;
@@ -21958,42 +21628,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CILoopingSelec
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CILoopingSelectorItemDataAutomationPeer_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMenuBarAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMenuBarAutomationPeer_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMenuBarAutomationPeer __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMenuBarAutomationPeer;
@@ -22077,6 +21711,18 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINumberBoxAut
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINumberBoxAutomationPeerFactory __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINumberBoxAutomationPeerFactory;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINumberBoxAutomationPeerFactory_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPasswordBoxAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPasswordBoxAutomationPeer_FWD_DEFINED__
@@ -22276,6 +21922,18 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollBarAut
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollBarAutomationPeerFactory_FWD_DEFINED__
 
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_FWD_DEFINED__
+
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollViewerAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollViewerAutomationPeer_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollViewerAutomationPeer __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollViewerAutomationPeer;
@@ -22287,18 +21945,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollViewer
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollViewerAutomationPeerFactory __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollViewerAutomationPeerFactory;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollViewerAutomationPeerFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CISelectorAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CISelectorAutomationPeer_FWD_DEFINED__
@@ -23815,13 +23461,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CICalendarDatePicker __
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CICalendarDatePicker_FWD_DEFINED__
 
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CICaptureElement_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CICaptureElement_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CICaptureElement __x_ABI_CMicrosoft_CUI_CXaml_CControls_CICaptureElement;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CICaptureElement_FWD_DEFINED__
-
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CICheckBox_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CICheckBox_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CICheckBox __x_ABI_CMicrosoft_CUI_CXaml_CControls_CICheckBox;
@@ -23855,6 +23494,13 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIDatePicker __x_ABI_CM
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIDropDownButton __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIDropDownButton;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIDropDownButton_FWD_DEFINED__
+
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIExpander_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIExpander_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIExpander __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIExpander;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIExpander_FWD_DEFINED__
 
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIFlipView_FWD_DEFINED__
@@ -23934,6 +23580,13 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIImage __x_ABI_CMicros
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIImage_FWD_DEFINED__
 
 
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIInfoBar_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIInfoBar_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIInfoBar __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIInfoBar;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIInfoBar_FWD_DEFINED__
+
+
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIItemsControl_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIItemsControl_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIItemsControl __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIItemsControl;
@@ -23997,27 +23650,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIListViewItem __x_ABI_
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIListViewItem_FWD_DEFINED__
 
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement_FWD_DEFINED__
-
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaPlayerElement_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaPlayerElement_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaPlayerElement __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaPlayerElement;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaPlayerElement_FWD_DEFINED__
-
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls_FWD_DEFINED__
-
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMenuBar_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMenuBar_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMenuBar __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMenuBar;
@@ -24065,6 +23697,13 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CINavigationViewItem __
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CINumberBox __x_ABI_CMicrosoft_CUI_CXaml_CControls_CINumberBox;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CINumberBox_FWD_DEFINED__
+
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPagerControl_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPagerControl_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPagerControl __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPagerControl;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPagerControl_FWD_DEFINED__
 
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPasswordBox_FWD_DEFINED__
@@ -24141,11 +23780,11 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollBar
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollBar_FWD_DEFINED__
 
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller;
+#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter;
 
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller_FWD_DEFINED__
+#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter_FWD_DEFINED__
 
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CISelector_FWD_DEFINED__
@@ -24353,7 +23992,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkElement __x_ABI_CMicro
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkElement_FWD_DEFINED__
 
 
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElement_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElement_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIUIElement __x_ABI_CMicrosoft_CUI_CXaml_CIUIElement;
@@ -24411,11 +24049,6 @@ typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CPatternInterface _
 
 
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CRawElementProviderRuntimeId __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CRawElementProviderRuntimeId;
-
-
-
-
-
 
 
 
@@ -25094,97 +24727,6 @@ struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CRawElementProviderRuntim
     UINT32 Part2;
 };
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeerPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_FrameworkElementAutomationPeerPrivate[] = L"Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeerPrivate";
-/* [object, uuid("099C9F27-FE99-5168-8338-11E7027C0193"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *GetAutomationPeersForChildrenOfElement )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * element,
-        /* [retval, out] */__FIVector_1_Microsoft__CUI__CXaml__CAutomation__CPeers__CAutomationPeer * * result
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_GetAutomationPeersForChildrenOfElement(This,element,result) \
-    ( (This)->lpVtbl->GetAutomationPeersForChildrenOfElement(This,element,result) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CFrameworkElementAutomationPeerPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -27388,95 +26930,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomat
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IAutomationPeerPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IAutomationPeerPrivate[] = L"Microsoft.UI.Xaml.Automation.Peers.IAutomationPeerPrivate";
-/* [object, uuid("00A70D4A-4F3F-5BBD-8DB3-6179EB2D91D2"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *SetAutomationFocus )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate * This
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_SetAutomationFocus(This) \
-    ( (This)->lpVtbl->SetAutomationFocus(This) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIAutomationPeerPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Automation.Peers.IAutomationPeerProtected
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -28222,188 +27675,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICalendarDatePickerAu
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICalendarDatePickerAutomationPeerFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICalendarDatePickerAutomationPeerFactory_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.ICaptureElementAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.CaptureElementAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_ICaptureElementAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.ICaptureElementAutomationPeer";
-/* [object, uuid("F14F1866-8587-5C46-AD52-97E99072DCD5"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.ICaptureElementAutomationPeerFactory
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.CaptureElementAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_ICaptureElementAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.ICaptureElementAutomationPeerFactory";
-/* [object, uuid("E7CF7375-88D3-5CF0-B8F9-9D2100BCA54D"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactoryVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateInstanceWithOwner )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CICaptureElement * owner,
-        /* [in] */IInspectable * baseInterface,
-        /* [out] */IInspectable * * innerInterface,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeer * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactoryVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactoryVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_CreateInstanceWithOwner(This,owner,baseInterface,innerInterface,value) \
-    ( (This)->lpVtbl->CreateInstanceWithOwner(This,owner,baseInterface,innerInterface,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CICaptureElementAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -29917,6 +29188,186 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIDropDownButtonAutoma
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIDropDownButtonAutomationPeerFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIDropDownButtonAutomationPeerFactory_INTERFACE_DEFINED__) */
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Automation.Peers.IExpanderAutomationPeer
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ExpanderAutomationPeer
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IExpanderAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IExpanderAutomationPeer";
+/* [object, version, uuid("F7527408-CC89-5B65-BBDE-EAE6D66DC3E5"), experimental, exclusiveto] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Automation.Peers.IExpanderAutomationPeerFactory
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ExpanderAutomationPeer
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IExpanderAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IExpanderAutomationPeerFactory";
+/* [object, version, uuid("2024523B-4A40-5976-AAAB-0F05664F7494"), experimental, exclusiveto] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactoryVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIExpander * owner,
+        /* [in] */IInspectable * baseInterface,
+        /* [out] */IInspectable * * innerInterface,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeer * * value
+        );
+    END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactoryVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactoryVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_CreateInstance(This,owner,baseInterface,innerInterface,value) \
+    ( (This)->lpVtbl->CreateInstance(This,owner,baseInterface,innerInterface,value) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIExpanderAutomationPeerFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -32580,6 +32031,178 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIImageAu
 
 /*
  *
+ * Interface Microsoft.UI.Xaml.Automation.Peers.IInfoBarAutomationPeer
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.InfoBarAutomationPeer
+ *
+ *
+ */
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IInfoBarAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IInfoBarAutomationPeer";
+/* [object, version, uuid("AA2C40EB-DF80-5050-92C5-5FDA5ABFDEF2"), exclusiveto] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer_INTERFACE_DEFINED__) */
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Automation.Peers.IInfoBarAutomationPeerFactory
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.InfoBarAutomationPeer
+ *
+ *
+ */
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IInfoBarAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IInfoBarAutomationPeerFactory";
+/* [object, version, uuid("5FD3E590-68B9-5C9C-A572-0BC10167CE46"), exclusiveto] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactoryVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIInfoBar * owner,
+        /* [in] */IInspectable * baseInterface,
+        /* [out] */IInspectable * * innerInterface,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeer * * value
+        );
+    END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactoryVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactoryVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_CreateInstance(This,owner,baseInterface,innerInterface,value) \
+    ( (This)->lpVtbl->CreateInstance(This,owner,baseInterface,innerInterface,value) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIInfoBarAutomationPeerFactory_INTERFACE_DEFINED__) */
+
+
+/*
+ *
  * Interface Microsoft.UI.Xaml.Automation.Peers.IItemAutomationPeer
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -35045,552 +34668,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CILooping
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IMediaElementAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.MediaElementAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IMediaElementAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IMediaElementAutomationPeer";
-/* [object, uuid("91955284-23AC-5336-AE2A-4AC1B8970C59"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IMediaElementAutomationPeerFactory
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.MediaElementAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IMediaElementAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IMediaElementAutomationPeerFactory";
-/* [object, uuid("02E3425F-E698-5C1D-9C24-5889848A696F"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactoryVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateInstanceWithOwner )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaElement * owner,
-        /* [in] */IInspectable * baseInterface,
-        /* [out] */IInspectable * * innerInterface,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeer * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactoryVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactoryVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_CreateInstanceWithOwner(This,owner,baseInterface,innerInterface,value) \
-    ( (This)->lpVtbl->CreateInstanceWithOwner(This,owner,baseInterface,innerInterface,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaElementAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IMediaPlayerElementAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.MediaPlayerElementAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IMediaPlayerElementAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IMediaPlayerElementAutomationPeer";
-/* [object, uuid("F68B8CA2-4428-5C35-B6A8-1B2EA062C22C"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IMediaPlayerElementAutomationPeerFactory
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.MediaPlayerElementAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IMediaPlayerElementAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IMediaPlayerElementAutomationPeerFactory";
-/* [object, uuid("2AE1AA11-7A7C-5580-A7D7-F7597859BDC2"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactoryVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateInstanceWithOwner )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaPlayerElement * owner,
-        /* [in] */IInspectable * baseInterface,
-        /* [out] */IInspectable * * innerInterface,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeer * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactoryVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactoryVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_CreateInstanceWithOwner(This,owner,baseInterface,innerInterface,value) \
-    ( (This)->lpVtbl->CreateInstanceWithOwner(This,owner,baseInterface,innerInterface,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaPlayerElementAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IMediaTransportControlsAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.MediaTransportControlsAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IMediaTransportControlsAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IMediaTransportControlsAutomationPeer";
-/* [object, uuid("DA850D4E-8715-5AE7-81A9-ABD10D17C1ED"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IMediaTransportControlsAutomationPeerFactory
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.MediaTransportControlsAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IMediaTransportControlsAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IMediaTransportControlsAutomationPeerFactory";
-/* [object, uuid("77F281E1-CB51-5360-B74E-6FE4F8EE5028"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactoryVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateInstanceWithOwner )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIMediaTransportControls * owner,
-        /* [in] */IInspectable * baseInterface,
-        /* [out] */IInspectable * * innerInterface,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeer * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactoryVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactoryVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_CreateInstanceWithOwner(This,owner,baseInterface,innerInterface,value) \
-    ( (This)->lpVtbl->CreateInstanceWithOwner(This,owner,baseInterface,innerInterface,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMediaTransportControlsAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Automation.Peers.IMenuBarAutomationPeer
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.MenuBarAutomationPeer
@@ -36301,14 +35378,17 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIMenuFly
  *
  * Interface Microsoft.UI.Xaml.Automation.Peers.INavigationViewAutomationPeer
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.NavigationViewAutomationPeer
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeer_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeer_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_INavigationViewAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.INavigationViewAutomationPeer";
-/* [object, version, uuid("72013EAE-B015-550D-BA8D-A05112B62731"), exclusiveto] */
+/* [object, version, uuid("72013EAE-B015-550D-BA8D-A05112B62731"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeerVtbl
 {
     BEGIN_INTERFACE
@@ -36376,20 +35456,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutoma
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeer;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeer_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Automation.Peers.INavigationViewAutomationPeerFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.NavigationViewAutomationPeer
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeerFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeerFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_INavigationViewAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.INavigationViewAutomationPeerFactory";
-/* [object, version, uuid("75075B03-A2F7-5869-B23C-63CBE5ACC43A"), exclusiveto] */
+/* [object, version, uuid("75075B03-A2F7-5869-B23C-63CBE5ACC43A"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeerFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -36467,6 +35551,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutoma
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeerFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINavigationViewAutomationPeerFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -36811,6 +35896,186 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINumberBoxAutomationP
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINumberBoxAutomationPeerFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CINumberBoxAutomationPeerFactory_INTERFACE_DEFINED__) */
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeer
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IPagerControlAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeer";
+/* [object, version, uuid("426B3254-1C6E-5F23-B58D-0378C34BDAF6"), experimental, exclusiveto] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeerFactory
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IPagerControlAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeerFactory";
+/* [object, version, uuid("E35F3D24-484D-5AF2-8A0C-6F1EDA4691FA"), experimental, exclusiveto] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactoryVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPagerControl * owner,
+        /* [in] */IInspectable * baseInterface,
+        /* [out] */IInspectable * * innerInterface,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeer * * value
+        );
+    END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactoryVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactoryVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_CreateInstance(This,owner,baseInterface,innerInterface,value) \
+    ( (This)->lpVtbl->CreateInstance(This,owner,baseInterface,innerInterface,value) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPagerControlAutomationPeerFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -39778,6 +39043,186 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollB
 
 /*
  *
+ * Interface Microsoft.UI.Xaml.Automation.Peers.IScrollPresenterAutomationPeer
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ScrollPresenterAutomationPeer
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IScrollPresenterAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IScrollPresenterAutomationPeer";
+/* [object, version, uuid("995A6964-607F-5D95-BDF9-1870A5E82A0C"), experimental, exclusiveto] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
+ * Interface Microsoft.UI.Xaml.Automation.Peers.IScrollPresenterAutomationPeerFactory
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ScrollPresenterAutomationPeer
+ *
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IScrollPresenterAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IScrollPresenterAutomationPeerFactory";
+/* [object, version, uuid("47E29168-5E30-5ABC-B844-7D89B5C3EEC0"), experimental, exclusiveto] */
+typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactoryVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScrollPresenter * owner,
+        /* [in] */IInspectable * baseInterface,
+        /* [out] */IInspectable * * innerInterface,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeer * * value
+        );
+    END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactoryVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactoryVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_CreateInstance(This,owner,baseInterface,innerInterface,value) \
+    ( (This)->lpVtbl->CreateInstance(This,owner,baseInterface,innerInterface,value) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollPresenterAutomationPeerFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
  * Interface Microsoft.UI.Xaml.Automation.Peers.IScrollViewerAutomationPeer
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -39956,178 +39401,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollViewerAutomati
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollViewerAutomationPeerFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollViewerAutomationPeerFactory_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IScrollerAutomationPeer
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ScrollerAutomationPeer
- *
- *
- */
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IScrollerAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IScrollerAutomationPeer";
-/* [object, version, uuid("C821C7D9-3166-59DA-89C4-82FBE2A5F000"), exclusiveto] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer_INTERFACE_DEFINED__) */
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IScrollerAutomationPeerFactory
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ScrollerAutomationPeer
- *
- *
- */
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IScrollerAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IScrollerAutomationPeerFactory";
-/* [object, version, uuid("ABF0A206-A0E7-5F58-B621-3F73903B678D"), exclusiveto] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactoryVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIScroller * owner,
-        /* [in] */IInspectable * baseInterface,
-        /* [out] */IInspectable * * innerInterface,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeer * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactoryVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactoryVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_CreateInstance(This,owner,baseInterface,innerInterface,value) \
-    ( (This)->lpVtbl->CreateInstance(This,owner,baseInterface,innerInterface,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIScrollerAutomationPeerFactory_INTERFACE_DEFINED__) */
 
 
 /*
@@ -44028,30 +43301,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
- * Class Microsoft.UI.Xaml.Automation.Peers.CaptureElementAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.Peers.ICaptureElementAutomationPeer ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_CaptureElementAutomationPeer_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_CaptureElementAutomationPeer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_CaptureElementAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.CaptureElementAutomationPeer";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Class Microsoft.UI.Xaml.Automation.Peers.CheckBoxAutomationPeer
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -44254,6 +43503,30 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_DropDownButtonAutomationPeer_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_DropDownButtonAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.DropDownButtonAutomationPeer";
 #endif
+
+
+/*
+ *
+ * Class Microsoft.UI.Xaml.Automation.Peers.ExpanderAutomationPeer
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Class implements the following interfaces:
+ *    Microsoft.UI.Xaml.Automation.Peers.IExpanderAutomationPeer ** Default Interface **
+ *    Microsoft.UI.Xaml.Automation.Provider.IExpandCollapseProvider
+ *
+ * Class Threading Model:  Both Single and Multi Threaded Apartment
+ *
+ * Class Marshaling Behavior:  Agile - Class is agile
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ExpanderAutomationPeer_DEFINED
+#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ExpanderAutomationPeer_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_ExpanderAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.ExpanderAutomationPeer";
+#endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -44597,6 +43870,25 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_ImageAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.ImageAutomationPeer";
 #endif
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
+
+
+/*
+ *
+ * Class Microsoft.UI.Xaml.Automation.Peers.InfoBarAutomationPeer
+ *
+ * Class implements the following interfaces:
+ *    Microsoft.UI.Xaml.Automation.Peers.IInfoBarAutomationPeer ** Default Interface **
+ *
+ * Class Threading Model:  Both Single and Multi Threaded Apartment
+ *
+ * Class Marshaling Behavior:  Agile - Class is agile
+ *
+ */
+
+#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_InfoBarAutomationPeer_DEFINED
+#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_InfoBarAutomationPeer_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_InfoBarAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.InfoBarAutomationPeer";
+#endif
 
 
 /*
@@ -44973,78 +44265,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
- * Class Microsoft.UI.Xaml.Automation.Peers.MediaElementAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.Peers.IMediaElementAutomationPeer ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_MediaElementAutomationPeer_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_MediaElementAutomationPeer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_MediaElementAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.MediaElementAutomationPeer";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Automation.Peers.MediaPlayerElementAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.Peers.IMediaPlayerElementAutomationPeer ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_MediaPlayerElementAutomationPeer_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_MediaPlayerElementAutomationPeer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_MediaPlayerElementAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.MediaPlayerElementAutomationPeer";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Automation.Peers.MediaTransportControlsAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.Peers.IMediaTransportControlsAutomationPeer ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_MediaTransportControlsAutomationPeer_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_MediaTransportControlsAutomationPeer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_MediaTransportControlsAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.MediaTransportControlsAutomationPeer";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Class Microsoft.UI.Xaml.Automation.Peers.MenuBarAutomationPeer
  *
  * Class implements the following interfaces:
@@ -45136,6 +44356,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Xaml.Automation.Peers.NavigationViewAutomationPeer
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Automation.Peers.INavigationViewAutomationPeer ** Default Interface **
  *
@@ -45144,11 +44366,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_NavigationViewAutomationPeer_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_NavigationViewAutomationPeer_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_NavigationViewAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.NavigationViewAutomationPeer";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -45157,6 +44381,7 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Automation.Peers.INavigationViewItemAutomationPeer ** Default Interface **
+ *    Microsoft.UI.Xaml.Automation.Provider.IExpandCollapseProvider
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
  *
@@ -45187,6 +44412,29 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_NumberBoxAutomationPeer_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_NumberBoxAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.NumberBoxAutomationPeer";
 #endif
+
+
+/*
+ *
+ * Class Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Class implements the following interfaces:
+ *    Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeer ** Default Interface **
+ *
+ * Class Threading Model:  Both Single and Multi Threaded Apartment
+ *
+ * Class Marshaling Behavior:  Agile - Class is agile
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_PagerControlAutomationPeer_DEFINED
+#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_PagerControlAutomationPeer_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_PagerControlAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer";
+#endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -45601,6 +44849,29 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
+ * Class Microsoft.UI.Xaml.Automation.Peers.ScrollPresenterAutomationPeer
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
+ * Class implements the following interfaces:
+ *    Microsoft.UI.Xaml.Automation.Peers.IScrollPresenterAutomationPeer ** Default Interface **
+ *
+ * Class Threading Model:  Both Single and Multi Threaded Apartment
+ *
+ * Class Marshaling Behavior:  Agile - Class is agile
+ *
+ */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ScrollPresenterAutomationPeer_DEFINED
+#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ScrollPresenterAutomationPeer_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_ScrollPresenterAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.ScrollPresenterAutomationPeer";
+#endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+
+
+/*
+ *
  * Class Microsoft.UI.Xaml.Automation.Peers.ScrollViewerAutomationPeer
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -45622,25 +44893,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_ScrollViewerAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.ScrollViewerAutomationPeer";
 #endif
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Automation.Peers.ScrollerAutomationPeer
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.Peers.IScrollerAutomationPeer ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ScrollerAutomationPeer_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ScrollerAutomationPeer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_ScrollerAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.ScrollerAutomationPeer";
-#endif
 
 
 /*

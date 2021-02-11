@@ -57,14 +57,6 @@
 #define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
@@ -245,7 +237,6 @@
 #include "Microsoft.UI.Xaml.Controls.h"
 #include "Microsoft.UI.Xaml.Controls.Primitives.h"
 #include "Microsoft.UI.Xaml.Data.h"
-#include "Microsoft.UI.Xaml.Hosting.h"
 #include "Microsoft.UI.Xaml.Input.h"
 #include "Microsoft.UI.Xaml.Media.h"
 #include "Microsoft.UI.Xaml.Media.Animation.h"
@@ -257,7 +248,6 @@
 #include "Windows.ApplicationModel.DataTransfer.h"
 #include "Windows.ApplicationModel.DataTransfer.DragDrop.h"
 #include "Windows.Foundation.Numerics.h"
-#include "Windows.Graphics.DirectX.h"
 #include "Windows.Graphics.Imaging.h"
 #include "Windows.UI.h"
 #include "Windows.UI.Core.h"
@@ -611,21 +601,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CIApplicationStatics ABI::Microsoft::UI::Xaml::IApplicationStatics
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIApplicationStatics_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                interface IAtlasRequestCallback;
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback ABI::Microsoft::UI::Xaml::IAtlasRequestCallback
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIBindingFailedEventArgs_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIBindingFailedEventArgs_FWD_DEFINED__
@@ -1122,36 +1097,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelperStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                interface IDxamlCoreTestHooks;
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks ABI::Microsoft::UI::Xaml::IDxamlCoreTestHooks
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                interface IDxamlCoreTestHooksStatics;
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics ABI::Microsoft::UI::Xaml::IDxamlCoreTestHooksStatics
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIEffectiveViewportChangedEventArgs_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIEffectiveViewportChangedEventArgs_FWD_DEFINED__
 namespace ABI {
@@ -1272,21 +1217,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                interface IElementSoundPlayerStaticsPrivate;
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate ABI::Microsoft::UI::Xaml::IElementSoundPlayerStaticsPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIEventTrigger_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIEventTrigger_FWD_DEFINED__
 namespace ABI {
@@ -1331,36 +1261,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CIExceptionRoutedEventArgsFactory ABI::Microsoft::UI::Xaml::IExceptionRoutedEventArgsFactory
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIExceptionRoutedEventArgsFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                interface IFrameworkApplicationPrivate;
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate ABI::Microsoft::UI::Xaml::IFrameworkApplicationPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                interface IFrameworkApplicationStaticsPrivate;
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate ABI::Microsoft::UI::Xaml::IFrameworkApplicationStaticsPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkElement_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkElement_FWD_DEFINED__
@@ -1467,21 +1367,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplateFactory_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                interface IFrameworkTemplatePrivate;
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate ABI::Microsoft::UI::Xaml::IFrameworkTemplatePrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkView_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkView_FWD_DEFINED__
 namespace ABI {
@@ -1571,21 +1456,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CIMediaFailedRoutedEventArgs ABI::Microsoft::UI::Xaml::IMediaFailedRoutedEventArgs
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIMediaFailedRoutedEventArgs_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                interface IMemoryInfoPrivate;
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate ABI::Microsoft::UI::Xaml::IMemoryInfoPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIPointHelper_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIPointHelper_FWD_DEFINED__
@@ -1721,21 +1591,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics ABI::Microsoft::UI::Xaml::IRectHelperStatics
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                interface IRectHelperStaticsPrivate;
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate ABI::Microsoft::UI::Xaml::IRectHelperStaticsPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIResourceDictionary_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIResourceDictionary_FWD_DEFINED__
@@ -1961,21 +1816,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CISizeHelperStatics ABI::Microsoft::UI::Xaml::ISizeHelperStatics
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CISizeHelperStatics_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                interface ISourceInfoPrivate;
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate ABI::Microsoft::UI::Xaml::ISourceInfoPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIStateTrigger_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIStateTrigger_FWD_DEFINED__
@@ -2277,21 +2117,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                interface IUIElementStaticsPrivate;
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate ABI::Microsoft::UI::Xaml::IUIElementStaticsPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementWeakCollectionFactory_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementWeakCollectionFactory_FWD_DEFINED__
 namespace ABI {
@@ -2576,21 +2401,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CIWindowFactory ABI::Microsoft::UI::Xaml::IWindowFactory
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIWindowFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                interface IWindowPrivate;
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate ABI::Microsoft::UI::Xaml::IWindowPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIWindowSizeChangedEventArgs_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIWindowSizeChangedEventArgs_FWD_DEFINED__
@@ -6872,40 +6682,6 @@ namespace ABI {
 
 
 
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Hosting {
-                    class XamlIsland;
-                } /* Hosting */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Hosting {
-                    interface IXamlIsland;
-                } /* Hosting */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland ABI::Microsoft::UI::Xaml::Hosting::IXamlIsland
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_FWD_DEFINED__
-
-
-
-
-
-
 
 
 
@@ -8153,21 +7929,6 @@ namespace ABI {
 namespace ABI {
     namespace Windows {
         namespace Graphics {
-            namespace DirectX {
-                
-                typedef enum DirectXPixelFormat : int DirectXPixelFormat;
-                
-            } /* DirectX */
-        } /* Graphics */
-    } /* Windows */
-} /* ABI */
-
-
-
-
-namespace ABI {
-    namespace Windows {
-        namespace Graphics {
             namespace Imaging {
                 class SoftwareBitmap;
             } /* Imaging */
@@ -8300,7 +8061,6 @@ namespace ABI {
         } /* UI */
     } /* Windows */
 } /* ABI */
-
 
 
 
@@ -8672,30 +8432,6 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 
-                typedef enum TransitionParent : int TransitionParent;
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                
-                typedef enum TransitionTrigger : int TransitionTrigger;
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                
                 typedef enum Vector3TransitionComponents : unsigned int Vector3TransitionComponents;
                 
             } /* Xaml */
@@ -8786,18 +8522,6 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -9157,17 +8881,6 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 class DurationHelper;
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                class DxamlCoreTestHooks;
             } /* Xaml */
         } /* UI */
     } /* Microsoft */
@@ -9559,7 +9272,6 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-
 
 
 
@@ -10509,65 +10221,6 @@ namespace ABI {
     } /* Microsoft */
 } /* ABI */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.TransitionParent
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                /* [v1_enum, contract] */
-                enum TransitionParent : int
-                {
-                    TransitionParent_ParentToRoot = 0,
-                    TransitionParent_ParentToCommonParent = 1,
-                    TransitionParent_ParentToGrandParent = 2,
-                };
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.TransitionTrigger
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                /* [v1_enum, contract] */
-                enum TransitionTrigger : int
-                {
-                    TransitionTrigger_Load = 0,
-                    TransitionTrigger_Layout = 1,
-                    TransitionTrigger_Unload = 2,
-                    TransitionTrigger_Reparent = 3,
-                };
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -11839,48 +11492,6 @@ namespace ABI {
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIApplicationStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIApplicationStatics_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.IAtlasRequestCallback
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IAtlasRequestCallback[] = L"Microsoft.UI.Xaml.IAtlasRequestCallback";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                /* [object, uuid("15645012-8F3F-5090-B584-DF078FCC509A"), contract] */
-                MIDL_INTERFACE("15645012-8F3F-5090-B584-DF078FCC509A")
-                IAtlasRequestCallback : public IInspectable
-                {
-                public:
-                    virtual HRESULT STDMETHODCALLTYPE AtlasRequest(
-                        /* [in] */UINT32 width,
-                        /* [in] */UINT32 height,
-                        /* [in] */ABI::Windows::Graphics::DirectX::DirectXPixelFormat pixelFormat,
-                        /* [retval, out] */::boolean * result
-                        ) = 0;
-                    
-                };
-
-                extern MIDL_CONST_ID IID & IID_IAtlasRequestCallback=_uuidof(IAtlasRequestCallback);
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -13775,87 +13386,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelperStatics;
 
 /*
  *
- * Interface Microsoft.UI.Xaml.IDxamlCoreTestHooks
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.DxamlCoreTestHooks
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IDxamlCoreTestHooks[] = L"Microsoft.UI.Xaml.IDxamlCoreTestHooks";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                /* [object, uuid("E44D8E58-844D-5201-83BD-5D48CEB7035D"), exclusiveto, contract] */
-                MIDL_INTERFACE("E44D8E58-844D-5201-83BD-5D48CEB7035D")
-                IDxamlCoreTestHooks : public IInspectable
-                {
-                public:
-                    
-                };
-
-                extern MIDL_CONST_ID IID & IID_IDxamlCoreTestHooks=_uuidof(IDxamlCoreTestHooks);
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.IDxamlCoreTestHooksStatics
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.DxamlCoreTestHooks
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IDxamlCoreTestHooksStatics[] = L"Microsoft.UI.Xaml.IDxamlCoreTestHooksStatics";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                /* [object, uuid("4B2F7A38-3584-53E8-A67F-F3EDF229E5AB"), exclusiveto, contract] */
-                MIDL_INTERFACE("4B2F7A38-3584-53E8-A67F-F3EDF229E5AB")
-                IDxamlCoreTestHooksStatics : public IInspectable
-                {
-                public:
-                    virtual HRESULT STDMETHODCALLTYPE GetForCurrentThread(
-                        /* [retval, out] */ABI::Microsoft::UI::Xaml::IDxamlCoreTestHooks * * result
-                        ) = 0;
-                    
-                };
-
-                extern MIDL_CONST_ID IID & IID_IDxamlCoreTestHooksStatics=_uuidof(IDxamlCoreTestHooksStatics);
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.IEffectiveViewportChangedEventArgs
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -14239,50 +13769,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStatics;
 
 /*
  *
- * Interface Microsoft.UI.Xaml.IElementSoundPlayerStaticsPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IElementSoundPlayerStaticsPrivate[] = L"Microsoft.UI.Xaml.IElementSoundPlayerStaticsPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                /* [object, uuid("65D2203B-6FB0-5EBA-8821-F6DD313C33FB"), contract] */
-                MIDL_INTERFACE("65D2203B-6FB0-5EBA-8821-F6DD313C33FB")
-                IElementSoundPlayerStaticsPrivate : public IInspectable
-                {
-                public:
-                    virtual HRESULT STDMETHODCALLTYPE RequestInteractionSoundForElement(
-                        /* [in] */ABI::Microsoft::UI::Xaml::ElementSoundKind sound,
-                        /* [in] */ABI::Microsoft::UI::Xaml::IDependencyObject * element
-                        ) = 0;
-                    virtual HRESULT STDMETHODCALLTYPE GetEffectiveSoundMode(
-                        /* [in] */ABI::Microsoft::UI::Xaml::IDependencyObject * element,
-                        /* [retval, out] */ABI::Microsoft::UI::Xaml::ElementSoundMode * result
-                        ) = 0;
-                    
-                };
-
-                extern MIDL_CONST_ID IID & IID_IElementSoundPlayerStaticsPrivate=_uuidof(IElementSoundPlayerStaticsPrivate);
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.IEventTrigger
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -14408,96 +13894,6 @@ namespace ABI {
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIExceptionRoutedEventArgsFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIExceptionRoutedEventArgsFactory_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.IFrameworkApplicationPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IFrameworkApplicationPrivate[] = L"Microsoft.UI.Xaml.IFrameworkApplicationPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                /* [object, uuid("5CA69216-9979-5E26-B067-D45856580732"), contract] */
-                MIDL_INTERFACE("5CA69216-9979-5E26-B067-D45856580732")
-                IFrameworkApplicationPrivate : public IInspectable
-                {
-                public:
-                    virtual HRESULT STDMETHODCALLTYPE StartOnCurrentThread(
-                        /* [in] */ABI::Microsoft::UI::Xaml::IApplicationInitializationCallback  * callback
-                        ) = 0;
-                    virtual HRESULT STDMETHODCALLTYPE CreateIsland(
-                        /* [retval, out] */ABI::Microsoft::UI::Xaml::Hosting::IXamlIsland * * result
-                        ) = 0;
-                    virtual HRESULT STDMETHODCALLTYPE CreateIslandWithContentBridge(
-                        /* [in] */IInspectable * owner,
-                        /* [in] */IInspectable * contentBridge,
-                        /* [retval, out] */ABI::Microsoft::UI::Xaml::Hosting::IXamlIsland * * result
-                        ) = 0;
-                    virtual HRESULT STDMETHODCALLTYPE RemoveIsland(
-                        /* [in] */ABI::Microsoft::UI::Xaml::Hosting::IXamlIsland * island
-                        ) = 0;
-                    virtual HRESULT STDMETHODCALLTYPE SetSynchronizationWindow(
-                        /* [in] */UINT64 commitResizeWindow
-                        ) = 0;
-                    
-                };
-
-                extern MIDL_CONST_ID IID & IID_IFrameworkApplicationPrivate=_uuidof(IFrameworkApplicationPrivate);
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.IFrameworkApplicationStaticsPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IFrameworkApplicationStaticsPrivate[] = L"Microsoft.UI.Xaml.IFrameworkApplicationStaticsPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                /* [object, uuid("66CB5498-0063-5D10-B06B-6C6CE06E4D2D"), contract] */
-                MIDL_INTERFACE("66CB5498-0063-5D10-B06B-6C6CE06E4D2D")
-                IFrameworkApplicationStaticsPrivate : public IInspectable
-                {
-                public:
-                    virtual HRESULT STDMETHODCALLTYPE EnableFailFastOnStowedException(void) = 0;
-                    
-                };
-
-                extern MIDL_CONST_ID IID & IID_IFrameworkApplicationStaticsPrivate=_uuidof(IFrameworkApplicationStaticsPrivate);
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -15114,45 +14510,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplateFactory;
 
 /*
  *
- * Interface Microsoft.UI.Xaml.IFrameworkTemplatePrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IFrameworkTemplatePrivate[] = L"Microsoft.UI.Xaml.IFrameworkTemplatePrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                /* [object, uuid("3EC693E7-F042-5FDC-9661-5DCC9F03385D"), contract] */
-                MIDL_INTERFACE("3EC693E7-F042-5FDC-9661-5DCC9F03385D")
-                IFrameworkTemplatePrivate : public IInspectable
-                {
-                public:
-                    virtual HRESULT STDMETHODCALLTYPE EnableTemplateCaching(
-                        /* [in] */::boolean isTemplateCachingEnabled
-                        ) = 0;
-                    
-                };
-
-                extern MIDL_CONST_ID IID & IID_IFrameworkTemplatePrivate=_uuidof(IFrameworkTemplatePrivate);
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.IFrameworkView
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -15421,48 +14778,6 @@ namespace ABI {
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIMediaFailedRoutedEventArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIMediaFailedRoutedEventArgs_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.IMemoryInfoPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IMemoryInfoPrivate[] = L"Microsoft.UI.Xaml.IMemoryInfoPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                /* [object, uuid("D11FAA49-8D7C-5C62-9D50-68E875A434BB"), contract] */
-                MIDL_INTERFACE("D11FAA49-8D7C-5C62-9D50-68E875A434BB")
-                IMemoryInfoPrivate : public IInspectable
-                {
-                public:
-                    virtual HRESULT STDMETHODCALLTYPE GetCountOfDescendantUIElements(
-                        /* [retval, out] */UINT64 * result
-                        ) = 0;
-                    virtual HRESULT STDMETHODCALLTYPE GetEstimatedSizeOfDescendantImages(
-                        /* [retval, out] */UINT64 * result
-                        ) = 0;
-                    
-                };
-
-                extern MIDL_CONST_ID IID & IID_IMemoryInfoPrivate=_uuidof(IMemoryInfoPrivate);
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -15928,46 +15243,6 @@ namespace ABI {
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.IRectHelperStaticsPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IRectHelperStaticsPrivate[] = L"Microsoft.UI.Xaml.IRectHelperStaticsPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                /* [object, uuid("08298572-672B-5053-8A13-31110E24314F"), contract] */
-                MIDL_INTERFACE("08298572-672B-5053-8A13-31110E24314F")
-                IRectHelperStaticsPrivate : public IInspectable
-                {
-                public:
-                    virtual HRESULT STDMETHODCALLTYPE DipsRectToPhysicalRect(
-                        /* [in] */ABI::Windows::Foundation::Rect dipsRect,
-                        /* [retval, out] */ABI::Windows::Foundation::Rect * result
-                        ) = 0;
-                    
-                };
-
-                extern MIDL_CONST_ID IID & IID_IRectHelperStaticsPrivate=_uuidof(IRectHelperStaticsPrivate);
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -16641,66 +15916,6 @@ namespace ABI {
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CISizeHelperStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CISizeHelperStatics_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.ISourceInfoPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_ISourceInfoPrivate[] = L"Microsoft.UI.Xaml.ISourceInfoPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                /* [object, uuid("3ACB731C-C37D-5F03-9596-AC62990F520C"), contract] */
-                MIDL_INTERFACE("3ACB731C-C37D-5F03-9596-AC62990F520C")
-                ISourceInfoPrivate : public IInspectable
-                {
-                public:
-                    /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Line(
-                        /* [retval, out] */INT32 * value
-                        ) = 0;
-                    /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Line(
-                        /* [in] */INT32 value
-                        ) = 0;
-                    /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Column(
-                        /* [retval, out] */INT32 * value
-                        ) = 0;
-                    /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Column(
-                        /* [in] */INT32 value
-                        ) = 0;
-                    /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ParseUri(
-                        /* [retval, out] */HSTRING * value
-                        ) = 0;
-                    /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_ParseUri(
-                        /* [in] */HSTRING value
-                        ) = 0;
-                    /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_XbfHash(
-                        /* [retval, out] */HSTRING * value
-                        ) = 0;
-                    /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_XbfHash(
-                        /* [in] */HSTRING value
-                        ) = 0;
-                    
-                };
-
-                extern MIDL_CONST_ID IID & IID_ISourceInfoPrivate=_uuidof(ISourceInfoPrivate);
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -18536,50 +17751,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStatics;
 
 /*
  *
- * Interface Microsoft.UI.Xaml.IUIElementStaticsPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IUIElementStaticsPrivate[] = L"Microsoft.UI.Xaml.IUIElementStaticsPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                /* [object, uuid("B35B8888-C508-52DC-AF8F-8A3C38ADBB86"), contract] */
-                MIDL_INTERFACE("B35B8888-C508-52DC-AF8F-8A3C38ADBB86")
-                IUIElementStaticsPrivate : public IInspectable
-                {
-                public:
-                    virtual HRESULT STDMETHODCALLTYPE InternalGetIsEnabled(
-                        /* [in] */ABI::Microsoft::UI::Xaml::IUIElement * element,
-                        /* [retval, out] */::boolean * result
-                        ) = 0;
-                    virtual HRESULT STDMETHODCALLTYPE InternalPutIsEnabled(
-                        /* [in] */ABI::Microsoft::UI::Xaml::IUIElement * element,
-                        /* [in] */::boolean value
-                        ) = 0;
-                    
-                };
-
-                extern MIDL_CONST_ID IID & IID_IUIElementStaticsPrivate=_uuidof(IUIElementStaticsPrivate);
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.IUIElementWeakCollectionFactory
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -19318,8 +18489,8 @@ namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Xaml {
-                /* [object, uuid("8DE74F65-EA02-5380-BA58-28B3FC36BAE9"), exclusiveto, contract] */
-                MIDL_INTERFACE("8DE74F65-EA02-5380-BA58-28B3FC36BAE9")
+                /* [object, uuid("AA7369E8-FFE4-5731-8A8E-7A3A551A194D"), exclusiveto, contract] */
+                MIDL_INTERFACE("AA7369E8-FFE4-5731-8A8E-7A3A551A194D")
                 IWindow : public IInspectable
                 {
                 public:
@@ -19353,6 +18524,12 @@ namespace ABI {
                     /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Title(
                         /* [in] */HSTRING value
                         ) = 0;
+                    /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ExtendsContentIntoTitleBar(
+                        /* [retval, out] */::boolean * value
+                        ) = 0;
+                    /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_ExtendsContentIntoTitleBar(
+                        /* [in] */::boolean value
+                        ) = 0;
                     /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_Activated(
                         /* [in] */__FITypedEventHandler_2_IInspectable_Microsoft__CUI__CXaml__CWindowActivatedEventArgs * handler,
                         /* [retval, out] */EventRegistrationToken * token
@@ -19383,6 +18560,9 @@ namespace ABI {
                         ) = 0;
                     virtual HRESULT STDMETHODCALLTYPE Activate(void) = 0;
                     virtual HRESULT STDMETHODCALLTYPE Close(void) = 0;
+                    virtual HRESULT STDMETHODCALLTYPE SetTitleBar(
+                        /* [in] */ABI::Microsoft::UI::Xaml::IUIElement * titleBar
+                        ) = 0;
                     
                 };
 
@@ -19575,70 +18755,6 @@ namespace ABI {
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIWindowFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIWindowFactory_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.IWindowPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IWindowPrivate[] = L"Microsoft.UI.Xaml.IWindowPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                /* [object, uuid("F5DEF8F6-95C2-55CB-B1A4-551B9DA34220"), contract] */
-                MIDL_INTERFACE("F5DEF8F6-95C2-55CB-B1A4-551B9DA34220")
-                IWindowPrivate : public IInspectable
-                {
-                public:
-                    /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_TransparentBackground(
-                        /* [retval, out] */::boolean * value
-                        ) = 0;
-                    /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_TransparentBackground(
-                        /* [in] */::boolean value
-                        ) = 0;
-                    virtual HRESULT STDMETHODCALLTYPE Show(void) = 0;
-                    virtual HRESULT STDMETHODCALLTYPE Hide(void) = 0;
-                    virtual HRESULT STDMETHODCALLTYPE MoveWindow(
-                        /* [in] */INT32 x,
-                        /* [in] */INT32 y,
-                        /* [in] */INT32 width,
-                        /* [in] */INT32 height
-                        ) = 0;
-                    virtual HRESULT STDMETHODCALLTYPE SetAtlasSizeHint(
-                        /* [in] */UINT32 width,
-                        /* [in] */UINT32 height
-                        ) = 0;
-                    virtual HRESULT STDMETHODCALLTYPE ReleaseGraphicsDeviceOnSuspend(
-                        /* [in] */::boolean enable
-                        ) = 0;
-                    virtual HRESULT STDMETHODCALLTYPE SetAtlasRequestCallback(
-                        /* [in] */ABI::Microsoft::UI::Xaml::IAtlasRequestCallback * callback
-                        ) = 0;
-                    virtual HRESULT STDMETHODCALLTYPE GetWindowContentBoundsForElement(
-                        /* [in] */ABI::Microsoft::UI::Xaml::IDependencyObject * element,
-                        /* [retval, out] */ABI::Windows::Foundation::Rect * result
-                        ) = 0;
-                    
-                };
-
-                extern MIDL_CONST_ID IID & IID_IWindowPrivate=_uuidof(IWindowPrivate);
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -20523,36 +19639,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_DurationHelper[] = L"Microsoft.UI.Xaml.DurationHelper";
 #endif
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.DxamlCoreTestHooks
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via RoActivateInstance starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Xaml.IDxamlCoreTestHooksStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.IDxamlCoreTestHooks ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_DxamlCoreTestHooks_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_DxamlCoreTestHooks_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_DxamlCoreTestHooks[] = L"Microsoft.UI.Xaml.DxamlCoreTestHooks";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -22018,12 +21104,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIApplicationStatics __x_ABI_CMic
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIApplicationStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIBindingFailedEventArgs_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIBindingFailedEventArgs_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIBindingFailedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CIBindingFailedEventArgs;
@@ -22222,18 +21302,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelperStatics __x_ABI_C
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelperStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIEffectiveViewportChangedEventArgs_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIEffectiveViewportChangedEventArgs_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIEffectiveViewportChangedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CIEffectiveViewportChangedEventArgs;
@@ -22282,12 +21350,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStatics __x_A
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIEventTrigger_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIEventTrigger_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIEventTrigger __x_ABI_CMicrosoft_CUI_CXaml_CIEventTrigger;
@@ -22305,18 +21367,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIExceptionRoutedEventArgs __x_AB
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIExceptionRoutedEventArgsFactory __x_ABI_CMicrosoft_CUI_CXaml_CIExceptionRoutedEventArgsFactory;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIExceptionRoutedEventArgsFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkElement_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkElement_FWD_DEFINED__
@@ -22360,12 +21410,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplateFactory __x_AB
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplateFactory_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkView_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkView_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkView __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkView;
@@ -22401,12 +21445,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CILaunchActivatedEventArgs __x_AB
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIMediaFailedRoutedEventArgs __x_ABI_CMicrosoft_CUI_CXaml_CIMediaFailedRoutedEventArgs;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIMediaFailedRoutedEventArgs_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIPointHelper_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIPointHelper_FWD_DEFINED__
@@ -22461,12 +21499,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelper __x_ABI_CMicrosoft_C
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIResourceDictionary_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIResourceDictionary_FWD_DEFINED__
@@ -22557,12 +21589,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CISizeHelper __x_ABI_CMicrosoft_C
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CISizeHelperStatics __x_ABI_CMicrosoft_CUI_CXaml_CISizeHelperStatics;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CISizeHelperStatics_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIStateTrigger_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIStateTrigger_FWD_DEFINED__
@@ -22684,12 +21710,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStatics __x_ABI_CMicro
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementWeakCollectionFactory_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementWeakCollectionFactory_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementWeakCollectionFactory __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementWeakCollectionFactory;
@@ -22803,12 +21823,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIWindowEventArgs __x_ABI_CMicros
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIWindowFactory __x_ABI_CMicrosoft_CUI_CXaml_CIWindowFactory;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIWindowFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIWindowSizeChangedEventArgs_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIWindowSizeChangedEventArgs_FWD_DEFINED__
@@ -31337,17 +30351,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CData_CIBindingExpression __x_ABI
 
 
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_FWD_DEFINED__
-
-
-
-
-
-
 
 
 
@@ -31736,12 +30739,6 @@ typedef interface __x_ABI_CWindows_CFoundation_CIUriRuntimeClass __x_ABI_CWindow
 
 
 
-
-typedef enum __x_ABI_CWindows_CGraphics_CDirectX_CDirectXPixelFormat __x_ABI_CWindows_CGraphics_CDirectX_CDirectXPixelFormat;
-
-
-
-
 #ifndef ____x_ABI_CWindows_CGraphics_CImaging_CISoftwareBitmap_FWD_DEFINED__
 #define ____x_ABI_CWindows_CGraphics_CImaging_CISoftwareBitmap_FWD_DEFINED__
 typedef interface __x_ABI_CWindows_CGraphics_CImaging_CISoftwareBitmap __x_ABI_CWindows_CGraphics_CImaging_CISoftwareBitmap;
@@ -31783,7 +30780,6 @@ typedef interface __x_ABI_CWindows_CUI_CCore_CICoreWindow __x_ABI_CWindows_CUI_C
 
 
 typedef struct __x_ABI_CWindows_CUI_CXaml_CInterop_CTypeName __x_ABI_CWindows_CUI_CXaml_CInterop_CTypeName;
-
 
 
 
@@ -31881,12 +30877,6 @@ typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CTextTrimming __x_ABI_CMicrosoft_CUI_C
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CTextWrapping __x_ABI_CMicrosoft_CUI_CXaml_CTextWrapping;
 
 
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CTransitionParent __x_ABI_CMicrosoft_CUI_CXaml_CTransitionParent;
-
-
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CTransitionTrigger __x_ABI_CMicrosoft_CUI_CXaml_CTransitionTrigger;
-
-
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CVector3TransitionComponents __x_ABI_CMicrosoft_CUI_CXaml_CVector3TransitionComponents;
 
 
@@ -31909,20 +30899,6 @@ typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CGridLength __x_ABI_CMicrosoft_CUI_C
 
 
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CThickness __x_ABI_CMicrosoft_CUI_CXaml_CThickness;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -32818,47 +31794,6 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CTextWrapping
     TextWrapping_WrapWholeWords = 3,
 };
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.TransitionParent
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-/* [v1_enum, contract] */
-enum __x_ABI_CMicrosoft_CUI_CXaml_CTransitionParent
-{
-    TransitionParent_ParentToRoot = 0,
-    TransitionParent_ParentToCommonParent = 1,
-    TransitionParent_ParentToGrandParent = 2,
-};
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.TransitionTrigger
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-/* [v1_enum, contract] */
-enum __x_ABI_CMicrosoft_CUI_CXaml_CTransitionTrigger
-{
-    TransitionTrigger_Load = 0,
-    TransitionTrigger_Layout = 1,
-    TransitionTrigger_Unload = 2,
-    TransitionTrigger_Reparent = 3,
-};
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -34954,99 +33889,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CIApplicationStatics
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIApplicationStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIApplicationStatics_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.IAtlasRequestCallback
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IAtlasRequestCallback[] = L"Microsoft.UI.Xaml.IAtlasRequestCallback";
-/* [object, uuid("15645012-8F3F-5090-B584-DF078FCC509A"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallbackVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *AtlasRequest )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback * This,
-        /* [in] */UINT32 width,
-        /* [in] */UINT32 height,
-        /* [in] */__x_ABI_CWindows_CGraphics_CDirectX_CDirectXPixelFormat pixelFormat,
-        /* [retval, out] */boolean * result
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallbackVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallbackVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_AtlasRequest(This,width,height,pixelFormat,result) \
-    ( (This)->lpVtbl->AtlasRequest(This,width,height,pixelFormat,result) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -39242,185 +38084,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelperStatics;
 
 /*
  *
- * Interface Microsoft.UI.Xaml.IDxamlCoreTestHooks
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.DxamlCoreTestHooks
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IDxamlCoreTestHooks[] = L"Microsoft.UI.Xaml.IDxamlCoreTestHooks";
-/* [object, uuid("E44D8E58-844D-5201-83BD-5D48CEB7035D"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.IDxamlCoreTestHooksStatics
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.DxamlCoreTestHooks
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IDxamlCoreTestHooksStatics[] = L"Microsoft.UI.Xaml.IDxamlCoreTestHooksStatics";
-/* [object, uuid("4B2F7A38-3584-53E8-A67F-F3EDF229E5AB"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStaticsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *GetForCurrentThread )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooks * * result
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStaticsVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStaticsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_GetForCurrentThread(This,result) \
-    ( (This)->lpVtbl->GetForCurrentThread(This,result) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIDxamlCoreTestHooksStatics_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.IEffectiveViewportChangedEventArgs
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -40272,105 +38935,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStatics;
 
 /*
  *
- * Interface Microsoft.UI.Xaml.IElementSoundPlayerStaticsPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IElementSoundPlayerStaticsPrivate[] = L"Microsoft.UI.Xaml.IElementSoundPlayerStaticsPrivate";
-/* [object, uuid("65D2203B-6FB0-5EBA-8821-F6DD313C33FB"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *RequestInteractionSoundForElement )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CElementSoundKind sound,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject * element
-        );
-    HRESULT ( STDMETHODCALLTYPE *GetEffectiveSoundMode )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject * element,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CElementSoundMode * result
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_RequestInteractionSoundForElement(This,sound,element) \
-    ( (This)->lpVtbl->RequestInteractionSoundForElement(This,sound,element) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_GetEffectiveSoundMode(This,element,result) \
-    ( (This)->lpVtbl->GetEffectiveSoundMode(This,element,result) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStaticsPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.IEventTrigger
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -40653,215 +39217,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CIExceptionRoutedEventArgsFactory
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIExceptionRoutedEventArgsFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIExceptionRoutedEventArgsFactory_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.IFrameworkApplicationPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IFrameworkApplicationPrivate[] = L"Microsoft.UI.Xaml.IFrameworkApplicationPrivate";
-/* [object, uuid("5CA69216-9979-5E26-B067-D45856580732"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *StartOnCurrentThread )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIApplicationInitializationCallback  * callback
-        );
-    HRESULT ( STDMETHODCALLTYPE *CreateIsland )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * * result
-        );
-    HRESULT ( STDMETHODCALLTYPE *CreateIslandWithContentBridge )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate * This,
-        /* [in] */IInspectable * owner,
-        /* [in] */IInspectable * contentBridge,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * * result
-        );
-    HRESULT ( STDMETHODCALLTYPE *RemoveIsland )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * island
-        );
-    HRESULT ( STDMETHODCALLTYPE *SetSynchronizationWindow )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate * This,
-        /* [in] */UINT64 commitResizeWindow
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_StartOnCurrentThread(This,callback) \
-    ( (This)->lpVtbl->StartOnCurrentThread(This,callback) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_CreateIsland(This,result) \
-    ( (This)->lpVtbl->CreateIsland(This,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_CreateIslandWithContentBridge(This,owner,contentBridge,result) \
-    ( (This)->lpVtbl->CreateIslandWithContentBridge(This,owner,contentBridge,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_RemoveIsland(This,island) \
-    ( (This)->lpVtbl->RemoveIsland(This,island) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_SetSynchronizationWindow(This,commitResizeWindow) \
-    ( (This)->lpVtbl->SetSynchronizationWindow(This,commitResizeWindow) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.IFrameworkApplicationStaticsPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IFrameworkApplicationStaticsPrivate[] = L"Microsoft.UI.Xaml.IFrameworkApplicationStaticsPrivate";
-/* [object, uuid("66CB5498-0063-5D10-B06B-6C6CE06E4D2D"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *EnableFailFastOnStowedException )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate * This
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_EnableFailFastOnStowedException(This) \
-    ( (This)->lpVtbl->EnableFailFastOnStowedException(This) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkApplicationStaticsPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -42241,96 +40596,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplateFactory;
 
 /*
  *
- * Interface Microsoft.UI.Xaml.IFrameworkTemplatePrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IFrameworkTemplatePrivate[] = L"Microsoft.UI.Xaml.IFrameworkTemplatePrivate";
-/* [object, uuid("3EC693E7-F042-5FDC-9661-5DCC9F03385D"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *EnableTemplateCaching )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate * This,
-        /* [in] */boolean isTemplateCachingEnabled
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_EnableTemplateCaching(This,isTemplateCachingEnabled) \
-    ( (This)->lpVtbl->EnableTemplateCaching(This,isTemplateCachingEnabled) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplatePrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.IFrameworkView
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -42921,103 +41186,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CIMediaFailedRoutedEventArgs
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIMediaFailedRoutedEventArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIMediaFailedRoutedEventArgs_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.IMemoryInfoPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IMemoryInfoPrivate[] = L"Microsoft.UI.Xaml.IMemoryInfoPrivate";
-/* [object, uuid("D11FAA49-8D7C-5C62-9D50-68E875A434BB"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *GetCountOfDescendantUIElements )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate * This,
-        /* [retval, out] */UINT64 * result
-        );
-    HRESULT ( STDMETHODCALLTYPE *GetEstimatedSizeOfDescendantImages )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate * This,
-        /* [retval, out] */UINT64 * result
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_GetCountOfDescendantUIElements(This,result) \
-    ( (This)->lpVtbl->GetCountOfDescendantUIElements(This,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_GetEstimatedSizeOfDescendantImages(This,result) \
-    ( (This)->lpVtbl->GetEstimatedSizeOfDescendantImages(This,result) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIMemoryInfoPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -44006,97 +42174,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.IRectHelperStaticsPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IRectHelperStaticsPrivate[] = L"Microsoft.UI.Xaml.IRectHelperStaticsPrivate";
-/* [object, uuid("08298572-672B-5053-8A13-31110E24314F"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *DipsRectToPhysicalRect )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate * This,
-        /* [in] */__x_ABI_CWindows_CFoundation_CRect dipsRect,
-        /* [retval, out] */__x_ABI_CWindows_CFoundation_CRect * result
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_DipsRectToPhysicalRect(This,dipsRect,result) \
-    ( (This)->lpVtbl->DipsRectToPhysicalRect(This,dipsRect,result) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStaticsPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -45575,145 +43652,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CISizeHelperStatics
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CISizeHelperStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CISizeHelperStatics_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.ISourceInfoPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_ISourceInfoPrivate[] = L"Microsoft.UI.Xaml.ISourceInfoPrivate";
-/* [object, uuid("3ACB731C-C37D-5F03-9596-AC62990F520C"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Line )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate * This,
-        /* [retval, out] */INT32 * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_Line )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate * This,
-        /* [in] */INT32 value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Column )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate * This,
-        /* [retval, out] */INT32 * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_Column )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate * This,
-        /* [in] */INT32 value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ParseUri )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate * This,
-        /* [retval, out] */HSTRING * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_ParseUri )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate * This,
-        /* [in] */HSTRING value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_XbfHash )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate * This,
-        /* [retval, out] */HSTRING * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_XbfHash )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate * This,
-        /* [in] */HSTRING value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_get_Line(This,value) \
-    ( (This)->lpVtbl->get_Line(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_put_Line(This,value) \
-    ( (This)->lpVtbl->put_Line(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_get_Column(This,value) \
-    ( (This)->lpVtbl->get_Column(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_put_Column(This,value) \
-    ( (This)->lpVtbl->put_Column(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_get_ParseUri(This,value) \
-    ( (This)->lpVtbl->get_ParseUri(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_put_ParseUri(This,value) \
-    ( (This)->lpVtbl->put_ParseUri(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_get_XbfHash(This,value) \
-    ( (This)->lpVtbl->get_XbfHash(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_put_XbfHash(This,value) \
-    ( (This)->lpVtbl->put_XbfHash(This,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CISourceInfoPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -49836,105 +47774,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStatics;
 
 /*
  *
- * Interface Microsoft.UI.Xaml.IUIElementStaticsPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IUIElementStaticsPrivate[] = L"Microsoft.UI.Xaml.IUIElementStaticsPrivate";
-/* [object, uuid("B35B8888-C508-52DC-AF8F-8A3C38ADBB86"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *InternalGetIsEnabled )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * element,
-        /* [retval, out] */boolean * result
-        );
-    HRESULT ( STDMETHODCALLTYPE *InternalPutIsEnabled )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * element,
-        /* [in] */boolean value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_InternalGetIsEnabled(This,element,result) \
-    ( (This)->lpVtbl->InternalGetIsEnabled(This,element,result) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_InternalPutIsEnabled(This,element,value) \
-    ( (This)->lpVtbl->InternalPutIsEnabled(This,element,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIUIElementStaticsPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.IUIElementWeakCollectionFactory
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -51523,7 +49362,7 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransitionFactory;
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIWindow_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIWindow_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IWindow[] = L"Microsoft.UI.Xaml.IWindow";
-/* [object, uuid("8DE74F65-EA02-5380-BA58-28B3FC36BAE9"), exclusiveto, contract] */
+/* [object, uuid("AA7369E8-FFE4-5731-8A8E-7A3A551A194D"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIWindowVtbl
 {
     BEGIN_INTERFACE
@@ -51597,6 +49436,14 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
         __x_ABI_CMicrosoft_CUI_CXaml_CIWindow * This,
         /* [in] */HSTRING value
         );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ExtendsContentIntoTitleBar )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CIWindow * This,
+        /* [retval, out] */boolean * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_ExtendsContentIntoTitleBar )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CIWindow * This,
+        /* [in] */boolean value
+        );
     /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_Activated )(
         __x_ABI_CMicrosoft_CUI_CXaml_CIWindow * This,
         /* [in] */__FITypedEventHandler_2_IInspectable_Microsoft__CUI__CXaml__CWindowActivatedEventArgs * handler,
@@ -51638,6 +49485,10 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
         );
     HRESULT ( STDMETHODCALLTYPE *Close )(
         __x_ABI_CMicrosoft_CUI_CXaml_CIWindow * This
+        );
+    HRESULT ( STDMETHODCALLTYPE *SetTitleBar )(
+        __x_ABI_CMicrosoft_CUI_CXaml_CIWindow * This,
+        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * titleBar
         );
     END_INTERFACE
     
@@ -51697,6 +49548,12 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CIWindow
 #define __x_ABI_CMicrosoft_CUI_CXaml_CIWindow_put_Title(This,value) \
     ( (This)->lpVtbl->put_Title(This,value) )
 
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindow_get_ExtendsContentIntoTitleBar(This,value) \
+    ( (This)->lpVtbl->get_ExtendsContentIntoTitleBar(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindow_put_ExtendsContentIntoTitleBar(This,value) \
+    ( (This)->lpVtbl->put_ExtendsContentIntoTitleBar(This,value) )
+
 #define __x_ABI_CMicrosoft_CUI_CXaml_CIWindow_add_Activated(This,handler,token) \
     ( (This)->lpVtbl->add_Activated(This,handler,token) )
 
@@ -51726,6 +49583,9 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CIWindow
 
 #define __x_ABI_CMicrosoft_CUI_CXaml_CIWindow_Close(This) \
     ( (This)->lpVtbl->Close(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindow_SetTitleBar(This,titleBar) \
+    ( (This)->lpVtbl->SetTitleBar(This,titleBar) )
 
 
 #endif /* COBJMACROS */
@@ -52129,155 +49989,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CIWindowFactory
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIWindowFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIWindowFactory_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.IWindowPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_IWindowPrivate[] = L"Microsoft.UI.Xaml.IWindowPrivate";
-/* [object, uuid("F5DEF8F6-95C2-55CB-B1A4-551B9DA34220"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_TransparentBackground )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate * This,
-        /* [retval, out] */boolean * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_TransparentBackground )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate * This,
-        /* [in] */boolean value
-        );
-    HRESULT ( STDMETHODCALLTYPE *Show )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate * This
-        );
-    HRESULT ( STDMETHODCALLTYPE *Hide )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate * This
-        );
-    HRESULT ( STDMETHODCALLTYPE *MoveWindow )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate * This,
-        /* [in] */INT32 x,
-        /* [in] */INT32 y,
-        /* [in] */INT32 width,
-        /* [in] */INT32 height
-        );
-    HRESULT ( STDMETHODCALLTYPE *SetAtlasSizeHint )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate * This,
-        /* [in] */UINT32 width,
-        /* [in] */UINT32 height
-        );
-    HRESULT ( STDMETHODCALLTYPE *ReleaseGraphicsDeviceOnSuspend )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate * This,
-        /* [in] */boolean enable
-        );
-    HRESULT ( STDMETHODCALLTYPE *SetAtlasRequestCallback )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIAtlasRequestCallback * callback
-        );
-    HRESULT ( STDMETHODCALLTYPE *GetWindowContentBoundsForElement )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject * element,
-        /* [retval, out] */__x_ABI_CWindows_CFoundation_CRect * result
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_get_TransparentBackground(This,value) \
-    ( (This)->lpVtbl->get_TransparentBackground(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_put_TransparentBackground(This,value) \
-    ( (This)->lpVtbl->put_TransparentBackground(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_Show(This) \
-    ( (This)->lpVtbl->Show(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_Hide(This) \
-    ( (This)->lpVtbl->Hide(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_MoveWindow(This,x,y,width,height) \
-    ( (This)->lpVtbl->MoveWindow(This,x,y,width,height) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_SetAtlasSizeHint(This,width,height) \
-    ( (This)->lpVtbl->SetAtlasSizeHint(This,width,height) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_ReleaseGraphicsDeviceOnSuspend(This,enable) \
-    ( (This)->lpVtbl->ReleaseGraphicsDeviceOnSuspend(This,enable) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_SetAtlasRequestCallback(This,callback) \
-    ( (This)->lpVtbl->SetAtlasRequestCallback(This,callback) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_GetWindowContentBoundsForElement(This,element,result) \
-    ( (This)->lpVtbl->GetWindowContentBoundsForElement(This,element,result) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CIWindowPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -53500,36 +51211,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_DurationHelper[] = L"Microsoft.UI.Xaml.DurationHelper";
 #endif
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.DxamlCoreTestHooks
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via RoActivateInstance starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Xaml.IDxamlCoreTestHooksStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.IDxamlCoreTestHooks ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_DxamlCoreTestHooks_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_DxamlCoreTestHooks_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_DxamlCoreTestHooks[] = L"Microsoft.UI.Xaml.DxamlCoreTestHooks";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*

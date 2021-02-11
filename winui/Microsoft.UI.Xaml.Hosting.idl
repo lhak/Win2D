@@ -45,10 +45,6 @@ namespace Microsoft
     {
         namespace Xaml
         {
-            runtimeclass DependencyObject;
-
-            apicontract PrivateApiContract;
-
             runtimeclass UIElement;
 
             apicontract WinUIContract;
@@ -60,8 +56,6 @@ namespace Windows
     namespace Foundation
     {
         interface IClosable;
-
-        typedef struct Point Point;
 
         typedef struct Rect Rect;
     }
@@ -94,10 +88,6 @@ namespace Microsoft
 
                 interface IWindowsXamlManagerStatics;
 
-                interface IXamlIsland;
-
-                interface IXamlIslandStatics;
-
                 interface IXamlSourceFocusNavigationRequest;
 
                 interface IXamlSourceFocusNavigationRequestFactory;
@@ -115,8 +105,6 @@ namespace Microsoft
                 runtimeclass ElementCompositionPreview;
 
                 runtimeclass WindowsXamlManager;
-
-                runtimeclass XamlIsland;
 
                 runtimeclass XamlSourceFocusNavigationRequest;
 
@@ -249,26 +237,6 @@ namespace Microsoft
                     HRESULT InitializeForCurrentThread([out] [retval] Microsoft.UI.Xaml.Hosting.WindowsXamlManager** result);
                 }
 
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Hosting.XamlIsland)]
-                [uuid(73C343E9-379E-5420-ADFE-C7F327445F12)]
-                interface IXamlIsland : IInspectable
-                {
-                    [propget] HRESULT Content([out] [retval] Microsoft.UI.Xaml.UIElement** value);
-                    [propput] HRESULT Content([in] Microsoft.UI.Xaml.UIElement* value);
-                    [propget] HRESULT FocusController([out] [retval] IInspectable** value);
-                    HRESULT SetScreenOffsetOverride([in] Windows.Foundation.Point offsetOnScreen);
-                    HRESULT SetFocus();
-                }
-
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Hosting.XamlIsland)]
-                [uuid(CA595537-A0B1-5994-A7E4-CAD866BDFCAA)]
-                interface IXamlIslandStatics : IInspectable
-                {
-                    HRESULT GetIslandFromElement([in] Microsoft.UI.Xaml.DependencyObject* element, [out] [retval] Microsoft.UI.Xaml.Hosting.XamlIsland** result);
-                }
-
                 [contract(Microsoft.UI.Xaml.Hosting.HostingContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest)]
                 [uuid(C883EA8B-4CE2-58BE-B547-66DEDF620312)]
@@ -346,16 +314,6 @@ namespace Microsoft
                 {
                     [default] interface Microsoft.UI.Xaml.Hosting.IWindowsXamlManager;
                     [contract(Microsoft.UI.Xaml.Hosting.HostingContract, 1.0)] interface Windows.Foundation.IClosable;
-                }
-
-                [activatable(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [marshaling_behavior(agile)]
-                [static(Microsoft.UI.Xaml.Hosting.IXamlIslandStatics, Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                [threading(both)]
-                runtimeclass XamlIsland : Microsoft.UI.Xaml.Controls.Panel
-                {
-                    [default] interface Microsoft.UI.Xaml.Hosting.IXamlIsland;
                 }
 
                 [activatable(Microsoft.UI.Xaml.Hosting.IXamlSourceFocusNavigationRequestFactory, Microsoft.UI.Xaml.Hosting.HostingContract, 1.0)]

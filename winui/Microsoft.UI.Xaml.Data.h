@@ -57,14 +57,6 @@
 #define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
@@ -1331,7 +1323,6 @@ namespace ABI {
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty_FWD_DEFINED__
 
 
-
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -1403,20 +1394,6 @@ namespace ABI {
                 namespace Data {
                     
                     typedef enum BindingMode : int BindingMode;
-                    
-                } /* Data */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Data {
-                    
-                    typedef enum EffectiveSourceType : int EffectiveSourceType;
                     
                 } /* Data */
             } /* Xaml */
@@ -1659,43 +1636,6 @@ namespace ABI {
     } /* Microsoft */
 } /* ABI */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.Data.EffectiveSourceType
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Data {
-                    /* [v1_enum, contract] */
-                    enum EffectiveSourceType : int
-                    {
-                        EffectiveSourceType_None = 0,
-                        EffectiveSourceType_Binding_Source = 1,
-                        EffectiveSourceType_DataContext = 2,
-                        EffectiveSourceType_Mentor_DataContext = 3,
-                        EffectiveSourceType_Target = 4,
-                        EffectiveSourceType_TemplatedParent = 5,
-                        EffectiveSourceType_Mentor_TemplatedParent = 6,
-                        EffectiveSourceType_ElementName = 7,
-                        EffectiveSourceType_Mentor_ElementName = 8,
-                    };
-                    
-                } /* Data */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -5062,7 +5002,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty __x_ABI_CMic
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIDependencyProperty_FWD_DEFINED__
 
 
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIPropertyPath_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIPropertyPath_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIPropertyPath __x_ABI_CMicrosoft_CUI_CXaml_CIPropertyPath;
@@ -5092,9 +5031,6 @@ typedef struct __x_ABI_CWindows_CUI_CXaml_CInterop_CTypeName __x_ABI_CWindows_CU
 
 
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CData_CBindingMode __x_ABI_CMicrosoft_CUI_CXaml_CData_CBindingMode;
-
-
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CData_CEffectiveSourceType __x_ABI_CMicrosoft_CUI_CXaml_CData_CEffectiveSourceType;
 
 
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CData_CRelativeSourceMode __x_ABI_CMicrosoft_CUI_CXaml_CData_CRelativeSourceMode;
@@ -5179,32 +5115,6 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CData_CBindingMode
     BindingMode_TwoWay = 3,
 };
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.Data.EffectiveSourceType
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-/* [v1_enum, contract] */
-enum __x_ABI_CMicrosoft_CUI_CXaml_CData_CEffectiveSourceType
-{
-    EffectiveSourceType_None = 0,
-    EffectiveSourceType_Binding_Source = 1,
-    EffectiveSourceType_DataContext = 2,
-    EffectiveSourceType_Mentor_DataContext = 3,
-    EffectiveSourceType_Target = 4,
-    EffectiveSourceType_TemplatedParent = 5,
-    EffectiveSourceType_Mentor_TemplatedParent = 6,
-    EffectiveSourceType_ElementName = 7,
-    EffectiveSourceType_Mentor_ElementName = 8,
-};
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*

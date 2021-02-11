@@ -86,7 +86,7 @@ namespace Microsoft
         [contract(Microsoft.Foundation.LiftedContract, 1.0)]
         enum DispatcherQueuePriority
         {
-            Low_d = -10
+            Low_d    = -10
         };
 
         [contract(Microsoft.Foundation.LiftedContract, 1.0)]

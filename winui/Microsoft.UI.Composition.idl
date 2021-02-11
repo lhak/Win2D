@@ -224,8 +224,6 @@ namespace Microsoft
 
             interface ICompositionCapabilities;
 
-            interface ICompositionCapabilitiesStatics;
-
             interface ICompositionClip;
 
             interface ICompositionClip2;
@@ -826,13 +824,13 @@ namespace Microsoft
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             enum AnimationIterationBehavior
             {
-                Count_d = 0
+                Count_d   = 0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             enum AnimationPropertyAccessMode
             {
-                None_d = 0
+                None_d      = 0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
@@ -851,13 +849,13 @@ namespace Microsoft
             [flags]
             enum CompositionBatchTypes
             {
-                None_d = 0x0
+                None_d              = 0x0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             enum CompositionBitmapInterpolationMode
             {
-                NearestNeighbor_d = 0
+                NearestNeighbor_d                = 0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
@@ -869,45 +867,43 @@ namespace Microsoft
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             enum CompositionColorSpace
             {
-                Auto_d = 0
+                Auto_d      = 0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             enum CompositionCompositeMode
             {
-                Inherit_d = 0
+                Inherit_d           = 0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             enum CompositionDropShadowSourcePolicy
             {
-                Default_d = 0
+                Default_d                  = 0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             enum CompositionEasingFunctionMode
             {
-                In    = 0,
-                Out   = 1,
-                InOut = 2
+                In_d    = 0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             enum CompositionEffectFactoryLoadStatus
             {
-                Success_d = 0
+                Success_d          = 0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             enum CompositionGetValueStatus
             {
-                Succeeded_d = 0
+                Succeeded_d    = 0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             enum CompositionGradientExtendMode
             {
-                Clamp_d = 0
+                Clamp_d  = 0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
@@ -919,26 +915,25 @@ namespace Microsoft
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             enum CompositionProjectedShadowDrawOrder
             {
-                PostChildren = 0,
-                PreChildren  = 1
+                PostChildren_d = 0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             enum CompositionStretch
             {
-                None_d = 0
+                None_d          = 0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             enum CompositionStrokeCap
             {
-                Flat_d = 0
+                Flat_d     = 0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             enum CompositionStrokeLineJoin
             {
-                Miter_d = 0
+                Miter_d        = 0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
@@ -1200,14 +1195,6 @@ namespace Microsoft
                 HRESULT AreEffectsFast([out] [retval] boolean* result);
                 [eventadd] HRESULT Changed([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Composition.CompositionCapabilities*, IInspectable*>* handler, [out] [retval] EventRegistrationToken* token);
                 [eventremove] HRESULT Changed([in] EventRegistrationToken token);
-            }
-
-            [contract(Microsoft.Foundation.LiftedContract, 1.0)]
-            [exclusiveto(Microsoft.UI.Composition.CompositionCapabilities)]
-            [uuid(6AB5C5B7-F23D-5B7A-B44D-D87A54AF8FE4)]
-            interface ICompositionCapabilitiesStatics : IInspectable
-            {
-                HRESULT GetForCurrentView([out] [retval] Microsoft.UI.Composition.CompositionCapabilities** result);
             }
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
@@ -3046,9 +3033,9 @@ namespace Microsoft
                 [default] interface Microsoft.UI.Composition.ICompositionBrush;
             }
 
+            [activatable(Microsoft.Foundation.LiftedContract, 1.0)]
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             [marshaling_behavior(agile)]
-            [static(Microsoft.UI.Composition.ICompositionCapabilitiesStatics, Microsoft.Foundation.LiftedContract, 1.0)]
             [threading(both)]
             runtimeclass CompositionCapabilities
             {

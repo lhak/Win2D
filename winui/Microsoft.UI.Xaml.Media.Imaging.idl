@@ -24,10 +24,6 @@ namespace Microsoft
 
             delegate ExceptionRoutedEventHandler;
 
-            apicontract PrivateApiContract;
-
-            runtimeclass ResourceDictionary;
-
             delegate RoutedEventHandler;
 
             runtimeclass UIElement;
@@ -144,8 +140,6 @@ namespace Microsoft
                     interface IXamlRenderingBackgroundTaskFactory;
 
                     interface IXamlRenderingBackgroundTaskOverrides;
-
-                    interface IXamlRenderingBackgroundTaskStaticsPrivate;
 
                     runtimeclass BitmapImage;
 
@@ -481,15 +475,6 @@ namespace Microsoft
                     interface IXamlRenderingBackgroundTaskOverrides : IInspectable
                     {
                         HRESULT OnRun([in] Windows.ApplicationModel.Background.IBackgroundTaskInstance* taskInstance);
-                    }
-
-                    [contract(Microsoft.UI.Xaml.PrivateApiContract, 1.0)]
-                    [uuid(F5FBD758-16CA-5318-BE90-C3D76A127DCA)]
-                    interface IXamlRenderingBackgroundTaskStaticsPrivate : IInspectable
-                    {
-                        [propget] HRESULT Resources([out] [retval] Microsoft.UI.Xaml.ResourceDictionary** value);
-                        HRESULT EnableStandaloneHosting();
-                        HRESULT SetScalePercentage([in] UINT32 percentage);
                     }
 
                     [activatable(Microsoft.UI.Xaml.Media.Imaging.IBitmapImageFactory, Microsoft.UI.Xaml.WinUIContract, 1.0)]

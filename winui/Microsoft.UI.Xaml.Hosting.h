@@ -61,10 +61,6 @@
 #define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
@@ -382,40 +378,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManagerStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Hosting {
-                    interface IXamlIsland;
-                } /* Hosting */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland ABI::Microsoft::UI::Xaml::Hosting::IXamlIsland
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Hosting {
-                    interface IXamlIslandStatics;
-                } /* Hosting */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics ABI::Microsoft::UI::Xaml::Hosting::IXamlIslandStatics
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequest_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequest_FWD_DEFINED__
 namespace ABI {
@@ -704,33 +666,6 @@ namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Xaml {
-                class DependencyObject;
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                interface IDependencyObject;
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject ABI::Microsoft::UI::Xaml::IDependencyObject
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject_FWD_DEFINED__
-
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
                 class UIElement;
             } /* Xaml */
         } /* UI */
@@ -775,16 +710,6 @@ namespace ABI {
     namespace Windows {
         namespace Foundation {
             
-            typedef struct Point Point;
-            
-        } /* Foundation */
-    } /* Windows */
-} /* ABI */
-
-namespace ABI {
-    namespace Windows {
-        namespace Foundation {
-            
             typedef struct Rect Rect;
             
         } /* Foundation */
@@ -823,8 +748,6 @@ namespace ABI {
 
 
 
-
-
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -844,19 +767,6 @@ namespace ABI {
             namespace Xaml {
                 namespace Hosting {
                     class WindowsXamlManager;
-                } /* Hosting */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Hosting {
-                    class XamlIsland;
                 } /* Hosting */
             } /* Xaml */
         } /* UI */
@@ -1340,105 +1250,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManage
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Hosting.IXamlIsland
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.XamlIsland
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IXamlIsland[] = L"Microsoft.UI.Xaml.Hosting.IXamlIsland";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Hosting {
-                    /* [object, uuid("73C343E9-379E-5420-ADFE-C7F327445F12"), exclusiveto, contract] */
-                    MIDL_INTERFACE("73C343E9-379E-5420-ADFE-C7F327445F12")
-                    IXamlIsland : public IInspectable
-                    {
-                    public:
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Content(
-                            /* [retval, out] */ABI::Microsoft::UI::Xaml::IUIElement * * value
-                            ) = 0;
-                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_Content(
-                            /* [in] */ABI::Microsoft::UI::Xaml::IUIElement * value
-                            ) = 0;
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_FocusController(
-                            /* [retval, out] */IInspectable * * value
-                            ) = 0;
-                        virtual HRESULT STDMETHODCALLTYPE SetScreenOffsetOverride(
-                            /* [in] */ABI::Windows::Foundation::Point offsetOnScreen
-                            ) = 0;
-                        virtual HRESULT STDMETHODCALLTYPE SetFocus(void) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_IXamlIsland=_uuidof(IXamlIsland);
-                    
-                } /* Hosting */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Hosting.IXamlIslandStatics
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.XamlIsland
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IXamlIslandStatics[] = L"Microsoft.UI.Xaml.Hosting.IXamlIslandStatics";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Hosting {
-                    /* [object, uuid("CA595537-A0B1-5994-A7E4-CAD866BDFCAA"), exclusiveto, contract] */
-                    MIDL_INTERFACE("CA595537-A0B1-5994-A7E4-CAD866BDFCAA")
-                    IXamlIslandStatics : public IInspectable
-                    {
-                    public:
-                        virtual HRESULT STDMETHODCALLTYPE GetIslandFromElement(
-                            /* [in] */ABI::Microsoft::UI::Xaml::IDependencyObject * element,
-                            /* [retval, out] */ABI::Microsoft::UI::Xaml::Hosting::IXamlIsland * * result
-                            ) = 0;
-                        
-                    };
-
-                    extern MIDL_CONST_ID IID & IID_IXamlIslandStatics=_uuidof(IXamlIslandStatics);
-                    
-                } /* Hosting */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Hosting.IXamlSourceFocusNavigationRequest
  *
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
@@ -1758,36 +1569,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
- * Class Microsoft.UI.Xaml.Hosting.XamlIsland
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via RoActivateInstance starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Xaml.Hosting.IXamlIslandStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Hosting.IXamlIsland ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_XamlIsland_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_XamlIsland_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Hosting_XamlIsland[] = L"Microsoft.UI.Xaml.Hosting.XamlIsland";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Class Microsoft.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest
  *
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
@@ -1892,18 +1673,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManager __x
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManagerStatics __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManagerStatics;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManagerStatics_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequest_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequest_FWD_DEFINED__
@@ -2074,14 +1843,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIScrollViewer __x_ABI_
 
 
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject __x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject_FWD_DEFINED__
-
-
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElement_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CIUIElement_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CIUIElement __x_ABI_CMicrosoft_CUI_CXaml_CIUIElement;
@@ -2101,9 +1862,6 @@ typedef interface __x_ABI_CWindows_CFoundation_CIClosable __x_ABI_CWindows_CFoun
 
 
 
-typedef struct __x_ABI_CWindows_CFoundation_CPoint __x_ABI_CWindows_CFoundation_CPoint;
-
-
 typedef struct __x_ABI_CWindows_CFoundation_CRect __x_ABI_CWindows_CFoundation_CRect;
 
 
@@ -2111,9 +1869,6 @@ typedef struct __x_ABI_CWindows_CFoundation_CRect __x_ABI_CWindows_CFoundation_C
 
 
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CXamlSourceFocusNavigationReason __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CXamlSourceFocusNavigationReason;
-
-
-
 
 
 
@@ -3013,220 +2768,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManage
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Hosting.IXamlIsland
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.XamlIsland
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IXamlIsland[] = L"Microsoft.UI.Xaml.Hosting.IXamlIsland";
-/* [object, uuid("73C343E9-379E-5420-ADFE-C7F327445F12"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Content )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * * value
-        );
-    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_Content )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_FocusController )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * This,
-        /* [retval, out] */IInspectable * * value
-        );
-    HRESULT ( STDMETHODCALLTYPE *SetScreenOffsetOverride )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * This,
-        /* [in] */__x_ABI_CWindows_CFoundation_CPoint offsetOnScreen
-        );
-    HRESULT ( STDMETHODCALLTYPE *SetFocus )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * This
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_get_Content(This,value) \
-    ( (This)->lpVtbl->get_Content(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_put_Content(This,value) \
-    ( (This)->lpVtbl->put_Content(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_get_FocusController(This,value) \
-    ( (This)->lpVtbl->get_FocusController(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_SetScreenOffsetOverride(This,offsetOnScreen) \
-    ( (This)->lpVtbl->SetScreenOffsetOverride(This,offsetOnScreen) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_SetFocus(This) \
-    ( (This)->lpVtbl->SetFocus(This) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Hosting.IXamlIslandStatics
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.XamlIsland
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IXamlIslandStatics[] = L"Microsoft.UI.Xaml.Hosting.IXamlIslandStatics";
-/* [object, uuid("CA595537-A0B1-5994-A7E4-CAD866BDFCAA"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStaticsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *GetIslandFromElement )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject * element,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIsland * * result
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStaticsVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStaticsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_GetIslandFromElement(This,element,result) \
-    ( (This)->lpVtbl->GetIslandFromElement(This,element,result) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlIslandStatics_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Hosting.IXamlSourceFocusNavigationRequest
  *
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
@@ -3754,36 +3295,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Hosting_WindowsXamlManager[] = L"Microsoft.UI.Xaml.Hosting.WindowsXamlManager";
 #endif
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Hosting.XamlIsland
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via RoActivateInstance starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Xaml.Hosting.IXamlIslandStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.PrivateApiContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Hosting.IXamlIsland ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_XamlIsland_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_XamlIsland_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Hosting_XamlIsland[] = L"Microsoft.UI.Xaml.Hosting.XamlIsland";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*

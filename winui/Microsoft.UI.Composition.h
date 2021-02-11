@@ -527,21 +527,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilities_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Composition {
-                interface ICompositionCapabilitiesStatics;
-            } /* Composition */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics ABI::Microsoft::UI::Composition::ICompositionCapabilitiesStatics
-
-#endif // ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionClip_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionClip_FWD_DEFINED__
 namespace ABI {
@@ -4866,7 +4851,6 @@ namespace ABI {
 
 
 
-
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -7906,48 +7890,6 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilities;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilities_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Composition.ICompositionCapabilitiesStatics
- *
- * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Composition.CompositionCapabilities
- *
- *
- */
-#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_ICompositionCapabilitiesStatics[] = L"Microsoft.UI.Composition.ICompositionCapabilitiesStatics";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Composition {
-                /* [object, uuid("6AB5C5B7-F23D-5B7A-B44D-D87A54AF8FE4"), exclusiveto, contract] */
-                MIDL_INTERFACE("6AB5C5B7-F23D-5B7A-B44D-D87A54AF8FE4")
-                ICompositionCapabilitiesStatics : public IInspectable
-                {
-                public:
-                    virtual HRESULT STDMETHODCALLTYPE GetForCurrentView(
-                        /* [retval, out] */ABI::Microsoft::UI::Composition::ICompositionCapabilities * * result
-                        ) = 0;
-                    
-                };
-
-                extern MIDL_CONST_ID IID & IID_ICompositionCapabilitiesStatics=_uuidof(ICompositionCapabilitiesStatics);
-                
-            } /* Composition */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
@@ -16261,8 +16203,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
  *
- * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Composition.ICompositionCapabilitiesStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
+ * RuntimeClass can be activated.
+ *   Type can be activated via RoActivateInstance starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.ICompositionCapabilities ** Default Interface **
@@ -18590,12 +18532,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CComposition_CICompositionBrushFactory 
 typedef interface __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilities __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilities;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilities_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionClip_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionClip_FWD_DEFINED__
@@ -23227,7 +23163,6 @@ typedef enum __x_ABI_CMicrosoft_CUI_CComposition_CCompositionStrokeLineJoin __x_
 
 
 
-
 /*
  *
  * Struct Microsoft.UI.Composition.AnimationControllerProgressBehavior
@@ -26613,99 +26548,6 @@ interface __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilities
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilities;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilities_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Composition.ICompositionCapabilitiesStatics
- *
- * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Composition.CompositionCapabilities
- *
- *
- */
-#if MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Composition_ICompositionCapabilitiesStatics[] = L"Microsoft.UI.Composition.ICompositionCapabilitiesStatics";
-/* [object, uuid("6AB5C5B7-F23D-5B7A-B44D-D87A54AF8FE4"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStaticsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *GetForCurrentView )(
-        __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilities * * result
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStaticsVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStaticsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_GetForCurrentView(This,result) \
-    ( (This)->lpVtbl->GetForCurrentView(This,result) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CComposition_CICompositionCapabilitiesStatics_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_FOUNDATION_LIFTEDCONTRACT_VERSION >= 0x10000
 
 
@@ -44631,8 +44473,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Introduced to Microsoft.Foundation.LiftedContract in version 1.0
  *
  *
- * RuntimeClass contains static methods.
- *   Static Methods exist on the Microsoft.UI.Composition.ICompositionCapabilitiesStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
+ * RuntimeClass can be activated.
+ *   Type can be activated via RoActivateInstance starting with version 1.0 of the Microsoft.Foundation.LiftedContract API contract
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Composition.ICompositionCapabilities ** Default Interface **

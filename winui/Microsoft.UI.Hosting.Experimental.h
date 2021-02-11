@@ -57,14 +57,6 @@
 #define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
@@ -243,6 +235,7 @@
 #include "Microsoft.UI.Composition.h"
 #include "Microsoft.UI.Composition.Experimental.h"
 #include "Microsoft.UI.Input.Experimental.h"
+#include "Windows.UI.h"
 #include "Windows.UI.Core.h"
 // Importing Collections header
 #include <windows.foundation.collections.h>
@@ -334,6 +327,40 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridgeStatics_FWD_DEFINED__
 
+#ifndef ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Hosting {
+                namespace Experimental {
+                    interface IExpPopupWindowBridge;
+                } /* Experimental */
+            } /* Hosting */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge ABI::Microsoft::UI::Hosting::Experimental::IExpPopupWindowBridge
+
+#endif // ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_FWD_DEFINED__
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Hosting {
+                namespace Experimental {
+                    interface IExpPopupWindowBridgeStatics;
+                } /* Experimental */
+            } /* Hosting */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics ABI::Microsoft::UI::Hosting::Experimental::IExpPopupWindowBridgeStatics
+
+#endif // ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_FWD_DEFINED__
+
 #ifndef ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpSystemVisualBridge_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpSystemVisualBridge_FWD_DEFINED__
 namespace ABI {
@@ -392,7 +419,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("c822b4de-2f11-5888-81af-09b987f8e16e"))
+struct __declspec(uuid("54b27b1d-2feb-53a9-888b-9c789161dcb6"))
 ITypedEventHandler<ABI::Microsoft::UI::Hosting::Experimental::ExpDesktopWindowBridge*,IInspectable*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Hosting::Experimental::ExpDesktopWindowBridge*, ABI::Microsoft::UI::Hosting::Experimental::IExpDesktopWindowBridge*>,IInspectable*> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -455,7 +482,7 @@ namespace ABI {
 #if !defined(RO_NO_TEMPLATE_NAME)
 namespace ABI { namespace Windows { namespace Foundation {
 template <>
-struct __declspec(uuid("a512d3b7-9846-50b8-8417-aec7939086a6"))
+struct __declspec(uuid("1c6254d9-7c92-504d-a23c-904d1fa20ce0"))
 ITypedEventHandler<ABI::Microsoft::UI::Hosting::Experimental::ExpDesktopWindowBridge*,ABI::Microsoft::UI::Input::Experimental::ExpNavigateFocusRequestedEventArgs*> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Hosting::Experimental::ExpDesktopWindowBridge*, ABI::Microsoft::UI::Hosting::Experimental::IExpDesktopWindowBridge*>,ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Input::Experimental::ExpNavigateFocusRequestedEventArgs*, ABI::Microsoft::UI::Input::Experimental::IExpNavigateFocusRequestedEventArgs*>> 
 {
     static const wchar_t* z_get_rc_name_impl() 
@@ -715,6 +742,18 @@ namespace ABI {
 namespace ABI {
     namespace Windows {
         namespace UI {
+            
+            typedef struct Color Color;
+            
+        } /* UI */
+    } /* Windows */
+} /* ABI */
+
+
+
+namespace ABI {
+    namespace Windows {
+        namespace UI {
             namespace Core {
                 class CoreWindow;
             } /* Core */
@@ -748,6 +787,8 @@ namespace ABI {
 
 
 
+
+
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -760,6 +801,19 @@ namespace ABI {
     } /* Microsoft */
 } /* ABI */
 
+
+
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Hosting {
+                namespace Experimental {
+                    class ExpPopupWindowBridge;
+                } /* Experimental */
+            } /* Hosting */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
 
 
 namespace ABI {
@@ -806,11 +860,14 @@ namespace ABI {
         namespace UI {
             namespace Hosting {
                 namespace Experimental {
-                    /* [object, uuid("5B85BA18-F850-5621-919E-E545723AB94E"), contract] */
-                    MIDL_INTERFACE("5B85BA18-F850-5621-919E-E545723AB94E")
+                    /* [object, uuid("72B6526E-0A46-56CC-B29C-5225BD2AF251"), contract] */
+                    MIDL_INTERFACE("72B6526E-0A46-56CC-B29C-5225BD2AF251")
                     IExpContentBridge : public IInspectable
                     {
                     public:
+                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_Content(
+                            /* [retval, out] */ABI::Microsoft::UI::Composition::Experimental::IExpCompositionContent * * value
+                            ) = 0;
                         virtual HRESULT STDMETHODCALLTYPE Connect(
                             /* [in] */ABI::Microsoft::UI::Composition::Experimental::IExpCompositionContent * content,
                             /* [in] */ABI::Microsoft::UI::Input::Experimental::IExpInputSite * inputSite
@@ -851,11 +908,14 @@ namespace ABI {
         namespace UI {
             namespace Hosting {
                 namespace Experimental {
-                    /* [object, uuid("87B0E524-DF7F-55E6-B8DF-F8032FC115CE"), exclusiveto, contract] */
-                    MIDL_INTERFACE("87B0E524-DF7F-55E6-B8DF-F8032FC115CE")
+                    /* [object, uuid("CE931E38-5B79-5224-8EFE-965FB4CCA211"), exclusiveto, contract] */
+                    MIDL_INTERFACE("CE931E38-5B79-5224-8EFE-965FB4CCA211")
                     IExpCoreWindowBridge : public IInspectable
                     {
                     public:
+                        virtual HRESULT STDMETHODCALLTYPE CreatePopup(
+                            /* [retval, out] */ABI::Microsoft::UI::Hosting::Experimental::IExpPopupWindowBridge * * result
+                            ) = 0;
                         
                     };
 
@@ -941,25 +1001,25 @@ namespace ABI {
         namespace UI {
             namespace Hosting {
                 namespace Experimental {
-                    /* [object, uuid("CD7C2FED-95AE-532D-90CA-92C4DC3A09B9"), exclusiveto, contract] */
-                    MIDL_INTERFACE("CD7C2FED-95AE-532D-90CA-92C4DC3A09B9")
+                    /* [object, uuid("CE1208DA-2BF6-542B-A605-3F83FEAAAE6F"), exclusiveto, contract] */
+                    MIDL_INTERFACE("CE1208DA-2BF6-542B-A605-3F83FEAAAE6F")
                     IExpDesktopWindowBridge : public IInspectable
                     {
                     public:
-                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_AppliedScaleFactor(
-                            /* [retval, out] */FLOAT * value
-                            ) = 0;
                         /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ChildWindowId(
                             /* [retval, out] */ABI::Microsoft::UI::WindowId * value
+                            ) = 0;
+                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_FillTopLevelWindow(
+                            /* [retval, out] */::boolean * value
+                            ) = 0;
+                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_FillTopLevelWindow(
+                            /* [in] */::boolean value
                             ) = 0;
                         /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_TopLevelDisplayId(
                             /* [retval, out] */ABI::Microsoft::UI::DisplayId * value
                             ) = 0;
                         virtual HRESULT STDMETHODCALLTYPE SetOverrideScaleFactor(
                             /* [in] */FLOAT value
-                            ) = 0;
-                        virtual HRESULT STDMETHODCALLTYPE NotifyHostActivationChange(
-                            /* [in] */::boolean active
                             ) = 0;
                         virtual HRESULT STDMETHODCALLTYPE NavigateFocus(
                             /* [in] */ABI::Microsoft::UI::Input::Experimental::IExpFocusNavigationRequest * request,
@@ -971,6 +1031,9 @@ namespace ABI {
                             /* [in] */UINT32 virtualKey,
                             /* [in] */UINT64 keyInfo,
                             /* [retval, out] */::boolean * result
+                            ) = 0;
+                        virtual HRESULT STDMETHODCALLTYPE CreatePopup(
+                            /* [retval, out] */ABI::Microsoft::UI::Hosting::Experimental::IExpPopupWindowBridge * * result
                             ) = 0;
                         /* [eventadd] */virtual HRESULT STDMETHODCALLTYPE add_TakeFocusRequested(
                             /* [in] */__FITypedEventHandler_2_Microsoft__CUI__CHosting__CExperimental__CExpDesktopWindowBridge_Microsoft__CUI__CInput__CExperimental__CExpNavigateFocusRequestedEventArgs * handler,
@@ -1053,6 +1116,94 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDeskto
 
 /*
  *
+ * Interface Microsoft.UI.Hosting.Experimental.IExpPopupWindowBridge
+ *
+ * Introduced to Microsoft.Foundation.LiftedExperimentalContract in version 1.0
+ *
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Hosting.Experimental.ExpPopupWindowBridge
+ *
+ *
+ */
+#if MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+#if !defined(____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Hosting_Experimental_IExpPopupWindowBridge[] = L"Microsoft.UI.Hosting.Experimental.IExpPopupWindowBridge";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Hosting {
+                namespace Experimental {
+                    /* [object, uuid("2EA5D840-9EA6-5BE2-A2BE-7D01EE689091"), exclusiveto, contract] */
+                    MIDL_INTERFACE("2EA5D840-9EA6-5BE2-A2BE-7D01EE689091")
+                    IExpPopupWindowBridge : public IInspectable
+                    {
+                    public:
+                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_PopupWindowId(
+                            /* [retval, out] */ABI::Microsoft::UI::WindowId * value
+                            ) = 0;
+                        
+                    };
+
+                    extern MIDL_CONST_ID IID & IID_IExpPopupWindowBridge=_uuidof(IExpPopupWindowBridge);
+                    
+                } /* Experimental */
+            } /* Hosting */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_INTERFACE_DEFINED__) */
+#endif // MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+
+
+/*
+ *
+ * Interface Microsoft.UI.Hosting.Experimental.IExpPopupWindowBridgeStatics
+ *
+ * Introduced to Microsoft.Foundation.LiftedExperimentalContract in version 1.0
+ *
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Hosting.Experimental.ExpPopupWindowBridge
+ *
+ *
+ */
+#if MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+#if !defined(____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Hosting_Experimental_IExpPopupWindowBridgeStatics[] = L"Microsoft.UI.Hosting.Experimental.IExpPopupWindowBridgeStatics";
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Hosting {
+                namespace Experimental {
+                    /* [object, uuid("9DFC7ECC-C7C1-5952-8AAD-77B822F7D4C7"), exclusiveto, contract] */
+                    MIDL_INTERFACE("9DFC7ECC-C7C1-5952-8AAD-77B822F7D4C7")
+                    IExpPopupWindowBridgeStatics : public IInspectable
+                    {
+                    public:
+                        virtual HRESULT STDMETHODCALLTYPE IsSupported(
+                            /* [retval, out] */::boolean * result
+                            ) = 0;
+                        
+                    };
+
+                    extern MIDL_CONST_ID IID & IID_IExpPopupWindowBridgeStatics=_uuidof(IExpPopupWindowBridgeStatics);
+                    
+                } /* Experimental */
+            } /* Hosting */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_INTERFACE_DEFINED__) */
+#endif // MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+
+
+/*
+ *
  * Interface Microsoft.UI.Hosting.Experimental.IExpSystemVisualBridge
  *
  * Introduced to Microsoft.Foundation.LiftedExperimentalContract in version 1.0
@@ -1071,13 +1222,19 @@ namespace ABI {
         namespace UI {
             namespace Hosting {
                 namespace Experimental {
-                    /* [object, uuid("C1AD453A-881B-500A-8315-A3563BBEF753"), exclusiveto, contract] */
-                    MIDL_INTERFACE("C1AD453A-881B-500A-8315-A3563BBEF753")
+                    /* [object, uuid("AF3AABAA-F231-5682-BF72-3BE27E60F6D1"), exclusiveto, contract] */
+                    MIDL_INTERFACE("AF3AABAA-F231-5682-BF72-3BE27E60F6D1")
                     IExpSystemVisualBridge : public IInspectable
                     {
                     public:
                         /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_BridgeVisual(
                             /* [retval, out] */ABI::Microsoft::UI::Composition::IVisual * * value
+                            ) = 0;
+                        /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_BackgroundColor(
+                            /* [retval, out] */ABI::Windows::UI::Color * value
+                            ) = 0;
+                        /* [propput] */virtual HRESULT STDMETHODCALLTYPE put_BackgroundColor(
+                            /* [in] */ABI::Windows::UI::Color value
                             ) = 0;
                         
                     };
@@ -1203,6 +1360,35 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
+ * Class Microsoft.UI.Hosting.Experimental.ExpPopupWindowBridge
+ *
+ * Introduced to Microsoft.Foundation.LiftedExperimentalContract in version 1.0
+ *
+ *
+ * RuntimeClass contains static methods.
+ *   Static Methods exist on the Microsoft.UI.Hosting.Experimental.IExpPopupWindowBridgeStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedExperimentalContract API contract
+ *
+ * Class implements the following interfaces:
+ *    Microsoft.UI.Hosting.Experimental.IExpPopupWindowBridge ** Default Interface **
+ *    Microsoft.UI.Hosting.Experimental.IExpContentBridge
+ *    Windows.Foundation.IClosable
+ *
+ * Class Threading Model:  Both Single and Multi Threaded Apartment
+ *
+ * Class Marshaling Behavior:  Agile - Class is agile
+ *
+ */
+#if MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+
+#ifndef RUNTIMECLASS_Microsoft_UI_Hosting_Experimental_ExpPopupWindowBridge_DEFINED
+#define RUNTIMECLASS_Microsoft_UI_Hosting_Experimental_ExpPopupWindowBridge_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Hosting_Experimental_ExpPopupWindowBridge[] = L"Microsoft.UI.Hosting.Experimental.ExpPopupWindowBridge";
+#endif
+#endif // MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+
+
+/*
+ *
  * Class Microsoft.UI.Hosting.Experimental.ExpSystemVisualBridge
  *
  * Introduced to Microsoft.Foundation.LiftedExperimentalContract in version 1.0
@@ -1263,6 +1449,18 @@ typedef interface __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWind
 typedef interface __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridgeStatics __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridgeStatics;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridgeStatics_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_FWD_DEFINED__
+
+#ifndef ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_FWD_DEFINED__
+#define ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_FWD_DEFINED__
+typedef interface __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics;
+
+#endif // ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpSystemVisualBridge_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpSystemVisualBridge_FWD_DEFINED__
@@ -1469,11 +1667,19 @@ typedef interface __x_ABI_CWindows_CFoundation_CIClosable __x_ABI_CWindows_CFoun
 
 
 
+
+typedef struct __x_ABI_CWindows_CUI_CColor __x_ABI_CWindows_CUI_CColor;
+
+
+
 #ifndef ____x_ABI_CWindows_CUI_CCore_CICoreWindow_FWD_DEFINED__
 #define ____x_ABI_CWindows_CUI_CCore_CICoreWindow_FWD_DEFINED__
 typedef interface __x_ABI_CWindows_CUI_CCore_CICoreWindow __x_ABI_CWindows_CUI_CCore_CICoreWindow;
 
 #endif // ____x_ABI_CWindows_CUI_CCore_CICoreWindow_FWD_DEFINED__
+
+
+
 
 
 
@@ -1515,7 +1721,7 @@ typedef interface __x_ABI_CWindows_CUI_CCore_CICoreWindow __x_ABI_CWindows_CUI_C
 #if !defined(____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpContentBridge_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpContentBridge_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Hosting_Experimental_IExpContentBridge[] = L"Microsoft.UI.Hosting.Experimental.IExpContentBridge";
-/* [object, uuid("5B85BA18-F850-5621-919E-E545723AB94E"), contract] */
+/* [object, uuid("72B6526E-0A46-56CC-B29C-5225BD2AF251"), contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpContentBridgeVtbl
 {
     BEGIN_INTERFACE
@@ -1549,7 +1755,11 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
     __RPC__in __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpContentBridge * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
-HRESULT ( STDMETHODCALLTYPE *Connect )(
+/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_Content )(
+        __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpContentBridge * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CComposition_CExperimental_CIExpCompositionContent * * value
+        );
+    HRESULT ( STDMETHODCALLTYPE *Connect )(
         __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpContentBridge * This,
         /* [in] */__x_ABI_CMicrosoft_CUI_CComposition_CExperimental_CIExpCompositionContent * content,
         /* [in] */__x_ABI_CMicrosoft_CUI_CInput_CExperimental_CIExpInputSite * inputSite
@@ -1582,6 +1792,9 @@ interface __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpContentBridge
 #define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpContentBridge_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpContentBridge_get_Content(This,value) \
+    ( (This)->lpVtbl->get_Content(This,value) )
+
 #define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpContentBridge_Connect(This,content,inputSite) \
     ( (This)->lpVtbl->Connect(This,content,inputSite) )
 
@@ -1609,7 +1822,7 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpConten
 #if !defined(____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpCoreWindowBridge_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpCoreWindowBridge_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Hosting_Experimental_IExpCoreWindowBridge[] = L"Microsoft.UI.Hosting.Experimental.IExpCoreWindowBridge";
-/* [object, uuid("87B0E524-DF7F-55E6-B8DF-F8032FC115CE"), exclusiveto, contract] */
+/* [object, uuid("CE931E38-5B79-5224-8EFE-965FB4CCA211"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpCoreWindowBridgeVtbl
 {
     BEGIN_INTERFACE
@@ -1643,7 +1856,11 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
     __RPC__in __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpCoreWindowBridge * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
-END_INTERFACE
+HRESULT ( STDMETHODCALLTYPE *CreatePopup )(
+        __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpCoreWindowBridge * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge * * result
+        );
+    END_INTERFACE
     
 } __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpCoreWindowBridgeVtbl;
 
@@ -1670,6 +1887,9 @@ interface __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpCoreWindowBridge
 
 #define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpCoreWindowBridge_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpCoreWindowBridge_CreatePopup(This,result) \
+    ( (This)->lpVtbl->CreatePopup(This,result) )
 
 
 #endif /* COBJMACROS */
@@ -1797,7 +2017,7 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpCoreWi
 #if !defined(____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Hosting_Experimental_IExpDesktopWindowBridge[] = L"Microsoft.UI.Hosting.Experimental.IExpDesktopWindowBridge";
-/* [object, uuid("CD7C2FED-95AE-532D-90CA-92C4DC3A09B9"), exclusiveto, contract] */
+/* [object, uuid("CE1208DA-2BF6-542B-A605-3F83FEAAAE6F"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridgeVtbl
 {
     BEGIN_INTERFACE
@@ -1831,13 +2051,17 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
     __RPC__in __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_AppliedScaleFactor )(
-        __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge * This,
-        /* [retval, out] */FLOAT * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ChildWindowId )(
+/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ChildWindowId )(
         __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge * This,
         /* [retval, out] */__x_ABI_CMicrosoft_CUI_CWindowId * value
+        );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_FillTopLevelWindow )(
+        __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge * This,
+        /* [retval, out] */boolean * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_FillTopLevelWindow )(
+        __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge * This,
+        /* [in] */boolean value
         );
     /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_TopLevelDisplayId )(
         __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge * This,
@@ -1846,10 +2070,6 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
     HRESULT ( STDMETHODCALLTYPE *SetOverrideScaleFactor )(
         __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge * This,
         /* [in] */FLOAT value
-        );
-    HRESULT ( STDMETHODCALLTYPE *NotifyHostActivationChange )(
-        __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge * This,
-        /* [in] */boolean active
         );
     HRESULT ( STDMETHODCALLTYPE *NavigateFocus )(
         __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge * This,
@@ -1863,6 +2083,10 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
         /* [in] */UINT32 virtualKey,
         /* [in] */UINT64 keyInfo,
         /* [retval, out] */boolean * result
+        );
+    HRESULT ( STDMETHODCALLTYPE *CreatePopup )(
+        __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge * * result
         );
     /* [eventadd] */HRESULT ( STDMETHODCALLTYPE *add_TakeFocusRequested )(
         __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge * This,
@@ -1910,11 +2134,14 @@ interface __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge
 #define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
-#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge_get_AppliedScaleFactor(This,value) \
-    ( (This)->lpVtbl->get_AppliedScaleFactor(This,value) )
-
 #define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge_get_ChildWindowId(This,value) \
     ( (This)->lpVtbl->get_ChildWindowId(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge_get_FillTopLevelWindow(This,value) \
+    ( (This)->lpVtbl->get_FillTopLevelWindow(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge_put_FillTopLevelWindow(This,value) \
+    ( (This)->lpVtbl->put_FillTopLevelWindow(This,value) )
 
 #define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge_get_TopLevelDisplayId(This,value) \
     ( (This)->lpVtbl->get_TopLevelDisplayId(This,value) )
@@ -1922,14 +2149,14 @@ interface __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge
 #define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge_SetOverrideScaleFactor(This,value) \
     ( (This)->lpVtbl->SetOverrideScaleFactor(This,value) )
 
-#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge_NotifyHostActivationChange(This,active) \
-    ( (This)->lpVtbl->NotifyHostActivationChange(This,active) )
-
 #define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge_NavigateFocus(This,request,result) \
     ( (This)->lpVtbl->NavigateFocus(This,request,result) )
 
 #define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge_PreTranslateKeyboardMessage(This,windowHandle,keyboardMessage,virtualKey,keyInfo,result) \
     ( (This)->lpVtbl->PreTranslateKeyboardMessage(This,windowHandle,keyboardMessage,virtualKey,keyInfo,result) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge_CreatePopup(This,result) \
+    ( (This)->lpVtbl->CreatePopup(This,result) )
 
 #define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDesktopWindowBridge_add_TakeFocusRequested(This,handler,token) \
     ( (This)->lpVtbl->add_TakeFocusRequested(This,handler,token) )
@@ -2056,6 +2283,192 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDeskto
 
 /*
  *
+ * Interface Microsoft.UI.Hosting.Experimental.IExpPopupWindowBridge
+ *
+ * Introduced to Microsoft.Foundation.LiftedExperimentalContract in version 1.0
+ *
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Hosting.Experimental.ExpPopupWindowBridge
+ *
+ *
+ */
+#if MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+#if !defined(____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Hosting_Experimental_IExpPopupWindowBridge[] = L"Microsoft.UI.Hosting.Experimental.IExpPopupWindowBridge";
+/* [object, uuid("2EA5D840-9EA6-5BE2-A2BE-7D01EE689091"), exclusiveto, contract] */
+typedef struct __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_PopupWindowId )(
+        __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge * This,
+        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CWindowId * value
+        );
+    END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_get_PopupWindowId(This,value) \
+    ( (This)->lpVtbl->get_PopupWindowId(This,value) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridge_INTERFACE_DEFINED__) */
+#endif // MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+
+
+/*
+ *
+ * Interface Microsoft.UI.Hosting.Experimental.IExpPopupWindowBridgeStatics
+ *
+ * Introduced to Microsoft.Foundation.LiftedExperimentalContract in version 1.0
+ *
+ *
+ * Interface is a part of the implementation of type Microsoft.UI.Hosting.Experimental.ExpPopupWindowBridge
+ *
+ *
+ */
+#if MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+#if !defined(____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_INTERFACE_DEFINED__)
+#define ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Hosting_Experimental_IExpPopupWindowBridgeStatics[] = L"Microsoft.UI.Hosting.Experimental.IExpPopupWindowBridgeStatics";
+/* [object, uuid("9DFC7ECC-C7C1-5952-8AAD-77B822F7D4C7"), exclusiveto, contract] */
+typedef struct __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStaticsVtbl
+{
+    BEGIN_INTERFACE
+    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics * This,
+    /* [in] */ __RPC__in REFIID riid,
+    /* [annotation][iid_is][out] */
+    _COM_Outptr_  void **ppvObject
+    );
+
+ULONG ( STDMETHODCALLTYPE *AddRef )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics * This
+    );
+
+ULONG ( STDMETHODCALLTYPE *Release )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics * This
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetIids )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics * This,
+    /* [out] */ __RPC__out ULONG *iidCount,
+    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics * This,
+    /* [out] */ __RPC__deref_out_opt HSTRING *className
+    );
+
+HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
+    __RPC__in __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics * This,
+    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
+    );
+HRESULT ( STDMETHODCALLTYPE *IsSupported )(
+        __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics * This,
+        /* [retval, out] */boolean * result
+        );
+    END_INTERFACE
+    
+} __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStaticsVtbl;
+
+interface __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics
+{
+    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStaticsVtbl *lpVtbl;
+};
+
+#ifdef COBJMACROS
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_QueryInterface(This,riid,ppvObject) \
+( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_AddRef(This) \
+        ( (This)->lpVtbl->AddRef(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_Release(This) \
+        ( (This)->lpVtbl->Release(This) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_GetIids(This,iidCount,iids) \
+        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_GetRuntimeClassName(This,className) \
+        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_GetTrustLevel(This,trustLevel) \
+        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_IsSupported(This,result) \
+    ( (This)->lpVtbl->IsSupported(This,result) )
+
+
+#endif /* COBJMACROS */
+
+
+EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics;
+#endif /* !defined(____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpPopupWindowBridgeStatics_INTERFACE_DEFINED__) */
+#endif // MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+
+
+/*
+ *
  * Interface Microsoft.UI.Hosting.Experimental.IExpSystemVisualBridge
  *
  * Introduced to Microsoft.Foundation.LiftedExperimentalContract in version 1.0
@@ -2069,7 +2482,7 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpDeskto
 #if !defined(____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpSystemVisualBridge_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpSystemVisualBridge_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Hosting_Experimental_IExpSystemVisualBridge[] = L"Microsoft.UI.Hosting.Experimental.IExpSystemVisualBridge";
-/* [object, uuid("C1AD453A-881B-500A-8315-A3563BBEF753"), exclusiveto, contract] */
+/* [object, uuid("AF3AABAA-F231-5682-BF72-3BE27E60F6D1"), exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpSystemVisualBridgeVtbl
 {
     BEGIN_INTERFACE
@@ -2107,6 +2520,14 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
         __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpSystemVisualBridge * This,
         /* [retval, out] */__x_ABI_CMicrosoft_CUI_CComposition_CIVisual * * value
         );
+    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_BackgroundColor )(
+        __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpSystemVisualBridge * This,
+        /* [retval, out] */__x_ABI_CWindows_CUI_CColor * value
+        );
+    /* [propput] */HRESULT ( STDMETHODCALLTYPE *put_BackgroundColor )(
+        __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpSystemVisualBridge * This,
+        /* [in] */__x_ABI_CWindows_CUI_CColor value
+        );
     END_INTERFACE
     
 } __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpSystemVisualBridgeVtbl;
@@ -2137,6 +2558,12 @@ interface __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpSystemVisualBridge
 
 #define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpSystemVisualBridge_get_BridgeVisual(This,value) \
     ( (This)->lpVtbl->get_BridgeVisual(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpSystemVisualBridge_get_BackgroundColor(This,value) \
+    ( (This)->lpVtbl->get_BackgroundColor(This,value) )
+
+#define __x_ABI_CMicrosoft_CUI_CHosting_CExperimental_CIExpSystemVisualBridge_put_BackgroundColor(This,value) \
+    ( (This)->lpVtbl->put_BackgroundColor(This,value) )
 
 
 #endif /* COBJMACROS */
@@ -2302,6 +2729,35 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 #ifndef RUNTIMECLASS_Microsoft_UI_Hosting_Experimental_ExpDesktopWindowBridge_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Hosting_Experimental_ExpDesktopWindowBridge_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Hosting_Experimental_ExpDesktopWindowBridge[] = L"Microsoft.UI.Hosting.Experimental.ExpDesktopWindowBridge";
+#endif
+#endif // MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+
+
+/*
+ *
+ * Class Microsoft.UI.Hosting.Experimental.ExpPopupWindowBridge
+ *
+ * Introduced to Microsoft.Foundation.LiftedExperimentalContract in version 1.0
+ *
+ *
+ * RuntimeClass contains static methods.
+ *   Static Methods exist on the Microsoft.UI.Hosting.Experimental.IExpPopupWindowBridgeStatics interface starting with version 1.0 of the Microsoft.Foundation.LiftedExperimentalContract API contract
+ *
+ * Class implements the following interfaces:
+ *    Microsoft.UI.Hosting.Experimental.IExpPopupWindowBridge ** Default Interface **
+ *    Microsoft.UI.Hosting.Experimental.IExpContentBridge
+ *    Windows.Foundation.IClosable
+ *
+ * Class Threading Model:  Both Single and Multi Threaded Apartment
+ *
+ * Class Marshaling Behavior:  Agile - Class is agile
+ *
+ */
+#if MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
+
+#ifndef RUNTIMECLASS_Microsoft_UI_Hosting_Experimental_ExpPopupWindowBridge_DEFINED
+#define RUNTIMECLASS_Microsoft_UI_Hosting_Experimental_ExpPopupWindowBridge_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Hosting_Experimental_ExpPopupWindowBridge[] = L"Microsoft.UI.Hosting.Experimental.ExpPopupWindowBridge";
 #endif
 #endif // MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION >= 0x10000
 

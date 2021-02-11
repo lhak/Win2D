@@ -57,14 +57,6 @@
 #define MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_FOUNDATION_LIFTEDEXPERIMENTALCONTRACT_VERSION)
 
-#if !defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION)
-
-#if !defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-#define MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION 0x10000
-#endif // defined(MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION)
-
 #if !defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
 #define MICROSOFT_UI_XAML_WINUICONTRACT_VERSION 0x10000
 #endif // defined(MICROSOFT_UI_XAML_WINUICONTRACT_VERSION)
@@ -1939,44 +1931,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverrides_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
-                        interface INavigationTransitionInfoOverridesPrivate;
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate ABI::Microsoft::UI::Xaml::Media::Animation::INavigationTransitionInfoOverridesPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
-                        interface INavigationTransitionInfoPrivate;
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate ABI::Microsoft::UI::Xaml::Media::Animation::INavigationTransitionInfoPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIObjectAnimationUsingKeyFrames_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIObjectAnimationUsingKeyFrames_FWD_DEFINED__
 namespace ABI {
@@ -3041,63 +2995,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CISwipeHintThemeAnimationStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
-                        interface IThemeAnimationBase;
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase ABI::Microsoft::UI::Xaml::Media::Animation::IThemeAnimationBase
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
-                        interface IThemeAnimationBaseFactory;
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory ABI::Microsoft::UI::Xaml::Media::Animation::IThemeAnimationBaseFactory
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
-                        interface IThemeAnimationBaseOverrides;
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides ABI::Microsoft::UI::Xaml::Media::Animation::IThemeAnimationBaseOverrides
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITimeline_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITimeline_FWD_DEFINED__
 namespace ABI {
@@ -3192,44 +3089,6 @@ namespace ABI {
 #define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactory ABI::Microsoft::UI::Xaml::Media::Animation::ITransitionFactory
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
-                        interface ITransitionFactoryPrivate;
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate ABI::Microsoft::UI::Xaml::Media::Animation::ITransitionFactoryPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
-                        interface ITransitionPrivate;
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate ABI::Microsoft::UI::Xaml::Media::Animation::ITransitionPrivate
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_FWD_DEFINED__
 
 // Parameterized interface forward declarations (C++)
 
@@ -3552,84 +3411,6 @@ namespace ABI {
             namespace Xaml {
                 namespace Media {
                     namespace Animation {
-                        class Storyboard;
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-#ifndef DEF___FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_USE
-#define DEF___FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
-template <>
-struct __declspec(uuid("48b5559c-c724-5d0a-a4be-dd4775d0dcea"))
-IIterator<ABI::Microsoft::UI::Xaml::Media::Animation::Storyboard*> : IIterator_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Media::Animation::Storyboard*, ABI::Microsoft::UI::Xaml::Media::Animation::IStoryboard*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.Collections.IIterator`1<Microsoft.UI.Xaml.Media.Animation.Storyboard>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef IIterator<ABI::Microsoft::UI::Xaml::Media::Animation::Storyboard*> __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_t;
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard ABI::Windows::Foundation::Collections::__FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_t
-/* Collections */ } /* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard ABI::Windows::Foundation::Collections::IIterator<ABI::Microsoft::UI::Xaml::Media::Animation::IStoryboard*>
-//#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_t ABI::Windows::Foundation::Collections::IIterator<ABI::Microsoft::UI::Xaml::Media::Animation::IStoryboard*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_USE */
-
-
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-#ifndef DEF___FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_USE
-#define DEF___FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
-template <>
-struct __declspec(uuid("5b13a24a-51e8-5184-9ad5-5eeae17a982c"))
-IIterable<ABI::Microsoft::UI::Xaml::Media::Animation::Storyboard*> : IIterable_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Media::Animation::Storyboard*, ABI::Microsoft::UI::Xaml::Media::Animation::IStoryboard*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.Collections.IIterable`1<Microsoft.UI.Xaml.Media.Animation.Storyboard>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef IIterable<ABI::Microsoft::UI::Xaml::Media::Animation::Storyboard*> __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_t;
-#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard ABI::Windows::Foundation::Collections::__FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_t
-/* Collections */ } /* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard ABI::Windows::Foundation::Collections::IIterable<ABI::Microsoft::UI::Xaml::Media::Animation::IStoryboard*>
-//#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_t ABI::Windows::Foundation::Collections::IIterable<ABI::Microsoft::UI::Xaml::Media::Animation::IStoryboard*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_USE */
-
-
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
                         class Timeline;
                     } /* Animation */
                 } /* Media */
@@ -3911,38 +3692,6 @@ typedef IVectorView<ABI::Microsoft::UI::Xaml::Media::Animation::PointKeyFrame*> 
 
 #if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
-#ifndef DEF___FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_USE
-#define DEF___FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
-template <>
-struct __declspec(uuid("e7acc876-d1de-56a4-83d6-abc4fb2fda3d"))
-IVectorView<ABI::Microsoft::UI::Xaml::Media::Animation::Storyboard*> : IVectorView_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Media::Animation::Storyboard*, ABI::Microsoft::UI::Xaml::Media::Animation::IStoryboard*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.Collections.IVectorView`1<Microsoft.UI.Xaml.Media.Animation.Storyboard>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef IVectorView<ABI::Microsoft::UI::Xaml::Media::Animation::Storyboard*> __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_t;
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard ABI::Windows::Foundation::Collections::__FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_t
-/* Collections */ } /* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard ABI::Windows::Foundation::Collections::IVectorView<ABI::Microsoft::UI::Xaml::Media::Animation::IStoryboard*>
-//#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_t ABI::Windows::Foundation::Collections::IVectorView<ABI::Microsoft::UI::Xaml::Media::Animation::IStoryboard*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_USE */
-
-
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
 #ifndef DEF___FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CTimeline_USE
 #define DEF___FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CTimeline_USE
 #if !defined(RO_NO_TEMPLATE_NAME)
@@ -4128,38 +3877,6 @@ typedef IVector<ABI::Microsoft::UI::Xaml::Media::Animation::PointKeyFrame*> __FI
 //#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CPointKeyFrame_t ABI::Windows::Foundation::Collections::IVector<ABI::Microsoft::UI::Xaml::Media::Animation::IPointKeyFrame*>
 #endif // !defined(RO_NO_TEMPLATE_NAME)
 #endif /* DEF___FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CPointKeyFrame_USE */
-
-
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-#ifndef DEF___FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_USE
-#define DEF___FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_USE
-#if !defined(RO_NO_TEMPLATE_NAME)
-namespace ABI { namespace Windows { namespace Foundation { namespace Collections {
-template <>
-struct __declspec(uuid("75d2621c-6a26-5a85-ad61-7b69b2cf03b1"))
-IVector<ABI::Microsoft::UI::Xaml::Media::Animation::Storyboard*> : IVector_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Xaml::Media::Animation::Storyboard*, ABI::Microsoft::UI::Xaml::Media::Animation::IStoryboard*>> 
-{
-    static const wchar_t* z_get_rc_name_impl() 
-    {
-        return L"Windows.Foundation.Collections.IVector`1<Microsoft.UI.Xaml.Media.Animation.Storyboard>"; 
-    }
-};
-// Define a typedef for the parameterized interface specialization's mangled name.
-// This allows code which uses the mangled name for the parameterized interface to access the
-// correct parameterized interface specialization.
-typedef IVector<ABI::Microsoft::UI::Xaml::Media::Animation::Storyboard*> __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_t;
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard ABI::Windows::Foundation::Collections::__FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_t
-/* Collections */ } /* Foundation */ } /* Windows */ } /* ABI */ } 
-
-////  Define an alias for the C version of the interface for compatibility purposes.
-//#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard ABI::Windows::Foundation::Collections::IVector<ABI::Microsoft::UI::Xaml::Media::Animation::IStoryboard*>
-//#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_t ABI::Windows::Foundation::Collections::IVector<ABI::Microsoft::UI::Xaml::Media::Animation::IStoryboard*>
-#endif // !defined(RO_NO_TEMPLATE_NAME)
-#endif /* DEF___FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_USE */
 
 
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
@@ -4720,31 +4437,6 @@ namespace ABI {
 } /* ABI */
 
 
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                
-                typedef enum TransitionParent : int TransitionParent;
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                
-                typedef enum TransitionTrigger : int TransitionTrigger;
-                
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
 
 
 
@@ -4754,16 +4446,6 @@ namespace ABI {
         namespace Foundation {
             
             typedef struct Point Point;
-            
-        } /* Foundation */
-    } /* Windows */
-} /* ABI */
-
-namespace ABI {
-    namespace Windows {
-        namespace Foundation {
-            
-            typedef struct Rect Rect;
             
         } /* Foundation */
     } /* Windows */
@@ -4864,22 +4546,6 @@ namespace ABI {
                 namespace Media {
                     namespace Animation {
                         
-                        typedef enum NavigationTrigger : int NavigationTrigger;
-                        
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
-                        
                         typedef enum RepeatBehaviorType : int RepeatBehaviorType;
                         
                     } /* Animation */
@@ -4936,13 +4602,6 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
-
-
-
-
-
-
-
 
 
 
@@ -6209,6 +5868,20 @@ namespace ABI {
 } /* ABI */
 
 
+namespace ABI {
+    namespace Microsoft {
+        namespace UI {
+            namespace Xaml {
+                namespace Media {
+                    namespace Animation {
+                        class Storyboard;
+                    } /* Animation */
+                } /* Media */
+            } /* Xaml */
+        } /* UI */
+    } /* Microsoft */
+} /* ABI */
+
 
 namespace ABI {
     namespace Microsoft {
@@ -6247,21 +5920,6 @@ namespace ABI {
                 namespace Media {
                     namespace Animation {
                         class SwipeHintThemeAnimation;
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
-                        class ThemeAnimationBase;
                     } /* Animation */
                 } /* Media */
             } /* Xaml */
@@ -6444,40 +6102,6 @@ namespace ABI {
     } /* Microsoft */
 } /* ABI */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.Media.Animation.NavigationTrigger
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
-                        /* [v1_enum, contract] */
-                        enum NavigationTrigger : int
-                        {
-                            NavigationTrigger_NavigatingAway = 0,
-                            NavigationTrigger_NavigatingTo = 1,
-                            NavigationTrigger_BackNavigatingAway = 2,
-                            NavigationTrigger_BackNavigatingTo = 3,
-                        };
-                        
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -11078,96 +10702,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigati
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Media.Animation.INavigationTransitionInfoOverridesPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_Animation_INavigationTransitionInfoOverridesPrivate[] = L"Microsoft.UI.Xaml.Media.Animation.INavigationTransitionInfoOverridesPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
-                        /* [object, uuid("AA47C9A0-3374-5DA7-8BEC-6D732E7BFA7D"), contract] */
-                        MIDL_INTERFACE("AA47C9A0-3374-5DA7-8BEC-6D732E7BFA7D")
-                        INavigationTransitionInfoOverridesPrivate : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateStoryboardsCore(
-                                /* [in] */ABI::Microsoft::UI::Xaml::IUIElement * element,
-                                /* [in] */ABI::Microsoft::UI::Xaml::Media::Animation::NavigationTrigger trigger,
-                                /* [in] */__FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * storyboards
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_INavigationTransitionInfoOverridesPrivate=_uuidof(INavigationTransitionInfoOverridesPrivate);
-                        
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.Animation.INavigationTransitionInfoPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_Animation_INavigationTransitionInfoPrivate[] = L"Microsoft.UI.Xaml.Media.Animation.INavigationTransitionInfoPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
-                        /* [object, uuid("CD9B65A0-1C10-5E4E-996D-CDDFA5F01B46"), contract] */
-                        MIDL_INTERFACE("CD9B65A0-1C10-5E4E-996D-CDDFA5F01B46")
-                        INavigationTransitionInfoPrivate : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateStoryboards(
-                                /* [in] */ABI::Microsoft::UI::Xaml::IUIElement * element,
-                                /* [in] */ABI::Microsoft::UI::Xaml::Media::Animation::NavigationTrigger trigger,
-                                /* [in] */__FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * storyboards
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_INavigationTransitionInfoPrivate=_uuidof(INavigationTransitionInfoPrivate);
-                        
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Media.Animation.IObjectAnimationUsingKeyFrames
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -14175,144 +13709,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CISwipeHin
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBase
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.Animation.ThemeAnimationBase
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_Animation_IThemeAnimationBase[] = L"Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBase";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
-                        /* [object, uuid("65116F90-6460-5EAA-ACB3-F6DA608B2A94"), exclusiveto, contract] */
-                        MIDL_INTERFACE("65116F90-6460-5EAA-ACB3-F6DA608B2A94")
-                        IThemeAnimationBase : public IInspectable
-                        {
-                        public:
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IThemeAnimationBase=_uuidof(IThemeAnimationBase);
-                        
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBaseFactory
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.Animation.ThemeAnimationBase
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_Animation_IThemeAnimationBaseFactory[] = L"Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBaseFactory";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
-                        /* [object, uuid("A0FD400F-0962-55A3-9F39-270E1EFFF225"), exclusiveto, contract] */
-                        MIDL_INTERFACE("A0FD400F-0962-55A3-9F39-270E1EFFF225")
-                        IThemeAnimationBaseFactory : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateInstance(
-                                /* [in] */IInspectable * baseInterface,
-                                /* [out] */IInspectable * * innerInterface,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Media::Animation::IThemeAnimationBase * * value
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IThemeAnimationBaseFactory=_uuidof(IThemeAnimationBaseFactory);
-                        
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBaseOverrides
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.Animation.ThemeAnimationBase
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_Animation_IThemeAnimationBaseOverrides[] = L"Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBaseOverrides";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
-                        /* [object, uuid("E38F48FD-CE59-5B27-ACDF-84E72DD0EE67"), exclusiveto, contract] */
-                        MIDL_INTERFACE("E38F48FD-CE59-5B27-ACDF-84E72DD0EE67")
-                        IThemeAnimationBaseOverrides : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateTimelinesInternal(
-                                /* [in] */::boolean onlyGenerateSteadyState,
-                                /* [in] */__FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CTimeline * timelineCollection
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IThemeAnimationBaseOverrides=_uuidof(IThemeAnimationBaseOverrides);
-                        
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Media.Animation.ITimeline
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -14596,104 +13992,6 @@ namespace ABI {
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactory_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.Animation.ITransitionFactoryPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_Animation_ITransitionFactoryPrivate[] = L"Microsoft.UI.Xaml.Media.Animation.ITransitionFactoryPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
-                        /* [object, uuid("41005935-7E80-565A-AD85-EAD029C11306"), contract] */
-                        MIDL_INTERFACE("41005935-7E80-565A-AD85-EAD029C11306")
-                        ITransitionFactoryPrivate : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateInstance(
-                                /* [in] */IInspectable * outer,
-                                /* [out] */IInspectable * * inner,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Media::Animation::ITransition * * result
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_ITransitionFactoryPrivate=_uuidof(ITransitionFactoryPrivate);
-                        
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.Animation.ITransitionPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_Animation_ITransitionPrivate[] = L"Microsoft.UI.Xaml.Media.Animation.ITransitionPrivate";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Media {
-                    namespace Animation {
-                        /* [object, uuid("40026AB3-5BB2-5C6E-8DA1-475AF8037BAD"), contract] */
-                        MIDL_INTERFACE("40026AB3-5BB2-5C6E-8DA1-475AF8037BAD")
-                        ITransitionPrivate : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateStoryboard(
-                                /* [in] */ABI::Microsoft::UI::Xaml::IUIElement * element,
-                                /* [in] */ABI::Windows::Foundation::Rect start,
-                                /* [in] */ABI::Windows::Foundation::Rect destination,
-                                /* [in] */ABI::Microsoft::UI::Xaml::TransitionTrigger transitionTrigger,
-                                /* [in] */__FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * storyboards,
-                                /* [out] */ABI::Microsoft::UI::Xaml::TransitionParent * parentForTransition
-                                ) = 0;
-                            virtual HRESULT STDMETHODCALLTYPE ParticipatesInTransition(
-                                /* [in] */ABI::Microsoft::UI::Xaml::IUIElement * element,
-                                /* [in] */ABI::Microsoft::UI::Xaml::TransitionTrigger transitonTrigger,
-                                /* [retval, out] */::boolean * result
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_ITransitionPrivate=_uuidof(ITransitionPrivate);
-                        
-                    } /* Animation */
-                } /* Media */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -17065,31 +16363,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
- * Class Microsoft.UI.Xaml.Media.Animation.ThemeAnimationBase
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBase ** Default Interface **
- *    Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBaseOverrides
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_Animation_ThemeAnimationBase_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Media_Animation_ThemeAnimationBase_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_Animation_ThemeAnimationBase[] = L"Microsoft.UI.Xaml.Media.Animation.ThemeAnimationBase";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Class Microsoft.UI.Xaml.Media.Animation.Timeline
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -17735,18 +17008,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTra
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverrides_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIObjectAnimationUsingKeyFrames_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIObjectAnimationUsingKeyFrames_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIObjectAnimationUsingKeyFrames __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIObjectAnimationUsingKeyFrames;
@@ -18083,24 +17344,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CISwipeHintThem
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CISwipeHintThemeAnimationStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITimeline_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITimeline_FWD_DEFINED__
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITimeline __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITimeline;
@@ -18130,18 +17373,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransition __
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactory __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactory;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_FWD_DEFINED__
 
 // Parameterized interface forward declarations (C)
 
@@ -18791,168 +18022,6 @@ interface __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CPointKeyFra
 
 
 #endif // ____FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CPointKeyFrame_INTERFACE_DEFINED__
-
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_INTERFACE_DEFINED__)
-#define ____FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_INTERFACE_DEFINED__
-
-typedef interface __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard;
-
-typedef struct __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboardVtbl
-{
-    BEGIN_INTERFACE
-
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-        __RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-        /* [in] */ __RPC__in REFIID riid,
-        /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This);
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This);
-    HRESULT ( STDMETHODCALLTYPE *GetIids )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-        /* [out] */ __RPC__out ULONG *iidCount,
-        /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids);
-
-    HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This, /* [out] */ __RPC__deref_out_opt HSTRING *className);
-    HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This, /* [out] */ __RPC__out TrustLevel *trustLevel);
-
-    /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Current )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This, /* [retval][out] */ __RPC__out __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIStoryboard * *current);
-    /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_HasCurrent )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This, /* [retval][out] */ __RPC__out boolean *hasCurrent);
-    HRESULT ( STDMETHODCALLTYPE *MoveNext )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This, /* [retval][out] */ __RPC__out boolean *hasCurrent);
-    HRESULT ( STDMETHODCALLTYPE *GetMany )(__RPC__in __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-        /* [in] */ unsigned int capacity,
-        /* [size_is][length_is][out] */ __RPC__out_ecount_part(capacity, *actual) __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIStoryboard * *items,
-        /* [retval][out] */ __RPC__out unsigned int *actual);
-
-    END_INTERFACE
-} __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboardVtbl;
-
-interface __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard
-{
-    CONST_VTBL struct __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboardVtbl *lpVtbl;
-};
-
-
-
-#ifdef COBJMACROS
-
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetIids(This,iidCount,iids)	\
-    ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetRuntimeClassName(This,className)	\
-    ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetTrustLevel(This,trustLevel)	\
-    ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
-
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_get_Current(This,current)	\
-    ( (This)->lpVtbl -> get_Current(This,current) ) 
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_get_HasCurrent(This,hasCurrent)	\
-    ( (This)->lpVtbl -> get_HasCurrent(This,hasCurrent) ) 
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_MoveNext(This,hasCurrent)	\
-    ( (This)->lpVtbl -> MoveNext(This,hasCurrent) ) 
-
-#define __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetMany(This,capacity,items,actual)	\
-    ( (This)->lpVtbl -> GetMany(This,capacity,items,actual) ) 
-
-#endif /* COBJMACROS */
-
-
-#endif // ____FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_INTERFACE_DEFINED__
-
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_INTERFACE_DEFINED__)
-#define ____FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_INTERFACE_DEFINED__
-
-typedef interface __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard;
-
-typedef  struct __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboardVtbl
-{
-    BEGIN_INTERFACE
-
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-        __RPC__in __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-        /* [in] */ __RPC__in REFIID riid,
-        /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This);
-
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This);
-
-    HRESULT ( STDMETHODCALLTYPE *GetIids )(__RPC__in __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-                                           /* [out] */ __RPC__out ULONG *iidCount,
-                                           /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids);
-
-    HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(__RPC__in __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This, /* [out] */ __RPC__deref_out_opt HSTRING *className);
-
-    HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(__RPC__in __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This, /* [out] */ __RPC__out TrustLevel *trustLevel);
-
-    HRESULT ( STDMETHODCALLTYPE *First )(__RPC__in __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This, /* [retval][out] */ __RPC__deref_out_opt __FIIterator_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard **first);
-
-    END_INTERFACE
-} __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboardVtbl;
-
-interface __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard
-{
-    CONST_VTBL struct __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboardVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-
-#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetIids(This,iidCount,iids)	\
-    ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
-
-#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetRuntimeClassName(This,className)	\
-    ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
-
-#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetTrustLevel(This,trustLevel)	\
-    ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
-
-
-#define __FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_First(This,first)	\
-    ( (This)->lpVtbl -> First(This,first) ) 
-
-#endif /* COBJMACROS */
-
-
-#endif // ____FIIterable_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_INTERFACE_DEFINED__
 
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
@@ -19721,117 +18790,6 @@ interface __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CPointKeyF
 
 
 #endif // ____FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CPointKeyFrame_INTERFACE_DEFINED__
-
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_INTERFACE_DEFINED__)
-#define ____FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_INTERFACE_DEFINED__
-
-typedef interface __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard;
-
-typedef struct __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboardVtbl
-{
-    BEGIN_INTERFACE
-
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-        __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-        /* [in] */ __RPC__in REFIID riid,
-        /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-
-    ULONG ( STDMETHODCALLTYPE *AddRef )( __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This);
-
-    ULONG ( STDMETHODCALLTYPE *Release )( __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This);
-
-    HRESULT ( STDMETHODCALLTYPE *GetIids )( __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-                                            /* [out] */ __RPC__out ULONG *iidCount,
-                                            /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids);
-
-    HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )( 
-        __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-            /* [out] */ __RPC__deref_out_opt HSTRING *className);
-
-    HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )( 
-        __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-            /* [out] */ __RPC__out TrustLevel *trustLevel);
-
-    HRESULT ( STDMETHODCALLTYPE *GetAt )( 
-                                         __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-                                         /* [in] */ unsigned int index,
-                                         /* [retval][out] */ __RPC__out __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIStoryboard * *item);
-
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Size )( 
-            __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-            /* [retval][out] */ __RPC__out unsigned int *size);
-
-        HRESULT ( STDMETHODCALLTYPE *IndexOf )( 
-                                               __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-            /* [in] */ __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIStoryboard * item,
-            /* [out] */ __RPC__out unsigned int *index,
-            /* [retval][out] */ __RPC__out boolean *found);
-
-        HRESULT ( STDMETHODCALLTYPE *GetMany )( 
-                                               __RPC__in __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-            /* [in] */ unsigned int startIndex,
-            /* [in] */ unsigned int capacity,
-            /* [size_is][length_is][out] */ __RPC__out_ecount_part(capacity, *actual) __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIStoryboard * *items,
-            /* [retval][out] */ __RPC__out unsigned int *actual);
-
-        END_INTERFACE
-} __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboardVtbl;
-
-interface __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard
-{
-    CONST_VTBL struct __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboardVtbl *lpVtbl;
-};
-
-
-
-#ifdef COBJMACROS
-
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetIids(This,iidCount,iids)	\
-    ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetRuntimeClassName(This,className)	\
-    ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetTrustLevel(This,trustLevel)	\
-    ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
-
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetAt(This,index,item)	\
-    ( (This)->lpVtbl -> GetAt(This,index,item) ) 
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_get_Size(This,size)	\
-    ( (This)->lpVtbl -> get_Size(This,size) ) 
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_IndexOf(This,item,index,found)	\
-    ( (This)->lpVtbl -> IndexOf(This,item,index,found) ) 
-
-#define __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetMany(This,startIndex,capacity,items,actual)	\
-    ( (This)->lpVtbl -> GetMany(This,startIndex,capacity,items,actual) ) 
-
-#endif /* COBJMACROS */
-
-
-
-#endif // ____FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_INTERFACE_DEFINED__
 
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
@@ -20626,149 +19584,6 @@ interface __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CPointKeyFrame
 
 
 #endif // ____FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CPointKeyFrame_INTERFACE_DEFINED__
-
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_INTERFACE_DEFINED__)
-#define ____FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_INTERFACE_DEFINED__
-
-typedef interface __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard;
-
-//  Declare the parameterized interface IID.
-EXTERN_C const IID IID___FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard;
-
-typedef struct __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboardVtbl
-{
-    BEGIN_INTERFACE
-
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-        __RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-            /* [in] */ __RPC__in REFIID riid,
-            /* [annotation][iid_is][out] */ 
-        _COM_Outptr_  void **ppvObject);
-
-    ULONG ( STDMETHODCALLTYPE *AddRef )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This);
-    ULONG ( STDMETHODCALLTYPE *Release )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This);
-    HRESULT ( STDMETHODCALLTYPE *GetIids )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-        /* [out] */ __RPC__out ULONG *iidCount,
-        /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids);
-
-    HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This, /* [out] */ __RPC__deref_out_opt __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIStoryboard * *className);
-    HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This, /* [out] */ __RPC__out TrustLevel *trustLevel);
-
-    HRESULT ( STDMETHODCALLTYPE *GetAt )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-        /* [in] */ unsigned int index,
-        /* [retval][out] */ __RPC__deref_out_opt __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIStoryboard * *item);
-
-    /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Size )( 
-        __RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-        /* [retval][out] */ __RPC__out unsigned int *size);
-
-    HRESULT ( STDMETHODCALLTYPE *GetView )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This, /* [retval][out] */ __RPC__deref_out_opt __FIVectorView_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard **view);
-
-    HRESULT ( STDMETHODCALLTYPE *IndexOf )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-        /* [in] */ __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIStoryboard * item,
-        /* [out] */ __RPC__out unsigned int *index,
-        /* [retval][out] */ __RPC__out boolean *found);
-
-    HRESULT ( STDMETHODCALLTYPE *SetAt )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-        /* [in] */ unsigned int index,
-        /* [in] */ __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIStoryboard * item);
-
-    HRESULT ( STDMETHODCALLTYPE *InsertAt )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-        /* [in] */ unsigned int index,
-        /* [in] */ __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIStoryboard * item);
-
-    HRESULT ( STDMETHODCALLTYPE *RemoveAt )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This, /* [in] */ unsigned int index);
-    HRESULT ( STDMETHODCALLTYPE *Append )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This, /* [in] */ __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIStoryboard * item);
-    HRESULT ( STDMETHODCALLTYPE *RemoveAtEnd )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This);
-    HRESULT ( STDMETHODCALLTYPE *Clear )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This);
-    HRESULT ( STDMETHODCALLTYPE *GetMany )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-        /* [in] */ unsigned int startIndex,
-        /* [in] */ unsigned int capacity,
-        /* [size_is][length_is][out] */ __RPC__out_ecount_part(capacity, *actual) __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIStoryboard * *items,
-        /* [retval][out] */ __RPC__out unsigned int *actual);
-
-    HRESULT ( STDMETHODCALLTYPE *ReplaceAll )(__RPC__in __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * This,
-        /* [in] */ unsigned int count,
-        /* [size_is][in] */ __RPC__in_ecount_full(count) __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIStoryboard * *value);
-
-    END_INTERFACE
-} __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboardVtbl;
-
-interface __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard
-{
-    CONST_VTBL struct __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboardVtbl *lpVtbl;
-};
-
-
-
-#ifdef COBJMACROS
-
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_QueryInterface(This,riid,ppvObject)	\
-    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_AddRef(This)	\
-    ( (This)->lpVtbl -> AddRef(This) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_Release(This)	\
-    ( (This)->lpVtbl -> Release(This) ) 
-
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetIids(This,iidCount,iids)	\
-    ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetRuntimeClassName(This,className)	\
-    ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetTrustLevel(This,trustLevel)	\
-    ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
-
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetAt(This,index,item)	\
-    ( (This)->lpVtbl -> GetAt(This,index,item) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_get_Size(This,size)	\
-    ( (This)->lpVtbl -> get_Size(This,size) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetView(This,view)	\
-    ( (This)->lpVtbl -> GetView(This,view) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_IndexOf(This,item,index,found)	\
-    ( (This)->lpVtbl -> IndexOf(This,item,index,found) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_SetAt(This,index,item)	\
-    ( (This)->lpVtbl -> SetAt(This,index,item) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_InsertAt(This,index,item)	\
-    ( (This)->lpVtbl -> InsertAt(This,index,item) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_RemoveAt(This,index)	\
-    ( (This)->lpVtbl -> RemoveAt(This,index) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_Append(This,item)	\
-    ( (This)->lpVtbl -> Append(This,item) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_RemoveAtEnd(This)	\
-    ( (This)->lpVtbl -> RemoveAtEnd(This) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_Clear(This)	\
-    ( (This)->lpVtbl -> Clear(This) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_GetMany(This,startIndex,capacity,items,actual)	\
-    ( (This)->lpVtbl -> GetMany(This,startIndex,capacity,items,actual) ) 
-
-#define __FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_ReplaceAll(This,count,value)	\
-    ( (This)->lpVtbl -> ReplaceAll(This,count,value) ) 
-
-#endif /* COBJMACROS */
-
-
-
-#endif // ____FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard_INTERFACE_DEFINED__
 
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
@@ -21610,21 +20425,11 @@ typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CDuration __x_ABI_CMicrosoft_CUI_CXa
 
 
 
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CTransitionParent __x_ABI_CMicrosoft_CUI_CXaml_CTransitionParent;
-
-
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CTransitionTrigger __x_ABI_CMicrosoft_CUI_CXaml_CTransitionTrigger;
-
-
-
 
 
 
 
 typedef struct __x_ABI_CWindows_CFoundation_CPoint __x_ABI_CWindows_CFoundation_CPoint;
-
-
-typedef struct __x_ABI_CWindows_CFoundation_CRect __x_ABI_CWindows_CFoundation_CRect;
 
 
 typedef struct __x_ABI_CWindows_CFoundation_CTimeSpan __x_ABI_CWindows_CFoundation_CTimeSpan;
@@ -21649,9 +20454,6 @@ typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CEasingMode __x_ABI_
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CFillBehavior __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CFillBehavior;
 
 
-typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CNavigationTrigger __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CNavigationTrigger;
-
-
 typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CRepeatBehaviorType __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CRepeatBehaviorType;
 
 
@@ -21662,14 +20464,6 @@ typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CKeyTime __x_ABI_C
 
 
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CRepeatBehavior __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CRepeatBehavior;
-
-
-
-
-
-
-
-
 
 
 
@@ -21998,27 +20792,6 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CFillBehavior
     FillBehavior_Stop = 1,
 };
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Struct Microsoft.UI.Xaml.Media.Animation.NavigationTrigger
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-/* [v1_enum, contract] */
-enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CNavigationTrigger
-{
-    NavigationTrigger_NavigatingAway = 0,
-    NavigationTrigger_NavigatingTo = 1,
-    NavigationTrigger_BackNavigatingAway = 2,
-    NavigationTrigger_BackNavigatingTo = 3,
-};
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -31207,190 +29980,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigati
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Media.Animation.INavigationTransitionInfoOverridesPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_Animation_INavigationTransitionInfoOverridesPrivate[] = L"Microsoft.UI.Xaml.Media.Animation.INavigationTransitionInfoOverridesPrivate";
-/* [object, uuid("AA47C9A0-3374-5DA7-8BEC-6D732E7BFA7D"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateStoryboardsCore )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * element,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CNavigationTrigger trigger,
-        /* [in] */__FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * storyboards
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_CreateStoryboardsCore(This,element,trigger,storyboards) \
-    ( (This)->lpVtbl->CreateStoryboardsCore(This,element,trigger,storyboards) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoOverridesPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.Animation.INavigationTransitionInfoPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_Animation_INavigationTransitionInfoPrivate[] = L"Microsoft.UI.Xaml.Media.Animation.INavigationTransitionInfoPrivate";
-/* [object, uuid("CD9B65A0-1C10-5E4E-996D-CDDFA5F01B46"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateStoryboards )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * element,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CNavigationTrigger trigger,
-        /* [in] */__FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * storyboards
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_CreateStoryboards(This,element,trigger,storyboards) \
-    ( (This)->lpVtbl->CreateStoryboards(This,element,trigger,storyboards) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CINavigationTransitionInfoPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Media.Animation.IObjectAnimationUsingKeyFrames
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -37603,281 +36192,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CISwipeHin
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBase
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.Animation.ThemeAnimationBase
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_Animation_IThemeAnimationBase[] = L"Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBase";
-/* [object, uuid("65116F90-6460-5EAA-ACB3-F6DA608B2A94"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBaseFactory
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.Animation.ThemeAnimationBase
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_Animation_IThemeAnimationBaseFactory[] = L"Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBaseFactory";
-/* [object, uuid("A0FD400F-0962-55A3-9F39-270E1EFFF225"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactoryVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory * This,
-        /* [in] */IInspectable * baseInterface,
-        /* [out] */IInspectable * * innerInterface,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBase * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactoryVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactoryVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_CreateInstance(This,baseInterface,innerInterface,value) \
-    ( (This)->lpVtbl->CreateInstance(This,baseInterface,innerInterface,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBaseOverrides
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.Animation.ThemeAnimationBase
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_Animation_IThemeAnimationBaseOverrides[] = L"Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBaseOverrides";
-/* [object, uuid("E38F48FD-CE59-5B27-ACDF-84E72DD0EE67"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverridesVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateTimelinesInternal )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides * This,
-        /* [in] */boolean onlyGenerateSteadyState,
-        /* [in] */__FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CTimeline * timelineCollection
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverridesVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverridesVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_CreateTimelinesInternal(This,onlyGenerateSteadyState,timelineCollection) \
-    ( (This)->lpVtbl->CreateTimelinesInternal(This,onlyGenerateSteadyState,timelineCollection) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CIThemeAnimationBaseOverrides_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Media.Animation.ITimeline
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -38468,202 +36782,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactory
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactory_INTERFACE_DEFINED__) */
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.Animation.ITransitionFactoryPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_Animation_ITransitionFactoryPrivate[] = L"Microsoft.UI.Xaml.Media.Animation.ITransitionFactoryPrivate";
-/* [object, uuid("41005935-7E80-565A-AD85-EAD029C11306"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate * This,
-        /* [in] */IInspectable * outer,
-        /* [out] */IInspectable * * inner,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransition * * result
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_CreateInstance(This,outer,inner,result) \
-    ( (This)->lpVtbl->CreateInstance(This,outer,inner,result) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionFactoryPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Media.Animation.ITransitionPrivate
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_Animation_ITransitionPrivate[] = L"Microsoft.UI.Xaml.Media.Animation.ITransitionPrivate";
-/* [object, uuid("40026AB3-5BB2-5C6E-8DA1-475AF8037BAD"), contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivateVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateStoryboard )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * element,
-        /* [in] */__x_ABI_CWindows_CFoundation_CRect start,
-        /* [in] */__x_ABI_CWindows_CFoundation_CRect destination,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CTransitionTrigger transitionTrigger,
-        /* [in] */__FIVector_1_Microsoft__CUI__CXaml__CMedia__CAnimation__CStoryboard * storyboards,
-        /* [out] */__x_ABI_CMicrosoft_CUI_CXaml_CTransitionParent * parentForTransition
-        );
-    HRESULT ( STDMETHODCALLTYPE *ParticipatesInTransition )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CIUIElement * element,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CTransitionTrigger transitonTrigger,
-        /* [retval, out] */boolean * result
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivateVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivateVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_CreateStoryboard(This,element,start,destination,transitionTrigger,storyboards,parentForTransition) \
-    ( (This)->lpVtbl->CreateStoryboard(This,element,start,destination,transitionTrigger,storyboards,parentForTransition) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_ParticipatesInTransition(This,element,transitonTrigger,result) \
-    ( (This)->lpVtbl->ParticipatesInTransition(This,element,transitonTrigger,result) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAnimation_CITransitionPrivate_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -41031,31 +39149,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_Animation_SwipeHintThemeAnimation[] = L"Microsoft.UI.Xaml.Media.Animation.SwipeHintThemeAnimation";
 #endif
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Media.Animation.ThemeAnimationBase
- *
- * Introduced to Microsoft.UI.Xaml.PrivateApiContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBase ** Default Interface **
- *    Microsoft.UI.Xaml.Media.Animation.IThemeAnimationBaseOverrides
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_Animation_ThemeAnimationBase_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Media_Animation_ThemeAnimationBase_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_Animation_ThemeAnimationBase[] = L"Microsoft.UI.Xaml.Media.Animation.ThemeAnimationBase";
-#endif
-#endif // MICROSOFT_UI_XAML_PRIVATEAPICONTRACT_VERSION >= 0x10000
 
 
 /*

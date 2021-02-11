@@ -46,24 +46,19 @@ namespace Microsoft
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             enum DirectXAlphaMode
             {
-                Unspecified_d = 0
+                Unspecified_d   = 0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             enum DirectXColorSpace
             {
-                RgbFullG22NoneP709_d = 0
+                RgbFullG22NoneP709_d         = 0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]
             enum DirectXPixelFormat
             {
-                Unknown_d                            = 0,
-             
-                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
-                SamplerFeedbackMinMipOpaque        = 189,
-                [contract(Microsoft.Foundation.LiftedContract, 1.0)]
-                SamplerFeedbackMipRegionUsedOpaque = 190
+                Unknown_d                            = 0
             };
 
             [contract(Microsoft.Foundation.LiftedContract, 1.0)]

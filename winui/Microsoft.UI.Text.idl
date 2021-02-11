@@ -159,13 +159,13 @@ namespace Microsoft
             [version(0x00000001)]
             enum FormatEffect
             {
-                Off_d = 0
+                Off_d       = 0
             };
 
             [version(0x00000001)]
             enum HorizontalCharacterAlignment
             {
-                Left_d = 0
+                Left_d   = 0
             };
 
             [version(0x00000001)]
@@ -173,16 +173,17 @@ namespace Microsoft
             {
                 Lower_d = 0
             };
+
             [version(0x00000001)]
             enum LineSpacingRule
             {
-                Undefined_d = 0
+                Undefined_d  = 0
             };
 
             [version(0x00000001)]
             enum LinkType
             {
-                Undefined_d = 0
+                Undefined_d           = 0
             };
 
             [version(0x00000001)]
@@ -194,13 +195,13 @@ namespace Microsoft
             [version(0x00000001)]
             enum MarkerStyle
             {
-                Undefined_d = 0
+                Undefined_d   = 0
             };
 
             [version(0x00000001)]
             enum MarkerType
             {
-                Undefined_d = 0
+                Undefined_d              = 0
             };
 
             [version(0x00000001)]
@@ -219,7 +220,7 @@ namespace Microsoft
             [version(0x00000001)]
             enum PointOptions
             {
-                None_d = 0x0
+                None_d               = 0x0
             };
 
             [version(0x00000001)]
@@ -231,8 +232,7 @@ namespace Microsoft
             [version(0x00000001)]
             enum RichEditMathMode
             {
-                NoMath   = 0,
-                MathOnly = 1
+                NoMath_d   = 0
             };
 
             [flags]
@@ -245,57 +245,57 @@ namespace Microsoft
             [version(0x00000001)]
             enum SelectionType
             {
-                None_d = 0
+                None_d           = 0
             };
 
             [version(0x00000001)]
             enum TabAlignment
             {
-                Left_d = 0
+                Left_d    = 0
             };
 
             [version(0x00000001)]
             enum TabLeader
             {
-                Spaces_d = 0
+                Spaces_d     = 0
             };
 
             [flags]
             [version(0x00000001)]
             enum TextGetOptions
             {
-                None_d = 0x0
+                None_d             = 0x0
             };
 
             [version(0x00000001)]
             enum TextRangeUnit
             {
-                Character_d = 0
+                Character_d       = 0
             };
 
             [version(0x00000001)]
             enum TextScript
             {
-                Undefined_d = 0
+                Undefined_d     = 0
             };
 
             [flags]
             [version(0x00000001)]
             enum TextSetOptions
             {
-                None_d = 0x0
+                None_d                     = 0x0
             };
 
             [version(0x00000001)]
             enum UnderlineType
             {
-                Undefined_d = 0
+                Undefined_d       = 0
             };
 
             [version(0x00000001)]
             enum VerticalCharacterAlignment
             {
-                Top_d = 0
+                Top_d      = 0
             };
 
             [exclusiveto(Microsoft.UI.Text.FontWeights)]
