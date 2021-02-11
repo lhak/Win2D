@@ -117,7 +117,8 @@ namespace ABI { namespace Microsoft { namespace Graphics { namespace Canvas { na
                 return DEFAULT_DPI;
 
             ComPtr<IDisplayInformation> displayInformation;
-            ThrowIfFailed(m_displayInformationStatics->GetForCurrentView(&displayInformation));
+            if (FAILED(m_displayInformationStatics->GetForCurrentView(&displayInformation)))
+                return DEFAULT_DPI;
 
             FLOAT logicalDpi;
             ThrowIfFailed(displayInformation->get_LogicalDpi(&logicalDpi));
