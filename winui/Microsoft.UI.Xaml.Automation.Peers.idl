@@ -168,10 +168,6 @@ namespace Microsoft
                 runtimeclass PasswordBox;
 
                 runtimeclass PersonPicture;
-
-                runtimeclass Pivot;
-
-                runtimeclass PivotItem;
             }
         }
     }
@@ -572,18 +568,6 @@ namespace Microsoft
 
                     interface IPickerFlyoutPresenterAutomationPeer;
 
-                    interface IPivotAutomationPeer;
-
-                    interface IPivotAutomationPeerFactory;
-
-                    interface IPivotItemAutomationPeer;
-
-                    interface IPivotItemAutomationPeerFactory;
-
-                    interface IPivotItemDataAutomationPeer;
-
-                    interface IPivotItemDataAutomationPeerFactory;
-
                     interface IProgressBarAutomationPeer;
 
                     interface IProgressBarAutomationPeerFactory;
@@ -839,12 +823,6 @@ namespace Microsoft
                     runtimeclass PersonPictureAutomationPeer;
 
                     runtimeclass PickerFlyoutPresenterAutomationPeer;
-
-                    runtimeclass PivotAutomationPeer;
-
-                    runtimeclass PivotItemAutomationPeer;
-
-                    runtimeclass PivotItemDataAutomationPeer;
 
                     runtimeclass ProgressBarAutomationPeer;
 
@@ -2217,79 +2195,34 @@ namespace Microsoft
                     {
                     }
 
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [exclusiveto(Microsoft.UI.Xaml.Automation.Peers.PivotAutomationPeer)]
-                    [uuid(84225540-A6A3-5E65-A3DC-B31B81AB14C1)]
-                    interface IPivotAutomationPeer : IInspectable
-                    {
-                    }
-
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [exclusiveto(Microsoft.UI.Xaml.Automation.Peers.PivotAutomationPeer)]
-                    [uuid(B1DD0229-C14C-5AC0-8331-BE24FA2007F0)]
-                    interface IPivotAutomationPeerFactory : IInspectable
-                    {
-                        HRESULT CreateInstanceWithOwner([in] Microsoft.UI.Xaml.Controls.Pivot* owner, [out] [retval] Microsoft.UI.Xaml.Automation.Peers.PivotAutomationPeer** value);
-                    }
-
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [exclusiveto(Microsoft.UI.Xaml.Automation.Peers.PivotItemAutomationPeer)]
-                    [uuid(BFE7FB7B-2D88-56E4-B50F-0A40DE6F52A1)]
-                    interface IPivotItemAutomationPeer : IInspectable
-                    {
-                    }
-
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [exclusiveto(Microsoft.UI.Xaml.Automation.Peers.PivotItemAutomationPeer)]
-                    [uuid(14966EE7-AFAF-5FCC-9346-F0E7192C220A)]
-                    interface IPivotItemAutomationPeerFactory : IInspectable
-                    {
-                        HRESULT CreateInstanceWithOwner([in] Microsoft.UI.Xaml.Controls.PivotItem* owner, [out] [retval] Microsoft.UI.Xaml.Automation.Peers.PivotItemAutomationPeer** value);
-                    }
-
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [exclusiveto(Microsoft.UI.Xaml.Automation.Peers.PivotItemDataAutomationPeer)]
-                    [uuid(6758EBEE-B3E0-5FEB-AABA-B7F6C59FE49F)]
-                    interface IPivotItemDataAutomationPeer : IInspectable
-                    {
-                    }
-
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [exclusiveto(Microsoft.UI.Xaml.Automation.Peers.PivotItemDataAutomationPeer)]
-                    [uuid(26D7A6E9-CE6B-5690-9024-75CE5770B0D6)]
-                    interface IPivotItemDataAutomationPeerFactory : IInspectable
-                    {
-                        HRESULT CreateInstanceWithParentAndItem([in] IInspectable* item, [in] Microsoft.UI.Xaml.Automation.Peers.PivotAutomationPeer* parent, [out] [retval] Microsoft.UI.Xaml.Automation.Peers.PivotItemDataAutomationPeer** value);
-                    }
-
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                     [exclusiveto(Microsoft.UI.Xaml.Automation.Peers.ProgressBarAutomationPeer)]
                     [uuid(8565EAD9-B877-52C7-A147-6FE1FEE767AF)]
+                    [version(0x00000001)]
                     interface IProgressBarAutomationPeer : IInspectable
                     {
                     }
 
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                     [exclusiveto(Microsoft.UI.Xaml.Automation.Peers.ProgressBarAutomationPeer)]
-                    [uuid(C231DB2F-551E-5783-9F02-51C2E2A0B291)]
+                    [uuid(CEA28C0D-C4B3-5D18-AEF6-958031395878)]
+                    [version(0x00000001)]
                     interface IProgressBarAutomationPeerFactory : IInspectable
                     {
-                        HRESULT CreateInstanceWithOwner([in] Microsoft.UI.Xaml.Controls.ProgressBar* owner, [in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Automation.Peers.ProgressBarAutomationPeer** value);
+                        HRESULT CreateInstance([in] Microsoft.UI.Xaml.Controls.ProgressBar* owner, [in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Automation.Peers.ProgressBarAutomationPeer** value);
                     }
 
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                     [exclusiveto(Microsoft.UI.Xaml.Automation.Peers.ProgressRingAutomationPeer)]
                     [uuid(3B6952DA-9E44-52B0-91DF-39DA9DC1D8B0)]
+                    [version(0x00000001)]
                     interface IProgressRingAutomationPeer : IInspectable
                     {
                     }
 
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                     [exclusiveto(Microsoft.UI.Xaml.Automation.Peers.ProgressRingAutomationPeer)]
-                    [uuid(2E672411-EF82-510A-B852-85E28EB7CE86)]
+                    [uuid(650F375C-3B29-5376-A7F7-C78082B82D13)]
+                    [version(0x00000001)]
                     interface IProgressRingAutomationPeerFactory : IInspectable
                     {
-                        HRESULT CreateInstanceWithOwner([in] Microsoft.UI.Xaml.Controls.ProgressRing* owner, [in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Automation.Peers.ProgressRingAutomationPeer** value);
+                        HRESULT CreateInstance([in] Microsoft.UI.Xaml.Controls.ProgressRing* owner, [in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Automation.Peers.ProgressRingAutomationPeer** value);
                     }
 
                     [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -2751,7 +2684,20 @@ namespace Microsoft
                         HRESULT CreateInstanceWithOwner([in] Microsoft.UI.Xaml.Controls.TreeViewList* owner, [in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Automation.Peers.TreeViewListAutomationPeer** value);
                     }
 
-                   
+                    [exclusiveto(Microsoft.UI.Xaml.Automation.Peers.WebView2AutomationPeer)]
+                    [uuid(8E556ECA-B000-5E51-810F-7B7D80C39D56)]
+                    [version(0x00000001)]
+                    interface IWebView2AutomationPeer : IInspectable
+                    {
+                    }
+
+                    [exclusiveto(Microsoft.UI.Xaml.Automation.Peers.WebView2AutomationPeer)]
+                    [uuid(68512210-E61E-5B56-A6AF-C4FB14677155)]
+                    [version(0x00000001)]
+                    interface IWebView2AutomationPeerFactory : IInspectable
+                    {
+                        HRESULT CreateInstance([in] Microsoft.UI.Xaml.Controls.WebView2* owner, [in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Automation.Peers.WebView2AutomationPeer** value);
+                    }
 
                     [composable(Microsoft.UI.Xaml.Automation.Peers.IAnimatedVisualPlayerAutomationPeerFactory, public, 0x00000001)]
                     [marshaling_behavior(agile)]
@@ -3339,54 +3285,23 @@ namespace Microsoft
                         [default] interface Microsoft.UI.Xaml.Automation.Peers.IPickerFlyoutPresenterAutomationPeer;
                     }
 
-                    [activatable(Microsoft.UI.Xaml.Automation.Peers.IPivotAutomationPeerFactory, Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                    [composable(Microsoft.UI.Xaml.Automation.Peers.IProgressBarAutomationPeerFactory, public, 0x00000001)]
                     [marshaling_behavior(agile)]
                     [threading(both)]
-                    runtimeclass PivotAutomationPeer : Microsoft.UI.Xaml.Automation.Peers.ItemsControlAutomationPeer
-                    {
-                        [default] interface Microsoft.UI.Xaml.Automation.Peers.IPivotAutomationPeer;
-                        [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] interface Microsoft.UI.Xaml.Automation.Provider.ISelectionProvider;
-                        [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] interface Microsoft.UI.Xaml.Automation.Provider.IScrollProvider;
-                    }
-
-                    [activatable(Microsoft.UI.Xaml.Automation.Peers.IPivotItemAutomationPeerFactory, Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [marshaling_behavior(agile)]
-                    [threading(both)]
-                    runtimeclass PivotItemAutomationPeer : Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer
-                    {
-                        [default] interface Microsoft.UI.Xaml.Automation.Peers.IPivotItemAutomationPeer;
-                    }
-
-                    [activatable(Microsoft.UI.Xaml.Automation.Peers.IPivotItemDataAutomationPeerFactory, Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [marshaling_behavior(agile)]
-                    [threading(both)]
-                    runtimeclass PivotItemDataAutomationPeer : Microsoft.UI.Xaml.Automation.Peers.ItemAutomationPeer
-                    {
-                        [default] interface Microsoft.UI.Xaml.Automation.Peers.IPivotItemDataAutomationPeer;
-                        [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] interface Microsoft.UI.Xaml.Automation.Provider.IScrollItemProvider;
-                        [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] interface Microsoft.UI.Xaml.Automation.Provider.ISelectionItemProvider;
-                        [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] interface Microsoft.UI.Xaml.Automation.Provider.IVirtualizedItemProvider;
-                    }
-
-                    [composable(Microsoft.UI.Xaml.Automation.Peers.IProgressBarAutomationPeerFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [marshaling_behavior(agile)]
-                    [threading(both)]
+                    [version(0x00000001)]
                     runtimeclass ProgressBarAutomationPeer : Microsoft.UI.Xaml.Automation.Peers.RangeBaseAutomationPeer
                     {
                         [default] interface Microsoft.UI.Xaml.Automation.Peers.IProgressBarAutomationPeer;
                     }
 
-                    [composable(Microsoft.UI.Xaml.Automation.Peers.IProgressRingAutomationPeerFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                    [composable(Microsoft.UI.Xaml.Automation.Peers.IProgressRingAutomationPeerFactory, public, 0x00000001)]
                     [marshaling_behavior(agile)]
                     [threading(both)]
+                    [version(0x00000001)]
                     runtimeclass ProgressRingAutomationPeer : Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer
                     {
                         [default] interface Microsoft.UI.Xaml.Automation.Peers.IProgressRingAutomationPeer;
+                        interface Microsoft.UI.Xaml.Automation.Provider.IRangeValueProvider;
                     }
 
                     [composable(Microsoft.UI.Xaml.Automation.Peers.IRadioButtonAutomationPeerFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -3684,7 +3599,14 @@ namespace Microsoft
                         [default] interface Microsoft.UI.Xaml.Automation.Peers.ITreeViewListAutomationPeer;
                     }
 
-               
+                    [composable(Microsoft.UI.Xaml.Automation.Peers.IWebView2AutomationPeerFactory, public, 0x00000001)]
+                    [marshaling_behavior(agile)]
+                    [threading(both)]
+                    [version(0x00000001)]
+                    runtimeclass WebView2AutomationPeer : Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer
+                    {
+                        [default] interface Microsoft.UI.Xaml.Automation.Peers.IWebView2AutomationPeer;
+                    }
                 }
             }
         }

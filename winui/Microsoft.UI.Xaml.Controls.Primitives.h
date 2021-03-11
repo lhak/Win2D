@@ -1993,44 +1993,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPopupStatics_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        interface IProgressBarTemplateSettings;
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings ABI::Microsoft::UI::Xaml::Controls::Primitives::IProgressBarTemplateSettings
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        interface IProgressRingTemplateSettings;
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings ABI::Microsoft::UI::Xaml::Controls::Primitives::IProgressRingTemplateSettings
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRangeBase_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRangeBase_FWD_DEFINED__
 namespace ABI {
@@ -6265,8 +6227,6 @@ namespace ABI {
 
 
 
-
-
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -6899,36 +6859,6 @@ namespace ABI {
     } /* Microsoft */
 } /* ABI */
 
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        class ProgressBarTemplateSettings;
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        class ProgressRingTemplateSettings;
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
 
 
 namespace ABI {
@@ -13326,122 +13256,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPopu
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Controls.Primitives.IProgressBarTemplateSettings
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ProgressBarTemplateSettings
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IProgressBarTemplateSettings[] = L"Microsoft.UI.Xaml.Controls.Primitives.IProgressBarTemplateSettings";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        /* [object, uuid("1FEAAC59-7D62-575D-92C6-D76900E13E70"), exclusiveto, contract] */
-                        MIDL_INTERFACE("1FEAAC59-7D62-575D-92C6-D76900E13E70")
-                        IProgressBarTemplateSettings : public IInspectable
-                        {
-                        public:
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_EllipseDiameter(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_EllipseOffset(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_EllipseAnimationWellPosition(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_EllipseAnimationEndPosition(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ContainerAnimationStartPosition(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_ContainerAnimationEndPosition(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_IndicatorLengthDelta(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IProgressBarTemplateSettings=_uuidof(IProgressBarTemplateSettings);
-                        
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Controls.Primitives.IProgressRingTemplateSettings
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ProgressRingTemplateSettings
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IProgressRingTemplateSettings[] = L"Microsoft.UI.Xaml.Controls.Primitives.IProgressRingTemplateSettings";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    namespace Primitives {
-                        /* [object, uuid("D44DFE3B-F1F3-5667-80FB-7C9410161F18"), exclusiveto, contract] */
-                        MIDL_INTERFACE("D44DFE3B-F1F3-5667-80FB-7C9410161F18")
-                        IProgressRingTemplateSettings : public IInspectable
-                        {
-                        public:
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_EllipseDiameter(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_EllipseOffset(
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Thickness * value
-                                ) = 0;
-                            /* [propget] */virtual HRESULT STDMETHODCALLTYPE get_MaxSideLength(
-                                /* [retval, out] */DOUBLE * value
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IProgressRingTemplateSettings=_uuidof(IProgressRingTemplateSettings);
-                        
-                    } /* Primitives */
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IRangeBase
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -17834,54 +17648,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
- * Class Microsoft.UI.Xaml.Controls.Primitives.ProgressBarTemplateSettings
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Controls.Primitives.IProgressBarTemplateSettings ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ProgressBarTemplateSettings_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ProgressBarTemplateSettings_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ProgressBarTemplateSettings[] = L"Microsoft.UI.Xaml.Controls.Primitives.ProgressBarTemplateSettings";
-#endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Controls.Primitives.ProgressRingTemplateSettings
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Controls.Primitives.IProgressRingTemplateSettings ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ProgressRingTemplateSettings_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ProgressRingTemplateSettings_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ProgressRingTemplateSettings[] = L"Microsoft.UI.Xaml.Controls.Primitives.ProgressRingTemplateSettings";
-#endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Class Microsoft.UI.Xaml.Controls.Primitives.RangeBase
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -19096,18 +18862,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPopup __x
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPopupStatics __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPopupStatics;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPopupStatics_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRangeBase_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRangeBase_FWD_DEFINED__
@@ -23093,10 +22847,6 @@ typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CTickPlacement _
 
 
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CGeneratorPosition __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CGeneratorPosition;
-
-
-
-
 
 
 
@@ -35197,248 +34947,6 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPopu
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Controls.Primitives.IProgressBarTemplateSettings
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ProgressBarTemplateSettings
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IProgressBarTemplateSettings[] = L"Microsoft.UI.Xaml.Controls.Primitives.IProgressBarTemplateSettings";
-/* [object, uuid("1FEAAC59-7D62-575D-92C6-D76900E13E70"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettingsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_EllipseDiameter )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_EllipseOffset )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_EllipseAnimationWellPosition )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_EllipseAnimationEndPosition )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ContainerAnimationStartPosition )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_ContainerAnimationEndPosition )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_IndicatorLengthDelta )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettingsVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettingsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_get_EllipseDiameter(This,value) \
-    ( (This)->lpVtbl->get_EllipseDiameter(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_get_EllipseOffset(This,value) \
-    ( (This)->lpVtbl->get_EllipseOffset(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_get_EllipseAnimationWellPosition(This,value) \
-    ( (This)->lpVtbl->get_EllipseAnimationWellPosition(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_get_EllipseAnimationEndPosition(This,value) \
-    ( (This)->lpVtbl->get_EllipseAnimationEndPosition(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_get_ContainerAnimationStartPosition(This,value) \
-    ( (This)->lpVtbl->get_ContainerAnimationStartPosition(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_get_ContainerAnimationEndPosition(This,value) \
-    ( (This)->lpVtbl->get_ContainerAnimationEndPosition(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_get_IndicatorLengthDelta(This,value) \
-    ( (This)->lpVtbl->get_IndicatorLengthDelta(This,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressBarTemplateSettings_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Controls.Primitives.IProgressRingTemplateSettings
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Controls.Primitives.ProgressRingTemplateSettings
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Controls_Primitives_IProgressRingTemplateSettings[] = L"Microsoft.UI.Xaml.Controls.Primitives.IProgressRingTemplateSettings";
-/* [object, uuid("D44DFE3B-F1F3-5667-80FB-7C9410161F18"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettingsVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-/* [propget] */HRESULT ( STDMETHODCALLTYPE *get_EllipseDiameter )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_EllipseOffset )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings * This,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CThickness * value
-        );
-    /* [propget] */HRESULT ( STDMETHODCALLTYPE *get_MaxSideLength )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings * This,
-        /* [retval, out] */DOUBLE * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettingsVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettingsVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_get_EllipseDiameter(This,value) \
-    ( (This)->lpVtbl->get_EllipseDiameter(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_get_EllipseOffset(This,value) \
-    ( (This)->lpVtbl->get_EllipseOffset(This,value) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_get_MaxSideLength(This,value) \
-    ( (This)->lpVtbl->get_MaxSideLength(This,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIProgressRingTemplateSettings_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Controls.Primitives.IRangeBase
  *
  * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
@@ -43295,54 +42803,6 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_Popup_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_Popup_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_Popup[] = L"Microsoft.UI.Xaml.Controls.Primitives.Popup";
-#endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Controls.Primitives.ProgressBarTemplateSettings
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Controls.Primitives.IProgressBarTemplateSettings ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ProgressBarTemplateSettings_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ProgressBarTemplateSettings_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ProgressBarTemplateSettings[] = L"Microsoft.UI.Xaml.Controls.Primitives.ProgressBarTemplateSettings";
-#endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Controls.Primitives.ProgressRingTemplateSettings
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Controls.Primitives.IProgressRingTemplateSettings ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ProgressRingTemplateSettings_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Controls_Primitives_ProgressRingTemplateSettings_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Controls_Primitives_ProgressRingTemplateSettings[] = L"Microsoft.UI.Xaml.Controls.Primitives.ProgressRingTemplateSettings";
 #endif
 #endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 

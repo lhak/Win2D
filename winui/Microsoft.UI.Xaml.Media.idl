@@ -732,6 +732,7 @@ namespace Microsoft
                     Round = 2
                 };
 
+                [experimental]
                 [version(0x00000001)]
                 enum RevealBrushState
                 {
@@ -1627,6 +1628,7 @@ namespace Microsoft
                 }
 
                 [exclusiveto(Microsoft.UI.Xaml.Media.RevealBackgroundBrush)]
+                [experimental]
                 [uuid(3741D912-FC83-5C92-A22F-EFC29588B373)]
                 [version(0x00000001)]
                 interface IRevealBackgroundBrush : IInspectable
@@ -1634,6 +1636,7 @@ namespace Microsoft
                 }
 
                 [exclusiveto(Microsoft.UI.Xaml.Media.RevealBackgroundBrush)]
+                [experimental]
                 [uuid(7E6F2B0A-E70D-529F-8097-43E023F2943B)]
                 [version(0x00000001)]
                 interface IRevealBackgroundBrushFactory : IInspectable
@@ -1642,6 +1645,7 @@ namespace Microsoft
                 }
 
                 [exclusiveto(Microsoft.UI.Xaml.Media.RevealBorderBrush)]
+                [experimental]
                 [uuid(F85DBFCB-2EC6-5C73-A8BE-3864C980B917)]
                 [version(0x00000001)]
                 interface IRevealBorderBrush : IInspectable
@@ -1649,6 +1653,7 @@ namespace Microsoft
                 }
 
                 [exclusiveto(Microsoft.UI.Xaml.Media.RevealBorderBrush)]
+                [experimental]
                 [uuid(C677BDC2-F045-532C-BB13-3CEEE19143B2)]
                 [version(0x00000001)]
                 interface IRevealBorderBrushFactory : IInspectable
@@ -1657,6 +1662,7 @@ namespace Microsoft
                 }
 
                 [exclusiveto(Microsoft.UI.Xaml.Media.RevealBrush)]
+                [experimental]
                 [uuid(30347330-A703-5086-BD82-4E28CE833233)]
                 [version(0x00000001)]
                 interface IRevealBrush : IInspectable
@@ -1670,6 +1676,7 @@ namespace Microsoft
                 }
 
                 [exclusiveto(Microsoft.UI.Xaml.Media.RevealBrush)]
+                [experimental]
                 [uuid(46A94F5B-8ABD-5571-B049-7F76E3F967C9)]
                 [version(0x00000001)]
                 interface IRevealBrushProtectedFactory : IInspectable
@@ -1678,6 +1685,7 @@ namespace Microsoft
                 }
 
                 [exclusiveto(Microsoft.UI.Xaml.Media.RevealBrush)]
+                [experimental]
                 [uuid(F44D7CCB-7A1E-5D64-AB82-A6E5290BE8D1)]
                 [version(0x00000001)]
                 interface IRevealBrushStatics : IInspectable
@@ -2454,31 +2462,34 @@ namespace Microsoft
                 }
 
                 [composable(Microsoft.UI.Xaml.Media.IRevealBackgroundBrushFactory, public, 0x00000001)]
+                [experimental]
                 [marshaling_behavior(agile)]
                 [threading(both)]
                 [version(0x00000001)]
                 runtimeclass RevealBackgroundBrush : Microsoft.UI.Xaml.Media.RevealBrush
                 {
-                    [default] interface Microsoft.UI.Xaml.Media.IRevealBackgroundBrush;
+                    [default] [experimental] interface Microsoft.UI.Xaml.Media.IRevealBackgroundBrush;
                 }
 
                 [composable(Microsoft.UI.Xaml.Media.IRevealBorderBrushFactory, public, 0x00000001)]
+                [experimental]
                 [marshaling_behavior(agile)]
                 [threading(both)]
                 [version(0x00000001)]
                 runtimeclass RevealBorderBrush : Microsoft.UI.Xaml.Media.RevealBrush
                 {
-                    [default] interface Microsoft.UI.Xaml.Media.IRevealBorderBrush;
+                    [default] [experimental] interface Microsoft.UI.Xaml.Media.IRevealBorderBrush;
                 }
 
                 [composable(Microsoft.UI.Xaml.Media.IRevealBrushProtectedFactory, protected, 0x00000001)]
+                [experimental]
                 [marshaling_behavior(agile)]
                 [static(Microsoft.UI.Xaml.Media.IRevealBrushStatics, 0x00000001)]
                 [threading(both)]
                 [version(0x00000001)]
                 runtimeclass RevealBrush : Microsoft.UI.Xaml.Media.XamlCompositionBrushBase
                 {
-                    [default] interface Microsoft.UI.Xaml.Media.IRevealBrush;
+                    [default] [experimental] interface Microsoft.UI.Xaml.Media.IRevealBrush;
                 }
 
                 [activatable(Microsoft.UI.Xaml.WinUIContract, 1.0)]

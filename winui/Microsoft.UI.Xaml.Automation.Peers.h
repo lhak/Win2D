@@ -2558,120 +2558,6 @@ namespace ABI {
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPickerFlyoutPresenterAutomationPeer_FWD_DEFINED__
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface IPivotAutomationPeer;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer ABI::Microsoft::UI::Xaml::Automation::Peers::IPivotAutomationPeer
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface IPivotAutomationPeerFactory;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory ABI::Microsoft::UI::Xaml::Automation::Peers::IPivotAutomationPeerFactory
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface IPivotItemAutomationPeer;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer ABI::Microsoft::UI::Xaml::Automation::Peers::IPivotItemAutomationPeer
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface IPivotItemAutomationPeerFactory;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory ABI::Microsoft::UI::Xaml::Automation::Peers::IPivotItemAutomationPeerFactory
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface IPivotItemDataAutomationPeer;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer ABI::Microsoft::UI::Xaml::Automation::Peers::IPivotItemDataAutomationPeer
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        interface IPivotItemDataAutomationPeerFactory;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory ABI::Microsoft::UI::Xaml::Automation::Peers::IPivotItemDataAutomationPeerFactory
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_FWD_DEFINED__
-
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeer_FWD_DEFINED__
 namespace ABI {
@@ -6002,66 +5888,6 @@ namespace ABI {
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPersonPicture_FWD_DEFINED__
 
 
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    class Pivot;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivot_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivot_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    interface IPivot;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivot ABI::Microsoft::UI::Xaml::Controls::IPivot
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivot_FWD_DEFINED__
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    class PivotItem;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivotItem_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivotItem_FWD_DEFINED__
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Controls {
-                    interface IPivotItem;
-                } /* Controls */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-#define __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivotItem ABI::Microsoft::UI::Xaml::Controls::IPivotItem
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivotItem_FWD_DEFINED__
-
-
 
 
 
@@ -7606,12 +7432,6 @@ namespace ABI {
 
 
 
-
-
-
-
-
-
 namespace ABI {
     namespace Microsoft {
         namespace UI {
@@ -8491,51 +8311,6 @@ namespace ABI {
                 namespace Automation {
                     namespace Peers {
                         class PickerFlyoutPresenterAutomationPeer;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        class PivotAutomationPeer;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        class PivotItemAutomationPeer;
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        class PivotItemDataAutomationPeer;
                     } /* Peers */
                 } /* Automation */
             } /* Xaml */
@@ -15453,287 +15228,12 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPickerF
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IPivotAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.PivotAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IPivotAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IPivotAutomationPeer";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, uuid("84225540-A6A3-5E65-A3DC-B31B81AB14C1"), exclusiveto, contract] */
-                        MIDL_INTERFACE("84225540-A6A3-5E65-A3DC-B31B81AB14C1")
-                        IPivotAutomationPeer : public IInspectable
-                        {
-                        public:
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IPivotAutomationPeer=_uuidof(IPivotAutomationPeer);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IPivotAutomationPeerFactory
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.PivotAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IPivotAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IPivotAutomationPeerFactory";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, uuid("B1DD0229-C14C-5AC0-8331-BE24FA2007F0"), exclusiveto, contract] */
-                        MIDL_INTERFACE("B1DD0229-C14C-5AC0-8331-BE24FA2007F0")
-                        IPivotAutomationPeerFactory : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateInstanceWithOwner(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IPivot * owner,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Automation::Peers::IPivotAutomationPeer * * value
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IPivotAutomationPeerFactory=_uuidof(IPivotAutomationPeerFactory);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IPivotItemAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.PivotItemAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IPivotItemAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IPivotItemAutomationPeer";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, uuid("BFE7FB7B-2D88-56E4-B50F-0A40DE6F52A1"), exclusiveto, contract] */
-                        MIDL_INTERFACE("BFE7FB7B-2D88-56E4-B50F-0A40DE6F52A1")
-                        IPivotItemAutomationPeer : public IInspectable
-                        {
-                        public:
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IPivotItemAutomationPeer=_uuidof(IPivotItemAutomationPeer);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IPivotItemAutomationPeerFactory
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.PivotItemAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IPivotItemAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IPivotItemAutomationPeerFactory";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, uuid("14966EE7-AFAF-5FCC-9346-F0E7192C220A"), exclusiveto, contract] */
-                        MIDL_INTERFACE("14966EE7-AFAF-5FCC-9346-F0E7192C220A")
-                        IPivotItemAutomationPeerFactory : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateInstanceWithOwner(
-                                /* [in] */ABI::Microsoft::UI::Xaml::Controls::IPivotItem * owner,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Automation::Peers::IPivotItemAutomationPeer * * value
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IPivotItemAutomationPeerFactory=_uuidof(IPivotItemAutomationPeerFactory);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IPivotItemDataAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.PivotItemDataAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IPivotItemDataAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IPivotItemDataAutomationPeer";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, uuid("6758EBEE-B3E0-5FEB-AABA-B7F6C59FE49F"), exclusiveto, contract] */
-                        MIDL_INTERFACE("6758EBEE-B3E0-5FEB-AABA-B7F6C59FE49F")
-                        IPivotItemDataAutomationPeer : public IInspectable
-                        {
-                        public:
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IPivotItemDataAutomationPeer=_uuidof(IPivotItemDataAutomationPeer);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IPivotItemDataAutomationPeerFactory
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.PivotItemDataAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IPivotItemDataAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IPivotItemDataAutomationPeerFactory";
-namespace ABI {
-    namespace Microsoft {
-        namespace UI {
-            namespace Xaml {
-                namespace Automation {
-                    namespace Peers {
-                        /* [object, uuid("26D7A6E9-CE6B-5690-9024-75CE5770B0D6"), exclusiveto, contract] */
-                        MIDL_INTERFACE("26D7A6E9-CE6B-5690-9024-75CE5770B0D6")
-                        IPivotItemDataAutomationPeerFactory : public IInspectable
-                        {
-                        public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateInstanceWithParentAndItem(
-                                /* [in] */IInspectable * item,
-                                /* [in] */ABI::Microsoft::UI::Xaml::Automation::Peers::IPivotAutomationPeer * parent,
-                                /* [retval, out] */ABI::Microsoft::UI::Xaml::Automation::Peers::IPivotItemDataAutomationPeer * * value
-                                ) = 0;
-                            
-                        };
-
-                        extern MIDL_CONST_ID IID & IID_IPivotItemDataAutomationPeerFactory=_uuidof(IPivotItemDataAutomationPeerFactory);
-                        
-                    } /* Peers */
-                } /* Automation */
-            } /* Xaml */
-        } /* UI */
-    } /* Microsoft */
-} /* ABI */
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Automation.Peers.IProgressBarAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ProgressBarAutomationPeer
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeer_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeer_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IProgressBarAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IProgressBarAutomationPeer";
@@ -15743,7 +15243,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Automation {
                     namespace Peers {
-                        /* [object, uuid("8565EAD9-B877-52C7-A147-6FE1FEE767AF"), exclusiveto, contract] */
+                        /* [object, version, uuid("8565EAD9-B877-52C7-A147-6FE1FEE767AF"), exclusiveto] */
                         MIDL_INTERFACE("8565EAD9-B877-52C7-A147-6FE1FEE767AF")
                         IProgressBarAutomationPeer : public IInspectable
                         {
@@ -15762,21 +15262,16 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeer;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Automation.Peers.IProgressBarAutomationPeerFactory
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ProgressBarAutomationPeer
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeerFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeerFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IProgressBarAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IProgressBarAutomationPeerFactory";
@@ -15786,12 +15281,12 @@ namespace ABI {
             namespace Xaml {
                 namespace Automation {
                     namespace Peers {
-                        /* [object, uuid("C231DB2F-551E-5783-9F02-51C2E2A0B291"), exclusiveto, contract] */
-                        MIDL_INTERFACE("C231DB2F-551E-5783-9F02-51C2E2A0B291")
+                        /* [object, version, uuid("CEA28C0D-C4B3-5D18-AEF6-958031395878"), exclusiveto] */
+                        MIDL_INTERFACE("CEA28C0D-C4B3-5D18-AEF6-958031395878")
                         IProgressBarAutomationPeerFactory : public IInspectable
                         {
                         public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateInstanceWithOwner(
+                            virtual HRESULT STDMETHODCALLTYPE CreateInstance(
                                 /* [in] */ABI::Microsoft::UI::Xaml::Controls::IProgressBar * owner,
                                 /* [in] */IInspectable * baseInterface,
                                 /* [out] */IInspectable * * innerInterface,
@@ -15811,21 +15306,16 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeerFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Automation.Peers.IProgressRingAutomationPeer
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ProgressRingAutomationPeer
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeer_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeer_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IProgressRingAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IProgressRingAutomationPeer";
@@ -15835,7 +15325,7 @@ namespace ABI {
             namespace Xaml {
                 namespace Automation {
                     namespace Peers {
-                        /* [object, uuid("3B6952DA-9E44-52B0-91DF-39DA9DC1D8B0"), exclusiveto, contract] */
+                        /* [object, version, uuid("3B6952DA-9E44-52B0-91DF-39DA9DC1D8B0"), exclusiveto] */
                         MIDL_INTERFACE("3B6952DA-9E44-52B0-91DF-39DA9DC1D8B0")
                         IProgressRingAutomationPeer : public IInspectable
                         {
@@ -15854,21 +15344,16 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeer;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Automation.Peers.IProgressRingAutomationPeerFactory
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ProgressRingAutomationPeer
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeerFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeerFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IProgressRingAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IProgressRingAutomationPeerFactory";
@@ -15878,12 +15363,12 @@ namespace ABI {
             namespace Xaml {
                 namespace Automation {
                     namespace Peers {
-                        /* [object, uuid("2E672411-EF82-510A-B852-85E28EB7CE86"), exclusiveto, contract] */
-                        MIDL_INTERFACE("2E672411-EF82-510A-B852-85E28EB7CE86")
+                        /* [object, version, uuid("650F375C-3B29-5376-A7F7-C78082B82D13"), exclusiveto] */
+                        MIDL_INTERFACE("650F375C-3B29-5376-A7F7-C78082B82D13")
                         IProgressRingAutomationPeerFactory : public IInspectable
                         {
                         public:
-                            virtual HRESULT STDMETHODCALLTYPE CreateInstanceWithOwner(
+                            virtual HRESULT STDMETHODCALLTYPE CreateInstance(
                                 /* [in] */ABI::Microsoft::UI::Xaml::Controls::IProgressRing * owner,
                                 /* [in] */IInspectable * baseInterface,
                                 /* [out] */IInspectable * * innerInterface,
@@ -15903,7 +15388,6 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeerFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -20156,96 +19640,7 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
- * Class Microsoft.UI.Xaml.Automation.Peers.PivotAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via the Microsoft.UI.Xaml.Automation.Peers.IPivotAutomationPeerFactory interface starting with version 1.0 of the Microsoft.UI.Xaml.WinUIContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.Peers.IPivotAutomationPeer ** Default Interface **
- *    Microsoft.UI.Xaml.Automation.Provider.ISelectionProvider
- *    Microsoft.UI.Xaml.Automation.Provider.IScrollProvider
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_PivotAutomationPeer_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_PivotAutomationPeer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_PivotAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.PivotAutomationPeer";
-#endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Automation.Peers.PivotItemAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via the Microsoft.UI.Xaml.Automation.Peers.IPivotItemAutomationPeerFactory interface starting with version 1.0 of the Microsoft.UI.Xaml.WinUIContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.Peers.IPivotItemAutomationPeer ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_PivotItemAutomationPeer_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_PivotItemAutomationPeer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_PivotItemAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.PivotItemAutomationPeer";
-#endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Automation.Peers.PivotItemDataAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via the Microsoft.UI.Xaml.Automation.Peers.IPivotItemDataAutomationPeerFactory interface starting with version 1.0 of the Microsoft.UI.Xaml.WinUIContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.Peers.IPivotItemDataAutomationPeer ** Default Interface **
- *    Microsoft.UI.Xaml.Automation.Provider.IScrollItemProvider
- *    Microsoft.UI.Xaml.Automation.Provider.ISelectionItemProvider
- *    Microsoft.UI.Xaml.Automation.Provider.IVirtualizedItemProvider
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_PivotItemDataAutomationPeer_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_PivotItemDataAutomationPeer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_PivotItemDataAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.PivotItemDataAutomationPeer";
-#endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Class Microsoft.UI.Xaml.Automation.Peers.ProgressBarAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Automation.Peers.IProgressBarAutomationPeer ** Default Interface **
@@ -20255,37 +19650,31 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ProgressBarAutomationPeer_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ProgressBarAutomationPeer_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_ProgressBarAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.ProgressBarAutomationPeer";
 #endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Xaml.Automation.Peers.ProgressRingAutomationPeer
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Automation.Peers.IProgressRingAutomationPeer ** Default Interface **
+ *    Microsoft.UI.Xaml.Automation.Provider.IRangeValueProvider
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
  *
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ProgressRingAutomationPeer_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ProgressRingAutomationPeer_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_ProgressRingAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.ProgressRingAutomationPeer";
 #endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -21753,42 +21142,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPersonPictur
 typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPickerFlyoutPresenterAutomationPeer __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPickerFlyoutPresenterAutomationPeer;
 
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPickerFlyoutPresenterAutomationPeer_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_FWD_DEFINED__
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_FWD_DEFINED__
 
 #ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeer_FWD_DEFINED__
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeer_FWD_DEFINED__
@@ -23720,20 +23073,6 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPersonPicture __x_ABI
 #endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPersonPicture_FWD_DEFINED__
 
 
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivot_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivot_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivot __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivot;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivot_FWD_DEFINED__
-
-
-#ifndef ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivotItem_FWD_DEFINED__
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivotItem_FWD_DEFINED__
-typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivotItem __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivotItem;
-
-#endif // ____x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivotItem_FWD_DEFINED__
-
-
 
 
 
@@ -24049,15 +23388,6 @@ typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CPatternInterface _
 
 
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CRawElementProviderRuntimeId __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CRawElementProviderRuntimeId;
-
-
-
-
-
-
-
-
-
 
 
 
@@ -36520,561 +35850,16 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPickerF
 
 /*
  *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IPivotAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.PivotAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IPivotAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IPivotAutomationPeer";
-/* [object, uuid("84225540-A6A3-5E65-A3DC-B31B81AB14C1"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IPivotAutomationPeerFactory
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.PivotAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IPivotAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IPivotAutomationPeerFactory";
-/* [object, uuid("B1DD0229-C14C-5AC0-8331-BE24FA2007F0"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactoryVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateInstanceWithOwner )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivot * owner,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactoryVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactoryVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_CreateInstanceWithOwner(This,owner,value) \
-    ( (This)->lpVtbl->CreateInstanceWithOwner(This,owner,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IPivotItemAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.PivotItemAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IPivotItemAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IPivotItemAutomationPeer";
-/* [object, uuid("BFE7FB7B-2D88-56E4-B50F-0A40DE6F52A1"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IPivotItemAutomationPeerFactory
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.PivotItemAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IPivotItemAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IPivotItemAutomationPeerFactory";
-/* [object, uuid("14966EE7-AFAF-5FCC-9346-F0E7192C220A"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactoryVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateInstanceWithOwner )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory * This,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIPivotItem * owner,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeer * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactoryVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactoryVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_CreateInstanceWithOwner(This,owner,value) \
-    ( (This)->lpVtbl->CreateInstanceWithOwner(This,owner,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IPivotItemDataAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.PivotItemDataAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IPivotItemDataAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IPivotItemDataAutomationPeer";
-/* [object, uuid("6758EBEE-B3E0-5FEB-AABA-B7F6C59FE49F"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Interface Microsoft.UI.Xaml.Automation.Peers.IPivotItemDataAutomationPeerFactory
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.PivotItemDataAutomationPeer
- *
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-#if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_INTERFACE_DEFINED__)
-#define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IPivotItemDataAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IPivotItemDataAutomationPeerFactory";
-/* [object, uuid("26D7A6E9-CE6B-5690-9024-75CE5770B0D6"), exclusiveto, contract] */
-typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactoryVtbl
-{
-    BEGIN_INTERFACE
-    HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory * This,
-    /* [in] */ __RPC__in REFIID riid,
-    /* [annotation][iid_is][out] */
-    _COM_Outptr_  void **ppvObject
-    );
-
-ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory * This
-    );
-
-ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory * This
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory * This,
-    /* [out] */ __RPC__out ULONG *iidCount,
-    /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory * This,
-    /* [out] */ __RPC__deref_out_opt HSTRING *className
-    );
-
-HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory * This,
-    /* [OUT ] */ __RPC__out TrustLevel *trustLevel
-    );
-HRESULT ( STDMETHODCALLTYPE *CreateInstanceWithParentAndItem )(
-        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory * This,
-        /* [in] */IInspectable * item,
-        /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotAutomationPeer * parent,
-        /* [retval, out] */__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeer * * value
-        );
-    END_INTERFACE
-    
-} __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactoryVtbl;
-
-interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory
-{
-    CONST_VTBL struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactoryVtbl *lpVtbl;
-};
-
-#ifdef COBJMACROS
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_QueryInterface(This,riid,ppvObject) \
-( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_AddRef(This) \
-        ( (This)->lpVtbl->AddRef(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_Release(This) \
-        ( (This)->lpVtbl->Release(This) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_GetIids(This,iidCount,iids) \
-        ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_GetRuntimeClassName(This,className) \
-        ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_GetTrustLevel(This,trustLevel) \
-        ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
-
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_CreateInstanceWithParentAndItem(This,item,parent,value) \
-    ( (This)->lpVtbl->CreateInstanceWithParentAndItem(This,item,parent,value) )
-
-
-#endif /* COBJMACROS */
-
-
-EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory;
-#endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIPivotItemDataAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Interface Microsoft.UI.Xaml.Automation.Peers.IProgressBarAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
  *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ProgressBarAutomationPeer
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeer_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeer_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IProgressBarAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IProgressBarAutomationPeer";
-/* [object, uuid("8565EAD9-B877-52C7-A147-6FE1FEE767AF"), exclusiveto, contract] */
+/* [object, version, uuid("8565EAD9-B877-52C7-A147-6FE1FEE767AF"), exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeerVtbl
 {
     BEGIN_INTERFACE
@@ -37142,25 +35927,20 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomatio
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeer;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Automation.Peers.IProgressBarAutomationPeerFactory
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ProgressBarAutomationPeer
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeerFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeerFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IProgressBarAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IProgressBarAutomationPeerFactory";
-/* [object, uuid("C231DB2F-551E-5783-9F02-51C2E2A0B291"), exclusiveto, contract] */
+/* [object, version, uuid("CEA28C0D-C4B3-5D18-AEF6-958031395878"), exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeerFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -37194,7 +35974,7 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
     __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeerFactory * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
-HRESULT ( STDMETHODCALLTYPE *CreateInstanceWithOwner )(
+HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
         __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeerFactory * This,
         /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIProgressBar * owner,
         /* [in] */IInspectable * baseInterface,
@@ -37229,8 +36009,8 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomatio
 #define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeerFactory_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeerFactory_CreateInstanceWithOwner(This,owner,baseInterface,innerInterface,value) \
-    ( (This)->lpVtbl->CreateInstanceWithOwner(This,owner,baseInterface,innerInterface,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeerFactory_CreateInstance(This,owner,baseInterface,innerInterface,value) \
+    ( (This)->lpVtbl->CreateInstance(This,owner,baseInterface,innerInterface,value) )
 
 
 #endif /* COBJMACROS */
@@ -37238,25 +36018,20 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomatio
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeerFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressBarAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Automation.Peers.IProgressRingAutomationPeer
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ProgressRingAutomationPeer
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeer_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeer_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IProgressRingAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.IProgressRingAutomationPeer";
-/* [object, uuid("3B6952DA-9E44-52B0-91DF-39DA9DC1D8B0"), exclusiveto, contract] */
+/* [object, version, uuid("3B6952DA-9E44-52B0-91DF-39DA9DC1D8B0"), exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeerVtbl
 {
     BEGIN_INTERFACE
@@ -37324,25 +36099,20 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomati
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeer;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeer_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Automation.Peers.IProgressRingAutomationPeerFactory
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Automation.Peers.ProgressRingAutomationPeer
  *
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeerFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeerFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Automation_Peers_IProgressRingAutomationPeerFactory[] = L"Microsoft.UI.Xaml.Automation.Peers.IProgressRingAutomationPeerFactory";
-/* [object, uuid("2E672411-EF82-510A-B852-85E28EB7CE86"), exclusiveto, contract] */
+/* [object, version, uuid("650F375C-3B29-5376-A7F7-C78082B82D13"), exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeerFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -37376,7 +36146,7 @@ HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
     __RPC__in __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeerFactory * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
-HRESULT ( STDMETHODCALLTYPE *CreateInstanceWithOwner )(
+HRESULT ( STDMETHODCALLTYPE *CreateInstance )(
         __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeerFactory * This,
         /* [in] */__x_ABI_CMicrosoft_CUI_CXaml_CControls_CIProgressRing * owner,
         /* [in] */IInspectable * baseInterface,
@@ -37411,8 +36181,8 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomati
 #define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeerFactory_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
-#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeerFactory_CreateInstanceWithOwner(This,owner,baseInterface,innerInterface,value) \
-    ( (This)->lpVtbl->CreateInstanceWithOwner(This,owner,baseInterface,innerInterface,value) )
+#define __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeerFactory_CreateInstance(This,owner,baseInterface,innerInterface,value) \
+    ( (This)->lpVtbl->CreateInstance(This,owner,baseInterface,innerInterface,value) )
 
 
 #endif /* COBJMACROS */
@@ -37420,7 +36190,6 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomati
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeerFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CPeers_CIProgressRingAutomationPeerFactory_INTERFACE_DEFINED__) */
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
@@ -44506,96 +43275,7 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
 
 /*
  *
- * Class Microsoft.UI.Xaml.Automation.Peers.PivotAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via the Microsoft.UI.Xaml.Automation.Peers.IPivotAutomationPeerFactory interface starting with version 1.0 of the Microsoft.UI.Xaml.WinUIContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.Peers.IPivotAutomationPeer ** Default Interface **
- *    Microsoft.UI.Xaml.Automation.Provider.ISelectionProvider
- *    Microsoft.UI.Xaml.Automation.Provider.IScrollProvider
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_PivotAutomationPeer_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_PivotAutomationPeer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_PivotAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.PivotAutomationPeer";
-#endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Automation.Peers.PivotItemAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via the Microsoft.UI.Xaml.Automation.Peers.IPivotItemAutomationPeerFactory interface starting with version 1.0 of the Microsoft.UI.Xaml.WinUIContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.Peers.IPivotItemAutomationPeer ** Default Interface **
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_PivotItemAutomationPeer_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_PivotItemAutomationPeer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_PivotItemAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.PivotItemAutomationPeer";
-#endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
- * Class Microsoft.UI.Xaml.Automation.Peers.PivotItemDataAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
- * RuntimeClass can be activated.
- *   Type can be activated via the Microsoft.UI.Xaml.Automation.Peers.IPivotItemDataAutomationPeerFactory interface starting with version 1.0 of the Microsoft.UI.Xaml.WinUIContract API contract
- *
- * Class implements the following interfaces:
- *    Microsoft.UI.Xaml.Automation.Peers.IPivotItemDataAutomationPeer ** Default Interface **
- *    Microsoft.UI.Xaml.Automation.Provider.IScrollItemProvider
- *    Microsoft.UI.Xaml.Automation.Provider.ISelectionItemProvider
- *    Microsoft.UI.Xaml.Automation.Provider.IVirtualizedItemProvider
- *
- * Class Threading Model:  Both Single and Multi Threaded Apartment
- *
- * Class Marshaling Behavior:  Agile - Class is agile
- *
- */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-#ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_PivotItemDataAutomationPeer_DEFINED
-#define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_PivotItemDataAutomationPeer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_PivotItemDataAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.PivotItemDataAutomationPeer";
-#endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
-
-
-/*
- *
  * Class Microsoft.UI.Xaml.Automation.Peers.ProgressBarAutomationPeer
- *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Automation.Peers.IProgressBarAutomationPeer ** Default Interface **
@@ -44605,37 +43285,31 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ProgressBarAutomationPeer_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ProgressBarAutomationPeer_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_ProgressBarAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.ProgressBarAutomationPeer";
 #endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*
  *
  * Class Microsoft.UI.Xaml.Automation.Peers.ProgressRingAutomationPeer
  *
- * Introduced to Microsoft.UI.Xaml.WinUIContract in version 1.0
- *
- *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Automation.Peers.IProgressRingAutomationPeer ** Default Interface **
+ *    Microsoft.UI.Xaml.Automation.Provider.IRangeValueProvider
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
  *
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
-#if MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ProgressRingAutomationPeer_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Automation_Peers_ProgressRingAutomationPeer_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Automation_Peers_ProgressRingAutomationPeer[] = L"Microsoft.UI.Xaml.Automation.Peers.ProgressRingAutomationPeer";
 #endif
-#endif // MICROSOFT_UI_XAML_WINUICONTRACT_VERSION >= 0x10000
 
 
 /*

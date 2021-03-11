@@ -476,7 +476,9 @@ namespace ABI {
 
 
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSource_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSourceGotFocusEventArgs_USE
 #define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSource_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSourceGotFocusEventArgs_USE
@@ -505,7 +507,9 @@ typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Hosting::DesktopWindowXamlS
 #endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSource_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSourceGotFocusEventArgs_USE */
 
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -523,7 +527,9 @@ namespace ABI {
 
 
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSource_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSourceTakeFocusRequestedEventArgs_USE
 #define DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSource_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSourceTakeFocusRequestedEventArgs_USE
@@ -552,7 +558,9 @@ typedef ITypedEventHandler<ABI::Microsoft::UI::Xaml::Hosting::DesktopWindowXamlS
 #endif /* DEF___FITypedEventHandler_2_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSource_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSourceTakeFocusRequestedEventArgs_USE */
 
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -818,15 +826,18 @@ namespace ABI {
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  */
 
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Xaml {
                 namespace Hosting {
-                    /* [v1_enum, contract] */
+                    /* [v1_enum, experimental, contract] */
                     enum XamlSourceFocusNavigationReason : int
                     {
                         XamlSourceFocusNavigationReason_Programmatic = 0,
@@ -844,6 +855,7 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -854,11 +866,14 @@ namespace ABI {
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSource_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSource_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IDesktopWindowXamlSource[] = L"Microsoft.UI.Xaml.Hosting.IDesktopWindowXamlSource";
@@ -867,7 +882,7 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Hosting {
-                    /* [object, uuid("A81014CD-55C1-506E-AA79-D9AC96DB9B8E"), exclusiveto, contract] */
+                    /* [object, uuid("A81014CD-55C1-506E-AA79-D9AC96DB9B8E"), experimental, exclusiveto, contract] */
                     MIDL_INTERFACE("A81014CD-55C1-506E-AA79-D9AC96DB9B8E")
                     IDesktopWindowXamlSource : public IInspectable
                     {
@@ -912,6 +927,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSource;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSource_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -922,11 +938,14 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXaml
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IDesktopWindowXamlSourceFactory[] = L"Microsoft.UI.Xaml.Hosting.IDesktopWindowXamlSourceFactory";
@@ -935,7 +954,7 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Hosting {
-                    /* [object, uuid("7D2DB617-14E7-5D49-AEEC-AE10887E595D"), exclusiveto, contract] */
+                    /* [object, uuid("7D2DB617-14E7-5D49-AEEC-AE10887E595D"), experimental, exclusiveto, contract] */
                     MIDL_INTERFACE("7D2DB617-14E7-5D49-AEEC-AE10887E595D")
                     IDesktopWindowXamlSourceFactory : public IInspectable
                     {
@@ -958,6 +977,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -968,11 +988,14 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXaml
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSourceGotFocusEventArgs
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceGotFocusEventArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceGotFocusEventArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IDesktopWindowXamlSourceGotFocusEventArgs[] = L"Microsoft.UI.Xaml.Hosting.IDesktopWindowXamlSourceGotFocusEventArgs";
@@ -981,7 +1004,7 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Hosting {
-                    /* [object, uuid("CC63D863-2071-5F6B-AEF9-C0BA35F3B8DF"), exclusiveto, contract] */
+                    /* [object, uuid("CC63D863-2071-5F6B-AEF9-C0BA35F3B8DF"), experimental, exclusiveto, contract] */
                     MIDL_INTERFACE("CC63D863-2071-5F6B-AEF9-C0BA35F3B8DF")
                     IDesktopWindowXamlSourceGotFocusEventArgs : public IInspectable
                     {
@@ -1002,6 +1025,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceGotFocusEventArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceGotFocusEventArgs_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -1012,11 +1036,14 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXaml
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSourceTakeFocusRequestedEventArgs
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceTakeFocusRequestedEventArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceTakeFocusRequestedEventArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IDesktopWindowXamlSourceTakeFocusRequestedEventArgs[] = L"Microsoft.UI.Xaml.Hosting.IDesktopWindowXamlSourceTakeFocusRequestedEventArgs";
@@ -1025,7 +1052,7 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Hosting {
-                    /* [object, uuid("4F5A0E2C-4DDC-5C03-939F-6F3BDA560363"), exclusiveto, contract] */
+                    /* [object, uuid("4F5A0E2C-4DDC-5C03-939F-6F3BDA560363"), experimental, exclusiveto, contract] */
                     MIDL_INTERFACE("4F5A0E2C-4DDC-5C03-939F-6F3BDA560363")
                     IDesktopWindowXamlSourceTakeFocusRequestedEventArgs : public IInspectable
                     {
@@ -1046,6 +1073,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceTakeFocusRequestedEventArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceTakeFocusRequestedEventArgs_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -1170,11 +1198,14 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIElementCompositio
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.WindowsXamlManager
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManager_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManager_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IWindowsXamlManager[] = L"Microsoft.UI.Xaml.Hosting.IWindowsXamlManager";
@@ -1183,7 +1214,7 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Hosting {
-                    /* [object, uuid("85A2E562-7E8F-5333-A104-A3E672A2FFEE"), exclusiveto, contract] */
+                    /* [object, uuid("85A2E562-7E8F-5333-A104-A3E672A2FFEE"), experimental, exclusiveto, contract] */
                     MIDL_INTERFACE("85A2E562-7E8F-5333-A104-A3E672A2FFEE")
                     IWindowsXamlManager : public IInspectable
                     {
@@ -1201,6 +1232,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManager;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManager_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -1211,11 +1243,14 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManage
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.WindowsXamlManager
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManagerStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManagerStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IWindowsXamlManagerStatics[] = L"Microsoft.UI.Xaml.Hosting.IWindowsXamlManagerStatics";
@@ -1224,7 +1259,7 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Hosting {
-                    /* [object, uuid("56CB591D-DE97-539F-881D-8CCDC44FA6C4"), exclusiveto, contract] */
+                    /* [object, uuid("56CB591D-DE97-539F-881D-8CCDC44FA6C4"), experimental, exclusiveto, contract] */
                     MIDL_INTERFACE("56CB591D-DE97-539F-881D-8CCDC44FA6C4")
                     IWindowsXamlManagerStatics : public IInspectable
                     {
@@ -1245,6 +1280,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManagerStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManagerStatics_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -1255,11 +1291,14 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManage
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequest_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequest_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IXamlSourceFocusNavigationRequest[] = L"Microsoft.UI.Xaml.Hosting.IXamlSourceFocusNavigationRequest";
@@ -1268,7 +1307,7 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Hosting {
-                    /* [object, uuid("C883EA8B-4CE2-58BE-B547-66DEDF620312"), exclusiveto, contract] */
+                    /* [object, uuid("C883EA8B-4CE2-58BE-B547-66DEDF620312"), experimental, exclusiveto, contract] */
                     MIDL_INTERFACE("C883EA8B-4CE2-58BE-B547-66DEDF620312")
                     IXamlSourceFocusNavigationRequest : public IInspectable
                     {
@@ -1295,6 +1334,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequest;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequest_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -1305,11 +1345,14 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNa
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequestFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequestFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IXamlSourceFocusNavigationRequestFactory[] = L"Microsoft.UI.Xaml.Hosting.IXamlSourceFocusNavigationRequestFactory";
@@ -1318,7 +1361,7 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Hosting {
-                    /* [object, uuid("0F0F5D94-F903-5D6F-A059-F84EDF64826C"), exclusiveto, contract] */
+                    /* [object, uuid("0F0F5D94-F903-5D6F-A059-F84EDF64826C"), experimental, exclusiveto, contract] */
                     MIDL_INTERFACE("0F0F5D94-F903-5D6F-A059-F84EDF64826C")
                     IXamlSourceFocusNavigationRequestFactory : public IInspectable
                     {
@@ -1351,6 +1394,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequestFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequestFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -1361,11 +1405,14 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNa
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.XamlSourceFocusNavigationResult
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResult_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResult_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IXamlSourceFocusNavigationResult[] = L"Microsoft.UI.Xaml.Hosting.IXamlSourceFocusNavigationResult";
@@ -1374,7 +1421,7 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Hosting {
-                    /* [object, uuid("D6BF378E-2AAC-5E5B-AC8A-6C5D9A4C1CB8"), exclusiveto, contract] */
+                    /* [object, uuid("D6BF378E-2AAC-5E5B-AC8A-6C5D9A4C1CB8"), experimental, exclusiveto, contract] */
                     MIDL_INTERFACE("D6BF378E-2AAC-5E5B-AC8A-6C5D9A4C1CB8")
                     IXamlSourceFocusNavigationResult : public IInspectable
                     {
@@ -1395,6 +1442,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResult;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResult_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -1405,11 +1453,14 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNa
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.XamlSourceFocusNavigationResult
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResultFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResultFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IXamlSourceFocusNavigationResultFactory[] = L"Microsoft.UI.Xaml.Hosting.IXamlSourceFocusNavigationResultFactory";
@@ -1418,7 +1469,7 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Hosting {
-                    /* [object, uuid("F533F53B-5C00-5C88-9A41-3888CB86E495"), exclusiveto, contract] */
+                    /* [object, uuid("F533F53B-5C00-5C88-9A41-3888CB86E495"), experimental, exclusiveto, contract] */
                     MIDL_INTERFACE("F533F53B-5C00-5C88-9A41-3888CB86E495")
                     IXamlSourceFocusNavigationResultFactory : public IInspectable
                     {
@@ -1440,6 +1491,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResultFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResultFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -1449,6 +1501,8 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNa
  *
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Hosting.IDesktopWindowXamlSource ** Default Interface **
@@ -1460,11 +1514,13 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNa
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource[] = L"Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -1475,6 +1531,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Hosting.IDesktopWindowXamlSourceGotFocusEventArgs ** Default Interface **
  *
@@ -1482,11 +1540,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSourceGotFocusEventArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSourceGotFocusEventArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSourceGotFocusEventArgs[] = L"Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSourceGotFocusEventArgs";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -1497,6 +1557,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Hosting.IDesktopWindowXamlSourceTakeFocusRequestedEventArgs ** Default Interface **
  *
@@ -1504,11 +1566,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSourceTakeFocusRequestedEventArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSourceTakeFocusRequestedEventArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSourceTakeFocusRequestedEventArgs[] = L"Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSourceTakeFocusRequestedEventArgs";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -1546,6 +1610,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * RuntimeClass contains static methods.
  *   Static Methods exist on the Microsoft.UI.Xaml.Hosting.IWindowsXamlManagerStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.Hosting.HostingContract API contract
  *
@@ -1559,11 +1625,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_WindowsXamlManager_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_WindowsXamlManager_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Hosting_WindowsXamlManager[] = L"Microsoft.UI.Xaml.Hosting.WindowsXamlManager";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -1573,6 +1641,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass can be activated.
  *   Type can be activated via the Microsoft.UI.Xaml.Hosting.IXamlSourceFocusNavigationRequestFactory interface starting with version 1.0 of the Microsoft.UI.Xaml.Hosting.HostingContract API contract
@@ -1586,11 +1656,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_XamlSourceFocusNavigationRequest_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_XamlSourceFocusNavigationRequest_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Hosting_XamlSourceFocusNavigationRequest[] = L"Microsoft.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -1600,6 +1672,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass can be activated.
  *   Type can be activated via the Microsoft.UI.Xaml.Hosting.IXamlSourceFocusNavigationResultFactory interface starting with version 1.0 of the Microsoft.UI.Xaml.Hosting.HostingContract API contract
@@ -1613,11 +1687,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_XamlSourceFocusNavigationResult_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_XamlSourceFocusNavigationResult_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Hosting_XamlSourceFocusNavigationResult[] = L"Microsoft.UI.Xaml.Hosting.XamlSourceFocusNavigationResult";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -1704,7 +1780,9 @@ typedef interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigat
 
 
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSource_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSourceGotFocusEventArgs_INTERFACE_DEFINED__)
 #define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSource_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSourceGotFocusEventArgs_INTERFACE_DEFINED__
 
@@ -1751,13 +1829,17 @@ interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CHosting__CDesktopWindo
 
 #endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSource_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSourceGotFocusEventArgs_INTERFACE_DEFINED__
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
 
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____FITypedEventHandler_2_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSource_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSourceTakeFocusRequestedEventArgs_INTERFACE_DEFINED__)
 #define ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSource_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSourceTakeFocusRequestedEventArgs_INTERFACE_DEFINED__
 
@@ -1804,7 +1886,9 @@ interface __FITypedEventHandler_2_Microsoft__CUI__CXaml__CHosting__CDesktopWindo
 
 #endif // ____FITypedEventHandler_2_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSource_Microsoft__CUI__CXaml__CHosting__CDesktopWindowXamlSourceTakeFocusRequestedEventArgs_INTERFACE_DEFINED__
 
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -1907,10 +1991,13 @@ typedef enum __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CXamlSourceFocusNavigationRea
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  */
 
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
-/* [v1_enum, contract] */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+/* [v1_enum, experimental, contract] */
 enum __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CXamlSourceFocusNavigationReason
 {
     XamlSourceFocusNavigationReason_Programmatic = 0,
@@ -1922,6 +2009,7 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CXamlSourceFocusNavigationReason
     XamlSourceFocusNavigationReason_Right = 9,
     XamlSourceFocusNavigationReason_Down = 10,
 };
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -1932,15 +2020,18 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CXamlSourceFocusNavigationReason
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSource_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSource_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IDesktopWindowXamlSource[] = L"Microsoft.UI.Xaml.Hosting.IDesktopWindowXamlSource";
-/* [object, uuid("A81014CD-55C1-506E-AA79-D9AC96DB9B8E"), exclusiveto, contract] */
+/* [object, uuid("A81014CD-55C1-506E-AA79-D9AC96DB9B8E"), experimental, exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceVtbl
 {
     BEGIN_INTERFACE
@@ -2067,6 +2158,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSource
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSource;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSource_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -2077,15 +2169,18 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXaml
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IDesktopWindowXamlSourceFactory[] = L"Microsoft.UI.Xaml.Hosting.IDesktopWindowXamlSourceFactory";
-/* [object, uuid("7D2DB617-14E7-5D49-AEEC-AE10887E595D"), exclusiveto, contract] */
+/* [object, uuid("7D2DB617-14E7-5D49-AEEC-AE10887E595D"), experimental, exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -2162,6 +2257,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceFactory
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -2172,15 +2268,18 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXaml
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSourceGotFocusEventArgs
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceGotFocusEventArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceGotFocusEventArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IDesktopWindowXamlSourceGotFocusEventArgs[] = L"Microsoft.UI.Xaml.Hosting.IDesktopWindowXamlSourceGotFocusEventArgs";
-/* [object, uuid("CC63D863-2071-5F6B-AEF9-C0BA35F3B8DF"), exclusiveto, contract] */
+/* [object, uuid("CC63D863-2071-5F6B-AEF9-C0BA35F3B8DF"), experimental, exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceGotFocusEventArgsVtbl
 {
     BEGIN_INTERFACE
@@ -2255,6 +2354,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceGotFocu
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceGotFocusEventArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceGotFocusEventArgs_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -2265,15 +2365,18 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXaml
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSourceTakeFocusRequestedEventArgs
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceTakeFocusRequestedEventArgs_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceTakeFocusRequestedEventArgs_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IDesktopWindowXamlSourceTakeFocusRequestedEventArgs[] = L"Microsoft.UI.Xaml.Hosting.IDesktopWindowXamlSourceTakeFocusRequestedEventArgs";
-/* [object, uuid("4F5A0E2C-4DDC-5C03-939F-6F3BDA560363"), exclusiveto, contract] */
+/* [object, uuid("4F5A0E2C-4DDC-5C03-939F-6F3BDA560363"), experimental, exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceTakeFocusRequestedEventArgsVtbl
 {
     BEGIN_INTERFACE
@@ -2348,6 +2451,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceTakeFoc
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceTakeFocusRequestedEventArgs;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIDesktopWindowXamlSourceTakeFocusRequestedEventArgs_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -2594,15 +2698,18 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIElementCompositio
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.WindowsXamlManager
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManager_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManager_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IWindowsXamlManager[] = L"Microsoft.UI.Xaml.Hosting.IWindowsXamlManager";
-/* [object, uuid("85A2E562-7E8F-5333-A104-A3E672A2FFEE"), exclusiveto, contract] */
+/* [object, uuid("85A2E562-7E8F-5333-A104-A3E672A2FFEE"), experimental, exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManagerVtbl
 {
     BEGIN_INTERFACE
@@ -2670,6 +2777,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManager
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManager;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManager_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -2680,15 +2788,18 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManage
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.WindowsXamlManager
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManagerStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManagerStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IWindowsXamlManagerStatics[] = L"Microsoft.UI.Xaml.Hosting.IWindowsXamlManagerStatics";
-/* [object, uuid("56CB591D-DE97-539F-881D-8CCDC44FA6C4"), exclusiveto, contract] */
+/* [object, uuid("56CB591D-DE97-539F-881D-8CCDC44FA6C4"), experimental, exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManagerStaticsVtbl
 {
     BEGIN_INTERFACE
@@ -2763,6 +2874,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManagerStatics
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManagerStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManagerStatics_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -2773,15 +2885,18 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIWindowsXamlManage
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequest_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequest_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IXamlSourceFocusNavigationRequest[] = L"Microsoft.UI.Xaml.Hosting.IXamlSourceFocusNavigationRequest";
-/* [object, uuid("C883EA8B-4CE2-58BE-B547-66DEDF620312"), exclusiveto, contract] */
+/* [object, uuid("C883EA8B-4CE2-58BE-B547-66DEDF620312"), experimental, exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequestVtbl
 {
     BEGIN_INTERFACE
@@ -2870,6 +2985,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationReque
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequest;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequest_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -2880,15 +2996,18 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNa
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequestFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequestFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IXamlSourceFocusNavigationRequestFactory[] = L"Microsoft.UI.Xaml.Hosting.IXamlSourceFocusNavigationRequestFactory";
-/* [object, uuid("0F0F5D94-F903-5D6F-A059-F84EDF64826C"), exclusiveto, contract] */
+/* [object, uuid("0F0F5D94-F903-5D6F-A059-F84EDF64826C"), experimental, exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequestFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -2983,6 +3102,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationReque
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequestFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationRequestFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -2993,15 +3113,18 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNa
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.XamlSourceFocusNavigationResult
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResult_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResult_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IXamlSourceFocusNavigationResult[] = L"Microsoft.UI.Xaml.Hosting.IXamlSourceFocusNavigationResult";
-/* [object, uuid("D6BF378E-2AAC-5E5B-AC8A-6C5D9A4C1CB8"), exclusiveto, contract] */
+/* [object, uuid("D6BF378E-2AAC-5E5B-AC8A-6C5D9A4C1CB8"), experimental, exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResultVtbl
 {
     BEGIN_INTERFACE
@@ -3076,6 +3199,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResul
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResult;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResult_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -3086,15 +3210,18 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNa
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Hosting.XamlSourceFocusNavigationResult
  *
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResultFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResultFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Hosting_IXamlSourceFocusNavigationResultFactory[] = L"Microsoft.UI.Xaml.Hosting.IXamlSourceFocusNavigationResultFactory";
-/* [object, uuid("F533F53B-5C00-5C88-9A41-3888CB86E495"), exclusiveto, contract] */
+/* [object, uuid("F533F53B-5C00-5C88-9A41-3888CB86E495"), experimental, exclusiveto, contract] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResultFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -3170,6 +3297,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResul
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResultFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNavigationResultFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -3179,6 +3307,8 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNa
  *
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Hosting.IDesktopWindowXamlSource ** Default Interface **
@@ -3190,11 +3320,13 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CHosting_CIXamlSourceFocusNa
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource[] = L"Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -3205,6 +3337,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Hosting.IDesktopWindowXamlSourceGotFocusEventArgs ** Default Interface **
  *
@@ -3212,11 +3346,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSourceGotFocusEventArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSourceGotFocusEventArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSourceGotFocusEventArgs[] = L"Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSourceGotFocusEventArgs";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -3227,6 +3363,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Hosting.IDesktopWindowXamlSourceTakeFocusRequestedEventArgs ** Default Interface **
  *
@@ -3234,11 +3372,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSourceTakeFocusRequestedEventArgs_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSourceTakeFocusRequestedEventArgs_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSourceTakeFocusRequestedEventArgs[] = L"Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSourceTakeFocusRequestedEventArgs";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -3276,6 +3416,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * RuntimeClass contains static methods.
  *   Static Methods exist on the Microsoft.UI.Xaml.Hosting.IWindowsXamlManagerStatics interface starting with version 1.0 of the Microsoft.UI.Xaml.Hosting.HostingContract API contract
  *
@@ -3289,11 +3431,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_WindowsXamlManager_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_WindowsXamlManager_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Hosting_WindowsXamlManager[] = L"Microsoft.UI.Xaml.Hosting.WindowsXamlManager";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -3303,6 +3447,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass can be activated.
  *   Type can be activated via the Microsoft.UI.Xaml.Hosting.IXamlSourceFocusNavigationRequestFactory interface starting with version 1.0 of the Microsoft.UI.Xaml.Hosting.HostingContract API contract
@@ -3316,11 +3462,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_XamlSourceFocusNavigationRequest_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_XamlSourceFocusNavigationRequest_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Hosting_XamlSourceFocusNavigationRequest[] = L"Microsoft.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 
@@ -3330,6 +3478,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Introduced to Microsoft.UI.Xaml.Hosting.HostingContract in version 1.0
  *
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass can be activated.
  *   Type can be activated via the Microsoft.UI.Xaml.Hosting.IXamlSourceFocusNavigationResultFactory interface starting with version 1.0 of the Microsoft.UI.Xaml.Hosting.HostingContract API contract
@@ -3343,11 +3493,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  */
 #if MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_XamlSourceFocusNavigationResult_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Hosting_XamlSourceFocusNavigationResult_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Hosting_XamlSourceFocusNavigationResult[] = L"Microsoft.UI.Xaml.Hosting.XamlSourceFocusNavigationResult";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #endif // MICROSOFT_UI_XAML_HOSTING_HOSTINGCONTRACT_VERSION >= 0x10000
 
 

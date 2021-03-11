@@ -137,10 +137,6 @@ namespace Microsoft
 
                     typedef enum PlacementMode PlacementMode;
 
-                    runtimeclass ProgressBarTemplateSettings;
-
-                    runtimeclass ProgressRingTemplateSettings;
-
                     runtimeclass ScrollPresenter;
 
                     runtimeclass SelectorItem;
@@ -354,6 +350,8 @@ namespace Microsoft
                 runtimeclass ImageBrush;
 
                 runtimeclass ImageSource;
+
+                runtimeclass RectangleGeometry;
 
                 runtimeclass SolidColorBrush;
 
@@ -699,10 +697,6 @@ namespace Microsoft
 
                 typedef enum PasswordRevealMode PasswordRevealMode;
 
-                typedef enum PivotHeaderFocusVisualPlacement PivotHeaderFocusVisualPlacement;
-
-                typedef enum PivotSlideInAnimationGroup PivotSlideInAnimationGroup;
-
                 typedef enum RefreshPullDirection RefreshPullDirection;
 
                 typedef enum RefreshVisualizerOrientation RefreshVisualizerOrientation;
@@ -867,6 +861,8 @@ namespace Microsoft
 
                 interface IAutoSuggestBoxStatics;
 
+                interface IAutoSuggestBoxStaticsFeature_InputValidation;
+
                 interface IAutoSuggestBoxSuggestionChosenEventArgs;
 
                 interface IAutoSuggestBoxTextChangedEventArgs;
@@ -960,6 +956,8 @@ namespace Microsoft
                 interface IComboBoxOverrides;
 
                 interface IComboBoxStatics;
+
+                interface IComboBoxStaticsFeature_InputValidation;
 
                 interface IComboBoxTextSubmittedEventArgs;
 
@@ -1545,6 +1543,8 @@ namespace Microsoft
 
                 interface IPasswordBoxStatics;
 
+                interface IPasswordBoxStaticsFeature_InputValidation;
+
                 interface IPathIcon;
 
                 interface IPathIconFactory;
@@ -1573,29 +1573,25 @@ namespace Microsoft
 
                 interface IPickerFlyoutStatics;
 
-                interface IPivot;
-
-                interface IPivotFactory;
-
-                interface IPivotItem;
-
-                interface IPivotItemEventArgs;
-
-                interface IPivotItemFactory;
-
-                interface IPivotItemStatics;
-
-                interface IPivotStatics;
-
                 interface IProgressBar;
 
                 interface IProgressBarFactory;
 
                 interface IProgressBarStatics;
 
+                interface IProgressBarTemplateSettings;
+
                 interface IProgressRing;
 
+                interface IProgressRing2;
+
+                interface IProgressRingFactory;
+
                 interface IProgressRingStatics;
+
+                interface IProgressRingStatics2;
+
+                interface IProgressRingTemplateSettings;
 
                 interface IRadioButton;
 
@@ -1920,6 +1916,8 @@ namespace Microsoft
                 interface ITextBoxSelectionChangingEventArgs;
 
                 interface ITextBoxStatics;
+
+                interface ITextBoxStaticsFeature_InputValidation;
 
                 interface ITextBoxTextChangingEventArgs;
 
@@ -2459,15 +2457,13 @@ namespace Microsoft
 
                 runtimeclass PickerFlyoutPresenter;
 
-                runtimeclass Pivot;
-
-                runtimeclass PivotItem;
-
-                runtimeclass PivotItemEventArgs;
-
                 runtimeclass ProgressBar;
 
+                runtimeclass ProgressBarTemplateSettings;
+
                 runtimeclass ProgressRing;
+
+                runtimeclass ProgressRingTemplateSettings;
 
                 runtimeclass RadioButton;
 
@@ -2926,8 +2922,6 @@ namespace Microsoft
 
                     interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.PickerFlyout*, Microsoft.UI.Xaml.Controls.PickerConfirmedEventArgs*>;
 
-                    interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Pivot*, Microsoft.UI.Xaml.Controls.PivotItemEventArgs*>;
-
                     interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.ColorSpectrum*, Microsoft.UI.Xaml.Controls.ColorChangedEventArgs*>;
 
                     interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter*, Microsoft.UI.Xaml.Controls.ScrollingAnchorRequestedEventArgs*>;
@@ -3059,6 +3053,8 @@ namespace Microsoft
                     interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.TreeView*, Microsoft.UI.Xaml.Controls.TreeViewSelectionChangedEventArgs*>;
 
                     interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.TwoPaneView*, IInspectable*>;
+
+                    interface Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.WebView2*, Microsoft.UI.Xaml.Controls.CoreWebView2InitializedEventArgs*>;
                 }
             }
         }
@@ -3300,6 +3296,7 @@ namespace Microsoft
                 };
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [experimental]
                 enum InputValidationErrorEventAction
                 {
                     Added   = 0,
@@ -3307,6 +3304,7 @@ namespace Microsoft
                 };
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [experimental]
                 enum InputValidationKind
                 {
                     Auto    = 0,
@@ -3315,6 +3313,7 @@ namespace Microsoft
                 };
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [experimental]
                 enum InputValidationMode
                 {
                     Auto     = 0,
@@ -3471,22 +3470,6 @@ namespace Microsoft
                     Peek    = 0,
                     Hidden  = 1,
                     Visible = 2
-                };
-
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                enum PivotHeaderFocusVisualPlacement
-                {
-                    ItemHeaders        = 0,
-                    SelectedItemHeader = 1
-                };
-
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                enum PivotSlideInAnimationGroup
-                {
-                    Default    = 0,
-                    GroupOne   = 1,
-                    GroupTwo   = 2,
-                    GroupThree = 3
                 };
 
                 [version(0x00000001)]
@@ -4433,7 +4416,7 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.AutoSuggestBox)]
-                [uuid(66DF3737-04E4-5676-B8A2-92C4DF24EEA5)]
+                [uuid(9DFA2FF9-1094-54A8-BEEE-B345FA3EE089)]
                 interface IAutoSuggestBoxStatics : IInspectable
                 {
                     [propget] HRESULT MaxSuggestionListHeightProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
@@ -4448,6 +4431,14 @@ namespace Microsoft
                     [propget] HRESULT QueryIconProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT LightDismissOverlayModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT DescriptionProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                }
+
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [exclusiveto(Microsoft.UI.Xaml.Controls.AutoSuggestBox)]
+                [experimental]
+                [uuid(49CBDB08-C9B2-5F32-8182-6E9EF783589C)]
+                interface IAutoSuggestBoxStaticsFeature_InputValidation : IInspectable
+                {
                     [propget] HRESULT ErrorTemplateProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT InputValidationModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT InputValidationKindProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
@@ -5202,7 +5193,7 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.ComboBox)]
-                [uuid(1C0D07AA-C303-5CEE-A6F0-C18CE4879636)]
+                [uuid(7DA7CD09-E256-5238-9FED-02B2F3AFBA25)]
                 interface IComboBoxStatics : IInspectable
                 {
                     [propget] HRESULT IsEditableProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
@@ -5218,6 +5209,14 @@ namespace Microsoft
                     [propget] HRESULT TextProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT TextBoxStyleProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT DescriptionProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                }
+
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [exclusiveto(Microsoft.UI.Xaml.Controls.ComboBox)]
+                [experimental]
+                [uuid(F50B2287-1EEA-5AB2-AB9B-86664EF0FF47)]
+                interface IComboBoxStaticsFeature_InputValidation : IInspectable
+                {
                     [propget] HRESULT ErrorTemplateProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT InputValidationModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT InputValidationKindProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
@@ -5805,7 +5804,15 @@ namespace Microsoft
                     [propget] HRESULT TargetType([out] [retval] Windows.UI.Xaml.Interop.TypeName* value);
                     [propput] HRESULT TargetType([in] Windows.UI.Xaml.Interop.TypeName value);
                 }
-               
+
+                [exclusiveto(Microsoft.UI.Xaml.Controls.CoreWebView2InitializedEventArgs)]
+                [uuid(EE59D277-8B2E-57AB-8631-91D27B12EBD9)]
+                [version(0x00000001)]
+                interface ICoreWebView2InitializedEventArgs : IInspectable
+                {
+                    [propget] HRESULT Exception([out] [retval] HRESULT* value);
+                }
+
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.DataTemplateSelector)]
                 [uuid(86CA4FA4-7DE0-5049-82F5-39EC78569028)]
@@ -7111,6 +7118,7 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.InputValidationContext)]
+                [experimental]
                 [uuid(2E161716-F98A-5490-840B-EA3681806D98)]
                 interface IInputValidationContext : IInspectable
                 {
@@ -7120,6 +7128,7 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.InputValidationContext)]
+                [experimental]
                 [uuid(E84EE1E5-D8F5-517E-B8EB-8713F6135AFB)]
                 interface IInputValidationContextFactory : IInspectable
                 {
@@ -7127,6 +7136,7 @@ namespace Microsoft
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [experimental]
                 [uuid(673CD2FF-797B-541E-B888-4771805ABEBA)]
                 interface IInputValidationControl : IInspectable
                 {
@@ -7148,6 +7158,7 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.InputValidationError)]
+                [experimental]
                 [uuid(4654A349-7911-5C27-B287-36DEBDF1E6C8)]
                 interface IInputValidationError : IInspectable
                 {
@@ -7156,6 +7167,7 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.InputValidationErrorEventArgs)]
+                [experimental]
                 [uuid(68E18523-DAC3-51ED-8969-C190D8EC207F)]
                 interface IInputValidationErrorEventArgs : IInspectable
                 {
@@ -7165,6 +7177,7 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.InputValidationError)]
+                [experimental]
                 [uuid(7FAB9146-EECE-57B6-AD68-12684B7422F0)]
                 interface IInputValidationErrorFactory : IInspectable
                 {
@@ -8979,7 +8992,7 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.PasswordBox)]
-                [uuid(02E75AB5-64A1-5A6C-9151-C13792B2D00D)]
+                [uuid(90E6559C-5F74-5CD1-87B6-C0514085AB42)]
                 interface IPasswordBoxStatics : IInspectable
                 {
                     [propget] HRESULT PasswordProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
@@ -8997,6 +9010,14 @@ namespace Microsoft
                     [propget] HRESULT CanPasteClipboardContentProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT SelectionFlyoutProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT DescriptionProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                }
+
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [exclusiveto(Microsoft.UI.Xaml.Controls.PasswordBox)]
+                [experimental]
+                [uuid(78B5311D-6422-5FAE-8DCD-A397AF7B229F)]
+                interface IPasswordBoxStaticsFeature_InputValidation : IInspectable
+                {
                     [propget] HRESULT ErrorTemplateProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT InputValidationModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT InputValidationKindProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
@@ -9151,114 +9172,9 @@ namespace Microsoft
                     [propget] HRESULT ConfirmationButtonsVisibleProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                 }
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Controls.Pivot)]
-                [uuid(1C6438E5-ECAC-5FB6-8E8E-00DE7E922303)]
-                interface IPivot : IInspectable
-                {
-                    [propget] HRESULT Title([out] [retval] IInspectable** value);
-                    [propput] HRESULT Title([in] IInspectable* value);
-                    [propget] HRESULT TitleTemplate([out] [retval] Microsoft.UI.Xaml.DataTemplate** value);
-                    [propput] HRESULT TitleTemplate([in] Microsoft.UI.Xaml.DataTemplate* value);
-                    [propget] HRESULT LeftHeader([out] [retval] IInspectable** value);
-                    [propput] HRESULT LeftHeader([in] IInspectable* value);
-                    [propget] HRESULT LeftHeaderTemplate([out] [retval] Microsoft.UI.Xaml.DataTemplate** value);
-                    [propput] HRESULT LeftHeaderTemplate([in] Microsoft.UI.Xaml.DataTemplate* value);
-                    [propget] HRESULT RightHeader([out] [retval] IInspectable** value);
-                    [propput] HRESULT RightHeader([in] IInspectable* value);
-                    [propget] HRESULT RightHeaderTemplate([out] [retval] Microsoft.UI.Xaml.DataTemplate** value);
-                    [propput] HRESULT RightHeaderTemplate([in] Microsoft.UI.Xaml.DataTemplate* value);
-                    [propget] HRESULT HeaderTemplate([out] [retval] Microsoft.UI.Xaml.DataTemplate** value);
-                    [propput] HRESULT HeaderTemplate([in] Microsoft.UI.Xaml.DataTemplate* value);
-                    [propget] HRESULT SelectedIndex([out] [retval] INT32* value);
-                    [propput] HRESULT SelectedIndex([in] INT32 value);
-                    [propget] HRESULT SelectedItem([out] [retval] IInspectable** value);
-                    [propput] HRESULT SelectedItem([in] IInspectable* value);
-                    [propget] HRESULT IsLocked([out] [retval] boolean* value);
-                    [propput] HRESULT IsLocked([in] boolean value);
-                    [propget] HRESULT HeaderFocusVisualPlacement([out] [retval] Microsoft.UI.Xaml.Controls.PivotHeaderFocusVisualPlacement* value);
-                    [propput] HRESULT HeaderFocusVisualPlacement([in] Microsoft.UI.Xaml.Controls.PivotHeaderFocusVisualPlacement value);
-                    [propget] HRESULT IsHeaderItemsCarouselEnabled([out] [retval] boolean* value);
-                    [propput] HRESULT IsHeaderItemsCarouselEnabled([in] boolean value);
-                    [eventadd] HRESULT SelectionChanged([in] Microsoft.UI.Xaml.Controls.SelectionChangedEventHandler* handler, [out] [retval] EventRegistrationToken* token);
-                    [eventremove] HRESULT SelectionChanged([in] EventRegistrationToken token);
-                    [eventadd] HRESULT PivotItemLoading([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Pivot*, Microsoft.UI.Xaml.Controls.PivotItemEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
-                    [eventremove] HRESULT PivotItemLoading([in] EventRegistrationToken token);
-                    [eventadd] HRESULT PivotItemLoaded([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Pivot*, Microsoft.UI.Xaml.Controls.PivotItemEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
-                    [eventremove] HRESULT PivotItemLoaded([in] EventRegistrationToken token);
-                    [eventadd] HRESULT PivotItemUnloading([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Pivot*, Microsoft.UI.Xaml.Controls.PivotItemEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
-                    [eventremove] HRESULT PivotItemUnloading([in] EventRegistrationToken token);
-                    [eventadd] HRESULT PivotItemUnloaded([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.Pivot*, Microsoft.UI.Xaml.Controls.PivotItemEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
-                    [eventremove] HRESULT PivotItemUnloaded([in] EventRegistrationToken token);
-                }
-
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Controls.Pivot)]
-                [uuid(DA9D033C-4782-5A69-90AF-076CCDF071AE)]
-                interface IPivotFactory : IInspectable
-                {
-                    HRESULT CreateInstance([in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Controls.Pivot** value);
-                }
-
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Controls.PivotItem)]
-                [uuid(8108C195-63F5-5DF9-ABCF-418FA2DBFBEC)]
-                interface IPivotItem : IInspectable
-                {
-                    [propget] HRESULT Header([out] [retval] IInspectable** value);
-                    [propput] HRESULT Header([in] IInspectable* value);
-                }
-
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Controls.PivotItemEventArgs)]
-                [uuid(E42C62C2-0CB9-5E5B-8148-8D80A3838DE9)]
-                interface IPivotItemEventArgs : IInspectable
-                {
-                    [propget] HRESULT Item([out] [retval] Microsoft.UI.Xaml.Controls.PivotItem** value);
-                    [propput] HRESULT Item([in] Microsoft.UI.Xaml.Controls.PivotItem* value);
-                }
-
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Controls.PivotItem)]
-                [uuid(9149A2AB-606C-55A9-8786-801D55CA8ED6)]
-                interface IPivotItemFactory : IInspectable
-                {
-                    HRESULT CreateInstance([in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Controls.PivotItem** value);
-                }
-
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Controls.PivotItem)]
-                [uuid(E2EBE630-6629-5B7B-8666-FDEB9B98DB2C)]
-                interface IPivotItemStatics : IInspectable
-                {
-                    [propget] HRESULT HeaderProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                }
-
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [exclusiveto(Microsoft.UI.Xaml.Controls.Pivot)]
-                [uuid(619CC35F-B97B-5E32-885E-70949ED97EEB)]
-                interface IPivotStatics : IInspectable
-                {
-                    [propget] HRESULT TitleProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT TitleTemplateProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT LeftHeaderProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT LeftHeaderTemplateProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT RightHeaderProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT RightHeaderTemplateProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT HeaderTemplateProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT SelectedIndexProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT SelectedItemProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT IsLockedProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT HeaderFocusVisualPlacementProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT IsHeaderItemsCarouselEnabledProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT SlideInAnimationGroupProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    HRESULT GetSlideInAnimationGroup([in] Microsoft.UI.Xaml.FrameworkElement* element, [out] [retval] Microsoft.UI.Xaml.Controls.PivotSlideInAnimationGroup* result);
-                    HRESULT SetSlideInAnimationGroup([in] Microsoft.UI.Xaml.FrameworkElement* element, [in] Microsoft.UI.Xaml.Controls.PivotSlideInAnimationGroup value);
-                }
-
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.ProgressBar)]
-                [uuid(85DC3A73-34DD-5C7F-860B-BC13A7B2E7B3)]
+                [uuid(87555C8C-0AAF-52C1-8390-0DB17F40438E)]
+                [version(0x00000001)]
                 interface IProgressBar : IInspectable
                 {
                     [propget] HRESULT IsIndeterminate([out] [retval] boolean* value);
@@ -9267,20 +9183,20 @@ namespace Microsoft
                     [propput] HRESULT ShowError([in] boolean value);
                     [propget] HRESULT ShowPaused([out] [retval] boolean* value);
                     [propput] HRESULT ShowPaused([in] boolean value);
-                    [propget] HRESULT TemplateSettings([out] [retval] Microsoft.UI.Xaml.Controls.Primitives.ProgressBarTemplateSettings** value);
+                    [propget] HRESULT TemplateSettings([out] [retval] Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings** value);
                 }
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.ProgressBar)]
                 [uuid(189826AD-F6F2-533E-9DDB-B6600E88675B)]
+                [version(0x00000001)]
                 interface IProgressBarFactory : IInspectable
                 {
                     HRESULT CreateInstance([in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Controls.ProgressBar** value);
                 }
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.ProgressBar)]
                 [uuid(61BBB127-E4C4-5E22-A8DC-CFCF957236D0)]
+                [version(0x00000001)]
                 interface IProgressBarStatics : IInspectable
                 {
                     [propget] HRESULT IsIndeterminateProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
@@ -9288,22 +9204,92 @@ namespace Microsoft
                     [propget] HRESULT ShowPausedProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                 }
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [exclusiveto(Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings)]
+                [uuid(FBEA95C9-9EF9-5E79-AF54-44DED28035D5)]
+                [version(0x00000001)]
+                interface IProgressBarTemplateSettings : IInspectable
+                {
+                    [propget] HRESULT ContainerAnimationStartPosition([out] [retval] DOUBLE* value);
+                    [propget] HRESULT ContainerAnimationEndPosition([out] [retval] DOUBLE* value);
+                    [propget] HRESULT Container2AnimationStartPosition([out] [retval] DOUBLE* value);
+                    [propget] HRESULT Container2AnimationEndPosition([out] [retval] DOUBLE* value);
+                    [propget] HRESULT ContainerAnimationMidPosition([out] [retval] DOUBLE* value);
+                    [propget] HRESULT IndicatorLengthDelta([out] [retval] DOUBLE* value);
+                    [propget] HRESULT ClipRect([out] [retval] Microsoft.UI.Xaml.Media.RectangleGeometry** value);
+                    [propget] HRESULT EllipseAnimationEndPosition([out] [retval] DOUBLE* value);
+                    [propget] HRESULT EllipseAnimationWellPosition([out] [retval] DOUBLE* value);
+                    [propget] HRESULT EllipseDiameter([out] [retval] DOUBLE* value);
+                    [propget] HRESULT EllipseOffset([out] [retval] DOUBLE* value);
+                }
+
                 [exclusiveto(Microsoft.UI.Xaml.Controls.ProgressRing)]
-                [uuid(493FC877-C99C-5B52-98FC-1EAEDCB249EF)]
+                [uuid(2670D03F-E28C-5652-BEE2-B5212EBDF7FF)]
+                [version(0x00000001)]
                 interface IProgressRing : IInspectable
                 {
                     [propget] HRESULT IsActive([out] [retval] boolean* value);
                     [propput] HRESULT IsActive([in] boolean value);
-                    [propget] HRESULT TemplateSettings([out] [retval] Microsoft.UI.Xaml.Controls.Primitives.ProgressRingTemplateSettings** value);
+                    [propget] HRESULT IsIndeterminate([out] [retval] boolean* value);
+                    [propput] HRESULT IsIndeterminate([in] boolean value);
+                    [propget] HRESULT TemplateSettings([out] [retval] Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings** value);
+                    [propget] HRESULT Value([out] [retval] DOUBLE* value);
+                    [propput] HRESULT Value([in] DOUBLE value);
+                    [propget] HRESULT Minimum([out] [retval] DOUBLE* value);
+                    [propput] HRESULT Minimum([in] DOUBLE value);
+                    [propget] HRESULT Maximum([out] [retval] DOUBLE* value);
+                    [propput] HRESULT Maximum([in] DOUBLE value);
                 }
 
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.ProgressRing)]
-                [uuid(48DF9123-9707-5FDA-9CC3-7F5E91E8DD42)]
+                [experimental]
+                [uuid(F7F384BC-FAF9-59C0-8EEB-E1ABFF944A1F)]
+                [version(0x00000001)]
+                interface IProgressRing2 : IInspectable
+                {
+                    [propget] HRESULT DeterminateSource([out] [retval] Microsoft.UI.Xaml.Controls.IAnimatedVisualSource** value);
+                    [propput] HRESULT DeterminateSource([in] Microsoft.UI.Xaml.Controls.IAnimatedVisualSource* value);
+                    [propget] HRESULT IndeterminateSource([out] [retval] Microsoft.UI.Xaml.Controls.IAnimatedVisualSource** value);
+                    [propput] HRESULT IndeterminateSource([in] Microsoft.UI.Xaml.Controls.IAnimatedVisualSource* value);
+                }
+
+                [exclusiveto(Microsoft.UI.Xaml.Controls.ProgressRing)]
+                [uuid(092FA98C-62A7-5DBC-9A85-3E556BA81F79)]
+                [version(0x00000001)]
+                interface IProgressRingFactory : IInspectable
+                {
+                    HRESULT CreateInstance([in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Controls.ProgressRing** value);
+                }
+
+                [exclusiveto(Microsoft.UI.Xaml.Controls.ProgressRing)]
+                [uuid(4BA1166A-CEC2-50E2-B26B-66B69DC2E371)]
+                [version(0x00000001)]
                 interface IProgressRingStatics : IInspectable
                 {
                     [propget] HRESULT IsActiveProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                    [propget] HRESULT IsIndeterminateProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                    [propget] HRESULT ValueProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                    [propget] HRESULT MinimumProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                    [propget] HRESULT MaximumProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                }
+
+                [exclusiveto(Microsoft.UI.Xaml.Controls.ProgressRing)]
+                [experimental]
+                [uuid(A8A3C55A-F0E0-506F-80E1-0CA87E247545)]
+                [version(0x00000001)]
+                interface IProgressRingStatics2 : IInspectable
+                {
+                    [propget] HRESULT DeterminateSourceProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                    [propget] HRESULT IndeterminateSourceProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                }
+
+                [exclusiveto(Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings)]
+                [uuid(34020D86-E1C1-5D7C-B223-ACD7F862FFD5)]
+                [version(0x00000001)]
+                interface IProgressRingTemplateSettings : IInspectable
+                {
+                    [propget] HRESULT EllipseDiameter([out] [retval] DOUBLE* value);
+                    [propget] HRESULT EllipseOffset([out] [retval] Microsoft.UI.Xaml.Thickness* value);
+                    [propget] HRESULT MaxSideLength([out] [retval] DOUBLE* value);
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -11925,7 +11911,7 @@ namespace Microsoft
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.TextBox)]
-                [uuid(46C3E7AA-85F5-5FB6-8CFC-15D4D3986680)]
+                [uuid(A41CF38F-712A-5599-BBED-5A3D9B6BD46E)]
                 interface ITextBoxStatics : IInspectable
                 {
                     [propget] HRESULT TextProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
@@ -11953,11 +11939,19 @@ namespace Microsoft
                     [propget] HRESULT SelectionFlyoutProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT ProofingMenuFlyoutProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT DescriptionProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                    [propget] HRESULT DesiredCandidateWindowAlignmentProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                    [propget] HRESULT TextReadingOrderProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                }
+
+                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [exclusiveto(Microsoft.UI.Xaml.Controls.TextBox)]
+                [experimental]
+                [uuid(BE054D82-E89E-5B8A-ACA9-33C0128AB810)]
+                interface ITextBoxStaticsFeature_InputValidation : IInspectable
+                {
                     [propget] HRESULT ErrorTemplateProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT InputValidationModeProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                     [propget] HRESULT InputValidationKindProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT DesiredCandidateWindowAlignmentProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
-                    [propget] HRESULT TextReadingOrderProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -12962,7 +12956,54 @@ namespace Microsoft
                     HRESULT GetIsVirtualizing([in] Microsoft.UI.Xaml.DependencyObject* o, [out] [retval] boolean* result);
                 }
 
-              
+                [exclusiveto(Microsoft.UI.Xaml.Controls.WebView2)]
+                [uuid(04C2C789-3936-542F-8706-87B199A73FEB)]
+                [version(0x00000001)]
+                interface IWebView2 : IInspectable
+                {
+                    [propget] HRESULT CoreWebView2([out] [retval] Microsoft.Web.WebView2.Core.CoreWebView2** value);
+                    HRESULT EnsureCoreWebView2Async([out] [retval] Windows.Foundation.IAsyncAction** operation);
+                    HRESULT ExecuteScriptAsync([in] HSTRING javascriptCode, [out] [retval] Windows.Foundation.IAsyncOperation<HSTRING>** operation);
+                    [propget] HRESULT Source([out] [retval] Windows.Foundation.Uri** value);
+                    [propput] HRESULT Source([in] Windows.Foundation.Uri* value);
+                    [propget] HRESULT CanGoForward([out] [retval] boolean* value);
+                    [propput] HRESULT CanGoForward([in] boolean value);
+                    [propget] HRESULT CanGoBack([out] [retval] boolean* value);
+                    [propput] HRESULT CanGoBack([in] boolean value);
+                    HRESULT Reload();
+                    HRESULT GoForward();
+                    HRESULT GoBack();
+                    HRESULT NavigateToString([in] HSTRING htmlContent);
+                    HRESULT Close();
+                    [eventadd] HRESULT NavigationCompleted([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.WebView2*, Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
+                    [eventremove] HRESULT NavigationCompleted([in] EventRegistrationToken token);
+                    [eventadd] HRESULT WebMessageReceived([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.WebView2*, Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
+                    [eventremove] HRESULT WebMessageReceived([in] EventRegistrationToken token);
+                    [eventadd] HRESULT NavigationStarting([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.WebView2*, Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
+                    [eventremove] HRESULT NavigationStarting([in] EventRegistrationToken token);
+                    [eventadd] HRESULT CoreProcessFailed([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.WebView2*, Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
+                    [eventremove] HRESULT CoreProcessFailed([in] EventRegistrationToken token);
+                    [eventadd] HRESULT CoreWebView2Initialized([in] Windows.Foundation.TypedEventHandler<Microsoft.UI.Xaml.Controls.WebView2*, Microsoft.UI.Xaml.Controls.CoreWebView2InitializedEventArgs*>* handler, [out] [retval] EventRegistrationToken* token);
+                    [eventremove] HRESULT CoreWebView2Initialized([in] EventRegistrationToken token);
+                }
+
+                [exclusiveto(Microsoft.UI.Xaml.Controls.WebView2)]
+                [uuid(FB4EC2CE-3074-5C42-B655-64FB81FBD040)]
+                [version(0x00000001)]
+                interface IWebView2Factory : IInspectable
+                {
+                    HRESULT CreateInstance([in] IInspectable* baseInterface, [out] IInspectable** innerInterface, [out] [retval] Microsoft.UI.Xaml.Controls.WebView2** value);
+                }
+
+                [exclusiveto(Microsoft.UI.Xaml.Controls.WebView2)]
+                [uuid(0179DCF1-1856-5A3B-B3F4-843487D3A49B)]
+                [version(0x00000001)]
+                interface IWebView2Statics : IInspectable
+                {
+                    [propget] HRESULT SourceProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                    [propget] HRESULT CanGoForwardProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                    [propget] HRESULT CanGoBackProperty([out] [retval] Microsoft.UI.Xaml.DependencyProperty** value);
+                }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [exclusiveto(Microsoft.UI.Xaml.Controls.WrapGrid)]
@@ -13090,11 +13131,12 @@ namespace Microsoft
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [static(Microsoft.UI.Xaml.Controls.IAutoSuggestBoxStatics, Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [static(Microsoft.UI.Xaml.Controls.IAutoSuggestBoxStaticsFeature_InputValidation, Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [threading(both)]
                 runtimeclass AutoSuggestBox : Microsoft.UI.Xaml.Controls.ItemsControl
                 {
                     [default] interface Microsoft.UI.Xaml.Controls.IAutoSuggestBox;
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] interface Microsoft.UI.Xaml.Controls.IInputValidationControl;
+                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] [experimental] interface Microsoft.UI.Xaml.Controls.IInputValidationControl;
                 }
 
                 [activatable(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -13307,12 +13349,13 @@ namespace Microsoft
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [static(Microsoft.UI.Xaml.Controls.IComboBoxStatics, Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [static(Microsoft.UI.Xaml.Controls.IComboBoxStaticsFeature_InputValidation, Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [threading(both)]
                 runtimeclass ComboBox : Microsoft.UI.Xaml.Controls.Primitives.Selector
                 {
                     [default] interface Microsoft.UI.Xaml.Controls.IComboBox;
                     [overridable] interface Microsoft.UI.Xaml.Controls.IComboBoxOverrides;
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] interface Microsoft.UI.Xaml.Controls.IInputValidationControl;
+                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] [experimental] interface Microsoft.UI.Xaml.Controls.IInputValidationControl;
                 }
 
                 [composable(Microsoft.UI.Xaml.Controls.IComboBoxItemFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -13471,7 +13514,13 @@ namespace Microsoft
                     [default] interface Microsoft.UI.Xaml.Controls.IControlTemplate;
                 }
 
-              
+                [marshaling_behavior(agile)]
+                [version(0x00000001)]
+                runtimeclass CoreWebView2InitializedEventArgs
+                {
+                    [default] interface Microsoft.UI.Xaml.Controls.ICoreWebView2InitializedEventArgs;
+                }
+
                 [composable(Microsoft.UI.Xaml.Controls.IDataTemplateSelectorFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [marshaling_behavior(agile)]
@@ -13968,27 +14017,30 @@ namespace Microsoft
 
                 [composable(Microsoft.UI.Xaml.Controls.IInputValidationContextFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [experimental]
                 [marshaling_behavior(agile)]
                 [threading(both)]
                 runtimeclass InputValidationContext
                 {
-                    [default] interface Microsoft.UI.Xaml.Controls.IInputValidationContext;
+                    [default] [experimental] interface Microsoft.UI.Xaml.Controls.IInputValidationContext;
                 }
 
                 [composable(Microsoft.UI.Xaml.Controls.IInputValidationErrorFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [experimental]
                 [marshaling_behavior(agile)]
                 [threading(both)]
                 runtimeclass InputValidationError
                 {
-                    [default] interface Microsoft.UI.Xaml.Controls.IInputValidationError;
+                    [default] [experimental] interface Microsoft.UI.Xaml.Controls.IInputValidationError;
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [experimental]
                 [marshaling_behavior(agile)]
                 runtimeclass InputValidationErrorEventArgs
                 {
-                    [default] interface Microsoft.UI.Xaml.Controls.IInputValidationErrorEventArgs;
+                    [default] [experimental] interface Microsoft.UI.Xaml.Controls.IInputValidationErrorEventArgs;
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -14559,11 +14611,12 @@ namespace Microsoft
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [static(Microsoft.UI.Xaml.Controls.IPasswordBoxStatics, Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [static(Microsoft.UI.Xaml.Controls.IPasswordBoxStaticsFeature_InputValidation, Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [threading(both)]
                 runtimeclass PasswordBox : Microsoft.UI.Xaml.Controls.Control
                 {
                     [default] interface Microsoft.UI.Xaml.Controls.IPasswordBox;
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] interface Microsoft.UI.Xaml.Controls.IInputValidationControl;
+                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] [experimental] interface Microsoft.UI.Xaml.Controls.IInputValidationControl;
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -14638,53 +14691,42 @@ namespace Microsoft
                     [default] interface Microsoft.UI.Xaml.Controls.IPickerFlyoutPresenter;
                 }
 
-                [composable(Microsoft.UI.Xaml.Controls.IPivotFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [composable(Microsoft.UI.Xaml.Controls.IProgressBarFactory, public, 0x00000001)]
                 [marshaling_behavior(agile)]
-                [static(Microsoft.UI.Xaml.Controls.IPivotStatics, Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [static(Microsoft.UI.Xaml.Controls.IProgressBarStatics, 0x00000001)]
                 [threading(both)]
-                runtimeclass Pivot : Microsoft.UI.Xaml.Controls.ItemsControl
-                {
-                    [default] interface Microsoft.UI.Xaml.Controls.IPivot;
-                }
-
-                [composable(Microsoft.UI.Xaml.Controls.IPivotItemFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [marshaling_behavior(agile)]
-                [static(Microsoft.UI.Xaml.Controls.IPivotItemStatics, Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [threading(both)]
-                runtimeclass PivotItem : Microsoft.UI.Xaml.Controls.ContentControl
-                {
-                    [default] interface Microsoft.UI.Xaml.Controls.IPivotItem;
-                }
-
-                [activatable(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [marshaling_behavior(agile)]
-                [threading(both)]
-                runtimeclass PivotItemEventArgs
-                {
-                    [default] interface Microsoft.UI.Xaml.Controls.IPivotItemEventArgs;
-                }
-
-                [composable(Microsoft.UI.Xaml.Controls.IProgressBarFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [marshaling_behavior(agile)]
-                [static(Microsoft.UI.Xaml.Controls.IProgressBarStatics, Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [threading(both)]
+                [version(0x00000001)]
                 runtimeclass ProgressBar : Microsoft.UI.Xaml.Controls.Primitives.RangeBase
                 {
                     [default] interface Microsoft.UI.Xaml.Controls.IProgressBar;
                 }
 
-                [activatable(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [marshaling_behavior(agile)]
-                [static(Microsoft.UI.Xaml.Controls.IProgressRingStatics, Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [threading(both)]
+                [version(0x00000001)]
+                runtimeclass ProgressBarTemplateSettings : Microsoft.UI.Xaml.DependencyObject
+                {
+                    [default] interface Microsoft.UI.Xaml.Controls.IProgressBarTemplateSettings;
+                }
+
+                [composable(Microsoft.UI.Xaml.Controls.IProgressRingFactory, public, 0x00000001)]
+                [marshaling_behavior(agile)]
+                [static(Microsoft.UI.Xaml.Controls.IProgressRingStatics, 0x00000001)]
+                [static(Microsoft.UI.Xaml.Controls.IProgressRingStatics2, 0x00000001)]
+                [threading(both)]
+                [version(0x00000001)]
                 runtimeclass ProgressRing : Microsoft.UI.Xaml.Controls.Control
                 {
                     [default] interface Microsoft.UI.Xaml.Controls.IProgressRing;
+                    [experimental] interface Microsoft.UI.Xaml.Controls.IProgressRing2;
+                }
+
+                [marshaling_behavior(agile)]
+                [threading(both)]
+                [version(0x00000001)]
+                runtimeclass ProgressRingTemplateSettings : Microsoft.UI.Xaml.DependencyObject
+                {
+                    [default] interface Microsoft.UI.Xaml.Controls.IProgressRingTemplateSettings;
                 }
 
                 [composable(Microsoft.UI.Xaml.Controls.IRadioButtonFactory, public, Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -15379,11 +15421,12 @@ namespace Microsoft
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [marshaling_behavior(agile)]
                 [static(Microsoft.UI.Xaml.Controls.ITextBoxStatics, Microsoft.UI.Xaml.WinUIContract, 1.0)]
+                [static(Microsoft.UI.Xaml.Controls.ITextBoxStaticsFeature_InputValidation, Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [threading(both)]
                 runtimeclass TextBox : Microsoft.UI.Xaml.Controls.Control
                 {
                     [default] interface Microsoft.UI.Xaml.Controls.ITextBox;
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] interface Microsoft.UI.Xaml.Controls.IInputValidationControl;
+                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)] [experimental] interface Microsoft.UI.Xaml.Controls.IInputValidationControl;
                 }
 
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
@@ -15780,7 +15823,16 @@ namespace Microsoft
                     [overridable] interface Microsoft.UI.Xaml.Controls.IVirtualizingStackPanelOverrides;
                 }
 
-                
+                [composable(Microsoft.UI.Xaml.Controls.IWebView2Factory, public, 0x00000001)]
+                [marshaling_behavior(agile)]
+                [static(Microsoft.UI.Xaml.Controls.IWebView2Statics, 0x00000001)]
+                [threading(both)]
+                [version(0x00000001)]
+                runtimeclass WebView2 : Microsoft.UI.Xaml.FrameworkElement
+                {
+                    [default] interface Microsoft.UI.Xaml.Controls.IWebView2;
+                }
+
                 [activatable(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                 [marshaling_behavior(agile)]

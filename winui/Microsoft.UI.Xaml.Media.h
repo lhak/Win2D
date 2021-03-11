@@ -5889,14 +5889,17 @@ namespace ABI {
  *
  * Struct Microsoft.UI.Xaml.Media.RevealBrushState
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  */
 
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 namespace ABI {
     namespace Microsoft {
         namespace UI {
             namespace Xaml {
                 namespace Media {
-                    /* [v1_enum, version] */
+                    /* [v1_enum, version, experimental] */
                     enum RevealBrushState : int
                     {
                         RevealBrushState_Normal = 0,
@@ -5909,6 +5912,7 @@ namespace ABI {
         } /* UI */
     } /* Microsoft */
 } /* ABI */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -10231,10 +10235,13 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRenderingEventArgs;
  *
  * Interface Microsoft.UI.Xaml.Media.IRevealBackgroundBrush
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.RevealBackgroundBrush
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrush_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrush_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRevealBackgroundBrush[] = L"Microsoft.UI.Xaml.Media.IRevealBackgroundBrush";
@@ -10243,7 +10250,7 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Media {
-                    /* [object, version, uuid("3741D912-FC83-5C92-A22F-EFC29588B373"), exclusiveto] */
+                    /* [object, version, uuid("3741D912-FC83-5C92-A22F-EFC29588B373"), experimental, exclusiveto] */
                     MIDL_INTERFACE("3741D912-FC83-5C92-A22F-EFC29588B373")
                     IRevealBackgroundBrush : public IInspectable
                     {
@@ -10261,16 +10268,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrush;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrush_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Media.IRevealBackgroundBrushFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.RevealBackgroundBrush
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrushFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrushFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRevealBackgroundBrushFactory[] = L"Microsoft.UI.Xaml.Media.IRevealBackgroundBrushFactory";
@@ -10279,7 +10290,7 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Media {
-                    /* [object, version, uuid("7E6F2B0A-E70D-529F-8097-43E023F2943B"), exclusiveto] */
+                    /* [object, version, uuid("7E6F2B0A-E70D-529F-8097-43E023F2943B"), experimental, exclusiveto] */
                     MIDL_INTERFACE("7E6F2B0A-E70D-529F-8097-43E023F2943B")
                     IRevealBackgroundBrushFactory : public IInspectable
                     {
@@ -10302,16 +10313,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrushFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrushFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Media.IRevealBorderBrush
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.RevealBorderBrush
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrush_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrush_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRevealBorderBrush[] = L"Microsoft.UI.Xaml.Media.IRevealBorderBrush";
@@ -10320,7 +10335,7 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Media {
-                    /* [object, version, uuid("F85DBFCB-2EC6-5C73-A8BE-3864C980B917"), exclusiveto] */
+                    /* [object, version, uuid("F85DBFCB-2EC6-5C73-A8BE-3864C980B917"), experimental, exclusiveto] */
                     MIDL_INTERFACE("F85DBFCB-2EC6-5C73-A8BE-3864C980B917")
                     IRevealBorderBrush : public IInspectable
                     {
@@ -10338,16 +10353,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrush;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrush_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Media.IRevealBorderBrushFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.RevealBorderBrush
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrushFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrushFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRevealBorderBrushFactory[] = L"Microsoft.UI.Xaml.Media.IRevealBorderBrushFactory";
@@ -10356,7 +10375,7 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Media {
-                    /* [object, version, uuid("C677BDC2-F045-532C-BB13-3CEEE19143B2"), exclusiveto] */
+                    /* [object, version, uuid("C677BDC2-F045-532C-BB13-3CEEE19143B2"), experimental, exclusiveto] */
                     MIDL_INTERFACE("C677BDC2-F045-532C-BB13-3CEEE19143B2")
                     IRevealBorderBrushFactory : public IInspectable
                     {
@@ -10379,16 +10398,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrushFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrushFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Media.IRevealBrush
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.RevealBrush
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrush_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrush_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRevealBrush[] = L"Microsoft.UI.Xaml.Media.IRevealBrush";
@@ -10397,7 +10420,7 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Media {
-                    /* [object, version, uuid("30347330-A703-5086-BD82-4E28CE833233"), exclusiveto] */
+                    /* [object, version, uuid("30347330-A703-5086-BD82-4E28CE833233"), experimental, exclusiveto] */
                     MIDL_INTERFACE("30347330-A703-5086-BD82-4E28CE833233")
                     IRevealBrush : public IInspectable
                     {
@@ -10433,16 +10456,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrush;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrush_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Media.IRevealBrushProtectedFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.RevealBrush
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushProtectedFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushProtectedFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRevealBrushProtectedFactory[] = L"Microsoft.UI.Xaml.Media.IRevealBrushProtectedFactory";
@@ -10451,7 +10478,7 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Media {
-                    /* [object, version, uuid("46A94F5B-8ABD-5571-B049-7F76E3F967C9"), exclusiveto] */
+                    /* [object, version, uuid("46A94F5B-8ABD-5571-B049-7F76E3F967C9"), experimental, exclusiveto] */
                     MIDL_INTERFACE("46A94F5B-8ABD-5571-B049-7F76E3F967C9")
                     IRevealBrushProtectedFactory : public IInspectable
                     {
@@ -10474,16 +10501,20 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushProtectedFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushProtectedFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Media.IRevealBrushStatics
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.RevealBrush
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRevealBrushStatics[] = L"Microsoft.UI.Xaml.Media.IRevealBrushStatics";
@@ -10492,7 +10523,7 @@ namespace ABI {
         namespace UI {
             namespace Xaml {
                 namespace Media {
-                    /* [object, version, uuid("F44D7CCB-7A1E-5D64-AB82-A6E5290BE8D1"), exclusiveto] */
+                    /* [object, version, uuid("F44D7CCB-7A1E-5D64-AB82-A6E5290BE8D1"), experimental, exclusiveto] */
                     MIDL_INTERFACE("F44D7CCB-7A1E-5D64-AB82-A6E5290BE8D1")
                     IRevealBrushStatics : public IInspectable
                     {
@@ -10530,6 +10561,7 @@ namespace ABI {
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushStatics_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -13462,6 +13494,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Xaml.Media.RevealBackgroundBrush
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Media.IRevealBackgroundBrush ** Default Interface **
  *
@@ -13470,16 +13504,20 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_RevealBackgroundBrush_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Media_RevealBackgroundBrush_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_RevealBackgroundBrush[] = L"Microsoft.UI.Xaml.Media.RevealBackgroundBrush";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Class Microsoft.UI.Xaml.Media.RevealBorderBrush
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Media.IRevealBorderBrush ** Default Interface **
@@ -13489,16 +13527,20 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_RevealBorderBrush_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Media_RevealBorderBrush_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_RevealBorderBrush[] = L"Microsoft.UI.Xaml.Media.RevealBorderBrush";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Class Microsoft.UI.Xaml.Media.RevealBrush
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
  *
@@ -13510,11 +13552,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_RevealBrush_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Media_RevealBrush_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_RevealBrush[] = L"Microsoft.UI.Xaml.Media.RevealBrush";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -20013,15 +20057,19 @@ enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CPenLineJoin
  *
  * Struct Microsoft.UI.Xaml.Media.RevealBrushState
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  */
 
-/* [v1_enum, version] */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
+/* [v1_enum, version, experimental] */
 enum __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CRevealBrushState
 {
     RevealBrushState_Normal = 0,
     RevealBrushState_PointerOver = 1,
     RevealBrushState_Pressed = 2,
 };
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -29077,14 +29125,17 @@ EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRenderingEventArgs;
  *
  * Interface Microsoft.UI.Xaml.Media.IRevealBackgroundBrush
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.RevealBackgroundBrush
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrush_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrush_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRevealBackgroundBrush[] = L"Microsoft.UI.Xaml.Media.IRevealBackgroundBrush";
-/* [object, version, uuid("3741D912-FC83-5C92-A22F-EFC29588B373"), exclusiveto] */
+/* [object, version, uuid("3741D912-FC83-5C92-A22F-EFC29588B373"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrushVtbl
 {
     BEGIN_INTERFACE
@@ -29152,20 +29203,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrush
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrush;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrush_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Media.IRevealBackgroundBrushFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.RevealBackgroundBrush
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrushFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrushFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRevealBackgroundBrushFactory[] = L"Microsoft.UI.Xaml.Media.IRevealBackgroundBrushFactory";
-/* [object, version, uuid("7E6F2B0A-E70D-529F-8097-43E023F2943B"), exclusiveto] */
+/* [object, version, uuid("7E6F2B0A-E70D-529F-8097-43E023F2943B"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrushFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -29242,20 +29297,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrushFactory
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrushFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBackgroundBrushFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Media.IRevealBorderBrush
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.RevealBorderBrush
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrush_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrush_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRevealBorderBrush[] = L"Microsoft.UI.Xaml.Media.IRevealBorderBrush";
-/* [object, version, uuid("F85DBFCB-2EC6-5C73-A8BE-3864C980B917"), exclusiveto] */
+/* [object, version, uuid("F85DBFCB-2EC6-5C73-A8BE-3864C980B917"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrushVtbl
 {
     BEGIN_INTERFACE
@@ -29323,20 +29382,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrush
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrush;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrush_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Media.IRevealBorderBrushFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.RevealBorderBrush
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrushFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrushFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRevealBorderBrushFactory[] = L"Microsoft.UI.Xaml.Media.IRevealBorderBrushFactory";
-/* [object, version, uuid("C677BDC2-F045-532C-BB13-3CEEE19143B2"), exclusiveto] */
+/* [object, version, uuid("C677BDC2-F045-532C-BB13-3CEEE19143B2"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrushFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -29413,20 +29476,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrushFactory
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrushFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBorderBrushFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Media.IRevealBrush
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.RevealBrush
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrush_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrush_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRevealBrush[] = L"Microsoft.UI.Xaml.Media.IRevealBrush";
-/* [object, version, uuid("30347330-A703-5086-BD82-4E28CE833233"), exclusiveto] */
+/* [object, version, uuid("30347330-A703-5086-BD82-4E28CE833233"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushVtbl
 {
     BEGIN_INTERFACE
@@ -29536,20 +29603,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrush
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrush;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrush_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Media.IRevealBrushProtectedFactory
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.RevealBrush
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushProtectedFactory_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushProtectedFactory_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRevealBrushProtectedFactory[] = L"Microsoft.UI.Xaml.Media.IRevealBrushProtectedFactory";
-/* [object, version, uuid("46A94F5B-8ABD-5571-B049-7F76E3F967C9"), exclusiveto] */
+/* [object, version, uuid("46A94F5B-8ABD-5571-B049-7F76E3F967C9"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushProtectedFactoryVtbl
 {
     BEGIN_INTERFACE
@@ -29626,20 +29697,24 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushProtectedFactory
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushProtectedFactory;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushProtectedFactory_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Interface Microsoft.UI.Xaml.Media.IRevealBrushStatics
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Interface is a part of the implementation of type Microsoft.UI.Xaml.Media.RevealBrush
  *
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 #if !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushStatics_INTERFACE_DEFINED__)
 #define ____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushStatics_INTERFACE_DEFINED__
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Microsoft_UI_Xaml_Media_IRevealBrushStatics[] = L"Microsoft.UI.Xaml.Media.IRevealBrushStatics";
-/* [object, version, uuid("F44D7CCB-7A1E-5D64-AB82-A6E5290BE8D1"), exclusiveto] */
+/* [object, version, uuid("F44D7CCB-7A1E-5D64-AB82-A6E5290BE8D1"), experimental, exclusiveto] */
 typedef struct __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushStaticsVtbl
 {
     BEGIN_INTERFACE
@@ -29751,6 +29826,7 @@ interface __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushStatics
 
 EXTERN_C const IID IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushStatics;
 #endif /* !defined(____x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRevealBrushStatics_INTERFACE_DEFINED__) */
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
@@ -34563,6 +34639,8 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  *
  * Class Microsoft.UI.Xaml.Media.RevealBackgroundBrush
  *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
+ *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Media.IRevealBackgroundBrush ** Default Interface **
  *
@@ -34571,16 +34649,20 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_RevealBackgroundBrush_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Media_RevealBackgroundBrush_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_RevealBackgroundBrush[] = L"Microsoft.UI.Xaml.Media.RevealBackgroundBrush";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Class Microsoft.UI.Xaml.Media.RevealBorderBrush
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * Class implements the following interfaces:
  *    Microsoft.UI.Xaml.Media.IRevealBorderBrush ** Default Interface **
@@ -34590,16 +34672,20 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_RevealBorderBrush_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Media_RevealBorderBrush_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_RevealBorderBrush[] = L"Microsoft.UI.Xaml.Media.RevealBorderBrush";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*
  *
  * Class Microsoft.UI.Xaml.Media.RevealBrush
+ *
+ * Type is for evaluation purposes and is subject to change or removal in future updates.
  *
  * RuntimeClass contains static methods.
  *
@@ -34611,11 +34697,13 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsof
  * Class Marshaling Behavior:  Agile - Class is agile
  *
  */
+#if defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 #ifndef RUNTIMECLASS_Microsoft_UI_Xaml_Media_RevealBrush_DEFINED
 #define RUNTIMECLASS_Microsoft_UI_Xaml_Media_RevealBrush_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Microsoft_UI_Xaml_Media_RevealBrush[] = L"Microsoft.UI.Xaml.Media.RevealBrush";
 #endif
+#endif // defined(ENABLE_WINRT_EXPERIMENTAL_TYPES)
 
 
 /*

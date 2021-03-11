@@ -474,10 +474,6 @@ namespace Microsoft
 
                     interface IPopupStatics;
 
-                    interface IProgressBarTemplateSettings;
-
-                    interface IProgressRingTemplateSettings;
-
                     interface IRangeBase;
 
                     interface IRangeBaseFactory;
@@ -681,10 +677,6 @@ namespace Microsoft
                     runtimeclass PivotPanel;
 
                     runtimeclass Popup;
-
-                    runtimeclass ProgressBarTemplateSettings;
-
-                    runtimeclass ProgressRingTemplateSettings;
 
                     runtimeclass RangeBase;
 
@@ -2161,30 +2153,6 @@ namespace Microsoft
                     }
 
                     [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ProgressBarTemplateSettings)]
-                    [uuid(1FEAAC59-7D62-575D-92C6-D76900E13E70)]
-                    interface IProgressBarTemplateSettings : IInspectable
-                    {
-                        [propget] HRESULT EllipseDiameter([out] [retval] DOUBLE* value);
-                        [propget] HRESULT EllipseOffset([out] [retval] DOUBLE* value);
-                        [propget] HRESULT EllipseAnimationWellPosition([out] [retval] DOUBLE* value);
-                        [propget] HRESULT EllipseAnimationEndPosition([out] [retval] DOUBLE* value);
-                        [propget] HRESULT ContainerAnimationStartPosition([out] [retval] DOUBLE* value);
-                        [propget] HRESULT ContainerAnimationEndPosition([out] [retval] DOUBLE* value);
-                        [propget] HRESULT IndicatorLengthDelta([out] [retval] DOUBLE* value);
-                    }
-
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.ProgressRingTemplateSettings)]
-                    [uuid(D44DFE3B-F1F3-5667-80FB-7C9410161F18)]
-                    interface IProgressRingTemplateSettings : IInspectable
-                    {
-                        [propget] HRESULT EllipseDiameter([out] [retval] DOUBLE* value);
-                        [propget] HRESULT EllipseOffset([out] [retval] Microsoft.UI.Xaml.Thickness* value);
-                        [propget] HRESULT MaxSideLength([out] [retval] DOUBLE* value);
-                    }
-
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
                     [exclusiveto(Microsoft.UI.Xaml.Controls.Primitives.RangeBase)]
                     [uuid(540D6D61-8FAC-5D5C-B5B0-E172A7DDE103)]
                     interface IRangeBase : IInspectable
@@ -3286,22 +3254,6 @@ namespace Microsoft
                     runtimeclass Popup : Microsoft.UI.Xaml.FrameworkElement
                     {
                         [default] interface Microsoft.UI.Xaml.Controls.Primitives.IPopup;
-                    }
-
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [marshaling_behavior(agile)]
-                    [threading(both)]
-                    runtimeclass ProgressBarTemplateSettings : Microsoft.UI.Xaml.DependencyObject
-                    {
-                        [default] interface Microsoft.UI.Xaml.Controls.Primitives.IProgressBarTemplateSettings;
-                    }
-
-                    [contract(Microsoft.UI.Xaml.WinUIContract, 1.0)]
-                    [marshaling_behavior(agile)]
-                    [threading(both)]
-                    runtimeclass ProgressRingTemplateSettings : Microsoft.UI.Xaml.DependencyObject
-                    {
-                        [default] interface Microsoft.UI.Xaml.Controls.Primitives.IProgressRingTemplateSettings;
                     }
 
                     [composable(Microsoft.UI.Xaml.Controls.Primitives.IRangeBaseFactory, protected, Microsoft.UI.Xaml.WinUIContract, 1.0)]

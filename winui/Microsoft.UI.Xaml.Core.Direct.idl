@@ -138,6 +138,7 @@ namespace Microsoft
                     }
 
                     [contract(Microsoft.UI.Xaml.Core.Direct.XamlDirectContract, 1.0)]
+                    [experimental]
                     enum XamlEventIndex
                     {
                         FrameworkElement_DataContextChanged                   = 16,
@@ -249,15 +250,12 @@ namespace Microsoft
                         ToggleButton_Unchecked                                = 274,
                         ToggleButton_Indeterminate                            = 275,
                         ScrollViewer_AnchorRequested                          = 291,
-                        AutoSuggestBox_HasValidationErrorsChanged             = 306,
-                        ComboBox_HasValidationErrorsChanged                   = 308,
-                        PasswordBox_HasValidationErrorsChanged                = 309,
-                        TextBox_HasValidationErrorsChanged                    = 311,
                         DatePicker_SelectedDateChanged                        = 322,
                         TimePicker_SelectedTimeChanged                        = 323
                     };
 
                     [contract(Microsoft.UI.Xaml.Core.Direct.XamlDirectContract, 1.0)]
+                    [experimental]
                     enum XamlPropertyIndex
                     {
                         AutomationProperties_AcceleratorKey                                   = 5,
@@ -380,16 +378,6 @@ namespace Microsoft
                         PointKeyFrame_KeyTime                                                 = 205,
                         PointKeyFrame_Value                                                   = 206,
                         PrintDocument_DocumentSource                                          = 209,
-                        ProgressBarTemplateSettings_ContainerAnimationEndPosition             = 211,
-                        ProgressBarTemplateSettings_ContainerAnimationStartPosition           = 212,
-                        ProgressBarTemplateSettings_EllipseAnimationEndPosition               = 213,
-                        ProgressBarTemplateSettings_EllipseAnimationWellPosition              = 214,
-                        ProgressBarTemplateSettings_EllipseDiameter                           = 215,
-                        ProgressBarTemplateSettings_EllipseOffset                             = 216,
-                        ProgressBarTemplateSettings_IndicatorLengthDelta                      = 217,
-                        ProgressRingTemplateSettings_EllipseDiameter                          = 218,
-                        ProgressRingTemplateSettings_EllipseOffset                            = 219,
-                        ProgressRingTemplateSettings_MaxSideLength                            = 220,
                         PropertyPath_Path                                                     = 221,
                         RowDefinition_ActualHeight                                            = 226,
                         RowDefinition_Height                                                  = 227,
@@ -911,8 +899,6 @@ namespace Microsoft
                         Polygon_Points                                                        = 925,
                         Polyline_FillRule                                                     = 926,
                         Polyline_Points                                                       = 927,
-                        ProgressRing_IsActive                                                 = 928,
-                        ProgressRing_TemplateSettings                                         = 929,
                         RangeBase_LargeChange                                                 = 930,
                         RangeBase_Maximum                                                     = 931,
                         RangeBase_Minimum                                                     = 932,
@@ -1082,10 +1068,6 @@ namespace Microsoft
                         Page_Frame                                                            = 1115,
                         Page_NavigationCacheMode                                              = 1116,
                         Page_TopAppBar                                                        = 1117,
-                        ProgressBar_IsIndeterminate                                           = 1118,
-                        ProgressBar_ShowError                                                 = 1119,
-                        ProgressBar_ShowPaused                                                = 1120,
-                        ProgressBar_TemplateSettings                                          = 1121,
                         ScrollBar_IndicatorMode                                               = 1122,
                         ScrollBar_Orientation                                                 = 1123,
                         ScrollBar_ViewportSize                                                = 1124,
@@ -1697,33 +1679,9 @@ namespace Microsoft
                         FlyoutBase_InputDevicePrefersPrimaryCommands                          = 2297,
                         CalendarDatePicker_Description                                        = 2300,
                         PasswordBox_Description                                               = 2308,
-                        PasswordBox_ErrorTemplate                                             = 2309,
-                        PasswordBox_HasValidationErrors                                       = 2310,
-                        PasswordBox_InputValidationKind                                       = 2311,
-                        PasswordBox_InputValidationMode                                       = 2312,
-                        PasswordBox_ValidationContext                                         = 2314,
-                        PasswordBox_ValidationErrors                                          = 2315,
                         RichEditBox_Description                                               = 2316,
-                        TextBox_ErrorTemplate                                                 = 2324,
-                        TextBox_HasValidationErrors                                           = 2325,
-                        TextBox_InputValidationKind                                           = 2326,
-                        TextBox_InputValidationMode                                           = 2327,
-                        TextBox_ValidationContext                                             = 2329,
-                        TextBox_ValidationErrors                                              = 2330,
                         AutoSuggestBox_Description                                            = 2331,
-                        AutoSuggestBox_ErrorTemplate                                          = 2332,
-                        AutoSuggestBox_HasValidationErrors                                    = 2333,
-                        AutoSuggestBox_InputValidationKind                                    = 2334,
-                        AutoSuggestBox_InputValidationMode                                    = 2335,
-                        AutoSuggestBox_ValidationContext                                      = 2337,
-                        AutoSuggestBox_ValidationErrors                                       = 2338,
                         ComboBox_Description                                                  = 2339,
-                        ComboBox_ErrorTemplate                                                = 2340,
-                        ComboBox_HasValidationErrors                                          = 2341,
-                        ComboBox_InputValidationKind                                          = 2342,
-                        ComboBox_InputValidationMode                                          = 2343,
-                        ComboBox_ValidationContext                                            = 2345,
-                        ComboBox_ValidationErrors                                             = 2346,
                         XamlUICommand_AccessKey                                               = 2347,
                         XamlUICommand_Command                                                 = 2348,
                         XamlUICommand_Description                                             = 2349,
@@ -1748,6 +1706,7 @@ namespace Microsoft
                     };
 
                     [contract(Microsoft.UI.Xaml.Core.Direct.XamlDirectContract, 1.0)]
+                    [experimental]
                     enum XamlTypeIndex
                     {
                         AutoSuggestBoxSuggestionChosenEventArgs = 34,
@@ -1894,7 +1853,6 @@ namespace Microsoft
                         PathIcon                                = 464,
                         Polygon                                 = 465,
                         Polyline                                = 466,
-                        ProgressRing                            = 468,
                         Rectangle                               = 470,
                         RichEditBox                             = 473,
                         ScrollContentPresenter                  = 476,
@@ -1924,7 +1882,6 @@ namespace Microsoft
                         MenuFlyoutPresenter                     = 522,
                         MenuFlyoutSeparator                     = 523,
                         Page                                    = 525,
-                        ProgressBar                             = 528,
                         ScrollBar                               = 530,
                         Slider                                  = 534,
                         SwapChainBackgroundPanel                = 535,
@@ -1991,6 +1948,7 @@ namespace Microsoft
 
                     [contract(Microsoft.UI.Xaml.Core.Direct.XamlDirectContract, 1.0)]
                     [exclusiveto(Microsoft.UI.Xaml.Core.Direct.XamlDirect)]
+                    [experimental]
                     [uuid(44B58E13-87E1-5843-AC21-C51D6321C7FB)]
                     interface IXamlDirect : IInspectable
                     {
@@ -2049,6 +2007,7 @@ namespace Microsoft
                     }
 
                     [contract(Microsoft.UI.Xaml.Core.Direct.XamlDirectContract, 1.0)]
+                    [experimental]
                     [uuid(F94D4EA9-E795-4425-A8C8-498990FCE9C7)]
                     interface IXamlDirectObject : IInspectable
                     {
@@ -2056,6 +2015,7 @@ namespace Microsoft
 
                     [contract(Microsoft.UI.Xaml.Core.Direct.XamlDirectContract, 1.0)]
                     [exclusiveto(Microsoft.UI.Xaml.Core.Direct.XamlDirect)]
+                    [experimental]
                     [uuid(D43D0831-1CC6-5D08-8D2C-20FC338E8545)]
                     interface IXamlDirectStatics : IInspectable
                     {
@@ -2063,12 +2023,13 @@ namespace Microsoft
                     }
 
                     [contract(Microsoft.UI.Xaml.Core.Direct.XamlDirectContract, 1.0)]
+                    [experimental]
                     [marshaling_behavior(agile)]
                     [static(Microsoft.UI.Xaml.Core.Direct.IXamlDirectStatics, Microsoft.UI.Xaml.Core.Direct.XamlDirectContract, 1.0)]
                     [threading(both)]
                     runtimeclass XamlDirect
                     {
-                        [default] interface Microsoft.UI.Xaml.Core.Direct.IXamlDirect;
+                        [default] [experimental] interface Microsoft.UI.Xaml.Core.Direct.IXamlDirect;
                     }
                 }
             }
