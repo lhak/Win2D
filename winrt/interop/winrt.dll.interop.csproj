@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net5.0-windows10.0.18362.0</TargetFramework>
+		<TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
 		<DeviceType>WinUI</DeviceType>
 		<NoWarn>CA1416;CS0108</NoWarn>
 	</PropertyGroup>

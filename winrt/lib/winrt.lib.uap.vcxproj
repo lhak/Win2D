@@ -51,12 +51,12 @@
     </PropertyGroup>
     <!-- Reference paths differ depending on locally installed vs. NuGet SDK -->
     <ItemGroup Condition="'$(UseNuGetSDK)' == ''">
-      <MetaDataDir Include="$(WindowsSDK_MetadataPath)\$(TargetPlatformVersion)\Windows.Foundation.FoundationContract\3.0.0.0" />
-      <MetaDataDir Include="$(WindowsSDK_MetadataPath)\$(TargetPlatformVersion)\Windows.Foundation.UniversalApiContract\8.0.0.0" />
+      <MetaDataDir Include="$(WindowsSDK_MetadataPath)\$(TargetPlatformVersion)\Windows.Foundation.FoundationContract\4.0.0.0" />
+      <MetaDataDir Include="$(WindowsSDK_MetadataPath)\$(TargetPlatformVersion)\Windows.Foundation.UniversalApiContract\10.0.0.0" />
       <MetaDataDir Include="..\..\winui" />
     </ItemGroup>
     <ItemGroup Condition="'$(UseNuGetSDK)' != ''">
-      <MetaDataDir Include="$(WindowsSDK_MetadataPath)\$(TargetPlatformVersion)\Windows.Foundation.FoundationContract\3.0.0.0" />
+      <MetaDataDir Include="$(WindowsSDK_MetadataPath)\$(TargetPlatformVersion)\Windows.Foundation.FoundationContract\4.0.0.0" />
       <MetaDataDir Include="$(WindowsSDK_MetadataPath)\$(TargetPlatformVersion)\031\6.0.0.0" />
       <!-- Windows.Foundation.UniversalApiContract lives here -->
     </ItemGroup>
