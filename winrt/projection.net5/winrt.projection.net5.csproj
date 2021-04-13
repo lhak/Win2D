@@ -24,7 +24,7 @@
     <PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.5.0" />
     <PackageReference Include="Microsoft.ProjectReunion.Foundation" Version="0.5.0" />
     <PackageReference Include="Microsoft.Windows.CSWinRT" Version="1.1.4" />
-    <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="1.0.0" PrivateAssets="All" />
+    <!--<PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="1.0.0" PrivateAssets="All" />-->
   
     <CSWinRTInputs Include="$(PkgMicrosoft_WinUI)\lib\uap10.0\*.winmd" />
   </ItemGroup>
